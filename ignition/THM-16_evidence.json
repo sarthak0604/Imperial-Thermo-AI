@@ -1,0 +1,56 @@
+{
+  "setups": [
+    {
+      "id": "demo_thm16_radiant_slab",
+      "gravity_regime": "illustrative forced-flow setup",
+      "model": "THM-16",
+      "h_W_m2K": 12,
+      "h_back_W_m2K": 8
+    }
+  ],
+  "materials": [
+    {
+      "id": "demo_thm16_slab",
+      "name": "Synthetic 4 mm slab",
+      "properties": {
+        "thickness_m": 0.004,
+        "density_kg_m3": 1150,
+        "cp_J_kgK": 1300,
+        "conductivity_W_mK": 0.2,
+        "absorptivity": 0.85,
+        "emissivity": 0.78,
+        "pyrolysis_pre_exponential_s_inv": 10000000,
+        "pyrolysis_activation_energy_j_mol": 100000,
+        "heat_of_pyrolysis_j_kg": 300000
+      },
+      "calibrations": [
+        {
+          "id": "synthetic_thm16_slab_101kPa_21pct",
+          "setup_id": "demo_thm16_radiant_slab",
+          "pressure_kPa": 101.3,
+          "oxygen_pct": 21,
+          "ambient_temperature_range_K": [
+            295,
+            295
+          ],
+          "speed_range_m_s": [
+            0.2,
+            0.2
+          ],
+          "flux_range_kW_m2": [
+            0,
+            40
+          ],
+          "max_heating_time_s": 90,
+          "t_ign_k": 600,
+          "illustrative": true,
+          "source_locator": "Synthetic THM-16 parameters for demonstration"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "illustrative": true,
+    "generated_with": "OpenAI Codex"
+  }
+}
