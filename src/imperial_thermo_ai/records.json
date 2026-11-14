@@ -1,0 +1,146 @@
+[
+  {
+    "id": "PSI-159",
+    "title": "Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases(ACME CFI-G)",
+    "text": "ISS spherical diffusion flame tests investigate cool flames of propane, n-butane and n-pentane in normal and inverse configurations. The study considers reactant dilution, flow rate and pressure.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-10",
+    "title": "Advanced Combustion via Microgravity Experiments / Flame Design(ACME/Flame Design)",
+    "text": "Uses drop-tower and ISS tests to study the onset of soot in normal and inverse spherical diffusion flames. Investigates the effects of flow rate, inert dilution and pressure.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-10",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-101",
+    "title": "Smoke Aerosol Measurement Experiment-Reflight(SAME-R)",
+    "text": "Measures smoke particle sizes in microgravity and relates them to smoke generation and transport conditions. Reuses SAME hardware and extends the test conditions to include higher sample heating temperatures and heating without airflow. Includes Pyrell fire-retardant foam.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-101",
+    "doi": "https://doi.org/10.60555/2np7-jv14",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-98",
+    "title": "Spacecraft Fire Safety Experiment-I(SAFFIRE-I)",
+    "text": "Studies large-scale fire growth and material flammability in low gravity on a Cygnus cargo vehicle after departure from the ISS. Uses SIBAL, a cotton-on-fiberglass composite fabric, with forced airflow.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+    "doi": "https://doi.org/10.60555/0t15-1z43",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-39",
+    "title": "Cool Flames Investigation(CFI)",
+    "text": "Studies combustion of n-dodecane droplets and n-dodecane/iso-dodecane blends at pressures from 0.25 to 5 atm. The Multi-User Droplet Combustion Apparatus in the Combustion Integrated Rack provides controlled droplet tests.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-39",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-102",
+    "title": "Smoke and Aerosol Measurement Experiment(SAME)",
+    "text": "Studies smoke particle size in low gravity and its relation to generation and transport. Uses video, two smoke detectors and thermophoretic sampling. The modeling objective links droplet growth to fuel pyrolysis and the flow environment.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
+    "doi": "https://doi.org/10.60555/gd4k-8h62",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-106",
+    "title": "Structure and Liftoff In Combustion Experiment(SLICE)",
+    "text": "Investigates structure and stability of laminar diffusion flames in microgravity. Uses a fan-driven flow duct, interchangeable burner tubes, and sensors for flow and temperature.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-106",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-99",
+    "title": "Spacecraft Fire Experiment-II(SAFFIRE-II)",
+    "text": "Cygnus microgravity fire growth and material flammability tests used nine small samples, including flat and structured PMMA (poly(methyl methacrylate)), PMMA with Nomex, SIBAL and silicone. Across the investigation, airflow was 20 or 30 cm/s depending on material, in concurrent or opposed configurations. Instruments recorded flame images, temperature, flame radiation, pressure, oxygen and carbon dioxide mole fractions, and flow velocity. PSI points to Experimental Details for sample-specific conditions.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-99",
+    "doi": "https://doi.org/10.60555/2chp-m469",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-107",
+    "title": "Smoke Point In Co-flow Experiment(SPICE)",
+    "text": "Studies laminar smoke points of gaseous jet diffusion flames with controlled coflow in microgravity. Varies burner diameter and coflow velocity to study luminous flame behavior. Fuels include methane, ethylene, propane and propylene.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-107",
+    "doi": "https://doi.org/10.60555/9kbh-e962",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-100",
+    "title": "Spacecraft Fire Experiment-III(SAFFIRE-III)",
+    "text": "Studies large-scale flame spread on SIBAL cotton-fiberglass fabric aboard Cygnus. Uses 30 cm/s airflow versus 20 cm/s in Saffire-I, with concurrent or opposed flow. Captures flame imagery.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-100",
+    "doi": "https://doi.org/10.60555/040q-4h36",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-21",
+    "title": "Advanced Combustion via Microgravity Experiments / Coflow Laminar Diffusion Flame(ACME CLD Flame)",
+    "text": "Studies methane and ethylene coflow diffusion flames, varying velocity and fuel dilution. Objectives include measuring flame shape, lift-off height, temperature and extinction limits, and characterizing sooting behavior for model evaluation.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-21",
+    "doi": "https://doi.org/10.60555/23e1-9950",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-25",
+    "title": "Burning and Suppression of Solids - II(BASS-II)",
+    "text": "ISS solid-fuel flammability experiments in the Microgravity Science Glovebox study ignition, growth, flame spread and extinction under low-speed forced flow. Variables include airflow speed and direction, ambient oxygen and sample geometry. The investigation describes reducing oxygen below 21% by nitrogen dilution and measuring spread in concurrent and opposed flow. Individual run conditions require the underlying records.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+    "doi": "https://doi.org/10.60555/4qc4-de67",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-20",
+    "title": "Advanced Combustion via Microgravity Experiments - Burning Rate Emulator(ACME BRE)",
+    "text": "Studies burning and extinction in a quiescent microgravity atmosphere using porous burners supplied with methane or ethylene mixtures as an analogue for burning materials. The investigation considers chamber pressure, oxygen and dilution.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-20",
+    "doi": "https://doi.org/10.60555/vb93-3y72",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-68",
+    "title": "Flame Extinguishment Experiment - 2(FLEX-2)",
+    "text": "Extends liquid-fuel droplet combustion testing from FLEX to additional fuels and environments and provides experimental benchmarks. Chamber conditions span 0.5 to 3 atm and oxygen mole fractions from 0.1 to 0.4.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-68",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-22",
+    "title": "Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames(ACME E-FIELD Flames)",
+    "text": "Investigates how electric fields affect laminar diffusion flames in microgravity, including the relationship between applied voltage and chemi-ion current and the flame response to changes in the field.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-22",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-23",
+    "title": "Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames(ACME s-Flame)",
+    "text": "Studies sooty and soot-free spherical diffusion flames and compares them with simulations to assess transport. The investigation describes issuing mixtures of gaseous fuel and diluent through a spherical porous burner into an oxidizing atmosphere.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-23",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-69",
+    "title": "Flame Extinguishment Experiment(FLEX)",
+    "text": "Uses liquid-fuel droplets to study microgravity flammability and extinction, including limiting oxygen conditions and the effectiveness of gaseous suppressants.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-26",
+    "title": "Burning and Suppression of Solids(BASS)",
+    "text": "Studies solid-material flammability in the ISS Microgravity Science Glovebox and its relationship to normal-gravity screening. Uses variable forced airflow and materials including a cotton-fiberglass composite, Nomex and Ultem.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-26",
+    "doi": "https://doi.org/10.60555/58h4-dy80",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  },
+  {
+    "id": "PSI-47",
+    "title": "Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2(DAFT / DAFT-2)",
+    "text": "Tests aerosol instrumentation in microgravity ahead of SAME. Uses Arizona Red Dust as a test aerosol to assess a modified condensation particle counter.",
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-47",
+    "doi": "https://doi.org/10.60555/ztgj-d202",
+    "text_provenance": "SI-generated summary of NASA PSI investigation metadata"
+  }
+]
