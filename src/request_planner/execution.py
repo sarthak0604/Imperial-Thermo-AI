@@ -46,12 +46,16 @@ def strict_json(text):
     return json.loads(text, parse_constant=reject)
 
 
+class UnsupportedCSVHeader(ExecutionError):
+    """The CSV layout requires an explicit header mapping."""
+
+
 def csv_columns(path, file):
     with path.open(encoding=file.encoding or "utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
         header = reader.fieldnames or []
         if not header or any(not name for name in header) or len(header) != len(set(header)):
-            raise ExecutionError("CSV needs nonempty unique column headers")
+            raise UnsupportedCSVHeader("CSV needs nonempty unique column headers")
         numeric = dict.fromkeys(header, True)
         count = 0
         preview = []
@@ -171,8 +175,14 @@ class ExecutionSession:
         for file in files:
             path = self.fetch(file)
             if file.media_type == "text/csv":
-                variables, content = csv_columns(path, file)
-                file = file.model_copy(update={"variables": variables})
+                try:
+                    variables, content = csv_columns(path, file)
+                except UnsupportedCSVHeader:
+                    content = {"kind": "unsupported", "message": (
+                        "CSV needs nonempty unique column headers. Provide a file with "
+                        "one header row before calculating.")}
+                else:
+                    file = file.model_copy(update={"variables": variables})
             elif file.media_type == "application/json":
                 payload = strict_json(path.read_text(encoding=file.encoding or "utf-8-sig"))
                 if isinstance(payload, (dict, list)):

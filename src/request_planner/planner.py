@@ -180,7 +180,16 @@ def build_request(prompt: str, results: SearchResults, planner: Planner, *, limi
     if not prompt.strip():
         raise PlanningError("User prompt must not be empty")
     limits = limits or ExecutionLimits()
-    plan = planner.propose(prompt, results, limits)
+    selectable = results.model_copy(update={
+        "files": [file for file in results.files if file.retrieval_url is not None],
+    })
+    if selectable.files:
+        plan = planner.propose(prompt, selectable, limits)
+    else:
+        plan = Plan(action="no_match", selected_file_ids=[], requested_asset_ids=[],
+                    operation=None, warnings=[],
+                    explanation=("Search found records, but none has a download URL."
+                                 if results.files else "Search found no files."))
     validate_plan(plan, results, limits)
     warnings = list(plan.warnings)
     files = {file.file_id: file for file in results.files}
