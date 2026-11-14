@@ -1,0 +1,66 @@
+{
+  "request": {
+    "topic": "droplet_combustion",
+    "analysis": "estimate_droplet_regression",
+    "scenario": {
+      "profile_id": "flex_002_methanol_regression",
+      "fuel_type": "methanol",
+      "process": "combustion",
+      "d0_mm": 1.86,
+      "x_o2": 0.21,
+      "pressure_kpa": 101.59,
+      "t_amb_k": 298,
+      "endpoint_diameter_mm": 0.94
+    }
+  },
+  "evidence": {
+    "profiles": [
+      {
+        "id": "flex_002_methanol_regression",
+        "fuel_type": "methanol",
+        "process": "combustion",
+        "method": "measured_rate",
+        "validity": {
+          "d0_mm": [
+            1.86,
+            1.86
+          ],
+          "x_o2": [
+            0.21,
+            0.21
+          ],
+          "pressure_kpa": [
+            101.59,
+            101.59
+          ],
+          "t_amb_k": [
+            298,
+            298
+          ]
+        },
+        "regression_rate_mm2_s": 0.6,
+        "comparison_rate_mm2_s": 0.58
+      }
+    ],
+    "provenance": {
+      "type": "published_run_reconstruction",
+      "illustrative": true,
+      "notes": [
+        "FLEX-002 initial diameter at igniter-on, hot-flame endpoint diameter and fitted K are from Table IX. 762 mmHg converted and rounded. 298 K is a nominal placeholder unused by measured_rate. FLEX-003 gives the comparison K on a different droplet and at a slightly different pressure. The published burn time is 5 s."
+      ],
+      "generated_with": "OpenAI Codex"
+    },
+    "sources": [
+      {
+        "role": "measurements",
+        "url": "https://ntrs.nasa.gov/api/citations/20150023456/downloads/20150023456.pdf?attachment=true",
+        "locator": "Table IX, FLEX-002 and FLEX-003"
+      },
+      {
+        "role": "regression_method",
+        "url": "https://www.princeton.edu/~fldryer/nasa.dir/backgrnd.htm",
+        "locator": "Droplet burning rate and Spalding heat transfer"
+      }
+    ]
+  }
+}
