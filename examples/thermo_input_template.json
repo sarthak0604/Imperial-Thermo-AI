@@ -1,0 +1,33 @@
+{
+  "request": {
+    "topic": "heat_release",
+    "analysis": "estimate_hrr",
+    "scenario": {
+      "run_id": "synthetic-run-1"
+    }
+  },
+  "evidence": {
+    "runs": [
+      {
+        "id": "synthetic-run-1",
+        "measurement_method": "paired_oxygen_mass_flow",
+        "samples": [
+          {
+            "time_s": 0,
+            "inlet_o2_kg_s": 0,
+            "outlet_o2_kg_s": 0
+          }
+        ],
+        "source_url": "https://example.org/measurements.csv",
+        "source_locator": "All rows of the bundled synthetic CSV; no experimental claims."
+      }
+    ],
+    "provenance": {
+      "illustrative": true,
+      "notes": [
+        "Synthetic mass-flow samples for an offline integration demo."
+      ],
+      "generated_with": "OpenAI Codex"
+    }
+  }
+}

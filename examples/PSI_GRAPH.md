@@ -116,5 +116,6 @@ It shows sampled experimental conditions, not a controlled causal relationship.
 [psi_plot_plan.json](psi_plot_plan.json) is a saved plan;
 [psi_plot_request.json](psi_plot_request.json) is its validated service request.
 [The artifact manifest](plots/flex/manifest.json) records source and operation
-details. The main README gives the download and `uv run --extra plotting thermo-plot`
-commands needed to reproduce it. Original source files remain outside the repository.
+details. Use the saved request with `thermo-execute`, or the `thermo-plot` CLI with a
+previously downloaded CSV and this graph snapshot. The [workflow guide](../docs/frontend-workflow.md)
+describes execution and output contracts. Original source files remain outside the repository.

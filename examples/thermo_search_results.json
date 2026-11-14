@@ -1,0 +1,78 @@
+{
+  "query_id": "synthetic-thm04-001",
+  "files": [
+    {
+      "file_id": "synthetic-measurements",
+      "investigation_id": "SYNTHETIC-DEMO",
+      "title": "Synthetic paired oxygen flow",
+      "role": "measurement",
+      "media_type": "text/csv",
+      "retrieval_url": "https://example.org/measurements.csv",
+      "run_ids": [
+        "synthetic-run-1"
+      ],
+      "data_notes": [
+        "Synthetic SI-assisted example; not NASA measurements. URLs are placeholders."
+      ],
+      "variables": [
+        {
+          "name": "time_s",
+          "unit": "s",
+          "numeric": true
+        },
+        {
+          "name": "inlet_o2_kg_s",
+          "unit": "kg/s",
+          "numeric": true
+        },
+        {
+          "name": "outlet_o2_kg_s",
+          "unit": "kg/s",
+          "numeric": true
+        }
+      ]
+    },
+    {
+      "file_id": "synthetic-template",
+      "investigation_id": "SYNTHETIC-DEMO",
+      "title": "Synthetic THM-04 input template",
+      "role": "measurement",
+      "media_type": "application/json",
+      "retrieval_url": "https://example.org/evidence.json",
+      "run_ids": [
+        "synthetic-run-1"
+      ],
+      "data_notes": [
+        "Synthetic SI-assisted example; not NASA measurements. URLs are placeholders."
+      ]
+    },
+    {
+      "file_id": "synthetic-video",
+      "investigation_id": "SYNTHETIC-DEMO",
+      "title": "Synthetic video placeholder",
+      "role": "video",
+      "media_type": "video/mp4",
+      "retrieval_url": "https://example.org/experiment.mp4",
+      "run_ids": [
+        "synthetic-run-1"
+      ],
+      "data_notes": [
+        "Synthetic SI-assisted example; not NASA measurements. URLs are placeholders."
+      ]
+    },
+    {
+      "file_id": "synthetic-paper",
+      "investigation_id": "SYNTHETIC-DEMO",
+      "title": "Synthetic PDF placeholder",
+      "role": "documentation",
+      "media_type": "application/pdf",
+      "retrieval_url": "https://example.org/report.pdf",
+      "run_ids": [
+        "synthetic-run-1"
+      ],
+      "data_notes": [
+        "Synthetic SI-assisted example; not NASA measurements. URLs are placeholders."
+      ]
+    }
+  ]
+}
