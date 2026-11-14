@@ -21,6 +21,8 @@ dependencies = [
 dev = ["pytest>=8", "ruff>=0.11"]
 
 [project.scripts]
+google = "psi_graph.cloud:main"
+psi-coverage = "psi_graph.coverage:main"
 psi-setup-gemini = "psi_graph.setup_gemini:main"
 psi-graph-manage = "psi_graph.manage:main"
 psi-graph = "psi_graph.pipeline:main"

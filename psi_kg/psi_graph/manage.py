@@ -87,11 +87,16 @@ def merge(existing, incoming):
 
 
 def publish(path, graph, expected, receipt=None):
-    import fcntl
-
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.with_suffix(path.suffix + ".lock").open("a") as lock:
-        fcntl.flock(lock, fcntl.LOCK_EX)
+    lock = path.with_suffix(path.suffix + ".publish-lock")
+    try:
+        lock.mkdir()
+    except FileExistsError:
+        raise RuntimeError(
+            "Graph publication is locked; confirm any previous writer has stopped before removing "
+            + str(lock)
+        ) from None
+    try:
         current = path.read_bytes() if path.exists() else None
         if current != expected:
             raise RuntimeError(
@@ -111,6 +116,9 @@ def publish(path, graph, expected, receipt=None):
             receipt["graph_sha256"] = file_hash(path)
             write_json(path.with_suffix(".publication.json"), receipt)
 
+    finally:
+        lock.rmdir()
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, allow_abbrev=False)
@@ -127,6 +135,7 @@ def main():
     parser.add_argument("--api-key-env")
     parser.add_argument("--workers", type=int)
     parser.add_argument("--refresh", action="store_true")
+    parser.add_argument("--keep-originals", action="store_true")
     args = parser.parse_args()
     extra = []
     for option in (
@@ -140,6 +149,8 @@ def main():
         value = getattr(args, option)
         if value is not None:
             extra.extend(["--" + option.replace("_", "-"), str(value)])
+    if args.keep_originals:
+        extra.append("--keep-originals")
     if args.refresh:
         extra.append("--refresh")
     if not args.mode:

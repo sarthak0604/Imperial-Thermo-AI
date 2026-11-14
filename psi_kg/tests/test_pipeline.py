@@ -219,7 +219,7 @@ def test_changed_nasa_version_does_not_reuse_same_size_file(monkeypatch, tmp_pat
     from pathlib import Path
 
     from psi_graph.common import digest, file_hash, write_json
-    from psi_graph.discovery import discover, download_one, nasa
+    from psi_graph.discovery import discover, download_one
 
     old = tmp_path / "data.txt"
     old.write_text("old")
@@ -261,7 +261,7 @@ def test_changed_nasa_version_does_not_reuse_same_size_file(monkeypatch, tmp_pat
         path.write_text("new")
         return path
 
-    monkeypatch.setattr(nasa, "download_file", fresh)
+    monkeypatch.setattr("psi_graph.discovery.download_file", fresh)
     download_one(records[0], metadata, tmp_path)
     assert calls == [2]
     assert Path(records[0]["local_path"]).read_text() == "new"
