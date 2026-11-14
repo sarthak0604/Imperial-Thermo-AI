@@ -1,0 +1,26 @@
+{
+  "topic": "droplet_combustion",
+  "analysis": "estimate_cool_flame",
+  "scenario": {
+    "materials": [
+      "n-decane"
+    ],
+    "setup_id": "flex_n_decane_o2_n2_half_atm",
+    "gravity": "orbital microgravity",
+    "initial_diameter": {
+      "value": 4.03,
+      "unit": "mm"
+    },
+    "ambient": {
+      "pressure": {
+        "value": 50.6625,
+        "unit": "kPa"
+      },
+      "oxygen": {
+        "value": 21,
+        "unit": "%"
+      },
+      "additional_diluent": "none"
+    }
+  }
+}
