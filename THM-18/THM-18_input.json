@@ -1,0 +1,118 @@
+{
+  "request": {
+    "topic": "suppression",
+    "analysis": "estimate_thermal_capacity",
+    "scenario": {
+      "profile_id": "co2_gas_300_400K",
+      "mode": "gas_dilution",
+      "pressure_kPa": 101.325,
+      "initial_temperature_K": 300,
+      "target_temperature_K": 400,
+      "agent_mole_fraction": 0.3,
+      "base_gas_mole_fractions": {
+        "nitrogen": 0.79,
+        "oxygen": 0.21
+      }
+    }
+  },
+  "evidence": {
+    "profiles": [
+      {
+        "id": "co2_gas_300_400K",
+        "mode": "gas_dilution",
+        "pressure_range_kPa": [
+          90,
+          110
+        ],
+        "agent_species": "carbon_dioxide",
+        "oxygen_species": "oxygen",
+        "species": {
+          "nitrogen": {
+            "cp_at_reference_J_mol_K": 29.125,
+            "cp_reference_temperature_K": 300,
+            "cp_slope_J_mol_K2": 0.00125,
+            "temperature_range_K": [
+              300,
+              400
+            ]
+          },
+          "oxygen": {
+            "cp_at_reference_J_mol_K": 29.39,
+            "cp_reference_temperature_K": 300,
+            "cp_slope_J_mol_K2": 0.007100000000000008,
+            "temperature_range_K": [
+              300,
+              400
+            ]
+          },
+          "carbon_dioxide": {
+            "cp_at_reference_J_mol_K": 37.22,
+            "cp_reference_temperature_K": 300,
+            "cp_slope_J_mol_K2": 0.04120000000000004,
+            "temperature_range_K": [
+              300,
+              400
+            ]
+          }
+        }
+      },
+      {
+        "id": "water_at_373_15K",
+        "mode": "water_mist",
+        "pressure_range_kPa": [
+          101.325,
+          101.325
+        ],
+        "liquid_temperature_range_K": [
+          293.15,
+          373.15
+        ],
+        "phase_change_temperature_range_K": [
+          373.15,
+          373.15
+        ],
+        "liquid_cp_J_kg_K": 4180,
+        "vaporization_enthalpy_J_kg": 2256400
+      }
+    ],
+    "sources": [
+      {
+        "role": "method_context",
+        "url": "https://ntrs.nasa.gov/citations/20205008449",
+        "locator": "FLEX inert gas experiments. This example is an ideal-mixture calculation."
+      },
+      {
+        "role": "gas_properties",
+        "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7727379&Mask=1",
+        "locator": "Nitrogen gas heat capacities evaluated near 300 and 400 K."
+      },
+      {
+        "role": "gas_properties",
+        "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7782447&Mask=1",
+        "locator": "Oxygen gas heat capacities evaluated near 300 and 400 K."
+      },
+      {
+        "role": "gas_properties",
+        "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C124389&Mask=1",
+        "locator": "Carbon dioxide gas heat capacities evaluated near 300 and 400 K."
+      },
+      {
+        "role": "water_properties",
+        "url": "https://doi.org/10.6028/NIST.IR.5078",
+        "locator": "IAPWS water/steam enthalpies, Table 1."
+      },
+      {
+        "role": "spray_context",
+        "url": "https://ntrs.nasa.gov/citations/20130011664",
+        "locator": "ISS fine-water-mist development."
+      }
+    ],
+    "provenance": {
+      "illustrative": true,
+      "notes": [
+        "Mixture and temperature interval are illustrative. Heat capacities are approximated over the stated interval. The alternate water profile uses an average liquid heat capacity and a rounded boiling-temperature latent heat at atmospheric pressure."
+      ],
+      "generated_with": "OpenAI Codex"
+    }
+  }
+}

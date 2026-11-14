@@ -1,0 +1,79 @@
+{
+  "request": {
+    "topic": "smoke",
+    "analysis": "estimate_aerosol_transport",
+    "scenario": {
+      "profile_id": "demo_vent_duct",
+      "setup_id": "straight_vent_duct",
+      "duct_length_m": 3,
+      "duct_area_m2": 0.04,
+      "air_speed_m_s": 0.075,
+      "axial_temperature_gradient_K_m": 25,
+      "smoke_mass_rate_kg_s": 0.000002,
+      "duration_s": 100
+    }
+  },
+  "evidence": {
+    "profiles": [
+      {
+        "id": "demo_vent_duct",
+        "setup_id": "straight_vent_duct",
+        "scenario_bounds": {
+          "duct_length_m": [
+            1,
+            5
+          ],
+          "air_speed_m_s": [
+            0.03,
+            0.15
+          ],
+          "duct_area_m2": [
+            0.04,
+            0.04
+          ],
+          "axial_temperature_gradient_K_m": [
+            -40,
+            40
+          ],
+          "smoke_mass_rate_kg_s": [
+            0,
+            0.000003
+          ]
+        },
+        "gas_temperature_K": 300,
+        "gas_dynamic_viscosity_Pa_s": 0.000018,
+        "gas_density_kg_m3": 1.16,
+        "source_particle_diameter_m": 0.000001,
+        "particle_density_kg_m3": 1000,
+        "collision_kernel_m3_s": 9e-16,
+        "thermophoretic_coefficient": 0.5,
+        "axial_dispersion_m2_s": 0.001,
+        "wall_loss_rate_s_inv": 0.008
+      }
+    ],
+    "sources": [
+      {
+        "role": "smoke_context",
+        "url": "https://ntrs.nasa.gov/citations/20140006579",
+        "locator": "SAME/SAME-R particle aging and transport experiment."
+      },
+      {
+        "role": "thermophoresis_method",
+        "url": "https://doi.org/10.1017/S0022112080001905",
+        "locator": "Drift down the temperature gradient."
+      },
+      {
+        "role": "coagulation_method",
+        "url": "https://doi.org/10.1080/02786826.2013.770126",
+        "locator": "Smoluchowski binary coagulation baseline."
+      }
+    ],
+    "provenance": {
+      "illustrative": true,
+      "notes": [
+        "The duct geometry and smoke/transport parameters are illustrative and did not come from a single SAME run. The output is a model of the aerosol reaching a location, with no detector electronics or alarm threshold."
+      ],
+      "generated_with": "OpenAI Codex"
+    }
+  }
+}
