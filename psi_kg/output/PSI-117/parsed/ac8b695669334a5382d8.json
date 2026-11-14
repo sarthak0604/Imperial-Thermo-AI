@@ -1,0 +1,91 @@
+{
+  "id": "res:PSI-117:8f99f24f48bb7f642d39",
+  "title": "PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true",
+  "resource_type": "presentation",
+  "sha256": "2fe2fc85aa8ee3ac99a07495d31c49704f32d42bb83ae2ba2481d47c14407c43",
+  "parser_version": "1.0.4",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Extinction characteristics of isolated n-\nalkane fuel droplets during low \ntemperature cool flame droplet burning \nin air\nTanvir Farouk and Frederick Dryer\nUniversity of South Carolina, Columbia, SC, USA\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "2\nT. I. Farouka and F. L. Dryera,b\na Department of Mechanical Engineering\nUniversity of South Carolina, Columbia, SC 29208, USA\nb Department of Mechanical and Aerospace Engineering\nPrinceton University, Princeton, NJ 08544, USA\n39th International Symposium on Combustion\nVancouver, Canada\nJuly 24th – 29th, 2022  \nExtinction characteristics of isolated n-alkane fuel droplets \nduring low temperature cool flame droplet burning in air\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "3\n“Cool” Flame – NASA FLEX Cool Program\nV. Nayagam et al. Combustion and Flame (2012), 159, 3583 – 3588.\nT. Farouk and F. L. Dryer Combustion and Flame  (2014), 161, 565 – 581\nV. Nayagam et al. Combustion and Flame (2015), 162, 2140 – 2147\nT. Farouk et al. Proc. Comb. Inst (2017), 36, 2523 – 2530\nA. Cuoci et al. Proc. Comb. Inst (2017), 36, 2531 – 2539\n“Cool Flame”\nFirst Stage\nSecond Stage\nHot Flame\nn-octane\nn-decane\nn-heptane\nn-dodecane\n2 stage hot-cool flame \n2 stage hot-cool flame \n2 stage hot-cool flame\nSingle stage cool flame \n2 stage hot-cool flame\n3 stage hot-warm-cool flame "
+    },
+    {
+      "locator": "page 4",
+      "text": "4\nEvolution of droplet diameter and FSR (n-decane, \ndo = 4.00 mm, air, atmospheric pressure)\nV. Nayagam et al. Combustion and Flame (2015), 162, 2140 – 2147\nT. Farouk et al. Proc. Comb. Inst (2017), 36, 2523 – 2530\nEvolution of burning rate and peak temperature (n-decane, \ndo = 4.00 mm, air, atmospheric pressure)\nTransition from hot to cool flame burning.\nRadiative \nextinction\n• Initiation energy plays a critical role in driving \nthe hot flame condition.\n• Radiative loss is critical for transition from hot \nto cool flame burning.\nn-Decane: Two Stage Burning"
+    },
+    {
+      "locator": "page 5",
+      "text": "5\nEvolution of droplet diameter and FSR (n-decane, \ndo = 4.00 mm, air, atmospheric pressure)\n• Low ignition energy\n• Combustion behavior affected by fuel \nflash point relative to ambient and  \ninitial fuel liquid temperature\nEvolution of burning rate and peak temperature (n-decane, \ndo = 4.00 mm, air, atmospheric pressure)\n• Sufficiently constraining initiation energy can lead \nto single stage sustained cool flame burning.\nn-Decane: Single Stage Burning\nT. Farouk et al. Proc. Comb. Inst (2017), 36, 2523 – 2530"
+    },
+    {
+      "locator": "page 6",
+      "text": "6\nn-Dodecane: Three Stage Burning\nT. Farouk et al. Proc. Comb. Inst (2019), 37, 3353 – 3361\nEvolution of droplet diameter, radiant heat and FSR (n-dodecane, do = 4.40 mm, 2.75 \natm, 21% O2, 29% He, balance N2)\n• Qualitative agreement between predictions and observations\n• No optimization of model input, physical, or kinetic parameters to \nobtain these comparisons"
+    },
+    {
+      "locator": "page 7",
+      "text": "7\nGas Phase: \n• Mass conservation\n• Species equation\n• Energy conservation\n  Multi-component molecular diffusion\n Detailed chemical kinetics  - high, intermediate and  \nlow temperature\n Statistical narrowband radiation model\n C7 – C20 kinetic model, 583 species, 2609 reactions* mv\nT\nr\n∂λ ∂\nqR\nmpsdr\ndt\nl\nT\nr\n∂λ ∂\n,\n,\nli\nli\nYD r ∂ ∂\nDroplet Surface:\n• Surface regression – Adaptive Grid\n• Evaporation of fuel\n• Condensation/Dissolution  of products \n• Radiative heat exchange\nFiber:\n• One dimensional temperature distribution \n• Energy exchange with  flame and ambient\nfibq\nambientq\nlossq\nTransient Droplet Combustion Model\nLiquid Phase:\n• Mass conservation \n• Species equation\n• Energy conservation\n Activity coefficient – UNIFAC Formulation\nSoot:\n• Discrete sectional \nmethod\n• Definition of classes of \nmolecules (BINS) \ndescribing large PAH \nand soot particles\n• Reactions describing \nnucleation, \ncoagulation, oxidation \nof BINs\n*M. Sarathy et al. Combust. Flame (2011), 158, 2338 – 2357"
+    },
+    {
+      "locator": "page 8",
+      "text": "8\nn-heptane n-decane\nShorter Chain Length Longer Chain\nProperty n-C7H16 n-C10H22 n-C12H26\nMolecular weight, Mw (g/mol) 100.20 142.29 170.34\nFlash point, Tf (K) 269.1 319.1 344.0\nBoiling point, Tb (K) 372.0 447.4 487.0\nDensity, ρL (kg/m3) 679.5 730.2 749.5\nSpecific Heat, cP (kJ/kmol K) 224.64 314.56 376.15\nHeat of vaporization, ∆HV (kJ/mol) 36.41 52.09 61.0\nHeat of combustion, ∆Hc (kJ/mol) 4849.2 6779.2 7901.4\nLonger straight chain HC more \nprevalent low temperature kinetics\nn-dodecane\nProperties: n-heptane, n-decane, n-dodecane"
+    },
+    {
+      "locator": "page 9",
+      "text": "9\nExperiment\ndext HF = 3.41 mm\ndext CF  = 1.13 mm\nKavg HF = 0.46 mm2s-1\nKavg CF = 0.38 mm2s-1\nn-Alkane Burning Characteristics: Model Validation (1 atm, Air)\nHot \nFlame \nExtinction\nCool \nFlame \nExtinction\nHot \nFlame \nExtinction\nCool \nFlame \nExtinction\nHot \nFlame \nExtinction\nCool \nFlame \nExtinction\nModel\ndext HF = 3.53 mm\ndext CF  = 0.81 mm\nKavg HF = 0.44 mm2s-1\nKavg CF = 0.39 mm2s-1\nExperiment\ndext HF = 3.32 mm\ndext CF  = 0.59 mm\nKavg HF = 0.41 mm2s-1\nKavg CF = 0.39 mm2s-1\nModel\ndext HF = 3.42 mm\ndext CF  = 0.30 mm\nKavg HF = 0.37 mm2s-1\nKavg CF = 0.42 mm2s-1\nExperiment\ndext HF = 4.16 mm\ndext CF  = 0.53 mm\nKavg HF = 0.38 mm2s-1\nKavg CF = 0.52 mm2s-1\nModel\ndext HF = 4.34 mm\ndext CF  = 0.24 mm\nKavg HF = 0.32 mm2s-1\nKavg CF = 0.52 mm2s-1"
+    },
+    {
+      "locator": "page 10",
+      "text": "10\n• During transition to second stage burn, the FSR and the \nTmax  for all three fuels are almost identical. \nn-Alkane Burning Characteristics: 1 atm, Air\nEvolution of droplet diameter, FSR, Kb and Tmax for \nn-alkane droplets (do = 4.00 mm, 1 atm, air)\nFSR Critical flame diameter, results in excessive radiative loss – \ntransition to second stage\n• Kb,CF C12 > Kb,CF C10 > Kb,CF C7\n• Tmax,CF C12 ~ 775 K > Tmax,CF C10 ~ 737 K > Tmax,CF C7 ~ 720 K\n• de,CF C7 > de,CF C10 > de,CF C12 "
+    },
+    {
+      "locator": "page 11",
+      "text": "11\nExtinction Diameter\nComparison of measured and predicted hot and cool flame extinction diameter for different \ninitial droplet diameter for the three n-alkane fuels (atmospheric air) \n•  High temperature combustion is strongly governed by the small species kinetics – all three fuels share \nnearly identical values of HF extinction diameter for the same do\n• The LTC differs with carbon number as each involve reactions associated with the carbon number of the \nfuel and the large intermediates produced. The overall rates of isomerization of radical-O2 adducts \ncontrolling rate of degenerate chain branching rate increase from C7 to C12\n• The CF extinction is dictated by the increase in decomposition of •O2QnOOH for all three fuels."
+    },
+    {
+      "locator": "page 12",
+      "text": "12\nExtinction Characteristics: Pressure Dependence\nEvolution of FSR, Kb and Tmax for n-dodecane droplets \nfor different pressure (do = 4.00 mm, air)\n• For pressure ≤ 1.0 atm, two stage combustion – hot \nand cool flame extinction. \n• At 1.25 atm, multi-cycling of hot-cool-hot-cool flame \ntransition. \n• At 3.0 atm, the system transitions to a stable “Warm” \nflame. \n• Cool flame temperature increases with pressure and \nresults in a hot flame reignition. \n• “Warm” flame is dictated by NTC kinetics and \ncompetition for OH between hydrocarbon and \noxygenated hydrocarbon fragments. \n"
+    },
+    {
+      "locator": "page 13",
+      "text": "13\nMulticycle Behavior\nEvolution of Kb and Tmax for n-dodecane droplet \ncombustion at 1.25 atm (do = 7.00 mm, air)\n• Four “Hot-Cool” flame transition. \n• At every transition, the cool flame \ntemperature decreases significantly, the \nburn time increases. \n• The hot flame behavior remains unaltered. "
+    },
+    {
+      "locator": "page 14",
+      "text": "14\nMulticycle Behavior\nEvolution of Kb and Tmax for n-dodecane droplet \ncombustion at 1.25 atm (do = 7.00 mm, air)\n• Four “Hot-Cool” flame transition. \n• At every transition, the cool flame \ntemperature decreases significantly, the \nburn time increases. \n• The hot flame behavior remains unaltered. \nSpatiotemporal contour of a) gas phase temperature and mass fraction of b) H2O, c) CO2, d) CO, e) H2O2 and f) CH2O for n-dodecane \ndroplet undergoing multiple hot-cool flame transitions (do = 7.00 mm, 1.25 atm, air)."
+    },
+    {
+      "locator": "page 15",
+      "text": "15\nExtinction Diameter: Pressure Dependence\nComparison of predicted and measured de,HF and de,CF as a \nfunction of operating pressure for of n-dodecane droplets burning \nin air. (do = 4.00 mm).\n• Both hot and cool flame extinction diameter has a \nnon-linear dependence on pressure. \n• de,CF decreases as pressure is increased, and is \nabsent at 3 atm as the droplet burns to completion \nfollowing a “Warm” flame combustion\n• The de,CF is most sensitive to:\n•O2QnOOH → •OQn`OOH + OH\n•O2QnOOH → QnOOH + O2\n "
+    },
+    {
+      "locator": "page 16",
+      "text": "16\n• Two-stage hot-cool flame burning mode transitions are demonstrated to exist for the three \nfuels, and the maximum flame temperature at which transition to the second stage occurred \nwas universally found to be ~ 1200K. \n• Hot flame characteristics of all three fuels indicate that predicted extinction phenomena are all \nvery similar.\n• Cool flame extinction properties are significantly affected by the n-alkane molecular weight, \nand the chain length of the n-alkane has significant effect on the cool flame reactivity - larger n-\nalkane exhibited more robust cool flame (i.e., higher temperature) and hence smaller extinction \ndiameters.\n• Universally, de,CF for each fuel varies linearly with initial droplet diameter, but unlike de,HF these \nrelationships do not collapse to a single function.\n• n-Dodecane droplet combustion reveal a strong dependence of observations on ambient \npressure. Single, two-stage hot-cool flame combustion transitions to a multi-cycle combustion \nbehavior at ambient pressures above one atmosphere, and eventually into a hot - “Warm” flame \ntransition. \nSummary"
+    },
+    {
+      "locator": "page 17",
+      "text": "17\n• This work was supported by the National Aeronautics and Space Administration \nthrough grants NNX17AF97A (TIF).\n• Thanks to Drs. Daniel Dietrich, Vedha Nayagam and Forman Williams for interest \nand insightful discussions throughout the course of this investigation.\nAcknowledgements"
+    },
+    {
+      "locator": "page 18",
+      "text": "18\nBackup\nEvolution of radiant energy (n-heptane, \ndo = 3.89 mm, air, 1 atm)\nEvolution of radiant energy (n-decane, \ndo = 3.88 mm, air, 1 atm)\nSimilar radiant energy during extinction for n-heptane and n-decane. "
+    }
+  ],
+  "details": {
+    "pages": 18,
+    "pages_without_extractable_text": [],
+    "figure_digitization": false
+  },
+  "warnings": [
+    "PDF text extracted; raster figures, plotted data and visual-only equations are not digitized."
+  ],
+  "status": "partially_parsed"
+}

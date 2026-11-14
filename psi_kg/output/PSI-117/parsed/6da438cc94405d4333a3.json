@@ -1,0 +1,19 @@
+{
+  "id": "res:PSI-117:044872bc1b651ab66628",
+  "title": "Oscillatory cool flame combustion behavior of submillimeter sized n-alkane droplet under near limit conditions (2019)",
+  "source_url": "https://doi.org/10.1016/j.proci.2018.05.151",
+  "resource_type": "paper",
+  "sha256": "92f34be38fa9e3f7ebbe0e3066ab64f0166b3bb5dd6bfcda297ba8ee0dff7da6",
+  "parser_version": "1.0.4",
+  "sections": [
+    {
+      "locator": "HTML body",
+      "text": "Proceedings of the Combustion Institute\nDate:\n2019\nPage\ns\n:\n3383-3391\nVolume:\nVolume 37, Issue 3\nView accessibility information\nPublished by:\nElsevier\nPublished by\nShow\nmore\nResearch article\nFull text access\nGet rights and content\nOscillatory cool flame combustion behavior of submillimeter sized n-alkane droplet under near limit conditions\nAuthor links open overlay panel\nFahd E.\nAlam\na\n,\nAli Charchi\nAghdam\na\n,\nFrederick L.\nDryer\na\nb\n,\nTanvir I.\nFarouk\na\nShow\nmore\nView\nPDF\nDownload full issue\nView Open Manuscript\nCite\nAdd to Mendeley\nShare\n10.1016/j.proci.2018.05.151\nMore actions\nAbstract\nThis paper reports simulation results of oscillatory cool flame burning of an isolated, submillimeter sized n-heptane (n-C\n7\nH\n16\n) droplet in a selectively ozone (O\n3\n) seeded nitrogen-oxygen (N\n2\n-O\n2\n) environments at atmospheric pressure. An evolutionary one-dimensional droplet combustion code encompassing relevant physics and detailed chemistry was employed to explore the roles of low-temperature chemistry, O\n3\nseeding, and dynamic flame structure on burning behaviors. For X\nO2\n= 21% and a range of selective ozone seeding, near-quasi-steady cool flame burning is achieved directly (without requiring hot flame initiation and radiative extinction). Under low oxygen index conditions, but with significant O\n3\nseeding (X\nO3\n= 5%), a nearly quasi-steady cool flame is initially established that then transitions to a dynamically oscillating cool flame burning mode which continues until the droplet is completely consumed. It is found that the oscillation occurs as result of a initial depletion of fuel vapor-oxidizer layer evolving near the droplet surface and its dynamic re-establishment through liquid vaporization and vapor/oxidizer transport. A kinetic analysis indicates that the dynamic competition between the reaction classes- (a) degenerate chain branching and (b) chain termination/propagation - along with continuous fuel and oxygen leakage through the flame location contributes to an oscillatory burning phenomena of ever-increasing amplitude. Analysis based on single full-cycle of oscillatory burning shows that the reaction progression matrices (evolution of heat and species) for QOOH➔chain propagation/termination reactions (here, Q = C\n7\nH\n14\n-) directly scales with the gas phase temperature field. On the contrary, the QOOH➔degenerate branching reactions undergoes three distinct stages within the same oscillatory cycle. The coupled flame dynamics and kinetics suggest that in the oscillatory burning mode, kinetic processes dynamically cross through conditions characterizing the negative temperature coefficient (NTC) turnover temperature, separating low temperature and NTC kinetic regimes. In addition, a parametric study is conducted to determine the role of O\n3\nseeding level on the observed oscillation phenomena.\nKeywords\nCool flame\n;\nn\n-heptane\n;\nDroplet combustion\n;\nOscillations\n;\nKetohydroperoxy radical\nView Abstract\nRecommended articles\nNo articles found.\n© 2018 The Combustion Institute. Published by Elsevier Inc. All rights reserved."
+    }
+  ],
+  "details": {},
+  "warnings": [
+    "HTML text only; full article access is not inferred from a publisher landing page."
+  ],
+  "status": "partially_parsed"
+}

@@ -1,0 +1,42 @@
+{
+  "model_id": "THM-08",
+  "file_name": "calc_mixed_convection_richardson_scaling.py",
+  "function_signature": "calc_mixed_convection_richardson_scaling(gravity_g, u_forced_ms, char_length_m, delta_t_k)",
+  "runtime": "Python",
+  "domain": "2. Boundary Layer & Flame Spread",
+  "metadata": {
+    "project": "Flame in Freefall \u2014 Imperial-Thermo-AI",
+    "challenge": "NASA Space Apps Challenge 2026: Flame in Freefall",
+    "schema_version": "1.0.0",
+    "evidence_policy": "Partial-gravity (0.16g Lunar, 0.38g Martian) results must always be labeled as theoretical bounds/interpolations because NASA PSI currently contains no direct partial-gravity combustion datasets."
+  },
+  "example_request": {
+    "function_id": "THM-08",
+    "file_name": "calc_mixed_convection_richardson_scaling.py",
+    "data_slice": null,
+    "params": {
+      "gravity_g": 1.569,
+      "u_forced_ms": 0.1,
+      "char_length_m": 0.1,
+      "delta_t_k": 1200.0
+    },
+    "output_format": "json"
+  },
+  "example_response": {
+    "function_id": "THM-08",
+    "status": "success",
+    "metrics": {
+      "gravity_fraction_earth": 0.16,
+      "richardson_number": 63.83,
+      "induced_buoyant_velocity_ms": 0.24,
+      "convection_regime": "Mixed-to-buoyancy-assisted regime (Ri > 1)"
+    },
+    "summary_text": "In Lunar gravity (0.16g) with 10 cm/s ventilation, buoyant convection (Ri = 63.83) induces ~24 cm/s upward entrainment. Note: Theoretical partial-gravity bound only; NASA PSI contains no direct Lunar combustion data.",
+    "plot_data": null,
+    "evidence_boundary": "Theoretical / Partial-g Bound",
+    "psi_citations": [
+      "PSI-25 (BASS-II)",
+      "PSI-159 (ACME E-FIELD Analogue)"
+    ]
+  }
+}

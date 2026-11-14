@@ -1,0 +1,65 @@
+{
+  "request": {
+    "topic": "soot",
+    "analysis": "screen_soot_inception",
+    "scenario": {
+      "calibration_id": "ethylene_long_residence_screen",
+      "fuel_id": "ethylene",
+      "setup_id": "spherical_diffusion_flame",
+      "gravity": "drop-tower microgravity",
+      "pressure_kPa": 98,
+      "flame_temperature_K": 1260,
+      "temperature_gradient_K_m": 50000,
+      "residence_time_s": 0.4,
+      "carbon_to_oxygen_atomic_ratio": 0.6,
+      "radial_gas_velocity_m_s": 0.012
+    }
+  },
+  "evidence": {
+    "calibrations": [
+      {
+        "id": "ethylene_long_residence_screen",
+        "fuel_id": "ethylene",
+        "setup_id": "spherical_diffusion_flame",
+        "gravity": "drop-tower microgravity",
+        "pressure_range_kPa": [
+          98,
+          98
+        ],
+        "min_carbon_to_oxygen_atomic_ratio": 0.6,
+        "temperature_margin_band_K": 50,
+        "threshold_curve": [
+          {
+            "residence_time_s": 0.2,
+            "threshold_temperature_K": 1190
+          },
+          {
+            "residence_time_s": 2,
+            "threshold_temperature_K": 1190
+          }
+        ],
+        "kinematic_viscosity_m2_s": 0.00016,
+        "thermophoretic_coefficient": 0.5
+      }
+    ],
+    "sources": [
+      {
+        "role": "threshold",
+        "url": "https://ntrs.nasa.gov/api/citations/20070017900/downloads/20070017900.pdf",
+        "locator": "Fig. 4 and conclusions, long residence at fuel-side atomic C/O = 0.6"
+      },
+      {
+        "role": "transport_method",
+        "url": "https://doi.org/10.1017/S0022112080001905",
+        "locator": "Thermophoresis of particles in a heated boundary layer"
+      }
+    ],
+    "provenance": {
+      "illustrative": true,
+      "notes": [
+        "The 1190 K long-residence reference is published. The 50 K screening band, scenario and gas transport values are illustrative. The band is not a measured uncertainty interval."
+      ],
+      "generated_with": "OpenAI Codex"
+    }
+  }
+}

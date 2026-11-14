@@ -1,0 +1,17 @@
+{
+  "id": "res:PSI-117:d2aee778e921d172713b",
+  "title": "s_PSI-117.txt",
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43de&version=2&studyVersion=2&redirect=true#member=s_PSI-117.txt",
+  "resource_type": "supporting_file",
+  "sha256": "cb9374159b9b01a83bfe53a0b8ba1a602793df86f298e0ad222615c55d200135",
+  "parser_version": "1.0.4",
+  "sections": [
+    {
+      "locator": "lines 1-2",
+      "text": "Source Name\tSample Name\nDo not use this\tDo not use this\n"
+    }
+  ],
+  "details": {},
+  "warnings": [],
+  "status": "parsed"
+}

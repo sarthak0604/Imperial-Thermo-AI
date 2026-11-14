@@ -1,0 +1,14 @@
+{
+  "id": "res:PSI-117:ebdf1073067f61822d0b",
+  "title": "Sub-millimeter sized multi-component jet fuel surrogate droplet combustion: Physicochemical preferential vaporization effects (2021)",
+  "source_url": "https://www.sciencedirect.com/science/article/am/pii/S1540748920302911",
+  "resource_type": "paper",
+  "sha256": "11490a7bb33e12fdf0e68d5d3f3f4cb71b30e63bb28e0dfb62f8d0fdb515ccd4",
+  "parser_version": "1.0.4",
+  "sections": [],
+  "details": {},
+  "warnings": [
+    "Redirect-only HTML; no scientific article text was obtained at this URL."
+  ],
+  "status": "inaccessible"
+}
