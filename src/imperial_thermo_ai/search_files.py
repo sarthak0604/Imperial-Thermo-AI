@@ -4,11 +4,35 @@ import gc
 import json
 import sys
 from pathlib import Path
+from urllib.parse import parse_qs, urlsplit
 from .vector_search import MODEL_ID, QwenEmbedder, VectorGraphSearch, build_index, fingerprint
 
 
 def read(path):
     return json.loads(path.read_text(encoding='utf-8-sig'))
+
+
+def attach_manifest_downloads(graph, manifest):
+    """Attach public PSI file links by exact resource ID."""
+    resources = {node['id']: node['properties'] for node in graph['nodes']
+                 if node['type'] == 'Resource'}
+    for item in manifest['resources']:
+        properties = resources.get(item['id'])
+        if properties is None or properties.get('retrieval_url') or properties.get('download_url'):
+            continue
+        entry = item.get('entry') or {}
+        if (item.get('access_status') != 'accessible' or not item.get('nasa_file_id')
+                or not item.get('filename') or properties.get('filename') != item['filename']
+                or entry.get('restricted') or entry.get('restrictedAccess')):
+            continue
+        url = urlsplit(item.get('source_url') or '')
+        parts = url.path.split('/')
+        if (url.scheme == 'https' and url.netloc == 'psi.nasa.gov'
+                and parts[:4] == ['', 'geode-py', 'ws', 'studies']
+                and len(parts) == 6 and parts[-1] == 'download'
+                and item['id'].startswith(f'res:{parts[4]}:')
+                and parse_qs(url.query).get('file') == [item['nasa_file_id']]):
+            properties['retrieval_url'] = url.geturl()
 
 
 def main():
@@ -25,6 +49,7 @@ def main():
     cli.add_argument('--top-k', type=int, default=20)
     cli.add_argument('--min-score', type=float, default=0.3)
     cli.add_argument('--strict', action='store_true', help='Exclude candidates with unknown constraints.')
+    cli.add_argument('--manifest', type=Path, help='PSI resource manifest (defaults to resources_manifest.json beside the graph).')
     args = cli.parse_args()
     try:
         if not args.question and not args.query_vector:
@@ -32,6 +57,9 @@ def main():
         if args.query_vector and not args.question and not args.plan and not args.semantic_only:
             raise ValueError('Vector-only search needs --plan for constraints or explicit --semantic-only.')
         graph = read(args.graph)
+        manifest = args.manifest or args.graph.with_name('resources_manifest.json')
+        if args.manifest or manifest.is_file():
+            attach_manifest_downloads(graph, read(manifest))
         plan = None
         if args.plan:
             plan = read(args.plan)

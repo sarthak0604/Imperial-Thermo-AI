@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "query_id": "test-branch-local-001",
+  "status": "needs_input",
+  "message": "File has no retrieval URL: res:PSI-117:8f99f24f48bb7f642d39",
+  "requests": [],
+  "blocks": [],
+  "sources": [],
+  "warnings": [],
+  "errors": [
+    {
+      "code": "PlanningError",
+      "message": "File has no retrieval URL: res:PSI-117:8f99f24f48bb7f642d39"
+    }
+  ],
+  "generated_by": "SI-assisted planner; deterministic Python execution"
+}

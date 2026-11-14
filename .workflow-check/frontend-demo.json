@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.0",
+  "query_id": "synthetic-thm04-001",
+  "status": "completed",
+  "message": "Use paired oxygen mass flows in THM-04 and provide the requested media links.",
+  "requests": [
+    {
+      "schema_version": "1.0",
+      "query_id": "synthetic-thm04-001",
+      "plan": {
+        "action": "calculate",
+        "selected_file_ids": [
+          "synthetic-measurements",
+          "synthetic-template"
+        ],
+        "requested_asset_ids": [
+          "synthetic-video",
+          "synthetic-paper"
+        ],
+        "operation": {
+          "name": "run_thermo_model",
+          "file_id": "synthetic-measurements",
+          "parameters": {
+            "model_id": "THM-04",
+            "request_json": null,
+            "template_file_id": "synthetic-template",
+            "bindings": [
+              {
+                "target": "/evidence/runs/0/samples",
+                "mode": "records",
+                "columns": [
+                  {
+                    "column": "time_s",
+                    "field": "time_s",
+                    "unit": "s"
+                  },
+                  {
+                    "column": "inlet_o2_kg_s",
+                    "field": "inlet_o2_kg_s",
+                    "unit": "kg/s"
+                  },
+                  {
+                    "column": "outlet_o2_kg_s",
+                    "field": "outlet_o2_kg_s",
+                    "unit": "kg/s"
+                  }
+                ],
+                "row": null
+              }
+            ]
+          }
+        },
+        "explanation": "Use paired oxygen mass flows in THM-04 and provide the requested media links.",
+        "warnings": [
+          "Synthetic SI-assisted example; not NASA measurements.",
+          "Unknown size for synthetic-measurements; executor must cap streamed download bytes.",
+          "Unknown size for synthetic-template; executor must cap streamed download bytes.",
+          "Unknown size for synthetic-video; executor must cap streamed download bytes.",
+          "Unknown size for synthetic-paper; executor must cap streamed download bytes."
+        ]
+      },
+      "limits": {
+        "max_download_bytes": 100000000,
+        "max_runtime_seconds": 60
+      },
+      "generated_by": "SI-assisted request planner"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "calculation",
+      "model_id": "THM-04",
+      "evidence_type": "data_reduction",
+      "illustrative": true,
+      "source_file_ids": [
+        "synthetic-measurements",
+        "synthetic-template"
+      ],
+      "data": {
+        "time_s": [
+          0.0,
+          1.0,
+          2.0
+        ],
+        "hrr_W": [
+          13100.0,
+          13100.0,
+          13100.0
+        ],
+        "hrr_kW": [
+          13.1,
+          13.1,
+          13.1
+        ],
+        "cumulative_heat_kJ": [
+          0.0,
+          13.1,
+          26.2
+        ],
+        "total_heat_release_kJ": 26.2,
+        "peak_hrr_W": 13100.0,
+        "peak_hrr_time_s": 0.0,
+        "oxygen_consumption_kg_s": [
+          0.001,
+          0.001,
+          0.001
+        ],
+        "co_production_kg_s": null,
+        "co2_production_kg_s": null,
+        "co_correction_W": null,
+        "soot_correction_W": null,
+        "heat_per_kg_o2_J": 13100000.0,
+        "warnings": [
+          "CO correction is unavailable for these inputs.",
+          "Soot correction is unavailable for these inputs."
+        ],
+        "model_id": "THM-04",
+        "status": "data_reduction",
+        "evidence_boundary": "Oxygen consumption calorimetry",
+        "run_id": "synthetic-run-1",
+        "measurement_method": "paired_oxygen_mass_flow",
+        "illustrative": true,
+        "provenance": {
+          "illustrative": true,
+          "notes": [
+            "Synthetic mass-flow samples for an offline integration demo."
+          ],
+          "generated_with": "OpenAI Codex"
+        },
+        "sources": [
+          {
+            "role": "measurements",
+            "url": "https://example.org/measurements.csv",
+            "locator": "All rows of the bundled synthetic CSV; no experimental claims."
+          },
+          {
+            "role": "calorimetry_method",
+            "url": "https://doi.org/10.6028/NIST.TN.2077",
+            "locator": "Eqs. 4, 6, 9 and 12"
+          }
+        ],
+        "limitations": [
+          "Use spatially representative, synchronized and calibrated measurements.",
+          "The integration covers the returned time window.",
+          "The exhaust balance treats the residual dry gas as conserved inert gas."
+        ]
+      }
+    },
+    {
+      "type": "chart",
+      "chart_type": "line",
+      "title": "THM-04: result",
+      "x": {
+        "label": "time_s",
+        "unit": null,
+        "values": [
+          0.0,
+          1.0,
+          2.0
+        ]
+      },
+      "series": [
+        {
+          "label": "hrr_W",
+          "unit": null,
+          "values": [
+            13100.0,
+            13100.0,
+            13100.0
+          ]
+        }
+      ],
+      "evidence_type": "data_reduction",
+      "illustrative": true,
+      "source_file_ids": [
+        "synthetic-measurements",
+        "synthetic-template"
+      ]
+    },
+    {
+      "type": "chart",
+      "chart_type": "line",
+      "title": "THM-04: result",
+      "x": {
+        "label": "time_s",
+        "unit": null,
+        "values": [
+          0.0,
+          1.0,
+          2.0
+        ]
+      },
+      "series": [
+        {
+          "label": "hrr_kW",
+          "unit": null,
+          "values": [
+            13.1,
+            13.1,
+            13.1
+          ]
+        }
+      ],
+      "evidence_type": "data_reduction",
+      "illustrative": true,
+      "source_file_ids": [
+        "synthetic-measurements",
+        "synthetic-template"
+      ]
+    },
+    {
+      "type": "chart",
+      "chart_type": "line",
+      "title": "THM-04: result",
+      "x": {
+        "label": "time_s",
+        "unit": null,
+        "values": [
+          0.0,
+          1.0,
+          2.0
+        ]
+      },
+      "series": [
+        {
+          "label": "cumulative_heat_kJ",
+          "unit": null,
+          "values": [
+            0.0,
+            13.1,
+            26.2
+          ]
+        }
+      ],
+      "evidence_type": "data_reduction",
+      "illustrative": true,
+      "source_file_ids": [
+        "synthetic-measurements",
+        "synthetic-template"
+      ]
+    },
+    {
+      "type": "chart",
+      "chart_type": "line",
+      "title": "THM-04: result",
+      "x": {
+        "label": "time_s",
+        "unit": null,
+        "values": [
+          0.0,
+          1.0,
+          2.0
+        ]
+      },
+      "series": [
+        {
+          "label": "oxygen_consumption_kg_s",
+          "unit": null,
+          "values": [
+            0.001,
+            0.001,
+            0.001
+          ]
+        }
+      ],
+      "evidence_type": "data_reduction",
+      "illustrative": true,
+      "source_file_ids": [
+        "synthetic-measurements",
+        "synthetic-template"
+      ]
+    },
+    {
+      "type": "video",
+      "file_id": "synthetic-video",
+      "title": "Synthetic video placeholder",
+      "media_type": "video/mp4",
+      "url": "https://example.org/experiment.mp4",
+      "source_page_url": null
+    },
+    {
+      "type": "document",
+      "file_id": "synthetic-paper",
+      "title": "Synthetic PDF placeholder",
+      "media_type": "application/pdf",
+      "url": "https://example.org/report.pdf",
+      "source_page_url": null
+    }
+  ],
+  "sources": [
+    {
+      "file_id": "synthetic-measurements",
+      "investigation_id": "SYNTHETIC-DEMO",
+      "title": "Synthetic paired oxygen flow",
+      "source_page_url": null,
+      "run_ids": [
+        "synthetic-run-1"
+      ],
+      "sha256": "79d3f48efe86d7fbdcceddaac950d7d1a23e75828a42cf25003259537b2918ef",
+      "size_bytes": 78
+    },
+    {
+      "file_id": "synthetic-template",
+      "investigation_id": "SYNTHETIC-DEMO",
+      "title": "Synthetic THM-04 input template",
+      "source_page_url": null,
+      "run_ids": [
+        "synthetic-run-1"
+      ],
+      "sha256": "3a69ea6bf6d34e76fba864a060408a314b85cbe1cfa0807a2b5af00306a6b26b",
+      "size_bytes": 778
+    },
+    {
+      "file_id": "synthetic-video",
+      "investigation_id": "SYNTHETIC-DEMO",
+      "title": "Synthetic video placeholder",
+      "downloaded": false
+    },
+    {
+      "file_id": "synthetic-paper",
+      "investigation_id": "SYNTHETIC-DEMO",
+      "title": "Synthetic PDF placeholder",
+      "downloaded": false
+    }
+  ],
+  "warnings": [
+    "Synthetic SI-assisted example; not NASA measurements.",
+    "Unknown size for synthetic-measurements; executor must cap streamed download bytes.",
+    "Unknown size for synthetic-template; executor must cap streamed download bytes.",
+    "Unknown size for synthetic-video; executor must cap streamed download bytes.",
+    "Unknown size for synthetic-paper; executor must cap streamed download bytes.",
+    "CO correction is unavailable for these inputs.",
+    "Soot correction is unavailable for these inputs.",
+    "Use spatially representative, synchronized and calibrated measurements.",
+    "The integration covers the returned time window.",
+    "The exhaust balance treats the residual dry gas as conserved inert gas.",
+    "Synthetic SI-assisted example; not NASA measurements. URLs are placeholders."
+  ],
+  "errors": [],
+  "generated_by": "SI-assisted planner; deterministic Python execution"
+}

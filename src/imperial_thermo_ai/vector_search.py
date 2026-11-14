@@ -115,7 +115,7 @@ class VectorGraphSearch:
         experiments = [e['source'] for e in self.graph.incoming[file_id] if e['type'] == 'HAS_RESOURCE']
         investigations = {e['source'] for exp in experiments for e in self.graph.incoming[exp] if e['type'] == 'CONTAINS'}
         if len(investigations) != 1:
-            raise ValueError(f'{file_id}: exactly one source investigation is required for the file contract.')
+            return None
         return next(iter(investigations)), experiments
 
     def _record(self, file_id, reason):
@@ -168,6 +168,8 @@ class VectorGraphSearch:
             plan = validate_plan(plan, graph=self.graph.graph)
         files = []
         for file_id, score, reason in sorted(ranked, key=lambda row: (-row[1], row[0])):
+            if self._provenance(file_id) is None:
+                continue
             if plan is not None:
                 evaluations = [evaluate(self.graph, file_id, route('Resource', q['return_type'], q['where']))
                                for q in plan['queries']]
@@ -221,7 +223,10 @@ class VectorGraphSearch:
         for key, node in self.graph.nodes.items():
             if node['type'] != 'Resource' or scores[key] < min_score:
                 continue
-            inv, _ = self._provenance(key)
+            provenance = self._provenance(key)
+            if provenance is None:
+                continue
+            inv, _ = provenance
             ranked.append((key, 0.85 * scores[key] + 0.15 * scores[inv],
                            f'Global semantic file match within investigation {inv}; searched across all investigations.'))
         return self._finish(ranked, query_id, plan, top_k, include_unknown)

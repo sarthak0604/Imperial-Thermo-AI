@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "query_id": "fixed-psi117",
+  "status": "needs_input",
+  "message": "Files inspected. Review missing units/evidence before calculating.",
+  "requests": [
+    {
+      "schema_version": "1.0",
+      "query_id": "fixed-psi117",
+      "plan": {
+        "action": "inspect_files",
+        "selected_file_ids": [
+          "res:PSI-117:3c69bbed73f148eba760"
+        ],
+        "requested_asset_ids": [],
+        "operation": null,
+        "explanation": "Inspect the first downloadable CSV.",
+        "warnings": []
+      },
+      "limits": {
+        "max_download_bytes": 100000000,
+        "max_runtime_seconds": 60
+      },
+      "generated_by": "SI-assisted request planner"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "inspection",
+      "file_id": "res:PSI-117:3c69bbed73f148eba760",
+      "kind": "unsupported",
+      "message": "CSV needs nonempty unique column headers. Provide a file with one header row before calculating."
+    }
+  ],
+  "sources": [
+    {
+      "file_id": "res:PSI-117:3c69bbed73f148eba760",
+      "investigation_id": "PSI-117",
+      "title": "PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+      "source_page_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true",
+      "run_ids": [],
+      "sha256": "2b3c8edcfbba8916da95d1e13200310b5a30fa2e62dc8d77145a6ac3c206deb3",
+      "size_bytes": 745
+    }
+  ],
+  "warnings": [
+    "Column headers, units and numeric suitability have not been verified."
+  ],
+  "errors": [],
+  "generated_by": "SI-assisted planner; deterministic Python execution"
+}
