@@ -1,0 +1,137 @@
+{
+  "request": {
+    "topic": "heat_release",
+    "analysis": "estimate_hrr",
+    "scenario": {
+      "run_id": "nist_ngqc_3m_2kgs_995_to_1005",
+      "time_window_s": [
+        995,
+        1005
+      ]
+    }
+  },
+  "evidence": {
+    "runs": [
+      {
+        "id": "nist_ngqc_3m_2kgs_995_to_1005",
+        "measurement_method": "exhaust_mass_flow",
+        "gas_basis": "dry",
+        "heat_per_kg_o2_J": 12540000,
+        "inlet": {
+          "o2_vol_frac": 0.20946,
+          "co2_vol_frac": 0.0004368,
+          "co_vol_frac": 0,
+          "water_vapor_vol_frac": 0,
+          "expansion_factor": 1.1,
+          "gas_molar_mass_kg_mol": 0.028965
+        },
+        "samples": [
+          {
+            "time_s": 995,
+            "mass_flow_kg_s": 1.8897,
+            "o2_vol_frac": 0.19889,
+            "co2_vol_frac": 0.0064328,
+            "co_vol_frac": 0.0000016,
+            "reference_hrr_W": 300140
+          },
+          {
+            "time_s": 996,
+            "mass_flow_kg_s": 1.8926,
+            "o2_vol_frac": 0.1989,
+            "co2_vol_frac": 0.0064316,
+            "co_vol_frac": 0.0000016,
+            "reference_hrr_W": 300040
+          },
+          {
+            "time_s": 997,
+            "mass_flow_kg_s": 1.8908,
+            "o2_vol_frac": 0.19888,
+            "co2_vol_frac": 0.0064364,
+            "co_vol_frac": 0.0000017,
+            "reference_hrr_W": 298630
+          },
+          {
+            "time_s": 998,
+            "mass_flow_kg_s": 1.8913,
+            "o2_vol_frac": 0.19885,
+            "co2_vol_frac": 0.0064465,
+            "co_vol_frac": 0.0000018,
+            "reference_hrr_W": 300050
+          },
+          {
+            "time_s": 999,
+            "mass_flow_kg_s": 1.8928,
+            "o2_vol_frac": 0.1988,
+            "co2_vol_frac": 0.0064517,
+            "co_vol_frac": 0.0000018,
+            "reference_hrr_W": 299970
+          },
+          {
+            "time_s": 1000,
+            "mass_flow_kg_s": 1.8928,
+            "o2_vol_frac": 0.19878,
+            "co2_vol_frac": 0.0064455,
+            "co_vol_frac": 0.0000018,
+            "reference_hrr_W": 299920
+          },
+          {
+            "time_s": 1001,
+            "mass_flow_kg_s": 1.8946,
+            "o2_vol_frac": 0.19883,
+            "co2_vol_frac": 0.0064152,
+            "co_vol_frac": 0.0000017,
+            "reference_hrr_W": 299550
+          },
+          {
+            "time_s": 1002,
+            "mass_flow_kg_s": 1.8978,
+            "o2_vol_frac": 0.19892,
+            "co2_vol_frac": 0.0063798,
+            "co_vol_frac": 0.0000016,
+            "reference_hrr_W": 298650
+          },
+          {
+            "time_s": 1003,
+            "mass_flow_kg_s": 1.8989,
+            "o2_vol_frac": 0.19899,
+            "co2_vol_frac": 0.0063437,
+            "co_vol_frac": 0.0000016,
+            "reference_hrr_W": 300040
+          },
+          {
+            "time_s": 1004,
+            "mass_flow_kg_s": 1.8987,
+            "o2_vol_frac": 0.19906,
+            "co2_vol_frac": 0.006333,
+            "co_vol_frac": 0.0000016,
+            "reference_hrr_W": 300220
+          },
+          {
+            "time_s": 1005,
+            "mass_flow_kg_s": 1.8969,
+            "o2_vol_frac": 0.19909,
+            "co2_vol_frac": 0.0063286,
+            "co_vol_frac": 0.0000016,
+            "reference_hrr_W": 300440
+          }
+        ],
+        "source_url": "https://www.nist.gov/fcd-s3?path=%2FHRR%2FASSET_FILES%2FDesignFires_Furniture%2Fdata%2F1701710522_NGQC_3m_2kgs.csv",
+        "source_locator": "NGQC_3m_2kgs, elapsed time 995–1005 s, exhaust mass flow and three dry gas channels. Inlet O2 and CO2 use medians over -300 to -30 s.",
+        "benchmark": {
+          "source_url": "https://www.nist.gov/el/fcd/design-fires-residential-and-office-items/ngqc3m2kgs",
+          "source_locator": "Matched Burner HRR samples in the linked CSV, an independent metered-fuel estimate."
+        }
+      }
+    ],
+    "provenance": {
+      "illustrative": false,
+      "investigation": "NIST Fire Calorimetry Database",
+      "generated_with": "OpenAI Codex",
+      "notes": [
+        "This is a ground-based burner check. For spaceflight context, NASA Saffire VI uses oxygen consumption calorimetry.",
+        "Fuel-specific O2 energy is from the experiment's Table 3. Inlet humidity is assumed zero for the example, and the expansion factor is the NIST TN 2077 general approximation. Ambient CO analyzer readings are near zero, so the inlet CO baseline is set to zero.",
+        "The example covers a 10 s excerpt of the burn. Gas-channel, flow and burner timestamps follow the published CSV."
+      ]
+    }
+  }
+}

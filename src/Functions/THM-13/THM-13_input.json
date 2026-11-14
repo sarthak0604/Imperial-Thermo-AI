@@ -1,0 +1,101 @@
+{
+  "request": {
+    "topic": "extinction",
+    "analysis": "estimate_radiative_quench",
+    "scenario": {
+      "profile_id": "illustrative_pmma_radiation_budget",
+      "material_id": "pmma",
+      "setup_id": "illustrative_low_speed_coupon",
+      "gravity": "microgravity",
+      "flow_direction": "concurrent",
+      "u_flow_ms": 0.012,
+      "x_o2": 0.21,
+      "pressure_kpa": 101.325,
+      "t_amb_k": 295,
+      "co2_frac": 0.04,
+      "h2o_frac": 0.08,
+      "surface_emissivity": 0.9
+    }
+  },
+  "evidence": {
+    "profiles": [
+      {
+        "id": "illustrative_pmma_radiation_budget",
+        "material_id": "pmma",
+        "setup_id": "illustrative_low_speed_coupon",
+        "gravity": "microgravity",
+        "flow_direction": "concurrent",
+        "validity": {
+          "u_flow_ms": [
+            0.002,
+            0.04
+          ],
+          "x_o2": [
+            0.1,
+            0.35
+          ],
+          "pressure_kpa": [
+            101.325,
+            101.325
+          ],
+          "t_amb_k": [
+            295,
+            295
+          ],
+          "co2_frac": [
+            0.04,
+            0.04
+          ],
+          "h2o_frac": [
+            0.08,
+            0.08
+          ],
+          "surface_emissivity": [
+            0.85,
+            0.95
+          ]
+        },
+        "flame_temperature_k": 1300,
+        "surface_temperature_k": 620,
+        "planck_mean_per_atm_m_inv": {
+          "co2": 12,
+          "h2o": 5
+        },
+        "soot_absorption_m_inv": 0.1,
+        "optical_path_length_m": 0.017,
+        "gas_volume_per_reference_area_m": 0.02,
+        "oxygen_heat_coupling_factor": 0.45,
+        "heat_per_mol_oxygen_j": 400000,
+        "oxygen_diffusion": {
+          "diffusivity_m2_s": 0.000018,
+          "length_m": 0.018
+        }
+      }
+    ],
+    "provenance": {
+      "type": "illustrative_heat_balance",
+      "illustrative": true,
+      "notes": [
+        "All example coefficients and ranges are illustrative. The NASA BASS-II report motivates low-speed quenching and supplies context only."
+      ],
+      "generated_with": "OpenAI Codex"
+    },
+    "sources": [
+      {
+        "role": "experiment_context",
+        "url": "https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf?attachment=true",
+        "locator": "BASS-II low-flow radiative extinction sections"
+      },
+      {
+        "role": "radiative_extinction_method",
+        "url": "https://ntrs.nasa.gov/citations/19930011002",
+        "locator": "Small-stretch radiative extinction mechanism"
+      },
+      {
+        "role": "radiation_properties_method",
+        "url": "https://tnfworkshop.org/radiation/",
+        "locator": "Optically thin Planck mean treatment"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "model_id": "THM-09",
+  "file_name": "calc_spalding_mass_transfer_b_number.py",
+  "function_signature": "calc_spalding_mass_transfer_b_number(y_o2_amb, heat_combustion_jkg, heat_pyrolysis_jkg, t_vap_k)",
+  "runtime": "Python",
+  "domain": "2. Boundary Layer & Flame Spread",
+  "metadata": {
+    "project": "Flame in Freefall \u2014 Imperial-Thermo-AI",
+    "challenge": "NASA Space Apps Challenge 2026: Flame in Freefall",
+    "schema_version": "1.0.0",
+    "evidence_policy": "Partial-gravity (0.16g Lunar, 0.38g Martian) results must always be labeled as theoretical bounds/interpolations because NASA PSI currently contains no direct partial-gravity combustion datasets."
+  },
+  "example_request": {
+    "function_id": "THM-09",
+    "file_name": "calc_spalding_mass_transfer_b_number.py",
+    "data_slice": null,
+    "params": {
+      "y_o2_amb": 0.232,
+      "heat_combustion_jkg": 25200000.0,
+      "heat_pyrolysis_jkg": 1620000.0,
+      "t_vap_k": 650.0
+    },
+    "output_format": "json"
+  },
+  "example_response": {
+    "function_id": "THM-09",
+    "status": "success",
+    "metrics": {
+      "spalding_b_number": 1.62,
+      "blowing_correction_ln_1_plus_b": 0.963,
+      "stoichiometric_o2_fuel_mass_ratio": 1.92
+    },
+    "summary_text": "PMMA in 21% O2 yields a Spalding mass transfer number B = 1.62, quantifying the convective blowing potential driving solid surface gasification.",
+    "plot_data": null,
+    "evidence_boundary": "Direct PSI Data Reduction",
+    "psi_citations": [
+      "PSI-25 (BASS-II)",
+      "PSI-98 (SAFFIRE-I)"
+    ]
+  }
+}

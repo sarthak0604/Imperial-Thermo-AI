@@ -1,0 +1,115 @@
+{
+  "request": {
+    "topic": "flame_spread",
+    "analysis": "estimate_spread_rate",
+    "scenario": {
+      "materials": [
+        "pmma"
+      ],
+      "setup_id": "bass_ii_two_sided_pmma_thermal",
+      "gravity": "orbital microgravity",
+      "flow_direction": "opposed",
+      "specimen_thickness": {
+        "value": 0.0002,
+        "unit": "m"
+      },
+      "sample_width": {
+        "value": 0.02,
+        "unit": "m"
+      },
+      "ambient": {
+        "air_speed": {
+          "value": 3,
+          "unit": "cm/s"
+        },
+        "pressure": {
+          "value": 101.325,
+          "unit": "kPa"
+        },
+        "oxygen": {
+          "value": 20.7,
+          "unit": "%"
+        }
+      }
+    }
+  },
+  "evidence": {
+    "setups": [
+      {
+        "id": "bass_ii_two_sided_pmma_thermal",
+        "model": "THM-05",
+        "gravity_regime": "orbital microgravity",
+        "flow_direction": "opposed",
+        "description": "BASS-II two-sided flat PMMA specimens in the ISS Microgravity Science Glovebox duct."
+      }
+    ],
+    "materials": [
+      {
+        "id": "pmma",
+        "name": "Polymethyl methacrylate (PMMA)",
+        "calibrations": [
+          {
+            "id": "bass_ii_pmma_thin_atmosphere",
+            "setup_id": "bass_ii_two_sided_pmma_thermal",
+            "air_speed_range_m_s": [
+              0.03,
+              0.03
+            ],
+            "pressure_range_kPa": [
+              101.325,
+              101.325
+            ],
+            "oxygen_range_pct": [
+              20.7,
+              20.7
+            ],
+            "thickness_range_m": [
+              0.0001,
+              0.0004
+            ],
+            "width_range_m": [
+              0.02,
+              0.02
+            ],
+            "thermal": {
+              "prefactors": {
+                "thin_m2_s": 2.34e-8,
+                "thick_dimensionless": 0.0000972
+              },
+              "flame_coefficient": 4.76
+            },
+            "source_url": "https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf#page=49",
+            "source_locator": "NASA/TM-20210011385, section 2.3, Eq. 2.11 and Eq. 2.12. F=4.76 is calibrated to the 100 um PMMA point.",
+            "spread_rate_checks": [
+              {
+                "run_id": "B11",
+                "thickness_m": 0.0002,
+                "spread_rate_mm_s": 1.1,
+                "measurement_basis": "Approximate value digitized visually from Fig. 2.21. Its individual airflow is not specified in that plot, so this is a thin-limit thickness check.",
+                "source_url": "https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf#page=50",
+                "source_locator": "Fig. 2.20(b) run ID and Fig. 2.21 microgravity series."
+              },
+              {
+                "run_id": "B4",
+                "thickness_m": 0.0003,
+                "spread_rate_mm_s": 0.73,
+                "measurement_basis": "Approximate value digitized visually from Fig. 2.21. Its individual airflow is not specified in that plot, so this is a thin-limit thickness check.",
+                "source_url": "https://ntrs.nasa.gov/api/citations/20210011385/downloads/TM-20210011385.pdf#page=50",
+                "source_locator": "Fig. 2.20(c) run ID and Fig. 2.21 microgravity series."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "illustrative": false,
+      "investigation": "NASA BASS-II, PSI-25",
+      "generated_with": "OpenAI Codex",
+      "notes": [
+        "The 3 cm/s profile speed is the explicitly documented thin-sheet comparison speed in Fig. 2.19. The two other thickness checks are approximate graph reads, with unspecified flow in that figure. The plotted oxygen legend rounds the 20.7% cited in Fig. 2.20 to 21%.",
+        "Only the thermally thin branch has an ISS data check in this example. For other materials or thick fuel, supply appropriate properties and a supported envelope."
+      ]
+    }
+  }
+}

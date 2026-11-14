@@ -1,0 +1,82 @@
+{
+  "id": "res:PSI-117:f409efe402a52ef2997c",
+  "title": "PSI-117_Analyzed Data_MST_2024_Dext.csv",
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43eb&version=1&studyVersion=2&redirect=true",
+  "resource_type": "dataset",
+  "sha256": "2ed485fec6fad15c1409cd9b5c558ecf7bee262df29c832e9a54f3befc9c2e46",
+  "parser_version": "1.0.4",
+  "sections": [
+    {
+      "locator": "table, row 1",
+      "text": "column 1: Model | column 2: Pressure | column 3: Dext_cool | column 4: Dext_hot | column 5:  | column 6: Expt | column 7: Pressure | column 8: Dext_cool_Expt"
+    },
+    {
+      "locator": "table, computed profile (all 10 rows)",
+      "text": "{\"rows\": 10, \"columns\": 8, \"column_statistics\": [{\"numeric_count\": 0, \"missing_count\": 9, \"min\": null, \"max\": null, \"mean\": null}, {\"numeric_count\": 5, \"missing_count\": 4, \"min\": 0.5, \"max\": 3.0, \"mean\": 1.3}, {\"numeric_count\": 5, \"missing_count\": 4, \"min\": 0.0, \"max\": 1.197278912, \"mean\": 0.42047619039999995}, {\"numeric_count\": 5, \"missing_count\": 4, \"min\": 3.442176871, \"max\": 3.945578231, \"mean\": 3.7089038504}, {\"numeric_count\": 0, \"missing_count\": 10, \"min\": null, \"max\": null, \"mean\": null}, {\"numeric_count\": 0, \"missing_count\": 9, \"min\": null, \"max\": null, \"mean\": null}, {\"numeric_count\": 9, \"missing_count\": 0, \"min\": 0.5, \"max\": 1.25, \"mean\": 0.8055555555555556}, {\"numeric_count\": 9, \"missing_count\": 0, \"min\": 0.323172128, \"max\": 1.947105678, \"mean\": 0.9884317083333334}]}"
+    }
+  ],
+  "details": {
+    "rows": 10,
+    "columns": 8,
+    "column_statistics": [
+      {
+        "numeric_count": 0,
+        "missing_count": 9,
+        "min": null,
+        "max": null,
+        "mean": null
+      },
+      {
+        "numeric_count": 5,
+        "missing_count": 4,
+        "min": 0.5,
+        "max": 3.0,
+        "mean": 1.3
+      },
+      {
+        "numeric_count": 5,
+        "missing_count": 4,
+        "min": 0.0,
+        "max": 1.197278912,
+        "mean": 0.42047619039999995
+      },
+      {
+        "numeric_count": 5,
+        "missing_count": 4,
+        "min": 3.442176871,
+        "max": 3.945578231,
+        "mean": 3.7089038504
+      },
+      {
+        "numeric_count": 0,
+        "missing_count": 10,
+        "min": null,
+        "max": null,
+        "mean": null
+      },
+      {
+        "numeric_count": 0,
+        "missing_count": 9,
+        "min": null,
+        "max": null,
+        "mean": null
+      },
+      {
+        "numeric_count": 9,
+        "missing_count": 0,
+        "min": 0.5,
+        "max": 1.25,
+        "mean": 0.8055555555555556
+      },
+      {
+        "numeric_count": 9,
+        "missing_count": 0,
+        "min": 0.323172128,
+        "max": 1.947105678,
+        "mean": 0.9884317083333334
+      }
+    ]
+  },
+  "warnings": [],
+  "status": "parsed"
+}

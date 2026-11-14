@@ -1,0 +1,208 @@
+{
+  "stats": {
+    "took": 46,
+    "total": 1,
+    "estimate": false,
+    "maxScore": 43.823086
+  },
+  "results": [
+    {
+      "_meta": {
+        "score": 43.823086
+      },
+      "keywords": [],
+      "created": "2026-11-14T06:55:15.367445+00:00",
+      "distributionDate": "2026-11-13T06:55:15.367345+00:00",
+      "fundingNumbers": [],
+      "distribution": "PUBLIC",
+      "stiType": "ACCEPTED_MANUSCRIPT",
+      "title": "Sub-millimeter sized multi-component jet fuel surrogate droplet combustion: Physicochemical preferential vaporization effects",
+      "authorAffiliations": [
+        {
+          "sequence": 0,
+          "meta": {
+            "author": {
+              "name": "Tanvir I. Farouk"
+            },
+            "organization": {
+              "name": ""
+            }
+          }
+        },
+        {
+          "sequence": 1,
+          "meta": {
+            "author": {
+              "name": "Sang Hee Won"
+            },
+            "organization": {
+              "name": ""
+            }
+          }
+        },
+        {
+          "sequence": 2,
+          "meta": {
+            "author": {
+              "name": "Frederick L. Dryer"
+            },
+            "organization": {
+              "name": ""
+            }
+          }
+        }
+      ],
+      "disseminated": "DOCUMENT_AND_METADATA",
+      "stiTypeDetails": "Accepted Manuscript",
+      "modified": "2026-06-11T00:00:00",
+      "id": "33033024542870",
+      "sourceIdentifiers": [
+        {
+          "number": "https://doi.org/10.1016/j.proci.2020.06.200"
+        }
+      ],
+      "publications": [
+        {
+          "volume": "38",
+          "pages": "3313-3323",
+          "issn": "1540-7489",
+          "issue": "2",
+          "publisher": "Elsevier BV",
+          "publicationName": "Proceedings of the Combustion Institute",
+          "doi": "10.1016/j.proci.2020.06.200"
+        }
+      ],
+      "status": "CURATED",
+      "related": [],
+      "downloads": [],
+      "downloadsAvailable": false,
+      "index": "chorus-2026-11-14-07-03"
+    }
+  ],
+  "aggregations": {
+    "created": {
+      "buckets": [
+        {
+          "key_as_string": "2026",
+          "key": 1767225600000,
+          "doc_count": 1
+        }
+      ]
+    },
+    "author": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "Frederick L. Dryer",
+          "doc_count": 1
+        },
+        {
+          "key": "Sang Hee Won",
+          "doc_count": 1
+        },
+        {
+          "key": "Tanvir I. Farouk",
+          "doc_count": 1
+        }
+      ]
+    },
+    "reportNumber": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": []
+    },
+    "center": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": []
+    },
+    "index": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "chorus-2026-11-14-07-03",
+          "doc_count": 1
+        }
+      ]
+    },
+    "fundingNumber": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": []
+    },
+    "published": {
+      "buckets": []
+    },
+    "distribution": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "PUBLIC",
+          "doc_count": 1
+        }
+      ]
+    },
+    "stiType": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "ACCEPTED_MANUSCRIPT",
+          "doc_count": 1
+        }
+      ]
+    },
+    "subjectCategory": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": []
+    },
+    "disseminated": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "DOCUMENT_AND_METADATA",
+          "doc_count": 1
+        }
+      ]
+    },
+    "stiTypeDetails": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "Accepted Manuscript",
+          "doc_count": 1
+        }
+      ]
+    },
+    "organization": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "",
+          "doc_count": 1
+        }
+      ]
+    },
+    "modified": {
+      "buckets": [
+        {
+          "key_as_string": "2026",
+          "key": 1767225600000,
+          "doc_count": 1
+        }
+      ]
+    },
+    "keyword": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": []
+    }
+  }
+}
