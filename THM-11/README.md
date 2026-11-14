@@ -7,29 +7,29 @@ THM-11 estimates how an isolated alkane droplet shrinks during hot-flame and coo
 Open PowerShell in the repository's top-level folder. With Python 3.10 or later, run the following command. THM-11 uses Python's standard library.
 
 ```powershell
-py -3 THM-11/thm_11.py THM-11/THM-11_request.json THM-11/THM-11_evidence.json
+py -3 THM-11/thm_11.py THM-11/THM-11_input.json
 ```
 
 The script prints JSON. R377's visible flame ends at about **14.6 s**, with **10.9 s** of cool burning and final extinction at about **25.5 s**. The result is marked `calibration_reconstruction` because R377 supplies its own cool-extinction reference.
 
 ## Inputs for the dashboard
 
-The backend calls THM-11 with two JSON objects. The AI turns the user's question into a request. The retrieval layer supplies matching experimental evidence with sources.
+The backend assembles one [input JSON](THM-11_input.json). The AI turns the user's question into a request. The retrieval layer supplies matching experimental evidence with sources.
 
-| File | What it contains |
+| JSON section | What it contains |
 | --- | --- |
-| [THM-11_request.json](THM-11_request.json) | The requested scenario. Use `topic: "droplet_combustion"`, `analysis: "estimate_cool_flame"`, one material ID in `scenario.materials`, and a `scenario.setup_id`. Give initial diameter in `mm`, pressure in `kPa`, and oxygen in `%` as `{"value": number, "unit": "…"}` objects. Give `ambient.additional_diluent` as the setup's string, such as `"none"` for the bundled oxygen/nitrogen setup. Optional `scenario.gravity` must match the setup. |
-| [THM-11_evidence.json](THM-11_evidence.json) | A matching setup under `setups` and a fuel under `materials`. Its `calibrations` contain the supported pressure, oxygen, and initial diameter range, the measured starting size, hot extinction time and squared diameter, the cool-stage burning rate, and source information. Its `cool_extinction_references` provide the reference atmosphere, squared extinction diameter, burning rate, and source. Set `provenance.illustrative` to indicate whether the parameters are for an illustrative example. |
+| `request` | The requested scenario. Use `topic: "droplet_combustion"`, `analysis: "estimate_cool_flame"`, one material ID in `scenario.materials`, and a `scenario.setup_id`. Give initial diameter in `mm`, pressure in `kPa`, and oxygen in `%` as `{"value": number, "unit": "…"}` objects. Give `ambient.additional_diluent` as the setup's string, such as `"none"` for the bundled oxygen/nitrogen setup. Optional `scenario.gravity` must match the setup. |
+| `evidence` | A matching setup under `setups` and a fuel under `materials`. Its `calibrations` contain the supported pressure, oxygen, and initial diameter range, the measured starting size, hot extinction time and squared diameter, the cool-stage burning rate, and source information. Its `cool_extinction_references` provide the reference atmosphere, squared extinction diameter, burning rate, and source. Set `provenance.illustrative` to indicate whether the parameters are for an illustrative example. |
 
 The AI may generate new request values and the retrieval layer may supply new evidence in the same format. A run requires exactly one matching calibration and one cool-extinction reference for that setup and fuel. The bundled evidence covers **n-decane at 50.6625 kPa** in oxygen and nitrogen, with **21% O₂ at 4.03 mm** or **17% O₂ at 3.86 mm**. Requests outside that evidence return an error. For a wider case, supply a comparable data-backed calibration and reference, including evidence that two-stage burning applies and that the ambient temperatures are comparable.
 
-The backend can call `run_request(request, evidence)` directly with the two parsed JSON objects. From the repo root, load the module by string because the folder name contains a hyphen.
+The backend can call `run_request(payload)` directly with the parsed input object. From the repo root, load the module by string because the folder name contains a hyphen.
 
 ```python
 from importlib import import_module
 
 run_request = import_module("THM-11.thm_11").run_request
-result = run_request(request, evidence)
+result = run_request(payload)
 ```
 
 ## Equations

@@ -1,0 +1,161 @@
+{
+  "request": {
+    "topic": "flame_spread",
+    "analysis": "estimate_spread_rate",
+    "scenario": {
+      "materials": [
+        "sibal"
+      ],
+      "setup_id": "saffire_ii_sibal_card_concurrent",
+      "gravity": "orbital microgravity",
+      "flow_direction": "concurrent",
+      "sample_length": {
+        "value": 0.29,
+        "unit": "m"
+      },
+      "sample_width": {
+        "value": 0.05,
+        "unit": "m"
+      },
+      "specimen_thickness": {
+        "value": 0.00037,
+        "unit": "m"
+      },
+      "initial_front_position": {
+        "value": 0.07,
+        "unit": "m"
+      },
+      "initial_pyrolysis_length": {
+        "value": 0.03,
+        "unit": "m"
+      },
+      "ambient": {
+        "air_speed": {
+          "value": 22.5,
+          "unit": "cm/s"
+        },
+        "pressure": {
+          "value": 101.325,
+          "unit": "kPa"
+        },
+        "oxygen": {
+          "value": 22.1,
+          "unit": "%"
+        },
+        "temperature": {
+          "value": 295,
+          "unit": "K"
+        }
+      }
+    }
+  },
+  "evidence": {
+    "setups": [
+      {
+        "id": "saffire_ii_sibal_card_concurrent",
+        "model": "THM-06",
+        "gravity_regime": "orbital microgravity",
+        "flow_direction": "concurrent",
+        "description": "Nominal tunnel inlet speed for narrow SIBAL fabric on the Saffire II sample card."
+      }
+    ],
+    "materials": [
+      {
+        "id": "sibal",
+        "name": "SIBAL cotton-fiberglass fabric",
+        "calibrations": [
+          {
+            "id": "saffire_ii_narrow_sibal",
+            "setup_id": "saffire_ii_sibal_card_concurrent",
+            "bounds": {
+              "air_speed_m_s": [
+                0.2,
+                0.25
+              ],
+              "pressure_kPa": [
+                101.325,
+                101.325
+              ],
+              "oxygen_pct": [
+                22.1,
+                22.1
+              ],
+              "ambient_temperature_K": [
+                295,
+                295
+              ],
+              "sample_length_m": [
+                0.29,
+                0.29
+              ],
+              "sample_width_m": [
+                0.05,
+                0.05
+              ],
+              "sample_thickness_m": [
+                0.00037,
+                0.00037
+              ]
+            },
+            "thermal": {
+              "areal_mass_kg_m2": 0.18,
+              "specific_heat_J_kg_K": 1100,
+              "pyrolysis_temperature_K": 600
+            },
+            "gas": {
+              "kinematic_viscosity_ref_m2_s": 0.000015,
+              "conductivity_W_m_K": 0.026,
+              "prandtl": 0.71,
+              "effective_flame_temperature_K": 1350
+            },
+            "heated_to_pyrolysis_length_ratio": 0.4,
+            "growth_length_m": 0.05,
+            "pyrolysis_length_flow_exponent": 1,
+            "reference": {
+              "run_id": "II-5",
+              "air_speed_m_s": 0.2,
+              "pressure_kPa": 101.325,
+              "oxygen_pct": 22.1,
+              "ambient_temperature_K": 295,
+              "pyrolysis_length_m": 0.045,
+              "spread_rate_mm_s": 2.1,
+              "source_url": "https://doi.org/10.1016/j.combustflame.2018.10.012",
+              "source_locator": "Fig. 8 and section 3.1 for the 4.5 cm limiting pyrolysis length and atmospheric conditions. The 2.1 mm/s rounded spread rate is from NASA table 1."
+            },
+            "source_url": "https://ntrs.nasa.gov/api/citations/20180005168/downloads/20180005168.pdf#page=30",
+            "source_locator": "NASA slides 24, 30 and 31, including SIBAL areal mass and table 1 geometry, airflow, oxygen and spread rates.",
+            "additional_sources": [
+              {
+                "role": "spread_measurements",
+                "url": "https://ntrs.nasa.gov/api/citations/20180005168/downloads/20180005168.pdf#page=31",
+                "locator": "Table 1, Saffire II-5 and II-6"
+              }
+            ],
+            "spread_rate_checks": [
+              {
+                "run_id": "II-6",
+                "air_speed_m_s": 0.25,
+                "pressure_kPa": 101.325,
+                "oxygen_pct": 22.1,
+                "ambient_temperature_K": 295,
+                "spread_rate_mm_s": 2.6,
+                "source_url": "https://ntrs.nasa.gov/api/citations/20180005168/downloads/20180005168.pdf#page=31",
+                "source_locator": "Table 1. This sample occupied a different card position from II-5."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "illustrative": true,
+      "investigation": "NASA Saffire II, PSI-98",
+      "generated_with": "OpenAI Codex",
+      "notes": [
+        "NASA measurements anchor the limiting spread rate and length. The 295 K inlet, the solid heat capacity and pyrolysis temperature, gas properties and effective flame temperature are engineering assumptions for this demo.",
+        "The start state, relaxation growth length and heating-length ratio are illustrative. The transient phase, effective flame extent and convective heat flux have not been validated against independent data.",
+        "The unit airflow exponent for limiting pyrolysis length is a published scaling approximation used here over the local 20–25 cm/s interval. II-6 is held out of the fit and is at a different card position."
+      ]
+    }
+  }
+}
