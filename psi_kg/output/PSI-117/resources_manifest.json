@@ -1,0 +1,2598 @@
+{
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "generated_at": "2026-11-14T18:54:42.543769Z",
+  "resources": [
+    {
+      "id": "res:PSI-117:301cfafe86e0ac8ee3cb",
+      "title": "PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+      "filename": "PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43e9&version=1&studyVersion=2&redirect=true",
+      "file_format": "csv",
+      "resource_type": "dataset",
+      "nasa_file_id": "6a28273bd9d7246402cb43e9",
+      "nasa_path": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 44107,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 44107,
+        "directory": false,
+        "files": [],
+        "id": "6a28273bd9d7246402cb43e9",
+        "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "43.07 KB",
+        "sortingCategory": "Analyzed Data",
+        "status": "active",
+        "subcategory": "Reduced Gravity/Simulation/MST",
+        "updated": "Tue, 09 Jun 2026 22:46:19 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/PSI-117_Analyzed%20Data_MST_2024_Burning_history_Flame_diameter.csv",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+      "sha256": "81e6b16c355bc64a226cf638f51156758c6a259ed10bc372c1612a0984cc7bc9",
+      "accessed_at": "2026-11-14T18:35:58.085980Z",
+      "extraction_warnings": [],
+      "parse_details": {
+        "rows": 684,
+        "columns": 20,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "missing_count": 683,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 66,
+            "missing_count": 617,
+            "min": 0.043245302,
+            "max": 49.15374102,
+            "mean": 27.334170287166668
+          },
+          {
+            "numeric_count": 66,
+            "missing_count": 617,
+            "min": 0.646847401,
+            "max": 16.2372052,
+            "mean": 7.2773418304393935
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 119,
+            "missing_count": 564,
+            "min": 0.035489614,
+            "max": 46.04182315,
+            "mean": 25.678459074554617
+          },
+          {
+            "numeric_count": 119,
+            "missing_count": 564,
+            "min": 0.35378227,
+            "max": 25.3285728,
+            "mean": 10.041834954008412
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 83,
+            "missing_count": 600,
+            "min": 0.203228798,
+            "max": 50.36716508,
+            "mean": 24.96556017008434
+          },
+          {
+            "numeric_count": 83,
+            "missing_count": 600,
+            "min": 1.659120145,
+            "max": 22.01167385,
+            "mean": 7.84356952377108
+          },
+          {
+            "numeric_count": 63,
+            "missing_count": 620,
+            "min": 0.4063494,
+            "max": 50.09155292,
+            "mean": 23.210639675571425
+          },
+          {
+            "numeric_count": 63,
+            "missing_count": 620,
+            "min": 1.04848462,
+            "max": 8.490993199,
+            "mean": 3.752495138222222
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 680,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 409,
+            "missing_count": 274,
+            "min": 0.0,
+            "max": 44.664,
+            "mean": 13.906877479309536
+          },
+          {
+            "numeric_count": 409,
+            "missing_count": 274,
+            "min": 0.001541755,
+            "max": 16.18788215,
+            "mean": 11.573969680894878
+          },
+          {
+            "numeric_count": 409,
+            "missing_count": 274,
+            "min": 0.852504719,
+            "max": 79.7148801,
+            "mean": 28.186137706591673
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 680,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 683,
+            "missing_count": 0,
+            "min": 0.0,
+            "max": 44.7,
+            "mean": 10.032387917744215
+          },
+          {
+            "numeric_count": 683,
+            "missing_count": 0,
+            "min": 1.3445e-05,
+            "max": 26.4099,
+            "mean": 11.29480712271523
+          }
+        ]
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/ec1a8d73b26703a4fd35.json"
+    },
+    {
+      "id": "res:PSI-117:f409efe402a52ef2997c",
+      "title": "PSI-117_Analyzed Data_MST_2024_Dext.csv",
+      "filename": "PSI-117_Analyzed Data_MST_2024_Dext.csv",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43eb&version=1&studyVersion=2&redirect=true",
+      "file_format": "csv",
+      "resource_type": "dataset",
+      "nasa_file_id": "6a28273bd9d7246402cb43eb",
+      "nasa_path": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Dext.csv",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 372,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 372,
+        "directory": false,
+        "files": [],
+        "id": "6a28273bd9d7246402cb43eb",
+        "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Dext.csv",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "372.0 B",
+        "sortingCategory": "Analyzed Data",
+        "status": "active",
+        "subcategory": "Reduced Gravity/Simulation/MST",
+        "updated": "Tue, 09 Jun 2026 22:46:19 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/PSI-117_Analyzed%20Data_MST_2024_Dext.csv",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/PSI-117_Analyzed Data_MST_2024_Dext.csv",
+      "sha256": "2ed485fec6fad15c1409cd9b5c558ecf7bee262df29c832e9a54f3befc9c2e46",
+      "accessed_at": "2026-11-14T18:35:58.086042Z",
+      "extraction_warnings": [],
+      "parse_details": {
+        "rows": 10,
+        "columns": 8,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "missing_count": 9,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 4,
+            "min": 0.5,
+            "max": 3.0,
+            "mean": 1.3
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 4,
+            "min": 0.0,
+            "max": 1.197278912,
+            "mean": 0.42047619039999995
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 4,
+            "min": 3.442176871,
+            "max": 3.945578231,
+            "mean": 3.7089038504
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 10,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 9,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 9,
+            "missing_count": 0,
+            "min": 0.5,
+            "max": 1.25,
+            "mean": 0.8055555555555556
+          },
+          {
+            "numeric_count": 9,
+            "missing_count": 0,
+            "min": 0.323172128,
+            "max": 1.947105678,
+            "mean": 0.9884317083333334
+          }
+        ]
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/9d9f968c7a9f07665ec7.json"
+    },
+    {
+      "id": "res:PSI-117:c0fa0f37fbb4a7de83e3",
+      "title": "PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+      "filename": "PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ea&version=1&studyVersion=2&redirect=true",
+      "file_format": "csv",
+      "resource_type": "dataset",
+      "nasa_file_id": "6a28273bd9d7246402cb43ea",
+      "nasa_path": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 518,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 518,
+        "directory": false,
+        "files": [],
+        "id": "6a28273bd9d7246402cb43ea",
+        "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "518.0 B",
+        "sortingCategory": "Analyzed Data",
+        "status": "active",
+        "subcategory": "Reduced Gravity/Simulation/MST",
+        "updated": "Tue, 09 Jun 2026 22:46:19 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/PSI-117_Analyzed%20Data_MST_2024_Kavg.csv",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+      "sha256": "a89e0639567f05f19a6d0dffa9b2f659048358dee1c603b6c65bfcebd1101796",
+      "accessed_at": "2026-11-14T18:35:58.086174Z",
+      "extraction_warnings": [],
+      "parse_details": {
+        "rows": 20,
+        "columns": 7,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "missing_count": 19,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 19,
+            "missing_count": 0,
+            "min": 0.5,
+            "max": 5.0,
+            "mean": 1.618421052631579
+          },
+          {
+            "numeric_count": 19,
+            "missing_count": 0,
+            "min": 0.315175121,
+            "max": 0.527320312,
+            "mean": 0.4057872364736841
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 20,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 19,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 13,
+            "min": 0.5,
+            "max": 5.0,
+            "mean": 1.9166666666666667
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 13,
+            "min": 0.37396,
+            "max": 0.5012,
+            "mean": 0.4481931158333333
+          }
+        ]
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/ed2201d5ddff06feaad6.json"
+    },
+    {
+      "id": "res:PSI-117:c28c78768598564facd0",
+      "title": "PSI-117_Analyzed Data_MST_2024_Radiance_Flame_Diameter.csv",
+      "filename": "PSI-117_Analyzed Data_MST_2024_Radiance_Flame_Diameter.csv",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ec&version=1&studyVersion=2&redirect=true",
+      "file_format": "csv",
+      "resource_type": "dataset",
+      "nasa_file_id": "6a28273bd9d7246402cb43ec",
+      "nasa_path": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Radiance_Flame_Diameter.csv",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 82277,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 82277,
+        "directory": false,
+        "files": [],
+        "id": "6a28273bd9d7246402cb43ec",
+        "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Radiance_Flame_Diameter.csv",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "80.35 KB",
+        "sortingCategory": "Analyzed Data",
+        "status": "active",
+        "subcategory": "Reduced Gravity/Simulation/MST",
+        "updated": "Tue, 09 Jun 2026 22:46:19 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/PSI-117_Analyzed%20Data_MST_2024_Radiance_Flame_Diameter.csv",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/PSI-117_Analyzed Data_MST_2024_Radiance_Flame_Diameter.csv",
+      "sha256": "277998f5c80c08907f2c05e362e7a13a507ce4ebc967418ca883db2811a84d0d",
+      "accessed_at": "2026-11-14T18:35:58.088017Z",
+      "extraction_warnings": [],
+      "parse_details": {
+        "rows": 684,
+        "columns": 40,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "missing_count": 682,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 39,
+            "missing_count": 644,
+            "min": 0.0,
+            "max": 39.95593556,
+            "mean": 20.541366213846146
+          },
+          {
+            "numeric_count": 39,
+            "missing_count": 644,
+            "min": 1.639724253,
+            "max": 24.58848234,
+            "mean": 7.5902197290256375
+          },
+          {
+            "numeric_count": 18,
+            "missing_count": 665,
+            "min": 0.041884817,
+            "max": 10.93193717,
+            "mean": 4.716695753333333
+          },
+          {
+            "numeric_count": 18,
+            "missing_count": 665,
+            "min": 20.98280098,
+            "max": 33.02211302,
+            "mean": 27.398989897777778
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 682,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 42,
+            "missing_count": 641,
+            "min": 0.031897725,
+            "max": 39.48476972,
+            "mean": 18.922537518642855
+          },
+          {
+            "numeric_count": 42,
+            "missing_count": 641,
+            "min": 7.897883638,
+            "max": 33.00954349,
+            "mean": 18.14577152488095
+          },
+          {
+            "numeric_count": 65,
+            "missing_count": 618,
+            "min": 0.083769634,
+            "max": 39.87434555,
+            "mean": 16.806121627338463
+          },
+          {
+            "numeric_count": 65,
+            "missing_count": 618,
+            "min": 6.965601966,
+            "max": 25.1965602,
+            "mean": 17.0283500278
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 682,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 683,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 328,
+            "missing_count": 355,
+            "min": 0.0,
+            "max": 50.7,
+            "mean": 9.328088858396406
+          },
+          {
+            "numeric_count": 328,
+            "missing_count": 355,
+            "min": 0.0,
+            "max": 30.47633527,
+            "mean": 11.755253518009145
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 682,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 683,
+            "missing_count": 0,
+            "min": 0.0,
+            "max": 50.2132,
+            "mean": 16.73957044385443
+          },
+          {
+            "numeric_count": 683,
+            "missing_count": 0,
+            "min": 1.22522e-08,
+            "max": 38.11108214,
+            "mean": 18.290496409808203
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 682,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 350,
+            "missing_count": 333,
+            "min": 0.0,
+            "max": 50.5917603,
+            "mean": 11.778750991674322
+          },
+          {
+            "numeric_count": 350,
+            "missing_count": 333,
+            "min": 0.940152339,
+            "max": 100.34775,
+            "mean": 39.70905702173142
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 682,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 639,
+            "missing_count": 44,
+            "min": 0.0,
+            "max": 50.2132,
+            "mean": 17.42708011885586
+          },
+          {
+            "numeric_count": 639,
+            "missing_count": 44,
+            "min": 6.03511741,
+            "max": 100.34775,
+            "mean": 26.60186417571515
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 682,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 363,
+            "missing_count": 320,
+            "min": 0.0,
+            "max": 51.78513429,
+            "mean": 13.234224163046873
+          },
+          {
+            "numeric_count": 363,
+            "missing_count": 320,
+            "min": 425.9675406,
+            "max": 2583.97,
+            "mean": 1624.2034440223133
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 684,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 682,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 639,
+            "missing_count": 44,
+            "min": 0.0,
+            "max": 50.2132,
+            "mean": 17.42708011885586
+          },
+          {
+            "numeric_count": 639,
+            "missing_count": 44,
+            "min": 958.025,
+            "max": 2774.94,
+            "mean": 1681.1951987480459
+          }
+        ]
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/1c234427b3b1843b61e2.json"
+    },
+    {
+      "id": "res:PSI-117:fa89e42288d0880cd576",
+      "title": "PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+      "filename": "PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e5&version=1&studyVersion=2&redirect=true",
+      "file_format": "csv",
+      "resource_type": "dataset",
+      "nasa_file_id": "6a28273ad9d7246402cb43e5",
+      "nasa_path": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 37138,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 37138,
+        "directory": false,
+        "files": [],
+        "id": "6a28273ad9d7246402cb43e5",
+        "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "36.27 KB",
+        "sortingCategory": "Analyzed Data",
+        "status": "active",
+        "subcategory": "Reduced Gravity/Simulation/PROC1",
+        "updated": "Tue, 09 Jun 2026 22:46:18 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/PSI-117_Analyzed%20Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+      "sha256": "5d329362ea8b6ff78cded953b289b95c83c45956ae36d136bfd33750a80a5a11",
+      "accessed_at": "2026-11-14T18:35:58.089020Z",
+      "extraction_warnings": [],
+      "parse_details": {
+        "rows": 641,
+        "columns": 7,
+        "column_statistics": [
+          {
+            "numeric_count": 640,
+            "missing_count": 0,
+            "min": 0.0,
+            "max": 1.02748,
+            "mean": 0.47694785119890615
+          },
+          {
+            "numeric_count": 640,
+            "missing_count": 0,
+            "min": 0.00472,
+            "max": 0.500373,
+            "mean": 0.3457667018750002
+          },
+          {
+            "numeric_count": 640,
+            "missing_count": 0,
+            "min": -0.244,
+            "max": 0.292658,
+            "mean": 0.21706773284531275
+          },
+          {
+            "numeric_count": 640,
+            "missing_count": 0,
+            "min": 599.61,
+            "max": 1150.0,
+            "mean": 718.1242531249998
+          },
+          {
+            "numeric_count": 640,
+            "missing_count": 0,
+            "min": 4.07031,
+            "max": 341.248,
+            "mean": 17.67495681249999
+          },
+          {
+            "numeric_count": 640,
+            "missing_count": 0,
+            "min": 1.0,
+            "max": 3292.15,
+            "mean": 108.36395845312495
+          },
+          {
+            "numeric_count": 640,
+            "missing_count": 0,
+            "min": 0.0001,
+            "max": 1.0015,
+            "mean": 0.5516760937500004
+          }
+        ]
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/32c011b254afa035969e.json"
+    },
+    {
+      "id": "res:PSI-117:9c417cfd66cc5c142270",
+      "title": "PSI-117_Analyzed Data_PROCI_2019_Stable_Cool.csv",
+      "filename": "PSI-117_Analyzed Data_PROCI_2019_Stable_Cool.csv",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e7&version=1&studyVersion=2&redirect=true",
+      "file_format": "csv",
+      "resource_type": "dataset",
+      "nasa_file_id": "6a28273ad9d7246402cb43e7",
+      "nasa_path": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2019_Stable_Cool.csv",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 15477,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 15477,
+        "directory": false,
+        "files": [],
+        "id": "6a28273ad9d7246402cb43e7",
+        "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2019_Stable_Cool.csv",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "15.11 KB",
+        "sortingCategory": "Analyzed Data",
+        "status": "active",
+        "subcategory": "Reduced Gravity/Simulation/PROC1",
+        "updated": "Tue, 09 Jun 2026 22:46:18 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/9c417cfd66cc5c142270/PSI-117_Analyzed%20Data_PROCI_2019_Stable_Cool.csv",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/9c417cfd66cc5c142270/PSI-117_Analyzed Data_PROCI_2019_Stable_Cool.csv",
+      "sha256": "c0713c4ad79d1d20832d5ab9582d1bef6d184cff1a86bc3565d059f44998ed6f",
+      "accessed_at": "2026-11-14T18:36:59.812471Z",
+      "extraction_warnings": [],
+      "parse_details": {
+        "rows": 244,
+        "columns": 7,
+        "column_statistics": [
+          {
+            "numeric_count": 243,
+            "missing_count": 0,
+            "min": 0.0,
+            "max": 0.809114,
+            "mean": 0.2727227003905349
+          },
+          {
+            "numeric_count": 243,
+            "missing_count": 0,
+            "min": 0.00478136,
+            "max": 0.500375,
+            "mean": 0.37096946300411515
+          },
+          {
+            "numeric_count": 243,
+            "missing_count": 0,
+            "min": -0.276075,
+            "max": 0.358107,
+            "mean": 0.15628951402057623
+          },
+          {
+            "numeric_count": 243,
+            "missing_count": 0,
+            "min": 599.676,
+            "max": 1152.73,
+            "mean": 790.6428806584361
+          },
+          {
+            "numeric_count": 243,
+            "missing_count": 0,
+            "min": 3.90795,
+            "max": 186.278,
+            "mean": 17.9638070781893
+          },
+          {
+            "numeric_count": 243,
+            "missing_count": 0,
+            "min": 1.0,
+            "max": 3527.28,
+            "mean": 208.63450880658434
+          },
+          {
+            "numeric_count": 243,
+            "missing_count": 0,
+            "min": 9.14456e-05,
+            "max": 1.001500563,
+            "mean": 0.6771129725168725
+          }
+        ]
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/ac9629c9694b3228db8c.json"
+    },
+    {
+      "id": "res:PSI-117:3c69bbed73f148eba760",
+      "title": "PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+      "filename": "PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true",
+      "file_format": "csv",
+      "resource_type": "dataset",
+      "nasa_file_id": "6a28273ad9d7246402cb43e4",
+      "nasa_path": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 745,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 745,
+        "directory": false,
+        "files": [],
+        "id": "6a28273ad9d7246402cb43e4",
+        "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "745.0 B",
+        "sortingCategory": "Analyzed Data",
+        "status": "active",
+        "subcategory": "Reduced Gravity/Simulation/PROC1",
+        "updated": "Tue, 09 Jun 2026 22:46:18 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/3c69bbed73f148eba760/PSI-117_Analyzed%20Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/3c69bbed73f148eba760/PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+      "sha256": "2b3c8edcfbba8916da95d1e13200310b5a30fa2e62dc8d77145a6ac3c206deb3",
+      "accessed_at": "2026-11-14T18:37:59.581999Z",
+      "extraction_warnings": [],
+      "parse_details": {
+        "rows": 7,
+        "columns": 29,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "missing_count": 5,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 3.342,
+            "max": 3.91,
+            "mean": 3.662
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 2.326,
+            "max": 3.412,
+            "mean": 2.9299999999999997
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 1.101,
+            "max": 1.3,
+            "mean": 1.192
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 7,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 5,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 2.0,
+            "max": 7.0,
+            "mean": 4.5
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 0.0,
+            "max": 6.8908,
+            "mean": 3.5173183333333338
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 0.0,
+            "max": 1.4,
+            "mean": 0.7616666666666667
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 7,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 5,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 3.763,
+            "max": 4.395,
+            "mean": 4.059833333333334
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 3.031,
+            "max": 3.963,
+            "mean": 3.5058333333333334
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 0.661,
+            "max": 1.317,
+            "mean": 1.0450000000000002
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 7,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 5,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 2.0,
+            "max": 7.0,
+            "mean": 4.5
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 0.0,
+            "max": 6.98,
+            "mean": 3.533385
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 0.0,
+            "max": 0.94,
+            "mean": 0.485
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 7,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 5,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 4,
+            "missing_count": 2,
+            "min": 4.039,
+            "max": 4.408,
+            "mean": 4.156499999999999
+          },
+          {
+            "numeric_count": 4,
+            "missing_count": 2,
+            "min": 3.554,
+            "max": 4.059,
+            "mean": 3.69025
+          },
+          {
+            "numeric_count": 4,
+            "missing_count": 2,
+            "min": 0.0,
+            "max": 0.497,
+            "mean": 0.22425
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 7,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 5,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 4.039,
+            "max": 6.0,
+            "mean": 4.604333333333333
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 3.69188,
+            "max": 5.97,
+            "mean": 4.377511666666667
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 0.218594,
+            "max": 0.45,
+            "mean": 0.28792466666666666
+          }
+        ]
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/ab77c23a823f544b2a4a.json"
+    },
+    {
+      "id": "res:PSI-117:19d0a5a2326d4ff5c080",
+      "title": "PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+      "filename": "PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e6&version=1&studyVersion=2&redirect=true",
+      "file_format": "csv",
+      "resource_type": "dataset",
+      "nasa_file_id": "6a28273ad9d7246402cb43e6",
+      "nasa_path": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 449,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 449,
+        "directory": false,
+        "files": [],
+        "id": "6a28273ad9d7246402cb43e6",
+        "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "449.0 B",
+        "sortingCategory": "Analyzed Data",
+        "status": "active",
+        "subcategory": "Reduced Gravity/Simulation/PROC1",
+        "updated": "Tue, 09 Jun 2026 22:46:18 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/19d0a5a2326d4ff5c080/PSI-117_Analyzed%20Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/19d0a5a2326d4ff5c080/PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+      "sha256": "4ab6f8c19f40a3349096eab8bdceb0a62611020af15e63f816922b149cfa7001",
+      "accessed_at": "2026-11-14T18:36:59.799484Z",
+      "extraction_warnings": [],
+      "parse_details": {
+        "rows": 7,
+        "columns": 17,
+        "column_statistics": [
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 0.5,
+            "max": 3.0,
+            "mean": 1.3
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 3.48,
+            "max": 3.62,
+            "mean": 3.5580000000000003
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 7,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 0.5,
+            "max": 3.0,
+            "mean": 1.3
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 3.43,
+            "max": 3.94,
+            "mean": 3.696
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 7,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 0.5,
+            "max": 3.0,
+            "mean": 1.25
+          },
+          {
+            "numeric_count": 6,
+            "missing_count": 0,
+            "min": 0.0,
+            "max": 1.89,
+            "mean": 0.605
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 7,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 0.5,
+            "max": 3.0,
+            "mean": 1.3
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 0.03,
+            "max": 1.19,
+            "mean": 0.44199999999999995
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 7,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 0.5,
+            "max": 3.0,
+            "mean": 1.3
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 0.0,
+            "max": 2.29,
+            "mean": 0.8700000000000001
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 7,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 0.5,
+            "max": 3.0,
+            "mean": 1.3
+          },
+          {
+            "numeric_count": 5,
+            "missing_count": 1,
+            "min": 0.0,
+            "max": 0.66,
+            "mean": 0.23600000000000004
+          }
+        ]
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/6ecd7a8570f746e62804.json"
+    },
+    {
+      "id": "res:PSI-117:ac1824d10db2a04fa867",
+      "title": "PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+      "filename": "PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e8&version=1&studyVersion=2&redirect=true",
+      "file_format": "csv",
+      "resource_type": "dataset",
+      "nasa_file_id": "6a28273ad9d7246402cb43e8",
+      "nasa_path": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 89130,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 89130,
+        "directory": false,
+        "files": [],
+        "id": "6a28273ad9d7246402cb43e8",
+        "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "87.04 KB",
+        "sortingCategory": "Analyzed Data",
+        "status": "active",
+        "subcategory": "Reduced Gravity/Simulation/PROC1",
+        "updated": "Tue, 09 Jun 2026 22:46:18 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/ac1824d10db2a04fa867/PSI-117_Analyzed%20Data_PROCI_C12_2019_Three_Stage.csv",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/ac1824d10db2a04fa867/PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+      "sha256": "0e7c8c7e9ea35bd139ba52c9f2118724b8cc9f251d82b9222adf03cb67317809",
+      "accessed_at": "2026-11-14T18:36:59.919673Z",
+      "extraction_warnings": [],
+      "parse_details": {
+        "rows": 572,
+        "columns": 44,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "missing_count": 571,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 205,
+            "missing_count": 366,
+            "min": -0.200806,
+            "max": 1.85565,
+            "mean": 0.91240357102439
+          },
+          {
+            "numeric_count": 205,
+            "missing_count": 366,
+            "min": 0.00966184,
+            "max": 0.997585,
+            "mean": 0.5372452187317077
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 137,
+            "missing_count": 434,
+            "min": 0.00724638,
+            "max": 0.425121,
+            "mean": 0.25771362583941604
+          },
+          {
+            "numeric_count": 137,
+            "missing_count": 434,
+            "min": -0.157895,
+            "max": 23.7895,
+            "mean": 17.11678908029198
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 93,
+            "missing_count": 478,
+            "min": 0.00241546,
+            "max": 0.422705,
+            "mean": 0.2561684258064516
+          },
+          {
+            "numeric_count": 93,
+            "missing_count": 478,
+            "min": -0.0526316,
+            "max": 5.42105,
+            "mean": 2.5987550150537633
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 571,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 363,
+            "missing_count": 208,
+            "min": -0.195652,
+            "max": 2.00725,
+            "mean": 1.0991404775206612
+          },
+          {
+            "numeric_count": 363,
+            "missing_count": 208,
+            "min": 1.84979,
+            "max": 62.8182,
+            "mean": 12.372801294765836
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 571,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 224,
+            "missing_count": 347,
+            "min": -0.099839,
+            "max": 1.99678,
+            "mean": 0.8990970082589287
+          },
+          {
+            "numeric_count": 224,
+            "missing_count": 347,
+            "min": 0.987816,
+            "max": 26.391,
+            "mean": 7.528610633928573
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 118,
+            "missing_count": 453,
+            "min": 0.431562,
+            "max": 1.54589,
+            "mean": 0.9766366949152543
+          },
+          {
+            "numeric_count": 118,
+            "missing_count": 453,
+            "min": 0.0,
+            "max": 33.4256,
+            "mean": 19.9005845338983
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 158,
+            "missing_count": 413,
+            "min": 0.434783,
+            "max": 1.5781,
+            "mean": 1.006359386075949
+          },
+          {
+            "numeric_count": 158,
+            "missing_count": 413,
+            "min": -0.121107,
+            "max": 19.8616,
+            "mean": 12.006487613924062
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 571,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 570,
+            "missing_count": 1,
+            "min": 0.0,
+            "max": 37.6733,
+            "mean": 11.175676578698592
+          },
+          {
+            "numeric_count": 570,
+            "missing_count": 1,
+            "min": 0.0424077,
+            "max": 4.52993,
+            "mean": 3.581742886315793
+          },
+          {
+            "numeric_count": 570,
+            "missing_count": 1,
+            "min": -4.08115,
+            "max": 0.669387,
+            "mean": -0.015951900000000456
+          },
+          {
+            "numeric_count": 570,
+            "missing_count": 1,
+            "min": 734.256,
+            "max": 2661.4,
+            "mean": 1554.4195631578966
+          },
+          {
+            "numeric_count": 570,
+            "missing_count": 1,
+            "min": 1.13893,
+            "max": 18.0038,
+            "mean": 6.872463877192978
+          },
+          {
+            "numeric_count": 570,
+            "missing_count": 1,
+            "min": 1.0,
+            "max": 9.20266,
+            "mean": 5.2494143157894735
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 570,
+            "missing_count": 1,
+            "min": 0.0,
+            "max": 1.860409877,
+            "mean": 0.5518852631535979
+          },
+          {
+            "numeric_count": 570,
+            "missing_count": 1,
+            "min": 8.88105e-05,
+            "max": 1.01334646,
+            "mean": 0.7391424847061403
+          },
+          {
+            "numeric_count": 570,
+            "missing_count": 1,
+            "min": 0.486539301,
+            "max": 81.0171,
+            "mean": 25.139427416098226
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 72,
+            "missing_count": 499,
+            "min": 0.00240282,
+            "max": 1.834843907,
+            "mean": 0.7187866733611111
+          },
+          {
+            "numeric_count": 72,
+            "missing_count": 499,
+            "min": 0.127959053,
+            "max": 31.60588612,
+            "mean": 13.584986137861105
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          },
+          {
+            "numeric_count": 0,
+            "missing_count": 572,
+            "min": null,
+            "max": null,
+            "mean": null
+          }
+        ]
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/ab8c8e2172fd7e078b19.json"
+    },
+    {
+      "id": "res:PSI-117:a79899507b0332ece2ea",
+      "title": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+      "filename": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e3&version=1&studyVersion=2&redirect=true",
+      "file_format": "xlsx",
+      "resource_type": "dataset",
+      "nasa_file_id": "6a28273ad9d7246402cb43e3",
+      "nasa_path": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 11059,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 11059,
+        "directory": false,
+        "files": [],
+        "id": "6a28273ad9d7246402cb43e3",
+        "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "10.8 KB",
+        "sortingCategory": "Analyzed Data",
+        "status": "active",
+        "subcategory": "Reduced Gravity/Simulation",
+        "updated": "Tue, 09 Jun 2026 22:46:18 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/a79899507b0332ece2ea/PSI-117_Analyzed%20Data_ReadMe_List_of_Data.xlsx",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/a79899507b0332ece2ea/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+      "sha256": "a84c138d22545ba9f59c4aa336710741dd48cf3c27823124ed04ac8f91a5f4a0",
+      "accessed_at": "2026-11-14T18:37:01.334468Z",
+      "extraction_warnings": [],
+      "parse_details": {
+        "Sheet1": {
+          "rows": 16,
+          "columns": 11,
+          "column_statistics": [
+            {
+              "numeric_count": 0,
+              "missing_count": 16,
+              "min": null,
+              "max": null,
+              "mean": null
+            },
+            {
+              "numeric_count": 0,
+              "missing_count": 3,
+              "min": null,
+              "max": null,
+              "mean": null
+            },
+            {
+              "numeric_count": 7,
+              "missing_count": 3,
+              "min": 0.5,
+              "max": 4.5,
+              "mean": 3.1428571428571432
+            },
+            {
+              "numeric_count": 5,
+              "missing_count": 3,
+              "min": 1.0,
+              "max": 2.75,
+              "mean": 1.35
+            },
+            {
+              "numeric_count": 9,
+              "missing_count": 3,
+              "min": 0.1,
+              "max": 0.21,
+              "mean": 0.19777777777777777
+            },
+            {
+              "numeric_count": 9,
+              "missing_count": 3,
+              "min": 0.5,
+              "max": 85.0,
+              "mean": 18.248888888888892
+            },
+            {
+              "numeric_count": 1,
+              "missing_count": 11,
+              "min": 0.29,
+              "max": 0.29,
+              "mean": 0.29
+            },
+            {
+              "numeric_count": 0,
+              "missing_count": 16,
+              "min": null,
+              "max": null,
+              "mean": null
+            },
+            {
+              "numeric_count": 0,
+              "missing_count": 6,
+              "min": null,
+              "max": null,
+              "mean": null
+            },
+            {
+              "numeric_count": 0,
+              "missing_count": 6,
+              "min": null,
+              "max": null,
+              "mean": null
+            },
+            {
+              "numeric_count": 0,
+              "missing_count": 7,
+              "min": null,
+              "max": null,
+              "mean": null
+            }
+          ]
+        }
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/afe2b36cb8be331d9eae.json"
+    },
+    {
+      "id": "res:PSI-117:0ae76d77b80d7677dc6c",
+      "title": "PSI-117_metadata_NEWID-13_Effect of External T.zip",
+      "filename": "PSI-117_metadata_NEWID-13_Effect of External T.zip",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43de&version=2&studyVersion=2&redirect=true",
+      "file_format": "zip",
+      "resource_type": "supporting_file",
+      "nasa_file_id": "6a282739d9d7246402cb43de",
+      "nasa_path": "psi-data/PSI-117/metadata/PSI-117_metadata_NEWID-13_Effect of External T.zip",
+      "nasa_file_version": 2,
+      "investigation_version": 2,
+      "size_bytes": 10382,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 10382,
+        "directory": false,
+        "files": [],
+        "id": "6a282739d9d7246402cb43de",
+        "key": "psi-data/PSI-117/metadata/PSI-117_metadata_NEWID-13_Effect of External T.zip",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "10.14 KB",
+        "sortingCategory": "Investigation Metadata Files",
+        "status": "active",
+        "subcategory": null,
+        "updated": "Tue, 09 Jun 2026 22:46:17 GMT",
+        "version": 2,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/0ae76d77b80d7677dc6c/PSI-117_metadata_NEWID-13_Effect%20of%20External%20T.zip",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/0ae76d77b80d7677dc6c/PSI-117_metadata_NEWID-13_Effect of External T.zip",
+      "sha256": "a9698dbe10629c226dc498610d62ab8c5c7f15e2668412e831164ab74df99222",
+      "accessed_at": "2026-11-14T18:43:01.478253Z",
+      "extraction_warnings": [],
+      "parse_details": {
+        "members": 2
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/1dcf4fbc3e163e0eb14d.json"
+    },
+    {
+      "id": "res:PSI-117:8f99f24f48bb7f642d39",
+      "title": "PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+      "filename": "PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true",
+      "file_format": "pdf",
+      "resource_type": "presentation",
+      "nasa_file_id": "6a282739d9d7246402cb43e0",
+      "nasa_path": "psi-data/PSI-117/Presentations/PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 11802360,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 11802360,
+        "directory": false,
+        "files": [],
+        "id": "6a282739d9d7246402cb43e0",
+        "key": "psi-data/PSI-117/Presentations/PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "11.26 MB",
+        "sortingCategory": "Presentations",
+        "status": "active",
+        "subcategory": "",
+        "updated": "Tue, 09 Jun 2026 22:46:17 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/8f99f24f48bb7f642d39/PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/8f99f24f48bb7f642d39/PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+      "sha256": "2fe2fc85aa8ee3ac99a07495d31c49704f32d42bb83ae2ba2481d47c14407c43",
+      "accessed_at": "2026-11-14T18:37:03.037368Z",
+      "extraction_warnings": [
+        "PDF text extracted; raster figures, plotted data and visual-only equations are not digitized."
+      ],
+      "parse_details": {
+        "pages": 18,
+        "pages_without_extractable_text": [],
+        "figure_digitization": false
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/ac8b695669334a5382d8.json"
+    },
+    {
+      "id": "res:PSI-117:5c71c3e87407e09999b1",
+      "title": "PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+      "filename": "PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e1&version=1&studyVersion=2&redirect=true",
+      "file_format": "pdf",
+      "resource_type": "presentation",
+      "nasa_file_id": "6a282739d9d7246402cb43e1",
+      "nasa_path": "psi-data/PSI-117/Presentations/PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 8994674,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 8994674,
+        "directory": false,
+        "files": [],
+        "id": "6a282739d9d7246402cb43e1",
+        "key": "psi-data/PSI-117/Presentations/PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "8.58 MB",
+        "sortingCategory": "Presentations",
+        "status": "active",
+        "subcategory": "",
+        "updated": "Tue, 09 Jun 2026 22:46:17 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/5c71c3e87407e09999b1/PSI-117_Presentations_Oscillatory_Cool%20Flame_TFarouk.pdf",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/5c71c3e87407e09999b1/PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+      "sha256": "8e4625bb2b2a8b17bd19854765815a3dd877e5192a9b94bd001aea2e8cccb4b2",
+      "accessed_at": "2026-11-14T18:43:04.649035Z",
+      "extraction_warnings": [
+        "PDF text extracted; raster figures, plotted data and visual-only equations are not digitized."
+      ],
+      "parse_details": {
+        "pages": 19,
+        "pages_without_extractable_text": [],
+        "figure_digitization": false
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/7b5974d2b35953051c59.json"
+    },
+    {
+      "id": "res:PSI-117:5f691a93f1c9c415d222",
+      "title": "PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+      "filename": "PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43df&version=1&studyVersion=2&redirect=true",
+      "file_format": "pdf",
+      "resource_type": "presentation",
+      "nasa_file_id": "6a282739d9d7246402cb43df",
+      "nasa_path": "psi-data/PSI-117/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 10786102,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 10786102,
+        "directory": false,
+        "files": [],
+        "id": "6a282739d9d7246402cb43df",
+        "key": "psi-data/PSI-117/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "10.29 MB",
+        "sortingCategory": "Presentations",
+        "status": "active",
+        "subcategory": "",
+        "updated": "Tue, 09 Jun 2026 22:46:17 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/5f691a93f1c9c415d222/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/5f691a93f1c9c415d222/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+      "sha256": "9b69c81ba20b7a9af49ca899fb7520ae8e2034f9ceadf94fc6ef22910fc417aa",
+      "accessed_at": "2026-11-14T18:43:06.135413Z",
+      "extraction_warnings": [
+        "PDF text extracted; raster figures, plotted data and visual-only equations are not digitized."
+      ],
+      "parse_details": {
+        "pages": 36,
+        "pages_without_extractable_text": [],
+        "figure_digitization": false
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/1bf2a5d9db9ea60310cc.json"
+    },
+    {
+      "id": "res:PSI-117:8d6ecc3d62315e27ecb7",
+      "title": "PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+      "filename": "PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e2&version=1&studyVersion=2&redirect=true",
+      "file_format": "pdf",
+      "resource_type": "presentation",
+      "nasa_file_id": "6a282739d9d7246402cb43e2",
+      "nasa_path": "psi-data/PSI-117/Presentations/PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 30873451,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 30873451,
+        "directory": false,
+        "files": [],
+        "id": "6a282739d9d7246402cb43e2",
+        "key": "psi-data/PSI-117/Presentations/PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "29.44 MB",
+        "sortingCategory": "Presentations",
+        "status": "active",
+        "subcategory": "",
+        "updated": "Tue, 09 Jun 2026 22:46:17 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/8d6ecc3d62315e27ecb7/PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/8d6ecc3d62315e27ecb7/PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+      "sha256": "99b341840ed423878c622478b3b7817729d0ccf4d772f407f860a91d66972917",
+      "accessed_at": "2026-11-14T18:38:04.589771Z",
+      "extraction_warnings": [
+        "PDF text extracted; raster figures, plotted data and visual-only equations are not digitized."
+      ],
+      "parse_details": {
+        "pages": 22,
+        "pages_without_extractable_text": [],
+        "figure_digitization": false
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/591edff67a2f11f93071.json"
+    },
+    {
+      "id": "res:PSI-117:46f8bcee08a730c949c7",
+      "title": "PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf",
+      "filename": "PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ed&version=1&studyVersion=2&redirect=true",
+      "file_format": "pdf",
+      "resource_type": "report",
+      "nasa_file_id": "6a28273bd9d7246402cb43ed",
+      "nasa_path": "psi-data/PSI-117/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf",
+      "nasa_file_version": 1,
+      "investigation_version": 2,
+      "size_bytes": 8072629,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "entry": {
+        "ChecksumAlgorithm": "",
+        "ETag": "",
+        "StorageClass": "",
+        "bytes_size": 8072629,
+        "directory": false,
+        "files": [],
+        "id": "6a28273bd9d7246402cb43ed",
+        "key": "psi-data/PSI-117/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf",
+        "restricted": false,
+        "restrictedAccess": false,
+        "size": "7.7 MB",
+        "sortingCategory": "Reports",
+        "status": "active",
+        "subcategory": "",
+        "updated": "Tue, 09 Jun 2026 22:46:19 GMT",
+        "version": 1,
+        "visible": true
+      },
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/46f8bcee08a730c949c7/PSI-117_Reports_Dissertation_Combustion%20Behavior%20Of%20Sub-Millimeter%20Sized%20Oxygenated%20And%20N-Alka.pdf",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/46f8bcee08a730c949c7/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf",
+      "sha256": "9ca74dd4eb2e76b1f39c2754363c55eed827444e335ef9956922a6a8f2b4199d",
+      "accessed_at": "2026-11-14T18:38:07.560958Z",
+      "extraction_warnings": [
+        "PDF text extracted; raster figures, plotted data and visual-only equations are not digitized."
+      ],
+      "parse_details": {
+        "pages": 227,
+        "pages_without_extractable_text": [],
+        "figure_digitization": false
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/4b81c9c5424d963a9b2b.json"
+    },
+    {
+      "id": "res:PSI-117:db9af4f6cdd35c0d3d1e",
+      "title": "Extinction characteristics of isolated n-alkane fuel droplets during low temperature cool flame burning in air (2023)",
+      "filename": "document.html",
+      "source_url": "https://doi.org/10.1016/j.proci.2022.07.094",
+      "file_format": "html",
+      "resource_type": "paper",
+      "size_bytes": 172918,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "doi": "10.1016/j.proci.2022.07.094",
+      "publication": {
+        "authorList": "Farouk Tanvir I., Dryer Frederick L.",
+        "comments": [],
+        "doi": "10.1016/j.proci.2022.07.094",
+        "pubMedID": "",
+        "status": {
+          "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+          "annotationValue": "published",
+          "comments": [],
+          "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+          "termSource": "EFO"
+        },
+        "title": "Extinction characteristics of isolated n-alkane fuel droplets during low temperature cool flame burning in air (2023)"
+      },
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "resolved_url": "https://www.sciencedirect.com/science/article/pii/S1540748922001134?via%3Dihub",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/db9af4f6cdd35c0d3d1e/document.html",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/db9af4f6cdd35c0d3d1e/document.html",
+      "sha256": "8b9e685b61175cbd75f88df69a0d57ab67ff5eafdd205720178c5c1be8b04d7d",
+      "accessed_at": "2026-11-14T18:43:47.881045Z",
+      "extraction_warnings": [
+        "HTML text only; full article access is not inferred from a publisher landing page."
+      ],
+      "parse_details": {},
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/3bacdb23bc3944648d4a.json",
+      "download_adapter_version": 2
+    },
+    {
+      "id": "res:PSI-117:2d5158c29653f497a717",
+      "title": "Sub-millimeter sized multi-component jet fuel surrogate droplet combustion: Physicochemical preferential vaporization effects (2021)",
+      "filename": "document.html",
+      "source_url": "https://doi.org/10.1016/j.proci.2020.06.200",
+      "file_format": "html",
+      "resource_type": "paper",
+      "size_bytes": 170303,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "doi": "10.1016/j.proci.2020.06.200",
+      "publication": {
+        "authorList": "Farouk Tanvir I., Won Sang Hee, Dryer Frederick L.",
+        "comments": [],
+        "doi": "10.1016/j.proci.2020.06.200",
+        "pubMedID": "",
+        "status": {
+          "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+          "annotationValue": "published",
+          "comments": [],
+          "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+          "termSource": "EFO"
+        },
+        "title": "Sub-millimeter sized multi-component jet fuel surrogate droplet combustion: Physicochemical preferential vaporization effects (2021)"
+      },
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "resolved_url": "https://www.sciencedirect.com/science/article/pii/S1540748920302911?via%3Dihub",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/2d5158c29653f497a717/document.html",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/2d5158c29653f497a717/document.html",
+      "sha256": "39047d5c68bcdda590669fdf7a2da2bb26f9685df2be995ddd628f291a9cb9cc",
+      "accessed_at": "2026-11-14T18:45:15.761299Z",
+      "extraction_warnings": [
+        "HTML text only; full article access is not inferred from a publisher landing page."
+      ],
+      "parse_details": {},
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/259db295304bc3104eeb.json",
+      "download_adapter_version": 2
+    },
+    {
+      "id": "res:PSI-117:22d91bbfcbf81affa77e",
+      "title": "Initial diameter effects on combustion of unsupported equi-volume n-heptane/iso-octane mixture droplets and the transition to cool flame behavior: Experimental observations and detailed numerical modeling (2020)",
+      "filename": "document.html",
+      "source_url": "https://doi.org/10.1016/j.combustflame.2020.06.012",
+      "file_format": "html",
+      "resource_type": "paper",
+      "size_bytes": 178978,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "doi": "10.1016/j.combustflame.2020.06.012",
+      "publication": {
+        "authorList": "Xu Yuhao, Farouk Tanvir I., Hicks Michael C., Avedisian C. Thomas",
+        "comments": [],
+        "doi": "10.1016/j.combustflame.2020.06.012",
+        "pubMedID": "",
+        "status": {
+          "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+          "annotationValue": "published",
+          "comments": [],
+          "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+          "termSource": "EFO"
+        },
+        "title": "Initial diameter effects on combustion of unsupported equi-volume n-heptane/iso-octane mixture droplets and the transition to cool flame behavior: Experimental observations and detailed numerical modeling (2020)"
+      },
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "resolved_url": "https://www.sciencedirect.com/science/article/pii/S0010218020302297?via%3Dihub",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/22d91bbfcbf81affa77e/document.html",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/22d91bbfcbf81affa77e/document.html",
+      "sha256": "788e6b437effa191131f6b988358b2f9ff0eee27219f3cd7aa37caa59ee448e1",
+      "accessed_at": "2026-11-14T18:43:54.041800Z",
+      "extraction_warnings": [
+        "HTML text only; full article access is not inferred from a publisher landing page."
+      ],
+      "parse_details": {},
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/7f8e6505597d77c932fe.json",
+      "download_adapter_version": 2
+    },
+    {
+      "id": "res:PSI-117:044872bc1b651ab66628",
+      "title": "Oscillatory cool flame combustion behavior of submillimeter sized n-alkane droplet under near limit conditions (2019)",
+      "filename": "document.html",
+      "source_url": "https://doi.org/10.1016/j.proci.2018.05.151",
+      "file_format": "html",
+      "resource_type": "paper",
+      "size_bytes": 175050,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "doi": "10.1016/j.proci.2018.05.151",
+      "publication": {
+        "authorList": "Alam Fahd E., Aghdam Ali Charchi, Dryer Frederick L., Farouk Tanvir I.",
+        "comments": [],
+        "doi": "10.1016/j.proci.2018.05.151",
+        "pubMedID": "",
+        "status": {
+          "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+          "annotationValue": "published",
+          "comments": [],
+          "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+          "termSource": "EFO"
+        },
+        "title": "Oscillatory cool flame combustion behavior of submillimeter sized n-alkane droplet under near limit conditions (2019)"
+      },
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "resolved_url": "https://www.sciencedirect.com/science/article/pii/S1540748918301573?via%3Dihub",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/044872bc1b651ab66628/document.html",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/044872bc1b651ab66628/document.html",
+      "sha256": "92f34be38fa9e3f7ebbe0e3066ab64f0166b3bb5dd6bfcda297ba8ee0dff7da6",
+      "accessed_at": "2026-11-14T18:43:47.862171Z",
+      "extraction_warnings": [
+        "HTML text only; full article access is not inferred from a publisher landing page."
+      ],
+      "parse_details": {},
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/6da438cc94405d4333a3.json",
+      "download_adapter_version": 2
+    },
+    {
+      "id": "res:PSI-117:dca4590322e397cd23f5",
+      "title": "Investigating the role of preferential vaporization during submillimeter sized multicomponent jet fuel surrogate droplet combustion (2019)",
+      "filename": null,
+      "source_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-117#publications/4",
+      "file_format": null,
+      "resource_type": "paper",
+      "size_bytes": null,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "doi": null,
+      "publication": {
+        "authorList": "Farouk T, Won S, Dryer F.",
+        "comments": [],
+        "doi": "",
+        "pubMedID": "",
+        "status": {
+          "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+          "annotationValue": "published",
+          "comments": [],
+          "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+          "termSource": "EFO"
+        },
+        "title": "Investigating the role of preferential vaporization during submillimeter sized multicomponent jet fuel surrogate droplet combustion (2019)"
+      },
+      "access_status": "citation_only",
+      "extraction_status": "metadata_only"
+    },
+    {
+      "id": "res:PSI-117:4bf9262f6374c8cf65ef",
+      "title": "Multi-component jet fuel surrogate droplet combustion: Preferential vaporization behaviors under spray relevant conditions and effects on combustion behaviors (2019)",
+      "filename": null,
+      "source_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-117#publications/5",
+      "file_format": null,
+      "resource_type": "paper",
+      "size_bytes": null,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "doi": null,
+      "publication": {
+        "authorList": "Farouk T, Won S, Dryer F.",
+        "comments": [],
+        "doi": "",
+        "pubMedID": "",
+        "status": {
+          "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+          "annotationValue": "published",
+          "comments": [],
+          "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+          "termSource": "EFO"
+        },
+        "title": "Multi-component jet fuel surrogate droplet combustion: Preferential vaporization behaviors under spray relevant conditions and effects on combustion behaviors (2019)"
+      },
+      "access_status": "citation_only",
+      "extraction_status": "metadata_only"
+    },
+    {
+      "id": "res:PSI-117:9cf10cd5672c9288c2d3",
+      "title": "Cool Flame Combustion of Sub-Millimeter Sized Higher n-Alkane Droplets at Atmospheric Condition (2017)",
+      "filename": null,
+      "source_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-117#publications/6",
+      "file_format": null,
+      "resource_type": "paper",
+      "size_bytes": null,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "doi": null,
+      "publication": {
+        "authorList": "Alam F, Dryer F, Farouk T.",
+        "comments": [],
+        "doi": "",
+        "pubMedID": "",
+        "status": {
+          "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+          "annotationValue": "published",
+          "comments": [],
+          "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+          "termSource": "EFO"
+        },
+        "title": "Cool Flame Combustion of Sub-Millimeter Sized Higher n-Alkane Droplets at Atmospheric Condition (2017)"
+      },
+      "access_status": "citation_only",
+      "extraction_status": "metadata_only"
+    },
+    {
+      "id": "res:PSI-117:5c63b63a12ef909a11cc",
+      "title": "Non-Premixed - Partially Premixed to Diffusive Burning: Initial Transient of Direct Cool Flame Burn (2017)",
+      "filename": null,
+      "source_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-117#publications/7",
+      "file_format": null,
+      "resource_type": "paper",
+      "size_bytes": null,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "doi": null,
+      "publication": {
+        "authorList": "Alam F, Dryer F, Farouk T.",
+        "comments": [],
+        "doi": "",
+        "pubMedID": "",
+        "status": {
+          "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+          "annotationValue": "published",
+          "comments": [],
+          "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+          "termSource": "EFO"
+        },
+        "title": "Non-Premixed - Partially Premixed to Diffusive Burning: Initial Transient of Direct Cool Flame Burn (2017)"
+      },
+      "access_status": "citation_only",
+      "extraction_status": "metadata_only"
+    },
+    {
+      "id": "res:PSI-117:32b8dcfc0972259c4f44",
+      "title": "Oscillatory Cool Flame Combustion Behavior of Submillimeter Sized n-Alkane Droplet under Near Limit Conditions (2018)",
+      "filename": null,
+      "source_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-117#publications/8",
+      "file_format": null,
+      "resource_type": "paper",
+      "size_bytes": null,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "doi": null,
+      "publication": {
+        "authorList": "Alam F, Charchi A, Dryer F, Farouk T.",
+        "comments": [],
+        "doi": "",
+        "pubMedID": "",
+        "status": {
+          "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+          "annotationValue": "published",
+          "comments": [],
+          "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+          "termSource": "EFO"
+        },
+        "title": "Oscillatory Cool Flame Combustion Behavior of Submillimeter Sized n-Alkane Droplet under Near Limit Conditions (2018)"
+      },
+      "access_status": "citation_only",
+      "extraction_status": "metadata_only"
+    },
+    {
+      "id": "res:PSI-117:e38dc13b20ae05f8c176",
+      "title": "Dynamics of cool flames (2019)",
+      "filename": "document.html",
+      "source_url": "https://doi.org/10.1016/j.pecs.2019.100787",
+      "file_format": "html",
+      "resource_type": "paper",
+      "size_bytes": 190211,
+      "discovered_via": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+      "doi": "10.1016/j.pecs.2019.100787",
+      "publication": {
+        "authorList": "Ju Yiguang, Reuter Christopher B., Yehia Omar R., Farouk Tanvir I., Won Sang Hee",
+        "comments": [],
+        "doi": "10.1016/j.pecs.2019.100787",
+        "pubMedID": "",
+        "status": {
+          "@id": "Rd2oZxVKYUnMCRj3tbHg0eGQhfrFmtiEFnMOyDHF",
+          "annotationValue": "published",
+          "comments": [],
+          "termAccession": "http://www.ebi.ac.uk/efo/EFO_0001796",
+          "termSource": "EFO"
+        },
+        "title": "Dynamics of cool flames (2019)"
+      },
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "resolved_url": "https://www.sciencedirect.com/science/article/pii/S0360128518301539?via%3Dihub",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/e38dc13b20ae05f8c176/document.html",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/e38dc13b20ae05f8c176/document.html",
+      "sha256": "0139004cce1e5c0c14508ab937b08f65d3bc308fde0ce93ff3757808bbea19de",
+      "accessed_at": "2026-11-14T18:43:48.348002Z",
+      "extraction_warnings": [
+        "HTML text only; full article access is not inferred from a publisher landing page."
+      ],
+      "parse_details": {},
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/c9658789959f356efc23.json",
+      "download_adapter_version": 2
+    },
+    {
+      "id": "res:PSI-117:5bd21782e657d773a7a6",
+      "title": "Three stage cool flame droplet burning behavior of n-alkane droplets at elevated pressure conditions: Hot, warm and cool flame",
+      "filename": "document.html",
+      "source_url": "https://doi.org/10.1016/j.proci.2018.09.015",
+      "file_format": "html",
+      "resource_type": "paper",
+      "size_bytes": 173568,
+      "doi": "10.1016/j.proci.2018.09.015",
+      "discovered_via": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e3&version=1&studyVersion=2&redirect=true",
+      "discovery_locator": "sheet Sheet1, row 6",
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "resolved_url": "https://www.sciencedirect.com/science/article/pii/S1540748918306205?via%3Dihub",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/5bd21782e657d773a7a6/document.html",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/5bd21782e657d773a7a6/document.html",
+      "sha256": "84c115c72974d20b1603c92a9863f8f2aa21b363dd85bc244ce122c38f14b64c",
+      "accessed_at": "2026-11-14T18:43:54.387373Z",
+      "download_adapter_version": 2,
+      "extraction_warnings": [
+        "HTML text only; full article access is not inferred from a publisher landing page."
+      ],
+      "parse_details": {},
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/99fe60a59222c32dd347.json"
+    },
+    {
+      "id": "res:PSI-117:ecf0d5f528c3ac385fa2",
+      "title": "Low Temperature n-Dodecane Droplet Combustion Experiments Aboard the International Space Station",
+      "filename": "document.html",
+      "source_url": "https://doi.org/10.1007/s12217-024-10115-x",
+      "file_format": "html",
+      "resource_type": "paper",
+      "size_bytes": 447834,
+      "doi": "10.1007/s12217-024-10115-x",
+      "discovered_via": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e3&version=1&studyVersion=2&redirect=true",
+      "discovery_locator": "sheet Sheet1, row 13",
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "resolved_url": "https://link.springer.com/article/10.1007/s12217-024-10115-x?error=cookies_not_supported&code=03dccd90-00f2-499b-b27d-d3e5f8d9fd2d",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/ecf0d5f528c3ac385fa2/document.html",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/ecf0d5f528c3ac385fa2/document.html",
+      "sha256": "ad5a27ff82c59d13323aefefd84bf17016824243a87a4ef1eb8088932d2a25bb",
+      "accessed_at": "2026-11-14T18:43:55.171047Z",
+      "download_adapter_version": 2,
+      "extraction_warnings": [
+        "HTML text only; full article access is not inferred from a publisher landing page."
+      ],
+      "parse_details": {},
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/ecda23db00bc23b1f289.json"
+    },
+    {
+      "id": "res:PSI-117:a25e2fc925a6fb33cc7b",
+      "title": "10.1007/s12217-024-10115-x",
+      "filename": "document.pdf",
+      "source_url": "https://link.springer.com/content/pdf/10.1007/s12217-024-10115-x.pdf",
+      "file_format": "pdf",
+      "resource_type": "paper",
+      "size_bytes": 4819661,
+      "discovered_via": "https://doi.org/10.1007/s12217-024-10115-x",
+      "doi": "10.1007/s12217-024-10115-x",
+      "access_status": "accessible",
+      "extraction_status": "partially_parsed",
+      "resolved_url": "https://link.springer.com/content/pdf/10.1007/s12217-024-10115-x.pdf?error=cookies_not_supported&code=365b4f84-d48c-42a1-b76e-d2d19162a9a1",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/a25e2fc925a6fb33cc7b/document.pdf",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/a25e2fc925a6fb33cc7b/document.pdf",
+      "sha256": "3ae2b483c836916a8f861937e03046d0ca56682c353281a19d5eee7e58513af5",
+      "accessed_at": "2026-11-14T18:45:17.003352Z",
+      "download_adapter_version": 2,
+      "extraction_warnings": [
+        "PDF text extracted; raster figures, plotted data and visual-only equations are not digitized."
+      ],
+      "parse_details": {
+        "pages": 18,
+        "pages_without_extractable_text": [],
+        "figure_digitization": false
+      },
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/c8be8ba2ffd01e2ab430.json"
+    },
+    {
+      "id": "res:PSI-117:ebdf1073067f61822d0b",
+      "title": "Sub-millimeter sized multi-component jet fuel surrogate droplet combustion: Physicochemical preferential vaporization effects (2021)",
+      "filename": "document.html",
+      "source_url": "https://www.sciencedirect.com/science/article/am/pii/S1540748920302911",
+      "file_format": "html",
+      "resource_type": "paper",
+      "size_bytes": 2713,
+      "discovered_via": "https://doi.org/10.1016/j.proci.2020.06.200",
+      "doi": "10.1016/j.proci.2020.06.200",
+      "access_status": "redirect_only",
+      "extraction_status": "inaccessible",
+      "resolved_url": "https://www.sciencedirect.com/science/article/am/pii/S1540748920302911",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/downloads/ebdf1073067f61822d0b/document.html",
+      "sha256": "11490a7bb33e12fdf0e68d5d3f3f4cb71b30e63bb28e0dfb62f8d0fdb515ccd4",
+      "accessed_at": "2026-11-14T18:49:00.866864Z",
+      "download_adapter_version": 2,
+      "extraction_warnings": [
+        "Redirect-only HTML; no scientific article text was obtained at this URL."
+      ],
+      "parse_details": {},
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/3d1c0457d55379c5ac07.json"
+    },
+    {
+      "id": "res:PSI-117:9de29bd5ec2033aa5824",
+      "title": "Extinction characteristics of isolated n-alkane fuel droplets during low temperature cool flame burning in air (2023)",
+      "filename": null,
+      "source_url": "https://www.sciencedirect.com/science/article/am/pii/S1540748922001134",
+      "file_format": null,
+      "resource_type": "paper",
+      "size_bytes": null,
+      "discovered_via": "https://doi.org/10.1016/j.proci.2022.07.094",
+      "doi": "10.1016/j.proci.2022.07.094",
+      "access_status": "inaccessible",
+      "extraction_status": "inaccessible",
+      "error": "HTTPError: HTTP 403"
+    },
+    {
+      "id": "res:PSI-117:966651289727daee546b",
+      "title": "Oscillatory cool flame combustion behavior of submillimeter sized n-alkane droplet under near limit conditions (2019)",
+      "filename": null,
+      "source_url": "https://www.sciencedirect.com/science/article/am/pii/S1540748918301573",
+      "file_format": null,
+      "resource_type": "paper",
+      "size_bytes": null,
+      "discovered_via": "https://doi.org/10.1016/j.proci.2018.05.151",
+      "doi": "10.1016/j.proci.2018.05.151",
+      "access_status": "inaccessible",
+      "extraction_status": "inaccessible",
+      "error": "HTTPError: HTTP 403"
+    },
+    {
+      "id": "res:PSI-117:8b186a77af915cae857f",
+      "title": "Dynamics of cool flames (2019)",
+      "filename": null,
+      "source_url": "https://www.sciencedirect.com/science/article/am/pii/S0360128518301539",
+      "file_format": null,
+      "resource_type": "paper",
+      "size_bytes": null,
+      "discovered_via": "https://doi.org/10.1016/j.pecs.2019.100787",
+      "doi": "10.1016/j.pecs.2019.100787",
+      "access_status": "inaccessible",
+      "extraction_status": "inaccessible",
+      "error": "HTTPError: HTTP 403"
+    },
+    {
+      "id": "res:PSI-117:4f322ee362b658939c99",
+      "title": "i_Investigation.txt",
+      "filename": "i_Investigation.txt",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43de&version=2&studyVersion=2&redirect=true#member=i_Investigation.txt",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/archive_members/1dcf4fbc3e163e0eb14d/i_Investigation.txt",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/archive_members/1dcf4fbc3e163e0eb14d/i_Investigation.txt",
+      "file_format": "txt",
+      "resource_type": "supporting_file",
+      "size_bytes": 10088,
+      "sha256": "f86a1b97fa011cb02c8c52d1e05184840d4f020197cf60462a942654612fb27a",
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "parent_resource_id": "res:PSI-117:0ae76d77b80d7677dc6c",
+      "discovered_via": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43de&version=2&studyVersion=2&redirect=true",
+      "extraction_warnings": [],
+      "parse_details": {},
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/76a19e1a2c1ff5026ec5.json"
+    },
+    {
+      "id": "res:PSI-117:d2aee778e921d172713b",
+      "title": "s_PSI-117.txt",
+      "filename": "s_PSI-117.txt",
+      "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43de&version=2&studyVersion=2&redirect=true#member=s_PSI-117.txt",
+      "storage_uri": "file:///Users/sarth/Documents/NASA%20Space%20Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/archive_members/1dcf4fbc3e163e0eb14d/s_PSI-117.txt",
+      "local_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/archive_members/1dcf4fbc3e163e0eb14d/s_PSI-117.txt",
+      "file_format": "txt",
+      "resource_type": "supporting_file",
+      "size_bytes": 56,
+      "sha256": "cb9374159b9b01a83bfe53a0b8ba1a602793df86f298e0ad222615c55d200135",
+      "access_status": "accessible",
+      "extraction_status": "parsed",
+      "parent_resource_id": "res:PSI-117:0ae76d77b80d7677dc6c",
+      "discovered_via": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43de&version=2&studyVersion=2&redirect=true",
+      "extraction_warnings": [],
+      "parse_details": {},
+      "parsed_path": "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg/output/PSI-117/parsed/e55c89faeed0d30d0578.json"
+    }
+  ]
+}
