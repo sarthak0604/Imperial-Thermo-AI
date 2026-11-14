@@ -1,1 +1,20 @@
 .venv/
+
+# Generated Python caches and local search outputs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+/graph-embeddings.json
+/*.log
+/query.json
+/my_query.json
+/search-results.json
+/local-results.json
+/global-results.json
+/airflow_fixed.json
+/test_*.json
+/fresh_typo_test.json
+/typo_test.json
+/vector-*-results.json
+/parser_*evaluation*.json
+/parser_v2_baseline.json
