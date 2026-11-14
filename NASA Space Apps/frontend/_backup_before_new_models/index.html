@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flame in Freefall</title>
+  <link rel="stylesheet" href="css/skeleton.css">
+</head>
+<body class="minimal">
+  <main>
+    <div id="home">
+      <form id="ask-form" class="ask-box">
+        <div class="ask-row">
+          <label for="q" class="visually-hidden">Ask a question</label>
+          <input id="q" name="q" type="text" placeholder="Ask a question…" autocomplete="off">
+          <button type="submit">Ask</button>
+        </div>
+        <div class="persona-pick" role="radiogroup" aria-label="I am a">
+          <button type="button" role="radio" aria-checked="false" data-persona="student">Student</button>
+          <button type="button" role="radio" aria-checked="false" data-persona="professor">Professor</button>
+          <button type="button" role="radio" aria-checked="false" data-persona="engineer">Engineer</button>
+        </div>
+      </form>
+    </div>
+    <div id="dashboard"></div>
+    <div id="focus" hidden></div>
+  </main>
+  <!-- data -->
+  <script src="data/reference.js"></script>
+  <script src="data/investigations.js"></script>
+  <script src="data/models.js"></script>
+  <script src="data/knowledge.js"></script>
+  <script src="data/project.js"></script>
+  <script src="data/mock_answers.js"></script>
+  <!-- app -->
+  <script src="js/util.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="data/model_outputs.js"></script>
+  <script src="js/model_widgets.js"></script>
+  <script src="js/text_widgets.js"></script>
+  <script src="js/library.js"></script>
+  <script src="js/tiler.js"></script>
+  <script src="js/mockgen.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
