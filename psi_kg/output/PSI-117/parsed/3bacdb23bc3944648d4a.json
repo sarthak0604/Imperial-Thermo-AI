@@ -1,0 +1,19 @@
+{
+  "id": "res:PSI-117:db9af4f6cdd35c0d3d1e",
+  "title": "Extinction characteristics of isolated n-alkane fuel droplets during low temperature cool flame burning in air (2023)",
+  "source_url": "https://doi.org/10.1016/j.proci.2022.07.094",
+  "resource_type": "paper",
+  "sha256": "8b9e685b61175cbd75f88df69a0d57ab67ff5eafdd205720178c5c1be8b04d7d",
+  "parser_version": "1.0.4",
+  "sections": [
+    {
+      "locator": "HTML body",
+      "text": "Proceedings of the Combustion Institute\nDate:\n2023\nPage\ns\n:\n2471-2481\nVolume:\nVolume 39, Issue 2\nView accessibility information\nPublished by:\nElsevier\nPublished by\nShow\nmore\nResearch article\nFull text access\nGet rights and content\nExtinction characteristics of isolated n-alkane fuel droplets during low temperature cool flame burning in air\nAuthor links open overlay panel\nTanvir I.\nFarouk\na\n,\nFrederick L.\nDryer\na\nb\nShow\nmore\nView\nPDF\nDownload full issue\nView Open Manuscript\nCite\nAdd to Mendeley\nShare\n10.1016/j.proci.2022.07.094\nMore actions\nAbstract\nLarge carbon number\nn\n-alkanes are a notable component in all real transportation fuels, and their chemical structure fosters substantial low temperature kinetic reactivity. Normal alkanes have been studied in various canonical configurations but rarely in systems with strong coupling between low temperature chemistry and transport for pure as well as for multi-component\nn\n-alkane mixtures. The\nFl\name\nEx\ntinguishment (FLEX) experiments onboard the International Space Station provided a unique platform for investigating low temperature multi-phase\nn\n-alkane and\niso\n-alkane combustion. Among the many interesting phenomena experimentally observed, cool flame extinction can occur, accompanied by the concurrent formation of a surrounding cloud of condensed vapor. In this work we conduct numerical simulations of high and low temperature combustion of large, initially single-component\nn\n-heptane,\nn\n-decane and\nn\n-dodecane droplets. The role of initial droplet diameter, operating pressure, and\nn\n-alkyl carbon number on the extinction of hot and low temperature flames is investigated and compared against the available experimental data. While all three fuels exhibit similar hot flame behavior, cool flame activity increases with the carbon number, resulting in an increased cool flame temperature and decreased extinction diameter. Multi-cyclic “hot/cool flame transitions” are found in air as pressure is slightly increased above one atmosphere. The cyclic behaviors correspond to continuously varying hot and cool flame transitions across the high, low, and negative temperature coefficient (NTC) kinetic regimes. Further increase in pressure results in a second stage steady “\nWarm flame\n” transition. The extinction of hot and cool flame has a strong non-linear dependence on ambient pressure but as the hot flame extinction diameter increases with pressure the extinction diameter of the cool flame decreases. The computational results are compared with a recent asymptotic analysis of FLEX\nn\n-alkane cool flames.\nKeywords\nCool flame extinction\n;\nDroplet combustion\n;\nHot-cool flame transition\n;\nn-Alkane\nView Abstract\nRecommended articles\nNo articles found.\n© 2022 The Combustion Institute. Published by Elsevier Inc. All rights reserved."
+    }
+  ],
+  "details": {},
+  "warnings": [
+    "HTML text only; full article access is not inferred from a publisher landing page."
+  ],
+  "status": "partially_parsed"
+}
