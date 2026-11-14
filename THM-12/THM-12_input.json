@@ -1,0 +1,88 @@
+{
+  "request": {
+    "topic": "droplet_evaporation",
+    "analysis": "estimate_multicomponent_evaporation",
+    "scenario": {
+      "profile_id": "illustrative_methanol_water",
+      "liquid_fractions": {
+        "methanol": 0.5,
+        "water": 0.5
+      },
+      "t_surface_k": 298.15,
+      "pressure_kpa": 101.325,
+      "ambient_partial_pressures_kpa": {
+        "methanol": 0,
+        "water": 2
+      },
+      "liquid_transport": {
+        "radius_m": 0.001,
+        "circulation_speed_m_s": 0.00001,
+        "mass_diffusivity_m2_s": 1e-9
+      },
+      "time_evolution": {
+        "initial_total_moles": 0.0001,
+        "duration_s": 30
+      }
+    }
+  },
+  "evidence": {
+    "profiles": [
+      {
+        "id": "illustrative_methanol_water",
+        "validity": {
+          "t_surface_k": [
+            293,
+            303
+          ],
+          "pressure_kpa": [
+            101.325,
+            101.325
+          ]
+        },
+        "components": [
+          {
+            "id": "methanol",
+            "activity_coefficient": 1,
+            "reference_temperature_k": 298.15,
+            "reference_vapor_pressure_kpa": 16.94,
+            "vaporization_enthalpy_j_mol": 37600,
+            "transfer_conductance_mol_s_kpa": 2e-7
+          },
+          {
+            "id": "water",
+            "activity_coefficient": 1,
+            "reference_temperature_k": 298.15,
+            "reference_vapor_pressure_kpa": 3.167,
+            "vaporization_enthalpy_j_mol": 44000,
+            "transfer_conductance_mol_s_kpa": 2e-7
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "type": "illustrative_with_published_pure_component_properties",
+      "illustrative": true,
+      "notes": [
+        "NIST vapor-pressure correlations at 298.15 K rounded and vaporization enthalpies approximated. Unit activity coefficients, gas transfer conductances and other scenario quantities are illustrative. The cited study gives methanol/water droplet context, independent of the example."
+      ],
+      "generated_with": "OpenAI Codex"
+    },
+    "sources": [
+      {
+        "role": "methanol_properties",
+        "url": "https://webbook.nist.gov/cgi/cbook.cgi?Name=methanol&cTP=on",
+        "locator": "Phase-change data and Antoine vapor-pressure coefficients"
+      },
+      {
+        "role": "water_properties",
+        "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=4",
+        "locator": "Phase-change data and Antoine vapor-pressure coefficients"
+      },
+      {
+        "role": "droplet_context",
+        "url": "https://doi.org/10.1016/0010-2180(95)00179-4",
+        "locator": "Methanol/water droplet combustion and uptake"
+      }
+    ]
+  }
+}
