@@ -6,12 +6,16 @@ readme = "README.md"
 authors = [
     { name = "Liem-Fairbairn", email = "lf725@ic.ac.uk" }
 ]
-requires-python = ">=3.15"
-dependencies = []
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.15.0",
+    "torch>=2.15.0",
+    "transformers>=5.23.0",
+]
 
 [project.scripts]
 imperial-thermo-ai = "imperial_thermo_ai:main"
 
 [build-system]
-requires = ["uv_build>=0.13.8,<0.14.0"]
+requires = ["uv_build>=0.13.0,<0.14.0"]
 build-backend = "uv_build"
