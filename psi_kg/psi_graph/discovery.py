@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 
 from . import nasa_access as nasa
 from .common import digest, file_hash, now, read_json, write_json
+from .transfer import download_file
 
 
 def resolver_url(accession, version, entry):
@@ -62,6 +63,7 @@ def discover(url, output, refresh=False):
                 "Presentations": "presentation",
                 "Reports": "report",
                 "Analyzed Data": "dataset",
+                "Raw Data": "dataset",
                 "metadata": "metadata",
             }.get(entry.get("sortingCategory"), "supporting_file"),
             nasa_file_id=entry["id"],
@@ -247,7 +249,7 @@ def download_one(record, metadata, output):
                 folder = output / "downloads" / digest(version_key)
                 path = folder / record["filename"]
                 if not path.exists():
-                    path = nasa.download_file(
+                    path = download_file(
                         metadata["accession"], metadata["version"], entry, folder
                     )
                 if path.stat().st_size != entry.get("bytes_size", path.stat().st_size):
@@ -281,13 +283,16 @@ def download_one(record, metadata, output):
     return []
 
 
-def download_all(resources, metadata, output, workers=4):
+def download_all(resources, metadata, output, workers=4, storage_output=None):
     seen = {r["source_url"] for r in resources}
     pending = resources[:]
     while pending:
         children = []
         with ThreadPoolExecutor(max_workers=workers) as pool:
-            jobs = {pool.submit(download_one, r, metadata, output): r for r in pending}
+            jobs = {
+                pool.submit(download_one, r, metadata, storage_output or output): r
+                for r in pending
+            }
             for future in as_completed(jobs):
                 r = jobs[future]
                 children.extend(future.result())

@@ -282,7 +282,7 @@ def extract_archive(record, output):
     return children
 
 
-def parse_resources(resources, metadata, source_url, output):
+def parse_resources(resources, metadata, source_url, output, storage_output=None):
     documents = []
     # Metadata fields remain separately locatable; omit duplicate file revision lists.
     sections = [
@@ -330,7 +330,7 @@ def parse_resources(resources, metadata, source_url, output):
         cache = output / "parsed" / (digest(record["id"]) + ".json")
         try:
             if record["file_format"] == "zip":
-                children = extract_archive(record, output)
+                children = extract_archive(record, storage_output or output)
                 for child in children:
                     if child["id"] not in seen:
                         resources.append(child)

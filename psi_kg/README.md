@@ -10,6 +10,16 @@ The delivered graph is `output/PSI-117/knowledge_graph.json`. It follows the req
 
 The graph contains **12 documented study units**, including numerical studies, experimental comparisons, and supporting studies in the uploaded dissertation. NASA's metadata has an empty `experiments` array; these are **not 12 newly discovered NASA experiment records or invented flight runs**. Physical run names are used only where the source states them. Summaries distinguish simulations from measurements. `MEASURES` includes documented computed observables because the agreed schema has no separate simulation-output relation.
 
+## Original-file retention
+
+New runs process original scientific files temporarily and remove those temporary copies after parsing, including extracted archive members. The graph, extracted text, numerical profiles, source URLs, source hashes and evidence remain saved. This still transfers file contents over the network and requires temporary disk capacity; it is not a metadata-only mode. The current parser batches downloads before parsing, so peak temporary storage can still approach the full study plus expanded archives.
+
+Use the normal `uv run psi-graph-manage` command locally or the same Cloud Run command. Add `--keep-originals` to `psi-graph` or `psi-graph-manage` (after the cloud launcher's `--` separator) to retain original downloads explicitly. The option applies to future downloads; existing retained files are not deleted automatically.
+
+For discarded originals, Resource `storage_uri` is null and `source_url` remains the retrieval reference. Manifest records carry `original_retention: discarded` and verification status before removal. `--stage generate` can reuse retained extracted documents without original files. Re-running preparation can fetch originals again. A coverage report distinguishes files present now from files fetched and verified before intentional removal.
+
+Cleanup runs on normal completion and Python exceptions. A force-killed process or machine shutdown can leave a `.originals-*` scratch directory; remove it only after confirming its run has stopped. On Cloud Run, scratch storage stays on the mounted `/data` volume, not container memory.
+
 ## Setup and run with uv
 
 Run commands from this directory:
@@ -50,7 +60,7 @@ uv run psi-graph-manage 'https://psi.nasa.gov/physci/repo/data/investigations/PS
 uv run python test_graph.py 'your scientific question' --graph graphs/my-study.json
 ```
 
-Each managed run keeps its source files, manifest, extraction caches, and scientific validation report in a separate `runs/<accession>-<unique>/<accession>/` directory. Keep these directories: graph storage references point into them. A `<graph-name>.publication.json` sidecar records combined node counts, all investigation URLs, the graph hash, and the latest run location. Old per-investigation reports still describe their original runs; they are not combined-graph validation reports. A combined graph keeps its original top-level `graph_id` and seed `source_url`; use each Investigation node's `source_url` to enumerate studies. Existing evidence retains its original review status, while the incoming study receives the configured API review. Repeated managed runs currently use isolated caches; `psi-graph --stage generate` remains available for reusing a specific prepared run.
+Each managed run keeps its extracted documents, manifest, extraction caches, and scientific validation report in a separate `runs/<accession>-<unique>/<accession>/` directory. Keep these directories for provenance. Original files are retained only with `--keep-originals`. A `<graph-name>.publication.json` sidecar records combined node counts, all investigation URLs, the graph hash, and the latest run location. Old per-investigation reports still describe their original runs; they are not combined-graph validation reports. A combined graph keeps its original top-level `graph_id` and seed `source_url`; use each Investigation node's `source_url` to enumerate studies. Existing evidence retains its original review status, while the incoming study receives the configured API review. Repeated managed runs currently use isolated caches; `psi-graph --stage generate` remains available for reusing a specific prepared run.
 
 Download and parse an investigation **without an API key**:
 
@@ -166,7 +176,7 @@ for experiment in result['experiments']:
 
 Evidence includes exact excerpts, source URLs and PDF page / spreadsheet sheet-row / CSV row / metadata-field locators. Whitespace normalization is allowed; invented and paraphrased quotations are rejected. API exports require a separate LLM entailment review; quote matching alone is not sufficient for `verified`. Delivered edges use `origin: assistant_source_review` so the different execution mode is visible inside the exact agreed edge structure. Detailed node evidence and findings/caveats are sidecars, rather than incompatible new graph fields or node types.
 
-`Resource.source_url` points to a stable NASA file resolver, a real DOI, a discovered publisher link, or the NASA citation metadata where no paper URL exists. Temporary signed download URLs are not persisted. `storage_uri` is an absolute local `file://` URI; `local_path` in the manifest points to the same cached file. An archive-member URL carries `#member=...` and its manifest record includes `parent_resource_id`; retrieve the parent ZIP and member or use `storage_uri`. DOI/article/PDF resources can represent different retrievable formats of the same publication; identical source URLs are deduplicated.
+`Resource.source_url` points to a stable NASA file resolver, a real DOI, a discovered publisher link, or the NASA citation metadata where no paper URL exists. Temporary signed download URLs are not persisted. `storage_uri` is null when temporary originals were removed. With `--keep-originals`, it is an absolute local `file://` URI; `local_path` in the manifest points to the same cached file. An archive-member URL carries `#member=...` and its manifest record includes `parent_resource_id`; retrieve the parent ZIP and member or use `storage_uri`. DOI/article/PDF resources can represent different retrievable formats of the same publication; identical source URLs are deduplicated.
 
 If moving the cache to another computer, regenerate/rebase its local paths; the original source URLs remain usable. The original binaries are outside the graph, and each manifest file has its SHA-256 and byte size. Inaccessible papers and citation-only records remain visible with truthful status and no fabricated full-text content. Some discovered resources are unconnected because the reviewed material does not establish a specific experiment association.
 
@@ -205,3 +215,7 @@ uv run ruff check psi_graph tests test_graph.py
 `nasa_access.py`: original website adapter; `discovery.py`: download/crawl/cache; `parsing.py`: format readers and profiles; `providers.py`: provider-neutral API layer; `science.py`: typed extraction/synthesis; `graph.py`: exact contract and evidence checks; `reviewed.py`: explicit reviewed-artifact import; `retrieval.py`: graph traversal; `pipeline.py`: CLI.
 
 No global GraphRAG, cross-investigation graph, dashboard, commits, deployment, or unrelated repository changes are included.
+
+## Cloud execution and file coverage
+
+See [CLOUD_RUN.md](CLOUD_RUN.md) for `uv run google --file cloud_pipeline.py`, persistent cloud storage, choosing another Python file, and explicit raw-data coverage limits. Use `uv run psi-coverage INVESTIGATION_URL` to reconcile the latest NASA inventory with downloaded files.

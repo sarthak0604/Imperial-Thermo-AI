@@ -9,6 +9,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 from .common import now, read_json, write_json
+from .coverage import audit
 from .discovery import (
     discover,
     discover_document_links,
@@ -20,6 +21,7 @@ from .nasa_access import investigation_id
 from .parsing import parse_resources
 from .providers import LLM
 from .science import extract_all, synthesize
+from .storage import source_storage
 
 
 def report(output, graph, resources, validation, rejected, verdicts, failures, usage):
@@ -64,6 +66,10 @@ def report(output, graph, resources, validation, rejected, verdicts, failures, u
             "Retrieval is lexical concept/synonym matching plus graph traversal, not global GraphRAG.",
         ],
     )
+    if any(r.get("original_retention") == "discarded" for r in resources):
+        report["limitations"].append(
+            "Original files were processed temporarily and removed. Evidence validation uses retained extracted text; source URLs and SHA-256 hashes remain available."
+        )
     write_json(output / "validation_report.json", report)
     text = [
         "# Validation report",
@@ -137,6 +143,11 @@ def main():
         "--refresh", action="store_true", help="Refresh NASA metadata/file list"
     )
     parser.add_argument("--workers", type=int, default=4)
+    parser.add_argument(
+        "--keep-originals",
+        action="store_true",
+        help="Keep original downloaded files; default uses temporary files and preserves extracted text only",
+    )
     args = parser.parse_args()
     load_dotenv(args.env_file, override=False)
     args.provider = args.provider or os.environ.get("LLM_PROVIDER", "gemini")
@@ -150,15 +161,30 @@ def main():
     if args.stage in ("all", "prepare"):
         metadata, resources = discover(args.url, output, args.refresh)
         resources = discover_open_versions(resources, metadata, output)
-        download_all(resources, metadata, output, args.workers)
-        documents = parse_resources(resources, metadata, args.url, output)
-        while added := discover_document_links(documents, resources, metadata):
-            resources.extend(added)
-            download_all(resources, metadata, output, args.workers)
-            documents = parse_resources(resources, metadata, args.url, output)
+        with source_storage(
+            output, resources, args.url, args.keep_originals
+        ) as raw_output:
+            download_all(
+                resources, metadata, output, args.workers, storage_output=raw_output
+            )
+            documents = parse_resources(
+                resources, metadata, args.url, output, storage_output=raw_output
+            )
+            while added := discover_document_links(documents, resources, metadata):
+                resources.extend(added)
+                download_all(
+                    resources, metadata, output, args.workers, storage_output=raw_output
+                )
+                documents = parse_resources(
+                    resources, metadata, args.url, output, storage_output=raw_output
+                )
         write_json(
             output / "resources_manifest.json",
             dict(source_url=args.url, generated_at=now(), resources=resources),
+        )
+        write_json(
+            output / "coverage_report.json",
+            audit(read_json(output / "files.json"), resources),
         )
         if args.stage == "prepare":
             print(

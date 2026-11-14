@@ -23,3 +23,8 @@ runs/
 graphs/
 **/backups/
 *.json.lock
+
+*.publish-lock/
+cloud-env.json
+
+!output/PSI-117/coverage_report.json
