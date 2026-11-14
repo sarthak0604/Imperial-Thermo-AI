@@ -1,0 +1,71 @@
+{
+  "request": {
+    "topic": "flammability",
+    "analysis": "estimate_limiting_oxygen",
+    "scenario": {
+      "calibration_id": "bass_ii_pmma_pooled_nominal_air",
+      "material_id": "cast_pmma",
+      "setup_id": "bass_ii_pmma_axial_6_36_mm",
+      "gravity": "orbital microgravity",
+      "flow_direction": "concurrent",
+      "pressure_kPa": 101.325,
+      "air_speed_m_s": 0.02,
+      "ambient_oxygen_pct": 15
+    }
+  },
+  "evidence": {
+    "calibrations": [
+      {
+        "id": "bass_ii_pmma_pooled_nominal_air",
+        "material_id": "cast_pmma",
+        "setup_id": "bass_ii_pmma_axial_6_36_mm",
+        "gravity": "orbital microgravity",
+        "flow_direction": "concurrent",
+        "pressure_range_kPa": [
+          101.325,
+          101.325
+        ],
+        "air_speed_range_m_s": [
+          0.00212,
+          0.212
+        ],
+        "boundary_axis": "forced_stretch_rate_s_inv",
+        "axis_units_per_m_s": 471.6981132075472,
+        "quench": {
+          "form": "exponential",
+          "base_pct": 13.3,
+          "amplitude_pct": 7,
+          "decay_per_axis_unit": 0.8
+        },
+        "blowoff": {
+          "form": "linear",
+          "intercept_pct": 13.3,
+          "slope_pct_per_axis_unit": 0.02
+        },
+        "combination_rule": "shared_baseline_excess_sum",
+        "shared_baseline_pct": 13.3,
+        "reference_1g": {
+          "oxygen_pct": 16,
+          "label": "1g upward burning comparison reported for quarter-inch rod. Different test configuration.",
+          "source_url": "https://ntrs.nasa.gov/api/citations/20160000593/downloads/20160000593.pdf"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "role": "quench_and_blowoff_fits",
+        "url": "https://ntrs.nasa.gov/api/citations/20150008961/downloads/20150008961.pdf#page=6",
+        "locator": "Olson and Ferkul, Figure 4, dashed fits to grouped BASS-II data with drop tower comparisons."
+      }
+    ],
+    "provenance": {
+      "illustrative": false,
+      "notes": [
+        "Rod radius is 3.18 mm for the speed-to-stretch conversion. The study pooled three rod sizes and found size-dependent limits.",
+        "101.325 kPa is the nominal pressure assumed for the example. The speed interval corresponds to forced stretch from 1 to 100 per second.",
+        "The 1g value uses the separately reported quarter-inch rod comparison and is not an identical flow configuration."
+      ],
+      "generated_with": "OpenAI Codex"
+    }
+  }
+}
