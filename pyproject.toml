@@ -9,6 +9,11 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "accelerate>=1.15.0",
+    "beautifulsoup4>=4.12",
+    "httpx>=0.28",
+    "pydantic>=2.10",
+    "pypdf>=5",
+    "python-dotenv>=1",
     "torch>=2.15.0",
     "transformers>=5.23.0",
 ]
@@ -21,3 +26,9 @@ imperial-thermo-ai = "imperial_thermo_ai.main:main"
 [build-system]
 requires = ["uv_build>=0.13.0,<0.14.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.11",
+]
