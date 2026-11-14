@@ -2,7 +2,7 @@
 
 Install NumPy and SciPy, then run the example from the repository root:
 
-    python THM-16/thm_16.py THM-16/THM-16_request.json THM-16/THM-16_evidence.json
+    python THM-16/thm_16.py THM-16/THM-16_input.json
 
 The example inputs are synthetic. This solver was developed with SI assistance
 from OpenAI Codex.
@@ -142,8 +142,10 @@ def read_quantity(record, key, unit):
     return quantity["value"]
 
 
-def run_request(request, evidence):
-    """Run one THM-16 scenario in the units used by the bundled JSON example."""
+def run_request(request, evidence=None):
+    """Accept the request/evidence envelope or the two existing Python arguments."""
+    if evidence is None:
+        request, evidence = request["request"], request["evidence"]
     if request["topic"] != "ignition" or request["analysis"] != "estimate_ignition":
         raise ValueError("Expected an ignition estimate request.")
     scenario = request["scenario"]
@@ -209,14 +211,16 @@ def run_request(request, evidence):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("request", type=Path)
-    parser.add_argument("evidence", type=Path)
+    parser.add_argument("input", type=Path, help="JSON file containing request and evidence")
+    parser.add_argument("legacy_evidence", nargs="?", type=Path, help=argparse.SUPPRESS)
     args = parser.parse_args()
     try:
-        request = json.loads(args.request.read_text(encoding="utf-8"))
-        evidence = json.loads(args.evidence.read_text(encoding="utf-8"))
-        print(json.dumps(run_request(request, evidence), allow_nan=False, indent=2))
-    except (OSError, KeyError, ValueError, TypeError, ImportError) as error:
+        payload = json.loads(args.input.read_text(encoding="utf-8-sig"))
+        if args.legacy_evidence is not None:
+            evidence = json.loads(args.legacy_evidence.read_text(encoding="utf-8-sig"))
+            payload = {"request": payload, "evidence": evidence}
+        print(json.dumps(run_request(payload), allow_nan=False, indent=2))
+    except (OSError, KeyError, ValueError, TypeError, AttributeError, ImportError) as error:
         parser.error(str(error))
 
 

@@ -14,7 +14,7 @@ py -3 -m venv .venv
 Run the example with the project interpreter.
 
 ```powershell
-.\.venv\Scripts\python.exe THM-16/thm_16.py THM-16/THM-16_request.json THM-16/THM-16_evidence.json
+.\.venv\Scripts\python.exe THM-16/thm_16.py THM-16/THM-16_input.json
 ```
 
 In VS Code, open the repository folder and select `.venv\Scripts\python.exe` with **Python: Select Interpreter** so the editor can find the installed packages.
@@ -23,18 +23,20 @@ The command prints JSON. In the example, the heated face reaches the 600 K crite
 
 ## Inputs for the dashboard
 
-- [THM-16_request.json](THM-16_request.json) is the scenario the AI and backend assemble from the prompt. It names one material and one setup and gives ambient temperature in K, pressure in kPa, oxygen in percent, air speed in cm/s, incident heat flux in kW/m², and heating time in s. Follow the example's exact unit strings.
-- [THM-16_evidence.json](THM-16_evidence.json) is the format for retrieved or reviewed model inputs. Supply the matching setup, heat-transfer coefficients, material properties, and a calibration with a source and applicable conditions. The current example shows the required structure using synthetic values.
+The backend assembles one [input JSON](THM-16_input.json) with these sections.
+
+- `request` is the scenario the AI and backend assemble from the prompt. It names one material and one setup and gives ambient temperature in K, pressure in kPa, oxygen in percent, air speed in cm/s, incident heat flux in kW/m², and heating time in s. Follow the example's exact unit strings.
+- `evidence` is the format for retrieved or reviewed model inputs. Supply the matching setup, heat-transfer coefficients, material properties, and a calibration with a source and applicable conditions. The current example shows the required structure using synthetic values.
 - [thm_16.py](thm_16.py) validates the scenario against the supplied evidence. Pressure and oxygen must match one calibration, and air speed, temperature, heat flux, and duration must fall within its bounds. The calibration supplies the surface-temperature criterion. The setup supplies the heat-transfer coefficients.
 
-The backend can load the two payloads as Python dictionaries and call the solver from the repository root.
+The backend can pass the parsed input object to the solver from the repository root.
 
 ```python
 from importlib import import_module
 
 run_request = import_module("THM-16.thm_16").run_request
 
-result = run_request(request, evidence)
+result = run_request(payload)
 ```
 
 ## Equations

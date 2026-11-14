@@ -1,7 +1,7 @@
 """THM-11 reduced model for two-stage n-alkane droplet burning.
 
 Run from the repository root with Python 3.10+ (standard library only):
-    python THM-11/thm_11.py THM-11/THM-11_request.json THM-11/THM-11_evidence.json
+    python THM-11/thm_11.py THM-11/THM-11_input.json
 
 Each stage follows D^2(t) = D^2(start) - K * (t - start). The hot-stage
 endpoint is supplied by the evidence. Cool extinction uses the approximate
@@ -121,8 +121,10 @@ def matches_conditions(profile, setup_id, pressure, oxygen, diameter):
     )
 
 
-def run_request(request, evidence):
-    """Run the dashboard request with matching, externally supplied evidence."""
+def run_request(request, evidence=None):
+    """Accept the request/evidence envelope or the two existing Python arguments."""
+    if evidence is None:
+        request, evidence = request["request"], request["evidence"]
     if request["topic"] != "droplet_combustion" or request["analysis"] != "estimate_cool_flame":
         raise ValueError("Expected a droplet_combustion / estimate_cool_flame request.")
     scenario = request["scenario"]
@@ -233,15 +235,17 @@ def run_request(request, evidence):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("request", type=Path)
-    parser.add_argument("evidence", type=Path)
+    parser.add_argument("input", type=Path, help="JSON file containing request and evidence")
+    parser.add_argument("legacy_evidence", nargs="?", type=Path, help=argparse.SUPPRESS)
     args = parser.parse_args()
     try:
-        request = json.loads(args.request.read_text(encoding="utf-8"))
-        evidence = json.loads(args.evidence.read_text(encoding="utf-8"))
-        output = run_request(request, evidence)
+        payload = json.loads(args.input.read_text(encoding="utf-8-sig"))
+        if args.legacy_evidence is not None:
+            evidence = json.loads(args.legacy_evidence.read_text(encoding="utf-8-sig"))
+            payload = {"request": payload, "evidence": evidence}
+        output = run_request(payload)
         print(json.dumps(output, allow_nan=False, indent=2))
-    except (OSError, KeyError, ValueError, TypeError, ArithmeticError) as error:
+    except (OSError, KeyError, ValueError, TypeError, AttributeError, ArithmeticError) as error:
         parser.error(str(error))
 
 
