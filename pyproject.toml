@@ -1,7 +1,7 @@
 [project]
 name = "imperial-thermo-ai"
 version = "0.1.0"
-description = "Add your description here"
+description = "Thermo AI workloads and validated graph-search service requests"
 readme = "README.md"
 authors = [
     { name = "Liem-Fairbairn", email = "lf725@ic.ac.uk" }
@@ -17,16 +17,27 @@ dependencies = [
     "python-dotenv>=1",
     "torch>=2.15.0",
     "transformers>=5.23.0",
+    "openai>=2,<3",
 ]
+
+[project.optional-dependencies]
+plotting = ["matplotlib>=3.9,<4"]
 
 [project.scripts]
 main = "imperial_thermo_ai.main:main"
 google = "imperial_thermo_ai.cloud:main"
 imperial-thermo-ai = "imperial_thermo_ai.main:main"
+thermo-plan = "request_planner.__main__:main"
+thermo-search = "request_planner.mini_graph:main"
+thermo-plot = "request_planner.plotting:main"
 
 [build-system]
-requires = ["uv_build>=0.13.0,<0.14.0"]
-build-backend = "uv_build"
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["imperial_thermo_ai", "request_planner"]
+package-dir = {imperial_thermo_ai = "src/imperial_thermo_ai", request_planner = "request_planner"}
 
 [dependency-groups]
 dev = [

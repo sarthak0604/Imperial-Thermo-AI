@@ -1,0 +1,216 @@
+{
+  "query_id": "psi-mini-868e69a9b50f",
+  "files": [
+    {
+      "file_id": "psi25-experimental-table",
+      "investigation_id": "PSI-25",
+      "run_ids": [],
+      "title": "PSI-25_Experimental table_BASS-II.csv",
+      "role": "measurement",
+      "media_type": "text/csv",
+      "size_bytes": 16590,
+      "retrieval_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=PSI-25_Experimental%20table_BASS-II.csv&version=1&redirect=true",
+      "source_page_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+      "variables": [
+        {
+          "name": "PI",
+          "unit": null,
+          "numeric": false
+        },
+        {
+          "name": "Test #",
+          "unit": null,
+          "numeric": false
+        },
+        {
+          "name": "Date",
+          "unit": null,
+          "numeric": false
+        },
+        {
+          "name": "GMT",
+          "unit": null,
+          "numeric": true
+        },
+        {
+          "name": "Sample #",
+          "unit": null,
+          "numeric": false
+        },
+        {
+          "name": "Fuel Sample Material",
+          "unit": null,
+          "numeric": false
+        },
+        {
+          "name": "Flow restrictor",
+          "unit": null,
+          "numeric": true
+        },
+        {
+          "name": "Fan display",
+          "unit": null,
+          "numeric": false
+        },
+        {
+          "name": "Air display",
+          "unit": null,
+          "numeric": false
+        },
+        {
+          "name": "Radiometer gain   (1000   250   50   10)",
+          "unit": null,
+          "numeric": false
+        },
+        {
+          "name": "Total Frames Shot",
+          "unit": null,
+          "numeric": false
+        },
+        {
+          "name": "Calibrated  initial O2 % by vol ",
+          "unit": "% by vol",
+          "numeric": true
+        },
+        {
+          "name": "Calibrated final O2 % by vol",
+          "unit": "% by vol",
+          "numeric": false
+        },
+        {
+          "name": "Initial CO2 % by vol",
+          "unit": "% by vol",
+          "numeric": false
+        },
+        {
+          "name": "Final CO2 % by vol",
+          "unit": "% by vol",
+          "numeric": false
+        },
+        {
+          "name": "Initial CO (ppm)",
+          "unit": "ppm",
+          "numeric": false
+        },
+        {
+          "name": "Final CO (ppm)",
+          "unit": "ppm",
+          "numeric": false
+        }
+      ],
+      "encoding": "utf-8-sig",
+      "data_notes": [
+        "Inspected CSV header and 129 data rows. Exact header whitespace is preserved.",
+        "Numeric flags describe the entire raw column: true requires every row to be a finite number with no blanks. False can mean mixed/missing cells, not absence of measurements.",
+        "This is an experiment-level table spanning multiple tests; no run-level condition is assigned to the whole file.",
+        "The server reports application/vnd.ms-excel, but the downloaded bytes are a comma-separated text table; media_type is normalized to text/csv.",
+        "cp1252 successfully decodes this non-UTF-8 file; this is an inspection choice, not a PSI-declared encoding.",
+        "Units are copied literally from headers. In particular, Burning rate; mm is not silently reinterpreted as mm^2/s."
+      ],
+      "conditions": {},
+      "related_file_ids": [
+        "psi25-t23-video",
+        "psi25-science-requirements",
+        "psi25-flame-image",
+        "psi25-fan-calibration"
+      ],
+      "match_reason": "Matched terms: airflow, bass, ii. Graph path: PSI-25 --has_file--> psi25-experimental-table. Other related files share the investigation, not necessarily a run."
+    },
+    {
+      "file_id": "psi25-fan-calibration",
+      "investigation_id": "PSI-25",
+      "run_ids": [],
+      "title": "PSI-25_Reference Data_Fan calibration data.xlsx",
+      "role": "measurement",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 23973,
+      "retrieval_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=PSI-25_Reference%20Data_Fan%20calibration%20data.xlsx&version=2&redirect=true",
+      "source_page_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "Workbook content has not been inspected; variable names and units remain unknown."
+      ],
+      "conditions": {},
+      "related_file_ids": [
+        "psi25-experimental-table",
+        "psi25-t23-video",
+        "psi25-science-requirements",
+        "psi25-flame-image"
+      ],
+      "match_reason": "Matched terms: airflow, bass, calibration, ii. Graph path: PSI-25 --has_file--> psi25-fan-calibration. Other related files share the investigation, not necessarily a run."
+    },
+    {
+      "file_id": "psi25-flame-image",
+      "investigation_id": "PSI-25",
+      "run_ids": [],
+      "title": "PSI-25_Representative Image(s)_BASS-II_flame testing.jpg",
+      "role": "image",
+      "media_type": "image/jpeg",
+      "size_bytes": 37525,
+      "retrieval_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=PSI-25_Representative%20Image%28s%29_BASS-II_flame%20testing.jpg&version=1&redirect=true",
+      "source_page_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "File type was checked from the downloaded byte signature; document/image scientific content has not been interpreted."
+      ],
+      "conditions": {},
+      "related_file_ids": [
+        "psi25-experimental-table",
+        "psi25-t23-video",
+        "psi25-science-requirements",
+        "psi25-fan-calibration"
+      ],
+      "match_reason": "Matched terms: airflow, bass, ii. Graph path: PSI-25 --has_file--> psi25-flame-image. Other related files share the investigation, not necessarily a run."
+    },
+    {
+      "file_id": "psi25-science-requirements",
+      "investigation_id": "PSI-25",
+      "run_ids": [],
+      "title": "PSI-25_Science Documents_BASS-II_SRD.pdf",
+      "role": "documentation",
+      "media_type": "application/pdf",
+      "size_bytes": 1108340,
+      "retrieval_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=PSI-25_Science%20Documents_BASS-II_SRD.pdf&version=2&redirect=true",
+      "source_page_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "File type was checked from the downloaded byte signature; document/image scientific content has not been interpreted."
+      ],
+      "conditions": {},
+      "related_file_ids": [
+        "psi25-experimental-table",
+        "psi25-t23-video",
+        "psi25-flame-image",
+        "psi25-fan-calibration"
+      ],
+      "match_reason": "Matched terms: airflow, bass, ii. Graph path: PSI-25 --has_file--> psi25-science-requirements. Other related files share the investigation, not necessarily a run."
+    },
+    {
+      "file_id": "psi25-t23-video",
+      "investigation_id": "PSI-25",
+      "run_ids": [],
+      "title": "PSI-25_Raw Data_BASS_GMT190_SAMPLE_133_TEST_T23_Still_Sequence.mp4",
+      "role": "video",
+      "media_type": "video/mp4",
+      "size_bytes": 323810,
+      "retrieval_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=PSI-25_Raw%20Data_BASS_GMT190_SAMPLE_133_TEST_T23_Still_Sequence.mp4&version=2&redirect=true",
+      "source_page_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "The filename identifies GMT190, sample 133, test T23, and a Still_Sequence. The CSV includes T23, GMT 190, sample 133m. No stronger correspondence or complete video coverage is assumed."
+      ],
+      "conditions": {},
+      "related_file_ids": [
+        "psi25-experimental-table",
+        "psi25-science-requirements",
+        "psi25-flame-image",
+        "psi25-fan-calibration"
+      ],
+      "match_reason": "Matched terms: airflow, bass, ii, video. Graph path: PSI-25 --has_file--> psi25-t23-video. Other related files share the investigation, not necessarily a run."
+    }
+  ]
+}
