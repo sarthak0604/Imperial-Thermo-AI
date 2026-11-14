@@ -14,7 +14,9 @@ dependencies = [
 ]
 
 [project.scripts]
-imperial-thermo-ai = "imperial_thermo_ai:main"
+main = "imperial_thermo_ai.main:main"
+google = "imperial_thermo_ai.cloud:main"
+imperial-thermo-ai = "imperial_thermo_ai.main:main"
 
 [build-system]
 requires = ["uv_build>=0.13.0,<0.14.0"]
