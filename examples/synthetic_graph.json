@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "graph_id": "synthetic-parser-validation",
+  "metadata": {
+    "synthetic": true,
+    "provenance": "SI-generated test fixture. These nodes, measurements, and relationships are not NASA observations.",
+    "purpose": "Exercise graph navigation, missing metadata, units, and same-resource filtering."
+  },
+  "nodes": [
+    {"id":"inv:test-flame","type":"Investigation","properties":{"title":"Synthetic flame investigation","summary":"Artificial validation of flame propagation and ignition searches.","keywords":["flame spread","ignition"],"doi":null,"source_url":null}},
+    {"id":"inv:test-smoke","type":"Investigation","properties":{"title":"Synthetic smoke investigation","summary":"Artificial smoke detection validation.","keywords":["smoke","aerosol"],"doi":null,"source_url":null}},
+    {"id":"exp:micro-flame","type":"Experiment","properties":{"title":"Synthetic microgravity flame spread test","summary":"Artificial PMMA sheet flame propagation experiment with spark ignition.","keywords":["PMMA","acrylic","flame spread","ignition"],"conditions":{"gravity":"microgravity","oxygen_concentration":{"value":20,"unit":"%","basis":"volume","stage":"initial","scope":"chamber"}},"methods":[],"source_url":null}},
+    {"id":"exp:normal-flame","type":"Experiment","properties":{"title":"Synthetic normal gravity flame spread test","summary":"Artificial PMMA sheet flame propagation experiment.","keywords":["PMMA","flame spread"],"conditions":{"gravity":"normal gravity","oxygen_concentration":{"value":22,"unit":"%","basis":"volume","stage":"initial","scope":"chamber"}},"methods":[],"source_url":null}},
+    {"id":"exp:unknown-oxygen","type":"Experiment","properties":{"title":"Synthetic microgravity flame spread test without oxygen metadata","summary":"Artificial flame propagation experiment with unknown atmosphere.","keywords":["flame spread"],"conditions":{"gravity":"microgravity","oxygen_concentration":null},"methods":[],"source_url":null}},
+    {"id":"exp:scalar-oxygen","type":"Experiment","properties":{"title":"Synthetic flame spread test with ambiguous oxygen units","summary":"Artificial flame propagation experiment with an oxygen value whose unit and basis are absent.","keywords":["flame spread"],"conditions":{"gravity":"microgravity","oxygen_concentration":20},"methods":[],"source_url":null}},
+    {"id":"exp:smoke","type":"Experiment","properties":{"title":"Synthetic microgravity smoke experiment","summary":"Artificial smoke aerosol particle size measurements for detection research.","keywords":["smoke","particle size","detection"],"conditions":{"gravity":"microgravity","oxygen_concentration":null},"methods":[],"source_url":null}},
+    {"id":"concept:flame-propagation","type":"Concept","properties":{"name":"Flame propagation","synonyms":["flame spread","flame spreading"],"description":"Synthetic vocabulary entry for flame propagation."}},
+    {"id":"concept:ignition","type":"Concept","properties":{"name":"Ignition","synonyms":["igniting"],"description":"Synthetic vocabulary entry for ignition."}},
+    {"id":"concept:smoke-formation","type":"Concept","properties":{"name":"Smoke formation","synonyms":["smoke generation"],"description":"Synthetic vocabulary entry for smoke formation."}},
+    {"id":"var:flame-spread-rate","type":"Variable","properties":{"name":"Flame spread rate","symbol":null,"unit":"mm/s","role":"dependent"}},
+    {"id":"var:particle-size","type":"Variable","properties":{"name":"Particle size","symbol":null,"unit":"nm","role":"dependent"}},
+    {"id":"res:micro-paper","type":"Resource","properties":{"title":"Synthetic flame paper","filename":"synthetic_flame.pdf","resource_type":"paper","file_format":"pdf","summary":"Synthetic flame propagation methodology.","keywords":["flame spread"],"variables":["flame_spread_rate"],"source_url":null,"storage_uri":null,"access_status":"not_verified","size_bytes":null}},
+    {"id":"res:micro-data","type":"Resource","properties":{"title":"Synthetic flame measurements","filename":"synthetic_flame.csv","resource_type":"dataset","file_format":"csv","summary":"Synthetic flame spread measurements.","keywords":["flame spread"],"variables":["flame_spread_rate"],"source_url":null,"storage_uri":null,"access_status":"not_verified","size_bytes":null}},
+    {"id":"res:normal-paper","type":"Resource","properties":{"title":"Synthetic ground flame paper","filename":"synthetic_ground.pdf","resource_type":"paper","file_format":"pdf","summary":"Synthetic normal gravity flame methodology.","keywords":["flame spread"],"variables":["flame_spread_rate"],"source_url":null,"storage_uri":null,"access_status":"not_verified","size_bytes":null}},
+    {"id":"res:smoke-data","type":"Resource","properties":{"title":"Synthetic smoke measurements","filename":"synthetic_smoke.csv","resource_type":"dataset","file_format":"csv","summary":"Synthetic smoke particle size measurements.","keywords":["smoke","particle size"],"variables":["particle_size"],"source_url":null,"storage_uri":null,"access_status":"not_verified","size_bytes":null}}
+  ],
+  "edges": [
+    {"id":"e:01","source":"inv:test-flame","target":"exp:micro-flame","type":"CONTAINS","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:02","source":"inv:test-flame","target":"exp:normal-flame","type":"CONTAINS","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:03","source":"inv:test-flame","target":"exp:unknown-oxygen","type":"CONTAINS","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:04","source":"inv:test-flame","target":"exp:scalar-oxygen","type":"CONTAINS","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:05","source":"inv:test-smoke","target":"exp:smoke","type":"CONTAINS","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:06","source":"exp:micro-flame","target":"concept:flame-propagation","type":"STUDIES","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:07","source":"exp:normal-flame","target":"concept:flame-propagation","type":"STUDIES","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:08","source":"exp:unknown-oxygen","target":"concept:flame-propagation","type":"STUDIES","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:09","source":"exp:scalar-oxygen","target":"concept:flame-propagation","type":"STUDIES","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:10","source":"exp:micro-flame","target":"concept:ignition","type":"STUDIES","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:11","source":"exp:smoke","target":"concept:smoke-formation","type":"STUDIES","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:12","source":"exp:micro-flame","target":"var:flame-spread-rate","type":"MEASURES","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:13","source":"exp:normal-flame","target":"var:flame-spread-rate","type":"MEASURES","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:14","source":"exp:smoke","target":"var:particle-size","type":"MEASURES","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:15","source":"exp:micro-flame","target":"res:micro-paper","type":"HAS_RESOURCE","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:16","source":"exp:micro-flame","target":"res:micro-data","type":"HAS_RESOURCE","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:17","source":"exp:normal-flame","target":"res:normal-paper","type":"HAS_RESOURCE","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}},
+    {"id":"e:18","source":"exp:smoke","target":"res:smoke-data","type":"HAS_RESOURCE","properties":{"origin":"synthetic","verification_status":"needs_review","evidence":[]}}
+  ]
+}
