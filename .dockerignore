@@ -5,5 +5,7 @@
 !uv.lock
 !src/
 !src/**
+!request_planner/
+!request_planner/**
 **/__pycache__/
 **/*.pyc

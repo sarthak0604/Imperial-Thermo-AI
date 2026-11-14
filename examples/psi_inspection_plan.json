@@ -1,0 +1,12 @@
+{
+  "action": "inspect_files",
+  "selected_file_ids": ["psi25-experimental-table", "psi25-fan-calibration"],
+  "requested_asset_ids": ["psi25-t23-video"],
+  "operation": null,
+  "explanation": "BASS-II's experimental table has fan/air display columns, and the fan-calibration workbook may help interpret them. Inspect both before choosing an airflow calculation. A T23 still-sequence video is available from the same investigation.",
+  "warnings": [
+    "The display columns contain mixed text and numbers; do not treat them as calibrated airflow speed.",
+    "The table covers multiple tests. The selected video filename identifies T23 and sample 133; it is not a video of every table row.",
+    "This is a saved SI-generated example plan, not a live LLM response or a scientific result."
+  ]
+}

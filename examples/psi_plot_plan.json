@@ -1,0 +1,19 @@
+{
+  "action": "calculate",
+  "selected_file_ids": ["psi69-experimental-table"],
+  "requested_asset_ids": [],
+  "operation": {
+    "name": "plot_relationship",
+    "file_id": "psi69-experimental-table",
+    "parameters": {
+      "x": "Ambient pressure; mmHg",
+      "y": "O initial ambient composition; mole fraction"
+    }
+  },
+  "explanation": "Both exact FLEX table columns have declared units and finite numeric values in all inspected rows. A scatter plot can show the recorded test conditions without aggregation or conversion.",
+  "warnings": [
+    "The table spans different fuels and conditions; this plot does not isolate a physical cause or establish a safety limit.",
+    "Repeated test conditions can overlap on the plot.",
+    "Saved SI-generated example plan; no live LLM was used for this demonstration."
+  ]
+}

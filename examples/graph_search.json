@@ -1,0 +1,41 @@
+{
+  "query_id": "synthetic-query-001",
+  "files": [
+    {
+      "file_id": "demo-measurements",
+      "investigation_id": "synthetic-investigation",
+      "run_ids": ["synthetic-run-01"],
+      "title": "SYNTHETIC DEMO: fabric sample measurements, not NASA observations",
+      "role": "measurement",
+      "media_type": "text/csv",
+      "size_bytes": 2048,
+      "retrieval_url": "https://example.org/synthetic/measurements.csv",
+      "variables": [
+        {"name": "airflow_speed", "unit": "cm/s", "numeric": true},
+        {"name": "flame_spread_rate", "unit": "mm/s", "numeric": true}
+      ],
+      "conditions": {"material": "demo fabric", "gravity_regime": "microgravity"},
+      "related_file_ids": ["demo-video", "demo-pdf"]
+    },
+    {
+      "file_id": "demo-video",
+      "investigation_id": "synthetic-investigation",
+      "run_ids": ["synthetic-run-01"],
+      "title": "SYNTHETIC DEMO: placeholder experiment video",
+      "role": "video",
+      "media_type": "video/mp4",
+      "size_bytes": 5000000,
+      "retrieval_url": "https://example.org/synthetic/video.mp4"
+    },
+    {
+      "file_id": "demo-pdf",
+      "investigation_id": "synthetic-investigation",
+      "title": "SYNTHETIC DEMO: placeholder documentation",
+      "role": "documentation",
+      "media_type": "application/pdf",
+      "size_bytes": 100000,
+      "retrieval_url": "https://example.org/synthetic/documentation.pdf"
+    }
+  ]
+}
+

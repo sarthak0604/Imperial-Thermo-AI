@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "status": "completed",
+  "query_id": "psi-mini-9fead898973a",
+  "rows_plotted": 274,
+  "rows_dropped": 0,
+  "source_sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96",
+  "artifacts": [
+    {
+      "artifact_id": "plot-bed85f0a97f2",
+      "kind": "plot",
+      "title": "FLEX: recorded CSV values",
+      "media_type": "image/png",
+      "path": "plot.png",
+      "evidence_type": "derived_visualization",
+      "source_file_ids": [
+        "psi69-experimental-table"
+      ],
+      "source_page_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+      "source_doi": "10.60555/mbq8-0451",
+      "operation": {
+        "name": "plot_relationship",
+        "file_id": "psi69-experimental-table",
+        "parameters": {
+          "x": "Ambient pressure; mmHg",
+          "y": "O initial ambient composition; mole fraction"
+        }
+      }
+    }
+  ],
+  "warnings": [
+    "The table spans different fuels and conditions; this plot does not isolate a physical cause or establish a safety limit.",
+    "Repeated test conditions can overlap on the plot.",
+    "Saved SI-generated example plan; no live LLM was used for this demonstration.",
+    "Different test conditions; no causal inference or safety limit.",
+    "Repeated points overlap; a marker need not represent a unique test condition."
+  ],
+  "generated_by": "SI-assisted Python plotter; source measurements are from NASA PSI"
+}

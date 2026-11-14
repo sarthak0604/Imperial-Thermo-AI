@@ -1,0 +1,13 @@
+{
+  "action": "calculate",
+  "selected_file_ids": ["demo-measurements"],
+  "requested_asset_ids": ["demo-video"],
+  "operation": {
+    "name": "plot_relationship",
+    "file_id": "demo-measurements",
+    "parameters": {"x": "airflow_speed", "y": "flame_spread_rate"}
+  },
+  "explanation": "The selected CSV declares both numeric columns with units; the video belongs to the same run.",
+  "warnings": ["Synthetic example metadata and placeholder URLs; not NASA observations."]
+}
+
