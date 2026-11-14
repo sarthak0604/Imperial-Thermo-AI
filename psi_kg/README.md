@@ -1,6 +1,6 @@
 # NASA PSI single-investigation knowledge graph
 
-This isolated Python/uv project reuses the repository's original `test.py` PSI downloader (copied unchanged to `psi_graph/nasa_access.py`). It extends those working metadata, file-tree and streaming download functions with resource discovery, parsing, configurable LLM extraction, evidence validation, and graph retrieval. The parent repository's existing application and dependency files are not changed.
+This isolated Python/uv project reuses the canonical NASA downloader in `src/psi_graph/nasa_access.py`. It extends those working metadata, file-tree and streaming download functions with resource discovery, parsing, configurable LLM extraction, evidence validation, and graph retrieval. The parent repository's existing application and dependency files are not changed.
 
 ## Delivered PSI-117 result and execution status
 
@@ -57,7 +57,7 @@ uv run psi-graph-manage 'https://psi.nasa.gov/physci/repo/data/investigations/PS
 uv run psi-graph-manage 'https://psi.nasa.gov/physci/repo/data/investigations/PSI-117' \
   --mode update --graph graphs/my-study.json
 
-uv run python test_graph.py 'your scientific question' --graph graphs/my-study.json
+uv run psi-search 'your scientific question' --graph graphs/my-study.json
 ```
 
 Each managed run keeps its extracted documents, manifest, extraction caches, and scientific validation report in a separate `runs/<accession>-<unique>/<accession>/` directory. Keep these directories for provenance. Original files are retained only with `--keep-originals`. A `<graph-name>.publication.json` sidecar records combined node counts, all investigation URLs, the graph hash, and the latest run location. Old per-investigation reports still describe their original runs; they are not combined-graph validation reports. A combined graph keeps its original top-level `graph_id` and seed `source_url`; use each Investigation node's `source_url` to enumerate studies. Existing evidence retains its original review status, while the incoming study receives the configured API review. Repeated managed runs currently use isolated caches; `psi-graph --stage generate` remains available for reusing a specific prepared run.
@@ -104,7 +104,7 @@ Results are saved in `output/<accession>/`, where accession is the PSI number in
 uv run psi-graph "$PSI_URL" --stage validate --output output
 printf 'Accession from that URL (PSI- followed by its number): '
 read -r PSI_ACCESSION
-uv run python test_graph.py 'your scientific question' \
+uv run psi-search 'your scientific question' \
   --graph "output/$PSI_ACCESSION/knowledge_graph.json"
 ```
 
@@ -148,10 +148,10 @@ Official protocol references: [Gemini structured output](https://ai.google.dev/g
 No provider or network is needed:
 
 ```sh
-uv run python test_graph.py \
+uv run psi-search \
   'Why do ozone-assisted n-heptane cool flames oscillate?'
 
-uv run python test_graph.py \
+uv run psi-search \
   --cases output/PSI-117/retrieval_cases.json \
   --output output/PSI-117/retrieval_results.json
 ```
@@ -209,7 +209,7 @@ The bundle checks the source-content fingerprint and per-claim review hashes. It
 
 ```sh
 uv run pytest -q
-uv run ruff check psi_graph tests test_graph.py
+uv run ruff check src/psi_graph tests
 ```
 
 `nasa_access.py`: original website adapter; `discovery.py`: download/crawl/cache; `parsing.py`: format readers and profiles; `providers.py`: provider-neutral API layer; `science.py`: typed extraction/synthesis; `graph.py`: exact contract and evidence checks; `reviewed.py`: explicit reviewed-artifact import; `retrieval.py`: graph traversal; `pipeline.py`: CLI.
@@ -218,4 +218,4 @@ No global GraphRAG, cross-investigation graph, dashboard, commits, deployment, o
 
 ## Cloud execution and file coverage
 
-See [CLOUD_RUN.md](CLOUD_RUN.md) for `uv run google --file cloud_pipeline.py`, persistent cloud storage, choosing another Python file, and explicit raw-data coverage limits. Use `uv run psi-coverage INVESTIGATION_URL` to reconcile the latest NASA inventory with downloaded files.
+See [CLOUD_RUN.md](CLOUD_RUN.md) for `uv run google --file src/psi_graph/cloud_pipeline.py`, persistent cloud storage, choosing another Python file, and explicit raw-data coverage limits. Use `uv run psi-coverage INVESTIGATION_URL` to reconcile the latest NASA inventory with downloaded files.

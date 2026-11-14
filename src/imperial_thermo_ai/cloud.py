@@ -40,8 +40,8 @@ def main() -> int:
     if gcloud is None:
         parser.error("Install the Google Cloud CLI and run gcloud auth login.")
 
-    root = Path(__file__).resolve().parents[2]
-    if not (root / "Dockerfile").is_file():
+    root = Path.cwd().resolve()
+    if not (root / "Dockerfile").is_file() or not (root / "pyproject.toml").is_file():
         parser.error("Run this command with uv from the repository checkout.")
 
     command = [

@@ -18,3 +18,10 @@ __pycache__/
 /vector-*-results.json
 /parser_*evaluation*.json
 /parser_v2_baseline.json
+*.egg-info/
+.env
+service-request.json
+.DS_Store
+~$*.xlsx
+build/
+dist/

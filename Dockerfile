@@ -13,4 +13,4 @@ COPY README.md ./
 COPY src/ ./src/
 RUN uv sync --locked --no-dev --no-editable
 
-CMD ["/app/.venv/bin/main"]
+ENTRYPOINT ["/app/.venv/bin/thermo-execute"]

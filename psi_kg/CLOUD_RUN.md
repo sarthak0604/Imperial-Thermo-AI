@@ -33,13 +33,13 @@ export PSI_MODEL="your-available-model-id"
 gcloud builds submit --project "$PSI_PROJECT" --tag "$PSI_IMAGE" .
 ```
 
-Build context excludes downloaded data, local credentials, caches, and graphs. The image includes Python files in the project root and `psi_graph/`. If selecting a script in another directory, add that directory to both ignore-file allowlists before building. All dependencies must be declared in this project's pyproject/lock files.
+Build context excludes downloaded data, local credentials, caches, and graphs. The image includes the installed `psi_graph` package and sources under `src/psi_graph/`. If selecting a script in another directory, add that directory to both ignore-file allowlists before building. All dependencies must be declared in this project's pyproject/lock files.
 
 Preview a job for the chosen Python file:
 
 ```sh
 uv run google \
-  --file cloud_pipeline.py \
+  --file src/psi_graph/cloud_pipeline.py \
   --project "$PSI_PROJECT" --region "$PSI_REGION" --image "$PSI_IMAGE" \
   --service-account "$PSI_SERVICE_ACCOUNT" \
   --network "$PSI_NETWORK" --subnet "$PSI_SUBNET" \
@@ -50,7 +50,7 @@ uv run google \
   --mode create --graph /data/graphs/my-graph.json --runs /data/runs
 ```
 
-Add `--deploy` **before** the standalone `--` to deploy and execute. Deployment reuses the supplied image; rebuild it after code edits. Everything after the separator goes to your chosen Python file. Change `--file` to another included script; that script is responsible for using `/data` for persistent output and for avoiding interactive input. The supplied `cloud_pipeline.py` requires explicit create/update mode and graph path.
+Add `--deploy` **before** the standalone `--` to deploy and execute. Deployment reuses the supplied image; rebuild it after code edits. Everything after the separator goes to your chosen Python file. Change `--file` to another included script; that script is responsible for using `/data` for persistent output and for avoiding interactive input. The supplied `src/psi_graph/cloud_pipeline.py` requires explicit create/update mode and graph path.
 
 To expand the same cloud graph, use `--mode update`, the same `--graph`, and your new study URL. A local graph is not uploaded automatically. Copy it and its source files to the share and rebase local storage paths before using it in the cloud, or create a fresh cloud graph.
 
