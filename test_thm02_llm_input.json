@@ -1,0 +1,92 @@
+{
+  "_instructions": {
+    "purpose": "Test input JSON simulating an LLM semantic router extracting NASA PSI combustion parameters for THM-02.",
+    "how_to_run_cli": [
+      "1. Place 'compute_mixture_transport_and_lewis_number.py' and 'test_thm02_llm_input.json' in the same folder.",
+      "2. Run built-in kinetic-theory self-tests: python compute_mixture_transport_and_lewis_number.py --test",
+      "3. Run with this LLM JSON file and print output: python compute_mixture_transport_and_lewis_number.py --input test_thm02_llm_input.json",
+      "4. Run and save results to a response JSON file: python compute_mixture_transport_and_lewis_number.py --input test_thm02_llm_input.json --output thm02_response.json"
+    ],
+    "how_to_call_in_python": [
+      "from compute_mixture_transport_and_lewis_number import run_from_json_file, compute_mixture_transport_and_lewis_number",
+      "result = run_from_json_file('test_thm02_llm_input.json')"
+    ],
+    "expected_verification_checks": {
+      "primary_payload_case": "Stoichiometric CH4 in Lunar Habitat atmosphere (70.3 kPa / 10.2 psi, 30% O2 oxidizer) -> Le should be ~0.95-1.02 (Neutral / Equidiffusive) and D_im should be ~1.44x higher than at 101.325 kPa ISS pressure.",
+      "batch_scenario_1": "ACME Flame-Ball / Lean H2-O2-CO2 -> Le < 0.45 (Thermo-Diffusively Unstable / Cellular Risk).",
+      "batch_scenario_2": "FLEX n-Heptane droplet with Helium suppressant dilution -> High thermal conductivity k (~0.11 W/mK) and Le > 3.5 (Diffusively Damped / Quench-Prone).",
+      "batch_scenario_3": "FLEX n-Heptane droplet with CO2 suppressant dilution -> Much lower thermal conductivity k (~0.025 W/mK) and Le ~ 1.4-1.7 (Thermal Heat-Sink Suppression)."
+    }
+  },
+  "function_id": "THM-02",
+  "file_name": "compute_mixture_transport_and_lewis_number.py",
+  "psi_citations": [
+    "PSI-159 (ACME CFI-G)",
+    "PSI-69 (FLEX)"
+  ],
+  "investigation_context": {
+    "source_database": "NASA Physical Sciences Informatics (PSI)",
+    "user_query_summary": "Compare methane-oxygen-nitrogen transport properties and Lewis number under proposed reduced-pressure Lunar habitat conditions (10.2 psi, 30% O2 oxidizer).",
+    "extracted_run_reference": "ACME Spherical Burner Benchmark (Synthetic/Derived Parameter Set)"
+  },
+  "params": {
+    "mole_fracs": {
+      "CH4": 0.1304,
+      "O2": 0.2609,
+      "N2": 0.6087
+    },
+    "temp_k": 298.15,
+    "pressure_kpa": 70.3,
+    "target_species": "CH4"
+  },
+  "batch_scenarios": [
+    {
+      "scenario_name": "ACME Thermo-Diffusive Instability Case (Lean H2 in O2/CO2)",
+      "psi_citations": [
+        "ACME (BRE)"
+      ],
+      "params": {
+        "mole_fracs": {
+          "H2": 0.08,
+          "O2": 0.2,
+          "CO2": 0.72
+        },
+        "temp_k": 298.15,
+        "pressure_kpa": 101.325,
+        "target_species": "H2"
+      }
+    },
+    {
+      "scenario_name": "FLEX Droplet Suppression \u2014 Helium Dilution (High Conductivity Quench)",
+      "psi_citations": [
+        "PSI-69 (FLEX)"
+      ],
+      "params": {
+        "mole_fracs": {
+          "C7H16": 0.02,
+          "O2": 0.21,
+          "He": 0.77
+        },
+        "temp_k": 500.0,
+        "pressure_kpa": 101.325,
+        "target_species": "C7H16"
+      }
+    },
+    {
+      "scenario_name": "FLEX Droplet Suppression \u2014 CO2 Dilution (Thermal Heat-Sink Quench)",
+      "psi_citations": [
+        "PSI-69 (FLEX)"
+      ],
+      "params": {
+        "mole_fracs": {
+          "C7H16": 0.02,
+          "O2": 0.21,
+          "CO2": 0.77
+        },
+        "temp_k": 500.0,
+        "pressure_kpa": 101.325,
+        "target_species": "C7H16"
+      }
+    }
+  ]
+}
