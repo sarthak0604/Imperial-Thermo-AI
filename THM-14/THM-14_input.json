@@ -1,0 +1,60 @@
+{
+  "request": {
+    "topic": "heat_release",
+    "analysis": "estimate_radiative_fraction",
+    "scenario": {
+      "run_id": "illustrative_radiometer_view_factor"
+    }
+  },
+  "evidence": {
+    "runs": [
+      {
+        "id": "illustrative_radiometer_view_factor",
+        "geometry": {
+          "method": "view_factor",
+          "detector_area_m2": 0.001,
+          "view_factor_f12": 0.00001,
+          "transmission": 0.8,
+          "background_flux_w_m2": 50
+        },
+        "samples": [
+          {
+            "time_s": 0,
+            "radiometer_flux_w_m2": 130,
+            "total_hrr_w": 40000
+          },
+          {
+            "time_s": 1,
+            "radiometer_flux_w_m2": 210,
+            "total_hrr_w": 80000
+          },
+          {
+            "time_s": 3,
+            "radiometer_flux_w_m2": 170,
+            "total_hrr_w": 60000
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "type": "synthetic_geometry_and_measurements",
+      "illustrative": true,
+      "notes": [
+        "Synthetic aligned radiometer and HRR readings chosen for a 0.25 reference fraction. NASA Saffire VI is measurement context. NIST provides a documented experimental use of the far-field point-source approximation."
+      ],
+      "generated_with": "OpenAI Codex"
+    },
+    "sources": [
+      {
+        "role": "measurement_context",
+        "url": "https://ntrs.nasa.gov/citations/20240002981",
+        "locator": "Figure 5, radiometer and heat release histories"
+      },
+      {
+        "role": "radiometry_method",
+        "url": "https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2083.pdf",
+        "locator": "Radiant fraction from flux measurements at a distance"
+      }
+    ]
+  }
+}
