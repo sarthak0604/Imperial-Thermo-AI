@@ -1,0 +1,19 @@
+{
+  "id": "res:PSI-117:22d91bbfcbf81affa77e",
+  "title": "Initial diameter effects on combustion of unsupported equi-volume n-heptane/iso-octane mixture droplets and the transition to cool flame behavior: Experimental observations and detailed numerical modeling (2020)",
+  "source_url": "https://doi.org/10.1016/j.combustflame.2020.06.012",
+  "resource_type": "paper",
+  "sha256": "788e6b437effa191131f6b988358b2f9ff0eee27219f3cd7aa37caa59ee448e1",
+  "parser_version": "1.0.4",
+  "sections": [
+    {
+      "locator": "HTML body",
+      "text": "Combustion and Flame\nDate:\nOctober 2020\nPage\ns\n:\n82-91\nVolume:\nVolume 220\nView accessibility information\nPublished by:\nElsevier\nPublished by\nShow\nmore\nResearch article\nFull text access\nGet rights and content\nInitial diameter effects on combustion of unsupported equi-volume\nn\n-heptane/iso-octane mixture droplets and the transition to cool flame behavior: Experimental observations and detailed numerical modeling\nAuthor links open overlay panel\nYuhao\nXu\na\n,\nTanvir I.\nFarouk\nb\n,\nMichael C.\nHicks\nc\n,\nC. Thomas\nAvedisian\nd\nShow\nmore\nView\nPDF\nDownload full issue\nCite\nAdd to Mendeley\nShare\n10.1016/j.combustflame.2020.06.012\nMore actions\nAbstract\nThis study reports an experimental and numerical investigation of droplet combustion of a miscible\nn\n-heptane/iso-octane mixture at a fixed mixture fraction (equi-volume) for initial diameters (\nD\no\n) in the range of 0.8 mm ≤\nD\no\n< 5 mm. This range encompasses burning transitions from hot flame (HF) combustion to the cool flame (CF) regime where radiative extinction can occur. The simulations assume spherically symmetric gas transport which was promoted in the experiments by a low gravity environment and relatively stationary droplets. Unsupported or free-floating droplets were deployed and ignited in a sealed chamber on the International Space Station to provide a low gravity condition and to accommodate the anticipated long droplet burning times (tens of seconds) for the droplet sizes investigated. The simulations incorporated multistep combustion kinetics with an embedded low temperature kinetic mechanism, non-luminous flame radiation, a model for phase equilibrium of the mixture, variable properties, unsteady gas and liquid transport, and species diffusion in the liquid. The results showed no evidence of preferential vaporization because of the close boiling points of\nn\n-heptane and iso-octane. For\nD\no\n< 3 mm, the mixture droplets remained in the initial HF burning regime. For larger\nD\no\n, a transition to extinction-like behavior occurred. Measured flame radiances confirmed the importance of radiation as a controlling mechanism for driving radiative extinction and transitioning to CF burning. Radiative extinction diameters exhibited a linear relationship with\nD\no\nwhich agreed very well with simulations. Mixture radiative extinction diameters were also consistent with literature values for\nn\n-decane,\nn\n-heptane, and iso-octane. Simulated droplet and flame diameters, burning rates, and flame radiances were also in good agreement with experiments.\nKeywords\nSpray\n;\nDroplet\n;\nDroplet combustion\n;\nLow-temperature combustion\n;\nCool flame\n;\nPrimary reference fuel\nView Abstract\nRecommended articles\nNo articles found.\n© 2020 The Combustion Institute. Published by Elsevier Inc. All rights reserved."
+    }
+  ],
+  "details": {},
+  "warnings": [
+    "HTML text only; full article access is not inferred from a publisher landing page."
+  ],
+  "status": "partially_parsed"
+}
