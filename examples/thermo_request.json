@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "query_id": "synthetic-thm04-001",
+  "plan": {
+    "action": "calculate",
+    "selected_file_ids": [
+      "synthetic-measurements",
+      "synthetic-template"
+    ],
+    "requested_asset_ids": [
+      "synthetic-video",
+      "synthetic-paper"
+    ],
+    "operation": {
+      "name": "run_thermo_model",
+      "file_id": "synthetic-measurements",
+      "parameters": {
+        "model_id": "THM-04",
+        "request_json": null,
+        "template_file_id": "synthetic-template",
+        "bindings": [
+          {
+            "target": "/evidence/runs/0/samples",
+            "mode": "records",
+            "columns": [
+              {
+                "column": "time_s",
+                "field": "time_s",
+                "unit": "s"
+              },
+              {
+                "column": "inlet_o2_kg_s",
+                "field": "inlet_o2_kg_s",
+                "unit": "kg/s"
+              },
+              {
+                "column": "outlet_o2_kg_s",
+                "field": "outlet_o2_kg_s",
+                "unit": "kg/s"
+              }
+            ],
+            "row": null
+          }
+        ]
+      }
+    },
+    "explanation": "Use paired oxygen mass flows in THM-04 and provide the requested media links.",
+    "warnings": [
+      "Synthetic SI-assisted example; not NASA measurements.",
+      "Unknown size for synthetic-measurements; executor must cap streamed download bytes.",
+      "Unknown size for synthetic-template; executor must cap streamed download bytes.",
+      "Unknown size for synthetic-video; executor must cap streamed download bytes.",
+      "Unknown size for synthetic-paper; executor must cap streamed download bytes."
+    ]
+  },
+  "limits": {
+    "max_download_bytes": 100000000,
+    "max_runtime_seconds": 60
+  },
+  "generated_by": "SI-assisted request planner"
+}

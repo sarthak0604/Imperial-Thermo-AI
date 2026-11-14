@@ -2,7 +2,7 @@
 
 import unittest
 
-from evaluate_v2 import check_plan
+from imperial_thermo_ai.evaluation import check_plan
 
 
 class EvaluationTests(unittest.TestCase):

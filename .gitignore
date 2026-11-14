@@ -21,3 +21,7 @@ __pycache__/
 *.egg-info/
 .env
 service-request.json
+.DS_Store
+~$*.xlsx
+build/
+dist/

@@ -5,19 +5,16 @@ description = "Thermo AI workloads and validated graph-search service requests"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "accelerate>=1.15.0",
-    "beautifulsoup4>=4.12",
     "httpx>=0.28",
+    "numpy>=2",
     "pydantic>=2.10,<3",
-    "pypdf>=5",
-    "python-dotenv>=1",
-    "torch>=2.15.0",
-    "transformers>=5.23.0",
+    "scipy>=1.14",
     "openai>=2,<3",
 ]
 
 [project.optional-dependencies]
 plotting = ["matplotlib>=3.9,<4"]
+search = ["accelerate>=1.15.0", "torch>=2.15.0", "transformers>=5.23.0"]
 
 [project.scripts]
 main = "imperial_thermo_ai.main:main"
@@ -26,14 +23,20 @@ imperial-thermo-ai = "imperial_thermo_ai.main:main"
 thermo-plan = "request_planner.__main__:main"
 thermo-search = "request_planner.mini_graph:main"
 thermo-plot = "request_planner.plotting:main"
+thermo-execute = "request_planner.service:main"
+thermo-evaluate = "imperial_thermo_ai.evaluation:main"
 
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["imperial_thermo_ai", "request_planner"]
-package-dir = {imperial_thermo_ai = "src/imperial_thermo_ai", request_planner = "request_planner"}
+packages = ["imperial_thermo_ai", "request_planner", "thermo_functions"]
+package-dir = {imperial_thermo_ai = "src/imperial_thermo_ai", request_planner = "src/request_planner", thermo_functions = "src/Functions"}
+
+[tool.setuptools.package-data]
+imperial_thermo_ai = ["flat_prompt.txt"]
+thermo_functions = ["*.json", "THM-*/*.py", "THM-*/*.json"]
 
 [dependency-groups]
 dev = [

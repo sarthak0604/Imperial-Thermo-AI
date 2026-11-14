@@ -760,7 +760,7 @@ if __name__ == "__main__":
         "-i",
         type=str,
         default=None,
-        help="Path to LLM-generated JSON input file (e.g., test_thm02_llm_input.json).",
+        help="Path to LLM-generated JSON input file (e.g., examples/thm02_input.json).",
     )
     parser.add_argument(
         "--output",
