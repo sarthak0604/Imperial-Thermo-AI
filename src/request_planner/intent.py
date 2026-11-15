@@ -51,6 +51,8 @@ def interpret(prompt, *, aliases=None, context=None):
     from .flame_temperature import flame_temperature_inputs
 
     explicit_temperature = flame_temperature_inputs(prompt)
+    if explicit_temperature and asks_flame_temperature:
+        kinds = [(kind, text) for kind, text in kinds if kind != "explanation"]
     if explicit_temperature and not any(k == "calculation" for k, _ in kinds):
         kinds.append(("calculation", "adiabatic flame temperature"))
     if not any(k in {"calculation", "inspection", "explanation"} for k, _ in kinds):

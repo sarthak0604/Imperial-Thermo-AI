@@ -82,6 +82,10 @@ def answer_pmma_comparison(spec, graph_id):
     else:
         source_id = "bass-ii-pmma-thermal-calibration"
         rates = [r["spread_rate_mm_s"] for r in results]
+        bundle.diagnostics.append({'function_pipeline':[
+            {'task_id':f'spread-{i+1}','model_id':model_id,'purpose':f'Predict spread for {values[i]} mm sheet',
+             'status':'completed','depends_on':[],'input_json':getattr(r,'input_payload',{}),
+             'output_json':r,'provenance':[]} for i,r in enumerate(results)]})
         calibration = results[0]["sources"][0]
         response.sources = [{"file_id": source_id, "investigation_id": "PSI-25",
                              "title": calibration["locator"], "source_page_url": calibration["url"]}]

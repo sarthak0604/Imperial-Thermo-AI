@@ -109,6 +109,7 @@ class AnswerResult(Contract):
             "answer": self.message,
             "blocks": self.result.blocks,
             "crosslinks": self.crosslinks,
+            "function_pipeline": next((d['function_pipeline'] for d in self.retrieval.diagnostics if 'function_pipeline' in d), []),
             "evidence": evidence,
             "points": [],
             "widgets": [],

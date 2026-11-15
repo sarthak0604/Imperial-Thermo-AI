@@ -134,6 +134,11 @@ class CalculationBlock(TypedDict):
     illustrative: bool | None
     source_file_ids: list[str]
     data: dict
+    task_id: NotRequired[str]
+    input_json: NotRequired[dict]
+    input_provenance: NotRequired[list[dict]]
+    depends_on: NotRequired[list[str]]
+    method: NotRequired[dict]
 
 
 class ChartBlock(TypedDict):

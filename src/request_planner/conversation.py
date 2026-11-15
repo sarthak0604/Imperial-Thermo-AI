@@ -106,6 +106,7 @@ def ask_conversation(question, env, owner, request):
     from .backend import answer
     from .context_resolution import resolve
     from .flame_temperature import flame_temperature_inputs
+    from .nist_calorimetry import nist_window
     from .providers import configure
     from .task_router import route
 
@@ -147,20 +148,33 @@ def ask_conversation(question, env, owner, request):
             )
 
         generator = bounded
-        for key in ("program_generator", "answer_generator", "semantic_generator"):
+        for key in ("program_generator", "answer_generator", "semantic_generator", "function_generator"):
             if options.get(key):
                 options[key] = generator
     clarification_answers = request.get("clarification_answers", [])
     # A complete standalone scenario has no inputs to recover from past turns.
     context_generator = generator
-    if not clarification_answers and flame_temperature_inputs(question) is not None:
+    if not clarification_answers and (
+        flame_temperature_inputs(question) is not None or nist_window(question) is not None
+    ):
         context_generator = None
-    resolved = resolve(question, state, context_generator, clarification_answers)
-    decision = route(
-        question,
-        generator,
-        {"resolved_task": resolved["question"], "pending": state.get("pending", [])},
-    )
+    from .model_worker import InferenceError
+
+    def quick_parse(messages):
+        return generator(messages, max_time=12)
+
+    try:
+        resolved = resolve(question, state, quick_parse if context_generator else None, clarification_answers)
+    except (InferenceError, ValueError):
+        resolved = resolve(question, state, None, clarification_answers)
+    try:
+        decision = route(
+            resolved["question"], quick_parse if generator else None,
+            {"pending": state.get("pending", [])},
+            function_planner=options.get("function_generator") is not None,
+        )
+    except (InferenceError, ValueError):
+        decision = route(resolved["question"])
     turn_id = secrets.token_urlsafe(18)
     context = {
         "history": state["turns"][-4:],
@@ -189,7 +203,7 @@ def ask_conversation(question, env, owner, request):
     )
     response = result.frontend()
     response["meta"]["original_question"] = question
-    pending = [s.model_dump() for s in decision.missing]
+    pending = [] if response.get('function_pipeline') else [s.model_dump() for s in decision.missing]
     pending += [
         {"id": f"backend-{i}", "question": q, "reason_code": "missing_evidence"}
         for i, q in enumerate(result.request.clarifications)

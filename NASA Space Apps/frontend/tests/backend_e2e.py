@@ -24,7 +24,7 @@ def main():
             except OSError:time.sleep(.1)
         with sync_playwright() as pw:
             browser=pw.chromium.launch(args=['--no-sandbox'])
-            page=browser.new_page(viewport={'width':1440,'height':900})
+            page=browser.new_page(viewport={'width':1440,'height':900},reduced_motion='reduce')
             errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
             page.goto(url)
             page.fill('#q','Show the PSI-39 CFI final science report PDF')
@@ -50,6 +50,18 @@ def main():
             page.keyboard.press('Enter')
             page.wait_for_selector('.workflow-result svg',timeout=10000)
             assert 'Illustrative' in page.locator('.workflow-result').first.text_content()
+            from request_planner.backend import answer
+            computed=answer('Calculate adiabatic flame temperature for methane with 21% oxygen in nitrogen at 101.325 kPa and 298.15 K, with equivalence ratio 1')
+            computed_frontend=computed.frontend()
+            page.unroute('**/api/ask')
+            page.route('**/api/ask',lambda route:route.fulfill(content_type='application/json',body=json.dumps(computed_frontend)))
+            page.fill('#q','Show the actual computed temperature with downloadable JSON')
+            page.keyboard.press('Enter')
+            page.wait_for_selector('a[download$="-input.json"]',timeout=10000)
+            assert page.locator('a[download$="-output.json"]').count() > 0
+            assert 'How the calculations work' in page.inner_text('body')
+            assert 'Governing equations' in page.inner_text('body')
+            assert 'Method references' in page.inner_text('body')
             assert not errors,errors
             page.screenshot(path='/tmp/nasa-omri-backend.png',full_page=True)
             browser.close()

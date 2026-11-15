@@ -148,6 +148,13 @@ window.ANS = (() => {
         <div class="grid">${M.finds.map((f, k) => findingHTML(f, add({ kind: "finding", f }), wide[k])).join("")}</div>`;
     }
     if (M.blocks.length) html += `<div class="sec-h"><h2>Results</h2></div><div class="grid">${M.blocks.map(b => `<article class="box s12 rv workflow-result">${WORKFLOW.render(b)}</article>`).join("")}</div>`;
+    if (M.raw.function_pipeline?.length) {
+      html += `<section class="box s12"><h2>Calculation workflow</h2><ol>${M.raw.function_pipeline.map(t => `<li><strong>${esc(t.model_id)} · ${esc(t.purpose)}</strong><p>${esc(t.status)}${t.message ? ' — ' + esc(t.message) : ''}</p>${t.depends_on?.length ? `<p>Uses results from ${esc(t.depends_on.join(', '))}</p>` : ''}<div class="fups">${t.input_json ? `<a class="chip" download="${esc(t.task_id)}-input.json" href="data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(t.input_json,null,2))}">Input JSON</a>` : ''}${t.output_json ? `<a class="chip" download="${esc(t.task_id)}-output.json" href="data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(t.output_json,null,2))}">Output JSON</a>` : ''}</div></li>`).join('')}</ol></section>`;
+    }
+    const methods = [...new Map(M.blocks.filter(b => b.type === 'calculation' && b.method).map(b => [b.model_id,b.method])).entries()];
+    if (methods.length) {
+      html += `<section class="box s12"><h2>How the calculations work</h2>${methods.map(([id,m]) => `<section><h3>${esc(id)}</h3><p>${esc(m.summary)}</p>${m.equations?.length ? `<h4>Governing equations</h4>${m.equations.map(eq => `<pre style="white-space:pre-wrap;overflow-wrap:anywhere">${esc(eq)}</pre>`).join('')}` : ''}<p><strong>Evidence boundary:</strong> ${esc(m.evidence_boundary)}</p>${m.implementation?.documentation ? `<details><summary>Implementation, inputs and assumptions</summary><p style="white-space:pre-wrap">${esc(m.implementation.documentation)}</p></details>` : ''}<h4>Method references</h4><ul>${(m.references || []).map(r => `<li>${esc(r.citation)} ${esc(r.relevance || '')}</li>`).join('')}</ul><p>${esc(m.note)}</p></section>`).join('')}</section>`;
+    }
     if (M.raw.crosslinks?.length) {
       const investigation = id => {
         const study = U.inv(id);

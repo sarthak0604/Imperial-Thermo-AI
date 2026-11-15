@@ -1,0 +1,24 @@
+{
+  "scope": "One live API-generated parameter-scenario chain. Not a NASA measurement or all-model scientific validation.",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "tasks": [
+    {
+      "id": "adiabatic_temp",
+      "model_id": "THM-01",
+      "status": "completed",
+      "depends_on": []
+    },
+    {
+      "id": "blowoff_limit",
+      "model_id": "THM-07",
+      "status": "completed",
+      "depends_on": [
+        "adiabatic_temp"
+      ]
+    }
+  ],
+  "temperature_K": 2224.23,
+  "downstream_input_temperature_K": 2224.23,
+  "critical_blowoff_velocity_m_s": 0.4001
+}

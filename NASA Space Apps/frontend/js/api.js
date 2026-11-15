@@ -81,6 +81,7 @@ window.API = {
   normalise(a) {
     return {
       conversation_id: a.conversation_id, state_revision: a.state_revision,
+      function_pipeline: a.function_pipeline || [],
       clarifications: a.clarifications || [], model_decisions: a.model_decisions || [],
       title: a.title || "", summary: a.summary || a.answer || "", key_facts: Array.isArray(a.key_facts) ? a.key_facts : [],
       answer: String(a.answer || a.summary || ""), evidence: Array.isArray(a.evidence) ? a.evidence : [],

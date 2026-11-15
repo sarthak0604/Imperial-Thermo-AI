@@ -32,13 +32,16 @@ window.WORKFLOW = (() => {
     const label = `<p class="muted">${esc([b.evidence_type?.replaceAll('_', ' '), b.illustrative ? 'Illustrative inputs' : ''].filter(Boolean).join(' · '))}</p>`;
     if (b.type === 'chart' && b.chart_type === 'bar') {
       const series = b.series[0];
+      if (!series) return title + label;
+      const unit = series.unit || "";
+      const max = unit === "%" ? 100 : Math.max(...series.values.filter(Number.isFinite), Number.MIN_VALUE);
       const rows = (b.categories || []).flatMap((name, i) => {
         const value = series?.values[i];
-        if (!Number.isFinite(value) || value < 0 || value > 100) return [];
+        if (!Number.isFinite(value) || value < 0 || value > max) return [];
         const displayed = new Intl.NumberFormat(undefined, { maximumSignificantDigits: 4 }).format(value);
-        return [`<tr><th scope="row">${esc(name)}</th><td style="width:65%"><meter min="0" max="100" value="${value}" style="width:100%" aria-label="${esc(name + ' mole percent')}"></meter></td><td>${esc(displayed)}%</td></tr>`];
+        return [`<tr><th scope="row">${esc(name)}</th><td style="width:65%"><meter min="0" max="${max}" value="${value}" style="width:100%" aria-label="${esc(name + ' ' + series.label)}"></meter></td><td>${esc(unit === "%" ? displayed + "%" : [displayed, unit].filter(Boolean).join(" "))}</td></tr>`];
       });
-      return title + label + `<table style="width:100%"><thead><tr><th scope="col">Gas species</th><th scope="col" colspan="2">Mole fraction (%)</th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
+      return title + label + `<table style="width:100%"><thead><tr><th scope="col">${esc(b.x.label)}</th><th scope="col" colspan="2">${esc(series.label + (unit ? " (" + unit + ")" : ""))}</th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
     }
     if (b.type === 'chart') {
       const x = b.x.values;
@@ -48,21 +51,25 @@ window.WORKFLOW = (() => {
         const range = a => { let lo=Infinity, hi=-Infinity; for (const v of a) {lo=Math.min(lo,v);hi=Math.max(hi,v);} return lo===hi?[lo-1,hi+1]:[lo,hi]; };
         const xr=range(points.map(p=>p[0])), yr=range(points.map(p=>p[1]));
         return `<div style="height:320px">${CH.host(size => {
-          const f=CH.frame(size,{x:xr,y:yr,xticks:CH.range(...xr,4),yticks:CH.range(...yr,4),xlabel:b.x.label,xunit:b.x.unit,ylabel:s.label,yunit:s.unit});
-          return f.axes+(b.chart_type==='scatter'?points.map(([a,c])=>CH.dot(f.sx(a),f.sy(c),{r:2})).join(''):CH.line(points,f.sx,f.sy));
+          const f=CH.frame(size,{x:xr,y:yr,xticks:CH.range(...xr,4),yticks:CH.range(...yr,4),xlabel:b.x.label.replaceAll('_',' '),xunit:b.x.unit,ylabel:s.label.replaceAll('_',' '),yunit:s.unit});
+          return f.axes+(b.chart_type==='scatter'?points.map(([a,c])=>CH.dot(f.sx(a),f.sy(c),{r:3,tip:`${b.x.label}: ${number.format(a)} ${b.x.unit || ''}; ${s.label}: ${number.format(c)} ${s.unit || ''}`})).join(''):CH.line(points,f.sx,f.sy));
         },{label:s.label})}</div>`;
       }).join('');
-      return title+label+plots;
+      const rows = x.slice(0,200).map((v,i) => `<tr><td>${esc(displayValue(v))}</td>${b.series.map(s => `<td>${esc(displayValue(s.values[i] ?? ''))}</td>`).join('')}</tr>`).join('');
+      const table = `<details><summary>Chart data (${x.length} points${x.length > 200 ? '; first 200 shown, full values in output JSON' : ''})</summary><div style="overflow:auto;max-height:360px"><table><thead><tr><th>${esc(b.x.label)} ${esc(b.x.unit || '')}</th>${b.series.map(s => `<th>${esc(s.label)} ${esc(s.unit || '')}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div></details>`;
+      return title+label+plots+table;
     }
     if (b.type === "calculation") {
+      const download = (name, value) => `<a class="chip" download="${esc(name)}" href="data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(value, null, 2))}">${esc(name)}</a>`;
+      const artifacts = `<div class="fups">${b.input_json ? download((b.task_id || b.model_id) + '-input.json', b.input_json) : ''}${download((b.task_id || b.model_id) + '-output.json', b.data)}${b.input_provenance ? download((b.task_id || b.model_id) + '-provenance.json', b.input_provenance) : ''}</div>`;
       const data = b.data || {};
-      const outputs = data.outputs || data.metrics || data;
+      const outputs = data.outputs || data.metrics || (b.model_id === "THM-02" ? { ...data.transport_properties, ...data.dimensionless_numbers } : data);
       const values = resultTable(outputs);
       const metric = data.frontend_summary?.headline_metric;
       const headline = !values && metric?.label && metric.value != null
         ? resultTable({[metric.label]: [metric.value, metric.unit].filter(v => v != null).join(" ")}) : "";
       const inputs = resultTable(data.inputs);
-      return title + label + (values || headline) +
+      return title + label + artifacts + (values || headline) +
         (inputs ? '<details><summary>Model inputs</summary>' + inputs + '</details>' : "");
     }
     if (b.url && /^https?:\/\//i.test(b.url)) return title+`<a href="${esc(b.url)}" target="_blank" rel="noopener">Open source ${esc(b.type)} ↗</a>`;

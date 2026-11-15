@@ -1,0 +1,281 @@
+{
+  "$defs": {
+    "ColumnBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "column": {
+          "title": "Column",
+          "type": "string"
+        },
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "column",
+        "field",
+        "unit"
+      ],
+      "title": "ColumnBinding",
+      "type": "object"
+    },
+    "DatasetBinding": {
+      "additionalProperties": false,
+      "description": "Copy measured CSV values into an existing JSON input slot, without conversion.",
+      "properties": {
+        "target": {
+          "pattern": "^/",
+          "title": "Target",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "scalar",
+            "series",
+            "records"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "columns": {
+          "items": {
+            "$ref": "#/$defs/ColumnBinding"
+          },
+          "minItems": 1,
+          "title": "Columns",
+          "type": "array"
+        },
+        "row": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Row"
+        }
+      },
+      "required": [
+        "target",
+        "mode",
+        "columns",
+        "row"
+      ],
+      "title": "DatasetBinding",
+      "type": "object"
+    },
+    "FunctionTask": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "model_id": {
+          "title": "Model Id",
+          "type": "string"
+        },
+        "purpose": {
+          "title": "Purpose",
+          "type": "string"
+        },
+        "scenario_id": {
+          "default": "requested-scenario",
+          "title": "Scenario Id",
+          "type": "string"
+        },
+        "depends_on": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Depends On",
+          "type": "array"
+        },
+        "template_file_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Template File Id"
+        },
+        "package_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Package Id"
+        },
+        "params": {
+          "additionalProperties": true,
+          "title": "Params",
+          "type": "object"
+        },
+        "input_source_spans": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Input Source Spans",
+          "type": "object"
+        },
+        "user_inputs": {
+          "items": {
+            "$ref": "#/$defs/UserBinding"
+          },
+          "title": "User Inputs",
+          "type": "array"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/$defs/SourceBinding"
+          },
+          "title": "Sources",
+          "type": "array"
+        },
+        "results": {
+          "items": {
+            "$ref": "#/$defs/ResultBinding"
+          },
+          "title": "Results",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "model_id",
+        "purpose"
+      ],
+      "title": "FunctionTask",
+      "type": "object"
+    },
+    "ResultBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "source_task_id": {
+          "title": "Source Task Id",
+          "type": "string"
+        },
+        "source_pointer": {
+          "title": "Source Pointer",
+          "type": "string"
+        },
+        "target_pointer": {
+          "title": "Target Pointer",
+          "type": "string"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_task_id",
+        "source_pointer",
+        "target_pointer",
+        "unit"
+      ],
+      "title": "ResultBinding",
+      "type": "object"
+    },
+    "SourceBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "file_id": {
+          "title": "File Id",
+          "type": "string"
+        },
+        "binding": {
+          "$ref": "#/$defs/DatasetBinding"
+        }
+      },
+      "required": [
+        "file_id",
+        "binding"
+      ],
+      "title": "SourceBinding",
+      "type": "object"
+    },
+    "UserBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "target_pointer": {
+          "title": "Target Pointer",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        },
+        "quote": {
+          "title": "Quote",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        }
+      },
+      "required": [
+        "target_pointer",
+        "value",
+        "quote"
+      ],
+      "title": "UserBinding",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "tasks": {
+      "items": {
+        "$ref": "#/$defs/FunctionTask"
+      },
+      "maxItems": 20,
+      "title": "Tasks",
+      "type": "array"
+    },
+    "missing_inputs": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 20,
+      "title": "Missing Inputs",
+      "type": "array"
+    }
+  },
+  "title": "FunctionPlan",
+  "type": "object"
+}

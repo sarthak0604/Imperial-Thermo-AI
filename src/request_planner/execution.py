@@ -21,6 +21,10 @@ from .planner import PlanningError, validate_plan
 from .plotting import numeric_pairs
 
 
+class CalculationResult(dict):
+    """Scientific output with an in-process reference to its executed input JSON."""
+
+
 class ExecutionError(ValueError):
     pass
 
@@ -303,7 +307,9 @@ class ExecutionSession:
         output = strict_json(output_path.read_text())
         if "error" in output:
             raise ExecutionError(f"Function needs compatible inputs: {output['error']}")
-        return output["result"]
+        result = CalculationResult(output['result'])
+        result.input_payload = copy.deepcopy(payload)
+        return result
 
 
 def apply_bindings(payload, path, file, bindings):
@@ -379,12 +385,13 @@ INPUT_UNITS = {
 }
 
 
-def present_result(model_id, result):
+def present_result(model_id, result, *, include_input=False):
     """Keep full model output and expose aligned arrays as renderable chart blocks."""
     evidence_type = "data_reduction" if result.get("status") == "data_reduction" else "model_estimate"
     illustrative = result.get("illustrative", result.get("provenance", {}).get("illustrative"))
     blocks = [{"type": "calculation", "model_id": model_id, "evidence_type": evidence_type,
-               "illustrative": illustrative, "data": result}]
+               "illustrative": illustrative, "data": result,
+               **({'input_json':result.input_payload} if include_input and hasattr(result,'input_payload') else {})}]
 
     if model_id == "THM-01":
         fractions = [
@@ -403,6 +410,68 @@ def present_result(model_id, result):
                             "values": [100 * value for _, value in fractions]}],
                 "evidence_type": evidence_type, "illustrative": illustrative,
             })
+
+    if model_id == "THM-02":
+        transport = result.get("transport_properties", {})
+        values = [transport.get(key) for key in ("thermal_diffusivity_m2_s", "mass_diffusivity_m2_s")]
+        if all(type(value) in (int, float) and math.isfinite(value) and value >= 0 for value in values):
+            blocks.append({
+                "type": "chart", "chart_type": "bar", "title": "THM-02 thermal and mass diffusivity",
+                "categories": ["Thermal diffusivity", "Mass diffusivity"],
+                "x": {"label": "Transport property", "unit": None, "values": [0, 1]},
+                "series": [{"label": "Diffusivity", "unit": "m²/s", "values": values}],
+                "evidence_type": evidence_type, "illustrative": illustrative,
+            })
+
+    if model_id == "THM-08":
+        speeds = [result.get("inputs", {}).get("u_forced_cms"),
+                  result.get("outputs", {}).get("effective_mixed_velocity_cms")]
+        if all(type(value) in (int, float) and math.isfinite(value) and value >= 0 for value in speeds):
+            blocks.append({
+                "type": "chart", "chart_type": "bar", "title": "THM-08 ventilation and mixed-convection speeds",
+                "categories": ["Forced ventilation", "Effective mixed convection"],
+                "x": {"label": "Flow", "unit": None, "values": [0, 1]},
+                "series": [{"label": "Speed", "unit": "cm/s", "values": speeds}],
+                "evidence_type": evidence_type, "illustrative": illustrative,
+            })
+    if model_id == "THM-15":
+        curve = result.get("threshold_curve", [])
+        if len(curve) > 1:
+            blocks.append({
+                "type": "chart", "chart_type": "line", "title": "THM-15 soot inception threshold",
+                "x": {"label": "Residence time", "unit": "s",
+                      "values": [point["residence_time_s"] for point in curve]},
+                "series": [{"label": "Threshold temperature", "unit": "K",
+                            "values": [point["threshold_temperature_K"] for point in curve]}],
+                "evidence_type": evidence_type, "illustrative": illustrative,
+            })
+    if model_id == "THM-18":
+        sweep = result.get("sweep", {})
+        x, y = sweep.get("agent_mole_fraction", []), sweep.get("oxygen_mole_fraction", [])
+        if len(x) > 1 and len(x) == len(y):
+            blocks.append({
+                "type": "chart", "chart_type": "line", "title": "THM-18 oxygen under inert gas dilution",
+                "x": {"label": "Added agent mole fraction", "unit": "1", "values": x},
+                "series": [{"label": "Oxygen mole fraction", "unit": "1", "values": y}],
+                "evidence_type": evidence_type, "illustrative": illustrative,
+            })
+
+    declared=result.get('frontend_summary',{}).get('chart_series',{})
+    rows=declared.get('data',[])
+    axis=declared.get('x_axis')
+    axes=declared.get('y_axes',[])
+    chart_units={'u_flow_cms':'cm/s','u_flow_ms':'m/s','damkohler_number':'1','da_critical':'1',
+        'y_ox_stream':'1','x_o2':'1','z_st':'1','stoichiometric_mixture_fraction_zst':'1',
+        'flame_to_burner_radius_ratio':'1','theoretical_flame_radius_mm':'mm',
+        'burner_radius_mm':'mm','time_s':'s','pressure_kpa':'kPa'}
+    if axis and isinstance(rows,list) and len(rows)>1 and all(isinstance(row,dict) for row in rows):
+        for y in axes:
+            if all(type(row.get(axis)) in (int,float) and math.isfinite(row[axis]) and
+                   type(row.get(y)) in (int,float) and math.isfinite(row[y]) for row in rows):
+                blocks.append({'type':'chart','chart_type':'line','title':model_id+': '+y.replace('_',' '),
+                    'x':{'label':axis.replace('_',' '),'unit':chart_units.get(axis),'values':[row[axis] for row in rows]},
+                    'series':[{'label':y.replace('_',' '),'unit':chart_units.get(y),'values':[row[y] for row in rows]}],
+                    'evidence_type':evidence_type,'illustrative':illustrative})
 
     units = ({"sample_thickness_m": "m", "air_speed_m_s": "m/s",
               "spread_rate_mm_s": "mm/s", "spread_rate_m_s": "m/s"}

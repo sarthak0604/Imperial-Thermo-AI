@@ -168,6 +168,7 @@ def _answer(
     dense_search=None,
     routing_decision=None,
     routing_generator=None,
+    function_generator=None,
     **execution_options,
 ):
     import re
@@ -205,9 +206,39 @@ def _answer(
     calibrated = answer_pmma_comparison(spec, graph.graph.graph.get("graph_id", "unknown"))
     if calibrated is not None:
         return calibrated
+    from .nist_calorimetry import nist_window, run_nist_window
+
+    window = nist_window(prompt)
+    if window is not None:
+        from .backend_models import Requirement
+
+        bundle = RetrievalBundle(query_id=uuid.uuid4().hex,
+                                 graph_id=graph.graph.graph.get("graph_id", "unknown"), files=[])
+        spec.requirements = [Requirement(id="nist-model", kind="calculation", model_id="THM-04",
+                                         source_text=prompt),
+                             Requirement(id="nist-chart", kind="chart", source_text=prompt)]
+        response = FrontendResponse(query_id=bundle.query_id, status="needs_input", message="")
+        outcome = run_nist_window(window)
+        if outcome is None:
+            response.message = "The bundled NIST run covers 995–1005 s. Choose a window within that range."
+        else:
+            result, response.blocks, source, response.warnings = outcome
+            response.sources = [source]
+            response.status = "completed"
+            response.message = (
+                f"THM-04 estimates {result['total_heat_release_kJ']:,.1f} kJ released between "
+                f"{window[0]:g} and {window[1]:g} s. The peak within that window was "
+                f"{result['peak_hrr_W'] / 1000:,.1f} kW at {result['peak_hrr_time_s']:g} s."
+            )
+        return AnswerResult(
+            trace_id=bundle.query_id, status=response.status, message=response.message,
+            request=spec, retrieval=bundle, result=response, fulfilment=fulfilment(spec, response),
+            timings={"total": round(time.monotonic() - started, 3)},
+        )
     if routing_decision is None and routing_generator is not None:
         from .task_router import route
-        routing_decision = route(prompt, budgeted(routing_generator), context)
+        routing_decision = route(prompt, budgeted(routing_generator, stage_limit=12), context,
+                                 function_planner=function_generator is not None)
     if routing_decision is not None:
         from .backend_models import Requirement
         if routing_decision.intent in {'calculation', 'chart'}:
@@ -221,7 +252,10 @@ def _answer(
             spec.requirements = [r for r in spec.requirements if r.kind != 'discovery']
             if not any(r.kind == 'explanation' for r in spec.requirements):
                 spec.requirements.append(Requirement(id='route-explanation',kind='explanation',source_text=prompt))
-        spec.clarifications.extend(slot.question for slot in routing_decision.missing)
+        spec.clarifications.extend(
+            slot.question for slot in routing_decision.missing
+            if function_generator is None or slot.reason_code == "required_model_state"
+        )
     context_sources = []
     if re.search(r"\b(that|previous)\b", prompt, re.IGNORECASE) and (context or {}).get(
         "history"
@@ -270,15 +304,31 @@ def _answer(
         spec, graph, semantic_plan=spec.semantic_plan, dense_search=dense_search
     )
     retrieved = time.monotonic()
+    from .flame_temperature import calculate_flame_temperature, flame_temperature_inputs
+
+    temperature_inputs = flame_temperature_inputs(prompt)
+    if (temperature_inputs is None and function_generator is not None
+            and not spec.clarifications
+            and any(r.kind == "calculation" for r in spec.requirements)):
+        from .thm_pipeline import answer_functions
+        from .models import ExecutionLimits
+        from .evidence_packages import EvidencePackageRegistry
+        manifest = os.getenv('THERMO_EVIDENCE_PACKAGES')
+        result = answer_functions(spec, graph, bundle, budgeted(function_generator, stage_limit=30),
+            deadline=started+deadline_seconds,
+            answer_generator=answer_generator,
+            selected_models={r.model_id for r in spec.requirements if r.model_id},
+            limits=ExecutionLimits(max_runtime_seconds=max(1,min(60,int(deadline_seconds-(time.monotonic()-started))))),
+            client=execution_options.get('client'),url_validator=execution_options.get('url_validator'),
+            package_registry=EvidencePackageRegistry(manifest) if manifest else None)
+        result.timings={'retrieval':round(retrieved-started,3),'total':round(time.monotonic()-started,3)}
+        return result
     response = FrontendResponse(
         query_id=bundle.query_id, status="needs_input", message=""
     )
     if (context or {}).get('explain_previous'):
         response.blocks = (context or {}).get('previous_results', [])
     package_ran = False
-    from .flame_temperature import calculate_flame_temperature, flame_temperature_inputs
-
-    temperature_inputs = flame_temperature_inputs(prompt)
     if temperature_inputs is not None and not spec.clarifications:
         from .execution import ExecutionError, present_result
 
@@ -287,7 +337,28 @@ def _answer(
         except ExecutionError as exc:
             spec.clarifications.append(str(exc))
         else:
-            response.blocks = present_result("THM-01", computed)
+            response.blocks = [block for result in computed
+                               for block in present_result("THM-01", result, include_input=True)
+                               if len(computed) == 1 or block["type"] == "calculation"]
+            if "hypothetical lunar habitat" in prompt.casefold():
+                response.warnings.append(
+                    "The supplied gas conditions describe a hypothetical lunar habitat. "
+                    "THM-01 computes chemical equilibrium and does not model gravity."
+                )
+            if isinstance(temperature_inputs["fuel_species"], list):
+                response.warnings.append(
+                    "Assumed standard air: 21% oxygen in nitrogen, 298.15 K and 101.325 kPa. "
+                    "The model assumes a stoichiometric mixture (equivalence ratio 1)."
+                )
+            if len(computed) > 1:
+                response.blocks.append({
+                    "type": "chart", "chart_type": "bar", "title": "THM-01 flame temperature by fuel",
+                    "categories": [r["inputs"]["fuel_species"] for r in computed],
+                    "x": {"label": "Fuel", "unit": None, "values": list(range(len(computed)))},
+                    "series": [{"label": "Adiabatic flame temperature", "unit": "K",
+                                "values": [r["outputs"]["adiabatic_flame_temp_k"] for r in computed]}],
+                    "evidence_type": "model_estimate",
+                })
             for block in response.blocks:
                 block["source_file_ids"] = []
             response.status = "completed"
@@ -308,7 +379,7 @@ def _answer(
                 with tempfile.TemporaryDirectory(prefix='thermo-evidence-') as directory:
                     worker = ExecutionSession(directory, ExecutionLimits())
                     computed = worker.calculate(mid, payload)
-                response.blocks = present_result(mid, computed)
+                response.blocks = present_result(mid, computed, include_input=True)
                 for block in response.blocks:
                     block['illustrative'] = package.illustrative
                 response.warnings.append('Evidence package '+package.id+'; original packaged scenario used unchanged.')
@@ -692,13 +763,53 @@ def _answer(
     )
 
 
+def with_related_sources(result):
+    """Keep useful graph links separate from evidence that supplied model inputs."""
+    if result.status not in {"needs_input", "partial", "no_evidence", "error"} or result.result.sources:
+        return result
+    if not any(r.kind in {"calculation", "chart"} for r in result.request.requirements):
+        return result
+    from imperial_thermo_ai.graph_search import tokens
+
+    words = tokens(result.request.original_prompt)
+    candidates = [
+        file for file in result.retrieval.files
+        if (file.retrieval_url or file.source_page_url)
+        and (file.investigation_id in result.request.investigations
+             or len(words & tokens(file.title)) >= 2)
+    ]
+    for file in candidates[:3]:
+        result.result.sources.append({
+            "file_id": file.file_id, "investigation_id": file.investigation_id,
+            "title": "Related source · " + file.title,
+            "source_page_url": str(file.retrieval_url or file.source_page_url),
+        })
+    if candidates:
+        result.message += "\n\nRelated NASA sources are listed under References. They did not supply verified inputs for this calculation."
+    return result
+
+
 def answer(prompt, **options):
     """Return structured provider failures; never replace them with mock science."""
     from openai import OpenAIError
 
     try:
-        return _answer(prompt, **options)
-    except (OpenAIError, InferenceError):
+        from .methods import decorate_result
+        return decorate_result(with_related_sources(_answer(prompt, **options)))
+    except InferenceError:
+        # Keep the graph and direct Python handlers available when inference is unavailable.
+        fallback = dict(options)
+        for key in ("planner", "routing_generator", "semantic_generator",
+                    "function_generator", "program_generator", "answer_generator"):
+            fallback.pop(key, None)
+        result = with_related_sources(_answer(prompt, **fallback))
+        result.result.warnings.append(
+            "AI planning did not finish. The dashboard used direct model matching and graph evidence."
+        )
+        if not result.message.strip():
+            result.message = "AI planning did not finish. Try specifying the model inputs or naming the NASA investigation."
+        return decorate_result(result)
+    except OpenAIError:
         spec = interpret(prompt, context=options.get("context"))
         bundle = RetrievalBundle(
             query_id=uuid.uuid4().hex, graph_id="unavailable", files=[]

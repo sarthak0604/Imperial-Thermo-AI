@@ -12,6 +12,14 @@ and `--conversation-id ID` to continue it. See the
 [implementation status and remaining plan items](conversation-implementation-status.md)
 and [open-source inference configuration](open-source-inference.md).
 
+## Function JSON workflow
+
+The default computation path now selects relevant THM tasks, prepares their JSON
+inputs from retrieved NASA data and confirmed scenario values, resolves registered
+dependencies, and displays actual outputs with JSON downloads and method details.
+See [the THM function pipeline](thm-function-pipeline.md) for contracts, supported
+input mappings, dependency restrictions, and scientific data availability.
+
 ## Run
 
 From the repository root, use the existing project environment:

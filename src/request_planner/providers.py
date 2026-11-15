@@ -74,6 +74,7 @@ def configure(env):
         "planner": planner,
         "routing_generator": generate,
         "program_generator": generate,
+        "function_generator": generate if env.get('THERMO_FUNCTION_PIPELINE','true') == 'true' else None,
         "answer_generator": generate
         if env.get("THERMO_COMPOSE", "true") == "true"
         else None,
