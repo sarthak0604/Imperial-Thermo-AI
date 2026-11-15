@@ -115,7 +115,8 @@ def ask(question, env):
                     model._load()
                 except (OSError, RuntimeError, ValueError) as exc:
                     raise ModelLoadError from exc
-            response = run_workflow(question, results, LocalPlanner(model.generate), planning_seconds=60)
+            planner = LocalPlanner(model.generate, timed_generate=model.generate)
+            response = run_workflow(question, results, planner, planning_seconds=60)
         message = response.message or "The Thermo workflow returned no explanation."
         for block in response.blocks:
             if block["type"] == "calculation" and block.get("model_id") == "THM-01":

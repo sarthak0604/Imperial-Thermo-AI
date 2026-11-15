@@ -117,6 +117,31 @@ class ExecutionTests(unittest.TestCase):
         self.assertTrue(any(b["type"] == "document" for b in response.blocks))
         self.assertEqual(self.fetched, ["/dataset", "/template"])
 
+    def test_repeated_inspection_returns_missing_inputs_without_a_third_plan(self):
+        inspect = Plan(action="inspect_files", selected_file_ids=["dataset"], requested_asset_ids=[],
+                       operation=None, explanation="Mixture temperature is missing.", warnings=[])
+
+        class RepeatedInspection:
+            calls = 0
+
+            def propose(self, prompt, results, limits):
+                self.calls += 1
+                return inspect
+
+            def with_context(self, inspection):
+                return self
+
+        planner = RepeatedInspection()
+        response = run_workflow("Calculate a Lewis number.",
+                                {"query_id": "test", "files": [file_record(media_type="text/csv")]},
+                                planner, client=self.client({"/dataset": b"oxygen\n0.21\n"}),
+                                url_validator=lambda url: None)
+        self.assertEqual(response.status, "needs_input")
+        self.assertIn("Mixture temperature is missing", response.message)
+        self.assertEqual(planner.calls, 2)
+        self.assertEqual(self.fetched, ["/dataset"])
+        self.assertEqual([block["type"] for block in response.blocks], ["inspection"])
+
     def test_csv_can_supply_legacy_params_without_calibration_template(self):
         plan = thermo_plan(request_json=json.dumps({"fuel_formula": "CH4", "y_fuel_stream": 1, "y_ox_stream": 0}),
                            bindings=[{"target": "/params/y_ox_stream", "mode": "scalar", "row": 0,

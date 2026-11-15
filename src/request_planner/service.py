@@ -51,8 +51,29 @@ def run_workflow(prompt, results, planner, *, client=None, url_validator=None, t
                 if request.plan.action == "no_match":
                     response.status = "no_match"
                     break
-                blocks, results = session.execute(request, results)
-                response.blocks.extend(blocks)
+                if request.plan.action == "inspect_files":
+                    inspected = {block["file_id"] for block in session.inspection}
+                    new_files = [file_id for file_id in request.plan.selected_file_ids if file_id not in inspected]
+                    new_assets = [file_id for file_id in request.plan.requested_asset_ids if file_id not in session.sources]
+                    if not new_files and not new_assets:
+                        response.message = (
+                            "The available files have already been inspected. "
+                            + response.message
+                        )
+                        break
+                    # Preserve the planner's original request in the response audit trail.
+                    plan = request.plan.model_copy(update={"selected_file_ids": new_files,
+                                                           "requested_asset_ids": new_assets})
+                    if not new_files:
+                        plan = plan.model_copy(update={"action": "retrieve_assets"})
+                    request = request.model_copy(update={"plan": plan})
+                    blocks, results = session.execute(request, results)
+                    response.blocks.extend(blocks)
+                    if not new_files:
+                        break
+                else:
+                    blocks, results = session.execute(request, results)
+                    response.blocks.extend(blocks)
                 for block in blocks:
                     if block["type"] == "calculation":
                         data = block["data"]

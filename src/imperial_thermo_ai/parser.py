@@ -128,7 +128,7 @@ class QuestionParser:
             kwargs.update(device_map='cpu', dtype=torch.float32)
         self.model = AutoModelForCausalLM.from_pretrained(self.model_id, **kwargs).eval()
 
-    def generate(self, messages):
+    def generate(self, messages, *, max_time=None):
         if self._generator is not None:
             return self._generator(messages)
         import torch
@@ -142,7 +142,7 @@ class QuestionParser:
             raise ParserError('Question and graph vocabulary exceed the configured input limit.')
         with torch.inference_mode():
             tokens = self.model.generate(**inputs, max_new_tokens=self.max_new_tokens,
-                                         do_sample=False, pad_token_id=self.tokenizer.eos_token_id)
+                                         do_sample=False, pad_token_id=self.tokenizer.eos_token_id, max_time=max_time)
         return self.tokenizer.decode(tokens[0, inputs.input_ids.shape[1]:], skip_special_tokens=True).strip()
 
     def parse(self, question, graph=None):

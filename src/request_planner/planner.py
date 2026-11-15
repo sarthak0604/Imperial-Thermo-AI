@@ -2,6 +2,7 @@
 
 import json
 import re
+import time
 from typing import Protocol
 
 from .models import ExecutionLimits, Plan, SearchResults, ServiceRequest, ThermoOperation
@@ -272,12 +273,29 @@ LOCAL_CSV_PLAN_EXAMPLE = {
 class LocalPlanner:
     """Generate and validate a workflow plan using a local instruction model."""
 
-    def __init__(self, generate, inspection=None):
+    def __init__(self, generate, inspection=None, *, timed_generate=None, deadline=None):
         self.generate = generate
         self.inspection = inspection or []
+        self.timed_generate = timed_generate
+        self.deadline = deadline
 
     def with_context(self, inspection):
-        return LocalPlanner(self.generate, inspection)
+        return LocalPlanner(self.generate, inspection, timed_generate=self.timed_generate, deadline=self.deadline)
+
+    def with_timeout(self, seconds):
+        return LocalPlanner(self.generate, self.inspection, timed_generate=self.timed_generate,
+                            deadline=time.monotonic() + seconds)
+
+    def _generate(self, messages):
+        if not self.timed_generate or self.deadline is None:
+            return self.generate(messages)
+        remaining = self.deadline - time.monotonic()
+        if remaining <= 0:
+            raise PlanningError("Planning time ran out. Review any inspected data or narrow the question.")
+        raw = self.timed_generate(messages, max_time=remaining)
+        if time.monotonic() >= self.deadline:
+            raise PlanningError("Planning time ran out. Review any inspected data or narrow the question.")
+        return raw
 
     def propose(self, prompt: str, results: SearchResults, limits: ExecutionLimits) -> Plan:
         from imperial_thermo_ai.parser import _json_object
@@ -287,15 +305,21 @@ class LocalPlanner:
         request_schema["anyOf"] = [{"type": "object"}, {"type": "null"}]
         messages = [
             {"role": "system", "content": SYSTEM_PROMPT
-             + "\nFor this local response, write request_json as a native JSON object or null. "
+             + "\nOnly inspect a new file if it could supply a specific missing input. A CSV preview "
+             "cannot provide a variable absent from the complete header. Use the inspection already "
+             "supplied for each file. If inputs remain unavailable, select no_match and name them. "
+             "For a Lewis number, identify the target species and use known mixture composition, "
+             "temperature, and pressure. Don't substitute the example conditions. "
+             "For this local response, write request_json as a native JSON object or null. "
              "Return only a JSON object matching this schema: " + json.dumps(schema)
              + "\nHere is a complete example for a THM calculation using one CSV value. Replace its "
              "placeholder file ID and column with exact values from the supplied records. Use a similar "
              "binding only when the calculation reads from a CSV. Example: " + json.dumps(LOCAL_CSV_PLAN_EXAMPLE)},
-            _planner_message(prompt, results, limits, self.inspection),
+            _planner_message(prompt, results, limits, self.inspection, local=True),
         ]
         for attempt in range(2):
-            raw = self.generate(messages)
+            raw = self._generate(messages)
+            plan = None
             try:
                 candidate = _json_object(raw)
                 operation = candidate.get("operation")
@@ -309,26 +333,49 @@ class LocalPlanner:
             except (ValueError, TypeError) as exc:
                 if attempt:
                     if isinstance(exc, PlanningError):
+                        if (plan and isinstance(plan.operation, ThermoOperation)
+                                and plan.operation.parameters.model_id == "THM-02"
+                                and str(exc) == "CSV calculations require explicit column bindings"):
+                            raise PlanningError(
+                                "No compatible CSV input was identified for THM-02. To estimate the Lewis number, "
+                                "provide the gas mixture's mole fractions, temperature, and pressure, or a source "
+                                "that supplies them."
+                            ) from exc
                         raise
                     raise PlanningError("The local model did not return a valid workflow plan.") from exc
                 messages.extend([
                     {"role": "assistant", "content": raw},
                     {"role": "user", "content": "Return a corrected complete JSON plan. Fix this validation "
-                     "error using the original question and the verified file metadata: " + str(exc)[:1200]},
+                     "error using the original question and the verified file metadata: " + str(exc)[:1200]
+                     + " If the question cannot be supported with the available data, return no_match and "
+                     "state the missing inputs."},
                 ])
 
 
-def _planner_message(prompt, results, limits, inspection):
+def _local_catalog(prompt, catalog):
+    """Keep every model visible, expanding the inputs only for clear mentions."""
+    names = {"lewis number": "THM-02", "adiabatic flame temperature": "THM-01"}
+    matches = set(re.findall(r"\bTHM-(?:0[1-9]|1[0-9]|20)\b", prompt.upper()))
+    matches.update(model_id for name, model_id in names.items() if name in prompt.casefold())
+    if not matches:
+        return catalog
+    return [entry if entry["model_id"] in matches else
+            {key: value for key, value in entry.items() if key != "input_shape"}
+            for entry in catalog]
+
+
+def _planner_message(prompt, results, limits, inspection, *, local=False):
     # The executor resolves URLs from IDs. The planner only needs availability.
     graph = results.model_dump(mode="json")
     for file in graph["files"]:
         file["retrieval_url"] = bool(file["retrieval_url"])
         file.pop("source_page_url")
+    catalog = operation_catalog()
     return {"role": "user", "content": json.dumps({
         "user_prompt": prompt,
         "graph_search_results": graph,
         "available_operations": OPERATIONS,
-        "thermo_functions": operation_catalog(),
+        "thermo_functions": _local_catalog(prompt, catalog) if local else catalog,
         "inspection": _inspection_context(inspection),
         "limits": limits.model_dump(),
     })}

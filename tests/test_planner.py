@@ -55,6 +55,19 @@ class PlannerTests(unittest.TestCase):
         repair = generate.call_args.args[0][-1]["content"]
         self.assertIn("CSV calculations require explicit column bindings", repair)
 
+    def test_local_planner_sends_full_inputs_for_the_named_calculation(self):
+        plan = Plan(action="no_match", selected_file_ids=[], requested_asset_ids=[],
+                    operation=None, explanation="Missing mixture temperature.", warnings=[])
+        timed = Mock(return_value=plan.model_dump_json())
+        planner = LocalPlanner(Mock(), timed_generate=timed).with_timeout(30)
+        build_request("What is the Lewis number?", SearchResults.model_validate(self.graph_data), planner)
+        inputs, limits = timed.call_args
+        catalog = json.loads(inputs[0][1]["content"])["thermo_functions"]
+        self.assertEqual(len(catalog), 20)
+        self.assertEqual([entry["model_id"] for entry in catalog if "input_shape" in entry], ["THM-02"])
+        self.assertGreater(limits["max_time"], 0)
+        self.assertLessEqual(limits["max_time"], 30)
+
     def test_known_columns_produce_calculation_request_with_provenance(self):
         request = self.request()
         self.assertEqual(request.plan.operation.parameters.x, "airflow_speed")
