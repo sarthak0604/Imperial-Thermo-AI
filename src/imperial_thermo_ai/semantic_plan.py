@@ -50,7 +50,9 @@ def compile_plan(plan):
             continue
         if set(query) != {'label', 'return_type', 'criteria'}:
             raise ValueError('Each query needs label, return_type and criteria only.')
-        items, grouped = [], {}
+        # Bind experiment conditions and all its related predicates to one witness.
+        # Independent routes from a Resource could otherwise use different runs.
+        grouped, negatives = {}, []
         for criterion in query['criteria']:
             criterion = dict(criterion)
             node_type = criterion.pop('node_type')
@@ -59,13 +61,56 @@ def compile_plan(plan):
                 raise ValueError('Invalid node_type or negated flag.')
             predicate = dict(criterion, kind='filter')
             if negate:
-                items.append({'kind': 'not', 'item': route(query['return_type'], node_type, predicate)})
-            elif node_type in {'Concept', 'Variable'}:
-                items.append(route(query['return_type'], node_type, predicate))
+                negatives.append({'kind': 'not', 'item': route(query['return_type'], node_type, predicate)})
             else:
                 grouped.setdefault(node_type, []).append(predicate)
+        start_type = query['return_type']
+        experiment_items = []
+        items = list(negatives)
         for node_type, predicates in grouped.items():
-            items.append(route(query['return_type'], node_type, {'kind': 'all', 'items': predicates}))
+            # Multiple topic names mean multiple topics, while a name/unit pair
+            # describes the same Variable. Separate variables need explicit queries.
+            if node_type == 'Concept':
+                clauses = [route('Experiment', node_type, p) for p in predicates]
+            else:
+                clauses = [route('Experiment', node_type, {'kind': 'all', 'items': predicates})]
+            if node_type == start_type and start_type != 'Experiment':
+                items.extend(predicates)
+            else:
+                experiment_items.extend(clauses)
+        if experiment_items:
+            bound = {'kind': 'all', 'items': experiment_items}
+            # Preserve the compact single-relation representation.
+            if len(experiment_items) == 1:
+                bound = experiment_items[0]
+            items.append(route(start_type, 'Experiment', bound))
         queries.append({'label': query['label'], 'return_type': query['return_type'], 'where': {'kind': 'all', 'items': items}})
     result['queries'] = queries
     return result
+
+
+def resource_expression(return_type, expression):
+    """Constrain the returned file itself, not an unrelated sibling resource."""
+    if return_type == 'Resource':
+        return expression
+    if return_type == 'Experiment':
+        def project(expr):
+            if expr['kind'] in {'all', 'any'}:
+                return {'kind': expr['kind'], 'items': [project(x) for x in expr['items']]}
+            if expr['kind'] == 'not':
+                return {'kind': 'not', 'item': project(expr['item'])}
+            if expr['kind'] == 'relation' and expr['edge'] == 'HAS_RESOURCE' and expr['direction'] == 'out':
+                return expr['where']
+            return route('Resource', 'Experiment', expr)
+        # Keep experiment-side conjunctions bound together before projection.
+        if expression['kind'] == 'all':
+            resources, experiments = [], []
+            for child in expression['items']:
+                if child['kind'] == 'relation' and child['edge'] == 'HAS_RESOURCE' and child['direction'] == 'out':
+                    resources.append(child['where'])
+                else:
+                    experiments.append(child)
+            return {'kind': 'all', 'items': resources + ([route('Resource', 'Experiment',
+                {'kind': 'all', 'items': experiments})] if experiments else [])}
+        return project(expression)
+    return route('Resource', return_type, expression)

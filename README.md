@@ -3,6 +3,8 @@
 Graph search → LLM request planning → temporary dataset downloads → THM functions
 → frontend JSON with results, chart data, media links and provenance.
 
+See [the shared backend and Omri interface](docs/backend-v2.md) for the v2 workflow and website launch instructions.
+
 ## Run locally
 
 Use Python 3.14 and [uv](https://docs.astral.sh/uv/). From the repository root:

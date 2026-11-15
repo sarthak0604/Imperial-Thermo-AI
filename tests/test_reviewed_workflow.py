@@ -113,6 +113,9 @@ class ReviewedWorkflowTests(unittest.TestCase):
         file = results.files[0]
         body = b'clock,value\n0,1\n1,2\n'
         file.size_bytes = len(body)
+        # This test replaces NASA bytes with synthetic content, so its trusted
+        # NASA profile must not be retained for that different source.
+        file.data_notes = [n for n in file.data_notes if not n.startswith('Profiled source SHA-256: ')]
         inspected = Plan(action='inspect_files', selected_file_ids=[file.file_id], requested_asset_ids=[],
                          operation=None, explanation='Inspect the unknown columns.', warnings=[])
         stopped = Plan(action='no_match', selected_file_ids=[], requested_asset_ids=[], operation=None,
@@ -151,7 +154,7 @@ class ReviewedWorkflowTests(unittest.TestCase):
             return Plan(action='retrieve_assets', selected_file_ids=[], requested_asset_ids=[selected['file_id']],
                         operation=None, explanation='Display the SAME report.', warnings=[]).model_dump_json()
 
-        with patch.object(frontend, 'instruction_model', return_value=SimpleNamespace(model=True, generate=generate)):
+        with patch('request_planner.providers.configure', return_value={'planner': LocalPlanner(generate)}):
             response = frontend.ask('Show PSI-102 smoke detector report PDF', {})
         self.assertEqual(response['meta']['status'], 'completed')
         self.assertEqual(response['blocks'][0]['type'], 'document')

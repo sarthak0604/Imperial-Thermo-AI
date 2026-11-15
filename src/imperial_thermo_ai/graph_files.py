@@ -66,7 +66,7 @@ class GraphFileRecords:
         else:
             variables = props.get('column_metadata')
         # Never promote graph Variable names or Resource.variables tags to inspected column headers.
-        if variables is None:
+        if variables is None and role == 'measurement':
             notes.append('Column headers, units and numeric suitability have not been verified.')
         # Only explicitly file-level facts are exported, never inherited run conditions.
         conditions = props.get('file_conditions') or {}

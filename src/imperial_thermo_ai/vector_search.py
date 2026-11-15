@@ -8,7 +8,7 @@ import json
 import math
 from collections import deque
 from .graph_search import GraphIndex, evaluate
-from .semantic_plan import route
+from .semantic_plan import route, resource_expression
 from .query_plan import validate_plan
 from .file_contract import SearchResults
 from .graph_files import GraphFileRecords
@@ -88,7 +88,9 @@ def build_index(graph, embedder):
     vectors = embedder.encode(list(docs.values()))
     if len(vectors) != len(docs):
         raise ValueError('Embedding count differs from node count.')
-    return {'graph_fingerprint': fingerprint(graph), 'model_id': embedder.model_id,
+    return {'document_version': '2.0-bounded-context', 'query_instruction': INSTRUCTION,
+            'model_revision': getattr(embedder, 'revision', 'local-cache'),
+            'graph_fingerprint': fingerprint(graph), 'model_id': embedder.model_id,
             'vectors': dict(zip(docs, vectors))}
 
 
@@ -100,11 +102,14 @@ class VectorGraphSearch(GraphFileRecords):
         self.model_id = index['model_id']
         if set(index['vectors']) != set(self.graph.nodes):
             raise ValueError('Index must cover exactly the graph nodes.')
-        self.vectors = {key: unit_vector(v) for key, v in index['vectors'].items()}
-        dimensions = {len(v) for v in self.vectors.values()}
+        self.keys = list(index['vectors'])
+        vectors = [unit_vector(index['vectors'][key]) for key in self.keys]
+        dimensions = {len(v) for v in vectors}
         if len(dimensions) > 1:
             raise ValueError('Index vector dimensions differ.')
         self.dimension = next(iter(dimensions), None)
+        import numpy as np
+        self.matrix = np.asarray(vectors, dtype=np.float32)
 
     def _scores(self, query_vector, model_id):
         if model_id != self.model_id:
@@ -112,7 +117,11 @@ class VectorGraphSearch(GraphFileRecords):
         vector = unit_vector(query_vector)
         if self.dimension is not None and len(vector) != self.dimension:
             raise ValueError('Query and index vector dimensions differ.')
-        return {key: sum(a * b for a, b in zip(vector, value)) for key, value in self.vectors.items()}
+        if not self.keys:
+            return {}
+        import numpy as np
+        values = self.matrix @ np.asarray(vector, dtype=np.float32)
+        return {key: float(value) for key, value in zip(self.keys, values)}
 
     def _finish(self, ranked, query_id, plan, top_k, include_unknown):
         if type(top_k) is not int or not 1 <= top_k <= 1000:
@@ -124,7 +133,7 @@ class VectorGraphSearch(GraphFileRecords):
             if self._provenance(file_id) is None:
                 continue
             if plan is not None:
-                evaluations = [evaluate(self.graph, file_id, route('Resource', q['return_type'], q['where']))
+                evaluations = [evaluate(self.graph, file_id, resource_expression(q['return_type'], q['where']))
                                for q in plan['queries']]
                 if not evaluations:
                     continue
@@ -141,7 +150,7 @@ class VectorGraphSearch(GraphFileRecords):
         return SearchResults.model_validate({'query_id': query_id, 'files': files}).model_dump()
 
     def local_search(self, query_vector, *, query_id, model_id=MODEL_ID, seed_k=5,
-                     hops=2, top_k=20, min_score=0.3, plan=None, include_unknown=True):
+                     hops=2, top_k=20, min_score=0.3, plan=None, include_unknown=True, max_nodes=5000):
         """Rank seed nodes, expand bounded neighborhoods, then return linked files."""
         if type(seed_k) is not int or seed_k < 1 or type(hops) is not int or not 0 <= hops <= 4:
             raise ValueError('seed_k must be positive; hops must be 0..4.')
@@ -152,7 +161,7 @@ class VectorGraphSearch(GraphFileRecords):
         found = {}
         for seed in seeds:
             queue, seen = deque([(seed, 0)]), {seed}
-            while queue:
+            while queue and len(seen) <= max_nodes:
                 current, distance = queue.popleft()
                 if self.graph.nodes[current]['type'] == 'Resource':
                     score = 0.7 * scores[current] + 0.3 * scores[seed] - 0.03 * distance
@@ -161,6 +170,8 @@ class VectorGraphSearch(GraphFileRecords):
                 if distance < hops:
                     for edge in self.graph.outgoing[current] + self.graph.incoming[current]:
                         other = edge['target'] if edge['source'] == current else edge['source']
+                        if len(seen) >= max_nodes:
+                            break
                         if other not in seen:
                             seen.add(other)
                             queue.append((other, distance + 1))
@@ -183,3 +194,30 @@ class VectorGraphSearch(GraphFileRecords):
             ranked.append((key, 0.85 * scores[key] + 0.15 * scores[inv],
                            f'Global semantic file match within investigation {inv}; searched across all investigations.'))
         return self._finish(ranked, query_id, plan, top_k, include_unknown)
+
+
+def save_index(index, path):
+    """Compact numeric storage; JSON remains supported for existing fixtures."""
+    from pathlib import Path
+    import numpy as np
+    path = Path(path)
+    if path.suffix == '.npz':
+        metadata = {k:v for k,v in index.items() if k != 'vectors'}
+        keys = list(index['vectors'])
+        np.savez_compressed(path, metadata=json.dumps(metadata), keys=np.asarray(keys),
+                            vectors=np.asarray([index['vectors'][k] for k in keys], dtype=np.float32))
+    else:
+        path.write_text(json.dumps(index, allow_nan=False))
+
+
+def load_index(path):
+    from pathlib import Path
+    import numpy as np
+    path = Path(path)
+    if path.suffix != '.npz':
+        return json.loads(path.read_text())
+    with np.load(path, allow_pickle=False) as data:
+        metadata = json.loads(str(data['metadata']))
+        vectors = data['vectors']
+        metadata['vectors'] = {str(k):v.tolist() for k,v in zip(data['keys'], vectors)}
+        return metadata

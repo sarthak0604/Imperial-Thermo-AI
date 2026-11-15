@@ -145,9 +145,9 @@ class ExecutionTests(unittest.TestCase):
     def test_csv_can_supply_legacy_params_without_calibration_template(self):
         plan = thermo_plan(request_json=json.dumps({"fuel_formula": "CH4", "y_fuel_stream": 1, "y_ox_stream": 0}),
                            bindings=[{"target": "/params/y_ox_stream", "mode": "scalar", "row": 0,
-                                      "columns": [{"column": "oxygen", "field": "y_ox_stream", "unit": "1"}]}])
-        record = file_record(media_type="text/csv", variables=[{"name": "oxygen", "numeric": True, "unit": "1"}])
-        response = self.run_saved(plan, [record], {"/dataset": b"oxygen\n0.232\n"})
+                                      "columns": [{"column": "oxygen mass fraction", "field": "y_ox_stream", "unit": "1"}]}])
+        record = file_record(media_type="text/csv", variables=[{"name": "oxygen mass fraction", "numeric": True, "unit": "1"}])
+        response = self.run_saved(plan, [record], {"/dataset": b"oxygen mass fraction\n0.232\n"})
         self.assertEqual(response.status, "completed", response.model_dump())
 
     def test_unknown_unit_does_not_become_dimensionless(self):
@@ -160,7 +160,7 @@ class ExecutionTests(unittest.TestCase):
 
         response = run_workflow("Inspect", {"query_id": "test", "files": [file_record(media_type="text/csv")]}, Once(),
                                 client=self.client({"/dataset": b"x\n1\n"}), url_validator=lambda url: None)
-        self.assertEqual(response.status, "needs_input")
+        self.assertEqual(response.status, "completed")
         self.assertIsNone(response.blocks[0]["columns"][0]["unit"])
 
     def test_byte_cap_cleans_up_and_reports_error(self):

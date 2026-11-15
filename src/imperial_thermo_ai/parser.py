@@ -35,7 +35,8 @@ def graph_catalogue(graph):
             return
         for key, child in value.items():
             path = f'{prefix}.{key}' if prefix else key
-            fields[kind].add(path)
+            if all(part.isidentifier() for part in path.split('.')):
+                fields[kind].add(path)
             if isinstance(child, dict) and not {'value', 'unit'} & child.keys():
                 add_paths(kind, child, path)
     for node in graph.get('nodes', []):
@@ -44,11 +45,14 @@ def graph_catalogue(graph):
             continue
         props = node.get('properties', {})
         add_paths(kind, props)
-        if kind in {'Concept', 'Variable', 'Investigation'} and len(names) < 80:
+        if kind in {'Concept', 'Variable', 'Investigation'}:
             names.append({'type': kind, 'name': str(props.get('name', props.get('title', '')))[:120],
                           'synonyms': [str(x)[:80] for x in props.get('synonyms', [])[:6]]})
     return {'fields': {key: sorted(value)[:100] for key, value in fields.items()},
-            'vocabulary_sample': names, 'note': 'Vocabulary is a sample, not an exhaustive list.'}
+            'vocabulary_sample': names,
+            'resource_types': sorted({n['properties'].get('resource_type', '') for n in graph.get('nodes', []) if n.get('type') == 'Resource'}),
+            'file_formats': sorted({n['properties'].get('file_format', '') or '' for n in graph.get('nodes', []) if n.get('type') == 'Resource'}),
+            'note': 'Vocabulary is a sample, not an exhaustive list.'}
 
 
 def _json_object(text):

@@ -16,14 +16,17 @@ from .models import ExecutionLimits, FrontendResponse, SearchResults, ServiceReq
 from .planner import OpenAIPlanner, PlanningError, build_request
 
 
-def run_workflow(prompt, results, planner, *, client=None, url_validator=None, temp_dir=None, limits=None, planning_seconds=0):
+def run_workflow(prompt, results, planner, *, client=None, url_validator=None, temp_dir=None, limits=None, planning_seconds=0, request_spec=None, verify_prompt=True, trusted_source_hashes=None):
     """Accept the search team's wire contract; return a JSON-serializable frontend model.
 
     `with_context(inspection)` is optional on a planner. Without it, inspection
     returns needs_input so a caller can review/enrich records before replanning.
-    Downloads are shared across at most three planning rounds and always removed.
+    Downloads are shared across bounded planning rounds and always removed.
     A caller may give local inference a separate allowance within the workflow.
     """
+    from .intent import interpret, fulfilment, summarize_result, validate_action
+    if request_spec is None and verify_prompt:
+        request_spec = interpret(prompt)
     if not isinstance(results, SearchResults):
         results = SearchResults.model_validate(results)
     response = FrontendResponse(query_id=results.query_id, status="needs_input", message="")
@@ -33,18 +36,26 @@ def run_workflow(prompt, results, planner, *, client=None, url_validator=None, t
     planning_allowance = max(0, min(planning_seconds, 60))
     options = {"url_validator": url_validator} if url_validator is not None else {}
     with tempfile.TemporaryDirectory(prefix="thermo-request-", dir=temp_dir) as directory:
-        session = ExecutionSession(directory, limits, client=client, **options)
+        session = ExecutionSession(directory, limits, client=client, trusted_source_hashes=trusted_source_hashes, **options)
         try:
-            for _ in range(3):
+            seen_plans = set()
+            for _ in range(8):
                 session.remaining()
                 if hasattr(planner, "with_timeout"):
                     planner = planner.with_timeout(session.remaining() + planning_allowance)
                 planning_started = time.monotonic()
                 request = build_request(prompt, results, planner, limits=limits)
+                if request_spec:
+                    validate_action(request_spec, request.plan, results)
                 elapsed = min(planning_allowance, time.monotonic() - planning_started)
                 session.deadline += elapsed
                 planning_allowance -= elapsed
                 session.remaining()
+                signature = request.plan.model_dump_json(exclude={'explanation', 'warnings'})
+                if signature in seen_plans and request.plan.action != 'inspect_files':
+                    response.message = 'Planner repeated an action without progress. Supply the missing inputs.'
+                    break
+                seen_plans.add(signature)
                 response.requests.append(request)
                 response.warnings.extend(request.plan.warnings)
                 response.message = request.plan.explanation
@@ -81,9 +92,20 @@ def run_workflow(prompt, results, planner, *, client=None, url_validator=None, t
                             response.warnings.extend(w for w in data.get(key, []) if isinstance(w, str))
                 if request.plan.action != "inspect_files":
                     response.status = "completed"
+                    pending = fulfilment(request_spec, response) if request_spec else []
+                    if any(not row['satisfied'] for row in pending) and hasattr(planner, 'with_context'):
+                        response.status = 'needs_input'
+                        planner = planner.with_context(session.inspection + [
+                            {'type': 'execution_progress', 'completed_blocks': [
+                                {k: b[k] for k in ('type', 'model_id', 'file_id') if k in b} for b in response.blocks],
+                             'remaining_requirements': [r for r in pending if not r['satisfied']]}])
+                        continue
                     break
-                if not hasattr(planner, "with_context"):
-                    response.message = "Files inspected. Review missing units/evidence before calculating."
+                if request_spec and all(r.kind == 'inspection' for r in request_spec.requirements):
+                    response.status = 'completed'
+                    break
+                if not hasattr(planner, 'with_context'):
+                    response.message = 'Files inspected. Review missing units/evidence before calculating.'
                     break
                 planner = planner.with_context(session.inspection)
             else:
@@ -106,6 +128,14 @@ def run_workflow(prompt, results, planner, *, client=None, url_validator=None, t
             response.errors.append({"code": "planning_provider_error", "message": response.message})
         response.sources = list(session.sources.values())
     response.warnings = list(dict.fromkeys(response.warnings))
+    if request_spec and response.status != 'error':
+        completed = fulfilment(request_spec, response)
+        if not all(row['satisfied'] for row in completed):
+            if response.status == 'completed':
+                response.status = 'needs_input'
+            response.warnings.extend(row['missing'] for row in completed if not row['satisfied'])
+        if response.status == 'completed':
+            response.message = summarize_result(response)
     return FrontendResponse.model_validate(response.model_dump())
 
 
@@ -123,7 +153,7 @@ def execute_request(request, results, **kwargs):
             return request.plan
 
     # Fixed server caps apply even if a saved request advertises larger limits.
-    return run_workflow("Execute saved request", results, SavedPlanner(), limits=request.limits, **kwargs)
+    return run_workflow("Execute saved request", results, SavedPlanner(), limits=request.limits, verify_prompt=False, **kwargs)
 
 
 def main():
@@ -132,15 +162,31 @@ def main():
     inputs.add_argument("--search-results", type=Path, help="Use previously retrieved file records")
     inputs.add_argument("--graph", type=Path, help="Override the bundled reviewed PSI graph")
     parser.add_argument("--prompt")
+    parser.add_argument("--backend", choices=['v1', 'v2'], default='v2')
+    parser.add_argument("--provider", choices=['api', 'local', 'retrieval'], default='api')
+    parser.add_argument("--evidence-index", type=Path)
     parser.add_argument("--model", default=os.getenv("OPENAI_MODEL"))
     parser.add_argument("--request", type=Path, help="Execute a saved service request without an LLM")
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
-    if not args.request and (not args.prompt or not args.model or not os.getenv("OPENAI_API_KEY")):
+    if not args.request and (not args.prompt or args.provider == "api" and (not args.model or not os.getenv("OPENAI_API_KEY"))):
         parser.error("Supply --request, or --prompt, --model and OPENAI_API_KEY")
     if args.request and not args.search_results:
         parser.error("Saved requests require their original --search-results")
     try:
+        if args.backend == 'v2' and not args.request and not args.search_results:
+            from .backend import answer
+            from .providers import configure
+            env = {**os.environ, 'THERMO_PLANNER': args.provider}
+            if args.model:
+                env['OPENAI_MODEL'] = args.model
+            response = answer(args.prompt, graph_path=args.graph, evidence_path=args.evidence_index, **configure(env))
+            content = response.model_dump_json(indent=2) + "\n"
+            if args.output:
+                args.output.write_text(content)
+            else:
+                sys.stdout.write(content)
+            return 1 if response.status == 'error' else 0
         if args.search_results:
             results = SearchResults.model_validate_json(args.search_results.read_text())
         else:

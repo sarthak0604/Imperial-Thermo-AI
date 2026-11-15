@@ -97,8 +97,11 @@ a numeric score.
 | Retrieve supporting media | Role is `documentation`, `image`, or `video`; MIME type is `application/pdf`, `image/*`, or `video/*`; retrieval URL is present. |
 | No supported action | Empty results, unsuitable files, or an unsupported requested analysis lead to a `no_match` plan. |
 
-The only calculation currently supported is `plot_relationship`: two numeric
-columns from one CSV, without unit conversion, aggregation, or joining runs.
+The v1 executor supports `plot_relationship` and allowlisted THM-01 through
+THM-20 calculations through `run_thermo_model`, subject to their required inputs
+and evidence. V2 adds typed scenario programs, row selection, explicit registered
+unit conversions and simple table aggregates. These use a separate internal
+contract; do not send v2 fields in this strict v1 file payload.
 Other measurement formats can be returned for inspection. The `other` role is
 accepted in search results but cannot currently be selected for inspection,
 calculation, or asset retrieval.

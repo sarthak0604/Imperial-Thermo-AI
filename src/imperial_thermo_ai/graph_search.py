@@ -28,7 +28,7 @@ STOPWORDS = set("a an and are as at be been by can data dataset datasets do does
 
 def normalize(value: Any) -> str:
     """Unicode-aware matching; retain letters, numbers, and chemical symbols."""
-    text = unicodedata.normalize("NFKC", str(value)).casefold()
+    text = unicodedata.normalize("NFKC", str(value).replace("_", " ")).casefold()
     return " ".join(re.sub(r"[^\w%]+", " ", text, flags=re.UNICODE).split())
 
 
@@ -200,6 +200,10 @@ def evaluate_filter(node: dict, predicate: dict) -> Evaluation:
                 state = any(equals(item, wanted) for item in values for wanted in expected)
             elif operator == "contains":
                 state = any(normalize(expected) in normalize(item) for item in values)
+                if path in {'title', 'filename'} and isinstance(expected, str):
+                    # Natural-language document descriptions reorder title words;
+                    # exact filename identity still uses eq or the stable file ID.
+                    state = any(tokens(expected).issubset(tokens(str(item))) for item in values)
             reason = "Matched graph property or declared synonym." if state else "Recorded property conflicts with the requested condition."
             # Fuzzy matches are discovery candidates, never asserted identities.
             if path == "name" and operator == "eq" and state is False and isinstance(expected, str):

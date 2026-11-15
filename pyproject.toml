@@ -40,7 +40,7 @@ package-dir = {imperial_thermo_ai = "src/imperial_thermo_ai", request_planner = 
 [tool.setuptools.package-data]
 imperial_thermo_ai = ["flat_prompt.txt", "reviewed_file_metadata.json"]
 thermo_functions = ["*.json", "THM-*/*.py", "THM-*/*.json"]
-reviewed_knowledge_graph = ["output/knowledge_graph.json", "output/source_quality_issues.json"]
+reviewed_knowledge_graph = ["output/knowledge_graph.json", "output/source_quality_issues.json", "output/evidence-index.json"]
 
 [dependency-groups]
 dev = [

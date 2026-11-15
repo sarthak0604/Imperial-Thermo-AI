@@ -377,18 +377,23 @@ class Handler(SimpleHTTPRequestHandler):
         if self.path != "/api/ask":
             return self._json(404, {"error": "not found"})
         try:
-            req = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0)) or 0) or b"{}")
+            length = int(self.headers.get("Content-Length", 0))
+            if not 0 <= length <= 100000:
+                return self._json(413, {"error": "Request body too large"})
+            req = json.loads(self.rfile.read(length) or b"{}")
         except ValueError:
             return self._json(400, {"error": "bad JSON"})
         if not isinstance(req, dict) or not isinstance(req.get("question"), str):
             return self._json(400, {"error": "question must be text"})
-        q = req["question"].strip()[:600]
+        q = req["question"].strip()
+        if len(q) > 12000:
+            return self._json(400, {"provider": "thermo", "error": "Question exceeds 12,000 characters. Split it into smaller questions."})
         if not q:
             return self._json(400, {"error": "empty question"})
         env = load_env()
         if env.get("AI_PROVIDER") == "thermo":
             try:
-                out = thermo.ask(q, env)
+                out = thermo.ask(q, env, context={k: req[k] for k in ("history", "persona", "scenario") if k in req})
             except ImportError:
                 return self._json(503, {"provider": "thermo", "error": "Start the server from the project environment with the search extra."})
             except thermo.ModelLoadError:
@@ -417,7 +422,7 @@ if __name__ == "__main__":
     p = pick_provider(env)
     print(f"Stand-in AI server: http://localhost:{port}")
     if env.get("AI_PROVIDER") == "thermo":
-        print("  Thermo workflow · local Qwen planning")
+        print("  Thermo backend · " + env.get("THERMO_PLANNER", "local") + " planning")
     elif p:
         print(f"  AI: {p['name']} / {p['model']}" + (f"  (Claude Code at {p['bin']}, using your Claude plan login)" if p["name"] == "claude" else ""))
     elif str(env.get("AI_PROVIDER", "")).lower() == "claude":

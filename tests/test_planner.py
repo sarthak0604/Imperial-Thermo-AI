@@ -130,8 +130,10 @@ class PlannerTests(unittest.TestCase):
                     self.request()
             self.graph_data["files"][0][field] = original
 
-    def test_budget_includes_assets(self):
+    def test_budget_excludes_link_only_assets(self):
         self.graph_data["files"][0]["size_bytes"] = 99_000_000
+        self.request()
+        self.graph_data["files"][0]["size_bytes"] = 101_000_000
         with self.assertRaisesRegex(PlanningError, "budget"):
             self.request()
 

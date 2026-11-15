@@ -5,7 +5,7 @@ import json
 import sys
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
-from .vector_search import MODEL_ID, QwenEmbedder, VectorGraphSearch, build_index, fingerprint
+from .vector_search import MODEL_ID, QwenEmbedder, VectorGraphSearch, build_index, fingerprint, load_index, save_index
 from .reviewed_graph import default_graph_path, read_graph
 
 
@@ -74,13 +74,13 @@ def main():
             import torch
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
-        cached = read(args.index) if args.index.exists() else None
+        cached = load_index(args.index) if args.index.exists() else None
         embedder = None
         if cached is None or cached.get('graph_fingerprint') != fingerprint(graph) or cached.get('model_id') != MODEL_ID:
             embedder = QwenEmbedder()
             cached = build_index(graph, embedder)
             args.index.parent.mkdir(parents=True, exist_ok=True)
-            args.index.write_text(json.dumps(cached, allow_nan=False), encoding='utf-8')
+            save_index(cached, args.index)
         service = VectorGraphSearch(graph, cached)
         if args.query_vector:
             vector = read(args.query_vector)

@@ -5,6 +5,7 @@ from collections import defaultdict
 from functools import lru_cache
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import re
@@ -91,6 +92,13 @@ class ReviewedGraphSearch(GraphFileRecords):
                 if re.search(pattern, remaining, re.I):
                     scopes.add(self.aliases[alias])
                     remaining = re.sub(pattern, '', remaining, flags=re.I)
+        excluded = {m.group(1).upper().replace(' ', '') for m in re.finditer(
+            r'(?:excluding|except|without|not)\s+(PSI\s*-\s*\d+)', query, re.I)}
+        scopes -= excluded
+        if excluded and any(self.aliases.get(alias) in excluded and re.search(
+                r'(?<![\w-])' + re.escape(alias) + r'(?![\w-])', query, re.I)
+                for alias in self.aliases):
+            return SearchResults(query_id=query_id or self.query_id(query, investigation_id, role, limit), files=[])
         terms = tokens(query.replace('_', ' '))
         terms -= {'psi', *re.findall(r'\b\d+\b', query)}
         preferred_roles = set()
@@ -100,11 +108,16 @@ class ReviewedGraphSearch(GraphFileRecords):
                             ({'measurement', 'measurements', 'table', 'csv'}, 'measurement')):
             if words & query_words:
                 preferred_roles.add(kind)
+        # Entity names constrain scope; they are not evidence of topic relevance.
+        meaningful = re.sub(r'\bPSI\s*-\s*\d+\b', '', query, flags=re.I)
+        for alias in sorted(self.aliases, key=len, reverse=True):
+            meaningful = re.sub(r'(?<![\w-])' + re.escape(alias) + r'(?![\w-])', '', meaningful, flags=re.I)
+        meaningful_terms = tokens(meaningful) - {'excluding', 'except', 'without', 'not'}
         scores = defaultdict(float)
         exp_scores = defaultdict(float)
         for term in terms:
             for key in self.direct.get(term, ()):
-                scores[key] += 3
+                scores[key] += 3 * math.log1p(len(self.owners) / max(1, len(self.direct[term])))
             for key in self.context.get(term, ()):
                 exp_scores[key] += 1
         inherited = defaultdict(float)
@@ -116,11 +129,16 @@ class ReviewedGraphSearch(GraphFileRecords):
                     inherited[edge['target']] = max(inherited[edge['target']], score)
         ranked = []
         for key, (inv, experiments) in self.owners.items():
+            if inv.removeprefix('inv:') in excluded:
+                continue
             if scopes and inv.removeprefix('inv:') not in scopes:
                 continue
             if role and self.roles[key] != role:
                 continue
             score = scores.get(key, 0) + inherited.get(key, 0)
+            if meaningful_terms and not any(key in self.direct.get(t, ()) or any(
+                    exp in self.context.get(t, ()) for exp in experiments) for t in meaningful_terms):
+                continue
             if score <= 0 and not scopes:
                 continue
             if self.roles[key] in preferred_roles:
@@ -130,6 +148,11 @@ class ReviewedGraphSearch(GraphFileRecords):
             reviewed = self.statuses[key] in {'reviewed_selected_sections', 'structured_table_reviewed'}
             ranked.append((key, score, reviewed))
         ranked.sort(key=lambda row: (-row[1], -row[2], row[0]))
+        # Round robin investigation groups so a large inventory cannot starve a comparison.
+        if len(scopes) > 1:
+            groups = {scope: [r for r in ranked if self.owners[r[0]][0].removeprefix('inv:') == scope] for scope in sorted(scopes)}
+            ranked = [rows[i] for i in range(max((len(v) for v in groups.values()), default=0))
+                      for rows in groups.values() if i < len(rows)]
         records = []
         for key, score, reviewed in ranked[:limit]:
             inv = self.owners[key][0]
@@ -156,7 +179,7 @@ def read_graph(path):
         if (node.get('type') == 'Resource' and profile
                 and props.get('source_url') == profile['source_url']
                 and props.get('size_bytes') == profile['size_bytes']):
-            props.update(encoding=profile['encoding'], columns_verified=True,
+            props.update(profile_sha256=profile['sha256'], encoding=profile['encoding'], columns_verified=True,
                          column_metadata=profile['column_metadata'],
                          data_notes=[*props.get('data_notes', []), *profile['data_notes'],
                                      'Profiled source SHA-256: ' + profile['sha256']])
@@ -173,6 +196,8 @@ def read_graph(path):
             if notes:
                 props['data_notes'] = [*props.get('data_notes', []),
                                        *('Source quality issue: ' + note for note in notes)]
+    from .quantities import normalize_graph
+    normalize_graph(graph)
     return graph
 
 

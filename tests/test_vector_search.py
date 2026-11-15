@@ -64,6 +64,18 @@ class VectorTests(unittest.TestCase):
         self.assertEqual(service.local_search([1, 0], query_id='q', seed_k=1, hops=0)['files'], [])
         self.assertEqual(len(service.global_search([1, 0], query_id='q')['files']), 4)
 
+    def test_compact_index_preserves_retrieval(self):
+        import tempfile
+        from pathlib import Path
+        from imperial_thermo_ai.vector_search import save_index, load_index
+        graph, index = fixture()
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'index.npz'
+            save_index(index, path)
+            service = VectorGraphSearch(graph, load_index(path))
+            result = service.global_search([1, 0], query_id='q')
+        self.assertEqual(len(result['files']), 4)
+
     def test_stale_index_rejected(self):
         graph, index = fixture()
         graph['nodes'][0]['properties']['title'] = 'Changed'

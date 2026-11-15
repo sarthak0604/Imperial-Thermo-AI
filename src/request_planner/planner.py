@@ -108,7 +108,7 @@ def validate_plan(plan: Plan, results: SearchResults, limits: ExecutionLimits) -
             raise PlanningError(f"Unknown file ID: {file_id}")
         if files[file_id].retrieval_url is None:
             raise PlanningError(f"File has no retrieval URL: {file_id}")
-    if sum(files[file_id].size_bytes or 0 for file_id in selected) > limits.max_download_bytes:
+    if sum(files[file_id].size_bytes or 0 for file_id in plan.selected_file_ids) > limits.max_download_bytes:
         raise PlanningError("Selected files exceed the total download budget")
     for file_id in plan.selected_file_ids:
         if files[file_id].role != "measurement":
@@ -209,7 +209,7 @@ def build_request(prompt: str, results: SearchResults, planner: Planner, *, limi
     validate_plan(plan, results, limits)
     warnings = list(plan.warnings)
     files = {file.file_id: file for file in results.files}
-    for file_id in plan.selected_file_ids + plan.requested_asset_ids:
+    for file_id in plan.selected_file_ids:
         if files[file_id].size_bytes is None:
             warnings.append(f"Unknown size for {file_id}; executor must cap streamed download bytes.")
     return ServiceRequest(
@@ -379,10 +379,13 @@ def _local_catalog(prompt, catalog):
     names = {"lewis number": "THM-02", "adiabatic flame temperature": "THM-01"}
     matches = set(re.findall(r"\bTHM-(?:0[1-9]|1[0-9]|20)\b", prompt.upper()))
     matches.update(model_id for name, model_id in names.items() if name in prompt.casefold())
+    from imperial_thermo_ai.graph_search import tokens
+    matches.update(entry['model_id'] for entry in catalog
+                   if len(tokens(entry['description']) & tokens(prompt)) >= 2)
     # Keep model discovery available without sending every detailed input
     # contract on ordinary retrieval requests (costly CPU prompt processing).
     return [entry if entry["model_id"] in matches else
-            {key: value for key, value in entry.items() if key != "input_shape"}
+            {key: value for key, value in entry.items() if key not in {"input_shape", "input_contract"}}
             for entry in catalog]
 
 

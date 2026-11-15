@@ -93,7 +93,7 @@ def preview_json(value, depth=0):
 class ExecutionSession:
     """One bounded workflow; the caller owns a TemporaryDirectory for its lifetime."""
 
-    def __init__(self, directory, limits, client=None, url_validator=public_url):
+    def __init__(self, directory, limits, client=None, url_validator=public_url, trusted_source_hashes=None):
         self.directory = Path(directory)
         self.deadline = time.monotonic() + min(limits.max_runtime_seconds, 60)
         self.budget = min(limits.max_download_bytes, 100_000_000)
@@ -102,6 +102,7 @@ class ExecutionSession:
         self.downloads = {}
         self.inspection = []
         self.sources = {}
+        self.trusted_source_hashes = trusted_source_hashes or {}
 
     def remaining(self):
         remaining = self.deadline - time.monotonic()
@@ -133,6 +134,10 @@ class ExecutionSession:
         if file.size_bytes is not None and size != file.size_bytes:
             raise ExecutionError("Downloaded size differs from search metadata; refresh the source")
         digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        expected = self.trusted_source_hashes.get(file.file_id) or next((note.removeprefix('Profiled source SHA-256: ') for note in file.data_notes
+                         if note.startswith('Profiled source SHA-256: ')), None)
+        if expected and digest != expected:
+            raise ExecutionError('Source checksum differs from the trusted profile; refresh metadata before calculating')
         self.downloads[file.file_id] = (file.model_dump(mode="json"), path)
         self.sources[file.file_id] = {
             "file_id": file.file_id, "investigation_id": file.investigation_id,
@@ -332,6 +337,12 @@ def apply_bindings(payload, path, file, bindings):
                 expected_unit = parent.get("unit")
             if expected_unit is None or column.unit != expected_unit:
                 raise ExecutionError(f"No matching destination unit contract for {target_field}")
+            from imperial_thermo_ai.quantities import validate_quantity
+            source_variable = next(v for v in variables if v.name == column.column)
+            try:
+                validate_quantity(source_variable, target_field)
+            except ValueError as exc:
+                raise ExecutionError(str(exc)) from exc
         if binding.mode == "scalar":
             if isinstance(existing, bool) or not isinstance(existing, (int, float)):
                 raise ExecutionError("Scalar binding must replace an existing number")
