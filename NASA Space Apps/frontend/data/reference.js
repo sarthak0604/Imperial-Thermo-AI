@@ -5,6 +5,8 @@ window.DATA = window.DATA || {};
 window.DATA.scenarios = {
   iss:           { label: "ISS cabin",                          pressure: "14.7 psi", o2: "21%",   gravity: "~0 g (microgravity)", note: "Forced ventilation; no buoyancy." },
   lunar_habitat: { label: "Lunar habitat / pressurized rover",  pressure: "≤ 10.2 psi", o2: "≥ 30%", gravity: "0.16 g — NO PSI DATA (theoretical bound only)", note: "Expected conditions per the challenge brief." },
+  moon:          { label: "Moon surface outpost",              pressure: "8.2 psi",  o2: "34%",   gravity: "0.16 g — NO PSI DATA (theoretical bound only)", note: "NASA exploration atmosphere (8.2 psia / 34% O₂), recommended for Moon and Mars habitats." },
+  mars:          { label: "Mars surface habitat",              pressure: "8.2 psi",  o2: "34%",   gravity: "0.38 g — NO PSI DATA (theoretical bound only)", note: "NASA exploration atmosphere (8.2 psia / 34% O₂), recommended for Moon and Mars habitats." },
   spacesuit:     { label: "Spacesuit",                          pressure: "4.3 psi",  o2: "100%",  gravity: "0 / 0.16 / 0.38 g", note: "Pure oxygen, no nitrogen diluent." },
   earth:         { label: "Earth sea level (1 g baseline)",     pressure: "14.7 psi", o2: "21%",   gravity: "1 g", note: "Baseline for NASA-STD-6001 Test 1." }
 };

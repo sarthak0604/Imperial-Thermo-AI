@@ -34,6 +34,17 @@ window.REPORT = (() => {
     } catch (e) { console.error(e); return null; }
     finally { stage.remove(); }
   }
+  // the team logo (js/logo.js) as a PNG for the header
+  async function logoPNG() {
+    try {
+      if (!window.LOGO) return null;
+      const m = LOGO.full.match(/viewBox="0 0 ([\d.]+) ([\d.]+)"/); if (!m) return null;
+      const w = +m[1], h = +m[2], svg = LOGO.full.replace('fill="currentColor"', 'fill="#0B0B0D"').replace("<svg ", `<svg width="${w}" height="${h}" `);
+      const img = new Image(); await new Promise((res, rej) => { img.onload = res; img.onerror = rej; img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg); });
+      const c = document.createElement("canvas"); c.width = w; c.height = h; c.getContext("2d").drawImage(img, 0, 0, w, h);
+      return { png: c.toDataURL("image/png"), aspect: w / h };
+    } catch (e) { return null; }
+  }
   // widgets that are numbers, not charts (the "facts" tiles): their readings as text
   function factsText(t) { const d = document.createElement("div"); d.innerHTML = MW.tile(t); const fs = [...d.querySelectorAll(".facts > div")]; return fs.map(f => [...f.children].map(c => c.textContent.trim()).join(" ")).join(" · "); }
 
@@ -59,11 +70,14 @@ window.REPORT = (() => {
 
     // header
     doc.setFont("Inter", "bold"); doc.setFontSize(7.2); doc.setTextColor(...MUTED);
-    doc.text("FLAME IN FREEFALL  ·  ANSWER REPORT", ML, y, { charSpace: .35 });
-    doc.setFont("Inter", "normal"); doc.text(new Date(M.at).toLocaleString([], { dateStyle: "medium", timeStyle: "short" }), ML + CW, y, { align: "right" });
+    doc.text("IMPER-AI-L  ·  FLAME IN FREEFALL  ·  ANSWER REPORT", ML, y, { charSpace: .35 });
+    const lg = await logoPNG();
+    if (lg) { const lh = 6.2, lw = lh * lg.aspect; doc.addImage(lg.png, "PNG", ML + CW - lw, y - 4.4, lw, lh, undefined, "FAST"); }
+    doc.setFont("Inter", "normal"); doc.text(new Date(M.at).toLocaleString([], { dateStyle: "medium", timeStyle: "short" }), ML, y + 3.6);
+    y += 3.6;
     y += 3; doc.setDrawColor(...ACC); doc.setLineWidth(.6); doc.line(ML, y, ML + 14, y); y += 8;
     text(M.q, { size: 17, bold: true, lh: 1.25, gap: 2 });
-    text(`${ANS.forWho(M)}  ·  ${M.live ? `AI: ${M.meta.provider || ""}${M.meta.model ? " / " + M.meta.model : ""}` : "Preview without the AI"}`, { size: 8.5, color: MUTED, gap: 2 });
+    text(`${ANS.forWho(M)}  ·  ${M.live ? `AI: ${M.meta.provider || ""}${M.meta.model ? " / " + M.meta.model : ""}` : M.demo ? "Written by the demo pipeline (no AI)" : "Preview without the AI"}${M.figs ? "  ·  figures use synthetic demo data" : ""}`, { size: 8.5, color: MUTED, gap: 2 });
 
     label("AI overview");
     text(M.title, { size: 13, bold: true, lh: 1.3, gap: 2 });
@@ -128,11 +142,11 @@ window.REPORT = (() => {
     const n = doc.getNumberOfPages();
     for (let i = 1; i <= n; i++) {
       doc.setPage(i); doc.setFont("Inter", "normal"); doc.setFontSize(7.2); doc.setTextColor(...FAINT);
-      doc.text("Flame in Freefall · NASA Space Apps 2026 · research support only, not safety certification", ML, PH - 9);
+      doc.text("IMPER-ai-L · Team dynamICs · Flame in Freefall · NASA Space Apps 2026 · research support only, not safety certification", ML, PH - 9);
       doc.text(`${i} / ${n}`, ML + CW, PH - 9, { align: "right" });
     }
     const slug = String(M.title || M.q).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 60) || "answer";
-    doc.setProperties({ title: `Flame in Freefall — ${M.title}`, subject: M.q, creator: "Flame in Freefall (NASA Space Apps 2026)" });
+    doc.setProperties({ title: `IMPER-ai-L — ${M.title}`, subject: M.q, author: "Team dynamICs", creator: "IMPER-ai-L · Flame in Freefall (NASA Space Apps 2026)" });
     doc.save(`flame-in-freefall-${slug}.pdf`);
     UI.toast("PDF downloaded");
     return doc;

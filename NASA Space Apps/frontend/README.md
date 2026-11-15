@@ -1,47 +1,62 @@
-# Flame in Freefall — frontend
+# IMPER-ai-L — Flame in Freefall frontend · Team dynamICs
 
 Two ways to run it:
-- **Mock answers:** double-click `index.html`. Everything works except the written answer (a preview is built from the question's words).
+- **No AI (demo pipeline):** double-click `index.html`. Every question still gets its own generated figures and a written answer: the demo pipeline (`js/pipeline.js`) writes it straight from the figures.
 - **Live AI:** double-click `start_ai_server_claude.command` (Claude through your Claude Code login) or `start_ai_server.command` (Groq / xAI key in `.env.local`), then open http://localhost:8000. Python standard library only — nothing to install.
 
 The stand-in server (`standin/server.py`) does keyword search over `standin/context.json`, sends the top matches to the model, and removes any investigation or chart it can't verify before the site sees it (the answer page says what it removed). Keys stay in `.env.local` (git-ignored) and are never served. The backend team's knowledge-graph service replaces it later — same `/api/ask` contract.
 After changing anything in `data/`, rebuild the AI's context: `node standin/build_context.js`.
 
-## The interface (Nov 15 design)
+## Round 6 (Nov 15)
 
-Black and white, with flame colour only as a highlight (the key reading on a chart, focus rings, the flame). Font: Inter, bundled in `fonts/` so it works offline.
+- **Answers are generated from the question** (`js/pipeline.js`, `js/figures.js`). The pipeline does what the real backend will do, with fake data: it reads the question (environment defaults, plus any material, fuel, suppressant, "30% oxygen", "8 psi", "20 cm/s", "35 kW/m²", "2 mm droplet" it names), picks 3–4 analyses (flame spread, oxygen limit vs airflow, flame temperature, ignition, droplet burning, buoyancy, suppression), runs a simplified version of the matching thermo model (THM-05, 17, 01, 16, 11, 08, 18) on those conditions, scatters **synthetic** NASA-style observations around it (seeded, so the same question gives the same data), and draws the figures. Every figure is labelled *Demo data · synthetic*. In a figure's full-screen view, sliders re-run its model live.
+- **With the live AI** the page sends the figures' readings with the question (`figures` in the `/api/ask` body); `standin/server.py` lists them to the AI as the only charts it may attach and quote, so the text matches the figures.
+- **Figure contract for the backend:** an answer may carry `figures: { id: spec }` and points may name those ids in `charts`. A spec is `{ kind: "line" | "bar", title, model, x: { label, unit, min, max, log, ticks }, y: {…}, series: [{ name, pts: [[x, y]…], style: "solid" | "dash" | "thin", fill: "above" }], obs: { name, pts: [[x, y, err]…] }, refs: [{ x | y, label }], mark: { x, y, label }, bars: [{ label, value, hi }], desc }`. The page draws them in its own style.
+- **Answer page:** the question tab grows to fill the screen as the **overview**, the only widget on the page (title, short answer, key facts, outline, small previews of the figures). Click it for the **full answer** in a focus window (findings with their figures, experiments, thread, next questions, References and Method); any box in it opens on top. Esc closes one layer at a time.
+- **Rocket:** the send button is a rocket. Asking glides the prompt bar into the dock, the rocket lifts off into the question tab and climbs its rail as each step is done (steps read bottom to top), then leaves the top as the overview grows.
+- **Environments:** Moon and Mars added (NASA's exploration atmosphere, 8.2 psi · 34% O₂; 0.16 g and 0.38 g). Changing environment sinks the old drawing into the prompt box and raises the new one out of it.
+- **Look:** soft gradient with fine film grain behind frosted-glass widgets (white glass on dark, black glass on light); a rim light travels round the prompt box (brighter on focus, faster while thinking); scroll bars appear only while something scrolls; theme switch cross-fades.
+- **Team:** dynamICs, with the team logo in the sidebar and the PDF (`js/logo.js`, `img/`).
 
-- **Layout** (design 8): sidebar on the left (new question, search, widget library, NASA experiments, Recent questions, live-AI status), persona picker top left (General / Student / Professor / Engineer), Share, PDF and light/dark switch top right.
-- **Ask box** (design 4): frosted, with a thin spectrum rim that turns slowly, faster while the AI thinks. `+` sets the environment (ISS cabin, lunar habitat, spacesuit, Earth), which is sent to the AI as `scenario`. Enter asks; Shift+Enter is a new line; the send button becomes Stop while thinking.
-- **The flame** (design 2): a microgravity flame drawn as a ring of light with a belt of dust orbiting it in 3D (`js/flame.js`). Large on the home screen; small as the "Thinking" indicator.
-- **Background** (design 3): sparse stars, and a faint dot grid that lights up under the cursor and fades behind it (`js/bg.js`).
-- **Answer page** (`js/answer.js`): the question, then "Thinking" steps, then
-  1. **AI overview** — title, the short answer (streams in), and a strip of key facts;
-  2. **Findings** — the AI's points in reading order, each a box with the chart(s) that show it; two per row, or full width when a finding has two charts;
-  3. **More from the data** — what the data can't say, and the NASA experiments behind the findings;
-  4. **Ask next** — follow-up questions (asked with the previous answer as context);
-  5. **References** — every NASA PSI investigation and thermo model (with its literature) the answer used, numbered; the small numbers in the text jump to them. Ends with how the answer was made (model, time, what the server removed).
-  Nothing is hidden behind a Next button: boxes arrive one after another as the answer lands, and the rest as you scroll to them.
-- **Full screen** (`js/expand.js`): click any box (or a key fact) and it grows from its place to fill the screen with the full interactive version: sliders, dropdowns, readouts, both charts as tabs, the method, equations and sources. Esc, × or the backdrop shrinks it back.
-- **Share:** copy link (re-asks the same question), share sheet, copy the answer as text.
-- **PDF** (`js/report.js`): everything the AI wrote — overview, key facts, findings with their charts, limits, experiments, next questions, references with links. jsPDF and the PDF font load only when asked (`vendor/`).
-- **Recent:** each question is saved in the browser with its answer, so reopening it (or pressing Back) is instant; "Ask again" gets a fresh answer.
-- **Pages:** `#library` (all thermo-model widgets, filter by kind) · `#experiments` (the 26 PSI investigations, filterable) · `#q=…&p=…&s=…` an answer (p = persona, s = environment).
+## The interface (Nov 15, round 5)
+
+The site is called **IMPER-ai-L** (Flame in Freefall challenge). Black and white, with flame colour only as a highlight (the key reading on a chart, focus rings, the flame). Font: Inter, bundled in `fonts/` so it works offline.
+
+- **Layout:** sidebar on the left (New question, Search, All questions, NASA experiments, Data display settings, then Pinned and Recent, each collapsible, and the live-AI status). Share, PDF and the light/dark switch top right.
+- **Home:** the centre shows the flame until an environment is chosen, then a line drawing of that environment (ISS, lunar habitat, spacesuit, Earth) with the dust belt still orbiting it (`FLAME.setGlyph`). Under it, just the prompt bar.
+- **Prompt bar:** environment dropdown on the left, persona dropdown (General / Student / Professor / Engineer) just left of send. Their menus open above or below the whole bar, never over the text.
+  - **Environment starts empty.** Asking without one opens the menu ("Choose an environment to ask") and the question goes as soon as one is picked. "Make … my default" in the same menu pre-selects it on later visits (stored as `fif-env-default`). The environment is sent to the AI as `scenario`.
+  - Enter asks; Shift+Enter is a new line; send becomes Stop while thinking. After an answer the bar flattens to one row.
+- **Asking:** the question and its thinking steps sit in a **question tab** just above the prompt bar; the centre shows the environment, thinking, with the current step under it. When the answer lands, the tab shrinks to one line (the ▲ button opens it again: the steps and the other questions in this thread) and the AI overview grows out of it to fill the screen. Follow-ups asked from an answer stay in the same thread.
+- **Answer page** (`js/answer.js`):
+  1. **AI overview** — fills the screen: title, the short answer (streams in), an "In this answer" outline of the findings (click one to jump to it) and the key facts. The whole box is clickable and highlights on hover; it opens the full overview, step by step, with the **Ask next** questions.
+  2. **Findings** — the AI's points in reading order, each its own box with the chart(s) that show it.
+  3. **More from the data** — what the data can't say, the NASA experiments behind the findings, other charts.
+  4. **References** and **Method** — two closed drop-downs. References: every PSI investigation and thermo model (with its literature), numbered; the small numbers in the text open it and jump to the entry. Method: how the answer was made and where the data comes from (this replaced the notes that used to sit under the home screen and the prompt bar).
+- **Method from the backend:** if `/api/ask` returns a `method` field it is shown in the Method drop-down instead of the built-in steps. Accepted shapes: a string (markdown paragraphs), a list of steps (strings, or `{ "title", "text" }`), or `{ "summary", "steps": [...], "notes": [...] }`.
+- **Full screen** (`js/expand.js`): click any box (or a key fact) and it grows from its place to fill the screen with the full interactive version. Esc, × or the backdrop shrinks it back.
+- **Data display settings** (`#display`, `js/manage.js`): on/off switches for the answer sections (key facts, charts in findings, NASA experiment cards, limits, more charts) and for every chart. Anything off is left out of every answer, saved ones included (stored as `fif-display`); the overview says how many displays your settings hid. Charts can still be previewed here.
+- **File manager** (`js/fm.js`), used by Data display settings, NASA experiments and All questions: search, grid / list / details view, item size S / M / L, sort menu or click a column header in details, group by, status bar. View choices are remembered per page.
+- **NASA experiments** (`#experiments`): the 26 PSI investigations; group by platform, type, NASA center or decade; open one for its full record.
+- **All questions** (`#questions`): every question with its saved answer (up to 60; pinned ones are never dropped). Folders on the left (New folder, rename, delete); drag a question onto a folder or use Move to in its ⋯ menu; pin, rename, delete; group by date, thread, persona, environment or folder.
+- **Share:** copy link (re-asks the same question), share sheet, copy the answer as text. **PDF** (`js/report.js`): everything the AI wrote, with charts and references.
+- **Pages:** `#display` (`#library` still works) · `#experiments` · `#questions` · `#q=…&p=…&s=…` an answer (p = persona, s = environment).
 
 ## Where things are
 - `index.html` — loads the data, the chart kit, then the interface
-- `css/app.css` — the design: tokens for both themes, layout, boxes, charts (`css/skeleton.css` is kept for `model-widgets.html` and `skeleton-full.html`)
-- `js/dashboard.js` — routing and the ask flow · `js/ui.js` — icons, theme, menus, persona, environment, Recent, share menu
-- `js/answer.js` — turns the AI's reply into the page (and the references) · `js/expand.js` — full-screen boxes · `js/report.js` — PDF
-- `js/bg.js`, `js/flame.js` — the background and the flame
-- `js/api.js` — AI client (`/api/ask`; mock answers from `js/mockgen.js` when opened as a file)
+- `css/app.css` — the design: tokens for both themes, layout, prompt bar, question tab, boxes, drop-downs, file manager, charts (`css/skeleton.css` is kept for `model-widgets.html` and `skeleton-full.html`)
+- `js/dashboard.js` — routing and the ask flow (question tab, thinking, the overview growing in) · `js/ui.js` — icons, theme, menus, persona and environment pickers, display settings, history (folders, pins, threads), sidebar, share menu
+- `js/answer.js` — turns the AI's reply into the page, the References and Method drop-downs, and the question tab · `js/expand.js` — full-screen boxes · `js/report.js` — PDF
+- `js/fm.js` — the file manager · `js/manage.js` — Data display settings, NASA experiments, All questions
+- `js/bg.js`, `js/flame.js` — the background, and the flame / environment drawings
+- `js/api.js` — AI client (`/api/ask`; with no AI, the demo pipeline's own answer) · `js/pipeline.js` — the demo pipeline (parse → plan → run models → write) · `js/figures.js` — draws generated figures and their re-run sliders · `js/logo.js` — team logo
 - `js/charts.js`, `js/model_widgets*.js` — the thermo-model charts (monochrome SVG drawn at each box's real size); data in `data/model_outputs.js`, regenerated by `standin/precompute_models.py`
 - `js/story.js` — cleans the AI's points (unknown charts and investigations dropped); `js/text_widgets.js` — experiment cards and the literature block
 - `data/investigations.js` (26 real PSI investigations), `data/models.js` (thermo model catalogue), `data/literature.js` (method + sources per model)
-- Not used by the main page any more: `js/tour.js` (old walkthrough), `js/tiler.js` layouts (only its hash/random helpers), `js/pages.js` + `js/widgets.js` (the old multi-page skeleton, `skeleton-full.html`). Backups of earlier versions are in the `_backup_*` folders; the version before this redesign is `_backup_before_redesign/`.
+- Not used by the main page any more: `js/tour.js`, `js/tiler.js` layouts (only its hash helper), `js/library.js` grid (only `W.def` / `W.full`), `js/pages.js` + `js/widgets.js` (the old skeleton, `skeleton-full.html`). Backups of earlier versions are in the `_backup_*` folders; the version before round 5 is `_backup_before_round5/`, before round 6 `_backup_before_round6/`. `js/mockgen.js` is no longer used (the pipeline replaced it).
 
 ## Tests
-- `python3 -m unittest tests/test_server_points.py tests/test_server_nocache.py tests/test_server_claude.py`
+- `python3 -m unittest tests/test_server_points.py tests/test_server_nocache.py tests/test_server_claude.py tests/test_server_figures.py`
 - `node --test tests/story.test.js tests/tour.test.js`
 - Browser checks (needs `pip install playwright` and `python3 -m playwright install chromium`): `python3 -I tests/ui_e2e.py`. It starts the server with a fake `claude` (`tests/fake_claude.py`), so it never uses your Claude plan.
 

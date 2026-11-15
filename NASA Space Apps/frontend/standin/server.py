@@ -134,7 +134,23 @@ def slim(inv):
     return out
 
 
-def build_messages(question, persona, scenario, history):
+FIG_ID = re.compile(r"^[A-Za-z0-9_-]{1,48}$")
+
+
+def clean_figures(figs):
+    """Figures the page generated for this question (js/pipeline.js): id, title, model, what it shows, NASA ids.
+    Only their words reach the AI; anything malformed is dropped."""
+    out = []
+    for f in figs if isinstance(figs, list) else []:
+        if not isinstance(f, dict) or not FIG_ID.match(str(f.get("id", ""))):
+            continue
+        out.append({"id": f["id"], "title": str(f.get("title", ""))[:90], "model": str(f.get("model", ""))[:12],
+                    "shows": str(f.get("shows", ""))[:400],
+                    "built_on": [i for i in (f.get("built_on") or []) if str(i).upper() in INV_IDS][:4]})
+    return out[:6]
+
+
+def build_messages(question, persona, scenario, history, figures=None):
     hits = search(question, k=int(os.environ.get("AI_CONTEXT_K", 4)))
     index = [f'{i["id"]} {i["acronym"] or ""}: {i["title"][:38]}' for i in CTX["investigations"]]
     models = [f'{m["id"]} [{m["evidence"]}] {m["description"][:55]} (PSI: {", ".join(m["linkedInvestigations"])})' for m in CTX["models"]]
@@ -145,7 +161,15 @@ def build_messages(question, persona, scenario, history):
         "hardware": [{"name": h["name"], "investigations": h["investigations"]} for h in CTX["hardware"]],
         "thermo_models_catalogue": models,
     }
-    charts = chart_facts.facts(compact=not rich(), linked={m["id"]: m["linkedInvestigations"] for m in CTX["models"]})
+    figures = clean_figures(figures)
+    fig_note = ("\nThese figures were generated for THIS question: the thermo models were re-run on its conditions (environment, oxygen,\n"
+                "pressure, gravity, material) with synthetic demo data in place of the NASA database. Their \"Shows:\" numbers are exactly\n"
+                "what the reader sees; quote them, attach each figure to the point it supports, and say once in limitations that the\n"
+                "figures use synthetic demo data.") if figures else ""
+    if figures:   # the page ran the models on this question: these figures are what the reader will see
+        charts = {f["id"]: f'{f["title"]} ({f["model"]}, re-run for this question on DEMO data). Shows: {f["shows"]} Built on: {", ".join(f["built_on"]) or "-"}.' for f in figures}
+    else:
+        charts = chart_facts.facts(compact=not rich(), linked={m["id"]: m["linkedInvestigations"] for m in CTX["models"]})
     system = f"""You answer questions on a NASA Space Apps 2026 website ({CTX["challenge"]["name"]}) about fire safety in crewed spacecraft and habitats.
 Your sources: NASA PSI microgravity combustion investigations (in <data>) and the thermo team's model charts (CHARTS below).
 Reader: {PERSONA.get(persona, PERSONA["general"])}
@@ -169,7 +193,7 @@ It must read like a clear explanation from an expert who knows this data, not a 
 5. Research support only, not safety certification. Refer to charts by what they show, never by THM number.
 6. Before replying, check each point: is the claim supported by <data> or a chart? is every number written there? does it contradict any chart's "Means:" line, including charts you did not attach? Fix it if so.
 
-CHARTS (type: what it shows)
+CHARTS (type: what it shows){fig_note}
 {chr(10).join(f"- {t}: {d}" for t, d in charts.items())}
 
 OTHER FIELDS
@@ -260,8 +284,9 @@ def fix_chart(t):
     return same[0] if len(same) == 1 else t
 
 
-def parse_and_check(raw):
-    """Never trust model output: keep only known widget types, known PSI ids and known tags."""
+def parse_and_check(raw, figures=None):
+    """Never trust model output: keep only known widget types (or this question's figures), known PSI ids and known tags."""
+    known = set(WIDGETS) | {f["id"] for f in clean_figures(figures)}
     m = re.search(r"\{.*\}", raw, re.S)
     obj = json.loads(m.group(0)) if m else {}
     dropped = []
@@ -274,7 +299,7 @@ def parse_and_check(raw):
             dropped.append(f"evidence {pid or '?'}")
     widgets = []
     for w in obj.get("widgets") or []:
-        if isinstance(w, dict) and w.get("type") in WIDGETS:
+        if isinstance(w, dict) and w.get("type") in known:
             p = w.get("params") if isinstance(w.get("params"), dict) else {}
             for key in ("id", "node"):
                 if key in p and str(p[key]).upper() not in INV_IDS:
@@ -314,10 +339,10 @@ def parse_and_check(raw):
                 dropped.append(f"point evidence {i}")
         charts = []
         for t in p.get("charts") if isinstance(p.get("charts"), list) else []:
-            t = fix_chart(t)
-            if t in WIDGETS and t not in used and len(charts) < 2:
+            t = t if t in known else fix_chart(t)
+            if t in known and t not in used and len(charts) < 2:
                 charts.append(t); used.add(t)
-            elif t not in WIDGETS:
+            elif t not in known:
                 dropped.append(f"chart {t}")
         points.append({"text": text, "psi_ids": psi[:3], "charts": charts})
     if points:   # the charts the page shows are the ones attached to points
@@ -371,8 +396,8 @@ class Handler(SimpleHTTPRequestHandler):
             return self._json(503, {"error": "No AI key found. Add GROQ_API_KEY or XAI_API_KEY to frontend/.env.local, then restart."})
         t0 = time.time()
         try:
-            raw = call_llm(provider, build_messages(q, req.get("persona"), req.get("scenario"), req.get("history")))
-            out = parse_and_check(raw)
+            raw = call_llm(provider, build_messages(q, req.get("persona"), req.get("scenario"), req.get("history"), req.get("figures")))
+            out = parse_and_check(raw, req.get("figures"))
         except (RuntimeError, ValueError) as e:
             return self._json(502, {"error": str(e)})
         out["meta"] = {"source": "live", "si_generated": True, "provider": provider["name"], "model": provider["model"],

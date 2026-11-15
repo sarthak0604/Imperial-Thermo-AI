@@ -314,6 +314,8 @@ window.MW = (() => {
   function mountAll(root) { root.querySelectorAll("[data-mw]").forEach(el => { const d = R[el.dataset.mw]; if (d.mount) d.mount(el); }); }
   // later files (js/model_widgets_more.js) add their widgets here: { type: { reg, tile, shape } }
   function extend(defs) { for (const [t, d] of Object.entries(defs)) { R[t] = d.reg; TILE[t] = d.tile; SHAPE[t] = d.shape; } }
-  return { lib: R, types: () => Object.keys(R), render, mountAll, STATUS, extend,
+  STATUS.demo = `<span class="badge" data-tag="synthetic">[Demo data · synthetic]</span>`;
+  // generated figures (js/figures.js) live in the same library but are not part of the fixed chart catalogue
+  return { lib: R, types: () => Object.keys(R).filter(t => !R[t].gen), render, mountAll, STATUS, extend,
     tile: t => TILE[t](), shape: t => SHAPE[t] || [2, 1.4, 2.8], aspect: t => (SHAPE[t] || [2])[0], body: t => R[t].render(), mount: (el, t) => R[t] && R[t].mount && R[t].mount(el) };
 })();

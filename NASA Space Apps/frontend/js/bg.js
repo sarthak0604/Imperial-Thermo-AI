@@ -1,9 +1,17 @@
 // BACKGROUND — sparse stars, and a faint dot grid that lights up under the cursor and fades behind it (design 3).
-// Also turns the ask box's thin spectrum rim (design 4): slowly at rest, faster while the AI is thinking.
+// Under it: a soft gradient and fine film grain (CSS, the grain texture is made here once), so the frosted widgets
+// stand out. Also turns the prompt box's rim light: slowly at rest, faster while the AI is thinking. The angle is set
+// on the prompt box itself, not the page, so only that box restyles each frame.
 // One canvas behind everything; pauses when the tab is hidden; a still frame with reduced motion.
 window.BG = (() => {
   const RM = matchMedia("(prefers-reduced-motion: reduce)").matches, TAU = Math.PI * 2, SP = 28, R = 130, SIG = 60;
-  const cv = document.getElementById("bg"), x = cv.getContext("2d");
+  const cv = document.getElementById("bg"), x = cv.getContext("2d"), pb = document.getElementById("ask-form");
+  // film grain: a small tile of soft noise, drawn once and repeated by CSS (body::after)
+  (() => { try {
+    const n = 140, g = document.createElement("canvas"); g.width = g.height = n; const c = g.getContext("2d"), im = c.createImageData(n, n), r = rng(7);
+    for (let i = 0; i < n * n; i++) { const v = 128 + (r() + r() + r() - 1.5) * 150; im.data[i * 4] = im.data[i * 4 + 1] = im.data[i * 4 + 2] = v < 0 ? 0 : v > 255 ? 255 : v; im.data[i * 4 + 3] = 255; }
+    c.putImageData(im, 0, 0); document.documentElement.style.setProperty("--grain", `url(${g.toDataURL("image/png")})`);
+  } catch (e) {} })();
   let w = 1, h = 1, dpr = 1, stars = [], cols = 0, rows = 0, heat = new Float32Array(0), raf = 0, last = 0, T = 0;
   let mx = -9999, my = -9999, sx = -9999, sy = -9999, k = 0, kT = 0, ang = 0;
   function rng(seed) { let s = seed >>> 0; return () => { s = (s + 0x6D2B79F5) | 0; let t = Math.imul(s ^ (s >>> 15), 1 | s); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
@@ -17,6 +25,7 @@ window.BG = (() => {
   const STC = { dark: [[255, 255, 255], [205, 222, 255], [255, 226, 186]], light: [[18, 18, 26], [44, 95, 224], [221, 95, 10]] };
   function draw(dt) {
     const L = document.documentElement.dataset.theme === "light", ink = L ? "12,12,16" : "255,255,255";
+    if (!dt || paint) {                                                       // the canvas itself (see loop for when)
     x.setTransform(dpr, 0, 0, dpr, 0, 0); x.clearRect(0, 0, w, h);
     // stars, with a few pixels of parallax toward the pointer
     const ox = sx > -999 ? -(sx - w / 2) * .008 : 0, oy = sy > -999 ? -(sy - h / 2) * .008 : 0, C = STC[L ? "light" : "dark"];
@@ -43,16 +52,22 @@ window.BG = (() => {
       heat[q] = v * fade;
     }
     x.globalAlpha = 1;
+    }
     // the ask box rim: angle eased between a slow drift and a faster turn while thinking
     k += (kT - k) * (1 - Math.exp(-dt * 1.8)); ang += dt * (.22 + 1.1 * k);
-    document.documentElement.style.setProperty("--ra", (ang * 180 / Math.PI % 360).toFixed(1) + "deg");
+    if (pb) pb.style.setProperty("--ra", (ang * 180 / Math.PI % 360).toFixed(1) + "deg");
   }
-  function loop(now) { const dt = last ? Math.min(.05, (now - last) / 1000) : 1 / 60; last = now; T += dt;
+  // Keeping it cheap, so the frosted widgets above it stay smooth: every frame while the cursor moves, the dots fade
+  // or the AI thinks; otherwise the slow star twinkle redraws at ~15 fps; nothing at all while a focus window covers it.
+  let paint = true, n = 0, moved = 0;
+  function loop(now) { const dt = last ? Math.min(.05, (now - last) / 1000) : 1 / 60; last = now; T += dt; n++;
     if (mx > -999) { if (sx < -999) { sx = mx; sy = my; } else { const f = 1 - Math.exp(-dt * 14); sx += (mx - sx) * f; sy += (my - sy) * f; } } else sx = sy = -9999;
+    const covered = document.body.classList.contains("focus-open"), busy = now - moved < 1600;
+    paint = !covered && (busy || n % 4 === 0);
     draw(dt); raf = requestAnimationFrame(loop); }
   function start() { if (RM || raf) return; last = 0; raf = requestAnimationFrame(loop); }
   function stop() { cancelAnimationFrame(raf); raf = 0; }
-  addEventListener("pointermove", e => { if (e.pointerType === "touch") return; mx = e.clientX; my = e.clientY; }, { passive: true });
+  addEventListener("pointermove", e => { if (e.pointerType === "touch") return; mx = e.clientX; my = e.clientY; moved = performance.now(); }, { passive: true });
   document.addEventListener("pointerleave", () => { mx = my = -9999; });
   addEventListener("blur", () => { mx = my = -9999; });
   document.addEventListener("visibilitychange", () => document.hidden ? stop() : start());

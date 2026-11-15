@@ -74,6 +74,8 @@ window.DATA.dimensionless = [
 window.DATA.scenarioSignificance = {
   iss: "No buoyancy; burning controlled by forced ventilation (team reference: 5–40 cm/s) and molecular diffusion.",
   lunar_habitat: "Lower pressure reduces convective cooling and diluent heat capacity while more O₂ raises flame temperature and spread rate. Chosen to shorten EVA pre-breathing.",
+  moon: "34% O₂ at 8.2 psi makes flames hotter and faster-spreading than in ISS air, while 0.16 g still drives a weak buoyant flow (stronger than typical cabin ventilation).",
+  mars: "Same exploration atmosphere as the Moon (34% O₂, 8.2 psi) with 0.38 g: a stronger buoyant draught, closer to an Earth flame than an ISS one.",
   spacesuit: "Pure oxygen removes the nitrogen heat sink: very easy ignition and rapid flame spread.",
   earth: "Buoyant plume draws in fresh O₂ (team reference: ~30–50 cm/s). Baseline for NASA-STD-6001 Test 1 upward-burn screening."
 };

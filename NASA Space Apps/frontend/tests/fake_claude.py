@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 # Fake Claude Code CLI for tests: answers like `claude -p --output-format json` would, with a fixed answer
 # (one made-up investigation, PSI-999, which the server must drop). No real Claude call, no plan usage.
-import json, sys, time
-sys.stdin.read()
+import json, re, sys, time
+prompt = sys.stdin.read()
+if "--system-prompt-file" in sys.argv:                       # the chart list is in the system prompt
+    prompt += open(sys.argv[sys.argv.index("--system-prompt-file") + 1], encoding="utf-8").read()
+# the page's generated figures for this question, if it sent any (round 6): attach them like a real answer would
+FIGS = re.findall(r"^- (f[0-9a-z]+_[a-z]+): ", prompt, re.M)
 time.sleep(float(__import__("os").environ.get("FAKE_DELAY", "2.5")))
 ans = {
  "title": "Fabric flammability in a lunar habitat",
@@ -28,4 +32,7 @@ ans = {
  "limitations": "PSI holds no partial-gravity combustion data, so every statement about the Moon is a theoretical bound from the buoyancy scaling, not a measurement.",
  "follow_ups": ["How fast would a fire spread along habitat fabric at 30% oxygen?", "Which suppressant works best at 10.2 psi?", "Would a spacesuit's pure oxygen make fabric ignite instantly?"]
 }
+if FIGS:
+    for pt, f in zip(ans["points"], FIGS):
+        pt["charts"] = [f]
 print(json.dumps({"type": "result", "is_error": False, "result": json.dumps(ans)}))
