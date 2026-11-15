@@ -331,7 +331,8 @@ def search_graph(graph: dict, plan: dict, limit: int = 20) -> dict:
         raise ValueError("Expected a version 2 query plan with queries array.")
     if isinstance(limit, bool) or not isinstance(limit, int) or not 1 <= limit <= 1000:
         raise ValueError("limit must be between 1 and 1000.")
-    index = GraphIndex(graph)
+    index = graph if isinstance(graph, GraphIndex) else GraphIndex(graph)
+    graph = index.graph
     query_tokens = tokens(plan.get("search_text", ""))
     output = []
     for query in plan["queries"]:
@@ -343,7 +344,13 @@ def search_graph(graph: dict, plan: dict, limit: int = 20) -> dict:
             if node["type"] != return_type:
                 continue
             evaluation = evaluate(index, node["id"], query.get("where"))
-            context_text = " ".join(stringify(n["properties"].get(key)) for n in index.context(node["id"]) for key in TEXT_FIELDS)
+            # Rank on bounded direct ownership context. Shared concept fanout
+            # must not turn a resource lookup into an unbounded two-hop scan.
+            nearby = [node]
+            for edge in (index.incoming[node['id']] + index.outgoing[node['id']])[:32]:
+                other = edge['source'] if edge['target'] == node['id'] else edge['target']
+                nearby.append(index.nodes[other])
+            context_text = " ".join(stringify(n["properties"].get(key)) for n in nearby for key in TEXT_FIELDS)
             words = tokens(context_text)
             score = len(words & query_tokens) / max(1, len(query_tokens))
             meaningful_match = any(d["status"] == "satisfied" and d.get("field") in {"name", "id", "title", "material"} for d in evaluation.details)

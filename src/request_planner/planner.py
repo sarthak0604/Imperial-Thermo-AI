@@ -379,6 +379,8 @@ def _local_catalog(prompt, catalog):
     names = {"lewis number": "THM-02", "adiabatic flame temperature": "THM-01"}
     matches = set(re.findall(r"\bTHM-(?:0[1-9]|1[0-9]|20)\b", prompt.upper()))
     matches.update(model_id for name, model_id in names.items() if name in prompt.casefold())
+    from .task_router import route
+    matches.update(route(prompt).model_ids)
     from imperial_thermo_ai.graph_search import tokens
     matches.update(entry['model_id'] for entry in catalog
                    if len(tokens(entry['description']) & tokens(prompt)) >= 2)

@@ -108,10 +108,7 @@ class AnswerResult(Contract):
             "answer": self.message,
             "blocks": self.result.blocks,
             "evidence": evidence,
-            "points": [
-                {"text": c["text"], "psi_ids": c.get("psi_ids", []), "charts": []}
-                for c in self.claims
-            ],
+            "points": [],
             "widgets": [],
             "limitations": "\n\n".join(
                 self.result.warnings + self.request.clarifications
@@ -122,6 +119,7 @@ class AnswerResult(Contract):
                 "provider": "thermo",
                 "status": self.status,
                 "trace_id": self.trace_id,
+                "graph_id": self.retrieval.graph_id,
                 "seconds": self.timings.get("total"),
                 "schema_version": "2.0",
             },

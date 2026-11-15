@@ -32,6 +32,7 @@
   function stopThinking() { document.body.classList.remove("thinking"); BG.thinking(false); if (flame) flame.think(false); if (tflame) { tflame.stop(); tflame = null; } clearTimers(); }
 
   function goHome() {
+    API.resetConversation();
     abort(); stopThinking(); M = null; show("home"); ta.value = ""; autosize(); UI.setActive(null);
     document.title = "Flame in Freefall"; ansEl.innerHTML = "";
   }
@@ -46,7 +47,7 @@
   }
   function open(q, p, s, o = {}) {
     EXPAND.close();
-    const saved = !o.fresh && UI.find(q, p, s);
+    const saved = API.status.provider !== "thermo" && !API.conversation && !o.fresh && UI.find(q, p, s);
     if (saved) return render(saved.a, { q, p, s, at: saved.t, cached: true });
     return ask(q, p, s, o.history || []);
   }
@@ -168,6 +169,8 @@
   }
   document.addEventListener("click", e => {
     const t = e.target;
+    const reply = t.closest("[data-reply]");
+    if (reply) return go(reply.dataset.reply);
     const ref = t.closest("[data-ref]"); if (ref) { e.preventDefault(); return toRef(ref.dataset.ref); }
     const q = t.closest("[data-q]"); if (q) { ta.value = q.dataset.q; return go(q.dataset.q); }
     const fu = t.closest("[data-followup]"); if (fu) { e.preventDefault(); return go(fu.textContent.trim(), { history: M && M.summary ? [{ q: M.q, a: M.summary, source_file_ids: [...new Set((M.raw.evidence || []).map(e => e.file_id).filter(Boolean))] }] : [] }); }

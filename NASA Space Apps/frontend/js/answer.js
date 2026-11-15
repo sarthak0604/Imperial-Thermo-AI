@@ -139,6 +139,9 @@ window.ANS = (() => {
     const add = b => (boxes.push(b), boxes.length - 1);
     const facts = M.facts.map(f => factHTML(f, add({ kind: "fact", f }))).join("");
     html += `<div class="grid top-grid">${overviewHTML(M, facts)}</div>`;
+    if (M.raw.clarifications?.length) {
+      html += `<section class="box s12"><h2>More information needed</h2>${M.raw.clarifications.map(c => `<p>${esc(c.question)}${c.unit ? ` (${esc(c.unit)})` : ""}</p>${(c.choices || []).map(choice => `<button type="button" class="chip" data-reply="${esc(choice)}">${esc(choice)}</button>`).join("")}`).join("")}<p>Reply in the question box to continue this task.</p></section>`;
+    }
     if (M.finds.length) {
       const wide = packFindings(M.finds);
       html += `<div class="sec-h"><h2>Findings</h2><p>In reading order, each with the NASA data it rests on. Open any box to explore it.</p></div>
@@ -165,7 +168,8 @@ window.ANS = (() => {
   function madeLine(M) {
     const m = M.meta || {}, when = new Date(M.at).toLocaleString([], { dateStyle: "medium", timeStyle: "short" });
     const who = M.live ? `Written by ${m.provider || "the AI"}${m.model ? " / " + m.model : ""}${m.stand_in ? " through the team's stand-in server" : ""}${m.seconds ? ` in ${m.seconds} s` : ""}` : "No AI connected: preview built from the question's words";
-    const checks = M.meta?.provider === "thermo" ? " Source excerpts and calculation outputs retain their original provenance." : M.live ? ` The server removed anything it could not match to the data${M.dropped.length ? ` (${M.dropped.length} item${M.dropped.length > 1 ? "s" : ""}: ${M.dropped.slice(0, 4).join(", ")})` : " (nothing needed removing)"}.` : "";
+    const graph = M.meta?.graph_id ? ` Graph: ${M.meta.graph_id}.` : "";
+    const checks = M.meta?.provider === "thermo" ? ` Source excerpts and calculation outputs retain their original provenance.${graph}` : M.live ? ` The server removed anything it could not match to the data${M.dropped.length ? ` (${M.dropped.length} item${M.dropped.length > 1 ? "s" : ""}: ${M.dropped.slice(0, 4).join(", ")})` : " (nothing needed removing)"}.` : "";
     return `${who}, ${when}. ${forWho(M)}.${checks} Sources: NASA Physical Sciences Informatics (PSI) combustion investigations and the Imperial thermo team's models. Research support only, not safety certification.`;
   }
   const madeHTML = M => `<p class="made">How this answer was made: ${esc(madeLine(M))}</p>`;

@@ -14,6 +14,9 @@ Run from the frontend folder:   python3 standin/server.py
 The stand-in modes use only the standard library. Thermo mode uses the project environment.
 """
 from __future__ import annotations
+import secrets
+import urllib.parse
+from http.cookies import SimpleCookie
 import chart_facts
 import thermo
 import json, os, re, shutil, subprocess, sys, tempfile, time, urllib.error, urllib.request
@@ -338,6 +341,8 @@ class Handler(SimpleHTTPRequestHandler):
 
     def end_headers(self):                                       # always serve the latest files (no stale page after an update)
         self.send_header("Cache-Control", "no-store")
+        if getattr(self, 'session_cookie', None):
+            self.send_header('Set-Cookie', 'thermo_session='+self.session_cookie+'; HttpOnly; SameSite=Strict; Path=/')
         super().end_headers()
 
     def log_message(self, fmt, *args):
@@ -359,16 +364,42 @@ class Handler(SimpleHTTPRequestHandler):
             return None
         return super().send_head()
 
+    def do_DELETE(self):
+        if not self.path.startswith('/api/conversation?'):
+            return self._json(404, {'error':'not found'})
+        origin = self.headers.get('Origin')
+        if origin and urllib.parse.urlsplit(origin).netloc != self.headers.get('Host'):
+            return self._json(403, {'error':'Cross-origin mutation rejected.'})
+        from request_planner.conversation import ConversationStore
+        cookie = SimpleCookie(self.headers.get('Cookie',''))
+        if 'thermo_session' not in cookie:
+            return self._json(403, {'error':'Session required.'})
+        cid = urllib.parse.parse_qs(urllib.parse.urlsplit(self.path).query).get('id',[''])[0]
+        ConversationStore(load_env().get('THERMO_CONVERSATION_DB','/tmp/thermo-conversations.sqlite3')).delete(cookie['thermo_session'].value,cid)
+        return self._json(200, {'deleted':True})
+
     def do_GET(self):
+        if self.path.startswith('/api/conversation?'):
+            from request_planner.conversation import ConversationStore, ConversationError
+            cookie = SimpleCookie(self.headers.get('Cookie',''))
+            if 'thermo_session' not in cookie:
+                return self._json(403, {'error':'Session required.'})
+            cid = urllib.parse.parse_qs(urllib.parse.urlsplit(self.path).query).get('id',[''])[0]
+            if not cid:
+                return self._json(400, {'error':'Conversation ID required.'})
+            try:
+                _,revision,state = ConversationStore(load_env().get('THERMO_CONVERSATION_DB','/tmp/thermo-conversations.sqlite3')).load(cookie['thermo_session'].value,cid)
+                return self._json(200, {'conversation_id':cid,'state_revision':revision,'turns':state['turns'],'clarifications':state['pending']})
+            except ConversationError as exc:
+                return self._json(exc.status, {'error':str(exc)})
         if self.path == "/api/health":
             env = load_env()
             if env.get("AI_PROVIDER") == "thermo":
                 try:
-                    name = thermo.model_id(env)
+                    return self._json(200, thermo.health(env))
                 except ImportError:
                     return self._json(503, {"ok": False, "provider": "thermo",
                                             "error": "Start the server from the project environment."})
-                return self._json(200, {"ok": True, "provider": "thermo", "model": name})
             p = pick_provider(env)
             return self._json(200, {"ok": True, "provider": p and p["name"], "model": p and p["model"]})
         return super().do_GET()
@@ -393,7 +424,20 @@ class Handler(SimpleHTTPRequestHandler):
         env = load_env()
         if env.get("AI_PROVIDER") == "thermo":
             try:
-                out = thermo.ask(q, env, context={k: req[k] for k in ("history", "persona", "scenario") if k in req})
+                if req.get('client_request_id'):
+                    from request_planner.conversation import ConversationError
+                    origin = self.headers.get('Origin')
+                    if origin and urllib.parse.urlsplit(origin).netloc != self.headers.get('Host'):
+                        return self._json(403, {'error':'Cross-origin conversation request rejected.'})
+                    cookie = SimpleCookie(self.headers.get('Cookie', ''))
+                    owner = cookie['thermo_session'].value if 'thermo_session' in cookie else secrets.token_urlsafe(32)
+                    self.session_cookie = owner
+                    try:
+                        out = thermo.ask_session(q, env, owner, req)
+                    except ConversationError as exc:
+                        return self._json(exc.status, {'error':str(exc)})
+                else:
+                    out = thermo.ask(q, env, context={k: req[k] for k in ("history", "persona", "scenario") if k in req})
             except ImportError:
                 return self._json(503, {"provider": "thermo", "error": "Start the server from the project environment with the search extra."})
             except thermo.ModelLoadError:

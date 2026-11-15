@@ -14,7 +14,7 @@ from imperial_thermo_ai.quantities import normalize_graph
 from imperial_thermo_ai.semantic_plan import compile_plan
 from imperial_thermo_ai.vector_search import MODEL_ID, VectorGraphSearch, fingerprint
 from request_planner.backend import answer
-from request_planner.execution import ExecutionError, ExecutionSession, apply_bindings
+from request_planner.execution import ExecutionError, ExecutionSession, apply_bindings, present_result
 from request_planner.intent import interpret
 from request_planner.models import (
     DatasetBinding,
@@ -75,6 +75,56 @@ def graph_fixture():
 
 
 class BackendV2Tests(unittest.TestCase):
+    def test_plain_language_thickness_comparison_requests_thm05_and_chart(self):
+        request = interpret(
+            "How does increasing acrylic sheet thickness from 0.20 to 0.30 mm "
+            "affect flame spread against airflow in microgravity?"
+        )
+        self.assertEqual(
+            [(r.kind, r.model_id) for r in request.requirements],
+            [("explanation", None), ("chart", None), ("calculation", "THM-05")],
+        )
+
+    def test_named_model_plot_requires_its_calculation(self):
+        request = interpret("Plot THM-05 flame spread against sheet thickness")
+        self.assertEqual(
+            [(r.kind, r.model_id) for r in request.requirements],
+            [("chart", None), ("calculation", "THM-05")],
+        )
+
+    def test_thickness_comparison_allows_unit_on_both_values(self):
+        request = interpret(
+            "How does increasing acrylic thickness from 0.20 mm to 0.30 mm "
+            "affect flame spread against the airflow?"
+        )
+        self.assertIn(("calculation", "THM-05"),
+                      [(r.kind, r.model_id) for r in request.requirements])
+
+    def test_modern_thm_without_sourced_json_reports_missing_evidence(self):
+        result = answer(
+            "Plot THM-05 flame spread against acrylic sheet thickness",
+            program_generator=lambda _: self.fail("A model plan cannot replace sourced calibration"),
+        )
+        self.assertIn(result.status, {"needs_input", "partial"})
+        self.assertTrue(any("sourced JSON calibration" in text
+                            for text in result.request.clarifications))
+        self.assertFalse(any(block["type"] == "calculation" for block in result.result.blocks))
+
+    def test_thm05_calibrated_sweep_is_a_renderable_chart(self):
+        from request_planner.function_registry import run_model
+
+        payload = json.loads(
+            (Path(__file__).resolve().parents[1] / "src/Functions/THM-05/THM-05_input.json").read_text()
+        )
+        result = run_model("THM-05", payload)
+        charts = [block for block in present_result("THM-05", result) if block["type"] == "chart"]
+        self.assertEqual(len(charts), 1)
+        self.assertEqual(charts[0]["x"]["label"], "sample_thickness_m")
+        self.assertEqual(charts[0]["x"]["unit"], "m")
+        self.assertEqual(charts[0]["series"][0]["unit"], "mm/s")
+        self.assertEqual(len(charts[0]["x"]["values"]), len(charts[0]["series"][0]["values"]))
+        self.assertEqual(charts[0]["evidence_type"], "model_estimate")
+
     def test_wrong_action_cannot_complete_calculation_prompt(self):
         files = SearchResults(
             query_id="test",

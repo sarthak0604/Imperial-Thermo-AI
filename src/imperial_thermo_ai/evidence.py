@@ -24,7 +24,7 @@ class EvidenceIndex:
         p = Path(path)
         return cls(json.loads(p.read_text())["items"]) if p.is_file() else cls([])
 
-    def search(self, question, investigations=(), excluded=(), limit=8, file_ids=None):
+    def search(self, question, investigations=(), excluded=(), limit=8, file_ids=None, *, preferred_files=()):
         words = tokens(question)
         scores = defaultdict(float)
         for term in words:
@@ -33,6 +33,8 @@ class EvidenceIndex:
                 scores[i] += math.log1p(len(self.items) / max(1, len(hits)))
         # Titles should matter more than repeated bibliographic name mentions.
         for i in scores:
+            if self.items[i].file_id in preferred_files:
+                scores[i] *= 1.25
             title_terms = tokens(self.items[i].title.replace("_", " "))
             scores[i] += 3 * len(words & title_terms)
             if self.items[i].review_status == "reviewed_selected_sections":

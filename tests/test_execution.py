@@ -14,7 +14,7 @@ from openai import OpenAI
 from request_planner.execution import ExecutionError, ExecutionSession, public_url
 from request_planner.function_registry import function_root, model_spec, operation_catalog
 from request_planner.models import ExecutionLimits, Plan, SearchResults, ServiceRequest
-from request_planner.planner import OpenAIPlanner, PlanningError
+from request_planner.planner import LocalPlanner, OpenAIPlanner, PlanningError
 from request_planner.service import execute_request, run_workflow
 
 
@@ -63,6 +63,24 @@ class ExecutionTests(unittest.TestCase):
         self.assertEqual(response.sources[0]["size_bytes"], len(payload))
         self.assertEqual(len(response.sources[0]["sha256"]), 64)
         self.assertNotIn("/tmp/", response.model_dump_json())
+
+    def test_named_thm05_plot_runs_folder_function_and_returns_chart(self):
+        payload = (Path(__file__).resolve().parents[1] /
+                   "src/Functions/THM-05/THM-05_input.json").read_bytes()
+        plan = thermo_plan("THM-05")
+        response = run_workflow(
+            "Plot THM-05 flame spread against acrylic sheet thickness",
+            SearchResults(query_id="test", files=[file_record()]),
+            LocalPlanner(lambda _: plan.model_dump_json()),
+            client=self.client({"/dataset": payload}),
+            url_validator=lambda url: None,
+        )
+        self.assertEqual(response.status, "completed", response.message)
+        self.assertEqual([block["type"] for block in response.blocks], ["calculation", "chart"])
+        chart = response.blocks[1]
+        self.assertEqual(chart["x"]["label"], "sample_thickness_m")
+        self.assertEqual(chart["series"][0]["unit"], "mm/s")
+        self.assertEqual(chart["source_file_ids"], ["dataset"])
 
     def test_inspect_then_llm_request_then_csv_function_and_supporting_media(self):
         csv = b"clock,inlet,outlet\n0,0.002,0.001\n1,0.002,0.001\n2,0.002,0.001\n"

@@ -4,6 +4,14 @@ The current interface is imported from `origin/omri` commit `7f21748`, with a th
 `standin/thermo.py` adapter to `request_planner.backend.answer`. The CLI and HTTP
 adapter use the same provider factory, execution checks and result contracts.
 
+## Conversation updates
+
+The integrated HTTP client now uses session-isolated conversation memory and
+structured model routing. The CLI supports `--conversation` to create a thread
+and `--conversation-id ID` to continue it. See the
+[implementation status and remaining plan items](conversation-implementation-status.md)
+and [open-source inference configuration](open-source-inference.md).
+
 ## Run
 
 From the repository root, use the existing project environment:

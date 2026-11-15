@@ -18,12 +18,18 @@ The original preview and widget-library instructions follow.
 
 # Flame in Freefall — frontend
 
-Two ways to run it:
-- **Mock answers:** double-click `index.html`. Everything works except the written answer (a preview is built from the question's words).
-- **Live AI:** double-click `start_ai_server_claude.command` (Claude through your Claude Code login) or `start_ai_server.command` (Groq / xAI key in `.env.local`), then open http://localhost:8000. Python standard library only — nothing to install.
+For the graph-backed workflow, double-click `start_ai_server.command` and open
+http://localhost:8015. It starts the shared backend, which reports its graph ID
+at `/api/health`. By default it uses the cached local model with semantic graph
+interpretation enabled. To use API inference, set `THERMO_PLANNER=api`,
+`OPENAI_API_KEY`, and `OPENAI_MODEL` before launching. Opening `index.html`
+directly uses mock preview answers.
 
-The stand-in server (`standin/server.py`) does keyword search over `standin/context.json`, sends the top matches to the model, and removes any investigation or chart it can't verify before the site sees it (the answer page says what it removed). Keys stay in `.env.local` (git-ignored) and are never served. The backend team's knowledge-graph service replaces it later — same `/api/ask` contract.
-After changing anything in `data/`, rebuild the AI's context: `node standin/build_context.js`.
+The older Claude and Groq/xAI stand-in modes use `standin/context.json`; they do
+not use the reviewed PSI graph or shared thermo function registry. The Claude
+launcher now exits with a notice instead of silently starting that separate demo.
+After changing anything in `data/`, rebuild the demo context with
+`node standin/build_context.js`.
 
 ## The interface (Nov 15 design)
 

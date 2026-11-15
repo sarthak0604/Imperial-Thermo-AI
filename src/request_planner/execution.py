@@ -386,21 +386,31 @@ def present_result(model_id, result):
     blocks = [{"type": "calculation", "model_id": model_id, "evidence_type": evidence_type,
                "illustrative": illustrative, "data": result}]
 
+    units = ({"sample_thickness_m": "m", "air_speed_m_s": "m/s",
+              "spread_rate_mm_s": "mm/s", "spread_rate_m_s": "m/s"}
+             if model_id == "THM-05" else {})
+
     def visit(value, path="result"):
+        if isinstance(value, list):
+            for index, child in enumerate(value):
+                if isinstance(child, (dict, list)):
+                    visit(child, f"{path}[{index}]")
+            return
         if not isinstance(value, dict):
             return
         arrays = {k: v for k, v in value.items() if isinstance(v, list) and len(v) > 1
                   and all(type(n) in (int, float) and math.isfinite(n) for n in v)}
-        x_name = next((k for k in ("time_s", "air_speed_m_s", "diameter_mm", "thickness_m") if k in arrays), None)
+        x_name = next((k for k in ("time_s", "air_speed_m_s", "diameter_mm",
+                                   "thickness_m", "sample_thickness_m") if k in arrays), None)
         if x_name:
-            series = [{"label": k, "unit": None, "values": v} for k, v in arrays.items()
+            series = [{"label": k, "unit": units.get(k), "values": v} for k, v in arrays.items()
                       if k != x_name and len(v) == len(arrays[x_name])]
             for item in series:
                 blocks.append({"type": "chart", "chart_type": "line", "title": f"{model_id}: {path}",
-                               "x": {"label": x_name, "unit": None, "values": arrays[x_name]},
+                               "x": {"label": x_name, "unit": units.get(x_name), "values": arrays[x_name]},
                                "series": [item], "evidence_type": evidence_type, "illustrative": illustrative})
         for key, child in value.items():
-            if isinstance(child, dict):
+            if isinstance(child, (dict, list)):
                 visit(child, f"{path}.{key}")
     visit(result)
     return blocks

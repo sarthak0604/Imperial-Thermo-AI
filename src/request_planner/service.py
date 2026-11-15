@@ -163,8 +163,10 @@ def main():
     inputs.add_argument("--graph", type=Path, help="Override the bundled reviewed PSI graph")
     parser.add_argument("--prompt")
     parser.add_argument("--backend", choices=['v1', 'v2'], default='v2')
-    parser.add_argument("--provider", choices=['api', 'local', 'retrieval'], default='api')
+    parser.add_argument("--provider", choices=['api', 'local', 'retrieval', 'open_source'], default='api')
     parser.add_argument("--evidence-index", type=Path)
+    parser.add_argument('--conversation', action='store_true', help='Create a conversation')
+    parser.add_argument('--conversation-id', help='Continue a CLI conversation')
     parser.add_argument("--model", default=os.getenv("OPENAI_MODEL"))
     parser.add_argument("--request", type=Path, help="Execute a saved service request without an LLM")
     parser.add_argument("--output", type=Path)
@@ -180,6 +182,19 @@ def main():
             env = {**os.environ, 'THERMO_PLANNER': args.provider}
             if args.model:
                 env['OPENAI_MODEL'] = args.model
+            if args.conversation or args.conversation_id:
+                import getpass
+                import json
+                import uuid
+                from .conversation import ask_conversation
+                if args.graph: env['THERMO_GRAPH'] = str(args.graph)
+                if args.evidence_index: env['THERMO_EVIDENCE_INDEX'] = str(args.evidence_index)
+                result = ask_conversation(args.prompt, env, 'cli:'+getpass.getuser(),
+                    {'conversation_id':args.conversation_id,'client_request_id':uuid.uuid4().hex})
+                content = json.dumps(result, indent=2)+'\n'
+                if args.output: args.output.write_text(content)
+                else: sys.stdout.write(content)
+                return 1 if result['meta']['status'] == 'error' else 0
             response = answer(args.prompt, graph_path=args.graph, evidence_path=args.evidence_index, **configure(env))
             content = response.model_dump_json(indent=2) + "\n"
             if args.output:

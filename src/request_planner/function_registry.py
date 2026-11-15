@@ -1,5 +1,6 @@
 """Explicit allowlist of repository functions, never model-supplied module paths."""
 
+from functools import lru_cache
 from importlib import resources, util
 import json
 from pathlib import Path
@@ -49,6 +50,7 @@ def _shape(value, key=""):
     return f"<{type(value).__name__}>"
 
 
+@lru_cache(maxsize=1)
 def operation_catalog():
     catalog = []
     for n in range(1, 21):

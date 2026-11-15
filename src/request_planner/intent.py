@@ -23,6 +23,31 @@ def interpret(prompt, *, aliases=None, context=None):
             r"(?:do not|don.t|without)\s*$", prompt[: match.start()], re.IGNORECASE
         ):
             kinds.append((kind, match.group()))
+    # A numerical before/after question asks for a computed comparison even when
+    # the user does not say "calculate". Keep an explicit chart requirement so
+    # a prose answer or a single scalar cannot silently satisfy the request.
+    quantitative_change = re.search(
+        r"\b(?:increas\w*|decreas\w*|chang\w*|vary\w*)\b"
+        r".{0,120}\bfrom\s+\d+(?:\.\d+)?(?:\s*(?:mm|cm|m|%|kPa|K))?"
+        r"\s+to\s+\d+(?:\.\d+)?\b",
+        prompt, re.IGNORECASE | re.DOTALL,
+    )
+    if quantitative_change and re.search(
+        r"\b(?:affect|impact|spread|rate|temperature|number|burn|ignit)\w*\b",
+        prompt, re.IGNORECASE,
+    ):
+        if not any(kind == "calculation" for kind, _ in kinds):
+            kinds.append(("calculation", quantitative_change.group()))
+        if not any(kind == "chart" for kind, _ in kinds):
+            kinds.append(("chart", quantitative_change.group()))
+    if re.search(r"\blewis number\b.{0,100}\b(?:for|given|in)\b", prompt, re.IGNORECASE):
+        if not any(kind == "calculation" for kind, _ in kinds):
+            kinds.append(("calculation", "Lewis number"))
+    asks_flame_temperature = re.search(
+        r"\bhow hot\b.{0,100}\bflame\b", prompt, re.I
+    )
+    if asks_flame_temperature and not any(k == "calculation" for k, _ in kinds):
+        kinds.append(("calculation", asks_flame_temperature.group()))
     if not any(k in {"calculation", "inspection", "explanation"} for k, _ in kinds):
         for kind, pattern in [
             ("video", r"\bvideos?\b"),
@@ -32,7 +57,10 @@ def interpret(prompt, *, aliases=None, context=None):
             if m := re.search(pattern, prompt, re.IGNORECASE):
                 kinds.append((kind, m.group()))
     if not kinds:
-        kinds = [("discovery", prompt)]
+        question = re.match(
+            r"^\s*(?:can|could|does|do|is|are|would|will|what|which)\b", prompt, re.I
+        )
+        kinds = [("explanation", question.group())] if question else [("discovery", prompt)]
     positive, negative = set(), set()
     for m in re.finditer(r"\bPSI\s*-\s*\d+\b", prompt, re.IGNORECASE):
         target = (
@@ -78,7 +106,25 @@ def interpret(prompt, *, aliases=None, context=None):
     models = list(
         dict.fromkeys(re.findall(r"\bTHM-(?:0[1-9]|1[0-9]|20)\b", prompt.upper()))
     )
-    if models and any(k == "calculation" for k, _ in kinds):
+    # Naming a THM function in a plot request asks for its calculated output.
+    if models and any(k == "chart" for k, _ in kinds) and not any(
+        k == "calculation" for k, _ in kinds
+    ):
+        kinds.append(("calculation", "THM model plot"))
+        requirements.append(
+            Requirement(id=f"task-{len(requirements) + 1}", kind="calculation",
+                        source_text="THM model plot")
+        )
+    if not models and any(k in {"calculation", "chart"} for k, _ in kinds):
+        if re.search(r"\blewis number\b", prompt, re.IGNORECASE):
+            models = ["THM-02"]
+        elif (re.search(r"\b(?:flame spread|spread rate)\b", prompt, re.IGNORECASE)
+              and re.search(r"\b(?:thickness|thick|sheet)\b", prompt, re.IGNORECASE)
+              and re.search(r"\b(?:against (?:the )?airflow|opposed[ -]flow|opposite.*airflow|airflow opposing)\b", prompt, re.IGNORECASE)):
+            models = ["THM-05"]
+        elif asks_flame_temperature or re.search(r"\badiabatic flame temperature\b", prompt, re.IGNORECASE):
+            models = ["THM-01"]
+    if models and any(k in {"calculation", "chart"} for k, _ in kinds):
         requirements = [r for r in requirements if r.kind != "calculation"] + [
             Requirement(
                 id="model-" + model,
