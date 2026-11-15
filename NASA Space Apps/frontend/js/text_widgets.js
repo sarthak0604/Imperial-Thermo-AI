@@ -69,7 +69,7 @@ window.TW = (() => {
     return `<b class="t-stat${sz}">${esc(p.value)}</b>` +
       (full ? `<p class="t-big-label">${esc(p.label || "")}</p>` : "") +
       `<span class="t-src">${esc(src)}</span>` +
-      (full && i ? `<p><a href="${esc(U.invHref(i.id))}">Dashboard about ${esc(U.invTitle(i))}</a> · <a href="${esc(i.url)}" target="_blank" rel="noopener">PSI ↗</a></p>` : "");
+      (full && i ? `<p><a href="${esc(U.invHref(i.id))}">Ask about ${esc(U.invTitle(i))}</a> · <a href="${esc(i.url)}" target="_blank" rel="noopener">PSI ↗</a></p>` : "");
   }
   const year = d => { const m = String(d || "").match(/(\d{4})/); return m ? m[1] : ""; };
   function expBody(p, full) {
@@ -80,7 +80,7 @@ window.TW = (() => {
     return `<p class="t-exp-name"><b>${esc(i.acronym || i.id)}</b>${i.acronym ? ` <span class="t-id">${esc(i.id)}</span>` : ""}</p>
       <p class="t-exp-title">${esc(full ? i.title : clip(i.title, 110))}</p><p class="t-src">${meta}</p>
       <p>${esc(full ? plain(i.objectives) : clip(i.objectives, 260))}</p>` +
-      (full ? `<p><a href="${esc(U.invHref(i.id))}">Dashboard about ${esc(U.invTitle(i))}</a> · <a href="${esc(i.url)}" target="_blank" rel="noopener">PSI ↗</a></p>` : "");
+      (full ? `<p><a href="${esc(U.invHref(i.id))}">Ask about ${esc(U.invTitle(i))}</a> · <a href="${esc(i.url)}" target="_blank" rel="noopener">PSI ↗</a></p>` : "");
   }
   // ---------- the theory behind a chart (data/literature.js, from the thermo team's thm_literature_map.py) ----------
   const litOf = t => { const d = W.def(t), L = window.DATA && DATA.literature; return d && L && L[d.model] ? { model: d.model, ...L[d.model] } : null; };

@@ -22,25 +22,27 @@ window.API = {
     return "mock" + (s.error ? ` (${s.error})` : " (open via standin/server.py for live answers)");
   },
 
-  async ask({ question, persona, scenario, history }) {
+  async ask({ question, persona, scenario, history, signal }) {
     if (this.status.mode === "live") {
       try {
         const r = await fetch(this.ENDPOINT, {
           method: "POST", headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ question, persona, scenario, history })
+          body: JSON.stringify({ question, persona, scenario, history }), signal
         });
         const j = await r.json();
         if (!r.ok) throw new Error(j.error || "server error " + r.status);
         return this.normalise(j);
       } catch (e) {
+        if (e.name === "AbortError") return { meta: { aborted: true } };   // the user pressed stop
         return this.mock({ question, persona, scenario }, e.message);   // never leave the user with nothing
       }
     }
-    return this.mock({ question, persona, scenario });
+    return this.mock({ question, persona, scenario, signal });
   },
 
-  async mock({ question, persona, scenario }, error) {
-    await new Promise(res => setTimeout(res, 500));
+  async mock({ question, persona, scenario, signal }, error) {
+    await new Promise(res => setTimeout(res, error ? 0 : 1400));
+    if (signal && signal.aborted) return { meta: { aborted: true } };
     const a = window.MOCKGEN ? MOCKGEN.answer(question, persona) : JSON.parse(JSON.stringify(DATA.mockAnswers[persona] || DATA.mockAnswers.student));
     a.meta = { ...a.meta, source: error ? "fallback-mock" : "mock", error: error || null, echo_question: question, scenario };
     return a;

@@ -1,30 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flame in Freefall</title>
-  <link rel="stylesheet" href="css/skeleton.css">
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("fif-theme") === "light" ? "light" : "dark"; } catch (e) {}</script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Ccircle cx=%2212%22 cy=%2212%22 r=%227%22 fill=%22none%22 stroke=%22%234A7DFF%22 stroke-width=%222.4%22/%3E%3Ccircle cx=%2212%22 cy=%2212%22 r=%225.4%22 fill=%22none%22 stroke=%22%23FF8A1F%22 stroke-width=%221%22/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/app.css">
 </head>
-<body class="minimal">
-  <main>
-    <div id="home">
-      <form id="ask-form" class="ask-box">
-        <div class="ask-row">
-          <label for="q" class="visually-hidden">Ask a question</label>
-          <input id="q" name="q" type="text" placeholder="Ask a question…" autocomplete="off">
-          <button type="submit">Ask</button>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="app" id="app">
+    <aside class="side" id="side" aria-label="Sidebar">
+      <div class="side-h">
+        <a class="brand" href="#" data-home><span class="brand-mark" aria-hidden="true"></span>Flame in Freefall</a>
+        <button type="button" class="ib" data-side aria-label="Close sidebar" title="Close sidebar"></button>
+      </div>
+      <nav class="side-nav" aria-label="Main">
+        <a class="si" href="#" data-home data-ic="edit">New question</a>
+        <button type="button" class="si" data-search data-ic="search">Search questions</button>
+        <label class="side-search" hidden><span class="visually-hidden">Search your questions</span><input type="search" id="hsearch" placeholder="Search your questions" autocomplete="off"></label>
+        <a class="si" href="#library" data-route="library" data-ic="layers">Widget library</a>
+        <a class="si" href="#experiments" data-route="experiments" data-ic="beaker">NASA experiments</a>
+      </nav>
+      <p class="side-lab">Recent</p>
+      <div class="hist" id="hist"></div>
+      <div class="side-f">
+        <div class="team"><span class="av">SA</span><span><b>Team Flame</b><small>NASA Space Apps 2026</small></span></div>
+        <p class="ai-status" id="ai-status"><i></i><span>Checking the AI…</span></p>
+      </div>
+    </aside>
+    <div class="side-scrim" data-side-close></div>
+
+    <div class="mainc">
+      <header class="top" id="top">
+        <button type="button" class="ib sopen" data-side aria-label="Open sidebar" title="Open sidebar"></button>
+        <div class="dd" id="persona-dd"></div>
+        <span class="sp"></span>
+        <div class="acts-top" id="acts-top" hidden>
+          <div class="pop" id="share-pop"></div>
+          <button type="button" class="btn s sm" data-pdf data-ic="download">PDF</button>
         </div>
-        <div class="persona-pick" role="radiogroup" aria-label="I am a">
-          <button type="button" role="radio" aria-checked="false" data-persona="student">Student</button>
-          <button type="button" role="radio" aria-checked="false" data-persona="professor">Professor</button>
-          <button type="button" role="radio" aria-checked="false" data-persona="engineer">Engineer</button>
-        </div>
-      </form>
+        <button type="button" class="mode" id="mode" role="switch" aria-checked="true" aria-label="Dark mode" title="Light or dark"></button>
+      </header>
+
+      <main id="view">
+        <section id="home" class="home" aria-label="Ask">
+          <div class="flame-stage" aria-hidden="true"><canvas id="flame"></canvas></div>
+          <h1 class="greet">What do you want to know about fire in space?</h1>
+          <div id="home-slot" class="slot"></div>
+          <div class="sugg" id="sugg"></div>
+          <p class="home-note">Answers come from NASA's microgravity combustion experiments and the thermo team's models, with every source listed.</p>
+        </section>
+        <section id="answer" class="answer-view" hidden></section>
+        <section id="page" class="page-view" hidden></section>
+      </main>
+
+      <div class="dock" id="dock" hidden><div id="dock-slot" class="slot"></div><p class="dock-note">Research support only, not safety certification. Check the references.</p></div>
     </div>
-    <div id="dashboard"></div>
-    <div id="focus" hidden></div>
-  </main>
+  </div>
+
+  <form id="ask-form" class="pb" novalidate>
+    <label class="visually-hidden" for="q">Ask a question</label>
+    <textarea id="q" name="q" rows="1" placeholder="Ask about any flame in microgravity" autocomplete="off"></textarea>
+    <div class="tchips" id="tchips"></div>
+    <div class="prow">
+      <div class="pop" id="env-pop"></div>
+      <span class="sp"></span>
+      <span class="kbd-hint" aria-hidden="true">Enter to ask · Shift+Enter for a new line</span>
+      <button type="submit" class="send" aria-label="Ask" title="Ask"></button>
+    </div>
+  </form>
+
+  <div id="focus" hidden></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+
   <!-- data -->
   <script src="data/reference.js"></script>
   <script src="data/investigations.js"></script>
@@ -32,7 +82,7 @@
   <script src="data/knowledge.js"></script>
   <script src="data/project.js"></script>
   <script src="data/mock_answers.js"></script>
-  <!-- app -->
+  <!-- charts and widgets -->
   <script src="js/util.js"></script>
   <script src="js/api.js"></script>
   <script src="js/charts.js"></script>
@@ -46,7 +96,13 @@
   <script src="js/tiler.js"></script>
   <script src="js/mockgen.js"></script>
   <script src="js/story.js"></script>
-  <script src="js/tour.js"></script>
+  <!-- interface -->
+  <script src="js/ui.js"></script>
+  <script src="js/bg.js"></script>
+  <script src="js/flame.js"></script>
+  <script src="js/answer.js"></script>
+  <script src="js/expand.js"></script>
+  <script src="js/report.js"></script>
   <script src="js/dashboard.js"></script>
 </body>
 </html>
