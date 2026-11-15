@@ -1,0 +1,96 @@
+# Flame in Freefall — frontend skeleton
+
+## Run with the Thermo backend
+
+From the repository root, run the frontend with the project's local inference dependencies:
+
+```bash
+AI_PROVIDER=thermo uv run --extra search python 'NASA Space Apps/frontend/standin/server.py'
+```
+
+Open http://localhost:8000. Planning uses the cached local `Qwen/Qwen3-4B-Instruct-2507` model and requires no API key. Set `PSI_PARSER_MODEL` to use a different cached model. Questions are ranked against the bundled PSI example graph and passed to the Thermo planner and validated executor. The dashboard displays returned charts, calculation outputs, source links and limitations. Set `THERMO_GRAPH` to use another graph in the same format. This mode uses lexical graph search and processes each question independently. The model library continues to show its precomputed examples.
+
+The Thermo route can assemble inputs from raw CSV, JSON and searchable NASA reports for all 20 models. It uses the local planner for general questions. Two reviewed questions run with the default Python environment and show the assumptions alongside the model output.
+
+- **How much does a burning fuel droplet shrink in 10 seconds in space?** THM-10 fetches NASA's public R377 report, verifies its input values, and calculates the diameter curve.
+- **Figure out the Lewis number for a methane flame in a nitrogen diluted ISS environment.** THM-02 models methane transport at nominal ISS pressure. It compares the reference oxygen concentration with two illustrative nitrogen-dilution cases.
+
+On Windows, run from the repository root and open http://localhost:8000.
+
+```powershell
+$env:AI_PROVIDER = 'thermo'
+uv run python 'NASA Space Apps/frontend/standin/server.py'
+```
+
+For general questions, launch with `uv run --extra search` and a cached local Qwen model. See the [input mapping guide](../../docs/thermo-input-mapping.md) for the backend contract.
+
+## Preview and stand-in modes
+- **Mock answers:** double-click `index.html`.
+- **Live stand-in AI (Groq / xAI Grok):** copy `.env.local.example` to `.env.local`, paste ONE key, then double-click `start_ai_server.command` (or run `python3 standin/server.py`) and use http://localhost:8000. Python standard library only — nothing to install.
+
+The stand-in (`standin/server.py`) does keyword search over `standin/context.json`, sends the top matches to the model, and removes any evidence or widget it can't verify before the site sees it. Keys stay in `.env.local` (git-ignored) and are never served. Thermo mode uses the same `/api/ask` route.
+After changing anything in `data/`, rebuild the AI's context: `node standin/build_context.js`.
+The model library uses precomputed examples in `data/model_outputs.js`. Open `index.html#library` and select a tile to see its full chart. Examples marked illustrative use selected scenario inputs. To regenerate the library from the canonical models, run this from the repository root:
+
+```bash
+uv run python 'NASA Space Apps/frontend/standin/precompute_models.py' --thermo src/Functions --out 'NASA Space Apps/frontend/data/model_outputs.js'
+```
+
+## Where things are
+- `index.html` — loads data files, then the app
+- `js/app.js` — router (`#/page/param?query`), header (nav, persona, scenario, ask box), click/change/submit handling
+- `js/state.js` — persona configs (`PERSONAS`: nav order, home tools), global state (persona, scenario, compare, conversation)
+- `js/pages.js` — one function per page
+- `js/widgets.js` — widget registry: AI answers name widgets by `type` + `params`; unknown types show a placeholder
+- `js/api.js` — AI client for the same-origin `/api/ask` route
+- `data/investigations.js` — REAL: 26 PSI combustion investigations (`draft` tags are heuristics, to be replaced by the knowledge graph)
+- `data/models.js` — REAL catalogue of the 20 thermo models (no outputs yet)
+- `data/mock_answers.js` — SYNTHETIC answers, one per persona, in the answer-contract format
+- `data/reference.js` — scenarios, materials, evidence tags, glossary, incidents, resources
+
+## How the dashboard is laid out
+- `js/tiler.js` — charts set the box shapes: each chart has a natural width:height (`SHAPE` in `js/model_widgets.js`: natural, narrowest, widest), and the tiler cuts the 8×5 grid so every chart box lands close to that shape instead of stretching the chart. Text boxes are flexible and fill whatever space is left.
+- `js/text_widgets.js` — the text boxes: answer, key facts, "what the charts show", evidence, what the data can't say, ask next (library page: badges + the thermo models). Which ones appear and in what order is `TW.assemble`; their size hints are `TW.shape`. Text that doesn't fit shrinks slightly, then fades with "open to read all"; clicking opens the full text in the focus window.
+- The answer, key facts, evidence, limitations and follow-ups come from the AI's reply (live mode). In mock mode the answer box just says it is a preview.
+
+## Pages
+`#/` home · `#/ask?q=` · `#/explore` · `#/investigation/PSI-25` · `#/compare?ids=` · `#/graph` · `#/gaps` · `#/lab` · `#/model/THM-05` · `#/scenario` · `#/learn` · `#/about` · `#/dev` (all routes + widget gallery + state)
+
+`investigations.js` and `models.js` are generated from the scrape and the thermo spreadsheet — regenerate rather than hand-edit.
+
+## Using Claude (your Pro plan) instead of Groq
+
+Double-click **`start_ai_server_claude.command`** instead of `start_ai_server.command`. The stand-in server then asks **Claude Haiku** through your own Claude Code login, so there's no API key and no Groq rate limit; it counts against your Claude plan's usage limits.
+
+- One-time setup: install Claude Code (https://code.claude.com), open Terminal, run `claude` and sign in with your Claude account.
+- Each question runs `claude -p --model haiku --output-format json` in an empty temp folder with all tools switched off, so it can't read or change files. `ANTHROPIC_API_KEY` is removed from its environment, so it always uses your plan login and never API billing.
+- This launcher also gives the AI 6 matching NASA investigations per question instead of 4.
+- Options: `AI_MODEL=sonnet` for a stronger model; `CLAUDE_BIN=/path/to/claude` if the command isn't found.
+- This is for running the site on your own computer. A site other people use needs a Claude API key from the Claude Console instead.
+- Test (no real call, uses a fake `claude`): `python3 -m unittest tests/test_server_claude.py`.
+
+## The theory behind each chart (literature)
+
+`data/literature.js` holds the method, governing equations and three literature sources for each thermo model (THM-01 to THM-20). It is built from the thermo team's `src/Functions/thm_literature_map.py` on the Imperial-Thermo-AI `main` branch:
+
+```bash
+cd ~/Documents/Imperial-Thermo-AI && git fetch origin
+cd "~/NASA Space Apps/frontend" && python3 standin/build_literature.py --repo ~/Documents/Imperial-Thermo-AI
+```
+
+- Under each point: "Method: … (first two sources)" for the charts in that row.
+- In the enlarged chart view: "Where this comes from", with the method summary, equations, full citations with DOI/ISBN/NTRS links, why each source matters, and the evidence boundary.
+- In the Claude prompt: each chart's method and sources, so the explanation can name them (e.g. "Richardson-number scaling (Sacksteder 1990)"). Groq gets only the chart facts, to stay inside its free-plan limit.
+- Short method names are in `METHOD` at the top of `standin/build_literature.py`; edit them there and rebuild.
+
+## Answer page: the answer as a story
+
+An answer is laid out top to bottom so the NASA data drives it and the charts follow the explanation (`js/story.js`, drawn by `js/dashboard.js`):
+
+- **Header row:** the question box, a 1–2 sentence short answer, and up to 3 key facts.
+- **One row per point:** the AI writes 3–5 points that build to the answer. Each point names the NASA PSI investigations it rests on and attaches 0–2 charts *only if they show that point*. Beside the point sit its charts and a card for the NASA experiment behind it (each experiment shown once). Rows alternate sides.
+- **Closing row:** what the data can't say, the evidence list, and what to ask next.
+- **Layout:** every row is justified to fill the width. Charts keep their natural shape (within their allowed range), the text takes the rest, and the row height is solved per row (`STORY.solve`). On phones the rows stack, with the words first.
+- **Answer contract:** `points: [{text, psi_ids, charts}]`; the server drops unknown charts and PSI ids, keeps each chart on one point only, and caps it at 2 charts per point and 5 points. Older answers with only `widgets` (and mock mode) become one point per chart, using each model's linked NASA investigations.
+- **Walkthrough:** the rows appear one at a time, with a bar at the bottom: Back / Next / "Show the whole answer", `←` `→` keys, and `Esc` to skip. Tick "Don't walk me through next time" to turn it off (`localStorage["tour-off"]`); "▶ Walk me through it" replays it. The widget library keeps the bento grid.
+- **Tests:** `node --test tests/story.test.js tests/tour.test.js`, `python3 -m unittest tests/test_server_points.py tests/test_server_nocache.py`, and (needs Playwright + Chrome) `python3 -I tests/tour_e2e.py`.

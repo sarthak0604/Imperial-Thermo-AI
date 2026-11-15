@@ -23,10 +23,20 @@ The stagnant-film approximation assumes fixed properties and adequate isolation 
 
 Send one object with `request` and `evidence`. Set `request.topic` to `droplet_combustion` and `request.analysis` to `estimate_droplet_regression`. Set `request.scenario.profile_id` to the matching `evidence.profiles[].id`. The scenario also includes `fuel_type`, `process`, `d0_mm`, `x_o2` (mole fraction), `pressure_kpa` and `t_amb_k`. Each profile specifies a method, fuel, process and pairs of validity bounds for those four numeric scenario inputs. Include `evidence.provenance` and `evidence.sources`. Optional scenario fields are `endpoint_diameter_mm`, `time_limit_s` and `plot_points` (default 101). A zero-rate case needs `time_limit_s`.
 
-The backend can call `run_request(payload)` and receive a dictionary. Plot `plot_data.time_s` against `diameter_mm` or `diameter_squared_mm2`. With a supplied liquid density, the series also contains `droplet_mass_kg`. The scalar `modeled_endpoint_time_s` is based on the selected constant rate and may lie beyond the supplied time limit.
+The backend can call `run_request(payload)` and receive a dictionary. Plot `plot_data.time_s` against `diameter_mm` or `diameter_squared_mm2`. With a supplied liquid density, the series also contains `droplet_mass_kg`. The scalar `modeled_endpoint_time_s` is based on the selected constant rate and may lie beyond the supplied time limit. For the diameter at the end of the requested time window, read the last `plot_data` sample. The `assumptions` list reports the physical model and any defaults used for the endpoint or plot resolution.
 
 When chaining to THM-11, use the same physical droplet and phase. THM-11 calculates its hot-phase rate from three evidence fields, `observed_initial_diameter_mm`, `hot_extinction_diameter_squared_mm2` and `hot_extinction_time_s`. A compatible THM-10 run can reconstruct that phase as a cross-check. To reuse a modeled endpoint where its evidence supports the handoff, square `modeled_endpoint_diameter_mm`, use `modeled_endpoint_time_s`, and mark the values as derived with the same time origin. THM-10's formal zero time cannot stand in for the observed extinction time.
 
 The example reconstructs the FLEX-002 hot-phase slope of 0.60 mm²/s from published values. Running from the reported igniter-on diameter of 1.86 mm to 0.94 mm gives 4.293 s under constant regression. The published burn time is 5 s. The constant-rate reconstruction uses the reported diameters and slope across a single modeled phase, and the regression fit starts after ignition. A second run, FLEX-003, had 0.58 mm²/s and differs in initial diameter and chamber pressure. The difference of 0.02 mm²/s is a comparison between the reported rates.
 
 [Princeton droplet combustion overview](https://www.princeton.edu/~fldryer/nasa.dir/backgrnd.htm) · [NASA FLEX report, Table IX](https://ntrs.nasa.gov/api/citations/20150023456/downloads/20150023456.pdf?attachment=true)
+
+## FLEX table input from the request planner
+
+For the reviewed NASA PSI-69 FLEX CSV, the planner assembles the same request
+and evidence structure from the selected test row. The measured-rate path
+accepts `t_amb_k: null` with no temperature range when temperature is unavailable
+and unused by the reconstruction. A supplied temperature still requires a
+matching range. The heat-transfer path requires a positive ambient temperature
+and its evidence bounds. See the [frontend workflow](../frontend-workflow.md)
+for the run selector and input export.

@@ -15,7 +15,10 @@ from urllib.parse import urljoin, urlsplit
 
 import httpx
 
+from .flex_input import build_flex_input, supports_flex_table
 from .function_registry import model_spec
+from .input_mapping import build_model_input, mapping_from_request
+from .input_sources import MappingError, Sources, TEXT_MEDIA
 from .models import SearchResults, ThermoOperation, Variable
 from .planner import PlanningError, validate_plan
 from .plotting import numeric_pairs
@@ -46,12 +49,16 @@ def strict_json(text):
     return json.loads(text, parse_constant=reject)
 
 
+class UnsupportedCSVHeader(ExecutionError):
+    """The CSV layout requires an explicit header mapping."""
+
+
 def csv_columns(path, file):
     with path.open(encoding=file.encoding or "utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
         header = reader.fieldnames or []
         if not header or any(not name for name in header) or len(header) != len(set(header)):
-            raise ExecutionError("CSV needs nonempty unique column headers")
+            raise UnsupportedCSVHeader("CSV needs nonempty unique column headers")
         numeric = dict.fromkeys(header, True)
         count = 0
         preview = []
@@ -89,11 +96,14 @@ def preview_json(value, depth=0):
 class ExecutionSession:
     """One bounded workflow; the caller owns a TemporaryDirectory for its lifetime."""
 
-    def __init__(self, directory, limits, client=None, url_validator=public_url):
+    def __init__(self, directory, limits, client=None, url_validator=public_url, *, on_model_input=None, raw_prompt=""):
         self.directory = Path(directory)
         self.deadline = time.monotonic() + min(limits.max_runtime_seconds, 60)
         self.budget = min(limits.max_download_bytes, 100_000_000)
         self.client = client
+        self.on_model_input = on_model_input
+        self.raw_prompt = raw_prompt
+        self.input_sources = Sources({}, self.fetch, self.remaining)
         self.url_validator = url_validator
         self.downloads = {}
         self.inspection = []
@@ -171,8 +181,14 @@ class ExecutionSession:
         for file in files:
             path = self.fetch(file)
             if file.media_type == "text/csv":
-                variables, content = csv_columns(path, file)
-                file = file.model_copy(update={"variables": variables})
+                try:
+                    variables, content = csv_columns(path, file)
+                except UnsupportedCSVHeader:
+                    content = {"kind": "unsupported", "message": (
+                        "CSV needs nonempty unique column headers. Provide a file with "
+                        "one header row before calculating.")}
+                else:
+                    file = file.model_copy(update={"variables": variables})
             elif file.media_type == "application/json":
                 payload = strict_json(path.read_text(encoding=file.encoding or "utf-8-sig"))
                 if isinstance(payload, (dict, list)):
@@ -180,6 +196,19 @@ class ExecutionSession:
                                "note": "Preview arrays contain at most three items; execution uses the full file."}
                 else:
                     content = {"kind": "unsupported", "message": "Function input JSON must contain an object."}
+            elif file.media_type in TEXT_MEDIA:
+                try:
+                    excerpts = self.input_sources.preview_document(file.file_id, self.raw_prompt)
+                except (MappingError, UnicodeError) as exc:
+                    excerpts = []
+                    message = str(exc)
+                else:
+                    message = "The source has no extractable text in the inspected pages."
+                if excerpts:
+                    content = {"kind": "json", "preview": {"pages": excerpts},
+                               "note": "Cite exact quotes with the one-based PDF page if present."}
+                else:
+                    content = {"kind": "unsupported", "message": message}
             else:
                 content = {"kind": "unsupported", "media_type": file.media_type,
                            "message": "Provide CSV or a function-compatible JSON dataset for calculation."}
@@ -199,6 +228,7 @@ class ExecutionSession:
             raise PlanningError("Request query_id differs from search results")
         validate_plan(request.plan, results, request.limits)
         files = {file.file_id: file for file in results.files}
+        self.input_sources.files = files
         plan = request.plan
         blocks = []
         if plan.action == "inspect_files":
@@ -211,7 +241,16 @@ class ExecutionSession:
             path = self.fetch(file)
             if isinstance(operation, ThermoOperation):
                 payload = self.thermo_payload(operation, files, path)
-                result = self.calculate(operation.parameters.model_id, payload)
+                model_id = operation.parameters.model_id
+                if self.on_model_input is not None:
+                    self.on_model_input(model_id, copy.deepcopy(payload))
+                result = self.calculate(model_id, payload)
+                request_mapping = mapping_from_request(operation.parameters.request_json)
+                if request_mapping is not None:
+                    result["assembled_input_provenance"] = (
+                        payload["evidence"]["provenance"] if "evidence" in payload
+                        else payload["investigation_context"]
+                    )
                 presented = present_result(operation.parameters.model_id, result)
                 for block in presented:
                     block["source_file_ids"] = plan.selected_file_ids
@@ -239,6 +278,19 @@ class ExecutionSession:
         params = operation.parameters
         spec = model_spec(params.model_id)
         file = files[operation.file_id]
+        mapping = mapping_from_request(params.request_json)
+        if mapping is not None:
+            try:
+                return build_model_input(params.model_id, mapping, self.input_sources, self.raw_prompt)
+            except MappingError as exc:
+                raise ExecutionError(f"Function needs compatible inputs: {exc}") from exc
+        if (not params.bindings and params.template_file_id is None
+                and supports_flex_table(file, params.model_id)):
+            values = strict_json(params.request_json) if params.request_json is not None else None
+            try:
+                return build_flex_input(params.model_id, values, path, file)
+            except (ValueError, csv.Error, UnicodeError) as exc:
+                raise ExecutionError(f"Function needs compatible inputs: {exc}") from exc
         if params.template_file_id:
             template = files[params.template_file_id]
             payload = strict_json(self.fetch(template).read_text(encoding=template.encoding or "utf-8-sig"))
@@ -350,7 +402,7 @@ INPUT_UNITS = {
     "soot_carbon_kg_s": "kg/s", "reference_hrr_W": "W", "hrr_W": "W",
     "radiometer_flux_w_m2": "W/m2", "total_hrr_w": "W", "background_flux_w_m2": "W/m2",
     "o2_vol_frac": "1", "co2_vol_frac": "1", "co_vol_frac": "1",
-    "y_fuel_stream": "1", "y_ox_stream": "1", "x_o2": "1", "d0_mm": "mm",
+    "y_fuel_stream": "1", "y_ox_stream": "1", "x_o2": "1", "o2_mole_frac": "1", "d0_mm": "mm",
     "pressure_kpa": "kPa", "pressure_kPa": "kPa", "t_amb_k": "K", "t_surface_k": "K",
     "temp_k": "K", "air_speed_m_s": "m/s", "u_flow_ms": "m/s",
     "oxygen_consumption_kg_s": "kg/s", "co2_production_kg_s": "kg/s",

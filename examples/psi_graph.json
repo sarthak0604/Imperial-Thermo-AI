@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "generated_by": "SI-assisted curation of real NASA PSI metadata; no synthetic observations",
   "provenance_notes": [
-    "Sources: NASA PSI public investigation metadata endpoints and six public file downloads, verified at the per-file checked_at timestamps.",
+    "Sources: NASA PSI public investigation metadata and six public file downloads, plus the NASA Technical Reports Server report for FLEX R377.",
     "File IDs are local stable fixture IDs. PSI investigation IDs, filenames, versions, sizes, and DOIs are source metadata.",
     "Topic assignments, search keywords, schema profiles, and explanatory notes are SI-assisted indexing annotations, not NASA scientific conclusions.",
     "Retrieval URLs use the public website download resolver with redirect=true and a file version; expiring signed destination URLs are not stored. This is an observed website interface, not a documented supported PSI API.",
@@ -487,6 +487,43 @@
         "sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96",
         "reported_media_type": "application/vnd.ms-excel"
       }
+    },
+    {
+      "kind": "file",
+      "id": "nasa-cool-flame-report",
+      "record": {
+        "file_id": "nasa-cool-flame-report",
+        "investigation_id": "PSI-69",
+        "run_ids": [
+          "R377"
+        ],
+        "title": "Cool-flame Extinction During N-Alkane Droplet Combustion in Microgravity",
+        "role": "documentation",
+        "media_type": "application/pdf",
+        "size_bytes": 324885,
+        "retrieval_url": "https://ntrs.nasa.gov/api/citations/20140006750/downloads/20140006750.pdf",
+        "source_page_url": "https://ntrs.nasa.gov/citations/20140006750",
+        "conditions": {
+          "page": 4
+        },
+        "data_notes": [
+          "Page 4 identifies run R377 and reports separate hot- and cool-flame regression rates."
+        ]
+      },
+      "file_version": 1,
+      "keywords": [
+        "R377",
+        "n-decane",
+        "burning fuel drop droplet",
+        "shrinking hot stage regression space microgravity"
+      ],
+      "verification": {
+        "checked_at": "2026-11-15",
+        "http_status": 200,
+        "bytes": 324885,
+        "sha256": "15037323e9a1e546064bb89c452c012a07dfb01daa9c2ec9d9c53eae9490a191",
+        "reported_media_type": "application/pdf"
+      }
     }
   ],
   "edges": [
@@ -539,6 +576,11 @@
       "source": "PSI-69",
       "relation": "has_file",
       "target": "psi69-experimental-table"
+    },
+    {
+      "source": "PSI-69",
+      "relation": "has_file",
+      "target": "nasa-cool-flame-report"
     }
   ]
 }

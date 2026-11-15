@@ -1,6 +1,6 @@
 # Tiny PSI knowledge graph
 
-This real-source testing fixture has **11 nodes, 10 edges, 6 files, 2 investigations**.
+This real-source testing fixture has **12 nodes, 11 edges, 7 files, 2 investigations**.
 The graph is [psi_graph.json](psi_graph.json); it is distinct from the generated
 [psi_search_results.json](psi_search_results.json).
 
@@ -9,7 +9,7 @@ PSI-25 (BASS-II) --has_file--> experimental CSV, calibration XLSX,
                               T23 still-sequence MP4, requirements PDF, flame JPEG
        --studies_topic--> solid fuels, spacecraft fire safety
 
-PSI-69 (FLEX) --has_file--> experimental CSV
+PSI-69 (FLEX) --has_file--> experimental CSV, reviewed R377 report (NASA NTRS)
        --studies_topic--> droplet combustion, spacecraft fire safety
 ```
 
@@ -61,7 +61,7 @@ Metadata came from public interfaces observed in PSI's frontend:
 - [PSI-25 metadata](https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-25), investigation version 4, DOI `10.60555/4qc4-de67`.
 - [PSI-69 metadata](https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69), investigation version 5, DOI `10.60555/mbq8-0451`.
 
-All six file URLs were fetched successfully on **14 November 2026**. Each file node
+Six PSI file URLs were fetched on **14 November 2026**. The R377 report was verified separately. Each file node
 records a timestamp, HTTP 200 status, byte count, SHA-256, server content type, and
 source file version. About **1.54 MB** was downloaded to a temporary directory for
 verification. Only metadata is included in this repository.
@@ -74,8 +74,9 @@ verification. Only metadata is included in this repository.
 | `psi25-science-requirements` | 1,108,340 | PDF |
 | `psi25-flame-image` | 37,525 | JPEG |
 | `psi69-experimental-table` | 24,776 | CSV |
+| `nasa-cool-flame-report` | 324,885 | [PDF](https://ntrs.nasa.gov/citations/20140006750) |
 
-`retrieval_url` uses PSI's download resolver with `redirect=true` and the **file
+For PSI file records, `retrieval_url` uses the download resolver with `redirect=true` and the **file
 version**, which differs from the investigation version. It redirects to storage;
 expiring signed destination URLs are not saved. This is an observed website
 interface, not a documented supported API. Recheck if PSI changes. The graph is an

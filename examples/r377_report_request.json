@@ -1,0 +1,24 @@
+{
+  "query_id": "flex-r377-pdf-thm10",
+  "plan": {
+    "action": "calculate",
+    "selected_file_ids": [
+      "nasa-cool-flame-report"
+    ],
+    "requested_asset_ids": [],
+    "operation": {
+      "name": "run_thermo_model",
+      "file_id": "nasa-cool-flame-report",
+      "parameters": {
+        "model_id": "THM-10",
+        "template_file_id": null,
+        "bindings": [],
+        "request_json": "{\"input_mapping\":{\"assignments\":[{\"target\":\"/request/scenario/profile_id\",\"source\":{\"kind\":\"config\",\"value\":\"nasa-r377-hot\"}},{\"target\":\"/evidence/profiles/0/id\",\"source\":{\"kind\":\"config\",\"value\":\"nasa-r377-hot\"}},{\"target\":\"/request/scenario/fuel_type\",\"source\":{\"kind\":\"quote\",\"file_id\":\"nasa-cool-flame-report\",\"page\":4,\"quote\":\"Figure 1a (R377) corresponds to a n-decane droplet\",\"token\":\"n-decane\"}},{\"target\":\"/evidence/profiles/0/fuel_type\",\"source\":{\"kind\":\"copy\",\"target\":\"/request/scenario/fuel_type\"}},{\"target\":\"/request/scenario/process\",\"source\":{\"kind\":\"config\",\"value\":\"combustion\"}},{\"target\":\"/evidence/profiles/0/process\",\"source\":{\"kind\":\"copy\",\"target\":\"/request/scenario/process\"}},{\"target\":\"/evidence/profiles/0/method\",\"source\":{\"kind\":\"config\",\"value\":\"measured_rate\"}},{\"target\":\"/request/scenario/d0_mm\",\"source\":{\"kind\":\"quote\",\"file_id\":\"nasa-cool-flame-report\",\"page\":4,\"quote\":\"initial diameter of 4.03 mm burning\",\"token\":\"4.03\",\"unit\":\"mm\"}},{\"target\":\"/request/scenario/x_o2\",\"source\":{\"kind\":\"quote\",\"file_id\":\"nasa-cool-flame-report\",\"page\":4,\"quote\":\"burning in 21% oxygen and 79% nitrogen mixture\",\"token\":\"21\",\"unit\":\"%\"}},{\"target\":\"/request/scenario/pressure_kpa\",\"source\":{\"kind\":\"quote\",\"file_id\":\"nasa-cool-flame-report\",\"page\":4,\"quote\":\"at 0.5 atm pressure\",\"token\":\"0.5\",\"unit\":\"atm\"}},{\"target\":\"/evidence/profiles/0/regression_rate_mm2_s\",\"source\":{\"kind\":\"quote\",\"file_id\":\"nasa-cool-flame-report\",\"page\":4,\"quote\":\"were found to be 0.41 and 0.33 mm2/s respectively\",\"token\":\"0.41\",\"unit\":\"mm2/s\"}},{\"target\":\"/request/scenario/time_limit_s\",\"source\":{\"kind\":\"prompt\",\"quote\":\"10 seconds\",\"token\":\"10\",\"unit\":\"seconds\"}},{\"target\":\"/evidence/profiles/0/validity/d0_mm/0\",\"source\":{\"kind\":\"copy\",\"target\":\"/request/scenario/d0_mm\"}},{\"target\":\"/evidence/profiles/0/validity/d0_mm/1\",\"source\":{\"kind\":\"copy\",\"target\":\"/request/scenario/d0_mm\"}},{\"target\":\"/evidence/profiles/0/validity/x_o2/0\",\"source\":{\"kind\":\"copy\",\"target\":\"/request/scenario/x_o2\"}},{\"target\":\"/evidence/profiles/0/validity/x_o2/1\",\"source\":{\"kind\":\"copy\",\"target\":\"/request/scenario/x_o2\"}},{\"target\":\"/evidence/profiles/0/validity/pressure_kpa/0\",\"source\":{\"kind\":\"copy\",\"target\":\"/request/scenario/pressure_kpa\"}},{\"target\":\"/evidence/profiles/0/validity/pressure_kpa/1\",\"source\":{\"kind\":\"copy\",\"target\":\"/request/scenario/pressure_kpa\"}}]}}"
+      }
+    },
+    "explanation": "Reconstruct the first 10 s of R377's hot-stage diameter curve from NASA's reported burning rate.",
+    "warnings": [
+      "This uses a constant hot-stage regression rate. The 10 s window is shorter than the reported 14.6 s visible flame extinction."
+    ]
+  }
+}

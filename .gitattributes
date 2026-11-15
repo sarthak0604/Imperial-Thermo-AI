@@ -1,0 +1,3 @@
+examples/thermo_measurements.csv text eol=lf
+examples/thermo_input_template.json text eol=lf
+*.command text eol=lf

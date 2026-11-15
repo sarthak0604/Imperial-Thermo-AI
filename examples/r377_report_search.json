@@ -1,0 +1,20 @@
+{
+  "query_id": "flex-r377-pdf-thm10",
+  "files": [
+    {
+      "file_id": "nasa-cool-flame-report",
+      "investigation_id": "PSI-69",
+      "title": "Cool-flame Extinction During N-Alkane Droplet Combustion in Microgravity",
+      "role": "documentation",
+      "media_type": "application/pdf",
+      "retrieval_url": "https://ntrs.nasa.gov/api/citations/20140006750/downloads/20140006750.pdf",
+      "source_page_url": "https://ntrs.nasa.gov/citations/20140006750",
+      "run_ids": [
+        "R377"
+      ],
+      "conditions": {
+        "page": 4
+      }
+    }
+  ]
+}

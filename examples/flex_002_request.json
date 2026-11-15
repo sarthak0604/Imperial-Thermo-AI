@@ -1,0 +1,22 @@
+{
+  "query_id": "psi-mini-8c0b290121e0",
+  "plan": {
+    "action": "calculate",
+    "selected_file_ids": [
+      "psi69-experimental-table"
+    ],
+    "requested_asset_ids": [],
+    "operation": {
+      "name": "run_thermo_model",
+      "file_id": "psi69-experimental-table",
+      "parameters": {
+        "model_id": "THM-10",
+        "request_json": "{\"topic\":\"droplet_combustion\",\"analysis\":\"estimate_droplet_regression\",\"scenario\":{\"run_id\":\"FLEX-002\"}}",
+        "template_file_id": null,
+        "bindings": []
+      }
+    },
+    "explanation": "Reconstruct the published FLEX-002 droplet regression from its row in PSI-69.",
+    "warnings": []
+  }
+}

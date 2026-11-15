@@ -21,8 +21,15 @@ class MiniGraphTests(unittest.TestCase):
 
     def test_topic_traversal_finds_droplet_files(self):
         results = search_graph(self.graph, "extinguishment")
-        self.assertEqual([file.file_id for file in results.files], ["psi69-experimental-table"])
+        self.assertEqual({file.file_id for file in results.files},
+                         {"psi69-experimental-table", "nasa-cool-flame-report"})
         self.assertIn("Graph path: PSI-69 --has_file-->", results.files[0].match_reason)
+
+    def test_droplet_question_finds_the_citable_r377_report(self):
+        results = search_graph(self.graph, "How much does a burning fuel droplet shrink in 10 seconds in space?")
+        report = results.files[0]
+        self.assertEqual(report.run_ids, ["R377"])
+        self.assertEqual(str(report.source_page_url), "https://ntrs.nasa.gov/citations/20140006750")
 
     def test_investigation_and_role_filters(self):
         results = search_graph(self.graph, "BASS-II", investigation_id="PSI-25", role="video")

@@ -1,4 +1,5 @@
 import copy
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -264,7 +265,8 @@ def test_gemini_setup_checks_model_and_preserves_other_settings(tmp_path, monkey
     assert values["LLM_PROVIDER"] == "gemini"
     assert values["LLM_MODEL"] == "test-model"
     assert values["GEMINI_API_KEY"] == "fake-unit-test-key"
-    assert path.stat().st_mode & 0o777 == 0o600
+    if os.name == "posix":
+        assert path.stat().st_mode & 0o777 == 0o600
     assert calls[0]["config"].response_mime_type == "application/json"
 
 

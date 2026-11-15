@@ -1,15 +1,17 @@
 """Offline contract and SDK-boundary checks. SI-assisted tests; see README.md."""
 
+from copy import deepcopy
 import json
 from pathlib import Path
 import unittest
+from unittest.mock import Mock
 
 import httpx
 from openai import OpenAI
 from pydantic import ValidationError
 
 from request_planner.models import Plan, SearchResults
-from request_planner.planner import OpenAIPlanner, PlanningError, build_request
+from request_planner.planner import LocalPlanner, OpenAIPlanner, PlanningError, build_request
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,6 +36,24 @@ class PlannerTests(unittest.TestCase):
             SearchResults.model_validate(self.graph_data),
             FixedPlanner(Plan.model_validate(self.plan_data)),
         )
+
+    def test_local_planner_repairs_missing_thermo_csv_binding(self):
+        results = SearchResults.model_validate_json((ROOT / "examples/thermo_search_results.json").read_text())
+        valid = json.loads((ROOT / "examples/thermo_plan.json").read_text())
+        valid["operation"]["parameters"]["request_json"] = json.dumps({"topic": "heat release"})
+        incomplete = deepcopy(valid)
+        incomplete["operation"]["parameters"]["bindings"] = []
+        repaired = deepcopy(valid)
+        params = repaired["operation"]["parameters"]
+        params["request_json"] = json.loads(params["request_json"])
+        generate = Mock(side_effect=[json.dumps(incomplete), json.dumps(repaired)])
+
+        request = build_request("Calculate heat release from the measurement CSV.", results, LocalPlanner(generate))
+
+        self.assertEqual(request.plan.operation, Plan.model_validate(valid).operation)
+        self.assertEqual(generate.call_count, 2)
+        repair = generate.call_args.args[0][-1]["content"]
+        self.assertIn("CSV calculations require explicit column bindings", repair)
 
     def test_known_columns_produce_calculation_request_with_provenance(self):
         request = self.request()
