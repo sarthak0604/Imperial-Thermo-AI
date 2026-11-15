@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:df858276989e86d8a6ea",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_PS-03403 ACME on the ISS.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_PS-03403 ACME on the ISS.pdf",
+  "category": "Presentations",
+  "size_bytes": 9090639,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75d0eb4c0867600557b&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/df858276989e86d8a6ea/PSI-22_Presentations_PS-03403 ACME on the ISS.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "8cebedd4be120fe2369ad4d971c85f08a148d3af056d88c7d7914bde4089a090",
+  "status": "downloaded"
+}

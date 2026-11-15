@@ -1,0 +1,79 @@
+{
+  "id": "res:PSI-22:a7392a73be1ed7362989",
+  "study": "PSI-22",
+  "filename": "PSI-22_Engineering Documents_ACME CLD burner hot wire anemometry measurements.pdf",
+  "key": "psi-data/PSI-22/Engineering Documents/PSI-22_Engineering Documents_ACME CLD burner hot wire anemometry measurements.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 2431305,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75e0eb4c08676005584&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/a7392a73be1ed7362989/PSI-22_Engineering Documents_ACME CLD burner hot wire anemometry measurements.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "3c0dc8819f83b51e41cc110c6043d1996a139a61c6bb90b6490fa6bce3c43eaa",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "ACME CLD burner hot wire anemometry measurements - 12/26/16 \n \nThis report summarizes the results of the hot wire anemometry measurements performed on the revised \nversion of the flight unit of the ACME CLD burner to assess the symmetry of the flow profiles. \n• A cold flow of air was employed for the coflow, and a cold flow of nitrogen was used for the fuel flow. \n• With respect to the following figure, the arrows identify the scanning directions followed to probe the \nvelocity profiles on the burner. With reference to the plots in the following pages, the scanning \ndirections are labeled and colored as follows. \n• Direction “A” \n• Direction “B” \n• Direction “C” \n• Direction “D” \n \n \n \n \n \n \nACME CLD burner top view and hot wire scanning directions. \n \n• The flow velocity was measured with a TSI 1212-T.15 90° probe. \n• The teal arrow identifies the camera viewing direction. \n \nThe measurements were performed in accordance to the Integrated Science Requirements Document \n(ISRD), and listed in the following. \n \n1.4.9: The burner shall have a uniform flow profile that is axisymmetric, i.e., where the velocity is \nindependent of the angular position, especially (at radial positions) near the burner center. For the coflow \nburner, axisymmetric flow means that the variation in axial velocity with angular position (e.g., as measured \nin 1.4.11) shall be less than 10% of the (mean) velocity, where this shall hold for all radial positions from 0 to \n10 mm.  \n•   verified \n1.4.11: The burner’s flow profile, across a plane orthogonal to the burner axis and within 0.5 mm \ndownstream of the inner tube outlet, shall be well documented. The spatial uniformity shall be verified by 1g \nmeasurement of the velocity field using a cold flow (i.e., with no flame) simultaneously through both the \nannulus and the inner tube. The axial velocity shall be measured across a diameter of 30 mm at increments \nof no greater than 5 mm, especially within 5 mm of the burner axis where the increments shall be no greater \nthan 1 mm. Unless otherwise specified, measurement across one diameter is sufficient. \n•   verified \n• The increments used were 0.25 mm, for both coflow and fuel tube regions. \n• Three heights above the burner outlet were scanned: 0.5 mm, 5 mm, and 10 mm. \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "1.4.11.1: The flow profile shall be measured for a range of flow velocities in 10 cm/s increments from 20 to \n50 cm/s where the inner tube and annulus velocities are matched. \n•   measured \n1.4.11.2: For the case of matched velocities at 10 cm/s, the flow profile shall be measured for at least four \ndiameters (as just described) at increments of no greater than 45 degrees. \n•   measured \n• The four diameters were scanned for all the cases of matched velocities (10 cm/s to 50 cm/s). \nIn the following pages, the velocity plots are reported as a function of the radial coordinate, for the \nscanning directions defined above (left column). Additionally, a symmetry plot (right column) shows the \nvelocity profiles as a function of the radial coordinate, when compared to the average radial velocity \n(blue curve). The blue shaded regions identify the boundaries of the ±10% of the mean radial velocity, \nwhile the red and green curves are the left and right velocity profiles, respectively (defined with respect \nto the burner centerline). The flow rates have been set based on a nominal coflow I.D. of 25.4 mm, and a \nfuel tube I.D. of 2.16 mm and O.D. of 2.41 mm. The black dashed lines identify the boundaries of the fuel \ntube and coflow. \nMatched velocities: 0.5 mm above the burner \n \n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\ndir. B\n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n20\n40\n60\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n20\n40\n60\ndir. B\n0\n5\n10\n15\n0\n20\n40\n60\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n20\n40\n60\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n"
+    },
+    {
+      "locator": "page 3",
+      "text": " \n \n \n \n \n \n \n \n0\n5\n10\n15\n0\n20\n40\n60\n80\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n20\n40\n60\n80\ndir. B\n0\n5\n10\n15\n0\n20\n40\n60\n80\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n20\n40\n60\n80\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n50\n100\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n50\n100\ndir. B\n0\n5\n10\n15\n0\n50\n100\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n50\n100\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n50\n100\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n50\n100\ndir. B\n0\n5\n10\n15\n0\n50\n100\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n50\n100\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Matched velocities: 5 mm above the burner \n \n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\ndir. B\n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n20\n40\n60\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n20\n40\n60\ndir. B\n0\n5\n10\n15\n0\n20\n40\n60\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n20\n40\n60\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n20\n40\n60\n80\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n20\n40\n60\n80\ndir. B\n0\n5\n10\n15\n0\n20\n40\n60\n80\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n20\n40\n60\n80\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n"
+    },
+    {
+      "locator": "page 5",
+      "text": " \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n0\n5\n10\n15\n0\n50\n100\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n50\n100\ndir. B\n0\n5\n10\n15\n0\n50\n100\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n50\n100\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n50\n100\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n50\n100\ndir. B\n0\n5\n10\n15\n0\n50\n100\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n50\n100\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "Matched velocities: 10 mm above the burner \n \n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\ndir. B\n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n20\n40\n60\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n20\n40\n60\ndir. B\n0\n5\n10\n15\n0\n20\n40\n60\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n20\n40\n60\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n20\n40\n60\n80\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n20\n40\n60\n80\ndir. B\n0\n5\n10\n15\n0\n20\n40\n60\n80\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n20\n40\n60\n80\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n"
+    },
+    {
+      "locator": "page 7",
+      "text": " \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n0\n5\n10\n15\n0\n50\n100\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n50\n100\ndir. B\n0\n5\n10\n15\n0\n50\n100\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n50\n100\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n50\n100\nFlow velocity [cm/s]\ndir. A\n0\n5\n10\n15\n0\n50\n100\ndir. B\n0\n5\n10\n15\n0\n50\n100\nRadial coordinate [mm]\nFlow velocity [cm/s]\ndir. C\n0\n5\n10\n15\n0\n50\n100\nRadial coordinate [mm]\ndir. D\n \n \nLeft\nRight\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Mismatched velocities \n1.4.11.3: The flow profile shall also be measured where the inner tube and annulus (i.e., outer tube) \nvelocities are not matched for the following 11 velocity pairs: 0:10, 0:20, 0:30, 0:40, 0:50, 10:30, 10:50, 30:10, \n30:50, 50:10, and 50:30 where each velocity pair is given as inner:outer and the values are in cm/s. \n•   measured \n0\n5\n10\n15\n0\n2\n4\n6\n8\n10\n12\n14\n16\n18\n20\nRadial coordinate [mm]\nFlow velocity [cm/s]\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n5\n10\n15\n20\n25\n30\n35\n40\nRadial coordinate [mm]\nFlow velocity [cm/s]\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n10\n20\n30\n40\n50\n60\nRadial coordinate [mm]\nFlow velocity [cm/s]\n \n \nLeft\nRight\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "0\n5\n10\n15\n0\n10\n20\n30\n40\n50\n60\n70\n80\nRadial coordinate [mm]\nFlow velocity [cm/s]\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n10\n20\n30\n40\n50\n60\n70\n80\n90\n100\nRadial coordinate [mm]\nFlow velocity [cm/s]\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n10\n20\n30\n40\n50\n60\nRadial coordinate [mm]\nFlow velocity [cm/s]\n \n \nLeft\nRight\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "0\n5\n10\n15\n0\n10\n20\n30\n40\n50\n60\n70\n80\n90\n100\nRadial coordinate [mm]\nFlow velocity [cm/s]\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n10\n20\n30\n40\n50\n60\n70\n80\nRadial coordinate [mm]\nFlow velocity [cm/s]\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n10\n20\n30\n40\n50\n60\n70\n80\nRadial coordinate [mm]\nFlow velocity [cm/s]\n \n \nLeft\nRight\n"
+    },
+    {
+      "locator": "page 11",
+      "text": " \n \n \n \nTurbulence \n \n1.4.9: The burner gas shall be ejected parallel to the chamber axis and without either swirl (i.e., helically \nrotating flow) or turbulence (i.e., eddies). To be without turbulence, the axial velocity at any position 0.5 mm \ndownstream of the burner (e.g., as measured in 1.4.11) shall be constant with time within 3% (i.e., of the \ntime-averaged value). \n•   measured \n• Each data point has been evaluated as a one second average (sampling @4000 Hz). \n• Only one scanning direction was considered (direction “A”). \n• Scanning intervals were equal to 1 mm. \n• The error bars, in the “flow velocity\" plots, are equal to ±. \n• The noise, and therefore the deviation from the time averaged value, was seen to be inherent in \nthe measuring device, and not dependent on the flow (see 0 cm/s measurement). \n• The \"percent deviation\" plots display the relative difference of the absolute value of  with respect \nto the average velocity value. \n \n0\n5\n10\n15\n0\n20\n40\n60\n80\n100\n120\nRadial coordinate [mm]\nFlow velocity [cm/s]\n \n \nLeft\nRight\n0\n5\n10\n15\n0\n20\n40\n60\n80\n100\n120\nRadial coordinate [mm]\nFlow velocity [cm/s]\n \n \nLeft\nRight\n"
+    },
+    {
+      "locator": "page 12",
+      "text": " \n \n \n \n \n \n \n \n \n"
+    },
+    {
+      "locator": "page 13",
+      "text": "Experimental apparatus and hot wire calibration  \nThe air and nitrogen used for the coflow and fuel flows were set using the following mass flow \ncontrollers: \n• Coflow: Sierra Instrument Smart Trak, maximum flow rate of 20 slpm of air. \n• Fuel tube: Unit Instruments Inc., maximum flow rate of 300 sccm of N2. \nThe nitrogen controller was calibrated daily, before any measurement, with a manual bubble flow meter. \nThe calibration of the air controller (which was known to be stable and repeatable) was verified twice, \nonce before any measurement, and once at the end, with a mechanical flow meter calibrator. \nThe hot wire system used was a TSI IFA-100 coupled to a TSI 1212-T.15 90° wire probe (tungsten \nplatinum coated filament with a 3.8 m diameter). The settings implemented for the electronics were: \n• Cable resistance: 0.413 ohm \n• Operative resistance: 10.56 ohm \n• Bridge compensation: 35 \n• Gain: 20 \n• Offset: 1 \nThe following plot shows the result of the calibration performed on the hot wire probe (using a TSI \n112700 calibrator), as well as the interpolating curve used to evaluate the flow velocity from the hot wire \nvoltage readings. \n \nFor the burner scan, the hot wire probe was mounted on a horizontal translation stage driven by a \nVelmex stepper motor; the height of the probe was varied with the help of a second manual translation \nstage. The software OMA was used to control the stepper motor, as well as to record the hot wire voltage \nsignals through a LabJack U12. \ny = 3.2148x3 + 39.798x2 + 199.96x + 395.61\nR² = 0.9997\n0\n20\n40\n60\n80\n100\n120\n140\n-5\n-4.5\n-4\n-3.5\n-3\n-2.5\n-2\nVelocity [cm/s]\nVoltage [V]\nSeries2\nPoly. (Series2)\n"
+    }
+  ],
+  "details": {
+    "page_count": 13,
+    "empty_pages": [
+      12
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

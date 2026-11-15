@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:74f73dfa41e1adaee921",
+  "study": "PSI-20",
+  "filename": "PSI-20_Science Documents_BRE_data_interpretation_20220804.pdf",
+  "key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_BRE_data_interpretation_20220804.pdf",
+  "category": "Science Documents",
+  "size_bytes": 731305,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8151b4820d736cecc0e&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/74f73dfa41e1adaee921/PSI-20_Science Documents_BRE_data_interpretation_20220804.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "6187d07f3adddee48f309bf4a537b98ed81840e6c89810b097f9d55f6e5bd9d0",
+  "status": "downloaded"
+}

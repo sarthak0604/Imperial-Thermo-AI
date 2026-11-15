@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-101:7f76f0d9455ad4f96266",
+  "study": "PSI-101",
+  "filename": "PSI-101_Analyzed Data_thermal precipitator map updated.xlsx",
+  "key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_thermal precipitator map updated.xlsx",
+  "category": "Analyzed Data",
+  "size_bytes": 17138,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc531b8656d2315bf5095&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/7f76f0d9455ad4f96266/PSI-101_Analyzed Data_thermal precipitator map updated.xlsx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "fe3765a3980ef9c6c53f48c99abdaecdc205e727386c78cae2bb79c0ea1ff849",
+  "status": "downloaded"
+}

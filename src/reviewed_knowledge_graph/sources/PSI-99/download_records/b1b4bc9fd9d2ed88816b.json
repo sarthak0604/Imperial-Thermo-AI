@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-99:b1b4bc9fd9d2ed88816b",
+  "study": "PSI-99",
+  "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+  "key": "psi-data/PSI-99/Experimental table/PSI-99_Experimental table_SAFFIRE-2.csv",
+  "category": "Experimental table",
+  "size_bytes": 1973,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-99/download?file=6792d000b7b6ff8e650380fc&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-99/b1b4bc9fd9d2ed88816b/PSI-99_Experimental table_SAFFIRE-2.csv",
+  "sha256": "3c24390b9ef86f3d1ebaab911a1a3cc95a8759aebf42062371370e6d4b31b8ac",
+  "status": "downloaded"
+}

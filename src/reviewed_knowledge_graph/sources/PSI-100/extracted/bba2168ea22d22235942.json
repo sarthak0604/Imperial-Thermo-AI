@@ -1,0 +1,29 @@
+{
+  "id": "res:PSI-100:bba2168ea22d22235942",
+  "study": "PSI-100",
+  "filename": "PSI-100_Engineering Documents_SAFFIRE-III Operations.pdf",
+  "key": "psi-data/PSI-100/Engineering Documents/PSI-100_Engineering Documents_SAFFIRE-III Operations.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 40256,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-100/download?file=6841ac428970fb41b9cebba2&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-100/bba2168ea22d22235942/PSI-100_Engineering Documents_SAFFIRE-III Operations.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "38d91c1cc9eeb170217ab016ad81b5b8fa1e247323108b00883e5af17be52797",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "SAFFIRE-III Operations \n \nOperational Requirements and Protocols \n \nSaffire-III flight system is loaded into the Cygnus PCM and be strapped into place. Power, data, and relay \nconnections are then made. Saffire remains unpowered during launch, berthing, and unberthing. Following \nunberthing, the Cygnus Flight Operations Team (FOT) establishes the vehicle in a separate orbit.  The Cygnus FOT \npowers on the experiment avionics and conducts a check of all experiment components. The FOT places the Cygnus \nvehicle into a free-drift mode and initiate the experiment. The Saffire-III experiment records and compresses all data \nobtained during the experiment.A subset of the experiment data is downlinked through passes at multiple ground \nsites and checked for quality. When the selected data files have been successfully retrieved, the experiment avionics \npower is turned off and the Cygnus FOT deorbits the Cygnus vehicle. \n  \nThe Saffire experiments are conducted in three consecutive flights of the Cygnus vehicle. Since Cygnus undergoes a \ndestructive re-entry, three Saffire experiment units (Saffire-I, -II, and –III) are constructed and all data must be \ndownlinked. Even with these three flight opportunities, the experiment is very limited in the amount of data and test \nconditions that can be investigated. In Saffire-I and –III, the sample material is a single large sample (approx. 0.4 m \nwide by 0.94 m tall) and demonstrates the development and spread of a large-scale low-gravity fire. Once started, the \nentire burn of each of these samples is recorded, the data compressed, and downlinked. Because of limitations in \ntime available for downlinking, a maximum of 20 gigabits of data can be downlinked. The Saffire-III experiment begins \nonly after Cygnus is unberthed from the ISS. Prior to unberthing, the crew must check that the inlet and outlet ends of \nthe flow duct be clear of any stowage bags being deorbited. \n  \nSaffire-III mission operations begin when Cygnus unberths from the ISS. The Cygnus FOT establishes the vehicle in \na separate orbit. Based on this new orbit, ground station contact times are calculated and the experiment start is \nconfirmed and coordinated with the Saffire FOT. From Cygnus undock until experiment start takes about 1/2 day. The \nexperiment operations are conducted in two phases. The first phase consists of turning on power to the experiment \navionics, checking that the experiment is initialized successfully, starting the experiment run, and recording and \ncompressing the resulting data. The second phase consists of downloading all experiment data via downlink passes \nat various ground sites. Data are examined for data quality and files are retransmitted if necessary. When a complete \nset of data files has been successfully retrieved, or the timeline has reached a predetermined maximum duration, the \nexperiment avionics power is switched off and the Cygnus vehicle deorbits. Cygnus burns up on re-entry into the \nEarth's atmosphere. Consequently, the flight unit is permanently disposed of during this process. No specific disposal \nprocesses are expected if the experiment hardware is burned up upon re-entry. \n \n"
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

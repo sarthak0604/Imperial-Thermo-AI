@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-39:9bc57baac9351113ab9e",
+  "study": "PSI-39",
+  "filename": "PSI-39_Analyzed Data_FLEX-1211_PrelimSummary_1.pdf",
+  "key": "psi-data/PSI-39/Analyzed Data/PSI-39_Analyzed Data_FLEX-1211_PrelimSummary_1.pdf",
+  "category": "Analyzed Data",
+  "size_bytes": 270329,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-39/download?file=683f4b6eda33c6f4c4cec57d&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-39/9bc57baac9351113ab9e/PSI-39_Analyzed Data_FLEX-1211_PrelimSummary_1.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "70a4f3204e1c2183d1098c2f2629189c347bd9d35f94f78566b8ce739d35b8c2",
+  "status": "downloaded"
+}

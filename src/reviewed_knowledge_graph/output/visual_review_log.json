@@ -1,0 +1,37 @@
+[
+  {
+    "study": "PSI-39",
+    "pdf_page_one_based": 9,
+    "observation": "Figure 4 and adjacent text: extinction-diameter dependence on pressure; free-floating and supported droplets distinguished.",
+    "review_type": "rendered_page_visual_inspection",
+    "filename": "PSI-39_Reports_CFI Science Final Report.pdf"
+  },
+  {
+    "study": "PSI-25",
+    "pdf_page_one_based": 83,
+    "observation": "Figure 6.9: stable, quench and blowoff markers; minimum oxygen boundary approximately 13.5 percent at modified stretch 8–12 per second.",
+    "review_type": "rendered_page_visual_inspection",
+    "filename": "PSI-25_Reports_BASS-II Summary Report.pdf"
+  },
+  {
+    "study": "PSI-159",
+    "pdf_page_one_based": 23,
+    "observation": "Preliminary results: gas cool flames limited to normal n-butane at 2 bar and oxygen mole fraction 0.39 in this campaign; separate fuel-pool work distinguished.",
+    "review_type": "rendered_page_visual_inspection",
+    "filename": "PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf"
+  },
+  {
+    "study": "PSI-21",
+    "pdf_page_one_based": 33,
+    "observation": "Figures 16–17 compare experiment and computation at 1g and 0g. Temperature and soot-volume-fraction colour scales differ between panels.",
+    "review_type": "rendered_page_visual_inspection",
+    "filename": "CLD_Flame_final_report_20220330.pdf"
+  },
+  {
+    "study": "PSI-117",
+    "pdf_page_one_based": 15,
+    "observation": "Plot and bullets distinguish experimental and model hot/cool extinction diameters and pressure dependence; n-dodecane droplets in air, initial diameter 4 mm.",
+    "review_type": "rendered_page_visual_inspection",
+    "filename": "PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf"
+  }
+]

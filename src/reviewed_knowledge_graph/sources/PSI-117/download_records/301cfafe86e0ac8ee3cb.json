@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-117:301cfafe86e0ac8ee3cb",
+  "study": "PSI-117",
+  "filename": "PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+  "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+  "category": "Analyzed Data",
+  "size_bytes": 44107,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43e9&version=1&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/301cfafe86e0ac8ee3cb/PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "81e6b16c355bc64a226cf638f51156758c6a259ed10bc372c1612a0984cc7bc9",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:2e812263fbd77eca2aed",
+  "study": "PSI-22",
+  "filename": "PSI-22_Engineering Documents_ACME - Engineering Requirements Doc Rev K.pdf",
+  "key": "psi-data/PSI-22/Engineering Documents/PSI-22_Engineering Documents_ACME - Engineering Requirements Doc Rev K.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 2104955,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e63f0eb4c08676004b9a&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/2e812263fbd77eca2aed/PSI-22_Engineering Documents_ACME - Engineering Requirements Doc Rev K.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "8aa61d4660940d9056c06c580e8aa3cac6152cb8bc8f7a646e7152cf1549276f",
+  "status": "downloaded"
+}

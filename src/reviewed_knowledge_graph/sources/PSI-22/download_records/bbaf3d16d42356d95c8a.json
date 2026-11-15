@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:bbaf3d16d42356d95c8a",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Chien et al 2018 Electric-Field Effects on Flames in Microgravity.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Chien et al 2018 Electric-Field Effects on Flames in Microgravity.pdf",
+  "category": "Presentations",
+  "size_bytes": 1674645,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75b0eb4c0867600556c&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/bbaf3d16d42356d95c8a/PSI-22_Presentations_Chien et al 2018 Electric-Field Effects on Flames in Microgravity.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "413ba2bfc776b962609decf13964a0a42e367c0f4799619ec2e686c49ac4a2f4",
+  "status": "downloaded"
+}

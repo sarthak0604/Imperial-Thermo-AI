@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:c246b1917ea8bfefef89",
+  "study": "PSI-26",
+  "filename": "PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf",
+  "key": "psi-data/PSI-26/Presentations/PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf",
+  "category": "Presentations",
+  "size_bytes": 4640227,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafce9c3501a37c2c60d10&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/c246b1917ea8bfefef89/PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "6e654a3468577dd9dce8a14b61a6d0460870d6c88475bbfb18d6c2d94fbad3ea",
+  "status": "downloaded"
+}

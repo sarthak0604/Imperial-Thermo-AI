@@ -1,0 +1,321 @@
+{
+  "id": "res:PSI-117:a79899507b0332ece2ea",
+  "study": "PSI-117",
+  "filename": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+  "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+  "category": "Analyzed Data",
+  "size_bytes": 11059,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e3&version=1&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/a79899507b0332ece2ea/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "a84c138d22545ba9f59c4aa336710741dd48cf3c27823124ed04ac8f91a5f4a0",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "sheet Sheet1, row 1",
+      "text": "2: Fuel | 3: do (mm) | 4: P (atm) | 5: XO2 | 6: XN2 | 7: XO3 | 9: Data File | 10: Reference"
+    },
+    {
+      "locator": "sheet Sheet1, row 2",
+      "text": "2: n-heptane | 3: 0.5 | 4: 1 | 5: 0.21 | 6: 74 | 7: Balance | 9: PROCI_2019_Stable_Cool | 10: https://doi.org/10.1016/j.proci.2018.05.151 | 11: Fig. 1"
+    },
+    {
+      "locator": "sheet Sheet1, row 3",
+      "text": "2: n-heptane | 3: 0.5 | 4: 1 | 5: 0.1 | 6: 85 | 7: Balance | 9: PROCI_2019_Oscillatory_Cool_Flame | 10: https://doi.org/10.1016/j.proci.2018.05.151  | 11: Fig. 1"
+    },
+    {
+      "locator": "sheet Sheet1, row 4",
+      "text": ""
+    },
+    {
+      "locator": "sheet Sheet1, row 5",
+      "text": "2: Fuel | 3: do (mm) | 4: P (atm) | 5: XO2 | 6: XN2 | 7: XHe"
+    },
+    {
+      "locator": "sheet Sheet1, row 6",
+      "text": "2: n-dodecane | 3: 4.5 | 4: 2.75 | 5: 0.21 | 6: 0.5 | 7: 0.29 | 9: PROCI_C12_2019_Three_Stage | 10: https://doi.org/10.1016/j.proci.2018.09.015 | 11: Fig. 7"
+    },
+    {
+      "locator": "sheet Sheet1, row 7",
+      "text": ""
+    },
+    {
+      "locator": "sheet Sheet1, row 8",
+      "text": "2: Fuel | 3: do (mm) | 4: P (atm) | 5: XO2 | 6: XN2"
+    },
+    {
+      "locator": "sheet Sheet1, row 9",
+      "text": "2: n-heptane, n-decane, n-dodecane | 3: 2.0 - 7.0 | 4: 1 | 5: 0.21 | 6: 0.79 | 9: PROCI_2023_Alkane_Extinction_Diameter_1atm | 10: https://doi.org/10.1016/j.proci.2022.07.094 | 11: Fig. 3"
+    },
+    {
+      "locator": "sheet Sheet1, row 10",
+      "text": "2: n-dodecane | 3: 4 | 4: 0.5 - 3.0 | 5: 0.21 | 6: 0.79 | 9: PROCI_2023_C12_Extinction_Diameter_vs_pressure | 10: https://doi.org/10.1016/j.proci.2022.07.094 | 11: Fig. 7"
+    },
+    {
+      "locator": "sheet Sheet1, row 11",
+      "text": ""
+    },
+    {
+      "locator": "sheet Sheet1, row 12",
+      "text": "2: Fuel | 3: do (mm) | 4: P (atm) | 5: XO2 | 6: XN2"
+    },
+    {
+      "locator": "sheet Sheet1, row 13",
+      "text": "2: n-dodecane | 3: 4 | 4: 1 | 5: 0.21 | 6: 0.79 | 9: MST_2024_Burning_history_Flame_diameter | 10: https://doi.org/10.1007/s12217-024-10115-x | 11: Fig. 1"
+    },
+    {
+      "locator": "sheet Sheet1, row 14",
+      "text": "2: n-dodecane | 3: 4 | 4: 0.5 - 1.5 | 5: 0.21 | 6: 0.79 | 9: MST_2024_Dext | 10: https://doi.org/10.1007/s12217-024-10115-x | 11: Fig. 5"
+    },
+    {
+      "locator": "sheet Sheet1, row 15",
+      "text": "2: n-dodecane | 3: 4.5 | 4: 0.5 - 5.0 | 5: 0.21 | 6: 0.79 | 9: MST_2024_Kavg | 10: https://doi.org/10.1007/s12217-024-10115-x | 11: Fig. 4"
+    },
+    {
+      "locator": "sheet Sheet1, row 16",
+      "text": "2: n-dodecane | 3: ~4.5 | 4: 0.5 and 5.0 | 5: 0.21 | 6: 0.79 | 9: MST_2024_Radiance_Flame_Diameter | 10: https://doi.org/10.1007/s12217-024-10115-x | 11: Fig. 11"
+    }
+  ],
+  "details": {
+    "sheets": [
+      {
+        "name": "sheet Sheet1",
+        "row_count": 16,
+        "column_count": 11,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 16
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 3
+          },
+          {
+            "numeric_count": 7,
+            "min": 0.5,
+            "max": 4.5,
+            "blank_count": 3
+          },
+          {
+            "numeric_count": 5,
+            "min": 1.0,
+            "max": 2.75,
+            "blank_count": 3
+          },
+          {
+            "numeric_count": 9,
+            "min": 0.1,
+            "max": 0.21,
+            "blank_count": 3
+          },
+          {
+            "numeric_count": 9,
+            "min": 0.5,
+            "max": 85.0,
+            "blank_count": 3
+          },
+          {
+            "numeric_count": 1,
+            "min": 0.29,
+            "max": 0.29,
+            "blank_count": 11
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 16
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 6
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 6
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 7
+          }
+        ],
+        "rows": [
+          [
+            null,
+            "Fuel",
+            "do (mm)",
+            "P (atm)",
+            "XO2",
+            "XN2",
+            "XO3",
+            null,
+            "Data File",
+            "Reference",
+            null
+          ],
+          [
+            null,
+            "n-heptane",
+            0.5,
+            1,
+            0.21,
+            74,
+            "Balance",
+            null,
+            "PROCI_2019_Stable_Cool",
+            "https://doi.org/10.1016/j.proci.2018.05.151",
+            "Fig. 1"
+          ],
+          [
+            null,
+            "n-heptane",
+            0.5,
+            1,
+            0.1,
+            85,
+            "Balance",
+            null,
+            "PROCI_2019_Oscillatory_Cool_Flame",
+            "https://doi.org/10.1016/j.proci.2018.05.151 ",
+            "Fig. 1"
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            "Fuel",
+            "do (mm)",
+            "P (atm)",
+            "XO2",
+            "XN2",
+            "XHe",
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            "n-dodecane",
+            4.5,
+            2.75,
+            0.21,
+            0.5,
+            0.29,
+            null,
+            "PROCI_C12_2019_Three_Stage",
+            "https://doi.org/10.1016/j.proci.2018.09.015",
+            "Fig. 7"
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            "Fuel",
+            "do (mm)",
+            "P (atm)",
+            "XO2",
+            "XN2",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            "n-heptane, n-decane, n-dodecane",
+            "2.0 - 7.0",
+            1,
+            0.21,
+            0.79,
+            null,
+            null,
+            "PROCI_2023_Alkane_Extinction_Diameter_1atm",
+            "https://doi.org/10.1016/j.proci.2022.07.094",
+            "Fig. 3"
+          ],
+          [
+            null,
+            "n-dodecane",
+            4,
+            "0.5 - 3.0",
+            0.21,
+            0.79,
+            null,
+            null,
+            "PROCI_2023_C12_Extinction_Diameter_vs_pressure",
+            "https://doi.org/10.1016/j.proci.2022.07.094",
+            "Fig. 7"
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            "Fuel",
+            "do (mm)",
+            "P (atm)",
+            "XO2",
+            "XN2",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      }
+    ]
+  },
+  "warnings": [
+    "Values read from saved workbook; formulas not recalculated."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

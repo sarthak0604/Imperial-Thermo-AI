@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-101:4e1b21a95ebfc27e0550",
+  "study": "PSI-101",
+  "filename": "PSI-101_Analyzed Data_2010_202_13_pyrell_run52.xls",
+  "key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_2010_202_13_pyrell_run52.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 5827072,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc532b8656d2315bf50a4&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/4e1b21a95ebfc27e0550/PSI-101_Analyzed Data_2010_202_13_pyrell_run52.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "c1f5557de63c57e253d6fbac5d1a8e0acc8f28d29f8ea786265e1379a1bcb7be",
+  "status": "downloaded"
+}

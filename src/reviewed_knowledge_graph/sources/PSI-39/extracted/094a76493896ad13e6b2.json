@@ -1,0 +1,29 @@
+{
+  "id": "res:PSI-39:094a76493896ad13e6b2",
+  "study": "PSI-39",
+  "filename": "PSI-39_Analyzed Data_FLEX-1240_Summary.pdf",
+  "key": "psi-data/PSI-39/Analyzed Data/PSI-39_Analyzed Data_FLEX-1240_Summary.pdf",
+  "category": "Analyzed Data",
+  "size_bytes": 349778,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-39/download?file=683f4b2ada33c6f4c4cec285&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-39/094a76493896ad13e6b2/PSI-39_Analyzed Data_FLEX-1240_Summary.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "91dc839541d4aa5edf03916b67ad53a438a08011296c219f49d7b192d875ca6d",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "1.0\n0.8\n0.6\n0.4\n0.2\n0.0\n( D / D0 )\n2\n3.0\n2.5\n2.0\n1.5\n1.0\n0.5\n0.0\nt / D0\n2  ( s / mm\n2 )\n30\n25\n20\n15\n10\n5\nDf  ( mm ) ,  Df / Dd\n14\n12\n10\n8\n6\n4\n2\n0\nDext, cool  ( mm )\n350\n300\n250\n200\n150\n100\nPeak Cool Flame Grayscale\n0.1\n2\n3\n4\n5\n6\n7\n8\n1\n2\n3\n4\n5\n6\n7\n8\n10\n2\nFlame Radiance  ( W )\nMon, May 1, 2017\nFLEX-1240\nF121A07\nP = 387.496 mmHg\nYO2 = 0.210\nYN2 = 0.790\nYCO2 = 0.000\nYHe = 0.000\nDodecane\nD0 = 4.081 mm\nDext = 3.485 mm\nkavg = 0.351 mm\n2/sec\nkavg, cool = 0.311 mm\n2/sec\nDext, cool = 1.903 mm\n Droplet History\n Hot-Flame Diameter\n Hot-Flame FSR\n Cool Flame Diameter (FWHM)\n Cool Flame Diameter (peak-peak) \n Cool Flame Grayscale\n TotWdBndPwrWIgn_W\n TotalNarrowBandPower_W\n"
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

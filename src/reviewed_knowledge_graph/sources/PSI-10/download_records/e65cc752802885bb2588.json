@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-10:e65cc752802885bb2588",
+  "study": "PSI-10",
+  "filename": "PSI-10_Science Documents_SRD_ACMEFlameDesign.pdf",
+  "key": "psi-data/PSI-10/Science Documents/PSI-10_Science Documents_SRD_ACMEFlameDesign.pdf",
+  "category": "Science Documents",
+  "size_bytes": 471072,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-10/download?file=691f7eef17f78b371b2705e1&version=1&studyVersion=1&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-10/e65cc752802885bb2588/PSI-10_Science Documents_SRD_ACMEFlameDesign.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "e783fc0da3d388b567654c109b2595a5a74218de6ccd641241f13b091a5448eb",
+  "status": "downloaded"
+}

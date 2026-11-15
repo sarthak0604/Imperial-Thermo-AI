@@ -1,0 +1,29 @@
+{
+  "id": "res:PSI-23:012e4f34b740871a6c78",
+  "study": "PSI-23",
+  "filename": "PSI-23_Engineering Documents_S1101MFB0001_-ACME_Drawing_Tree.pdf",
+  "key": "psi-data/PSI-23/Engineering Documents/PSI-23_Engineering Documents_S1101MFB0001_-ACME_Drawing_Tree.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 129741,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdc96daf91e274cec860&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/012e4f34b740871a6c78/PSI-23_Engineering Documents_S1101MFB0001_-ACME_Drawing_Tree.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "b64f772e4eea0c804f8ff33318e38d7d107755c6612401f0ba2f193fee0038cc",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "A\n4\nB\n3\nC\nD\n4\n3\n2\n1\nA\n2\nC\n1\nD\nENGINEER\nREPRESENTIVE\nQUALITY\nMATERIALS\nLEAD\nDESIGNER\nPROJECT\nCONTRACT NO.\nDELIVERY ORDER\nSAFETY\nPRIOR TO USE CHECK FOR ANY OUTSTANDING ECO'S WITH CONFIGURATION MANAGEMENT OFFICE\nASME Y14.5M-1994\nDIMENSIONING AND \nBREAK EDGES\nANGULAR\n± \nDIMENSIONS ARE IN INCHES\nUNLESS OTHERWISE SPECIFIED\nFRACTION\n.XX\n.XXX\n.X\nTOLERANCE ON\n± \n± \n± \n± \nREVISIONS\nDESCRIPTION\nINITIAL REL DATE\nC\nSIZE\nDRAWING NUMBER\nSCALE:\nCHG\nZONE\nCLEVELAND, OHIO      \nLEWIS FIELD      \nJOHN H. GLENN RESEARCH CENTER      \nNATIONAL AERONAUTICS AND SPACE ADMINISTRATION      \nSHEET\nOF\nREV\nDISCIPLINE\nUNITS:\nBLDG\nAREA\nAPP/DATE\nC\nSIZE\nDRAWING NUMBER\nREV\nTOLERANCING PER\nZIN TECHNOLOGIES\n6745 ENGLE ROAD\nAIRPORT EXECUTIVE PARK\nCLEVELAND, OHIO 44130\n440 625-2200\nLEAD\nAutoCad\n-\nS1101MFB0001\n.XX-.XX\nX° XX'\nX/X\n.XXX\n.XX\n.XX\nSPACE 110\nNNC09BA02B\nB.BOROWSKI 11/09/10\nN/A\nD.SEELEY 11/09/10\nA.DRAKE 11/09/10\nA.DRAKE 11/09/10\nP.GALANT 11/09/10\nMECH\nINCH\nGRC\nZIN\n11/09/2010\nNONE\nS1101MFB0001\n1\n1\n-\nFLIGHT DRAWING TREE\nACME\nTHIS DRAWING IS UNDER CONFIGURATION \nCONTROL: DO NOT REVISE WITHOUT APPROVED ECO\nAPPROVED:\nDATE:\nL.FOLGER\n11/09/10\nACME Matrix\nS1101XXXXXXX\nAvionics\n Color Camera\nChamber\nS1101XXX0001-1999\nPackage\nS1101XXX2000-2999\nS1101XXX3000-3999\nS1101XXX4000-4999\nS1101XXX5000-5999\nS1101XXX0200-0499\nS1101XXX0100-0199\nOn-Orbit\nS1101XXX0003-0099\nExperiment\nS1101XXX1000-1099\nS1101XXX2200-2299\nS1101XXX2100-2199\nS1101XXX2000-2099\nS1101XXX3000-3099\nShipping\nS1101XXX5500-5999\nConfiguration\nLaunch\nConfiguration\nCommon\nElectrical\nSystem\nS1101XXX0500-0599\nHoses\nand QD\nAssemblies\nFlow\nS1101XXX1100-1199\nE-Field\nSystem\nBurner\nS1101XXX1200-1299\nIgnition\nS1101XXX1300-1399\nS1101XXX1400-1499\nAnalog\nCamera\nSystem\nMeasurement\nS1101XXX1600-1699\nSystem\nDiagnostic\nS1101XXX1500-1599\nSystem\nS1101XXX1700-1799\nCooling\nS1101XXX1800-1899\nSystem\nAssembly\nConfiguration\nHousing\nCamera\nSystem\nS1101XXX2300-2399\nFilter\nMechanism\nSystem\nS1101XXX2400-2499\nCommon\nElectrical\nSystem\nAssembly\nConfiguration\nS1101XXX3200-3299\nMain\nComputer\nSystem\nS1101XXX3400-3499\nPower\nDistribution\nSystem\nS1101XXX4000-4499\nGround\nSupport\nHardware\nS1101XXX4500-4999\nNon-Deliverable\nTest/Support\nEquipment\nS1101XXX5000-5499\nFlight\nStowage\nContainers\nContainers\nShipping\nand\nStowage\nGround Support and\nNon-Deliverable\nTest Equipment\nS1101XXX3100-3199\nHousing\nS1101XXX3300-3399\nData\nStorage\nSystem\nS1101XXX3500-3599\nCommon\nElectrical\nSystem\nInsert\nAssembly\nMounting\nStructure\nPackage\nSystem\nSystem\nSystem\n"
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

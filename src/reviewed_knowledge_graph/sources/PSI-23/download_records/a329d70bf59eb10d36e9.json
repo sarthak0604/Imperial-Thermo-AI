@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:a329d70bf59eb10d36e9",
+  "study": "PSI-23",
+  "filename": "PSI-23_Science Documents_ACME s-Flame  DoD.pdf",
+  "key": "psi-data/PSI-23/Science Documents/PSI-23_Science Documents_ACME s-Flame  DoD.pdf",
+  "category": "Science Documents",
+  "size_bytes": 801605,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841ce426daf91e274cecd4f&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/a329d70bf59eb10d36e9/PSI-23_Science Documents_ACME s-Flame  DoD.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f4ae0b6ffb4c60f69146ddb6df981963e1fccf39ee2be4706a64d7c00337a25b",
+  "status": "downloaded"
+}

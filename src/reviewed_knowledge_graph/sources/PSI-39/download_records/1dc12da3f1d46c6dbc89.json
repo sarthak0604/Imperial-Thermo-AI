@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-39:1dc12da3f1d46c6dbc89",
+  "study": "PSI-39",
+  "filename": "PSI-39_Experimental table_CFI.csv",
+  "key": "psi-data/PSI-39/Experimental table/PSI-39_Experimental table_CFI.csv",
+  "category": "Experimental table",
+  "size_bytes": 7792,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-39/download?file=67a24ba209ed061032c107a6&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-39/1dc12da3f1d46c6dbc89/PSI-39_Experimental table_CFI.csv",
+  "sha256": "fb898e28762353aa132c16b886dbd207a024b1dd3c9bed5928d70d8036d2ec7e",
+  "status": "downloaded"
+}

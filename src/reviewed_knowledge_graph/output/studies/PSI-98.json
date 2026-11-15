@@ -1,0 +1,3550 @@
+{
+  "schema_version": "1.0.0",
+  "graph_id": "reviewed:PSI-98",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+  "generated_at": "2026-11-15T15:05:40.118169+00:00",
+  "nodes": [
+    {
+      "id": "concept:0a6db4f6aad4f88d4670",
+      "type": "Concept",
+      "properties": {
+        "name": "Solid-fuel flammability",
+        "synonyms": [
+          "material flammability"
+        ],
+        "description": "Ignition and sustained burning behavior of solid materials under specified conditions."
+      }
+    },
+    {
+      "id": "concept:93419566109c6d0df659",
+      "type": "Concept",
+      "properties": {
+        "name": "Flame spread",
+        "synonyms": [],
+        "description": "Propagation of a flame along or over a fuel surface."
+      }
+    },
+    {
+      "id": "concept:26b7808121d82bd0a863",
+      "type": "Concept",
+      "properties": {
+        "name": "Forced convection",
+        "synonyms": [
+          "ventilation"
+        ],
+        "description": "Flow driven by an imposed velocity rather than buoyancy alone."
+      }
+    },
+    {
+      "id": "concept:ad79f29eb926d0e6b464",
+      "type": "Concept",
+      "properties": {
+        "name": "Microgravity combustion",
+        "synonyms": [
+          "reduced-gravity combustion"
+        ],
+        "description": "Combustion studied under reduced buoyancy in a microgravity environment."
+      }
+    },
+    {
+      "id": "concept:599b5b0297a07f94cad0",
+      "type": "Concept",
+      "properties": {
+        "name": "SIBAL cotton/fiberglass fabric",
+        "synonyms": [],
+        "description": null
+      }
+    },
+    {
+      "id": "var:7534c53fa42e2253c6a0",
+      "type": "Variable",
+      "properties": {
+        "name": "Burn time",
+        "symbol": null,
+        "unit": "s",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "inv:PSI-98",
+      "type": "Investigation",
+      "properties": {
+        "title": "Spacecraft Fire Safety Experiment-I",
+        "summary": "Saffire-I examines large-scale fabric-fire growth aboard an uncrewed Cygnus vehicle after departure from the ISS. It uses cotton/fiberglass SIBAL fabric with 20 cm/s airflow, imaging, thermal diagnostics and gas sensors. The deposited table includes sample records and separate pre-test flow-visualization entries; their different roles are retained.",
+        "keywords": [
+          "Solid-fuel flammability",
+          "Flame spread",
+          "Spacecraft fire safety",
+          "Forced convection",
+          "Microgravity combustion"
+        ],
+        "doi": "10.60555/0t15-1z43",
+        "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98"
+      }
+    },
+    {
+      "id": "exp:PSI-98:campaign",
+      "type": "Experiment",
+      "properties": {
+        "title": "SAFFIRE-I — investigation-level study",
+        "summary": "Saffire-I examines large-scale fabric-fire growth aboard an uncrewed Cygnus vehicle after departure from the ISS. It uses cotton/fiberglass SIBAL fabric with 20 cm/s airflow, imaging, thermal diagnostics and gas sensors. The deposited table includes sample records and separate pre-test flow-visualization entries; their different roles are retained.",
+        "keywords": [
+          "Solid-fuel flammability",
+          "Flame spread",
+          "Spacecraft fire safety",
+          "Forced convection",
+          "Microgravity combustion"
+        ],
+        "conditions": {
+          "record_kind": "investigation_campaign",
+          "project_type": "Microgravity Investigation",
+          "hardware": "Saffire 1 enclosure in Cygnus",
+          "flight_program_as_reported": "International Space Station (ISS)",
+          "scope": "Study-level description; not a single physical test.",
+          "observations_vs_objectives": "Metadata objectives and hypotheses are not treated as measured findings."
+        },
+        "methods": [
+          "Uncrewed Cygnus fire experiment",
+          "Two-camera imaging",
+          "Thermocouples, radiometers, gas sensors and anemometers"
+        ],
+        "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98"
+      }
+    },
+    {
+      "id": "concept:7c44e089e7c2fbe6d3bf",
+      "type": "Concept",
+      "properties": {
+        "name": "Spacecraft fire safety",
+        "synonyms": [],
+        "description": "Understanding and controlling fire hazards in spacecraft environments."
+      }
+    },
+    {
+      "id": "var:7f5fe7ac64a4435c2af8",
+      "type": "Variable",
+      "properties": {
+        "name": "Flame radiation",
+        "symbol": null,
+        "unit": null,
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "var:0d531b19896b3e16c11b",
+      "type": "Variable",
+      "properties": {
+        "name": "Oxygen concentration",
+        "symbol": null,
+        "unit": null,
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "var:db3d5b9ad5b649e87980",
+      "type": "Variable",
+      "properties": {
+        "name": "Carbon dioxide concentration",
+        "symbol": null,
+        "unit": null,
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "res:PSI-98:8a6557581936d57d813b",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Engineering Documents_SAFFIRE Offgassing Testing Strategy.pdf",
+        "filename": "PSI-98_Engineering Documents_SAFFIRE Offgassing Testing Strategy.pdf",
+        "resource_type": "Engineering Documents",
+        "file_format": "pdf",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a51746db1c87dcebea1&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "download_failed",
+        "size_bytes": 1696929
+      }
+    },
+    {
+      "id": "res:PSI-98:16cd677150e25518960b",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Engineering Documents_SAFFIRE-I Operations.pdf",
+        "filename": "PSI-98_Engineering Documents_SAFFIRE-I Operations.pdf",
+        "resource_type": "Engineering Documents",
+        "file_format": "pdf",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a58746db1c87dcebeea&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "text_extracted_unreviewed",
+        "size_bytes": 13957
+      }
+    },
+    {
+      "id": "res:PSI-98:6e2195e0fa49a0b02f7f",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Experimental table_SAFFIRE-1.csv",
+        "filename": "PSI-98_Experimental table_SAFFIRE-1.csv",
+        "resource_type": "Experimental table",
+        "file_format": "csv",
+        "summary": "Experiment index with 4 source rows after the header; nonempty data records are retained without expanding parameter ranges. Row type: sample_record. Source errors and duplicate records are flagged.",
+        "keywords": [],
+        "variables": [
+          "Sample Number",
+          "Material",
+          "Sample Thickness (cm)",
+          "Sample Length (cm)",
+          "Sample Width (cm)",
+          "Air Flow (cm/s)",
+          "Percent O2",
+          "Ignition Power (W)",
+          "Ignition Time (s)",
+          "Burn Time (s)",
+          "Flow Direction",
+          "Camera 1",
+          "Camera 2"
+        ],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "structured_table_reviewed",
+        "size_bytes": 469
+      }
+    },
+    {
+      "id": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:2",
+      "type": "Experiment",
+      "properties": {
+        "title": "PSI-98 S1 (source row 2)",
+        "summary": "Source sample record transcribed from PSI-98_Experimental table_SAFFIRE-1.csv, row 2. Blank values remain unknown; ranges remain ranges.",
+        "keywords": [],
+        "conditions": {
+          "Sample Number": "S1",
+          "Material": "SIBAL Fabric",
+          "Sample Thickness (cm)": "0.37",
+          "Sample Length (cm)": "40.6",
+          "Sample Width (cm)": "94",
+          "Air Flow (cm/s)": "20",
+          "Percent O2": "21.5 - 21.7",
+          "Ignition Power (W)": "182",
+          "Ignition Time (s)": "8",
+          "Burn Time (s)": "420",
+          "Flow Direction": "Concurrent",
+          "Camera 1": "S1C1",
+          "Camera 2": "S1C2",
+          "record_kind": "sample_record",
+          "source_table": "PSI-98_Experimental table_SAFFIRE-1.csv",
+          "source_row": 2,
+          "source_quality_notes": [
+            "Geometry/thickness values are preserved from this table; do not assume agreement with narrative or other Saffire tables."
+          ]
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true"
+      }
+    },
+    {
+      "id": "var:251db6c600814cb91af4",
+      "type": "Variable",
+      "properties": {
+        "name": "Burn Time (s)",
+        "symbol": null,
+        "unit": "s",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:3",
+      "type": "Experiment",
+      "properties": {
+        "title": "PSI-98 S2 (source row 3)",
+        "summary": "Source sample record transcribed from PSI-98_Experimental table_SAFFIRE-1.csv, row 3. Blank values remain unknown; ranges remain ranges.",
+        "keywords": [],
+        "conditions": {
+          "Sample Number": "S2",
+          "Material": "SIBAL Fabric",
+          "Sample Thickness (cm)": "0.37",
+          "Sample Length (cm)": "40.6",
+          "Sample Width (cm)": "94",
+          "Air Flow (cm/s)": "20",
+          "Percent O2": "~ 21.5",
+          "Ignition Power (W)": "182",
+          "Ignition Time (s)": "8",
+          "Burn Time (s)": "70",
+          "Flow Direction": "Opposed",
+          "Camera 1": "S2C1",
+          "Camera 2": "S2C2",
+          "record_kind": "sample_record",
+          "source_table": "PSI-98_Experimental table_SAFFIRE-1.csv",
+          "source_row": 3,
+          "source_quality_notes": [
+            "Geometry/thickness values are preserved from this table; do not assume agreement with narrative or other Saffire tables."
+          ]
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true"
+      }
+    },
+    {
+      "id": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:4",
+      "type": "Experiment",
+      "properties": {
+        "title": "PSI-98 F1C1/F1C2 (source row 4)",
+        "summary": "Source flow visualization record transcribed from PSI-98_Experimental table_SAFFIRE-1.csv, row 4. Blank values remain unknown; ranges remain ranges.",
+        "keywords": [],
+        "conditions": {
+          "Sample Number": "F1C1/F1C2",
+          "Material": "Pre-test flow visulation data for sample 1",
+          "Sample Thickness (cm)": null,
+          "Sample Length (cm)": null,
+          "Sample Width (cm)": null,
+          "Air Flow (cm/s)": null,
+          "Percent O2": null,
+          "Ignition Power (W)": null,
+          "Ignition Time (s)": null,
+          "Burn Time (s)": null,
+          "Flow Direction": null,
+          "Camera 1": null,
+          "Camera 2": null,
+          "record_kind": "flow_visualization_record",
+          "source_table": "PSI-98_Experimental table_SAFFIRE-1.csv",
+          "source_row": 4,
+          "source_quality_notes": [
+            "Geometry/thickness values are preserved from this table; do not assume agreement with narrative or other Saffire tables."
+          ]
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true"
+      }
+    },
+    {
+      "id": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:5",
+      "type": "Experiment",
+      "properties": {
+        "title": "PSI-98 F2C1/F2C2 (source row 5)",
+        "summary": "Source flow visualization record transcribed from PSI-98_Experimental table_SAFFIRE-1.csv, row 5. Blank values remain unknown; ranges remain ranges.",
+        "keywords": [],
+        "conditions": {
+          "Sample Number": "F2C1/F2C2",
+          "Material": "Pre-test flow visulation data for sample 2",
+          "Sample Thickness (cm)": null,
+          "Sample Length (cm)": null,
+          "Sample Width (cm)": null,
+          "Air Flow (cm/s)": null,
+          "Percent O2": null,
+          "Ignition Power (W)": null,
+          "Ignition Time (s)": null,
+          "Burn Time (s)": null,
+          "Flow Direction": null,
+          "Camera 1": null,
+          "Camera 2": null,
+          "record_kind": "flow_visualization_record",
+          "source_table": "PSI-98_Experimental table_SAFFIRE-1.csv",
+          "source_row": 5,
+          "source_quality_notes": [
+            "Geometry/thickness values are preserved from this table; do not assume agreement with narrative or other Saffire tables."
+          ]
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true"
+      }
+    },
+    {
+      "id": "res:PSI-98:13f4bc7151227f0227bf",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_metadata_PSI-166_SAFFIRE-I.zip",
+        "filename": "PSI-98_metadata_PSI-166_SAFFIRE-I.zip",
+        "resource_type": "metadata",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a51746db1c87dcebea0&version=4&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "text_extracted_unreviewed",
+        "size_bytes": 10031
+      }
+    },
+    {
+      "id": "res:PSI-98:fc8eb5a915a85e9ce97c",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_F1C1-Raw_DistroMaster_originals.zip",
+        "filename": "PSI-98_Raw Data_F1C1-Raw_DistroMaster_originals.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a52746db1c87dcebea8&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1822059
+      }
+    },
+    {
+      "id": "res:PSI-98:dba679d1347e8789f287",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_Mapped_SAFFIRE-1_F1C1_DistortionGrid_1280x920.zip",
+        "filename": "PSI-98_Raw Data_Mapped_SAFFIRE-1_F1C1_DistortionGrid_1280x920.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a51746db1c87dcebea4&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 222794
+      }
+    },
+    {
+      "id": "res:PSI-98:3a521bc6584aba74b2c5",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_Mapped_SAFFIRE-1_F1C2_DistortionGrid_1280x920.zip",
+        "filename": "PSI-98_Raw Data_Mapped_SAFFIRE-1_F1C2_DistortionGrid_1280x920.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a52746db1c87dcebeac&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 215516
+      }
+    },
+    {
+      "id": "res:PSI-98:0630d530a8acae1480f9",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_S2C1-1465938171811_icmad.zip",
+        "filename": "PSI-98_Raw Data_S2C1-1465938171811_icmad.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a55746db1c87dcebec9&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 179840
+      }
+    },
+    {
+      "id": "res:PSI-98:512f81b23dc2f9c26657",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_Saffire I Sample 1 TM graphs.docx",
+        "filename": "PSI-98_Raw Data_Saffire I Sample 1 TM graphs.docx",
+        "resource_type": "Raw Data",
+        "file_format": "docx",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a53746db1c87dcebeba&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1412623
+      }
+    },
+    {
+      "id": "res:PSI-98:c77a9817fd5b1fef1d8e",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE-1_F1C1_DistortionGrids_1280x920_originals.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE-1_F1C1_DistortionGrids_1280x920_originals.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a51746db1c87dcebea2&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 566718
+      }
+    },
+    {
+      "id": "res:PSI-98:5a5b411f3ceccd0c463b",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE-1_F1C1_DistortionGrids_1360x1024_originals.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE-1_F1C1_DistortionGrids_1360x1024_originals.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a51746db1c87dcebea5&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 588576
+      }
+    },
+    {
+      "id": "res:PSI-98:0fcf880e4a2c7893b6e1",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE-1_F1C2_DistortionGrid_1280x920.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE-1_F1C2_DistortionGrid_1280x920.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a52746db1c87dcebeab&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 556980
+      }
+    },
+    {
+      "id": "res:PSI-98:6e2423bbf0c967676659",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE-1_F1C2_DistortionGrids_1360x1024.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE-1_F1C2_DistortionGrids_1360x1024.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a52746db1c87dcebead&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 580912
+      }
+    },
+    {
+      "id": "res:PSI-98:7ff5d952c6aa5490de4e",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_Saffire-I Sample 1 Sensor Data Complete TM graphs.xlsx",
+        "filename": "PSI-98_Raw Data_Saffire-I Sample 1 Sensor Data Complete TM graphs.xlsx",
+        "resource_type": "Raw Data",
+        "file_format": "xlsx",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a53746db1c87dcebeb9&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 25066841
+      }
+    },
+    {
+      "id": "res:PSI-98:7d0b1ca8e633b6d76677",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_Saffire-I Sample 2 Sensor Data Complete TM graphs.xlsx",
+        "filename": "PSI-98_Raw Data_Saffire-I Sample 2 Sensor Data Complete TM graphs.xlsx",
+        "resource_type": "Raw Data",
+        "file_format": "xlsx",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a53746db1c87dcebebc&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 24892655
+      }
+    },
+    {
+      "id": "res:PSI-98:fec46a4f21f9f8cdd05c",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_Saffire-I Sample 2 TM graphs.docx",
+        "filename": "PSI-98_Raw Data_Saffire-I Sample 2 TM graphs.docx",
+        "resource_type": "Raw Data",
+        "file_format": "docx",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a53746db1c87dcebebb&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1016708
+      }
+    },
+    {
+      "id": "res:PSI-98:f8a6c9ddd48701dbbe95",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_Saffire-I Telemetry Data Good Process Version.xlsx",
+        "filename": "PSI-98_Raw Data_Saffire-I Telemetry Data Good Process Version.xlsx",
+        "resource_type": "Raw Data",
+        "file_format": "xlsx",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a53746db1c87dcebeb8&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 2775737
+      }
+    },
+    {
+      "id": "res:PSI-98:8954199c0ce51191cf99",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE-I_F2C1_Mapped_jpeg.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE-I_F2C1_Mapped_jpeg.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a53746db1c87dcebeb4&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 69803205
+      }
+    },
+    {
+      "id": "res:PSI-98:caa82b4b1931aeff46ab",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE-I_ImageFrameSizes_ROI_Offsets_Grid_1280x920_v1.0.pdf",
+        "filename": "PSI-98_Raw Data_SAFFIRE-I_ImageFrameSizes_ROI_Offsets_Grid_1280x920_v1.0.pdf",
+        "resource_type": "Raw Data",
+        "file_format": "pdf",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a51746db1c87dcebea3&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 784299
+      }
+    },
+    {
+      "id": "res:PSI-98:5e4b45b1768a825043ad",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE-I_Mapped_F1C1_Raw2TIFF.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE-I_Mapped_F1C1_Raw2TIFF.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a52746db1c87dcebeaa&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 277236
+      }
+    },
+    {
+      "id": "res:PSI-98:84f9f40d06991f502c34",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_F1C1_JPEG_Mapped.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_F1C1_JPEG_Mapped.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a52746db1c87dcebea7&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 84789341
+      }
+    },
+    {
+      "id": "res:PSI-98:bfe547016c17ad666b5c",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_F1C1_jpegs.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_F1C1_jpegs.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a51746db1c87dcebea6&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 59197949
+      }
+    },
+    {
+      "id": "res:PSI-98:8aac50e4a8a68605b1ce",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_F1C1_Raw2TIFF.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_F1C1_Raw2TIFF.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a52746db1c87dcebea9&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 218871
+      }
+    },
+    {
+      "id": "res:PSI-98:abed4e4ba8ac93868cb6",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_F1C2-Raw_DistroMaster.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_F1C2-Raw_DistroMaster.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a52746db1c87dcebeb0&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1808672
+      }
+    },
+    {
+      "id": "res:PSI-98:d3e29ffcec5b9d5e31d1",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_F1C2_jpeg.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_F1C2_jpeg.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a52746db1c87dcebeae&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 47752221
+      }
+    },
+    {
+      "id": "res:PSI-98:977d118f78a354145b34",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_F1C2_JPEG_Mapped.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_F1C2_JPEG_Mapped.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a52746db1c87dcebeaf&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 72041080
+      }
+    },
+    {
+      "id": "res:PSI-98:fbc9dda8c5987d5a47c0",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_F1C2_Raw2TIFF.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_F1C2_Raw2TIFF.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a52746db1c87dcebeb1&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 196227
+      }
+    },
+    {
+      "id": "res:PSI-98:da072b0f4d5ef544544a",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_F2C1_jpeg.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_F2C1_jpeg.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a53746db1c87dcebeb3&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 47530750
+      }
+    },
+    {
+      "id": "res:PSI-98:2655f7aba6317c77f852",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_F2C2_jpeg.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_F2C2_jpeg.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a53746db1c87dcebeb5&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 40043615
+      }
+    },
+    {
+      "id": "res:PSI-98:64b516a820b7de08e024",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_F2C2_Mapped_jpeg.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_F2C2_Mapped_jpeg.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a53746db1c87dcebeb6&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 63659574
+      }
+    },
+    {
+      "id": "res:PSI-98:3a99648a73d54d463947",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_Mapped_F1C2_Raw2TIFF.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_Mapped_F1C2_Raw2TIFF.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a53746db1c87dcebeb2&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 263659
+      }
+    },
+    {
+      "id": "res:PSI-98:1069ef388d40c12f8bfa",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg2png_icmad_part1.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg2png_icmad_part1.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a56746db1c87dcebed8&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1496417130
+      }
+    },
+    {
+      "id": "res:PSI-98:0bd109bd8c29cf9a5226",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg2png_icmad_part2.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg2png_icmad_part2.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a56746db1c87dcebed6&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1239632015
+      }
+    },
+    {
+      "id": "res:PSI-98:57931475fa22e0d9b268",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg2png_icmad_part3.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg2png_icmad_part3.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a56746db1c87dcebed7&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1023095761
+      }
+    },
+    {
+      "id": "res:PSI-98:6396bc6a1258b9f3c66b",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1_JPEG_Mapped_part1.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1_JPEG_Mapped_part1.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a56746db1c87dcebed3&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 148690336
+      }
+    },
+    {
+      "id": "res:PSI-98:6f51911ed56a734bb118",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1_JPEG_Mapped_part2.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1_JPEG_Mapped_part2.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a56746db1c87dcebed4&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 135089071
+      }
+    },
+    {
+      "id": "res:PSI-98:450a0e785b4e9a7d5309",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1_JPEG_Mapped_part3.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1_JPEG_Mapped_part3.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a56746db1c87dcebed5&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 109190886
+      }
+    },
+    {
+      "id": "res:PSI-98:44e70fe64311b447f8a3",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg_part1.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg_part1.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a55746db1c87dcebed2&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 96361383
+      }
+    },
+    {
+      "id": "res:PSI-98:1cf4d82f7c214f5fe116",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg_part2.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg_part2.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a55746db1c87dcebed1&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 83527817
+      }
+    },
+    {
+      "id": "res:PSI-98:c2c3fc7320ccc3937446",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg_part3.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg_part3.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a55746db1c87dcebed0&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 69819932
+      }
+    },
+    {
+      "id": "res:PSI-98:4db51a48dbf053e21488",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1_Raw2TIFF_Complete.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1_Raw2TIFF_Complete.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebec0&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 19169825
+      }
+    },
+    {
+      "id": "res:PSI-98:dfe78e4cac1604bd31ef",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1_Raw2TIFF_Mapped_JPEGS.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1_Raw2TIFF_Mapped_JPEGS.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebec2&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 25798148
+      }
+    },
+    {
+      "id": "res:PSI-98:f5b6971b50a354cc5a91",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1_Raw_DistroMaster.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1_Raw_DistroMaster.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebebf&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 301028742
+      }
+    },
+    {
+      "id": "res:PSI-98:8a2fd2f861d3d0779911",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C1Raw2TIFF_Complete_icmad.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C1Raw2TIFF_Complete_icmad.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebec1&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 26095064
+      }
+    },
+    {
+      "id": "res:PSI-98:1e6bea36c5e1ef660ffe",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg2png_icmad_part1.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg2png_icmad_part1.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a57746db1c87dcebee0&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1132279391
+      }
+    },
+    {
+      "id": "res:PSI-98:0cae67ddef103b2d71e0",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg2png_icmad_part2.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg2png_icmad_part2.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a57746db1c87dcebee2&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1241540148
+      }
+    },
+    {
+      "id": "res:PSI-98:00773c585ca7ef6c3226",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg2png_icmad_part3.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg2png_icmad_part3.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a57746db1c87dcebee1&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1126949990
+      }
+    },
+    {
+      "id": "res:PSI-98:dbe8f9ed7e067329010c",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_Part1.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_Part1.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a57746db1c87dcebede&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 131787172
+      }
+    },
+    {
+      "id": "res:PSI-98:08bb9480e265e8e9e025",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_part2.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_part2.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a57746db1c87dcebedf&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 134910758
+      }
+    },
+    {
+      "id": "res:PSI-98:87ed513164448797731e",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_part3.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_part3.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a56746db1c87dcebedc&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 134910758
+      }
+    },
+    {
+      "id": "res:PSI-98:cb7aa1d861ec569cf209",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_part4.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_part4.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a56746db1c87dcebedd&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 121572185
+      }
+    },
+    {
+      "id": "res:PSI-98:1d369aa6c790f9e3e66d",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg_part1.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg_part1.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a56746db1c87dcebed9&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 79786765
+      }
+    },
+    {
+      "id": "res:PSI-98:83a679bdc6c7014ec32b",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg_part2.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg_part2.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a56746db1c87dcebeda&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 83633415
+      }
+    },
+    {
+      "id": "res:PSI-98:5eeed5df2b7cbeb114f2",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg_part3.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg_part3.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a56746db1c87dcebedb&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 75425271
+      }
+    },
+    {
+      "id": "res:PSI-98:29682f371ea7e1e93ad4",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C2_Raw2TIFF_Complete.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C2_Raw2TIFF_Complete.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebec4&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 14656724
+      }
+    },
+    {
+      "id": "res:PSI-98:b9962a4b6fe3d3a465e7",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S1C2_RAW2TIFF_Complete_icmad.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S1C2_RAW2TIFF_Complete_icmad.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebec5&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 18767792
+      }
+    },
+    {
+      "id": "res:PSI-98:675547783882d8d2bd4f",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C1_jpeg.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C1_jpeg.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebec7&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 66317022
+      }
+    },
+    {
+      "id": "res:PSI-98:51dc0a0003b223902772",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C1_jpeg2png_icmad.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C1_jpeg2png_icmad.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a57746db1c87dcebee4&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 987695540
+      }
+    },
+    {
+      "id": "res:PSI-98:a8765980b34b390f1c73",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C1_JPEG_Mapped.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C1_JPEG_Mapped.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a57746db1c87dcebee3&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 105704956
+      }
+    },
+    {
+      "id": "res:PSI-98:daa142fb3c29f85492c3",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw2TIFF_Complete_JPEGS.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw2TIFF_Complete_JPEGS.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a55746db1c87dcebeca&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 157672
+      }
+    },
+    {
+      "id": "res:PSI-98:19d7cb2c9873730f6ac0",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw2TIFF_Mapped_JPEGS.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw2TIFF_Mapped_JPEGS.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a55746db1c87dcebecb&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 202946
+      }
+    },
+    {
+      "id": "res:PSI-98:a6d6ec7f4227d255f37a",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw_DistroMaster.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw_DistroMaster.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a55746db1c87dcebec8&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1449209
+      }
+    },
+    {
+      "id": "res:PSI-98:437887ea1ff5139aeca6",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C2_jpeg.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C2_jpeg.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a57746db1c87dcebee5&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 71794970
+      }
+    },
+    {
+      "id": "res:PSI-98:02fdcbf16297f815afc3",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C2_jpeg2png_icmad.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C2_jpeg2png_icmad.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a57746db1c87dcebee7&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 990583882
+      }
+    },
+    {
+      "id": "res:PSI-98:316c6fc5e2574d1a55b1",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C2_JPEG_Mapped.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C2_JPEG_Mapped.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a57746db1c87dcebee6&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 119812900
+      }
+    },
+    {
+      "id": "res:PSI-98:12c4cfb5d5ea34408870",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw2TIFF_Complete.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw2TIFF_Complete.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a55746db1c87dcebece&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1293306
+      }
+    },
+    {
+      "id": "res:PSI-98:74f51fe906825772c903",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw2TIFF_Complete_icmad.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw2TIFF_Complete_icmad.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a55746db1c87dcebecd&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 3116776
+      }
+    },
+    {
+      "id": "res:PSI-98:41aa43a80bfbbf8607fe",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw2TIFF_Mapped.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw2TIFF_Mapped.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a55746db1c87dcebecf&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1222959
+      }
+    },
+    {
+      "id": "res:PSI-98:d8a7a7ef0c1924a1f371",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw_DistroMaster.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw_DistroMaster.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a55746db1c87dcebecc&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 37429293
+      }
+    },
+    {
+      "id": "res:PSI-98:942473b8b2029bd93600",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_IS1C2_Raw_DistroMaster.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_IS1C2_Raw_DistroMaster.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebec3&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 210233376
+      }
+    },
+    {
+      "id": "res:PSI-98:633686dd8fa2d799c3d2",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SAFFIRE_S1C2_RAW2TIFF_Mapped_JPEGS.zip",
+        "filename": "PSI-98_Raw Data_SAFFIRE_S1C2_RAW2TIFF_Mapped_JPEGS.zip",
+        "resource_type": "Raw Data",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebec6&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 19557416
+      }
+    },
+    {
+      "id": "res:PSI-98:916bfe75b0ca314c89fc",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Raw Data_SFSDP-VIS-0295_Saffire 1 and 3_Thermocouple Placement.pdf",
+        "filename": "PSI-98_Raw Data_SFSDP-VIS-0295_Saffire 1 and 3_Thermocouple Placement.pdf",
+        "resource_type": "Raw Data",
+        "file_format": "pdf",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a53746db1c87dcebeb7&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "listed_public_unread",
+        "size_bytes": 1065733
+      }
+    },
+    {
+      "id": "res:PSI-98:6fc04796229ff0ba9548",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Science Documents_SAFFIRE Objectives, Development and Status.pdf",
+        "filename": "PSI-98_Science Documents_SAFFIRE Objectives, Development and Status.pdf",
+        "resource_type": "Science Documents",
+        "file_format": "pdf",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a57746db1c87dcebee8&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "text_extracted_unreviewed",
+        "size_bytes": 186259
+      }
+    },
+    {
+      "id": "res:PSI-98:6db83d70d65e1f75a95a",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Science Documents_SAFFIRE-1_MergeResult-jpeg_Update_Final_v2.xlsx",
+        "filename": "PSI-98_Science Documents_SAFFIRE-1_MergeResult-jpeg_Update_Final_v2.xlsx",
+        "resource_type": "Science Documents",
+        "file_format": "xlsx",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebebe&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "text_extracted_unreviewed",
+        "size_bytes": 12325177
+      }
+    },
+    {
+      "id": "res:PSI-98:4d8be9b1c54a91f7af52",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Science Documents_SAFFIRE-I and SAFFIRE-III Readme.docx",
+        "filename": "PSI-98_Science Documents_SAFFIRE-I and SAFFIRE-III Readme.docx",
+        "resource_type": "Science Documents",
+        "file_format": "docx",
+        "summary": "The readme explains the sample/camera organization and distinguishes combustion samples from pre-flow/post-flow and calibration image sets. Image representations include downlinked JPEGs, mapped images and processed raw-camera formats; these are related representations, not independent experiments.",
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a58746db1c87dcebee9&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "reviewed_selected_sections",
+        "size_bytes": 65426
+      }
+    },
+    {
+      "id": "res:PSI-98:84c5744b2c284ed2d0a9",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-98_Science Documents_SAFFIRE-I Image Directory Nomenclature.pdf",
+        "filename": "PSI-98_Science Documents_SAFFIRE-I Image Directory Nomenclature.pdf",
+        "resource_type": "Science Documents",
+        "file_format": "pdf",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebebd&version=1&studyVersion=4&redirect=true",
+        "storage_uri": null,
+        "access_status": "text_extracted_unreviewed",
+        "size_bytes": 262860
+      }
+    },
+    {
+      "id": "citation:82d97d18bc8e0266293e",
+      "type": "Resource",
+      "properties": {
+        "title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:8dbbbbc2e018ae757df5",
+      "type": "Resource",
+      "properties": {
+        "title": "Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire)",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:58de0aa87c095f28a2c9",
+      "type": "Resource",
+      "properties": {
+        "title": "Flame spread: Effects of microgravity and scale",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://doi.org/10.1016/j.combustflame.2018.10.012",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:0f98cd29498dfd4e10ae",
+      "type": "Resource",
+      "properties": {
+        "title": "Transient flame growth and spread processes over a large solid fabric in concurrent low-speed flows in microgravity – Model versus experiment",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://doi.org/10.1016/j.proci.2018.05.168",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:19016a302d386eb51624",
+      "type": "Resource",
+      "properties": {
+        "title": "Fire safety in space – beyond flammability testing of small samples",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://doi.org/10.1016/j.actaastro.2014.11.025",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:7f3a97c69b18e0dfd542",
+      "type": "Resource",
+      "properties": {
+        "title": "Operation and Development Status of the Spacecraft Fire Experiments (Saffire)",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:b95bd3b486c6b0826f95",
+      "source": "inv:PSI-98",
+      "target": "exp:PSI-98:campaign",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.objective",
+            "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.approach",
+            "text": "The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experiments because it burns like cotton but maintains structural integrity after the cotton is consumed. The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric. The Saffire-1 flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-I was conducted at an air flow velocity of 20 cm/s. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:538bc5dde938be51df34",
+      "source": "exp:PSI-98:campaign",
+      "target": "concept:0a6db4f6aad4f88d4670",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.objective",
+            "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.approach",
+            "text": "The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experiments because it burns like cotton but maintains structural integrity after the cotton is consumed. The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric. The Saffire-1 flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-I was conducted at an air flow velocity of 20 cm/s. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:d8bee94c6bb037953d03",
+      "source": "exp:PSI-98:campaign",
+      "target": "concept:93419566109c6d0df659",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.objective",
+            "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.approach",
+            "text": "The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experiments because it burns like cotton but maintains structural integrity after the cotton is consumed. The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric. The Saffire-1 flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-I was conducted at an air flow velocity of 20 cm/s. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:8ff62e17bc59c8f2e89a",
+      "source": "exp:PSI-98:campaign",
+      "target": "concept:7c44e089e7c2fbe6d3bf",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.objective",
+            "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.approach",
+            "text": "The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experiments because it burns like cotton but maintains structural integrity after the cotton is consumed. The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric. The Saffire-1 flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-I was conducted at an air flow velocity of 20 cm/s. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:05071b5cb307ce4b11e1",
+      "source": "exp:PSI-98:campaign",
+      "target": "concept:26b7808121d82bd0a863",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.objective",
+            "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.approach",
+            "text": "The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experiments because it burns like cotton but maintains structural integrity after the cotton is consumed. The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric. The Saffire-1 flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-I was conducted at an air flow velocity of 20 cm/s. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:62fb049a40b59e5ff2fb",
+      "source": "exp:PSI-98:campaign",
+      "target": "concept:ad79f29eb926d0e6b464",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.objective",
+            "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.approach",
+            "text": "The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experiments because it burns like cotton but maintains structural integrity after the cotton is consumed. The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric. The Saffire-1 flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-I was conducted at an air flow velocity of 20 cm/s. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:b6af9a4ad1820e12af70",
+      "source": "exp:PSI-98:campaign",
+      "target": "var:7534c53fa42e2253c6a0",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "reported_measurement_scope",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.objective",
+            "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.approach",
+            "text": "The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experiments because it burns like cotton but maintains structural integrity after the cotton is consumed. The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric. The Saffire-1 flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-I was conducted at an air flow velocity of 20 cm/s. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:2011128792e1d7a6e225",
+      "source": "exp:PSI-98:campaign",
+      "target": "var:7f5fe7ac64a4435c2af8",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "reported_measurement_scope",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.objective",
+            "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.approach",
+            "text": "The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experiments because it burns like cotton but maintains structural integrity after the cotton is consumed. The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric. The Saffire-1 flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-I was conducted at an air flow velocity of 20 cm/s. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:1a75dea75615862d4a9d",
+      "source": "exp:PSI-98:campaign",
+      "target": "var:0d531b19896b3e16c11b",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "reported_measurement_scope",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.objective",
+            "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.approach",
+            "text": "The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experiments because it burns like cotton but maintains structural integrity after the cotton is consumed. The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric. The Saffire-1 flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-I was conducted at an air flow velocity of 20 cm/s. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:1618c7d15b5b6ca040af",
+      "source": "exp:PSI-98:campaign",
+      "target": "var:db3d5b9ad5b649e87980",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "reported_measurement_scope",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.objective",
+            "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.approach",
+            "text": "The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experiments because it burns like cotton but maintains structural integrity after the cotton is consumed. The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric. The Saffire-1 flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-I was conducted at an air flow velocity of 20 cm/s. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6b12d2f552f0efdddeaf",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:8a6557581936d57d813b",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a51746db1c87dcebea1, version 1",
+            "text": "psi-data/PSI-98/Engineering Documents/PSI-98_Engineering Documents_SAFFIRE Offgassing Testing Strategy.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:77a3be18107c09fdb519",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:16cd677150e25518960b",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a58746db1c87dcebeea, version 1",
+            "text": "psi-data/PSI-98/Engineering Documents/PSI-98_Engineering Documents_SAFFIRE-I Operations.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:28ead67da81bbf7cccd9",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:6e2195e0fa49a0b02f7f",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 6792c46eb7b6ff8e65037f3e, version 1",
+            "text": "psi-data/PSI-98/Experimental table/PSI-98_Experimental table_SAFFIRE-1.csv"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:a6902602d7da43d7ad26",
+      "source": "inv:PSI-98",
+      "target": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:2",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_table_transcription",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 2",
+            "text": "1: S1 | 2: SIBAL Fabric | 3: 0.37 | 4: 40.6 | 5: 94 | 6: 20 | 7: 21.5 - 21.7 | 8: 182 | 9: 8 | 10: 420 | 11: Concurrent | 12: S1C1 | 13: S1C2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:81dc1178872a5a54f34f",
+      "source": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:2",
+      "target": "res:PSI-98:6e2195e0fa49a0b02f7f",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_table_transcription",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Sample Number | 2: Material | 3: Sample Thickness (cm) | 4: Sample Length (cm) | 5: Sample Width (cm) | 6: Air Flow (cm/s) | 7: Percent O2 | 8: Ignition Power (W) | 9: Ignition Time (s) | 10: Burn Time (s) | 11: Flow Direction | 12: Camera 1 | 13: Camera 2"
+          },
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 2",
+            "text": "1: S1 | 2: SIBAL Fabric | 3: 0.37 | 4: 40.6 | 5: 94 | 6: 20 | 7: 21.5 - 21.7 | 8: 182 | 9: 8 | 10: 420 | 11: Concurrent | 12: S1C1 | 13: S1C2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:7be8f7ceeac6a64aeb9d",
+      "source": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:2",
+      "target": "concept:599b5b0297a07f94cad0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_table_material",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 2",
+            "text": "1: S1 | 2: SIBAL Fabric | 3: 0.37 | 4: 40.6 | 5: 94 | 6: 20 | 7: 21.5 - 21.7 | 8: 182 | 9: 8 | 10: 420 | 11: Concurrent | 12: S1C1 | 13: S1C2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:d9f3007926f77a191fdc",
+      "source": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:2",
+      "target": "var:251db6c600814cb91af4",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_table_readout",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Sample Number | 2: Material | 3: Sample Thickness (cm) | 4: Sample Length (cm) | 5: Sample Width (cm) | 6: Air Flow (cm/s) | 7: Percent O2 | 8: Ignition Power (W) | 9: Ignition Time (s) | 10: Burn Time (s) | 11: Flow Direction | 12: Camera 1 | 13: Camera 2"
+          },
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 2",
+            "text": "1: S1 | 2: SIBAL Fabric | 3: 0.37 | 4: 40.6 | 5: 94 | 6: 20 | 7: 21.5 - 21.7 | 8: 182 | 9: 8 | 10: 420 | 11: Concurrent | 12: S1C1 | 13: S1C2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:ae588f465a14d249975e",
+      "source": "inv:PSI-98",
+      "target": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:3",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_table_transcription",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 3",
+            "text": "1: S2 | 2: SIBAL Fabric | 3: 0.37 | 4: 40.6 | 5: 94 | 6: 20 | 7: ~ 21.5 | 8: 182 | 9: 8 | 10: 70 | 11: Opposed | 12: S2C1 | 13: S2C2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:3bcb4e640e442053ac36",
+      "source": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:3",
+      "target": "res:PSI-98:6e2195e0fa49a0b02f7f",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_table_transcription",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Sample Number | 2: Material | 3: Sample Thickness (cm) | 4: Sample Length (cm) | 5: Sample Width (cm) | 6: Air Flow (cm/s) | 7: Percent O2 | 8: Ignition Power (W) | 9: Ignition Time (s) | 10: Burn Time (s) | 11: Flow Direction | 12: Camera 1 | 13: Camera 2"
+          },
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 3",
+            "text": "1: S2 | 2: SIBAL Fabric | 3: 0.37 | 4: 40.6 | 5: 94 | 6: 20 | 7: ~ 21.5 | 8: 182 | 9: 8 | 10: 70 | 11: Opposed | 12: S2C1 | 13: S2C2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:2f5ce4fd6d41bb0505bf",
+      "source": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:3",
+      "target": "concept:599b5b0297a07f94cad0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_table_material",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 3",
+            "text": "1: S2 | 2: SIBAL Fabric | 3: 0.37 | 4: 40.6 | 5: 94 | 6: 20 | 7: ~ 21.5 | 8: 182 | 9: 8 | 10: 70 | 11: Opposed | 12: S2C1 | 13: S2C2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:e7107b52bbab79e51278",
+      "source": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:3",
+      "target": "var:251db6c600814cb91af4",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_table_readout",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Sample Number | 2: Material | 3: Sample Thickness (cm) | 4: Sample Length (cm) | 5: Sample Width (cm) | 6: Air Flow (cm/s) | 7: Percent O2 | 8: Ignition Power (W) | 9: Ignition Time (s) | 10: Burn Time (s) | 11: Flow Direction | 12: Camera 1 | 13: Camera 2"
+          },
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 3",
+            "text": "1: S2 | 2: SIBAL Fabric | 3: 0.37 | 4: 40.6 | 5: 94 | 6: 20 | 7: ~ 21.5 | 8: 182 | 9: 8 | 10: 70 | 11: Opposed | 12: S2C1 | 13: S2C2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:408cd1cf4550bc7d6bf8",
+      "source": "inv:PSI-98",
+      "target": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:4",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_table_transcription",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 4",
+            "text": "1: F1C1/F1C2 | 2: Pre-test flow visulation data for sample 1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:c552e1510e40b88ad1cb",
+      "source": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:4",
+      "target": "res:PSI-98:6e2195e0fa49a0b02f7f",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_table_transcription",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Sample Number | 2: Material | 3: Sample Thickness (cm) | 4: Sample Length (cm) | 5: Sample Width (cm) | 6: Air Flow (cm/s) | 7: Percent O2 | 8: Ignition Power (W) | 9: Ignition Time (s) | 10: Burn Time (s) | 11: Flow Direction | 12: Camera 1 | 13: Camera 2"
+          },
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 4",
+            "text": "1: F1C1/F1C2 | 2: Pre-test flow visulation data for sample 1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:0de260f2ac387f4acba5",
+      "source": "inv:PSI-98",
+      "target": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:5",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_table_transcription",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 5",
+            "text": "1: F2C1/F2C2 | 2: Pre-test flow visulation data for sample 2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:c2489c697a1955ad8a8c",
+      "source": "exp:PSI-98:table:6e2195e0fa49a0b02f7f:row:5",
+      "target": "res:PSI-98:6e2195e0fa49a0b02f7f",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_table_transcription",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Sample Number | 2: Material | 3: Sample Thickness (cm) | 4: Sample Length (cm) | 5: Sample Width (cm) | 6: Air Flow (cm/s) | 7: Percent O2 | 8: Ignition Power (W) | 9: Ignition Time (s) | 10: Burn Time (s) | 11: Flow Direction | 12: Camera 1 | 13: Camera 2"
+          },
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+            "locator": "table, row 5",
+            "text": "1: F2C1/F2C2 | 2: Pre-test flow visulation data for sample 2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:4dc80cf92f2a4d2682ce",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:13f4bc7151227f0227bf",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a51746db1c87dcebea0, version 4",
+            "text": "psi-data/PSI-98/metadata/PSI-98_metadata_PSI-166_SAFFIRE-I.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6b87d0d09c18b635a6ec",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:fc8eb5a915a85e9ce97c",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a52746db1c87dcebea8, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_F1C1-Raw_DistroMaster_originals.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:4db5e3271d8dd5d6d581",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:dba679d1347e8789f287",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a51746db1c87dcebea4, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_Mapped_SAFFIRE-1_F1C1_DistortionGrid_1280x920.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:658e748a934e00e9385c",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:3a521bc6584aba74b2c5",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a52746db1c87dcebeac, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_Mapped_SAFFIRE-1_F1C2_DistortionGrid_1280x920.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:58276a418f42ecc6fd94",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:0630d530a8acae1480f9",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a55746db1c87dcebec9, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_S2C1-1465938171811_icmad.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:4520aca9b434006bc371",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:512f81b23dc2f9c26657",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a53746db1c87dcebeba, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_Saffire I Sample 1 TM graphs.docx"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:38a5e3efef1bae028a7f",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:c77a9817fd5b1fef1d8e",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a51746db1c87dcebea2, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE-1_F1C1_DistortionGrids_1280x920_originals.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:7562e42358fb3b65bdae",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:5a5b411f3ceccd0c463b",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a51746db1c87dcebea5, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE-1_F1C1_DistortionGrids_1360x1024_originals.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:4225e7da49a1a3dc335f",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:0fcf880e4a2c7893b6e1",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a52746db1c87dcebeab, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE-1_F1C2_DistortionGrid_1280x920.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:ba689a7671c31b6ec3d7",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:6e2423bbf0c967676659",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a52746db1c87dcebead, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE-1_F1C2_DistortionGrids_1360x1024.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:dd9550899f01a0bc04b0",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:7ff5d952c6aa5490de4e",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a53746db1c87dcebeb9, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_Saffire-I Sample 1 Sensor Data Complete TM graphs.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:b1841b5cfa716170b35c",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:7d0b1ca8e633b6d76677",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a53746db1c87dcebebc, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_Saffire-I Sample 2 Sensor Data Complete TM graphs.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:658a4ed551b050ad0135",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:fec46a4f21f9f8cdd05c",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a53746db1c87dcebebb, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_Saffire-I Sample 2 TM graphs.docx"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:4d3da8c83d2bf6e03950",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:f8a6c9ddd48701dbbe95",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a53746db1c87dcebeb8, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_Saffire-I Telemetry Data Good Process Version.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:cf1594858b821748781f",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:8954199c0ce51191cf99",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a53746db1c87dcebeb4, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE-I_F2C1_Mapped_jpeg.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:003cd28b2484bf48a2a8",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:caa82b4b1931aeff46ab",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a51746db1c87dcebea3, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE-I_ImageFrameSizes_ROI_Offsets_Grid_1280x920_v1.0.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:14504ac6bf907ee6b2ca",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:5e4b45b1768a825043ad",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a52746db1c87dcebeaa, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE-I_Mapped_F1C1_Raw2TIFF.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:22d552fdff8d6cc203b5",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:84f9f40d06991f502c34",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a52746db1c87dcebea7, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C1_JPEG_Mapped.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6f2bc2752f628162714b",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:bfe547016c17ad666b5c",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a51746db1c87dcebea6, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C1_jpegs.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:93c3bc02120ec30187c5",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:8aac50e4a8a68605b1ce",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a52746db1c87dcebea9, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C1_Raw2TIFF.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:e5f32cd55b22fee6b39f",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:abed4e4ba8ac93868cb6",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a52746db1c87dcebeb0, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C2-Raw_DistroMaster.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:fd3d6a5f5737d184b2c1",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:d3e29ffcec5b9d5e31d1",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a52746db1c87dcebeae, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C2_jpeg.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:ad09e4147cb49185a57e",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:977d118f78a354145b34",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a52746db1c87dcebeaf, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C2_JPEG_Mapped.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:076a3d06e1ccf11d42c2",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:fbc9dda8c5987d5a47c0",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a52746db1c87dcebeb1, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C2_Raw2TIFF.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:5be1de55ca72fb8a4886",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:da072b0f4d5ef544544a",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a53746db1c87dcebeb3, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F2C1_jpeg.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:5f8e719a1004c9a96930",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:2655f7aba6317c77f852",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a53746db1c87dcebeb5, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F2C2_jpeg.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:af72c9f611fe52489c60",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:64b516a820b7de08e024",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a53746db1c87dcebeb6, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F2C2_Mapped_jpeg.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:7070cf96e3d5face6af3",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:3a99648a73d54d463947",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a53746db1c87dcebeb2, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_Mapped_F1C2_Raw2TIFF.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:1cb634a16900cadfe0ef",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:1069ef388d40c12f8bfa",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a56746db1c87dcebed8, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg2png_icmad_part1.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:dd7a9362993a9d48193f",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:0bd109bd8c29cf9a5226",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a56746db1c87dcebed6, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg2png_icmad_part2.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:248793486d537a27a757",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:57931475fa22e0d9b268",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a56746db1c87dcebed7, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg2png_icmad_part3.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:eb2de49c0156ac05e7fa",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:6396bc6a1258b9f3c66b",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a56746db1c87dcebed3, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_JPEG_Mapped_part1.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:032dabcbf2025514b2d4",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:6f51911ed56a734bb118",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a56746db1c87dcebed4, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_JPEG_Mapped_part2.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:be96315e4b16c7be8c1c",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:450a0e785b4e9a7d5309",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a56746db1c87dcebed5, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_JPEG_Mapped_part3.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:dcd02fa3433dcf61cfb8",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:44e70fe64311b447f8a3",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a55746db1c87dcebed2, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg_part1.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:27bb437b1b9167430a71",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:1cf4d82f7c214f5fe116",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a55746db1c87dcebed1, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg_part2.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:b8759f009123ac036856",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:c2c3fc7320ccc3937446",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a55746db1c87dcebed0, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg_part3.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:f6b7ecc9bfefd040bcfd",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:4db51a48dbf053e21488",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a54746db1c87dcebec0, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_Raw2TIFF_Complete.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:d2dbf0d5b70d3c510225",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:dfe78e4cac1604bd31ef",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a54746db1c87dcebec2, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_Raw2TIFF_Mapped_JPEGS.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:1e418894e6f35a470e8f",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:f5b6971b50a354cc5a91",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a54746db1c87dcebebf, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_Raw_DistroMaster.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:ae81fa0f0c7288747a56",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:8a2fd2f861d3d0779911",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a54746db1c87dcebec1, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1Raw2TIFF_Complete_icmad.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:0e03c77d1936102b79c5",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:1e6bea36c5e1ef660ffe",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a57746db1c87dcebee0, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg2png_icmad_part1.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:32f6537bae4d27c87346",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:0cae67ddef103b2d71e0",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a57746db1c87dcebee2, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg2png_icmad_part2.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6eebf6ca0e3ba3fac7ca",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:00773c585ca7ef6c3226",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a57746db1c87dcebee1, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg2png_icmad_part3.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:be42c4fc15bfc9049ce4",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:dbe8f9ed7e067329010c",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a57746db1c87dcebede, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_Part1.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:34da0ab1c58c2c15391c",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:08bb9480e265e8e9e025",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a57746db1c87dcebedf, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_part2.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:14f8ca97c5eed1d5299d",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:87ed513164448797731e",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a56746db1c87dcebedc, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_part3.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:64fd23ff1783fee6869d",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:cb7aa1d861ec569cf209",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a56746db1c87dcebedd, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_part4.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:db38ebe3110b8493d4c5",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:1d369aa6c790f9e3e66d",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a56746db1c87dcebed9, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg_part1.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:2a8d4b671254fb7a763f",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:83a679bdc6c7014ec32b",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a56746db1c87dcebeda, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg_part2.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:b618087ecc7ee8ccf837",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:5eeed5df2b7cbeb114f2",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a56746db1c87dcebedb, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg_part3.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:d021cfe975044bbb071f",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:29682f371ea7e1e93ad4",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a54746db1c87dcebec4, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_Raw2TIFF_Complete.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:9c155089c251485a1ad5",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:b9962a4b6fe3d3a465e7",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a54746db1c87dcebec5, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_RAW2TIFF_Complete_icmad.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:18104be78e0e98846627",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:675547783882d8d2bd4f",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a54746db1c87dcebec7, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C1_jpeg.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:7390e61bd421363adc39",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:51dc0a0003b223902772",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a57746db1c87dcebee4, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C1_jpeg2png_icmad.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:4db5325fcf3fb28a8c1d",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:a8765980b34b390f1c73",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a57746db1c87dcebee3, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C1_JPEG_Mapped.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:5a1c6e588bbcc605dc61",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:daa142fb3c29f85492c3",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a55746db1c87dcebeca, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw2TIFF_Complete_JPEGS.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:bc32b332681d4169332c",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:19d7cb2c9873730f6ac0",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a55746db1c87dcebecb, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw2TIFF_Mapped_JPEGS.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6bd3d838a492600904b9",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:a6d6ec7f4227d255f37a",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a55746db1c87dcebec8, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw_DistroMaster.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:72ba35e46bc5d57793da",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:437887ea1ff5139aeca6",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a57746db1c87dcebee5, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_jpeg.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:e38f0494bdcbed69bb63",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:02fdcbf16297f815afc3",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a57746db1c87dcebee7, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_jpeg2png_icmad.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:569b89a817ed1689628e",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:316c6fc5e2574d1a55b1",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a57746db1c87dcebee6, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_JPEG_Mapped.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:a188e1247cde0767ee25",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:12c4cfb5d5ea34408870",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a55746db1c87dcebece, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw2TIFF_Complete.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6092f6a45a8573952fe8",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:74f51fe906825772c903",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a55746db1c87dcebecd, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw2TIFF_Complete_icmad.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:bdc57a209264eaf64a25",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:41aa43a80bfbbf8607fe",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a55746db1c87dcebecf, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw2TIFF_Mapped.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:026336384e2734b7465b",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:d8a7a7ef0c1924a1f371",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a55746db1c87dcebecc, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw_DistroMaster.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:915e6bc82fc72e299903",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:942473b8b2029bd93600",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a54746db1c87dcebec3, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_IS1C2_Raw_DistroMaster.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:7890b981ea1742e82b4e",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:633686dd8fa2d799c3d2",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a54746db1c87dcebec6, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_S1C2_RAW2TIFF_Mapped_JPEGS.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:4f8ceefe58cf661fa0a9",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:916bfe75b0ca314c89fc",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a53746db1c87dcebeb7, version 1",
+            "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SFSDP-VIS-0295_Saffire 1 and 3_Thermocouple Placement.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:be1f541f606895de5beb",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:6fc04796229ff0ba9548",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a57746db1c87dcebee8, version 1",
+            "text": "psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE Objectives, Development and Status.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:f4b954bcee3934c0a437",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:6db83d70d65e1f75a95a",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a54746db1c87dcebebe, version 1",
+            "text": "psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE-1_MergeResult-jpeg_Update_Final_v2.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:1926621399b586572362",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:4d8be9b1c54a91f7af52",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a58746db1c87dcebee9, version 1",
+            "text": "psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE-I and SAFFIRE-III Readme.docx"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:30cfe31c612b3c274e8d",
+      "source": "exp:PSI-98:campaign",
+      "target": "res:PSI-98:84c5744b2c284ed2d0a9",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "NASA public file inventory, file id 683f4a54746db1c87dcebebd, version 1",
+            "text": "psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE-I Image Directory Nomenclature.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:e0fa386b93b57655bee1",
+      "source": "exp:PSI-98:campaign",
+      "target": "citation:82d97d18bc8e0266293e",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.publications",
+            "text": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:f8c6ce5c7adbab0f27d8",
+      "source": "exp:PSI-98:campaign",
+      "target": "citation:8dbbbbc2e018ae757df5",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.publications",
+            "text": "Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:f9b4c0ad6923bf398f86",
+      "source": "exp:PSI-98:campaign",
+      "target": "citation:58de0aa87c095f28a2c9",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.publications",
+            "text": "Flame spread: Effects of microgravity and scale"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:613d0ef4c92d427e085a",
+      "source": "exp:PSI-98:campaign",
+      "target": "citation:0f98cd29498dfd4e10ae",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.publications",
+            "text": "Transient flame growth and spread processes over a large solid fabric in concurrent low-speed flows in microgravity – Model versus experiment"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:2171b0a0184c770b6cc1",
+      "source": "exp:PSI-98:campaign",
+      "target": "citation:19016a302d386eb51624",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.publications",
+            "text": "Fire safety in space – beyond flammability testing of small samples"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:0b3455763b156b91f189",
+      "source": "exp:PSI-98:campaign",
+      "target": "citation:7f3a97c69b18e0dfd542",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "metadata.publications",
+            "text": "Operation and Development Status of the Spacecraft Fire Experiments (Saffire)"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-25:6e88c2f1df90ffb66209",
+  "study": "PSI-25",
+  "filename": "PSI-25_Science Documents_BASS-II_Test.Matrices.xlsx",
+  "key": "psi-data/PSI-25/Science Documents/PSI-25_Science Documents_BASS-II_Test.Matrices.xlsx",
+  "category": "Science Documents",
+  "size_bytes": 28956,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=692480587f6aa6a830210601&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-25/6e88c2f1df90ffb66209/PSI-25_Science Documents_BASS-II_Test.Matrices.xlsx",
+  "sha256": "1a3b283dd0adec861793bbc4a454aab64d398cd32d6f37d7a1ad0f642879e686",
+  "status": "downloaded"
+}

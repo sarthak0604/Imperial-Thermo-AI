@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:004bcad4b8396ecdf3a3",
+  "study": "PSI-102",
+  "filename": "PSI-102_Engineering Documents_SAME_EIRD.pdf",
+  "key": "psi-data/PSI-102/Engineering Documents/PSI-102_Engineering Documents_SAME_EIRD.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 5378409,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d4df91ab4427dbf43f7&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/004bcad4b8396ecdf3a3/PSI-102_Engineering Documents_SAME_EIRD.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "941dca3ccf7132913bfd73e8a408f3ea558eaa822486dd53ffcdfa26127461cb",
+  "status": "downloaded"
+}

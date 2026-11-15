@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:e31683e11765ec544dcd",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT268teflon25.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT268teflon25.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 5562880,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d52f91ab4427dbf4433&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/e31683e11765ec544dcd/PSI-102_Analyzed Data_GMT268teflon25.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "457ba2741845343afc82e8ca2d437bb6ae4578f0b08859a4a6e4580ba456c7e9",
+  "status": "downloaded"
+}

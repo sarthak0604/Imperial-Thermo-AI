@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:70f1a3dd06c1e538c974",
+  "study": "PSI-23",
+  "filename": "PSI-23_Science Documents_ACME Integrated Science Requirements Definition Review 20100505.pdf",
+  "key": "psi-data/PSI-23/Science Documents/PSI-23_Science Documents_ACME Integrated Science Requirements Definition Review 20100505.pdf",
+  "category": "Science Documents",
+  "size_bytes": 3119886,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdc66daf91e274cec844&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/70f1a3dd06c1e538c974/PSI-23_Science Documents_ACME Integrated Science Requirements Definition Review 20100505.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "de4fbf2c4b4a88629b7938c8a61cd1530ed77440188015cccc60d56dbe85a08e",
+  "status": "downloaded"
+}

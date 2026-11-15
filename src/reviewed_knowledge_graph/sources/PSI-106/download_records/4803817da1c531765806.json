@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-106:4803817da1c531765806",
+  "study": "PSI-106",
+  "filename": "SLICE final report 20151224.pdf",
+  "key": "psi-data/PSI-106/Raw Data/SLICE final report 20151224.pdf",
+  "category": "Raw Data",
+  "size_bytes": 4178528,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-106/download?file=66eb9832c6ad4bdc12fc4141&version=1&studyVersion=3&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-106/4803817da1c531765806/SLICE final report 20151224.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "7b44063f19e229702274d5b2f41cb46a3c75307247ed920529b2a86264832142",
+  "status": "downloaded"
+}

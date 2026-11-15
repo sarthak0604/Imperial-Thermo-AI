@@ -1,0 +1,143 @@
+{
+  "id": "res:PSI-106:6624891838586ce96f1b",
+  "study": "PSI-106",
+  "filename": "PSI-106_Experimental table_Slice.csv",
+  "key": "psi-data/PSI-106/Experimental table/PSI-106_Experimental table_Slice.csv",
+  "category": "Experimental table",
+  "size_bytes": 734,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-106/download?file=67a4e6f009ed061032c19847&version=1&studyVersion=3&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-106/6624891838586ce96f1b/PSI-106_Experimental table_Slice.csv",
+  "sha256": "89ef980810ca6d9aa8be817b42e36cd2adff23f5e9058361b5a33d18b4363f4d",
+  "status": "downloaded",
+  "sections": [
+    {
+      "locator": "table, row 1",
+      "text": "1: Test Date | 2: Fuel Type"
+    },
+    {
+      "locator": "table, row 2",
+      "text": "1: 2012-FEB-09 | 2: 100% CH4"
+    },
+    {
+      "locator": "table, row 3",
+      "text": "1: 2012-FEB-13 SLICE testing with  | 2: 40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrations"
+    },
+    {
+      "locator": "table, row 4",
+      "text": "1: 2012-FEB-17 | 2: 70% CH4 (balance N2) including 1 pyrometry calibration test"
+    },
+    {
+      "locator": "table, row 5",
+      "text": "1: 2012-FEB-20  | 2: 20% C2H4 (balance N2)"
+    },
+    {
+      "locator": "table, row 6",
+      "text": "1: 2012-FEB-27  | 2: 100% CH4"
+    },
+    {
+      "locator": "table, row 7",
+      "text": "1: 2012-MAR-01 | 2: 40% CH4 (balance N2)"
+    },
+    {
+      "locator": "table, row 8",
+      "text": "1: 2012-MAR-05 SLICE testing with  | 2: 70% CH4 (balance N2) where the fuel bottle was not emptied (in contrast to most days)"
+    },
+    {
+      "locator": "table, row 9",
+      "text": "1: 2012-MAR-09   | 2: 100% C2H6"
+    },
+    {
+      "locator": "table, row 10",
+      "text": "1: 2012-MAR-12  | 2:  100% CH4"
+    },
+    {
+      "locator": "table, row 11",
+      "text": "1: 2012-MAR-15  | 2:  20% C2H4 (balance N2)"
+    },
+    {
+      "locator": "table, row 12",
+      "text": "1: 2012-MAR-19 SLICE testing with  | 2: 70% CH4 (balance N2) including 1 pyrometry calibration test and 2 fan calibrations"
+    },
+    {
+      "locator": "table, row 13",
+      "text": "1: 2012-MAR-23 Last day of testing: SPICE testing with 100% C3H8 and then 100% | 2: 100% C2H4"
+    }
+  ],
+  "details": {
+    "name": "table",
+    "row_count": 13,
+    "column_count": 2,
+    "column_statistics": [
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      }
+    ],
+    "rows": [
+      [
+        "Test Date",
+        "Fuel Type"
+      ],
+      [
+        "2012-FEB-09",
+        "100% CH4"
+      ],
+      [
+        "2012-FEB-13 SLICE testing with ",
+        "40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrations"
+      ],
+      [
+        "2012-FEB-17",
+        "70% CH4 (balance N2) including 1 pyrometry calibration test"
+      ],
+      [
+        "2012-FEB-20 ",
+        "20% C2H4 (balance N2)"
+      ],
+      [
+        "2012-FEB-27 ",
+        "100% CH4"
+      ],
+      [
+        "2012-MAR-01",
+        "40% CH4 (balance N2)"
+      ],
+      [
+        "2012-MAR-05 SLICE testing with ",
+        "70% CH4 (balance N2) where the fuel bottle was not emptied (in contrast to most days)"
+      ],
+      [
+        "2012-MAR-09  ",
+        "100% C2H6"
+      ],
+      [
+        "2012-MAR-12 ",
+        " 100% CH4"
+      ],
+      [
+        "2012-MAR-15 ",
+        " 20% C2H4 (balance N2)"
+      ],
+      [
+        "2012-MAR-19 SLICE testing with ",
+        "70% CH4 (balance N2) including 1 pyrometry calibration test and 2 fan calibrations"
+      ],
+      [
+        "2012-MAR-23 Last day of testing: SPICE testing with 100% C3H8 and then 100%",
+        "100% C2H4"
+      ]
+    ],
+    "all_rows_retained": true
+  },
+  "warnings": [],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

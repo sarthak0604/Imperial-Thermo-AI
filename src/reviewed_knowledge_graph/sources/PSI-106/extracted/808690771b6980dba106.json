@@ -1,0 +1,29 @@
+{
+  "id": "res:PSI-106:808690771b6980dba106",
+  "study": "PSI-106",
+  "filename": "SLICE IP-H completion summary.pdf",
+  "key": "psi-data/PSI-106/Raw Data/SLICE IP-H completion summary.pdf",
+  "category": "Raw Data",
+  "size_bytes": 227175,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-106/download?file=66eb982ec6ad4bdc12fc2b26&version=1&studyVersion=3&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-106/808690771b6980dba106/SLICE IP-H completion summary.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "12b193980a0db76770e8fd42af9c08f8d8d57bb7bcaf6d2b775d6f8ec57f345c",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Structure & Liftoff In Combustion Experiment (SLICE) \nTask Objective: \n\nImprove our understanding of the physical and chemical processes controlling non-premixed flame structure and stabilization. \n\nProvide for rigorous testing of numerical models including thermal radiation, soot formation, and detailed chemical kinetics. \n\nRefine the upcoming ACME experiment Coflow Laminar Diffusion Flame (CLD Flame) to minimize risk and maximize science. \n\nExtend the Smoke Point In Coflow Experiment (SPICE)  with additional conditions (e.g., fuel) and data. \nMilestone \nDue Date \nComments \nLaunched \n2/24/2011 \nAboard STS-133 ULF-5 \nInstallation \n1/20/2012 \nHardware set up in MSG revealing anomaly \nAnomaly recovery \n2/06/2012 \nVideo overlay reset \nTesting start \n2/09/2012 \nTesting end \n3/23/2012 \nHardware next reconfigured for BASS \nSchedule: \nResults: \n• Completely consumed all 12 fuel bottles in 13 sessions (days) of testing. \n• Approx. 120 ignitions, with ~4,000 high-resolution photos of ~700 flame conditions. \n• Soot temperature and volume fraction determined via novel camera-based pyrometry. \n• Liftoff, blowoff, and blowout limits determined; smoke points determined. \n• SLICE Work-In-Progress poster at the 2012 international combustion symposium. \n \nResearch Review Board – Completed Milestone \nProject:  ISS Research \nSLICE PI: Prof. Marshall Long, Yale University \nSLICE Co-I: Prof. Mitchell Smooke, Yale University \nSLICE Co-I: Dr. Fumiaki Takahashi, NCSER \nSLICE Co-I: Mr. Dennis Stocker, NASA GRC \nSPICE PI: Dr. David Urban, NASA GRC \nSPICE Co-I: Prof. Peter Sunderland, U. Maryland \nPM: Robert Hawersaat, NASA, GRC \nEngineering Team: ZIN Technologies, Inc. \nColor image, soot temperature, soot volume fraction. \nAttached \n100% \nmethane \nflame on \na 1.6-mm \nburner \ntube. \nLifting \n20% \nC2H4 \nflame \non a \n0.8-mm \nburner \ntube \n"
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

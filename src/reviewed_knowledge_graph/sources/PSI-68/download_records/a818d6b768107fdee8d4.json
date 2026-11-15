@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-68:a818d6b768107fdee8d4",
+  "study": "PSI-68",
+  "filename": "PSI-68_Engineering Documents_67235MFAC17146 FLEX-2 Replaceable Fiber Arm Assembly.pdf",
+  "key": "psi-data/PSI-68/Engineering Documents/PSI-68_Engineering Documents_67235MFAC17146 FLEX-2 Replaceable Fiber Arm Assembly.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 462821,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-68/download?file=685da234ee20136af5401370&version=1&studyVersion=6&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-68/a818d6b768107fdee8d4/PSI-68_Engineering Documents_67235MFAC17146 FLEX-2 Replaceable Fiber Arm Assembly.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "653a023fa81938c044ea4799a593648769ce10cae6851564c85de66870d095ff",
+  "status": "downloaded"
+}

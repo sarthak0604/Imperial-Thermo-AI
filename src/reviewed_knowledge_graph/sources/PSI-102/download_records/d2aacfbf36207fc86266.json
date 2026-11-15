@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:d2aacfbf36207fc86266",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT277dbp42hkp peak 2.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT277dbp42hkp peak 2.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 6299136,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d50f91ab4427dbf4416&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/d2aacfbf36207fc86266/PSI-102_Analyzed Data_GMT277dbp42hkp peak 2.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "d267e46fe5df903236a2eb9ee0723c4647c3a7834bc552268fa9fdbb59d8765a",
+  "status": "downloaded"
+}

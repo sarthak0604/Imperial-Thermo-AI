@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-101:f28e30c6d4e572eb25da",
+  "study": "PSI-101",
+  "filename": "PSI-101_Analyzed Data_TEMflowvsnoflow.xls",
+  "key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_TEMflowvsnoflow.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 39936,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc531b8656d2315bf5094&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/f28e30c6d4e572eb25da/PSI-101_Analyzed Data_TEMflowvsnoflow.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "1c7fff7b4ddb75e6b2682b53a528cc5777506bf98b96d955bcd43073d3d0a536",
+  "status": "downloaded"
+}

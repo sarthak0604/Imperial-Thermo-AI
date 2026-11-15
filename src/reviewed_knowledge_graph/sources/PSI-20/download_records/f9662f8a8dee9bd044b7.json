@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:f9662f8a8dee9bd044b7",
+  "study": "PSI-20",
+  "filename": "PSI-20_Science Documents_BRE_science_concept_RDR_201306.pdf",
+  "key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_BRE_science_concept_RDR_201306.pdf",
+  "category": "Science Documents",
+  "size_bytes": 6096986,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8261b4820d736ceccb0&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/f9662f8a8dee9bd044b7/PSI-20_Science Documents_BRE_science_concept_RDR_201306.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "8257079bedf989c4d16318a3013ad10c1ca7bd6b127a7c1abe80f66255e406be",
+  "status": "downloaded"
+}

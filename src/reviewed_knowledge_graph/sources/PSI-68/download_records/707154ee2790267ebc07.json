@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-68:707154ee2790267ebc07",
+  "study": "PSI-68",
+  "filename": "PSI-68_Engineering Documents_FLEX-2 Engineering Requirments Document.pdf",
+  "key": "psi-data/PSI-68/Engineering Documents/PSI-68_Engineering Documents_FLEX-2 Engineering Requirments Document.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 237411,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-68/download?file=685da233ee20136af540136e&version=1&studyVersion=6&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-68/707154ee2790267ebc07/PSI-68_Engineering Documents_FLEX-2 Engineering Requirments Document.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f984f63cd74aad1d9e27eb50a22d24d6df948207383581956f60ed5bc6568899",
+  "status": "downloaded"
+}

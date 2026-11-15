@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:5a032ffce73903ad688e",
+  "study": "PSI-102",
+  "filename": "PSI-102_metadata_PSI-170_SAME.zip",
+  "key": "psi-data/PSI-102/metadata/PSI-102_metadata_PSI-170_SAME.zip",
+  "category": "metadata",
+  "size_bytes": 13127,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d4df91ab4427dbf43f6&version=5&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/5a032ffce73903ad688e/PSI-102_metadata_PSI-170_SAME.zip",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "809127b7c6578263dc829d8ef8b15fa98fd1626dcf9c9d44d832a48974e146c6",
+  "status": "downloaded"
+}

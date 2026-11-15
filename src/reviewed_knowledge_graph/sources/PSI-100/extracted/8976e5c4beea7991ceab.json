@@ -1,0 +1,126 @@
+{
+  "id": "res:PSI-100:8976e5c4beea7991ceab",
+  "study": "PSI-100",
+  "filename": "PSI-100_Experimental table_SAFFIRE-3.csv",
+  "key": "psi-data/PSI-100/Experimental table/PSI-100_Experimental table_SAFFIRE-3.csv",
+  "category": "Experimental table",
+  "size_bytes": 239,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-100/download?file=6792d422b7b6ff8e650381da&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-100/8976e5c4beea7991ceab/PSI-100_Experimental table_SAFFIRE-3.csv",
+  "sha256": "4d3c717ec20dd0247db670b2784a9fd7d746788bc54a936f80693e48eb8cd117",
+  "status": "downloaded",
+  "sections": [
+    {
+      "locator": "table, row 1",
+      "text": "1: Sample Number  | 2: Material | 3: Sample Thickness | 4: Sample Length | 5: Sample Width | 6: Air Flow  | 7: Direction | 8: Camera 1 | 9: Camera 2"
+    },
+    {
+      "locator": "table, row 2",
+      "text": "1: S1 | 2: SIBAL Fabric | 3: .33 cm | 4: 94 cm | 5: 40.6 cm | 6: 30 cm/s | 7: Concurrent  | 8: S1C1 | 9: S1C2"
+    },
+    {
+      "locator": "table, row 3",
+      "text": "1: S2 | 2: SIBAL Fabric | 3: .33 cm | 4: 94 cm | 5: 40.6 cm | 6: 30 cm/s | 7: Opposed | 8: S2C1 | 9: S2C2"
+    }
+  ],
+  "details": {
+    "name": "table",
+    "row_count": 3,
+    "column_count": 9,
+    "column_statistics": [
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      }
+    ],
+    "rows": [
+      [
+        "Sample Number ",
+        "Material",
+        "Sample Thickness",
+        "Sample Length",
+        "Sample Width",
+        "Air Flow ",
+        "Direction",
+        "Camera 1",
+        "Camera 2"
+      ],
+      [
+        "S1",
+        "SIBAL Fabric",
+        ".33 cm",
+        "94 cm",
+        "40.6 cm",
+        "30 cm/s",
+        "Concurrent ",
+        "S1C1",
+        "S1C2"
+      ],
+      [
+        "S2",
+        "SIBAL Fabric",
+        ".33 cm",
+        "94 cm",
+        "40.6 cm",
+        "30 cm/s",
+        "Opposed",
+        "S2C1",
+        "S2C2"
+      ]
+    ],
+    "all_rows_retained": true
+  },
+  "warnings": [],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

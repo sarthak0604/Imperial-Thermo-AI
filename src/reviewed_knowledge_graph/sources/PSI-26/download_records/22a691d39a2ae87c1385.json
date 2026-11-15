@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:22a691d39a2ae87c1385",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_Drawing_Sibal.Flat.Sample.pdf",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_Drawing_Sibal.Flat.Sample.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 121535,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcf9c3501a37c2c60dcd&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/22a691d39a2ae87c1385/PSI-26_Engineering Documents_Drawing_Sibal.Flat.Sample.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "7e4ecd8702749e0603969644d3a75ed6f993368c9f26154c7e14ae60531a4994",
+  "status": "downloaded"
+}

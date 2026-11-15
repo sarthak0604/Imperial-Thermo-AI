@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-68:96f9a1959f856a11cfcd",
+  "study": "PSI-68",
+  "filename": "PSI-68_Engineering Documents_67235MFAC13500 FLEX-2 Fuel Reservoir Sub-Assembly.pdf",
+  "key": "psi-data/PSI-68/Engineering Documents/PSI-68_Engineering Documents_67235MFAC13500 FLEX-2 Fuel Reservoir Sub-Assembly.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 1011191,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-68/download?file=685da234ee20136af5401373&version=1&studyVersion=6&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-68/96f9a1959f856a11cfcd/PSI-68_Engineering Documents_67235MFAC13500 FLEX-2 Fuel Reservoir Sub-Assembly.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f632d3272756e5f4741a10d4c78ca0cff54972f45b5e6c0a0ff407ab4cd633d2",
+  "status": "downloaded"
+}

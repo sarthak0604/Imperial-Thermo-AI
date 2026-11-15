@@ -1,0 +1,341 @@
+{
+  "id": "res:PSI-20:6454076579f1845de438",
+  "study": "PSI-20",
+  "filename": "PSI-20_Experimental table_ACME BRE.csv",
+  "key": "psi-data/PSI-20/Experimental table/PSI-20_Experimental table_ACME BRE.csv",
+  "category": "Experimental table",
+  "size_bytes": 1113,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=67900e38b7b6ff8e6502900c&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/6454076579f1845de438/PSI-20_Experimental table_ACME BRE.csv",
+  "sha256": "4aa5d3f98708ceacced5c620d46858b9965f8d4d941b203229f46467d53e5ab7",
+  "status": "downloaded",
+  "sections": [
+    {
+      "locator": "table, row 1",
+      "text": "1: Year | 2: Month | 3: Date | 4: Burner Size (mm) | 5: Fuel Bottle | 6: Oxygen Conc (percent) | 7: Flames Ignited | 8: Notes"
+    },
+    {
+      "locator": "table, row 2",
+      "text": "1: 2019 | 2: Feb | 3: 8 | 4: 25 | 5: 100% C2H4 | 6: 21; 26.5; 40 | 7: 10 | 8: Oxygen Conc. (as diluted with nitrogen on a volume basis) was varied between tests where approximate concentrations for tests that ignited are listed. The chamber pressures were also varied but are not identified in this summary table."
+    },
+    {
+      "locator": "table, row 3",
+      "text": "1: 2019 | 2: Feb | 3: 20 | 4: 25 | 5: 100% C2H4 | 6: 26.5; 34 | 7: 8 | 8: Flames Ignited is the number ignited on that day (neglecting the day change on ISS)."
+    },
+    {
+      "locator": "table, row 4",
+      "text": "1: 2019 | 2: Feb | 3: 25 | 4: 25 | 5: 50% C2H4 | 6: 21; 26.5; 34; 40 | 7: 8"
+    },
+    {
+      "locator": "table, row 5",
+      "text": "1: 2019 | 2: March | 3: 4 | 4: 25 | 5: 50% C2H4 | 6: 26.5; 40 | 7: 6"
+    },
+    {
+      "locator": "table, row 6",
+      "text": "1: 2019 | 2: March | 3: 7 | 4: 25 | 5: 50% C2H4 | 6: 3400% | 7: 6"
+    },
+    {
+      "locator": "table, row 7",
+      "text": "1: 2019 | 2: March | 3: 11 | 4: 25 | 5: 50% C2H4 | 6: 26.5; 34 | 7: 7"
+    },
+    {
+      "locator": "table, row 8",
+      "text": "1: 2019 | 2: March | 3: 28 | 4: 25 | 5: 100%C2H4 | 6: 26.5; 34 | 7: 8"
+    },
+    {
+      "locator": "table, row 9",
+      "text": "1: 2019 | 2: April | 3: 1 | 4: 25 | 5: 100%C2H4 | 6: 2100% | 7: 0"
+    },
+    {
+      "locator": "table, row 10",
+      "text": "1: 2019 | 2: April | 3: 4 | 4: 25 | 5: 100%C2H4 | 6: 21; 26.5; 34 | 7: 9"
+    },
+    {
+      "locator": "table, row 11",
+      "text": "1: 2020 | 2: Sept | 3: 3 | 4: 50 | 5: 100% C2H4 | 6: 25; 34; 40 | 7: 13"
+    },
+    {
+      "locator": "table, row 12",
+      "text": "1: 2020 | 2: Oct | 3: 17 | 4: 25 | 5: 100% C2H4 | 6: 26.5; 34 | 7: 13"
+    },
+    {
+      "locator": "table, row 13",
+      "text": "1: 2020 | 2: Dec | 3: 5 | 4: 25 | 5: 100% CH4 | 6: 25; 34; 40 | 7: 21"
+    },
+    {
+      "locator": "table, row 14",
+      "text": "1: 2020 | 2: Dec | 3: 4 | 4: 25 | 5: 100% CH4 | 6: 25; 40 | 7: 18"
+    },
+    {
+      "locator": "table, row 15",
+      "text": "1: 2020 | 2: Dec | 3: 11 | 4: 25 | 5: 50% C2H4 | 6: 25; 40 | 7: 12"
+    },
+    {
+      "locator": "table, row 16",
+      "text": "1: 2020 | 2: Dec | 3: 17 | 4: 25 | 5: 100% C2H4 | 6: 34; 40 | 7: 10"
+    },
+    {
+      "locator": "table, row 17",
+      "text": "1: 2020 | 2: Dec | 3: 23 | 4: 25 | 5: 100% C2H4 | 6: 25; 34; 40 | 7: 17"
+    },
+    {
+      "locator": "table, row 18",
+      "text": "1: 2021 | 2: Jan | 3: 20 | 4: 25 | 5: 100% C2H4 | 6: 21; 26.5; 34 | 7: 15"
+    },
+    {
+      "locator": "table, row 19",
+      "text": "1: 2021 | 2: Jan | 3: 28 | 4: 50 | 5: 100% C2H4 | 6: 25; 34; 40 | 7: 13"
+    }
+  ],
+  "details": {
+    "name": "table",
+    "row_count": 19,
+    "column_count": 8,
+    "column_statistics": [
+      {
+        "numeric_count": 18,
+        "min": 2019.0,
+        "max": 2021.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 18,
+        "min": 1.0,
+        "max": 28.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 18,
+        "min": 25.0,
+        "max": 50.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 18,
+        "min": 0.0,
+        "max": 21.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 16
+      }
+    ],
+    "rows": [
+      [
+        "Year",
+        "Month",
+        "Date",
+        "Burner Size (mm)",
+        "Fuel Bottle",
+        "Oxygen Conc (percent)",
+        "Flames Ignited",
+        "Notes"
+      ],
+      [
+        "2019",
+        "Feb",
+        "8",
+        "25",
+        "100% C2H4",
+        "21; 26.5; 40",
+        "10",
+        "Oxygen Conc. (as diluted with nitrogen on a volume basis) was varied between tests where approximate concentrations for tests that ignited are listed. The chamber pressures were also varied but are not identified in this summary table."
+      ],
+      [
+        "2019",
+        "Feb",
+        "20",
+        "25",
+        "100% C2H4",
+        "26.5; 34",
+        "8",
+        "Flames Ignited is the number ignited on that day (neglecting the day change on ISS)."
+      ],
+      [
+        "2019",
+        "Feb",
+        "25",
+        "25",
+        "50% C2H4",
+        "21; 26.5; 34; 40",
+        "8",
+        ""
+      ],
+      [
+        "2019",
+        "March",
+        "4",
+        "25",
+        "50% C2H4",
+        "26.5; 40",
+        "6",
+        ""
+      ],
+      [
+        "2019",
+        "March",
+        "7",
+        "25",
+        "50% C2H4",
+        "3400%",
+        "6",
+        ""
+      ],
+      [
+        "2019",
+        "March",
+        "11",
+        "25",
+        "50% C2H4",
+        "26.5; 34",
+        "7",
+        ""
+      ],
+      [
+        "2019",
+        "March",
+        "28",
+        "25",
+        "100%C2H4",
+        "26.5; 34",
+        "8",
+        ""
+      ],
+      [
+        "2019",
+        "April",
+        "1",
+        "25",
+        "100%C2H4",
+        "2100%",
+        "0",
+        ""
+      ],
+      [
+        "2019",
+        "April",
+        "4",
+        "25",
+        "100%C2H4",
+        "21; 26.5; 34",
+        "9",
+        ""
+      ],
+      [
+        "2020",
+        "Sept",
+        "3",
+        "50",
+        "100% C2H4",
+        "25; 34; 40",
+        "13",
+        ""
+      ],
+      [
+        "2020",
+        "Oct",
+        "17",
+        "25",
+        "100% C2H4",
+        "26.5; 34",
+        "13",
+        ""
+      ],
+      [
+        "2020",
+        "Dec",
+        "5",
+        "25",
+        "100% CH4",
+        "25; 34; 40",
+        "21",
+        ""
+      ],
+      [
+        "2020",
+        "Dec",
+        "4",
+        "25",
+        "100% CH4",
+        "25; 40",
+        "18",
+        ""
+      ],
+      [
+        "2020",
+        "Dec",
+        "11",
+        "25",
+        "50% C2H4",
+        "25; 40",
+        "12",
+        ""
+      ],
+      [
+        "2020",
+        "Dec",
+        "17",
+        "25",
+        "100% C2H4",
+        "34; 40",
+        "10",
+        ""
+      ],
+      [
+        "2020",
+        "Dec",
+        "23",
+        "25",
+        "100% C2H4",
+        "25; 34; 40",
+        "17",
+        ""
+      ],
+      [
+        "2021",
+        "Jan",
+        "20",
+        "25",
+        "100% C2H4",
+        "21; 26.5; 34",
+        "15",
+        ""
+      ],
+      [
+        "2021",
+        "Jan",
+        "28",
+        "50",
+        "100% C2H4",
+        "25; 34; 40",
+        "13",
+        ""
+      ]
+    ],
+    "all_rows_retained": true
+  },
+  "warnings": [],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

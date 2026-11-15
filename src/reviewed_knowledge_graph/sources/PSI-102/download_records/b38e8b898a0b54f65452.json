@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:b38e8b898a0b54f65452",
+  "study": "PSI-102",
+  "filename": "PSI-102_Presentations_SAME-2_ParticleMorphology and Size Results.pptx",
+  "key": "psi-data/PSI-102/Presentations/PSI-102_Presentations_SAME-2_ParticleMorphology and Size Results.pptx",
+  "category": "Presentations",
+  "size_bytes": 11483943,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d53f91ab4427dbf443c&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/b38e8b898a0b54f65452/PSI-102_Presentations_SAME-2_ParticleMorphology and Size Results.pptx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "6e2800c0985e1b4b88819adea7513c64e7a6a24a00961785363d9dd3ab8fb8ee",
+  "status": "downloaded"
+}

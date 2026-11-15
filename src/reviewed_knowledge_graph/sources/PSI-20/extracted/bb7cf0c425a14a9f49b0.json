@@ -1,0 +1,318 @@
+{
+  "id": "res:PSI-20:bb7cf0c425a14a9f49b0",
+  "study": "PSI-20",
+  "filename": "PSI-20_Science Documents_BRE_science_concept_SCR_201208.pdf",
+  "key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_BRE_science_concept_SCR_201208.pdf",
+  "category": "Science Documents",
+  "size_bytes": 2780782,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8271b4820d736ceccb1&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/bb7cf0c425a14a9f49b0/PSI-20_Science Documents_BRE_science_concept_SCR_201208.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "7de4c32c80fbef51f7bacc2ad6ebd08c540b539486f56e08b63e6aece6d87835",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "1 \nBurning Rate Emulator (BRE): \nMaterial Ignition, Burning, and \nExtinction in Microgravity \nPI: James G. Quintiere \nCo-I: Peter B. Sunderland \nUniv. of Maryland \n \nBRE Project Scientist: Paul Ferkul \nACME Project Scientist: Dennis P. Stocker \nAcknowledgments: Michael Bustamante, Keenan Dotson, Yi Zhang, \nEric Neumann \nScience Concept Review \nAug. 28-29, 2012 \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "2 \nExecutive Summary \n•\nEstablish \nthe \nquasi-steady \nburning \nand \nflammability \nconditions for diverse condensed fuels in diverse quiescent \nmicrogravity environments. \n•\nGaseous fuels are observed using round porous burners with \nembedded heat flux gages and thermocouples. \n•\nThe key properties characterizing each fuel will be matched \nby gaseous fuels: L ,       , hc , and LSP . \n•\nBRE will supplement NASA Tests 1 and 2 with g \nmeasurements of flammability limits. \n•\nIn addition, burning rates will be determined. \n\"\nrr\nq\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "3 \n1. Introduction \n"
+    },
+    {
+      "locator": "page 4",
+      "text": "4 \nHeat flux scaling \nL\nq\nq\nq\nm\ne\nrr\nf\n\n\n\n\n\n\n\n\n\n\n\nWhere     is the incident flame heat flux, \n    is the surface reradiative heat loss, \n    is the incident external radiative heat flux, and  \nL is the heat of gasification.  \nfq\nrr\nq\neq\n \nm\nq\nq\nL\nL\ne\nrr\neff\n\n\n\n\n\n\n\n\n\neff\nf\nL\nq\nm\n\n\n\n\n\n• Steady burning can be expressed as \n• BRE can account for effects of      using \n \n                                          + \neq\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "5 \nHeat flux measurement \n• The incident heat flux is conductive and radiative. \n• Heat flux gages in the surface will record incident \nheat flux. \n• Thermocouples in the surface will record the Ts \ndistribution. \n• Surface reradiative flux scales with Ts\n4. \n• Flow rate will be varied to obtain a wide range of L. \n"
+    },
+    {
+      "locator": "page 6",
+      "text": "6 \nMotivation \n• Many condensed fuels have a critical heat flux (CHF) \nbelow which ignition and spread is impossible.  \n \n• This CHF depends on the surface heat loss rate. \n \n• Buoyant cooling occurs in 1g, so CHF is lower in g. \n \n• BRE will identify g CHF for condensed fuels. \n \nCondensed fuel ignition in g will generally be easier \nthan on Earth. \n"
+    },
+    {
+      "locator": "page 7",
+      "text": "7 \nNASA Test 1 \n• The Upward Flame Propagation \n(Test 1) is NASA’s main test for \nmaterial \nflammability \nin \nspacecraft. \n• It tests the flame propagation of a \nvertical sample 30  6.4 – 7.5 cm.  \n• Burn length (15 cm threshold) and \ntime are recorded.  \n• It is a pass-fail test. \n• It is similar to UL-94, whose \nperformance scales with hc / L . \n"
+    },
+    {
+      "locator": "page 8",
+      "text": "8 \nNASA Test 2 \n• Ohlemiller (1992) found that NASA Test 1 results did not \ncorrelate with NIST flammability tests of ignition, burning \nrate, and opposed flow flame spread. \n• He recommended that Test 1 be modified to include the \naddition of external radiant heating. \n• NASA Test 2 uses a cone calorimeter with heat fluxes of \n25 – 75 kW/m2 to supplement Test 1. \n• Tests 1 and 2 do not explicitly predict performance in g. \nOhlemiller recommended g tests, \nstating “Without such information \nspacecraft designers are confronted \nwith unquantifiable risks regarding \nfire safety.”  \n"
+    },
+    {
+      "locator": "page 9",
+      "text": "9 \nRelating material properties to g flammability \nCan 1g properties be related to g flammability? \n \n• This works for to UL-94 in 1g, whose performance \nscales with hc / L . \n• If it works in g, a limited number of g tests could \nbe used to predict ignition, burning, and extinction  \nbehavior of many materials. \n \nA BRE goal is to furnish g measurements relating \nignition, burning, and extinction to material properties \nthat are obtainable in 1g. \n"
+    },
+    {
+      "locator": "page 10",
+      "text": "10 \ng combustion surprises \n• Quasisteady burning of condensed fuels in g has \nrarely been observed. \n• Several surprises were seen in tests of g droplets \nand flame spread, including those associated with \n3D effects, flaming fire brands, radiative extinction, \netc. \n• The effects of radiative feedback have not been \nexplored.  \n"
+    },
+    {
+      "locator": "page 11",
+      "text": "11 \nThe MIR fire \n• In the MIR fire a solid propellant oxygen generator \nignited, producing a 1 m flame. \n• If this flame had impinged on other materials, could \nthey have burned self-sustained? \n• Material flammability in space must be better \nunderstood. \n"
+    },
+    {
+      "locator": "page 12",
+      "text": "12 \nPast condensed fuel combustion in g \n• Experiments in Skylab indicated sustained burning \nof thin paper and plastics. \n• Spread on 4.5 mm diameter rods of Delrin, PMMA \nand HDPE was achieved in opposed flows down to \n1 cm/s. \n• Opposed flow spread in quiescent g depends on \nmaterial, thickness, and oxygen concentration. \n• Droplet flames of Kumagai, Williams, and co-\nworkers. \n"
+    },
+    {
+      "locator": "page 13",
+      "text": "13 \nCandles in g \n• Candle flames on MIR survived from 1 – 45 \nmin. Hemispherical flames were observed. \n• Dietrich and T’ien’s glovebox tests had \nmuch shorter durations. \n• The MIR flights had XO2 = 0.22 – 0.25 and a \nmetal screen enclosure. \n• The glovebox had XO2 = 0.217 and a \nperforated plastic enclosure. \nSustained burning of condensed fuels in g without \nexternal radiation is confirmed. \n"
+    },
+    {
+      "locator": "page 14",
+      "text": "14 \nFlame shape in g \n• Sunderland and co-workers found g gas jet flames \nto be spherical at low Re, and longer than 1g \nflames. \n• Candle and droplet flames also are spherical in g. \n• Planar surfaces in g can produce spherical flames. \n"
+    },
+    {
+      "locator": "page 15",
+      "text": "15 \n• Torero \nand \nco-workers \nburned ethane in a 60  60 \nmm porous burner in g. \n• Oxidizer flow rates were 10 \n– 150 mm/s. \n• Three flame shape regimes \nwere observed: elliptical (I); \nparabolic (II); and flat (III). \n• BRE is likely to encounter \nall 3 shapes. \nFlame shapes in g \n"
+    },
+    {
+      "locator": "page 16",
+      "text": "16 \nElliptical flames from Brahmi et al. (2005) \n"
+    },
+    {
+      "locator": "page 17",
+      "text": "17 \nEarly burning emulators \n• de Ris and co-workers (1971) pioneered the use of \nsintered metal burners for studying the steady \nburning of planar condensed fuels. \n• The fuel flux was uniform across the burner \nsurface. Water cooling was used. \n• They successfully emulated burning rate and flame \nshape for a wide range of B numbers:  \n\n\nL\nT\nT\nc\nr\nh\nY\nB\nv\np\nc\nox\n\n\n\n\n\n/\nWhere Yox is the ambient oxygen mass fraction,  \nhc is the heat of combustion,  \nr is the stoichiometric oxygen to fuel ratio,  \ncp is the specific heat of gas mixture,  \nTv is the surface vaporization temperature, and  \nT is the ambient temperature. \n"
+    },
+    {
+      "locator": "page 18",
+      "text": "18 \n• For a given ambient condition, B is principally a \nfunction of L. \n• Absent radiation, the burning rate per unit area is \nprincipally a function of the B number.  \n• In the de Ris burner, L was determined with no \nexternal radiation and negligible reradiation.  \n• N2 addition to the gaseous fuel extended the range \nof conditions. \n \nBRE plans to extend the de Ris approach in 1g and g. \nEarly burning emulators \n"
+    },
+    {
+      "locator": "page 19",
+      "text": "19 \nRectangular wick tests \n• Our initial tests involved rectangular wicks. \n• Flames were generally laminar and steady. \n• 1g tests involved various inclinations. \n• The flames were emulated with a gas burner with a \nceramic honeycomb surface. \n• A detailed analytical model was developed. \n"
+    },
+    {
+      "locator": "page 20",
+      "text": "20 \n• Wicks were made of \nporous ceramic. \n• l was 1 – 10 cm. \n• Fuels \nwere \nmethanol \nand ethanol. \n• 1g tests were at various \norientations. \n• g tests were in the \nairplane and 5 s drop \nfacility. \nRectangular wick tests \n"
+    },
+    {
+      "locator": "page 21",
+      "text": "21 \nStudy of flat surface burning in \nmicrogravity \nMethanol flames (top) at angles of +90°, 60°, 30°, 0°, -30°, -60°, and -90°. \nMethane flames (bottom) at corresponding burning rates. \nBurner size of 10 x 10 cm. Ts  175 °C. \n"
+    },
+    {
+      "locator": "page 22",
+      "text": "22 \nFlame shapes \n"
+    },
+    {
+      "locator": "page 23",
+      "text": "23 \nRectangular wick emulations \n• The agreement in these emulations is encouraging. \n \n• Note that DNS simulations of similar flames were \nlimited to a length of 1 cm.  \n \n• Flame emulation automatically accounts for the \neffects of instabilities, radiation, and property \nvariations. \n"
+    },
+    {
+      "locator": "page 24",
+      "text": "24 \nMethanol heat flux measurements \n•\nHeat flux was measured \nfor the 10 x 10 cm \nmethanol wicks. \n•\nThe sensor was a 3 mm \ndiameter \nthermopile \n(Medtherm \nSchmidt-\nBoelter \nheat \nflux \ntransducer) located at \nthe plate center. \n•\nCondensation \nwas \navoided by using cooling \nwater at T > 65 ºC, the \ndew point of typical fuels. \n0\n5\n10\n15\n20\n25\n0\n5\n10\n15\n20\n25\n-120 -90\n-60\n-30\n0\n30\n60\n90\n120\nm\" (g/m2-s)\nq\" at x = 5 cm (kW/m2)\nθ (Degrees)\nMarker             Quantity\nExperimental q\"\nExperimental m\"\n"
+    },
+    {
+      "locator": "page 25",
+      "text": "25 \nMethanol heat flux measurements \n•\nTransition to turbulence \noccurs except at –90°. \n•\nAt \n–90°, \nL \ncan \nbe \nestimated from: \n \n \n \n•\nThis yields L = 1.55 kJ/g, \nversus actual of 1.23 \nkJ/g. \n•\nThis suggests BRE will \nwork \nfor \ngas \nflame \nemulations. \n0\n5\n10\n15\n20\n25\n0\n5\n10\n15\n20\n25\n-120 -90\n-60\n-30\n0\n30\n60\n90\n120\nm\" (g/m2-s)\nq\" at x = 5 cm (kW/m2)\nθ (Degrees)\nMarker             Quantity\nExperimental q\"\nExperimental m\"\nL         =        – \n\"\nm\n\"\nf\nq\n\"\nrr\nq\n"
+    },
+    {
+      "locator": "page 26",
+      "text": "26 \nJSC parabolic aircraft tests \n• Parabolic aircraft test at JSC (Zero G Corp.) \n• Quasisteady ethanol flame on 10 x 40 mm wick. \n• We believe these are the first ever observations of \nquasisteady burning of a planar condensed fuel in \nquiescent g. \n"
+    },
+    {
+      "locator": "page 27",
+      "text": "27 \nParabolic Test Video \n"
+    },
+    {
+      "locator": "page 28",
+      "text": "28 \nJSC parabolic aircraft tests with 10 x 40 mm wick \nFuel \n0-g burn \nTime (s) \nObservations \nEthanol \n6 \nEthanol \n20 \nInitial disturbances by igniter exit, movement in top of flame \nEthanol \n11 \nOne side lifts off originally, flashes and becomes steady \nEthanol \n16 \nOne side unsteady for majority of test, slight buoyant \nbehavior observed before reverting to elliptical flame \nEthanol \n18 \nSteady elliptical flame for entire duration \nEthanol \n8 \nUnsteadiness in flame where igniter exited \nEthanol \n18 \nIgniter side unsteady initially \nEthanol \n18 \nOne side lifts off mid-test, reattaches before parabola exit \nEthanol \n17 \nFar-side of flame from camera appears to lift off for first 12s \nEthanol \n15 \nIgnited ~1s before 0g, spiraling flame base \nEthanol \n20 \nIgnited ~5s before 0g, steady elliptical flame \nEthanol \n18 \nSome unsteadiness observed \nEthanol \n10 \nSteady elliptical flame \nEthanol \n20 \nSmall spark-like disturbances \n"
+    },
+    {
+      "locator": "page 29",
+      "text": "29 \nGRC 5 s drop tests \n• GRC 5 s drop facility test. \n• Ethanol flame on 10 x 40 mm wick. \n"
+    },
+    {
+      "locator": "page 30",
+      "text": "30 \nGRC 5 s drop tests \nFuel \nWick \n(mm) \nIgnition \nX02 \np (bar) \nObservations \nEthanol \n10 x 40 \n- 3 s \n0.21 \n1.01 \nFlame unsteady, lifted off one side, other \nmoved slowly outward, lasted 5 s. \nEthanol \n10 x 40 \n- 3 s \n0.21 \n1.01 \nFlashed over and self-extinguished after \n1 s. \nEthanol \n25 mm \n- 3 s \n0.21 \n1.01 \nFlame unsteady, lifted on one side, \nlasted 5 s. \nEthanol \n25 mm \n- 0.5 s \n0.21 \n1.01 \nFlame unsteady, self-extinguished  after \n1 s.  \nEthanol \n25 mm \n-0.5 s \n0.30 \n1.01 \nFlame unsteady on one side, other \nappeared steady, lasted 5 s. \nHeptane \n25 mm \n-0.5 s \n0.30 \n2.03 \nEdges of flame steady, elliptical flame \ngrows taller in the center with time, \nlasted 5 s. \n"
+    },
+    {
+      "locator": "page 31",
+      "text": "31 \nVideo of ethanol, 25 mm diameter wick,  \n21% O2, 1 bar, 5 s drop facility. \n"
+    },
+    {
+      "locator": "page 32",
+      "text": "32 \nVideo of heptane, 25 mm diameter wick,  \n30% O2, 2 bar, 5 s drop facility. \n"
+    },
+    {
+      "locator": "page 33",
+      "text": "33 \nStills of heptane, 25 mm diameter wick,  \n30% O2, 2 bar, 5 s drop facility. \n0 s \n1 s \n2 s \n3 s \n4 s \n5 s \n"
+    },
+    {
+      "locator": "page 34",
+      "text": "34 \nBRE burner design \n• The prototype BRE burner has a porous surface 50 \nmm in diameter.  \n \n• Two heat flux sensors are used. \n \n• The burner has water cooling, but this will be \nremoved in future designs. \n \n• Thermocouples record Ts.  \n \n• Brass and glass beads and brass screens provide \nuniform flow.  \n"
+    },
+    {
+      "locator": "page 35",
+      "text": "35 \nHeat Flux Sensors \nWater supply  \nFuel supply \nBRE burner design \n"
+    },
+    {
+      "locator": "page 36",
+      "text": "36 \nBRE results in 1g \n• The prototype BRE burner was used to emulate 1g \nburning of methanol, heptane, and PMMA. \n• The condensed fuel flames were observed and \ntheir burning rates measured. \n• Gaseous fuel/N2 mixtures were chosen that \nmatched the condensed fuel hc and LSP: \nFuel \nhc , kJ/g \nLSP, mm \nMethanol \n19 \n- \n52% CH4 in N2 \n19 \n- \nHeptane \n41.2 \n139 \nEthylene \n41.5 \n120 \nPMMA \n24.2 \n105 \n50% C3H6 in N2 \n24.3 \n117 \n"
+    },
+    {
+      "locator": "page 37",
+      "text": "37 \nBRE results in 1g \n• The gaseous flames were burned at the same flow \nrates as the condensed fuel flames. \n• Videos and still images were recorded and \ncompared. \n• Ts was measured and compared to the BP. \n• L was determined from \n \nand compared to known values. \n \nReasonable matches were obtained. \nL         =        – \n\"\nm\n\"\nf\nq\n\"\nrr\nq\n"
+    },
+    {
+      "locator": "page 38",
+      "text": "38 \n Methanol \nBRE (52% CH4 in N2) \nMethanol \nBRE \nhc (kJ/g) \n19 \n19 \nLSP (mm) \n- \n- \nTs (°C) \n65 \n160 \nL (kJ/g) \n1.24 \n1.2 \n"
+    },
+    {
+      "locator": "page 39",
+      "text": "39 \n Heptane \nBRE (C2H4) \nHeptane \nBRE \nhc (kJ/g) \n41.2 \n41.5 \nLSP (mm) \n139 \n120 \nTs (°C) \n98 \n211 \nL (kJ/g) \n0.48 \n0.51 \n"
+    },
+    {
+      "locator": "page 40",
+      "text": "40 \n PMMA \nBRE (50% C3H6 in N2) \nPMMA \nBRE \nhc (kJ/g) \n24.2 \n24.3 \nLSP (mm) \n105 \n117 \nTs (°C) \n270 \n312 \nL (kJ/g) \n1.6 \n1.8 \n"
+    },
+    {
+      "locator": "page 41",
+      "text": "41 \nFlame extinction scaling \n¢¢\nm Lm = hc\ncp\nYox 1- X r\n(\n)Dhc / r - cp Tv -T¥\n(\n)\néë\nùû\nLm º L -\n¢¢\nqf ,r + ¢¢\nqe - ¢¢\nqrr\n¢¢\nm\ncp Tf -T¥\n(\n) = YF,o 1- Xr\n(\n)Dhc - Lm + cp Tv -T¥\n(\n)\n1+ rYF,o /Yox\n\n\n\n\n.\nextinction\nat \n \n0.4,\n \n0.1,\n \n0.3,\n \n to\n0.1\n \nair,\nambient \nfor \n \nkJ/g\n 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nh\nT\nT\nc\nh\nT\nT\nc\nr\nY\nh\nf\np\nv\np\nox\n¢¢\nmcrit =\n¢¢\nqrr - ¢¢\nqe\nDhc / 2\n(\n) - L\n"
+    },
+    {
+      "locator": "page 42",
+      "text": "42 \nFlame extinction scaling \n¢¢\nm L » hc\ncp\nDh¥ - ¢¢\nqrr\nd =\nC f d 2 ¢¢\nm\nm\nc\nk\nh\n\n\nk = 0.0257 W/m-K \n = nr = (15 x 10-6 m2/s) (1.2 kg/m3) \ncp = 1.0 kJ/kg-K \nand \nd = 50 mm. \n¢¢\nm\n2L + ¢¢\nqrr ¢¢\nm - Dh¥ » 0\n"
+    },
+    {
+      "locator": "page 43",
+      "text": "43 \ng conditions for 50 mm diameter fuel \nParameter \nLiquids \nThermo-\nplastics \nHigh-T \npolymers \nHalogenated \npolymers \nhc, kJ/g \n30 \n30 \n15 \n8 \nL, kJ/g \n0.5 \n3 \n5 \n3 \n     , kW/m2 \n0.5 \n10 \n20 \n30 \n     , g/m2s \n2 \n0.5 \n0.1 \n0.2 \n        , g/m2s \n0.03 \n0.8 \n8 \n29 \nbehavior \nflammable marginal \nnot \nflammable \nnot \nflammable \n\"\nm\n\"\nrr\nq\n\"\ncrit\nm\nSimple scaling with fundamental material properties \ncan be used to understand g burning and extinction. \n"
+    },
+    {
+      "locator": "page 44",
+      "text": "44 \nBRE hypothesis \n• BRE can establish flammability maps in terms of \nhc, L,       (and LSP ). \n \n• In particular, BRE can establish: \n \n- the burning rates for diverse condensed fuels; \n \n- the effect of d; \n \n- extinction limits; and \n \n- the minimum heat flux for ignition.  \n\"\nrr\nq\n"
+    },
+    {
+      "locator": "page 45",
+      "text": "45 \nRepeat for various hc ,     , and L, (i.e., fuel \ndilution, Ts, and       ) to establish the \nflammability map for this condensed fuel. \n\"\nrr\nq\n\n0\n10\n20\n30\nqrr, kW/m2\n, kJ/g\n, kJ/g\nFlammable\nBlow out\nExtinction\nChoose \na \ngaseous \nfuel-inert mixture that \nmatches hc and LSP \nof the condensed fuel. \nMatch the flow rate \nof \nthe \nburning \ncondensed fuel. \nf\nrr\nq\nq\nL\nm\n\n\n\n\n\nMatch by Design \nMatch by Measurement \nhc \nLSP    \nTs \nL \nMeasure       and \nTs. Evaluate      \nand L. \n\"\nf\nq\n\"\nrr\nq\n\"\nm\n\"\nf\nq\nNormal Gravity BRE \nRepeat for various \nXO2, p, and d. \n\"\nrr\nq\n\"\nm\nFind \nalso \nignition \nand extinction limits. \n"
+    },
+    {
+      "locator": "page 46",
+      "text": "46 \nRepeat for various hc ,     , and L, (i.e., fuel \ndilution, Ts, and       ) to establish the \nflammability map for this condensed fuel. \n\"\nrr\nq\n\n0\n10\n20\n30\nqrr, kW/m2\n, kJ/g\n, kJ/g\nFlammable\nBlow out\nExtinction\nChoose \na \ngaseous \nfuel-inert mixture, an \nambient, and a flow \nrate. \nIgnite. \nf\nrr\nq\nq\nL\nm\n\n\n\n\n\nMeasure       and \nTs. Evaluate      \nand L. \n\"\nf\nq\n\"\nrr\nq\nMicrogravity BRE \nRepeat for various \nXO2, p, d, and XCO2. \n\"\nrr\nq\n\"\nm\nAdjust flow rate to \nfind \nignition \nand \nextinction limits. \n"
+    },
+    {
+      "locator": "page 47",
+      "text": "47 \n1g BRE flammability map \n0\n2\n4\n6 0\n5\n10\n15\n20\n0\n20\n40\n60\nqrr, kW/m2\n, kJ/g\n, kJ/g\nBRE with\nMethane\nExtinction\nBRE with\n52% \nMethane, \n48% \nNitrogen\nLiquid\nMethanol\nHeptane\nWood\nFilter Paper\nPE\nPS\nPMMA\nBRE with\nEthylene\n"
+    },
+    {
+      "locator": "page 48",
+      "text": "48 \n2. Flight Experiment \n"
+    },
+    {
+      "locator": "page 49",
+      "text": "49 \nKnowledge lacking and  \nto be gained by flight tests \n• The flammability properties of materials used in \nspacecraft are poorly understood, including paper, \nplastics, and liquids. \n \n• The proposed ISS tests will establish the range of \nignition, steady burning, and extinction for diverse \ncondensed fuels in g. \n \n• Effects of incident radiation will be considered by \nscaling the test results. \n \n• Follow-on tests could incorporate the effects of \nconvection and other extinguishing agents. \n"
+    },
+    {
+      "locator": "page 50",
+      "text": "50 \nKnowledge lacking and  \nto be gained by flight tests \n• BRE will identify flammability maps for: \n \nL = 0.5 – 5 kJ/g \n \nhc = 5 – 50 kJ/g \n \n      = 0 – 20 kW/m2 \n \n• Where \nunknown, \nthese \nproperties \ncan \nbe \nmeasured in 1g for diverse materials using NASA \nTest 2. \n \n• This will close the loop of using a ground-based \ntest to assess the flammability of materials in g.  \n\"\nrr\nq\n"
+    },
+    {
+      "locator": "page 51",
+      "text": "51 \nExperimental Objectives \n1. Observe burning behavior in long-duration g for \nCH4/N2 and C2H4/N2 mixtures on 25 and 50 mm \nporous circular burners. Consider O2/N2 ambients \nwith various XO2 and p. Emphasize conditions that \ncan be related to diverse condensed fuels. \n2. Consider the conditions of Objective 1 for \nambients of O2/CO2 (desired). \n3. Consider the conditions of Objectives 1 – 2 for \nignition limits. \n4. Consider the conditions of Objectives 1 – 2 for \nextinction limits. \n"
+    },
+    {
+      "locator": "page 52",
+      "text": "52 \nSummary of approach for ISS tests \n• Burn tests. The chamber contents will be set. Fuel flow \nwill commence followed by ignition. The flames will be \nobserved without varying the fuel or its flow rate. Ts and \nL will vary, allowing diverse conditions to be observed. \n \n• Ignition tests. The chamber contents will be set. Fuel \nflow will commence followed by attempted ignition. \n \n• Extinction limit tests. The chamber contents will be set. \nFlames will be ignited followed by a gradual reduction in \nfuel flow rate until extinction. \n"
+    },
+    {
+      "locator": "page 53",
+      "text": "53 \nPlans for ground-based research \n• Measurements to establish flammability \nmaps in normal gravity will continue, \nusing gaseous, liquid, and solid fuels. \n \n• Development of detailed analysis tools \nwill continue. \n \n• Modeling using FLUENT is planned. \n"
+    },
+    {
+      "locator": "page 54",
+      "text": "54 \nScience Data End Products \nObjective \nScience Data End Products \n1.\nObserve burning behavior in long-duration \nmicrogravity for CH4/N2 and C2H4/N2 \nmixtures on 25 and 50 mm porous circular \nburners. Consider O2/N2 ambients with \nvarious XO2 and p. Emphasize conditions \nthat can be related to diverse condensed \nfuels. \nColor flame images \nUV images \nTs \nand \nincident \nflame \nheat \nflux \nmeasurements \nSoot temperature \nSoot volume fraction \nGas phase point measurements \nRadiant emissions \nChemiluminescent emissions \nGas Composition \n2. Consider the conditions of Objective 1 for \nambients of O2/CO2 (desired). \nSame as for Objective 1.  \n3. Consider the conditions of Objectives 1 – 2 \nfor ignition limits. \nIgnition limit map. \n  \n4. Consider the conditions of Objectives 1 – 2 \nfor extinction limits. \nExtinction limit map. \n"
+    },
+    {
+      "locator": "page 55",
+      "text": "55 \nJustification for extended-duration g \n• NASA Tests 1 and 2 are inadequate for analyzing \nmaterial fire hazards in spacecraft. \n• Past and planned g tests of condensed fuels are \ninsufficient to cover the diverse condensed fuels \nused in spacecraft. \n• The BRE tests cannot be performed in parabolic \naircraft owing to g-jitter. Drop tower times are too \nshort compared to the characteristic times for the \ngas phase (~20 s) and Ts (~40 s).  \n• Only \nlong-duration \ng \ntests \nwill \nallow \nthe \nestablishment of g flammability maps. \n"
+    },
+    {
+      "locator": "page 56",
+      "text": "56 \n3. Experiment Requirements \n"
+    },
+    {
+      "locator": "page 57",
+      "text": "57 \nRequirements discussion \n•\nMost of the BRE experiment requirements fall \nwithin the ACME ISRD requirements. \n•\nDetails are provided next. \n"
+    },
+    {
+      "locator": "page 58",
+      "text": "58 \nRequirements discussion \nBRE Burners \n• The burners shall involve round porous frits of 25 \nand 50 mm diameters.  \n• Each burner shall contain two heat flux meters flush \nwith the frit surface and facing outward.  \n• The heat flux meters shall be maintained at 65 – 85 \n°C to avoid condensation. \n• The burners shall be positioned such that the burner \naxis is coincident with the CIR chamber axis and \northogonal to the CIR chamber window axes. \n• The plane of the CIR chamber window centers shall \nbe 10±2 mm downstream of the frit surface. \n \nISRD Section 1.1: Accepted \nISRD Sections 1.2-1.7: Not Applicable \n"
+    },
+    {
+      "locator": "page 59",
+      "text": "59 \nRequirements discussion \nBurner Gas Delivery \nRequired flow rates for BRE are: \n• Fuel: 0 – 0.1 slpm (N2 basis) \n• Oxidizer: Not applicable \n• Inert: 0 – 2 slpm (N2 basis) \n \nThese \nrequirements \nwere \nestablished \nby \nobservations of flames in 1g, in the 5 s drop \nfacility, and on the parabolic aircraft. \n \nISRD Section 1.8: Accepted. \nISRD Section 1.9: Accepted for the above flows. \n"
+    },
+    {
+      "locator": "page 60",
+      "text": "60 \nRequirements discussion \nIgnition \n• Ignition disturbances should be minimized \nto \nallow \nundisturbed \nburning \nquickly. \nIgnition should occur ~ 3 mm from the frit \nsurface.  \n• BRE is unique among ACME experiments \nin its interest in ignition limits. Thus the \nigniter conditions must be highly repeatable. \n \nISRD Section 1.10: Accepted with the above \nqualifications. \n"
+    },
+    {
+      "locator": "page 61",
+      "text": "61 \nRequirements discussion \nAmbient Environment \n• Prior to each test, the chamber shall contain the \nspecified gas composition within ±0.01 mole fraction. A \ncylindrical free area that is (1) at least 200 mm in \ndiameter, (2) at least 100 mm downstream of the frit \nsurface, and (3) at least 50 mm upstream, shall be kept \nclear of solid objects. The temporary insertion of the \nigniter and probes are allowed exceptions. \n \n• Suggested \nmethods \nto \ndecrease \nbottled \ngas \nconsumption rates include, as available, partial venting \nand filling, and scrubbing for CO2 and H2O. \n \nISRD Section 1.11: Accepted \n"
+    },
+    {
+      "locator": "page 62",
+      "text": "62 \nRequirements discussion \nData Recording \n• Data recording is required for the two \nBRE heat flux sensors, one at the center \nof the burner and the other midway \nbetween the center and the periphery. \n \n• Data recording is required for the two \nthermocouples attached to the frit surface. \n \nISRD Section 1.12: Accepted with the above \nadditions. \n"
+    },
+    {
+      "locator": "page 63",
+      "text": "63 \nRequirements discussion \nMonitoring Measurements \n• The BRE monitoring measurements shall include: \nchamber p; chamber XO2; gas flow rates; burner p; \nand acceleration. \n• These shall be initiated before test operations begin \nand continue sufficiently past flame extinction to \nallow a baseline measurement. \n \nISRD Sections 2.1-2.3: Accepted \nISRD Sections 2.4 and 2.5: Not Applicable \nISRD Section 2.6: Accepted \n"
+    },
+    {
+      "locator": "page 64",
+      "text": "64 \nRequirements discussion \nScience Diagnostics \n• Measurements \nshall \ninclude: \ncolor \nimaging \nfor \noperations; color imaging for data analysis; UV \nimaging; Ts at 2 locations with a range of 30 – 500 °C; \nT in hot soot-containing regions; T in hot soot-free \nregions; T in far-field; soot volume fraction; radiant \nemission; chemiluminescent emission; and post-test \ngas composition. \n \nISRD Sections 3.1-3.3: Accepted. \nISRD Section 3.4: Accepted, with specific locations to \ncoincide with the two heat flux measurements. Two K-\ntype thermocouples will measure Ts from 30 – 500 °C. \nISRD Sections 3.5-3.9: Accepted. \n"
+    },
+    {
+      "locator": "page 65",
+      "text": "65 \nOperational sequence for ignition,  \nburn, and extinction tests \n Action \nTime \n1. Install burner and flush the plumbing. \n2. Establish chamber conditions (p and species). \n3. Allow 5 mins for chamber contents to reach equilibrium. \n4. Take reference images. Begin color imaging. Begin \nmonitoring measurements and wait 15 s. \n5. Ignition test: Commence fluent flow, energize igniter, and \nretract igniter. If flame ignites, proceed to Step 6 or Step \n7. Otherwise proceed to Step 8. \n6. Burn test. Allow the flame to burn until extinction or \nquasisteady. Detect extinction with a PMT or with near \nreal-time video. Reduce flow rate to confirm extinction. \n7. Extinction test. Burn for 20 s then reduce flow rate \ngradually until extinction. \n8. Record reference images. After 60 s terminate color \nimaging and monitoring measurements. Select data for \ndownlink and downlink data. \n  \n  \n  \n  \n  \n0 s \n  \n \n5 s \n  \n  \n5 s  \n   \n30 s \n"
+    },
+    {
+      "locator": "page 66",
+      "text": "66 \nTest matrix  \n  \n \n \nTest \n \n \nAmbient/ \n% \n \n \nFluent/ \n% \nflow \nrate \nslpm \nN2 \n  \n \n \nNotes \n1 \nO2/21 \nC2H4/100 \n0.050 \nPreliminary test of system operation for \nignition, burning, and extinction tests for \n25 mm burner at 1.01 bar. \nEvacuate and recharge chamber. \n2 \nO2/40 \nC2H4/100 \n0.025 \nIgnition, burning and extinction test. \n3 \n  \n  \n0.050 \nIgnition, burning and extinction test. \n4 \n  \n  \n0.010 \nIgnition, burning and extinction test. \n5 \nO2/40 \nC2H4/60 \n0.025 \nIgnition, burning and extinction test. \n6 \n  \n  \n0.050 \nIgnition, burning and extinction test. \n7 \n  \n  \n0.010 \nIgnition, burning and extinction test. \n8 \nO2/40 \nC2H4/20 \n0.025 \nIgnition, burning and extinction test. \n9 \n  \n  \n0.050 \nIgnition, burning and extinction test. \n10 \n  \n  \n0.010 \nIgnition, burning and extinction test. \n"
+    },
+    {
+      "locator": "page 67",
+      "text": "67 \nTest matrix  \nTest \n Notes \n11– 19 \nRepeat Tests 2 – 10 for an ambient of O2/30. \n20 – 28 \nRepeat Tests 2 – 10 for an ambient of O2/21. \n29 – 55 \nRepeat Tests 2 – 28 for CH4. \n56 – 82 \nRepeat Tests 2 – 28 for 50 mm burner. \n83 – 91 \nRepeat Tests 2 – 10 for an ambient of O2/15 \n(desired). \n92 – 100 \nRepeat Tests 110 – 118 for CH4 (desired). \n101 – 135 \nRepeat Tests 2 – 28 and 110 – 118 at 2.02 bar \n(desired). \n136 – 142 \nRepeat Tests 110 – 118 for 50 mm burner \n(desired). \n143 – 177 \nRepeat Tests 2 – 28 and 110 – 118 with ambients \nof O2/CO2 (desired). \n"
+    },
+    {
+      "locator": "page 68",
+      "text": "68 \nTest matrix notes  \n• Many tests shown will not ignite. \n• Chamber contains O2/N2, except tests 143 – 177, which \ninvolve CO2 in the chamber and N2 in the burner stream. \n• Different fuel and oxidizer mole fractions may be specified \nduring uplink. \n• If scrubbing is available, the CO2 and H2O will be scrubbed \nafter some tests, and reactants replenished as needed. \n• Estimated video downlink time for BRE is 50 minutes. Full \ndownlink will be required for the first few flames. Otherwise \ndownlink will include 15 s intervals around ignition and \nextinction and occasional 2 s intervals. \n"
+    },
+    {
+      "locator": "page 69",
+      "text": "69 \nScience success criteria  \nMinimum Success \n \n• Obtain color video, Ts, and burner heat flux for one \nC2H4 flame that burns for at least 20 s and then \nextinguishes. \n"
+    },
+    {
+      "locator": "page 70",
+      "text": "70 \nScience success criteria  \nComplete Success (i.e., completion of required matrix) \n \nAll of the above plus: \n• Perform Tests 1 – 82 or a similar set of tests. \n• Obtain flammability maps for C2H4 and CH4. \n• Measure peak T as a function of time for at least 5 \nflames. \n• Measure T distributions at quasi-steady conditions and \nnear the extinction limit for at least 5 flames. \n• Measure soot volume fraction profiles at quasi-steady \nconditions and near the extinction limit for at least 5 \nflames. \n"
+    },
+    {
+      "locator": "page 71",
+      "text": "71 \nScience success criteria  \nSuperior Success (desired) \n \nAll of the above plus: \n• Perform Tests 83 – 177 (including O2/15; CH4; 2.02 \nbar; 50 mm burner; and O2/CO2). \n"
+    },
+    {
+      "locator": "page 72",
+      "text": "72 \nPost flight data analysis plan \n• Much post-flight data analysis will occur during mission \nops. Analysis will include: plots of Ts, incident flame heat \nflux, and L versus time; and analysis of other discrete \nsignals for evidence of quasi-steadiness. \n \n• Extensive image analysis will be performed and, where \npossible, compared with g images of condensed fuel \nflames. \n \n• We will map out the flammable conditions and burning \nrates of diverse condensed fuels. Flammability maps for \neach ambient condition will be prepared on 3-axis plots, \nwhere the axes are hc, L, and reradiation heat flux. \n"
+    }
+  ],
+  "details": {
+    "page_count": 72,
+    "empty_pages": [
+      3,
+      22,
+      27,
+      48
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

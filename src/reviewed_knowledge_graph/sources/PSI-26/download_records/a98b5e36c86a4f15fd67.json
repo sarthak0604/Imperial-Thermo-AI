@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:a98b5e36c86a4f15fd67",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_Drawing_PMMA.Spherical.Section.pdf",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_Drawing_PMMA.Spherical.Section.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 595300,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcf9c3501a37c2c60dd4&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/a98b5e36c86a4f15fd67/PSI-26_Engineering Documents_Drawing_PMMA.Spherical.Section.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "56cc0ab64b2bb5a5b31a17cef2279396b5d7a600d25752deef67432d4efa76fd",
+  "status": "downloaded"
+}

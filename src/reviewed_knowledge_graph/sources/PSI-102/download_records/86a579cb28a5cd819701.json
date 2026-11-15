@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:86a579cb28a5cd819701",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT256HKP zgy average.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT256HKP zgy average.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 4487680,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d51f91ab4427dbf4423&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/86a579cb28a5cd819701/PSI-102_Analyzed Data_GMT256HKP zgy average.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "948480833328385da0f49eea27b5e553b306b79f89c98dfb2d2d9d0aa0c8abe2",
+  "status": "downloaded"
+}

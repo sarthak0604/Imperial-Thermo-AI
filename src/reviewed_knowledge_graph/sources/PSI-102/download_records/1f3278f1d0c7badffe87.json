@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:1f3278f1d0c7badffe87",
+  "study": "PSI-102",
+  "filename": "PSI-102_Presentations_SAME_EarlyResults.ppt",
+  "key": "psi-data/PSI-102/Presentations/PSI-102_Presentations_SAME_EarlyResults.ppt",
+  "category": "Presentations",
+  "size_bytes": 26546176,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d53f91ab4427dbf443d&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/1f3278f1d0c7badffe87/PSI-102_Presentations_SAME_EarlyResults.ppt",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "6b9ecd6e3ddf220fce9b52d6158eca450a920b854b0a9018c62d06b76416aa92",
+  "status": "downloaded"
+}

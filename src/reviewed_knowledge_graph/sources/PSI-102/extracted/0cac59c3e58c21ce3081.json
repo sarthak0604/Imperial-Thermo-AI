@@ -1,0 +1,1421 @@
+{
+  "id": "res:PSI-102:0cac59c3e58c21ce3081",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_Run 2 GMT254 testlog b.xlsx",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_Run 2 GMT254 testlog b.xlsx",
+  "category": "Analyzed Data",
+  "size_bytes": 20866,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d4ef91ab4427dbf4402&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/0cac59c3e58c21ce3081/PSI-102_Analyzed Data_Run 2 GMT254 testlog b.xlsx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "74e16a53bb425e5c21bd61cb4c135580a5d4ad96446049599fffc503f6fdf8dd",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 1",
+      "text": "1: 2007/254/14:27:12 | 2: Command Received | 3: SetRegistryValue(\"VideoChannel\" | 4: 1) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 2",
+      "text": "1: 2007/254/14:27:12 | 2: Command Completed | 3: SetRegistryValue(\"VideoChannel\" | 4: 1) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 3",
+      "text": "1: 2007/254/14:27:32 | 2: Command Received | 3: Shutdown(Restart) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 4",
+      "text": "1: 2007/254/14:27:32 | 2: Starting Shutdown | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 5",
+      "text": "1: 2007/254/14:27:32 | 2: Shutting down Watchdog Timer | 4: 1 | 5: 2019"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 6",
+      "text": "1: 2007/254/14:27:32 | 2: Watchdog Timer Disabled | 4: 1 | 5: 2019"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 7",
+      "text": "1: 2007/254/14:27:32 | 2: Shutting down Video System | 4: 1 | 5: 2018"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 8",
+      "text": "1: 2007/254/14:27:32 | 2: Shutting down Thermal Precipitator | 4: 1 | 5: 2017"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 9",
+      "text": "1: 2007/254/14:27:32 | 2: Shutting down STSDetector | 4: 1 | 5: 2016"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 10",
+      "text": "1: 2007/254/14:27:32 | 2: Shutting down Sample Heater | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 11",
+      "text": "1: 2007/254/14:28:15 | 2: Starting SAME software... | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 12",
+      "text": "1: 2007/254/14:28:21 | 2: Changed system time | 3: 2007/254/14:28:21 | 4: 5 | 5: 280"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 13",
+      "text": "1: 2007/254/14:28:23 | 2: Getting Version and Checksum... | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 14",
+      "text": "1: 2007/254/14:28:23 | 2: Report of version information | 3: Version:1.0 Checksum:Check Disabled | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 15",
+      "text": "1: 2007/254/14:28:23 | 2: Startup complete | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 16",
+      "text": "1: 2007/254/14:28:42 | 2: Command Received | 3: Initialize() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 17",
+      "text": "1: 2007/254/14:28:42 | 2: Starting Initialize | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 18",
+      "text": "1: 2007/254/14:28:50 | 2: Initializing CrewInterfacePanel | 4: 5 | 5: 2007"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 19",
+      "text": "1: 2007/254/14:28:50 | 2: CrewInterfacePanel initialized | 4: 5 | 5: 2007"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 20",
+      "text": "1: 2007/254/14:28:50 | 2: Initializing DustTrak at port 5 | 3: DustTrakA | 4: 5 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 21",
+      "text": "1: 2007/254/14:28:50 | 2: DustTrak initialized | 3: DustTrakA | 4: 5 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 22",
+      "text": "1: 2007/254/14:28:50 | 2: Initializing DustTrak at port 8 | 3: DustTrakB | 4: 5 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 23",
+      "text": "1: 2007/254/14:28:50 | 2: DustTrak initialized | 3: DustTrakB | 4: 5 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 24",
+      "text": "1: 2007/254/14:28:50 | 2: Initializing DynamicDilutor | 4: 5 | 5: 2020"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 25",
+      "text": "1: 2007/254/14:28:50 | 2: DynamicDilutor initialized | 4: 5 | 5: 2020"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 26",
+      "text": "1: 2007/254/14:28:50 | 2: Initializing FluidsControlBox | 4: 5 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 27",
+      "text": "1: 2007/254/14:28:51 | 2: Initializing Mass Flow Controller | 4: 1 | 5: 2010"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 28",
+      "text": "1: 2007/254/14:28:56 | 2: Mass Flow Controller initialized | 4: 1 | 5: 2010"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 29",
+      "text": "1: 2007/254/14:28:56 | 2: FluidsControlBox initialized | 4: 5 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 30",
+      "text": "1: 2007/254/14:28:56 | 2: Initializing ISSDetector | 4: 5 | 5: 2011"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 31",
+      "text": "1: 2007/254/14:28:56 | 2: ISSDetector initialized | 4: 5 | 5: 2011"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 32",
+      "text": "1: 2007/254/14:28:56 | 2: Initializing P-Trak | 4: 5 | 5: 2012"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 33",
+      "text": "1: 2007/254/14:28:56 | 2: P-Trak initialized | 4: 5 | 5: 2012"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 34",
+      "text": "1: 2007/254/14:28:56 | 2: Initializing Sample Carousel | 4: 5 | 5: 2013"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 35",
+      "text": "1: 2007/254/14:28:56 | 2: Sample Carousel initialized | 4: 5 | 5: 2013"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 36",
+      "text": "1: 2007/254/14:28:56 | 2: Initializing Sample Heater | 4: 5 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 37",
+      "text": "1: 2007/254/14:28:57 | 2: Sample Heater Initialized | 4: 5 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 38",
+      "text": "1: 2007/254/14:28:57 | 2: Initializing STSDetector | 4: 5 | 5: 2016"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 39",
+      "text": "1: 2007/254/14:28:57 | 2: STSDetector initialized | 4: 5 | 5: 2016"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 40",
+      "text": "1: 2007/254/14:28:57 | 2: Initializing Thermal Precipitator | 4: 5 | 5: 2017"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 41",
+      "text": "1: 2007/254/14:28:57 | 2: Thermal Precipitator initialized | 4: 5 | 5: 2017"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 42",
+      "text": "1: 2007/254/14:28:57 | 2: Initializing Video System | 4: 5 | 5: 2018"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 43",
+      "text": "1: 2007/254/14:29:02 | 2: Error setting camera settings | 3: Exception: Not enough bytes read from camera serial port | 4: 2 | 5: 2018"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 44",
+      "text": "1: 2007/254/14:29:02 | 2: Video System initialized | 4: 5 | 5: 2018"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 45",
+      "text": "1: 2007/254/14:29:02 | 2: Initializing Watchdog Timer | 4: 5 | 5: 2019"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 46",
+      "text": "1: 2007/254/14:29:02 | 2: Watchdog Timer initialized | 4: 5 | 5: 2019"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 47",
+      "text": "1: 2007/254/14:29:02 | 2: Command Completed | 3: Initialize() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 48",
+      "text": "1: 2007/254/14:29:02 | 2: WatchDogTimer Enabled | 4: 1 | 5: 2019"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 49",
+      "text": "1: 2007/254/14:30:03 | 2: Command Received | 3: VideoDrawerPower(on) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 50",
+      "text": "1: 2007/254/14:30:05 | 2: Command Completed | 3: VideoDrawerPower(on) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 51",
+      "text": "1: 2007/254/14:31:30 | 2: Command Received | 3: SetDigitalOutput(ILLUM_LED_PWR | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 52",
+      "text": "1: 2007/254/14:31:30 | 2: Command Completed | 3: SetDigitalOutput(ILLUM_LED_PWR | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 53",
+      "text": "1: 2007/254/14:31:50 | 2: Command Received | 3: SelfTest(1) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 54",
+      "text": "1: 2007/254/14:31:50 | 2: Starting SelfTest | 3: Test:1 P1:0 P2:0 | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 55",
+      "text": "1: 2007/254/14:31:50 | 2: Engaging sample carousel | 3: As part of self test | 4: 1 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 56",
+      "text": "1: 2007/254/14:31:58 | 2: SelfTest complete | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 57",
+      "text": "1: 2007/254/14:31:58 | 2: Command Complete | 3: SelfTest(1) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 58",
+      "text": "1: 2007/254/14:32:22 | 2: Command Received | 3: SetDigitalOutput(12VDC_HTR_ENABLE | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 59",
+      "text": "1: 2007/254/14:32:22 | 2: Command Completed | 3: SetDigitalOutput(12VDC_HTR_ENABLE | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 60",
+      "text": "1: 2007/254/14:33:27 | 2: Command Received | 3: DownlinkTestParameters(2) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 61",
+      "text": "1: 2007/254/14:33:27 | 2: Command Completed | 3: DownlinkTestParameters(2) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 62",
+      "text": "1: 2007/254/14:33:48 | 2: Command Received | 3: SetHeaterSetpoint(2 | 4: 0) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 63",
+      "text": "1: 2007/254/14:33:48 | 2: Command Completed | 3: SetHeaterSetpoint(2 | 4: 0) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 64",
+      "text": "1: 2007/254/14:34:24 | 2: Command Received | 3: SetTestSetup(2 | 4: 505 | 5: 496) | 6: 3 | 7: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 65",
+      "text": "1: 2007/254/14:34:25 | 2: Command Completed | 3: SetTestSetup(2 | 4: 505 | 5: 496) | 6: 3 | 7: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 66",
+      "text": "1: 2007/254/14:35:20 | 2: Command Received | 3: StartTest(SAMETest | 4: 2) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 67",
+      "text": "1: 2007/254/14:35:20 | 2: Entering Start State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 68",
+      "text": "1: 2007/254/14:35:20 | 2: Manual positioning option in effect | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 69",
+      "text": "1: 2007/254/14:35:20 | 2: Zeroing the LFE | 4: 1 | 5: 2020"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 70",
+      "text": "1: 2007/254/14:35:22 | 2: Command Complete | 3: StartTest(SAMETest | 4: 2) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 71",
+      "text": "1: 2007/254/14:35:22 | 2: Test Started | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 72",
+      "text": "1: 2007/254/14:35:27 | 2: P-Trak turning on and warming up | 4: 1 | 5: 2012"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 73",
+      "text": "1: 2007/254/14:35:29 | 2: DustTrak turning on | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 74",
+      "text": "1: 2007/254/14:35:31 | 2: DustTrak turning on | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 75",
+      "text": "1: 2007/254/14:35:32 | 2: Entering PreConfigure State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 76",
+      "text": "1: 2007/254/14:35:32 | 2: Video recorder powered on | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 77",
+      "text": "1: 2007/254/14:35:32 | 2: Preparing to exhaust aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 78",
+      "text": "1: 2007/254/14:35:33 | 2: Lights! Cameras! | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 79",
+      "text": "1: 2007/254/14:35:39 | 2: Sample Heater offset corrected | 3: Offset(uV)=28.6107 | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 80",
+      "text": "1: 2007/254/14:35:39 | 2: Sample type should be DBP | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 81",
+      "text": "1: 2007/254/14:35:39 | 2: Sample type is confirmed | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 82",
+      "text": "1: 2007/254/14:35:39 | 2: Setting heating parameters | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 83",
+      "text": "1: 2007/254/14:35:39 | 2: Setting heater setpoint to 0 or 0 Ohms | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 84",
+      "text": "1: 2007/254/14:35:39 | 2: Setting heater duration to 2250 cycles or 60 secs | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 85",
+      "text": "1: 2007/254/14:35:39 | 2: Setting heater PIDs to 15360 | 3: 1536 | 4: 384 | 6: 1 | 7: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 86",
+      "text": "1: 2007/254/14:35:39 | 2: Setting MaxRt to 0.989 Ohms | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 87",
+      "text": "1: 2007/254/14:35:39 | 2: Warning:  Sample was heated 1 time(s) before | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 88",
+      "text": "1: 2007/254/14:35:40 | 2: Video recording started | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 89",
+      "text": "1: 2007/254/14:35:41 | 2: Event occurred. | 3: HighVacuumPressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 90",
+      "text": "1: 2007/254/14:35:42 | 2: Event clear. | 3: HighVacuumPressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 91",
+      "text": "1: 2007/254/14:35:43 | 2: Exhausting aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 92",
+      "text": "1: 2007/254/14:35:45 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 93",
+      "text": "1: 2007/254/14:35:46 | 2: DustTrak serial number is 85200804 | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 94",
+      "text": "1: 2007/254/14:35:47 | 2: Setting DustTrak time constant to 1 second(s) | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 95",
+      "text": "1: 2007/254/14:35:47 | 2: Setting DustTrak date to 09/11/07 | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 96",
+      "text": "1: 2007/254/14:35:47 | 2: Setting DustTrak time to 14:35:47 | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 97",
+      "text": "1: 2007/254/14:35:48 | 2: Setting DustTrak analog output range to 100 | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 98",
+      "text": "1: 2007/254/14:35:49 | 2: DustTrak serial number is 85200796 | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 99",
+      "text": "1: 2007/254/14:35:49 | 2: Setting DustTrak time constant to 1 second(s) | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 100",
+      "text": "1: 2007/254/14:35:49 | 2: Setting DustTrak date to 09/11/07 | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 101",
+      "text": "1: 2007/254/14:35:50 | 2: Setting DustTrak time to 14:35:50 | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 102",
+      "text": "1: 2007/254/14:35:50 | 2: Video recording stopped | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 103",
+      "text": "1: 2007/254/14:35:50 | 2: Setting DustTrak analog output range to 100 | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 104",
+      "text": "1: 2007/254/14:35:58 | 2: Aging chamber is exhausted | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 105",
+      "text": "1: 2007/254/14:35:58 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 106",
+      "text": "1: 2007/254/14:36:09 | 2: Entering Pause State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 107",
+      "text": "1: 2007/254/14:36:09 | 2: Waiting for P-Trak to warmup | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 108",
+      "text": "1: 2007/254/14:36:27 | 2: P-Trak warmup complete | 3:  initializing | 5: 1 | 6: 2012"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 109",
+      "text": "1: 2007/254/14:36:27 | 2: Setting P-Trak date to 09/11/07 | 4: 1 | 5: 2012"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 110",
+      "text": "1: 2007/254/14:36:27 | 2: Setting P-Trak time to 14:36:27 | 4: 1 | 5: 2012"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 111",
+      "text": "1: 2007/254/14:36:28 | 2: P-Trak warmed up | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 112",
+      "text": "1: 2007/254/14:36:28 | 2: Test paused at 00:01:05 elapsed test time | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 113",
+      "text": "1: 2007/254/14:36:28 | 2: Paused 31 secs into PreConfigure State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 114",
+      "text": "1: 2007/254/14:39:53 | 2: Command Received | 3: ResumeTest() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 115",
+      "text": "1: 2007/254/14:39:53 | 2: Entering SampleHeating State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 116",
+      "text": "1: 2007/254/14:39:53 | 2: Test Resumed | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 117",
+      "text": "1: 2007/254/14:39:53 | 2: Command Completed | 3: ResumeTest() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 118",
+      "text": "1: 2007/254/14:39:53 | 2: Warning: StartOfVideoRecording was less than zero | 3: /config/test_matrices/same_test_2.txt | 4: 2 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 119",
+      "text": "1: 2007/254/14:39:54 | 2: Starting diagnostic flow | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 120",
+      "text": "1: 2007/254/14:39:55 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 121",
+      "text": "1: 2007/254/14:39:55 | 2: Dilution control enabled | 4: 1 | 5: 2020"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 122",
+      "text": "1: 2007/254/14:39:56 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 123",
+      "text": "1: 2007/254/14:40:04 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 124",
+      "text": "1: 2007/254/14:40:07 | 2: Starting diagnostic flow complete | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 125",
+      "text": "1: 2007/254/14:40:08 | 2: Waiting for diagnostics with flow warmup | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 126",
+      "text": "1: 2007/254/14:40:31 | 2: Nominal fill rate is 4.70016 LPM | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 127",
+      "text": "1: 2007/254/14:40:31 | 2: Preparing to fill aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 128",
+      "text": "1: 2007/254/14:42:23 | 2: Aging chamber is filled | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 129",
+      "text": "1: 2007/254/14:42:24 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 130",
+      "text": "1: 2007/254/14:42:26 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 131",
+      "text": "1: 2007/254/14:42:27 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 132",
+      "text": "1: 2007/254/14:42:36 | 2: Starting to save heater data | 4: 4 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 133",
+      "text": "1: 2007/254/14:42:36 | 2: Video recording stopped | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 134",
+      "text": "1: 2007/254/14:42:37 | 2: Light and camera turned off | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 135",
+      "text": "1: 2007/254/14:42:38 | 2: Video recorder powered off | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 136",
+      "text": "1: 2007/254/14:42:39 | 2: Entering PrimaryAging State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 137",
+      "text": "1: 2007/254/14:42:39 | 2: Primary aging for 8 seconds | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 138",
+      "text": "1: 2007/254/14:42:47 | 2: Entering PrimaryDiagnostic State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 139",
+      "text": "1: 2007/254/14:42:47 | 2: Exhausting at 6.78 LPM | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 140",
+      "text": "1: 2007/254/14:42:47 | 2: Preparing to exhaust aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 141",
+      "text": "1: 2007/254/14:42:55 | 2: Heater data saved | 4: 4 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 142",
+      "text": "1: 2007/254/14:42:57 | 2: Event occurred. | 3: HighVacuumPressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 143",
+      "text": "1: 2007/254/14:42:58 | 2: Event clear. | 3: HighVacuumPressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 144",
+      "text": "1: 2007/254/14:42:59 | 2: Exhausting aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 145",
+      "text": "1: 2007/254/14:43:01 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 146",
+      "text": "1: 2007/254/14:43:02 | 2: Sending file via FTP | 3: /data/2007_254/2007_254_14_42.htr | 4: 1 | 5: 314"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 147",
+      "text": "1: 2007/254/14:43:05 | 2: File sent via FTP | 3: 2007_254_14_42.htr | 4: 1 | 5: 314"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 148",
+      "text": "1: 2007/254/14:43:52 | 2: Aging chamber is exhausted | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 149",
+      "text": "1: 2007/254/14:43:52 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 150",
+      "text": "1: 2007/254/14:43:53 | 2: Entering SecondaryAging State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 151",
+      "text": "1: 2007/254/14:43:53 | 2: Secondary aging period is categorized as medium | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 152",
+      "text": "1: 2007/254/14:43:53 | 2: Dilution control disabled | 4: 1 | 5: 2020"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 153",
+      "text": "1: 2007/254/14:43:54 | 2: Secondary aging for 150 seconds | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 154",
+      "text": "1: 2007/254/14:43:55 | 2: Command Received | 3: SetDigitalOutput(ILLUM_LED_PWR | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 155",
+      "text": "1: 2007/254/14:43:56 | 2: Command Completed | 3: SetDigitalOutput(ILLUM_LED_PWR | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 156",
+      "text": "1: 2007/254/14:44:14 | 2: Starting diagnostic flow | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 157",
+      "text": "1: 2007/254/14:44:15 | 2: Dilution control enabled | 4: 1 | 5: 2020"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 158",
+      "text": "1: 2007/254/14:44:18 | 2: Starting diagnostic flow complete | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 159",
+      "text": "1: 2007/254/14:44:19 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 160",
+      "text": "1: 2007/254/14:46:24 | 2: Entering SecondaryDiagnostic State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 161",
+      "text": "1: 2007/254/14:46:24 | 2: Exhausting at 2.18 LPM | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 162",
+      "text": "1: 2007/254/14:46:24 | 2: Preparing to exhaust aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 163",
+      "text": "1: 2007/254/14:46:27 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 164",
+      "text": "1: 2007/254/14:46:27 | 2: Exhausting aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 165",
+      "text": "1: 2007/254/14:46:30 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 166",
+      "text": "1: 2007/254/14:47:01 | 2: Aging chamber is exhausted | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 167",
+      "text": "1: 2007/254/14:47:02 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 168",
+      "text": "1: 2007/254/14:47:13 | 2: Entering FastPurge State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 169",
+      "text": "1: 2007/254/14:47:15 | 2: Fast purge for 120 seconds | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 170",
+      "text": "1: 2007/254/14:47:29 | 2: Command Received | 3: SetDigitalOutput(12VDC_HTR_ENABLE | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 171",
+      "text": "1: 2007/254/14:47:29 | 2: Command Completed | 3: SetDigitalOutput(12VDC_HTR_ENABLE | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 172",
+      "text": "1: 2007/254/14:47:45 | 2: Dilution control disabled | 4: 1 | 5: 2020"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 173",
+      "text": "1: 2007/254/14:49:15 | 2: Entering SlowPurge State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 174",
+      "text": "1: 2007/254/14:49:16 | 2: Dilution control enabled | 4: 1 | 5: 2020"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 175",
+      "text": "1: 2007/254/14:49:18 | 2: Slow purge for 120 seconds | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 176",
+      "text": "1: 2007/254/14:51:18 | 2: Entering BaselineData State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 177",
+      "text": "1: 2007/254/14:51:19 | 2: Baseline data for 120 seconds | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 178",
+      "text": "1: 2007/254/14:51:19 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 179",
+      "text": "1: 2007/254/14:51:20 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 180",
+      "text": "1: 2007/254/14:53:50 | 2: Starting SAME software... | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 181",
+      "text": "1: 2007/254/14:53:51 | 2: Changed system time | 3: 2007/254/14:53:51 | 4: 5 | 5: 280"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 182",
+      "text": "1: 2007/254/14:53:53 | 2: Getting Version and Checksum... | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 183",
+      "text": "1: 2007/254/14:53:53 | 2: Report of version information | 3: Version:1.0 Checksum:Check Disabled | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 184",
+      "text": "1: 2007/254/14:53:53 | 2: Startup complete | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 185",
+      "text": "1: 2007/254/14:56:09 | 2: Starting SAME software... | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 186",
+      "text": "1: 2007/254/14:56:14 | 2: Changed system time | 3: 2007/254/14:56:14 | 4: 5 | 5: 280"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 187",
+      "text": "1: 2007/254/14:56:16 | 2: Getting Version and Checksum... | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 188",
+      "text": "1: 2007/254/14:56:16 | 2: Report of version information | 3: Version:1.0 Checksum:Check Disabled | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 189",
+      "text": "1: 2007/254/14:56:16 | 2: Startup complete | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 190",
+      "text": "1: 2007/254/14:57:07 | 2: Command Received | 3: Initialize() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 191",
+      "text": "1: 2007/254/14:57:07 | 2: Starting Initialize | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 192",
+      "text": "1: 2007/254/14:57:15 | 2: Initializing CrewInterfacePanel | 4: 5 | 5: 2007"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 193",
+      "text": "1: 2007/254/14:57:15 | 2: CrewInterfacePanel initialized | 4: 5 | 5: 2007"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 194",
+      "text": "1: 2007/254/14:57:15 | 2: Initializing DustTrak at port 5 | 3: DustTrakA | 4: 5 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 195",
+      "text": "1: 2007/254/14:57:15 | 2: DustTrak initialized | 3: DustTrakA | 4: 5 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 196",
+      "text": "1: 2007/254/14:57:15 | 2: Initializing DustTrak at port 8 | 3: DustTrakB | 4: 5 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 197",
+      "text": "1: 2007/254/14:57:16 | 2: DustTrak initialized | 3: DustTrakB | 4: 5 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 198",
+      "text": "1: 2007/254/14:57:16 | 2: Initializing DynamicDilutor | 4: 5 | 5: 2020"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 199",
+      "text": "1: 2007/254/14:57:16 | 2: DynamicDilutor initialized | 4: 5 | 5: 2020"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 200",
+      "text": "1: 2007/254/14:57:16 | 2: Initializing FluidsControlBox | 4: 5 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 201",
+      "text": "1: 2007/254/14:57:16 | 2: Initializing Mass Flow Controller | 4: 1 | 5: 2010"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 202",
+      "text": "1: 2007/254/14:57:17 | 2: Mass Flow Controller initialized | 4: 1 | 5: 2010"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 203",
+      "text": "1: 2007/254/14:57:18 | 2: FluidsControlBox initialized | 4: 5 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 204",
+      "text": "1: 2007/254/14:57:18 | 2: Initializing ISSDetector | 4: 5 | 5: 2011"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 205",
+      "text": "1: 2007/254/14:57:18 | 2: ISSDetector initialized | 4: 5 | 5: 2011"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 206",
+      "text": "1: 2007/254/14:57:18 | 2: Initializing P-Trak | 4: 5 | 5: 2012"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 207",
+      "text": "1: 2007/254/14:57:18 | 2: P-Trak initialized | 4: 5 | 5: 2012"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 208",
+      "text": "1: 2007/254/14:57:18 | 2: Initializing Sample Carousel | 4: 5 | 5: 2013"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 209",
+      "text": "1: 2007/254/14:57:18 | 2: Sample Carousel initialized | 4: 5 | 5: 2013"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 210",
+      "text": "1: 2007/254/14:57:18 | 2: Initializing Sample Heater | 4: 5 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 211",
+      "text": "1: 2007/254/14:57:18 | 2: Sample Heater Initialized | 4: 5 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 212",
+      "text": "1: 2007/254/14:57:18 | 2: Initializing STSDetector | 4: 5 | 5: 2016"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 213",
+      "text": "1: 2007/254/14:57:18 | 2: STSDetector initialized | 4: 5 | 5: 2016"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 214",
+      "text": "1: 2007/254/14:57:18 | 2: Initializing Thermal Precipitator | 4: 5 | 5: 2017"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 215",
+      "text": "1: 2007/254/14:57:18 | 2: Thermal Precipitator initialized | 4: 5 | 5: 2017"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 216",
+      "text": "1: 2007/254/14:57:18 | 2: Initializing Video System | 4: 5 | 5: 2018"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 217",
+      "text": "1: 2007/254/14:57:23 | 2: Error setting camera settings | 3: Exception: Not enough bytes read from camera serial port | 4: 2 | 5: 2018"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 218",
+      "text": "1: 2007/254/14:57:23 | 2: Video System initialized | 4: 5 | 5: 2018"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 219",
+      "text": "1: 2007/254/14:57:23 | 2: Initializing Watchdog Timer | 4: 5 | 5: 2019"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 220",
+      "text": "1: 2007/254/14:57:23 | 2: Watchdog Timer initialized | 4: 5 | 5: 2019"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 221",
+      "text": "1: 2007/254/14:57:23 | 2: Command Completed | 3: Initialize() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 222",
+      "text": "1: 2007/254/14:57:23 | 2: WatchDogTimer Enabled | 4: 1 | 5: 2019"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 223",
+      "text": "1: 2007/254/14:57:40 | 2: Command Received | 3: DownlinkTestParameters(2) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 224",
+      "text": "1: 2007/254/14:57:40 | 2: Command Completed | 3: DownlinkTestParameters(2) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 225",
+      "text": "1: 2007/254/14:58:13 | 2: Command Received | 3: SetHeaterSetpoint(2 | 4: 9239) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 226",
+      "text": "1: 2007/254/14:58:13 | 2: Command Completed | 3: SetHeaterSetpoint(2 | 4: 9239) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 227",
+      "text": "1: 2007/254/14:58:33 | 2: Command Received | 3: SetTestSetup(2 | 4: 509 | 5: 496) | 6: 3 | 7: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 228",
+      "text": "1: 2007/254/14:58:33 | 2: Command Completed | 3: SetTestSetup(2 | 4: 509 | 5: 496) | 6: 3 | 7: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 229",
+      "text": "1: 2007/254/14:59:17 | 2: Command Received | 3: SetSecondaryAgingVolume(2 | 4: 23) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 230",
+      "text": "1: 2007/254/14:59:17 | 2: Command Completed | 3: SetSecondaryAgingVolume(2 | 4: 23) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 231",
+      "text": "1: 2007/254/15:00:00 | 2: Command Received | 3: StartTest(SAMETest | 4: 2) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 232",
+      "text": "1: 2007/254/15:00:01 | 2: Entering Start State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 233",
+      "text": "1: 2007/254/15:00:01 | 2: Manual positioning option in effect | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 234",
+      "text": "1: 2007/254/15:00:01 | 2: Zeroing the LFE | 4: 1 | 5: 2020"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 235",
+      "text": "1: 2007/254/15:00:03 | 2: Command Complete | 3: StartTest(SAMETest | 4: 2) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 236",
+      "text": "1: 2007/254/15:00:03 | 2: Test Started | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 237",
+      "text": "1: 2007/254/15:00:04 | 2: Event occurred. | 3: LowMainGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 238",
+      "text": "1: 2007/254/15:00:06 | 2: Sending file via FTP | 3: /data/2007_254/2007_254_14.hkp | 4: 1 | 5: 314"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 239",
+      "text": "1: 2007/254/15:00:08 | 2: P-Trak turning on and warming up | 4: 1 | 5: 2012"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 240",
+      "text": "1: 2007/254/15:00:10 | 2: DustTrak turning on | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 241",
+      "text": "1: 2007/254/15:00:12 | 2: DustTrak turning on | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 242",
+      "text": "1: 2007/254/15:00:13 | 2: Entering PreConfigure State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 243",
+      "text": "1: 2007/254/15:00:13 | 2: Video recorder powered on | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 244",
+      "text": "1: 2007/254/15:00:13 | 2: Preparing to exhaust aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 245",
+      "text": "1: 2007/254/15:00:14 | 2: Lights! Cameras! | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 246",
+      "text": "1: 2007/254/15:00:16 | 2: Exhausting aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 247",
+      "text": "1: 2007/254/15:00:18 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 248",
+      "text": "1: 2007/254/15:00:19 | 2: Sample Heater offset corrected | 3: Offset(uV)=23.8422 | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 249",
+      "text": "1: 2007/254/15:00:19 | 2: Sample type should be DBP | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 250",
+      "text": "1: 2007/254/15:00:19 | 2: Sample type is confirmed | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 251",
+      "text": "1: 2007/254/15:00:19 | 2: Setting heating parameters | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 252",
+      "text": "1: 2007/254/15:00:19 | 2: Setting heater setpoint to 9239 or 0.881113 Ohms | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 253",
+      "text": "1: 2007/254/15:00:20 | 2: Setting heater duration to 2250 cycles or 60 secs | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 254",
+      "text": "1: 2007/254/15:00:20 | 2: Setting heater PIDs to 15360 | 3: 1536 | 4: 384 | 6: 1 | 7: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 255",
+      "text": "1: 2007/254/15:00:20 | 2: Setting MaxRt to 0.989 Ohms | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 256",
+      "text": "1: 2007/254/15:00:20 | 2: Warning:  Sample was heated 2 time(s) before | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 257",
+      "text": "1: 2007/254/15:00:22 | 2: Video recording started | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 258",
+      "text": "1: 2007/254/15:00:27 | 2: DustTrak serial number is 85200804 | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 259",
+      "text": "1: 2007/254/15:00:28 | 2: Setting DustTrak time constant to 1 second(s) | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 260",
+      "text": "1: 2007/254/15:00:28 | 2: Setting DustTrak date to 09/11/07 | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 261",
+      "text": "1: 2007/254/15:00:28 | 2: Setting DustTrak time to 15:00:28 | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 262",
+      "text": "1: 2007/254/15:00:28 | 2: Aging chamber is exhausted | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 263",
+      "text": "1: 2007/254/15:00:29 | 2: Setting DustTrak analog output range to 100 | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 264",
+      "text": "1: 2007/254/15:00:29 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 265",
+      "text": "1: 2007/254/15:00:30 | 2: DustTrak serial number is 85200796 | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 266",
+      "text": "1: 2007/254/15:00:30 | 2: Setting DustTrak time constant to 1 second(s) | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 267",
+      "text": "1: 2007/254/15:00:30 | 2: Setting DustTrak date to 09/11/07 | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 268",
+      "text": "1: 2007/254/15:00:31 | 2: Setting DustTrak time to 15:00:31 | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 269",
+      "text": "1: 2007/254/15:00:31 | 2: Setting DustTrak analog output range to 100 | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 270",
+      "text": "1: 2007/254/15:00:32 | 2: Video recording stopped | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 271",
+      "text": "1: 2007/254/15:00:40 | 2: Entering Pause State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 272",
+      "text": "1: 2007/254/15:00:40 | 2: Waiting for P-Trak to warmup | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 273",
+      "text": "1: 2007/254/15:00:58 | 2: File sent via FTP | 3: 2007_254_14.hkp | 4: 1 | 5: 314"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 274",
+      "text": "1: 2007/254/15:01:08 | 2: P-Trak warmup complete | 3:  initializing | 5: 1 | 6: 2012"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 275",
+      "text": "1: 2007/254/15:01:08 | 2: Setting P-Trak date to 09/11/07 | 4: 1 | 5: 2012"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 276",
+      "text": "1: 2007/254/15:01:08 | 2: Setting P-Trak time to 15:01:08 | 4: 1 | 5: 2012"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 277",
+      "text": "1: 2007/254/15:01:09 | 2: P-Trak warmed up | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 278",
+      "text": "1: 2007/254/15:01:09 | 2: Test paused at 00:01:05 elapsed test time | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 279",
+      "text": "1: 2007/254/15:01:09 | 2: Paused 20 secs into PreConfigure State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 280",
+      "text": "1: 2007/254/15:02:20 | 2: Command Received | 3: StartTest(SAMETest | 4: 2) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 281",
+      "text": "1: 2007/254/15:02:21 | 2: Command Rejected | 3: A test is already running or paused | 4: 2 | 5: 2003"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 282",
+      "text": "1: 2007/254/15:02:21 | 2: Command Failed | 3: StartTest(SAMETest | 4: 2) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 283",
+      "text": "1: 2007/254/15:02:29 | 2: Command Received | 3: ResumeTest() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 284",
+      "text": "1: 2007/254/15:02:29 | 2: Entering SampleHeating State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 285",
+      "text": "1: 2007/254/15:02:29 | 2: Test Resumed | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 286",
+      "text": "1: 2007/254/15:02:29 | 2: Command Completed | 3: ResumeTest() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 287",
+      "text": "1: 2007/254/15:02:29 | 2: Warning: StartOfVideoRecording was less than zero | 3: /config/test_matrices/same_test_2.txt | 4: 2 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 288",
+      "text": "1: 2007/254/15:02:30 | 2: Starting diagnostic flow | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 289",
+      "text": "1: 2007/254/15:02:31 | 2: Dilution control enabled | 4: 1 | 5: 2020"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 290",
+      "text": "1: 2007/254/15:02:40 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 291",
+      "text": "1: 2007/254/15:02:44 | 2: Starting diagnostic flow complete | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 292",
+      "text": "1: 2007/254/15:02:44 | 2: Waiting for diagnostics with flow warmup | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 293",
+      "text": "1: 2007/254/15:03:08 | 2: Nominal fill rate is 4.70016 LPM | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 294",
+      "text": "1: 2007/254/15:03:08 | 2: Preparing to fill aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 295",
+      "text": "1: 2007/254/15:03:26 | 2: 6 secs before piston moving mark | 4: 1 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 296",
+      "text": "1: 2007/254/15:03:27 | 2: Event occurred. | 3: HighVacuumPressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 297",
+      "text": "1: 2007/254/15:03:28 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 298",
+      "text": "1: 2007/254/15:03:33 | 2: Filling aging chamber... | 4: 1 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 299",
+      "text": "1: 2007/254/15:03:34 | 2: Heater will start in 6 seconds | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 300",
+      "text": "1: 2007/254/15:03:34 | 2: Video recording started | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 301",
+      "text": "1: 2007/254/15:03:39 | 2: Turning on heater now | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 302",
+      "text": "1: 2007/254/15:03:39 | 2: Event clear. | 3: HighVacuumPressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 303",
+      "text": "1: 2007/254/15:04:32 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 304",
+      "text": "1: 2007/254/15:04:35 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 305",
+      "text": "1: 2007/254/15:04:36 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 306",
+      "text": "1: 2007/254/15:04:39 | 2: Heating sequence finished | 3: Nominal finish | 4: 1 | 5: 2015"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 307",
+      "text": "1: 2007/254/15:04:59 | 2: Aging chamber is filled | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 308",
+      "text": "1: 2007/254/15:05:01 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Run 2 GMT254 testlog b, row 309",
+      "text": "1: 2007/254/15:05:12 | 2: Video recording stopped | 3: /conf"
+    }
+  ],
+  "details": {
+    "sheets": [
+      {
+        "name": "sheet Run 2 GMT254 testlog b",
+        "row_count": 309,
+        "column_count": 7,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 0
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 0
+          },
+          {
+            "numeric_count": 2,
+            "min": 1536.0,
+            "max": 1536.0,
+            "blank_count": 121
+          },
+          {
+            "numeric_count": 284,
+            "min": 1.0,
+            "max": 509.0,
+            "blank_count": 3
+          },
+          {
+            "numeric_count": 302,
+            "min": 0.0,
+            "max": 2020.0,
+            "blank_count": 3
+          },
+          {
+            "numeric_count": 30,
+            "min": 1.0,
+            "max": 2012.0,
+            "blank_count": 279
+          },
+          {
+            "numeric_count": 6,
+            "min": 210.0,
+            "max": 2014.0,
+            "blank_count": 303
+          }
+        ],
+        "rows": [
+          [
+            "2007/254/14:27:12",
+            "Command Received",
+            "SetRegistryValue(\"VideoChannel\"",
+            "1)",
+            3,
+            210,
+            null
+          ],
+          [
+            "2007/254/14:27:12",
+            "Command Completed",
+            "SetRegistryValue(\"VideoChannel\"",
+            "1)",
+            3,
+            210,
+            null
+          ],
+          [
+            "2007/254/14:27:32",
+            "Command Received",
+            "Shutdown(Restart)",
+            3,
+            210,
+            null,
+            null
+          ],
+          [
+            "2007/254/14:27:32",
+            "Starting Shutdown",
+            null,
+            5,
+            2001,
+            null,
+            null
+          ],
+          [
+            "2007/254/14:27:32",
+            "Shutting down Watchdog Timer",
+            null,
+            1,
+            2019,
+            null,
+            null
+          ],
+          [
+            "2007/254/14:27:32",
+            "Watchdog Timer Disabled",
+            null,
+            1,
+            2019,
+            null,
+            null
+          ],
+          [
+            "2007/254/14:27:32",
+            "Shutting down Video System",
+            null,
+            1,
+            2018,
+            null,
+            null
+          ],
+          [
+            "2007/254/14:27:32",
+            "Shutting down Thermal Precipitator",
+            null,
+            1,
+            2017,
+            null,
+            null
+          ],
+          [
+            "2007/254/14:27:32",
+            "Shutting down STSDetector",
+            null,
+            1,
+            2016,
+            null,
+            null
+          ],
+          [
+            "2007/254/14:27:32",
+            "Shutting down Sample Heater",
+            null,
+            1,
+            2014,
+            null,
+            null
+          ],
+          [
+            "2007/254/14:28:15",
+            "Starting SAME software...",
+            null,
+            5,
+            2001,
+            null,
+            null
+          ],
+          [
+            "2007/254/14:28:21",
+            "Changed system time",
+            "2007/254/14:28:21",
+            5,
+            280,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      }
+    ]
+  },
+  "warnings": [
+    "Values read from saved workbook; formulas not recalculated."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

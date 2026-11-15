@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:2be8e7655402b01cf267",
+  "study": "PSI-23",
+  "filename": "PSI-23_Presentations_20120015928.pdf",
+  "key": "psi-data/PSI-23/Presentations/PSI-23_Presentations_20120015928.pdf",
+  "category": "Presentations",
+  "size_bytes": 3693275,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841ccb96daf91e274cebd11&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/2be8e7655402b01cf267/PSI-23_Presentations_20120015928.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "635a5f17c2f0d45cc53ffc57bd6bea76c93072b455eb1afd8e1f889310944a26",
+  "status": "downloaded"
+}

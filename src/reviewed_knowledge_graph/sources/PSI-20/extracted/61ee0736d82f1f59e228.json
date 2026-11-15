@@ -1,0 +1,29 @@
+{
+  "id": "res:PSI-20:61ee0736d82f1f59e228",
+  "study": "PSI-20",
+  "filename": "PSI-20_Engineering Documents_S1101MFS0004_rev_A.pdf",
+  "key": "psi-data/PSI-20/Engineering Documents/PSI-20_Engineering Documents_S1101MFS0004_rev_A.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 308670,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8171b4820d736cecc24&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/61ee0736d82f1f59e228/PSI-20_Engineering Documents_S1101MFS0004_rev_A.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "415f24ed91686fa32d96b164d17646be5a1fae1884c25fc2d0b75bb81618d14e",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "0SG68\nE\nS1101MFS0004\nA\n1\n09/29/14\nNONE\n1\n1\nA\nS1101MFS0004\nPNEUMATIC SCHEMATIC\nACME/CIR INTEGRATED\n"
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

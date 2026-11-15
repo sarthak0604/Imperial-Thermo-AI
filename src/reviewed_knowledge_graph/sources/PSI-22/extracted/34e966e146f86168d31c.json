@@ -1,0 +1,89 @@
+{
+  "id": "res:PSI-22:34e966e146f86168d31c",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Lopez-Camara et al 2019 Comprehensive chemical kinetic mechanism for simple hydrocarbon fuels.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Lopez-Camara et al 2019 Comprehensive chemical kinetic mechanism for simple hydrocarbon fuels.pdf",
+  "category": "Presentations",
+  "size_bytes": 1864995,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75c0eb4c08676005575&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/34e966e146f86168d31c/PSI-22_Presentations_Lopez-Camara et al 2019 Comprehensive chemical kinetic mechanism for simple hydrocarbon fuels.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "8c89e61b8352cadd3be2c3c5afff81d42e4af13ed99af354faaa50329d7ab3ca",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Comprehensive chemical kinetic mechanism for simple hydrocarbon \nfuels including important excited and charged species\nC-F. López-Cámara 1\nC. Saggese 2\nW. Pitz 2\nD. Dunn-Rankin 1 \n1University of California at Irvine, Civil and Environmental Engineering Dept., Irvine 92697, California, USA\n2 Lawrence Livermore National Laboratory, Livermore 94550, California, USA\n35th Annual Meeting of the American Society for Gravitational and Space Research\nDenver, CO, USA\nNovember 20-23 2019\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu                                                                    \n1\nAcknowledgements: \nThe National Science Foundation (NSF) with Dr. Prakash Balan as contract monitor for the Non-Academic Research Internship for Graduate Students (INTERN) via grant CBET1605533 for the \ninternship at the Lawrence Livermore National Laboratory (LLNL).\nACME project, supported by NASA’s ISS Research via agreement NNX07AB55A, with Dennis Stocker as contract monitor. \nLLNL-PRES-797100\nThis work was performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under contract DE-AC52-07NA27344. Lawrence Livermore National Security, LLC\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "No E-Field\n1g \nNo E-Field\nµg \nE-Field applied \nµg \nF. B. Carleton & F. J. Weinberg. Nature. Volume 330, p. 635–636 (1987) \n"
+    },
+    {
+      "locator": "page 3",
+      "text": "Introduction\nMinor \nSpecies\nExcited Species\nCH*\nFlame location\nOH*\nHeat release\nCharged \nSpecies\nHCO+, H3O+, e-\nInteract with e-field creating \nion-wind\nMain \nhydrocarbon \nflame \nchemistry \n+\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n3\nComprehensive chemical kinetic mechanism for \nsimple hydrocarbon fuels including important \nexcited and charged species\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Introduction\nLu & Law, PECS 2009\nOur region of interest \n(low number of species)\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n4\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "To build a chemical kinetic model that contains the minor species CH*, OH*, H3O+ and\nHCO+ which trust-worthily predicts non-premixed flame behavior at steady state. The size\nof the model should be small enough to handle e-field 2D simulations.\nGoal\nGoal\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n5\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "Methodology\nFuel model 1 + CH*/OH* 2\n+ e- /ions 3\nDETAILED\nREDUCED\n1. Reduction (PSR)\n2. Validation (Counterflow)\nModel 1\nModel 0\nModel reduction and validation scheme\nChemkin-Pro®\n1The San Diego Mechanism. https://web.eng.ucsd.edu/mae/groups/combustion/mechanism.html\n2 K.T Walsh. PhD Dissertation, Yale University, 2000\n3 Belhi et al. CST 2018\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n6\n1.\nValidation (Counterflow and Jet)\n2.\nValidation (Experiments)\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "Chemi-ionization reaction\nCH + O          HCO+ + e-\n(1)\nMain reactions for hydronium ion (H3O+)\nHCO+ + H2O           CO + H3O+\n(2)\nH3O+ + e-\nH + H2O\n(3)\nMain reactions for chemiluminescence of CH*\nC2H + O2\nCH* + CO2     \n(4)\nC2H + O         CH* + CO\n(5)\nCH         CH* + hν\n(6)\nMain reaction for chemiluminescence of OH*\nCH + O2\nOH* + CO\n(7)\nChemistry of minor species\nMethodology\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n7\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Results\nReduction of UCSD detailed model with CH*/OH* for CH4\nChemkin-Pro® and Workbench\nTargets \nC2H\nH2O\nO\nCH\nO2\nOH\n-----------------------------------------------------------\nKeep species:\nCH4\nC2H\nCO\nH2O\nN2\nO          H3O+\nCH\nCO2\nH\nO2\nHCO+\nCH*\nH2\nOH        e-\nOH*\n% relative tolerance \nMAXIMUM (target \nspecies)\nAbsolute \ntolerance\n#species \n(BEST \nreduction)\n8\n1e-5\n31\nAll target species\nReduced model contains excited \nspecies, chemi-ions and C2H2\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n8\nDetailed model:\n83 species\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "Results\nComparison of detailed and reduced model for CH4\nValidation with detailed model in a Chemkin-Pro® counterflow configuration\nLegend Sub-index\nr: reduced model\nd: detailed model\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n9\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "Results\nComparison of detailed and reduced model for CH4\nValidation with detailed model in a Chemkin-Pro® counterflow configuration\nS\nf\n**\n*\n*\nj*\n*\n*\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n10\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "Results\nComparison of detailed and reduced model for CH4\nValidation with detailed model in a Chemkin-Pro® counterflow configuration\n+5\n5\n+\n+\n+\n5\n5\n5\nc+\n+\n+\ne-\ne-\ne-\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n11\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "289.647 points (144.230 blocks)                                                289.647 points (144.230 blocks)\nEXTRUDED BURNER                                                             JET BURNER\nAll units in [mm] - Meshes and simulations made using OpenFOAM®\nBurner geometries\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n12\n"
+    },
+    {
+      "locator": "page 13",
+      "text": "13\nDrawing not in scale\nBoundary conditions\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n13\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "Results\nComparison of predicted and measured flame location (CH*)\nValidation with experiments using 2D CFD OpenFOAM® simulations\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n14\n[CH*] plot. Extruded geometry - 20sccm\n–– Experiments (Tinajero and Dunn-Rankin, CNF 2019)\n–– RM; LLNL Model 0 (detailed chemical kinetic model)\n–– RM; LLNL Model 1 (reduced chemical kinetic model) \nContour threshold (model): [CH*] = 1e-12\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "Final remarks and future work\nFinal remarks\n• We have built a chemical kinetic model that contains the minor species CH*, OH*, H3O+\nand HCO+ and trust-worthily predicts non-premixed flame behavior at steady state. \nComparison between experimental and numerical results validated the reduced model.\n• Speed up in the simulations without e-field in comparison with detailed model was \nobtained (> x2).\n• The size of the reduced model should be small enough to handle e-field 2D simulations.\nNear-future goals\nValidation of the model\n• Change the burner geometry and repeat the simulation, comparing it to experiments.\n• Check how the methane flame responds to an external applied e-field, comparing it to\nexperiments (at 1g and µg).\nOthers\n• Repeat the mechanism reduction process with an C2H4 detailed model.\nASGSR Annual meeting. Nov 20-23, 2019. clopezca@uci.edu - LLNL-PRES-797100\n15\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Thank you\nDisclaimer\nThis document was prepared as an account of work sponsored by an agency of the United States government. Neither the United \nStates government nor Lawrence Livermore National Security, LLC, nor any of their employees makes any warranty, expressed or \nimplied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, \nproduct, or process disclosed, or represents that its use would not infringe privately owned rights. Reference herein to any specific \ncommercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or \nimply its endorsement, recommendation, or favoring by the United States government or Lawrence Livermore National Security, LLC.\nThe views and opinions of authors expressed herein do not necessarily state or reflect those of the United States government or \nLawrence Livermore National Security, LLC, and shall not be used for advertising or product endorsement purposes.\n"
+    }
+  ],
+  "details": {
+    "page_count": 16,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

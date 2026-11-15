@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-10:cd6fb02acacdca6a3c7d",
+  "study": "PSI-10",
+  "filename": "PSI-10_Experimental table_Flame Design_Normal Flame.csv",
+  "key": "psi-data/PSI-10/Experimental table/PSI-10_Experimental table_Flame Design_Normal Flame.csv",
+  "category": "Experimental table",
+  "size_bytes": 26933,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-10/download?file=691f7eef17f78b371b2705e5&version=1&studyVersion=1&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-10/cd6fb02acacdca6a3c7d/PSI-10_Experimental table_Flame Design_Normal Flame.csv",
+  "sha256": "4a663292bd3f65201943cc71bd661a70383639276a9176f64105b285bf0b6deb",
+  "status": "downloaded"
+}

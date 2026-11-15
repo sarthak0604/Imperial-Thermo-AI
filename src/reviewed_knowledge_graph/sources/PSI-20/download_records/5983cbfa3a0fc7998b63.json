@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:5983cbfa3a0fc7998b63",
+  "study": "PSI-20",
+  "filename": "PSI-20_Presentations_CIR_Paper_59th_IAC_2008.pdf",
+  "key": "psi-data/PSI-20/Presentations/PSI-20_Presentations_CIR_Paper_59th_IAC_2008.pdf",
+  "category": "Presentations",
+  "size_bytes": 2787935,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8181b4820d736cecc2e&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/5983cbfa3a0fc7998b63/PSI-20_Presentations_CIR_Paper_59th_IAC_2008.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "a0189949dc9328a476be4856c05b1547291fd961de7a5e434bd9e2141181106f",
+  "status": "downloaded"
+}

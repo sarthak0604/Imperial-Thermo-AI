@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:adf33efb3bcbf0cf0412",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Swenson et al 2011 Electric field induced convection in microgravity combustion.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Swenson et al 2011 Electric field induced convection in microgravity combustion.pdf",
+  "category": "Presentations",
+  "size_bytes": 573277,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75d0eb4c08676005579&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/adf33efb3bcbf0cf0412/PSI-22_Presentations_Swenson et al 2011 Electric field induced convection in microgravity combustion.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "3f8c275b6c39eaacc8dfb631b658dbee615e574a3cefaf3444210fe404918f08",
+  "status": "downloaded"
+}

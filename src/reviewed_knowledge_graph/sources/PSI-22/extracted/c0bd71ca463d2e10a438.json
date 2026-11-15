@@ -1,0 +1,75 @@
+{
+  "id": "res:PSI-22:c0bd71ca463d2e10a438",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Lopez-Camara et al 2018 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Lopez-Camara et al 2018 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf",
+  "category": "Presentations",
+  "size_bytes": 672846,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75c0eb4c08676005574&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/c0bd71ca463d2e10a438/PSI-22_Presentations_Lopez-Camara et al 2018 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "039b5b68b2686be286fd773f185c59a2e4c1bbd0c2548106a731de923db24fed",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "CH4 –air flame (no co-flow). Fuel velocity of 40 cc/min, 1g. \nDifferent DC electric fields applied. Gradations on scale to the left are 1 mm\n[S. Karnani and D. Dunn-Rankin; CNF 162, 7, July 2015, 2865-2872]\n0kV/cm      0,4kV/cm    0,8kV/cm   1,2kV/cm    1,6kV/cm    2kV/cm\n2,4kV/cm   2,8kV/cm   3,2kV/cm    3,6kV/cm   4kV/cm   4,4kV/cm    4,8kV/cm\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Numerical simulations of laminar nonpremixed\nCH4-Air flames varying buoyancy and applied e-field\nC-F. Lopez-Camara1\nM. Belhi 2\nH. Im 2\nD. Dunn-Rankin 1 \n1King Abdullah University of Science and Technology, Clean Combustion Research Center, Thuwal 23955, KSA\n2University of California at Irvine, Civil and Environmental Engineering Dept., Irvine 92697, California, USA\n34th Annual Meeting of the American Society for Gravitational and Space Research\nBethesda, MD, USA\nOctober 31-November 3 2018\nASGSR Annual meeting. Oct. 31- Nov 3, 2018. clopezca@uci.edu                                                                    \n2\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "• The response of flames to the electric field has strong dependence \non the electrodes geometry (1g and 0g).\n• Experiments show that an applied e-field creates body forces like \ngravity.\n• High-fidelity numerical simulations are needed to provide a deeper \nunderstanding of this observations.\nASGSR Annual meeting. Oct. 31- Nov 3, 2018. clopezca@uci.edu                                                                    \n3\nMotivation\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Understand the laminar nonpremixed CH4-air flame behavior under \n1g and 0g conditions when an axial electric field is applied to the \nflame using three different burner configurations \n(extruded, flush and jet) by using numerical simulations.\nASGSR Annual meeting. Oct. 31- Nov 3, 2018. clopezca@uci.edu                                                                    \n4\nGoal\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "ASGSR Annual meeting. Oct. 31- Nov 3, 2018. clopezca@uci.edu                                                                    \n5\nBurner geometries\n289.647 points (144.230 blocks)          240.327 points (119.660 blocks)         289.647 points (144.230 blocks)\nEXTRUDED BURNER [mm]               FLUSH BURNER [mm]                    JET BURNER [mm]\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "6\nASGSR Annual meeting. Oct. 31- Nov 3, 2018. clopezca@uci.edu                                                                    \n6\nBoundary conditions\nThe chemical kinetic model used was published by M. Belhi et al. [Combust. Theory Modelling, 2017].\nChemical kinetic model\n•\n76 reactions; 25 species\n•\nIncludes positive and negative ions (H3O+, O2\n-, O-, OH-, CHO3\n-, CO3\n-) and electrons.\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "7\nASGSR Annual meeting. Oct. 31- Nov 3, 2018. clopezca@uci.edu                                                                    \n7\n0\n0,5\n1\n1,5\n2\n2,5\n0\n0,5\n1\n1,5\n2\n2,5\n3\nIon Current [μA]\nField Strength [kV/cm]\nNumerical\nExperimental\nResults \nExtruded burner geometry\n*Tinajero et al (CST, 10, 1739–1750)\n*\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "8\nASGSR Annual meeting. Oct. 31- Nov 3, 2018. clopezca@uci.edu                                                                    \n8\nResults \nExtruded burner geometry\n-4947,29V (sat)          -4000V                -3000V                -2000V                -1000V                -500V   \n"
+    },
+    {
+      "locator": "page 9",
+      "text": "9\nASGSR Annual meeting. Oct. 31- Nov 3, 2018. clopezca@uci.edu                                                                    \n9\nResults \nFlush burner geometry\n0\n0,5\n1\n1,5\n2\n2,5\n0\n0,5\n1\n1,5\n2\n2,5\n3\nIon Current [μA]\nField Strength [kV/cm]\nNumerical\nExperimental *\n*Tinajero et al (CST, 10, 1739–1750)\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "10\nASGSR Annual meeting. Oct. 31- Nov 3, 2018. clopezca@uci.edu                                                                    \n10\nResults \nFlush burner geometry\nAt saturation (-4945.83V)\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "•\nThe extruded burner geometry shows an I-V curve similar to the one obtained in the experiments in a 1g \nenvironment. Changes in the boundary condition have to still be performed.\n•\nThe saturation point in the I-V curve obtained using the flush burner geometry simulation is aligning with \nthe one obtained experimentally. The peak of positive charges (H3O+) that reach the upper electrode (anode) \nis displaced from the center, aligning with the experimental observations. However, simulations at sub-\nsaturation regimes show that higher e-fields are needed in the simulation in order to get the same ion \ncurrents (z-direction) than the ones obtained experimentally. This might be caused by the interaction \nbetween burner (positive electrode) and reaction zone. More investigation has to be performed in order to \nclarify this phenomena.\nNext steps:\n•\nDefine why sub-saturation flush burner geometry simulations show that higher electric fields are needed to \nachieve the ion currents obtained experimentally.\n•\nProceed by simulating jet geometry burner flames at 1g.\n•\nProceed by simulating the three burner geometries at 0g.\nASGSR Annual meeting. Oct. 31- Nov 3, 2018. clopezca@uci.edu                                                                    \n11\nSummary\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "Thank you\n"
+    }
+  ],
+  "details": {
+    "page_count": 12,
+    "empty_pages": [
+      12
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

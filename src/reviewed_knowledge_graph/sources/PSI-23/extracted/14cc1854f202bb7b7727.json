@@ -1,0 +1,366 @@
+{
+  "id": "res:PSI-23:14cc1854f202bb7b7727",
+  "study": "PSI-23",
+  "filename": "PSI-23_Experimental table_ACME s-Flame.csv",
+  "key": "psi-data/PSI-23/Experimental table/PSI-23_Experimental table_ACME s-Flame.csv",
+  "category": "Experimental table",
+  "size_bytes": 2456,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=679166d7b7b6ff8e6502c1ca&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/14cc1854f202bb7b7727/PSI-23_Experimental table_ACME s-Flame.csv",
+  "sha256": "16cd10f50bd2e962887c8eb4077e5a9b3e790c78de8e0361c0b77e19300be7cf",
+  "status": "downloaded",
+  "sections": [
+    {
+      "locator": "table, row 1",
+      "text": "1: Test Type | 2: Test Day* | 3: Year | 4: Month | 5: Date | 6: Atmosphere* | 7: Fuel Bottle | 8: Flames Ignited* | 9: Notes"
+    },
+    {
+      "locator": "table, row 2",
+      "text": "1: First round of tests with nitrogen-diluted fuel and oxygen | 2: 19254 | 3: 2019 | 4: Sept. | 5: 11 | 6: ~21% O2 with N2 | 7: 50% C2H4 with N2 | 8: 13 | 9: *Test Day is formatted YYDDD where YY identfies year and DDD identifies day of year (GMT). "
+    },
+    {
+      "locator": "table, row 3",
+      "text": "1: First round of tests with nitrogen-diluted fuel and oxygen | 2: 19256 | 3: 2019 | 4: Sept. | 5: 13 | 6: ~21% O2 with N3 | 7: 50% C2H4 with N3 | 8: 16 | 9: *Atmosphere is ~1 atm but pressure increases and O2% drops with vitiation."
+    },
+    {
+      "locator": "table, row 4",
+      "text": "1: First round of tests with nitrogen-diluted fuel and oxygen | 2: 19304 | 3: 2019 | 4: Oct. | 5: 31 | 6: ~21% O2 with N4 | 7: 45% CH4 with N2 | 8: 9 | 9: *Flames Ignited is the number ignited on that day (neglecting the day change on ISS)."
+    },
+    {
+      "locator": "table, row 5",
+      "text": "1: First round of tests with nitrogen-diluted fuel and oxygen | 2: 19308 | 3: 2019 | 4: Nov. | 5: 4 | 6: ~30% O2 with N2 | 7: 45% CH4 with N3 | 8: 21"
+    },
+    {
+      "locator": "table, row 6",
+      "text": "1: First round of tests with nitrogen-diluted fuel and oxygen | 2: 19352 | 3: 2019 | 4: Dec. | 5: 18 | 6: ~21% O2 with N2 | 7: 100% H2 | 8: 10"
+    },
+    {
+      "locator": "table, row 7",
+      "text": "1: First round of tests with nitrogen-diluted fuel and oxygen | 2: 20006 | 3: 2020 | 4: Jan. | 5: 6 | 6: ~21% O2 with N3 | 7: 44.4% H2 with CH4 | 8: 17"
+    },
+    {
+      "locator": "table, row 8",
+      "text": "1: First round of tests with nitrogen-diluted fuel and oxygen | 2: 20013 | 3: 2020 | 4: Jan. | 5: 13 | 6: ~21% O2 with N4 | 7: 66.7% H2 with CH4 | 8: 22"
+    },
+    {
+      "locator": "table, row 9",
+      "text": "1: First round of tests with nitrogen-diluted fuel and oxygen | 2: 20024 | 3: 2020 | 4: Jan. | 5: 24 | 6: ~21% O2 with N5 | 7: 100% H2 | 8: 16"
+    },
+    {
+      "locator": "table, row 10",
+      "text": "1: First round of tests with nitrogen-diluted fuel and oxygen | 2: 20029 | 3: 2020 | 4: Jan. | 5: 29 | 6: ~21% O2 with N6 | 7: 50% C2H4 with N2 | 8: 21"
+    },
+    {
+      "locator": "table, row 11",
+      "text": "1: First round of tests with nitrogen-diluted fuel and oxygen | 2: 20132 | 3: 2020 | 4: May | 5: 11 | 6: ~21% O2 with He | 7: 25% H2, 20% CH4, with He | 8: 7"
+    },
+    {
+      "locator": "table, row 12",
+      "text": "1: Second round of tests with helium-diluted fuel and oxygen | 2: 20136 | 3: 2020 | 4: May | 5: 15 | 6: ~21% O2 with He | 7: 20% H2, 25% CH4, with He | 8: 11"
+    },
+    {
+      "locator": "table, row 13",
+      "text": "1: Second round of tests with helium-diluted fuel and oxygen | 2: 20142 | 3: 2020 | 4: May | 5: 21 | 6: ~30% O2 with He | 7: 30% H2, 15% CH4, with He | 8: 17"
+    },
+    {
+      "locator": "table, row 14",
+      "text": "1: Second round of tests with helium-diluted fuel and oxygen | 2: 20155 | 3: 2020 | 4: June | 5: 3 | 6: ~30% and ~21% O2 with He | 7: 45% H2 with He | 8: 9"
+    },
+    {
+      "locator": "table, row 15",
+      "text": "1: Second round of tests with helium-diluted fuel and oxygen | 2: 20160 | 3: 2020 | 4: June | 5: 8 | 6: ~30% and ~21% O2 with He | 7: 45% CH4 with He | 8: 12"
+    },
+    {
+      "locator": "table, row 16",
+      "text": "1: Second round of tests with helium-diluted fuel and oxygen | 2: 20164 | 3: 2020 | 4: June | 5: 12 | 6: ~30% O2 with He | 7: 20% C2H4 with He | 8: 11"
+    },
+    {
+      "locator": "table, row 17",
+      "text": "1: Second round of tests with helium-diluted fuel and oxygen | 2: 20170 | 3: 2020 | 4: June | 5: 18 | 6: ~30% and ~21% O2 with He | 7: 25% C2H4 with He | 8: 20"
+    },
+    {
+      "locator": "table, row 18",
+      "text": "1: Second round of tests with helium-diluted fuel and oxygen | 2: 20176 | 3: 2020 | 4: June | 5: 24 | 6: ~30% and ~21% O2 with He | 7: 30% C2H4 with He | 8: 23"
+    },
+    {
+      "locator": "table, row 19",
+      "text": "1: Second round of tests with helium-diluted fuel and oxygen | 2: 20190 | 3: 2020 | 4: July | 5: 8 | 6: ~30% and ~21% O2 with He | 7: 35% H2 with He | 8: 21"
+    }
+  ],
+  "details": {
+    "name": "table",
+    "row_count": 19,
+    "column_count": 9,
+    "column_statistics": [
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 18,
+        "min": 19254.0,
+        "max": 20190.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 18,
+        "min": 2019.0,
+        "max": 2020.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 18,
+        "min": 3.0,
+        "max": 31.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 18,
+        "min": 7.0,
+        "max": 23.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 15
+      }
+    ],
+    "rows": [
+      [
+        "Test Type",
+        "Test Day*",
+        "Year",
+        "Month",
+        "Date",
+        "Atmosphere*",
+        "Fuel Bottle",
+        "Flames Ignited*",
+        "Notes"
+      ],
+      [
+        "First round of tests with nitrogen-diluted fuel and oxygen",
+        "19254",
+        "2019",
+        "Sept.",
+        "11",
+        "~21% O2 with N2",
+        "50% C2H4 with N2",
+        "13",
+        "*Test Day is formatted YYDDD where YY identfies year and DDD identifies day of year (GMT). "
+      ],
+      [
+        "First round of tests with nitrogen-diluted fuel and oxygen",
+        "19256",
+        "2019",
+        "Sept.",
+        "13",
+        "~21% O2 with N3",
+        "50% C2H4 with N3",
+        "16",
+        "*Atmosphere is ~1 atm but pressure increases and O2% drops with vitiation."
+      ],
+      [
+        "First round of tests with nitrogen-diluted fuel and oxygen",
+        "19304",
+        "2019",
+        "Oct.",
+        "31",
+        "~21% O2 with N4",
+        "45% CH4 with N2",
+        "9",
+        "*Flames Ignited is the number ignited on that day (neglecting the day change on ISS)."
+      ],
+      [
+        "First round of tests with nitrogen-diluted fuel and oxygen",
+        "19308",
+        "2019",
+        "Nov.",
+        "4",
+        "~30% O2 with N2",
+        "45% CH4 with N3",
+        "21",
+        ""
+      ],
+      [
+        "First round of tests with nitrogen-diluted fuel and oxygen",
+        "19352",
+        "2019",
+        "Dec.",
+        "18",
+        "~21% O2 with N2",
+        "100% H2",
+        "10",
+        ""
+      ],
+      [
+        "First round of tests with nitrogen-diluted fuel and oxygen",
+        "20006",
+        "2020",
+        "Jan.",
+        "6",
+        "~21% O2 with N3",
+        "44.4% H2 with CH4",
+        "17",
+        ""
+      ],
+      [
+        "First round of tests with nitrogen-diluted fuel and oxygen",
+        "20013",
+        "2020",
+        "Jan.",
+        "13",
+        "~21% O2 with N4",
+        "66.7% H2 with CH4",
+        "22",
+        ""
+      ],
+      [
+        "First round of tests with nitrogen-diluted fuel and oxygen",
+        "20024",
+        "2020",
+        "Jan.",
+        "24",
+        "~21% O2 with N5",
+        "100% H2",
+        "16",
+        ""
+      ],
+      [
+        "First round of tests with nitrogen-diluted fuel and oxygen",
+        "20029",
+        "2020",
+        "Jan.",
+        "29",
+        "~21% O2 with N6",
+        "50% C2H4 with N2",
+        "21",
+        ""
+      ],
+      [
+        "First round of tests with nitrogen-diluted fuel and oxygen",
+        "20132",
+        "2020",
+        "May",
+        "11",
+        "~21% O2 with He",
+        "25% H2, 20% CH4, with He",
+        "7",
+        ""
+      ],
+      [
+        "Second round of tests with helium-diluted fuel and oxygen",
+        "20136",
+        "2020",
+        "May",
+        "15",
+        "~21% O2 with He",
+        "20% H2, 25% CH4, with He",
+        "11",
+        ""
+      ],
+      [
+        "Second round of tests with helium-diluted fuel and oxygen",
+        "20142",
+        "2020",
+        "May",
+        "21",
+        "~30% O2 with He",
+        "30% H2, 15% CH4, with He",
+        "17",
+        ""
+      ],
+      [
+        "Second round of tests with helium-diluted fuel and oxygen",
+        "20155",
+        "2020",
+        "June",
+        "3",
+        "~30% and ~21% O2 with He",
+        "45% H2 with He",
+        "9",
+        ""
+      ],
+      [
+        "Second round of tests with helium-diluted fuel and oxygen",
+        "20160",
+        "2020",
+        "June",
+        "8",
+        "~30% and ~21% O2 with He",
+        "45% CH4 with He",
+        "12",
+        ""
+      ],
+      [
+        "Second round of tests with helium-diluted fuel and oxygen",
+        "20164",
+        "2020",
+        "June",
+        "12",
+        "~30% O2 with He",
+        "20% C2H4 with He",
+        "11",
+        ""
+      ],
+      [
+        "Second round of tests with helium-diluted fuel and oxygen",
+        "20170",
+        "2020",
+        "June",
+        "18",
+        "~30% and ~21% O2 with He",
+        "25% C2H4 with He",
+        "20",
+        ""
+      ],
+      [
+        "Second round of tests with helium-diluted fuel and oxygen",
+        "20176",
+        "2020",
+        "June",
+        "24",
+        "~30% and ~21% O2 with He",
+        "30% C2H4 with He",
+        "23",
+        ""
+      ],
+      [
+        "Second round of tests with helium-diluted fuel and oxygen",
+        "20190",
+        "2020",
+        "July",
+        "8",
+        "~30% and ~21% O2 with He",
+        "35% H2 with He",
+        "21",
+        ""
+      ]
+    ],
+    "all_rows_retained": true
+  },
+  "warnings": [],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

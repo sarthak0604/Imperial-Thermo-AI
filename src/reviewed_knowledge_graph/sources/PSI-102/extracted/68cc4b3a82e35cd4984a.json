@@ -1,0 +1,31 @@
+{
+  "id": "res:PSI-102:68cc4b3a82e35cd4984a",
+  "study": "PSI-102",
+  "filename": "PSI-102_Engineering Documents_60089MFHA432-A Kapton Ignitor Wire Coil Assembly.pdf",
+  "key": "psi-data/PSI-102/Engineering Documents/PSI-102_Engineering Documents_60089MFHA432-A Kapton Ignitor Wire Coil Assembly.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 169403,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d54f91ab4427dbf4447&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/68cc4b3a82e35cd4984a/PSI-102_Engineering Documents_60089MFHA432-A Kapton Ignitor Wire Coil Assembly.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "a53dbcd2f46d350ab99b2cc46f4316c29ddf4f139534ac1673d88a0f18609cd3",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": ""
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": [
+      1
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "no_text",
+  "review_status": "not_yet_reviewed"
+}

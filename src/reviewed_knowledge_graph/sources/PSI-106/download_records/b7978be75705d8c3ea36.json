@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-106:b7978be75705d8c3ea36",
+  "study": "PSI-106",
+  "filename": "PSI-106_metadata_PSI-174_SLICE.zip",
+  "key": "psi-data/PSI-106/metadata/PSI-106_metadata_PSI-174_SLICE.zip",
+  "category": "metadata",
+  "size_bytes": 8743,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-106/download?file=67a4e6f009ed061032c19846&version=3&studyVersion=3&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-106/b7978be75705d8c3ea36/PSI-106_metadata_PSI-174_SLICE.zip",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "a3e2c30f0e6f379599638534571de281f504abbc407c3058f86a411df5008550",
+  "status": "downloaded"
+}

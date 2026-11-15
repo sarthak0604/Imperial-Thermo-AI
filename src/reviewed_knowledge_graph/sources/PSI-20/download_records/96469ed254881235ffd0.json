@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:96469ed254881235ffd0",
+  "study": "PSI-20",
+  "filename": "PSI-20_Presentations_AIAA_presentation_-_ACME_on_the_ISS_Jan2012.pdf",
+  "key": "psi-data/PSI-20/Presentations/PSI-20_Presentations_AIAA_presentation_-_ACME_on_the_ISS_Jan2012.pdf",
+  "category": "Presentations",
+  "size_bytes": 4459532,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8181b4820d736cecc2d&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/96469ed254881235ffd0/PSI-20_Presentations_AIAA_presentation_-_ACME_on_the_ISS_Jan2012.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "0e855df50394f18143e468a01ba99520eaf69ad7d2ec333400b20e2ccb9f975e",
+  "status": "downloaded"
+}

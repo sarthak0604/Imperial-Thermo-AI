@@ -1,0 +1,2864 @@
+{
+  "schema_version": "1.0.0",
+  "graph_id": "reviewed:PSI-117",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+  "generated_at": "2026-11-15T15:05:40.118169+00:00",
+  "nodes": [
+    {
+      "id": "concept:5025809325544eea90ab",
+      "type": "Concept",
+      "properties": {
+        "name": "Flame extinction",
+        "synonyms": [
+          "quenching"
+        ],
+        "description": "Termination of combustion under specified chemical and transport conditions."
+      }
+    },
+    {
+      "id": "concept:35535626a8d65275af49",
+      "type": "Concept",
+      "properties": {
+        "name": "Flame oscillations",
+        "synonyms": [
+          "pulsating flames"
+        ],
+        "description": "Time-dependent oscillation of flame structure or burning behavior."
+      }
+    },
+    {
+      "id": "inv:PSI-117",
+      "type": "Investigation",
+      "properties": {
+        "title": "Effect of External Thermo-Convective Perturbation on Cool Flame Dynamics: A Multidimensional Multi-Physics CFD Analysis",
+        "summary": "Ground-based computational investigation of thermo-convective perturbations to droplet cool flames, using NASA FLEX flight observations for comparison. The deposited data cover oscillatory and stable cool flames, extinction, multistage combustion and radiative behavior. Numerical predictions are distinct from the underlying flight measurements.",
+        "keywords": [
+          "Cool flames",
+          "Droplet combustion",
+          "Flame extinction",
+          "Flame oscillations",
+          "Computational combustion",
+          "Thermal radiation"
+        ],
+        "doi": "10.60555/gz0q-b577",
+        "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117"
+      }
+    },
+    {
+      "id": "exp:PSI-117:campaign",
+      "type": "Experiment",
+      "properties": {
+        "title": "PSI-117 — investigation-level study",
+        "summary": "Ground-based computational investigation of thermo-convective perturbations to droplet cool flames, using NASA FLEX flight observations for comparison. The deposited data cover oscillatory and stable cool flames, extinction, multistage combustion and radiative behavior. Numerical predictions are distinct from the underlying flight measurements.",
+        "keywords": [
+          "Cool flames",
+          "Droplet combustion",
+          "Flame extinction",
+          "Flame oscillations",
+          "Computational combustion",
+          "Thermal radiation"
+        ],
+        "conditions": {
+          "record_kind": "investigation_campaign",
+          "project_type": "Ground Investigation",
+          "hardware": null,
+          "flight_program_as_reported": null,
+          "scope": "Study-level description; not a single physical test.",
+          "observations_vs_objectives": "Metadata objectives and hypotheses are not treated as measured findings."
+        },
+        "methods": [
+          "OpenFOAM computational fluid dynamics",
+          "Low-temperature chemical kinetics",
+          "Comparison with FLEX flight observations"
+        ],
+        "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117"
+      }
+    },
+    {
+      "id": "concept:d20dd852123e56c05aa0",
+      "type": "Concept",
+      "properties": {
+        "name": "Cool flames",
+        "synonyms": [
+          "low-temperature combustion"
+        ],
+        "description": "Low-temperature combustion associated with fuel oxidation chemistry."
+      }
+    },
+    {
+      "id": "concept:426826b05a44d46ad079",
+      "type": "Concept",
+      "properties": {
+        "name": "Droplet combustion",
+        "synonyms": [],
+        "description": "Combustion involving isolated or interacting liquid-fuel droplets."
+      }
+    },
+    {
+      "id": "concept:eddc9a87b3c6e77ae255",
+      "type": "Concept",
+      "properties": {
+        "name": "Computational combustion",
+        "synonyms": [
+          "CFD"
+        ],
+        "description": "Numerical modeling of reacting flow, heat transfer and chemical kinetics."
+      }
+    },
+    {
+      "id": "concept:2af2f3179537765342ce",
+      "type": "Concept",
+      "properties": {
+        "name": "Thermal radiation",
+        "synonyms": [
+          "radiative heat transfer"
+        ],
+        "description": "Radiant transfer of energy from flame, soot or heated surfaces."
+      }
+    },
+    {
+      "id": "var:54390b2e315eb1179cdf",
+      "type": "Variable",
+      "properties": {
+        "name": "Ignition delay",
+        "symbol": null,
+        "unit": null,
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "var:5ec29a93795f01f730bb",
+      "type": "Variable",
+      "properties": {
+        "name": "Oscillation frequency",
+        "symbol": null,
+        "unit": null,
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "var:345c9405719f9d569637",
+      "type": "Variable",
+      "properties": {
+        "name": "Extinction diameter",
+        "symbol": null,
+        "unit": null,
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "res:PSI-117:301cfafe86e0ac8ee3cb",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+        "filename": "PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+        "resource_type": "Analyzed Data",
+        "file_format": "csv",
+        "summary": "Experimental and model histories include squared droplet diameter, flame diameter and radiant power with separate time axes. The source labels model cases as 1 atm with initial diameter 4 mm. Independent column groups must be aligned by their time coordinate, not by file row.",
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43e9&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "reviewed_selected_sections",
+        "size_bytes": 44107
+      }
+    },
+    {
+      "id": "res:PSI-117:f409efe402a52ef2997c",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Analyzed Data_MST_2024_Dext.csv",
+        "filename": "PSI-117_Analyzed Data_MST_2024_Dext.csv",
+        "resource_type": "Analyzed Data",
+        "file_format": "csv",
+        "summary": "The source separates model pressure and hot/cool extinction columns from an experimental pressure and cool-extinction series. Unequal counts are retained; no one-to-one experimental/model matching is inferred from row order.",
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43eb&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "reviewed_selected_sections",
+        "size_bytes": 372
+      }
+    },
+    {
+      "id": "res:PSI-117:c0fa0f37fbb4a7de83e3",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+        "filename": "PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+        "resource_type": "Analyzed Data",
+        "file_format": "csv",
+        "summary": "The source provides separate experimental and model pressure/burning-rate series. The model header specifies mm²/s; the experimental Kavg_CF column does not repeat a unit. Its unit is left unresolved in this graph rather than silently borrowed.",
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ea&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "reviewed_selected_sections",
+        "size_bytes": 518
+      }
+    },
+    {
+      "id": "res:PSI-117:c28c78768598564facd0",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Analyzed Data_MST_2024_Radiance_Flame_Diameter.csv",
+        "filename": "PSI-117_Analyzed Data_MST_2024_Radiance_Flame_Diameter.csv",
+        "resource_type": "Analyzed Data",
+        "file_format": "csv",
+        "summary": "Experimental groups are labelled 0.5 atm and 5 atm with distinct initial diameters. Simulation groups provide radiant power, flame diameter and peak temperature. The source uses Radiance for quantities labelled W; this graph preserves that label but does not reinterpret W as spectral radiance.",
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ec&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "reviewed_selected_sections",
+        "size_bytes": 82277
+      }
+    },
+    {
+      "id": "res:PSI-117:fa89e42288d0880cd576",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+        "filename": "PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+        "resource_type": "Analyzed Data",
+        "file_format": "csv",
+        "summary": "Numerical time history for the oscillatory cool-flame case with diameter, burning rate, peak gas temperature and stand-off ratios. The first data row starts at 0.5 mm. Gas-composition entries in the accompanying index mix fractions and percentages and should not be normalized without the corresponding presentation.",
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e5&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "reviewed_selected_sections",
+        "size_bytes": 37138
+      }
+    },
+    {
+      "id": "res:PSI-117:9c417cfd66cc5c142270",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Analyzed Data_PROCI_2019_Stable_Cool.csv",
+        "filename": "PSI-117_Analyzed Data_PROCI_2019_Stable_Cool.csv",
+        "resource_type": "Analyzed Data",
+        "file_format": "csv",
+        "summary": "Numerical time history containing droplet diameter, burning rate, peak gas temperature and flame stand-off ratios. Initial diameter in the first data row is 0.5 mm. This is a provided simulation series, not an additional flight run.",
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e7&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "reviewed_selected_sections",
+        "size_bytes": 15477
+      }
+    },
+    {
+      "id": "res:PSI-117:3c69bbed73f148eba760",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+        "filename": "PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+        "resource_type": "Analyzed Data",
+        "file_format": "csv",
+        "summary": "Parallel experimental and simulation series for C7, C10 and C12 fuels, with initial diameter and hot/cool extinction diameters. Columns labelled Expt and Sim remain distinct; missing cells and reported zero values are not treated as interchangeable.",
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "reviewed_selected_sections",
+        "size_bytes": 745
+      }
+    },
+    {
+      "id": "res:PSI-117:19d0a5a2326d4ff5c080",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+        "filename": "PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+        "resource_type": "Analyzed Data",
+        "file_format": "csv",
+        "summary": "Separate experimental and model hot/cool extinction-diameter series indexed by pressure in atm. Additional columns provide upper and lower cool-flame error-bar values. The independent series have unequal lengths and are not joined merely by row number.",
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e6&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "reviewed_selected_sections",
+        "size_bytes": 449
+      }
+    },
+    {
+      "id": "res:PSI-117:ac1824d10db2a04fa867",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+        "filename": "PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+        "resource_type": "Analyzed Data",
+        "file_format": "csv",
+        "summary": "The file places experimental dimensionless-time series, flame dimensions and radiance beside simulation time, droplet diameter, burning rate and peak temperature. Each time axis belongs to its own adjacent series. Experimental and simulation columns are not interchangeable.",
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e8&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "reviewed_selected_sections",
+        "size_bytes": 89130
+      }
+    },
+    {
+      "id": "res:PSI-117:a79899507b0332ece2ea",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+        "filename": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+        "resource_type": "Analyzed Data",
+        "file_format": "xlsx",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e3&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "text_extracted_unreviewed",
+        "size_bytes": 11059
+      }
+    },
+    {
+      "id": "res:PSI-117:0ae76d77b80d7677dc6c",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_metadata_NEWID-13_Effect of External T.zip",
+        "filename": "PSI-117_metadata_NEWID-13_Effect of External T.zip",
+        "resource_type": "metadata",
+        "file_format": "zip",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43de&version=2&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "text_extracted_unreviewed",
+        "size_bytes": 10382
+      }
+    },
+    {
+      "id": "res:PSI-117:8f99f24f48bb7f642d39",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+        "filename": "PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+        "resource_type": "Presentations",
+        "file_format": "pdf",
+        "summary": "The presentation compares n-heptane, n-decane and n-dodecane simulations with droplet observations. It reports stronger cool-flame reactivity and smaller extinction diameters for longer n-alkanes in the investigated cases. For n-dodecane, pressure changes lead from two-stage burning toward multicycle and warm-flame behavior. Numerical cases and measured comparisons are kept distinct; these trends are conditional on the stated model, fuel and ambient conditions.",
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "reviewed_selected_sections",
+        "size_bytes": 11802360
+      }
+    },
+    {
+      "id": "res:PSI-117:5c71c3e87407e09999b1",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+        "filename": "PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+        "resource_type": "Presentations",
+        "file_format": "pdf",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e1&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "text_extracted_unreviewed",
+        "size_bytes": 8994674
+      }
+    },
+    {
+      "id": "res:PSI-117:5f691a93f1c9c415d222",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+        "filename": "PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+        "resource_type": "Presentations",
+        "file_format": "pdf",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43df&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "text_extracted_unreviewed",
+        "size_bytes": 10786102
+      }
+    },
+    {
+      "id": "res:PSI-117:8d6ecc3d62315e27ecb7",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+        "filename": "PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+        "resource_type": "Presentations",
+        "file_format": "pdf",
+        "summary": "The presentation reports numerical n-heptane cases in which helium exchange at elevated pressure changes the intermediate and cool burning stages. It describes n-dodecane observations as supporting a prior prediction of three-stage behavior. The warm and cool stages involve different low-temperature kinetic balances; model examples are not represented as additional ISS runs.",
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e2&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "reviewed_selected_sections",
+        "size_bytes": 30873451
+      }
+    },
+    {
+      "id": "res:PSI-117:46f8bcee08a730c949c7",
+      "type": "Resource",
+      "properties": {
+        "title": "PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf",
+        "filename": "PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf",
+        "resource_type": "Reports",
+        "file_format": "pdf",
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ed&version=1&studyVersion=2&redirect=true",
+        "storage_uri": null,
+        "access_status": "text_extracted_unreviewed",
+        "size_bytes": 8072629
+      }
+    },
+    {
+      "id": "exp:PSI-117:review:b65c2ad0ff822720ae49",
+      "type": "Experiment",
+      "properties": {
+        "title": "PSI-117: modeled extinction trends in n-alkane droplets",
+        "summary": "The presentation compares n-heptane, n-decane and n-dodecane simulations with droplet observations. It reports stronger cool-flame reactivity and smaller extinction diameters for longer n-alkanes in the investigated cases. For n-dodecane, pressure changes lead from two-stage burning toward multicycle and warm-flame behavior. Numerical cases and measured comparisons are kept distinct; these trends are conditional on the stated model, fuel and ambient conditions.",
+        "keywords": [
+          "Cool flames",
+          "Flame extinction",
+          "Computational combustion"
+        ],
+        "conditions": {
+          "record_kind": "documented_scientific_study",
+          "study_kind": "simulation_with_experimental_comparison"
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true"
+      }
+    },
+    {
+      "id": "var:5bf4457880c3ae96ee23",
+      "type": "Variable",
+      "properties": {
+        "name": "Extinction diameter",
+        "symbol": null,
+        "unit": "mm",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "var:e6a384167ae2a2142da1",
+      "type": "Variable",
+      "properties": {
+        "name": "Peak gas temperature",
+        "symbol": null,
+        "unit": "K",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "exp:PSI-117:review:b03febfb6220aba751cb",
+      "type": "Experiment",
+      "properties": {
+        "title": "PSI-117: hot, warm and cool droplet-combustion stages",
+        "summary": "The presentation reports numerical n-heptane cases in which helium exchange at elevated pressure changes the intermediate and cool burning stages. It describes n-dodecane observations as supporting a prior prediction of three-stage behavior. The warm and cool stages involve different low-temperature kinetic balances; model examples are not represented as additional ISS runs.",
+        "keywords": [
+          "Cool flames",
+          "Droplet combustion",
+          "Computational combustion"
+        ],
+        "conditions": {
+          "record_kind": "documented_scientific_study",
+          "study_kind": "simulation_with_experimental_comparison"
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e2&version=1&studyVersion=2&redirect=true"
+      }
+    },
+    {
+      "id": "var:84541f911628b262a3b2",
+      "type": "Variable",
+      "properties": {
+        "name": "Flame temperature",
+        "symbol": null,
+        "unit": "K",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "exp:PSI-117:review:04dee17f661d3639201f",
+      "type": "Experiment",
+      "properties": {
+        "title": "Stable cool-flame numerical history",
+        "summary": "Numerical time history containing droplet diameter, burning rate, peak gas temperature and flame stand-off ratios. Initial diameter in the first data row is 0.5 mm. This is a provided simulation series, not an additional flight run.",
+        "keywords": [
+          "Cool flames",
+          "Droplet combustion"
+        ],
+        "conditions": {
+          "record_kind": "documented_scientific_study",
+          "study_kind": "provided_data_series"
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e7&version=1&studyVersion=2&redirect=true"
+      }
+    },
+    {
+      "id": "var:ae7ed8a9860af25831ca",
+      "type": "Variable",
+      "properties": {
+        "name": "Droplet diameter",
+        "symbol": null,
+        "unit": "mm",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "var:2e030493296453be2052",
+      "type": "Variable",
+      "properties": {
+        "name": "Burning rate",
+        "symbol": null,
+        "unit": "mm²/s",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "exp:PSI-117:review:548751947988f8f0e87b",
+      "type": "Experiment",
+      "properties": {
+        "title": "Oscillatory cool-flame numerical history",
+        "summary": "Numerical time history for the oscillatory cool-flame case with diameter, burning rate, peak gas temperature and stand-off ratios. The first data row starts at 0.5 mm. Gas-composition entries in the accompanying index mix fractions and percentages and should not be normalized without the corresponding presentation.",
+        "keywords": [
+          "Cool flames",
+          "Droplet combustion"
+        ],
+        "conditions": {
+          "record_kind": "documented_scientific_study",
+          "study_kind": "provided_data_series"
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e5&version=1&studyVersion=2&redirect=true"
+      }
+    },
+    {
+      "id": "exp:PSI-117:review:f9b409eb94a24b42893a",
+      "type": "Experiment",
+      "properties": {
+        "title": "Alkane extinction-diameter comparison",
+        "summary": "Parallel experimental and simulation series for C7, C10 and C12 fuels, with initial diameter and hot/cool extinction diameters. Columns labelled Expt and Sim remain distinct; missing cells and reported zero values are not treated as interchangeable.",
+        "keywords": [
+          "Cool flames",
+          "Droplet combustion"
+        ],
+        "conditions": {
+          "record_kind": "documented_scientific_study",
+          "study_kind": "provided_data_series"
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true"
+      }
+    },
+    {
+      "id": "var:8b3a0e89715b76fa40a9",
+      "type": "Variable",
+      "properties": {
+        "name": "Initial droplet diameter",
+        "symbol": null,
+        "unit": null,
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "var:737a619ba97569e6c52b",
+      "type": "Variable",
+      "properties": {
+        "name": "Hot-flame extinction diameter",
+        "symbol": null,
+        "unit": null,
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "var:9a297303f894fc1bee73",
+      "type": "Variable",
+      "properties": {
+        "name": "Cool-flame extinction diameter",
+        "symbol": null,
+        "unit": null,
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "exp:PSI-117:review:3006ee6c4c2c298faff9",
+      "type": "Experiment",
+      "properties": {
+        "title": "Dodecane extinction versus pressure",
+        "summary": "Separate experimental and model hot/cool extinction-diameter series indexed by pressure in atm. Additional columns provide upper and lower cool-flame error-bar values. The independent series have unequal lengths and are not joined merely by row number.",
+        "keywords": [
+          "Cool flames",
+          "Droplet combustion"
+        ],
+        "conditions": {
+          "record_kind": "documented_scientific_study",
+          "study_kind": "provided_data_series"
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e6&version=1&studyVersion=2&redirect=true"
+      }
+    },
+    {
+      "id": "var:6c47da97cdee757b5f80",
+      "type": "Variable",
+      "properties": {
+        "name": "Pressure",
+        "symbol": null,
+        "unit": "atm",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "exp:PSI-117:review:b21b3ef5174c6c70f662",
+      "type": "Experiment",
+      "properties": {
+        "title": "Three-stage experimental and simulated histories",
+        "summary": "The file places experimental dimensionless-time series, flame dimensions and radiance beside simulation time, droplet diameter, burning rate and peak temperature. Each time axis belongs to its own adjacent series. Experimental and simulation columns are not interchangeable.",
+        "keywords": [
+          "Cool flames",
+          "Droplet combustion"
+        ],
+        "conditions": {
+          "record_kind": "documented_scientific_study",
+          "study_kind": "provided_data_series"
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e8&version=1&studyVersion=2&redirect=true"
+      }
+    },
+    {
+      "id": "var:2159757fb908c7693d1d",
+      "type": "Variable",
+      "properties": {
+        "name": "Flame diameter",
+        "symbol": null,
+        "unit": "mm",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "exp:PSI-117:review:a7529dfb03d88b39e8b5",
+      "type": "Experiment",
+      "properties": {
+        "title": "Droplet regression, flame size and radiant power",
+        "summary": "Experimental and model histories include squared droplet diameter, flame diameter and radiant power with separate time axes. The source labels model cases as 1 atm with initial diameter 4 mm. Independent column groups must be aligned by their time coordinate, not by file row.",
+        "keywords": [
+          "Cool flames",
+          "Droplet combustion"
+        ],
+        "conditions": {
+          "record_kind": "documented_scientific_study",
+          "study_kind": "provided_data_series"
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43e9&version=1&studyVersion=2&redirect=true"
+      }
+    },
+    {
+      "id": "var:e3af8c62f6daa4f17cbb",
+      "type": "Variable",
+      "properties": {
+        "name": "Squared droplet diameter",
+        "symbol": null,
+        "unit": "mm²",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "var:a72f9827939202697af2",
+      "type": "Variable",
+      "properties": {
+        "name": "Radiant power",
+        "symbol": null,
+        "unit": "W",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "exp:PSI-117:review:7985813fb5c9c9033876",
+      "type": "Experiment",
+      "properties": {
+        "title": "Hot/cool extinction comparison",
+        "summary": "The source separates model pressure and hot/cool extinction columns from an experimental pressure and cool-extinction series. Unequal counts are retained; no one-to-one experimental/model matching is inferred from row order.",
+        "keywords": [
+          "Cool flames",
+          "Droplet combustion"
+        ],
+        "conditions": {
+          "record_kind": "documented_scientific_study",
+          "study_kind": "provided_data_series"
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43eb&version=1&studyVersion=2&redirect=true"
+      }
+    },
+    {
+      "id": "exp:PSI-117:review:a5cb5b45a2c6c0edae24",
+      "type": "Experiment",
+      "properties": {
+        "title": "Average cool-flame burning rate comparison",
+        "summary": "The source provides separate experimental and model pressure/burning-rate series. The model header specifies mm²/s; the experimental Kavg_CF column does not repeat a unit. Its unit is left unresolved in this graph rather than silently borrowed.",
+        "keywords": [
+          "Cool flames",
+          "Droplet combustion"
+        ],
+        "conditions": {
+          "record_kind": "documented_scientific_study",
+          "study_kind": "provided_data_series"
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ea&version=1&studyVersion=2&redirect=true"
+      }
+    },
+    {
+      "id": "var:448229f9aa5e24c81d6c",
+      "type": "Variable",
+      "properties": {
+        "name": "Model burning rate",
+        "symbol": null,
+        "unit": "mm²/s",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "var:f14723a7c68309e0939a",
+      "type": "Variable",
+      "properties": {
+        "name": "Experimental average cool-flame burning rate",
+        "symbol": null,
+        "unit": null,
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "exp:PSI-117:review:6fc231a84aa88d4585be",
+      "type": "Experiment",
+      "properties": {
+        "title": "Radiant power and flame diameter at two pressures",
+        "summary": "Experimental groups are labelled 0.5 atm and 5 atm with distinct initial diameters. Simulation groups provide radiant power, flame diameter and peak temperature. The source uses Radiance for quantities labelled W; this graph preserves that label but does not reinterpret W as spectral radiance.",
+        "keywords": [
+          "Cool flames",
+          "Droplet combustion"
+        ],
+        "conditions": {
+          "record_kind": "documented_scientific_study",
+          "study_kind": "provided_data_series"
+        },
+        "methods": [],
+        "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ec&version=1&studyVersion=2&redirect=true"
+      }
+    },
+    {
+      "id": "var:26d6fb97c5e4fba32d05",
+      "type": "Variable",
+      "properties": {
+        "name": "Source-labelled radiance",
+        "symbol": null,
+        "unit": "W",
+        "role": "dependent"
+      }
+    },
+    {
+      "id": "citation:a3be0b0c4a494d2ce1cc",
+      "type": "Resource",
+      "properties": {
+        "title": "Extinction characteristics of isolated n-alkane fuel droplets during low temperature cool flame burning in air (2023)",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://doi.org/10.1016/j.proci.2022.07.094",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:6ef2c737c8f265a69699",
+      "type": "Resource",
+      "properties": {
+        "title": "Sub-millimeter sized multi-component jet fuel surrogate droplet combustion: Physicochemical preferential vaporization effects (2021)",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://doi.org/10.1016/j.proci.2020.06.200",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:e591c5e62faa15f1ccd6",
+      "type": "Resource",
+      "properties": {
+        "title": "Initial diameter effects on combustion of unsupported equi-volume n-heptane/iso-octane mixture droplets and the transition to cool flame behavior: Experimental observations and detailed numerical modeling (2020)",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://doi.org/10.1016/j.combustflame.2020.06.012",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:5c17ee21783a49fdd684",
+      "type": "Resource",
+      "properties": {
+        "title": "Oscillatory cool flame combustion behavior of submillimeter sized n-alkane droplet under near limit conditions (2019)",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://doi.org/10.1016/j.proci.2018.05.151",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:de798c67fb7eda165492",
+      "type": "Resource",
+      "properties": {
+        "title": "Investigating the role of preferential vaporization during submillimeter sized multicomponent jet fuel surrogate droplet combustion (2019)",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:d03ffed43c893838ffd2",
+      "type": "Resource",
+      "properties": {
+        "title": "Multi-component jet fuel surrogate droplet combustion: Preferential vaporization behaviors under spray relevant conditions and effects on combustion behaviors (2019)",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:3ed141227fdeccb3fcdb",
+      "type": "Resource",
+      "properties": {
+        "title": "Cool Flame Combustion of Sub-Millimeter Sized Higher n-Alkane Droplets at Atmospheric Condition (2017)",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:0412de8b8908389bc69b",
+      "type": "Resource",
+      "properties": {
+        "title": "Non-Premixed - Partially Premixed to Diffusive Burning: Initial Transient of Direct Cool Flame Burn (2017)",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:fac5148b3bf7a03d721a",
+      "type": "Resource",
+      "properties": {
+        "title": "Oscillatory Cool Flame Combustion Behavior of Submillimeter Sized n-Alkane Droplet under Near Limit Conditions (2018)",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    },
+    {
+      "id": "citation:cb0f2d23ed6eb1cb40d2",
+      "type": "Resource",
+      "properties": {
+        "title": "Dynamics of cool flames (2019)",
+        "filename": null,
+        "resource_type": "publication_citation",
+        "file_format": null,
+        "summary": null,
+        "keywords": [],
+        "variables": [],
+        "source_url": "https://doi.org/10.1016/j.pecs.2019.100787",
+        "storage_uri": null,
+        "access_status": "citation_only",
+        "size_bytes": null
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:8f0ee9f88eb54a14eb02",
+      "source": "inv:PSI-117",
+      "target": "exp:PSI-117:campaign",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.objective",
+            "text": "The objective of this ground investigation was to use flight data obtained from PSI through NASA’s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and unintentional drift-induced convection. Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced reusable models and sensitivity analyses that coupled low-temperature chemistry with transport and radiative effects."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.approach",
+            "text": "OpenFOAM was used to develop a 3-D CFD model of n-alkane droplet cool flames in microgravity, coupling variable-density Navier–Stokes flow with low-temperature combustion chemistry, coupled heat and mass transfer, and radiation. Model fidelity was established against ISS FLEX measurements, after which controlled simulations examined three forcing modes (i) convection alone to mimic droplet drift, (ii) imposed heat flux, and (iii) combined convection plus heating applied to both large (1–4 mm) and sub-millimeter (~0.5 mm) droplets. To accelerate progress, the study began with simplified chemistry and transitioned to reduced mechanisms for parameter sweeps over forcing amplitude and frequency, ambient composition (including ozone-assisted cases), and pressure. From each case, predictive observables were extracted (ignition delay, oscillation frequency and amplitude, stand-off and extinction diameters), and were used to construct stability maps that delineated conditions for cool-flame onset, persistence, and quenching. These maps were reconciled with FLEX observations and were used to guide next-generation test matrices for both large- and small-droplet experiments."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:f661c2c2cec33c187f20",
+      "source": "exp:PSI-117:campaign",
+      "target": "concept:d20dd852123e56c05aa0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.objective",
+            "text": "The objective of this ground investigation was to use flight data obtained from PSI through NASA’s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and unintentional drift-induced convection. Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced reusable models and sensitivity analyses that coupled low-temperature chemistry with transport and radiative effects."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.approach",
+            "text": "OpenFOAM was used to develop a 3-D CFD model of n-alkane droplet cool flames in microgravity, coupling variable-density Navier–Stokes flow with low-temperature combustion chemistry, coupled heat and mass transfer, and radiation. Model fidelity was established against ISS FLEX measurements, after which controlled simulations examined three forcing modes (i) convection alone to mimic droplet drift, (ii) imposed heat flux, and (iii) combined convection plus heating applied to both large (1–4 mm) and sub-millimeter (~0.5 mm) droplets. To accelerate progress, the study began with simplified chemistry and transitioned to reduced mechanisms for parameter sweeps over forcing amplitude and frequency, ambient composition (including ozone-assisted cases), and pressure. From each case, predictive observables were extracted (ignition delay, oscillation frequency and amplitude, stand-off and extinction diameters), and were used to construct stability maps that delineated conditions for cool-flame onset, persistence, and quenching. These maps were reconciled with FLEX observations and were used to guide next-generation test matrices for both large- and small-droplet experiments."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:d6cac2d845e706471876",
+      "source": "exp:PSI-117:campaign",
+      "target": "concept:426826b05a44d46ad079",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.objective",
+            "text": "The objective of this ground investigation was to use flight data obtained from PSI through NASA’s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and unintentional drift-induced convection. Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced reusable models and sensitivity analyses that coupled low-temperature chemistry with transport and radiative effects."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.approach",
+            "text": "OpenFOAM was used to develop a 3-D CFD model of n-alkane droplet cool flames in microgravity, coupling variable-density Navier–Stokes flow with low-temperature combustion chemistry, coupled heat and mass transfer, and radiation. Model fidelity was established against ISS FLEX measurements, after which controlled simulations examined three forcing modes (i) convection alone to mimic droplet drift, (ii) imposed heat flux, and (iii) combined convection plus heating applied to both large (1–4 mm) and sub-millimeter (~0.5 mm) droplets. To accelerate progress, the study began with simplified chemistry and transitioned to reduced mechanisms for parameter sweeps over forcing amplitude and frequency, ambient composition (including ozone-assisted cases), and pressure. From each case, predictive observables were extracted (ignition delay, oscillation frequency and amplitude, stand-off and extinction diameters), and were used to construct stability maps that delineated conditions for cool-flame onset, persistence, and quenching. These maps were reconciled with FLEX observations and were used to guide next-generation test matrices for both large- and small-droplet experiments."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:e956af9c0c93787203de",
+      "source": "exp:PSI-117:campaign",
+      "target": "concept:5025809325544eea90ab",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.objective",
+            "text": "The objective of this ground investigation was to use flight data obtained from PSI through NASA’s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and unintentional drift-induced convection. Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced reusable models and sensitivity analyses that coupled low-temperature chemistry with transport and radiative effects."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.approach",
+            "text": "OpenFOAM was used to develop a 3-D CFD model of n-alkane droplet cool flames in microgravity, coupling variable-density Navier–Stokes flow with low-temperature combustion chemistry, coupled heat and mass transfer, and radiation. Model fidelity was established against ISS FLEX measurements, after which controlled simulations examined three forcing modes (i) convection alone to mimic droplet drift, (ii) imposed heat flux, and (iii) combined convection plus heating applied to both large (1–4 mm) and sub-millimeter (~0.5 mm) droplets. To accelerate progress, the study began with simplified chemistry and transitioned to reduced mechanisms for parameter sweeps over forcing amplitude and frequency, ambient composition (including ozone-assisted cases), and pressure. From each case, predictive observables were extracted (ignition delay, oscillation frequency and amplitude, stand-off and extinction diameters), and were used to construct stability maps that delineated conditions for cool-flame onset, persistence, and quenching. These maps were reconciled with FLEX observations and were used to guide next-generation test matrices for both large- and small-droplet experiments."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:05e1e3e5360bfff080df",
+      "source": "exp:PSI-117:campaign",
+      "target": "concept:35535626a8d65275af49",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.objective",
+            "text": "The objective of this ground investigation was to use flight data obtained from PSI through NASA’s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and unintentional drift-induced convection. Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced reusable models and sensitivity analyses that coupled low-temperature chemistry with transport and radiative effects."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.approach",
+            "text": "OpenFOAM was used to develop a 3-D CFD model of n-alkane droplet cool flames in microgravity, coupling variable-density Navier–Stokes flow with low-temperature combustion chemistry, coupled heat and mass transfer, and radiation. Model fidelity was established against ISS FLEX measurements, after which controlled simulations examined three forcing modes (i) convection alone to mimic droplet drift, (ii) imposed heat flux, and (iii) combined convection plus heating applied to both large (1–4 mm) and sub-millimeter (~0.5 mm) droplets. To accelerate progress, the study began with simplified chemistry and transitioned to reduced mechanisms for parameter sweeps over forcing amplitude and frequency, ambient composition (including ozone-assisted cases), and pressure. From each case, predictive observables were extracted (ignition delay, oscillation frequency and amplitude, stand-off and extinction diameters), and were used to construct stability maps that delineated conditions for cool-flame onset, persistence, and quenching. These maps were reconciled with FLEX observations and were used to guide next-generation test matrices for both large- and small-droplet experiments."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6a0b73010be4c15a4579",
+      "source": "exp:PSI-117:campaign",
+      "target": "concept:eddc9a87b3c6e77ae255",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.objective",
+            "text": "The objective of this ground investigation was to use flight data obtained from PSI through NASA’s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and unintentional drift-induced convection. Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced reusable models and sensitivity analyses that coupled low-temperature chemistry with transport and radiative effects."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.approach",
+            "text": "OpenFOAM was used to develop a 3-D CFD model of n-alkane droplet cool flames in microgravity, coupling variable-density Navier–Stokes flow with low-temperature combustion chemistry, coupled heat and mass transfer, and radiation. Model fidelity was established against ISS FLEX measurements, after which controlled simulations examined three forcing modes (i) convection alone to mimic droplet drift, (ii) imposed heat flux, and (iii) combined convection plus heating applied to both large (1–4 mm) and sub-millimeter (~0.5 mm) droplets. To accelerate progress, the study began with simplified chemistry and transitioned to reduced mechanisms for parameter sweeps over forcing amplitude and frequency, ambient composition (including ozone-assisted cases), and pressure. From each case, predictive observables were extracted (ignition delay, oscillation frequency and amplitude, stand-off and extinction diameters), and were used to construct stability maps that delineated conditions for cool-flame onset, persistence, and quenching. These maps were reconciled with FLEX observations and were used to guide next-generation test matrices for both large- and small-droplet experiments."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:2576071ef7bfcba313e7",
+      "source": "exp:PSI-117:campaign",
+      "target": "concept:2af2f3179537765342ce",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.objective",
+            "text": "The objective of this ground investigation was to use flight data obtained from PSI through NASA’s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and unintentional drift-induced convection. Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced reusable models and sensitivity analyses that coupled low-temperature chemistry with transport and radiative effects."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.approach",
+            "text": "OpenFOAM was used to develop a 3-D CFD model of n-alkane droplet cool flames in microgravity, coupling variable-density Navier–Stokes flow with low-temperature combustion chemistry, coupled heat and mass transfer, and radiation. Model fidelity was established against ISS FLEX measurements, after which controlled simulations examined three forcing modes (i) convection alone to mimic droplet drift, (ii) imposed heat flux, and (iii) combined convection plus heating applied to both large (1–4 mm) and sub-millimeter (~0.5 mm) droplets. To accelerate progress, the study began with simplified chemistry and transitioned to reduced mechanisms for parameter sweeps over forcing amplitude and frequency, ambient composition (including ozone-assisted cases), and pressure. From each case, predictive observables were extracted (ignition delay, oscillation frequency and amplitude, stand-off and extinction diameters), and were used to construct stability maps that delineated conditions for cool-flame onset, persistence, and quenching. These maps were reconciled with FLEX observations and were used to guide next-generation test matrices for both large- and small-droplet experiments."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:af5114a8bf91002facbc",
+      "source": "exp:PSI-117:campaign",
+      "target": "var:54390b2e315eb1179cdf",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "reported_measurement_scope",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.objective",
+            "text": "The objective of this ground investigation was to use flight data obtained from PSI through NASA’s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and unintentional drift-induced convection. Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced reusable models and sensitivity analyses that coupled low-temperature chemistry with transport and radiative effects."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.approach",
+            "text": "OpenFOAM was used to develop a 3-D CFD model of n-alkane droplet cool flames in microgravity, coupling variable-density Navier–Stokes flow with low-temperature combustion chemistry, coupled heat and mass transfer, and radiation. Model fidelity was established against ISS FLEX measurements, after which controlled simulations examined three forcing modes (i) convection alone to mimic droplet drift, (ii) imposed heat flux, and (iii) combined convection plus heating applied to both large (1–4 mm) and sub-millimeter (~0.5 mm) droplets. To accelerate progress, the study began with simplified chemistry and transitioned to reduced mechanisms for parameter sweeps over forcing amplitude and frequency, ambient composition (including ozone-assisted cases), and pressure. From each case, predictive observables were extracted (ignition delay, oscillation frequency and amplitude, stand-off and extinction diameters), and were used to construct stability maps that delineated conditions for cool-flame onset, persistence, and quenching. These maps were reconciled with FLEX observations and were used to guide next-generation test matrices for both large- and small-droplet experiments."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:577add8596de6b3d146f",
+      "source": "exp:PSI-117:campaign",
+      "target": "var:5ec29a93795f01f730bb",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "reported_measurement_scope",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.objective",
+            "text": "The objective of this ground investigation was to use flight data obtained from PSI through NASA’s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and unintentional drift-induced convection. Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced reusable models and sensitivity analyses that coupled low-temperature chemistry with transport and radiative effects."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.approach",
+            "text": "OpenFOAM was used to develop a 3-D CFD model of n-alkane droplet cool flames in microgravity, coupling variable-density Navier–Stokes flow with low-temperature combustion chemistry, coupled heat and mass transfer, and radiation. Model fidelity was established against ISS FLEX measurements, after which controlled simulations examined three forcing modes (i) convection alone to mimic droplet drift, (ii) imposed heat flux, and (iii) combined convection plus heating applied to both large (1–4 mm) and sub-millimeter (~0.5 mm) droplets. To accelerate progress, the study began with simplified chemistry and transitioned to reduced mechanisms for parameter sweeps over forcing amplitude and frequency, ambient composition (including ozone-assisted cases), and pressure. From each case, predictive observables were extracted (ignition delay, oscillation frequency and amplitude, stand-off and extinction diameters), and were used to construct stability maps that delineated conditions for cool-flame onset, persistence, and quenching. These maps were reconciled with FLEX observations and were used to guide next-generation test matrices for both large- and small-droplet experiments."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:e12a8d44a974d6eefe5a",
+      "source": "exp:PSI-117:campaign",
+      "target": "var:345c9405719f9d569637",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "reported_measurement_scope",
+        "verification_status": "needs_review",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.objective",
+            "text": "The objective of this ground investigation was to use flight data obtained from PSI through NASA’s Flame Extinguishment Experiment (FLEX) to quantify how externally imposed thermal and convective perturbations regulated the dynamics and ultimate fate of already established droplet cool flames, and to explain run-to-run variability by isolating the roles of deliberate heating and unintentional drift-induced convection. Focusing on both small and large droplets, the work mapped stability windows for ignition, sustained oscillation, transitions to hot ignition and warm-flame behavior, and extinction under microgravity. By leveraging and extending the FLEX data in the PSI, this study produced reusable models and sensitivity analyses that coupled low-temperature chemistry with transport and radiative effects."
+          },
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.approach",
+            "text": "OpenFOAM was used to develop a 3-D CFD model of n-alkane droplet cool flames in microgravity, coupling variable-density Navier–Stokes flow with low-temperature combustion chemistry, coupled heat and mass transfer, and radiation. Model fidelity was established against ISS FLEX measurements, after which controlled simulations examined three forcing modes (i) convection alone to mimic droplet drift, (ii) imposed heat flux, and (iii) combined convection plus heating applied to both large (1–4 mm) and sub-millimeter (~0.5 mm) droplets. To accelerate progress, the study began with simplified chemistry and transitioned to reduced mechanisms for parameter sweeps over forcing amplitude and frequency, ambient composition (including ozone-assisted cases), and pressure. From each case, predictive observables were extracted (ignition delay, oscillation frequency and amplitude, stand-off and extinction diameters), and were used to construct stability maps that delineated conditions for cool-flame onset, persistence, and quenching. These maps were reconciled with FLEX observations and were used to guide next-generation test matrices for both large- and small-droplet experiments."
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:45d376298ce5dd390a2e",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:301cfafe86e0ac8ee3cb",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a28273bd9d7246402cb43e9, version 1",
+            "text": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:1a205a76df3c182726d8",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:f409efe402a52ef2997c",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a28273bd9d7246402cb43eb, version 1",
+            "text": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Dext.csv"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:42b02d55175f87e499b3",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:c0fa0f37fbb4a7de83e3",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a28273bd9d7246402cb43ea, version 1",
+            "text": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Kavg.csv"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:4010cbe66e5dfab35729",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:c28c78768598564facd0",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a28273bd9d7246402cb43ec, version 1",
+            "text": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Radiance_Flame_Diameter.csv"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:f01c85636b996649fda2",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:fa89e42288d0880cd576",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a28273ad9d7246402cb43e5, version 1",
+            "text": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:dee0034783f4a1bf65a4",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:9c417cfd66cc5c142270",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a28273ad9d7246402cb43e7, version 1",
+            "text": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2019_Stable_Cool.csv"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:ec3c24c0da24340ae795",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:3c69bbed73f148eba760",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a28273ad9d7246402cb43e4, version 1",
+            "text": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:7b839b0db95a6216506f",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:19d0a5a2326d4ff5c080",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a28273ad9d7246402cb43e6, version 1",
+            "text": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:79fff5706e68ef846286",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:ac1824d10db2a04fa867",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a28273ad9d7246402cb43e8, version 1",
+            "text": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:0b1f33e5af1301cb1362",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:a79899507b0332ece2ea",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a28273ad9d7246402cb43e3, version 1",
+            "text": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:efde43a4a5829a4d53b0",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:0ae76d77b80d7677dc6c",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a282739d9d7246402cb43de, version 2",
+            "text": "psi-data/PSI-117/metadata/PSI-117_metadata_NEWID-13_Effect of External T.zip"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:cb9dc573cc5f466506b4",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:8f99f24f48bb7f642d39",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a282739d9d7246402cb43e0, version 1",
+            "text": "psi-data/PSI-117/Presentations/PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:a6a0fd478b665ea3ab6d",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:5c71c3e87407e09999b1",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a282739d9d7246402cb43e1, version 1",
+            "text": "psi-data/PSI-117/Presentations/PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6ff0f93b7690c4025837",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:5f691a93f1c9c415d222",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a282739d9d7246402cb43df, version 1",
+            "text": "psi-data/PSI-117/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:3299afdaadcbf0772147",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:8d6ecc3d62315e27ecb7",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a282739d9d7246402cb43e2, version 1",
+            "text": "psi-data/PSI-117/Presentations/PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:7d78378556210bc26a50",
+      "source": "exp:PSI-117:campaign",
+      "target": "res:PSI-117:46f8bcee08a730c949c7",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_public_file_listing",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "NASA public file inventory, file id 6a28273bd9d7246402cb43ed, version 1",
+            "text": "psi-data/PSI-117/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:463f208ac820f41ea960",
+      "source": "inv:PSI-117",
+      "target": "exp:PSI-117:review:b65c2ad0ff822720ae49",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true",
+            "locator": "page 16",
+            "text": "exhibited more robust cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:e615d7c83d6c74e84e7f",
+      "source": "exp:PSI-117:review:b65c2ad0ff822720ae49",
+      "target": "res:PSI-117:8f99f24f48bb7f642d39",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true",
+            "locator": "page 16",
+            "text": "exhibited more robust cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:80688166c3d7048c19e0",
+      "source": "exp:PSI-117:review:b65c2ad0ff822720ae49",
+      "target": "concept:d20dd852123e56c05aa0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true",
+            "locator": "page 16",
+            "text": "exhibited more robust cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:32e77b02bb1318ee6ec2",
+      "source": "exp:PSI-117:review:b65c2ad0ff822720ae49",
+      "target": "concept:5025809325544eea90ab",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true",
+            "locator": "page 16",
+            "text": "exhibited more robust cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:17569de59335c433e42f",
+      "source": "exp:PSI-117:review:b65c2ad0ff822720ae49",
+      "target": "concept:eddc9a87b3c6e77ae255",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true",
+            "locator": "page 16",
+            "text": "exhibited more robust cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:903b46864b0a54dea20b",
+      "source": "exp:PSI-117:review:b65c2ad0ff822720ae49",
+      "target": "var:5bf4457880c3ae96ee23",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true",
+            "locator": "page 16",
+            "text": "exhibited more robust cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:3e2be699e9e5983bd5ef",
+      "source": "exp:PSI-117:review:b65c2ad0ff822720ae49",
+      "target": "var:e6a384167ae2a2142da1",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true",
+            "locator": "page 16",
+            "text": "exhibited more robust cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:55de2230763a29247442",
+      "source": "inv:PSI-117",
+      "target": "exp:PSI-117:review:b03febfb6220aba751cb",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e2&version=1&studyVersion=2&redirect=true",
+            "locator": "page 17",
+            "text": "two possible modes of quasi-steady cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:ed0fb76c84a0eb68c83a",
+      "source": "exp:PSI-117:review:b03febfb6220aba751cb",
+      "target": "res:PSI-117:8d6ecc3d62315e27ecb7",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e2&version=1&studyVersion=2&redirect=true",
+            "locator": "page 17",
+            "text": "two possible modes of quasi-steady cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6c7944e6db69d4c1d083",
+      "source": "exp:PSI-117:review:b03febfb6220aba751cb",
+      "target": "concept:d20dd852123e56c05aa0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e2&version=1&studyVersion=2&redirect=true",
+            "locator": "page 17",
+            "text": "two possible modes of quasi-steady cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:c9154fff1fb54aacd509",
+      "source": "exp:PSI-117:review:b03febfb6220aba751cb",
+      "target": "concept:426826b05a44d46ad079",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e2&version=1&studyVersion=2&redirect=true",
+            "locator": "page 17",
+            "text": "two possible modes of quasi-steady cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:af5ff9266c97245d6621",
+      "source": "exp:PSI-117:review:b03febfb6220aba751cb",
+      "target": "concept:eddc9a87b3c6e77ae255",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e2&version=1&studyVersion=2&redirect=true",
+            "locator": "page 17",
+            "text": "two possible modes of quasi-steady cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:3bfeb5fd64e1ea4269c8",
+      "source": "exp:PSI-117:review:b03febfb6220aba751cb",
+      "target": "var:84541f911628b262a3b2",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e2&version=1&studyVersion=2&redirect=true",
+            "locator": "page 17",
+            "text": "two possible modes of quasi-steady cool flame"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:2ac03d90d4ced0f82d52",
+      "source": "inv:PSI-117",
+      "target": "exp:PSI-117:review:04dee17f661d3639201f",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e7&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:0af712f22ebb6bb3e6be",
+      "source": "exp:PSI-117:review:04dee17f661d3639201f",
+      "target": "res:PSI-117:9c417cfd66cc5c142270",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e7&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:3c7615b9eae12b1000fe",
+      "source": "exp:PSI-117:review:04dee17f661d3639201f",
+      "target": "concept:d20dd852123e56c05aa0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e7&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:f5921a63b89b099d3a43",
+      "source": "exp:PSI-117:review:04dee17f661d3639201f",
+      "target": "concept:426826b05a44d46ad079",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e7&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:45ccd1fdf2b244fa1aac",
+      "source": "exp:PSI-117:review:04dee17f661d3639201f",
+      "target": "var:ae7ed8a9860af25831ca",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e7&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:699385631eab120dd126",
+      "source": "exp:PSI-117:review:04dee17f661d3639201f",
+      "target": "var:2e030493296453be2052",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e7&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:ed3b9649b7105b709b9e",
+      "source": "exp:PSI-117:review:04dee17f661d3639201f",
+      "target": "var:e6a384167ae2a2142da1",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e7&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:5692e3e74f6ac7c5a6e5",
+      "source": "inv:PSI-117",
+      "target": "exp:PSI-117:review:548751947988f8f0e87b",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e5&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:23e1b936636944afbae7",
+      "source": "exp:PSI-117:review:548751947988f8f0e87b",
+      "target": "res:PSI-117:fa89e42288d0880cd576",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e5&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:e1d2293eda1f00fe1387",
+      "source": "exp:PSI-117:review:548751947988f8f0e87b",
+      "target": "concept:d20dd852123e56c05aa0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e5&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:94de7d986df100d14c1c",
+      "source": "exp:PSI-117:review:548751947988f8f0e87b",
+      "target": "concept:426826b05a44d46ad079",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e5&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:b288459c2c382d061b04",
+      "source": "exp:PSI-117:review:548751947988f8f0e87b",
+      "target": "var:ae7ed8a9860af25831ca",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e5&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:c02cc697a57b6d80e20c",
+      "source": "exp:PSI-117:review:548751947988f8f0e87b",
+      "target": "var:2e030493296453be2052",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e5&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:5bc4a4aa7e587bc301fd",
+      "source": "exp:PSI-117:review:548751947988f8f0e87b",
+      "target": "var:e6a384167ae2a2142da1",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e5&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:1861082744872249f875",
+      "source": "inv:PSI-117",
+      "target": "exp:PSI-117:review:f9b409eb94a24b42893a",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: C7 | 2: Do | 3: Dext_HF | 4: Dext_CF | 6: C7 | 7: Do | 8: Dext_HF | 9: Dext_CF | 11: C10 | 12: Do | 13: Dext_HF | 14: Dext_CF | 16: C10 | 17: Do | 18: Dext_HF | 19: Dext_CF | 21: C12 | 22: Do | 23: Dext_HF | 24: Dext_CF | 26: C12 | 27: Do | 28: Dext_HF | 29: Dext_CF"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:335d290c3b0107dad9d5",
+      "source": "exp:PSI-117:review:f9b409eb94a24b42893a",
+      "target": "res:PSI-117:3c69bbed73f148eba760",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: C7 | 2: Do | 3: Dext_HF | 4: Dext_CF | 6: C7 | 7: Do | 8: Dext_HF | 9: Dext_CF | 11: C10 | 12: Do | 13: Dext_HF | 14: Dext_CF | 16: C10 | 17: Do | 18: Dext_HF | 19: Dext_CF | 21: C12 | 22: Do | 23: Dext_HF | 24: Dext_CF | 26: C12 | 27: Do | 28: Dext_HF | 29: Dext_CF"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:51b31abcf0a0edd5e435",
+      "source": "exp:PSI-117:review:f9b409eb94a24b42893a",
+      "target": "concept:d20dd852123e56c05aa0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: C7 | 2: Do | 3: Dext_HF | 4: Dext_CF | 6: C7 | 7: Do | 8: Dext_HF | 9: Dext_CF | 11: C10 | 12: Do | 13: Dext_HF | 14: Dext_CF | 16: C10 | 17: Do | 18: Dext_HF | 19: Dext_CF | 21: C12 | 22: Do | 23: Dext_HF | 24: Dext_CF | 26: C12 | 27: Do | 28: Dext_HF | 29: Dext_CF"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:bade149bf5f3623e14e8",
+      "source": "exp:PSI-117:review:f9b409eb94a24b42893a",
+      "target": "concept:426826b05a44d46ad079",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: C7 | 2: Do | 3: Dext_HF | 4: Dext_CF | 6: C7 | 7: Do | 8: Dext_HF | 9: Dext_CF | 11: C10 | 12: Do | 13: Dext_HF | 14: Dext_CF | 16: C10 | 17: Do | 18: Dext_HF | 19: Dext_CF | 21: C12 | 22: Do | 23: Dext_HF | 24: Dext_CF | 26: C12 | 27: Do | 28: Dext_HF | 29: Dext_CF"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:8c24a7e480d53ac7333e",
+      "source": "exp:PSI-117:review:f9b409eb94a24b42893a",
+      "target": "var:8b3a0e89715b76fa40a9",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: C7 | 2: Do | 3: Dext_HF | 4: Dext_CF | 6: C7 | 7: Do | 8: Dext_HF | 9: Dext_CF | 11: C10 | 12: Do | 13: Dext_HF | 14: Dext_CF | 16: C10 | 17: Do | 18: Dext_HF | 19: Dext_CF | 21: C12 | 22: Do | 23: Dext_HF | 24: Dext_CF | 26: C12 | 27: Do | 28: Dext_HF | 29: Dext_CF"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:5c46b28f2ed08a250f10",
+      "source": "exp:PSI-117:review:f9b409eb94a24b42893a",
+      "target": "var:737a619ba97569e6c52b",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: C7 | 2: Do | 3: Dext_HF | 4: Dext_CF | 6: C7 | 7: Do | 8: Dext_HF | 9: Dext_CF | 11: C10 | 12: Do | 13: Dext_HF | 14: Dext_CF | 16: C10 | 17: Do | 18: Dext_HF | 19: Dext_CF | 21: C12 | 22: Do | 23: Dext_HF | 24: Dext_CF | 26: C12 | 27: Do | 28: Dext_HF | 29: Dext_CF"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:4601571bdec5ced70f0e",
+      "source": "exp:PSI-117:review:f9b409eb94a24b42893a",
+      "target": "var:9a297303f894fc1bee73",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: C7 | 2: Do | 3: Dext_HF | 4: Dext_CF | 6: C7 | 7: Do | 8: Dext_HF | 9: Dext_CF | 11: C10 | 12: Do | 13: Dext_HF | 14: Dext_CF | 16: C10 | 17: Do | 18: Dext_HF | 19: Dext_CF | 21: C12 | 22: Do | 23: Dext_HF | 24: Dext_CF | 26: C12 | 27: Do | 28: Dext_HF | 29: Dext_CF"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:bd5e563bb20ab6ed898f",
+      "source": "inv:PSI-117",
+      "target": "exp:PSI-117:review:3006ee6c4c2c298faff9",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e6&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: P (atm) | 2: Dext_HF_EXPT | 4: P (atm) | 5: Dext_HF_model | 7: P (atm) | 8: Dext_CF_EXPT | 10: P (atm) | 11: Dext_CF_Model | 13: P (atm) | 14: Dext_CF_ErrorBar+ | 16: P (atm) | 17: Dext_CF_ErrorBar-"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:c2843e873c3e76916adc",
+      "source": "exp:PSI-117:review:3006ee6c4c2c298faff9",
+      "target": "res:PSI-117:19d0a5a2326d4ff5c080",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e6&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: P (atm) | 2: Dext_HF_EXPT | 4: P (atm) | 5: Dext_HF_model | 7: P (atm) | 8: Dext_CF_EXPT | 10: P (atm) | 11: Dext_CF_Model | 13: P (atm) | 14: Dext_CF_ErrorBar+ | 16: P (atm) | 17: Dext_CF_ErrorBar-"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:92c4bb8cb4573f49b422",
+      "source": "exp:PSI-117:review:3006ee6c4c2c298faff9",
+      "target": "concept:d20dd852123e56c05aa0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e6&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: P (atm) | 2: Dext_HF_EXPT | 4: P (atm) | 5: Dext_HF_model | 7: P (atm) | 8: Dext_CF_EXPT | 10: P (atm) | 11: Dext_CF_Model | 13: P (atm) | 14: Dext_CF_ErrorBar+ | 16: P (atm) | 17: Dext_CF_ErrorBar-"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:d0e46bc379f98f9ac860",
+      "source": "exp:PSI-117:review:3006ee6c4c2c298faff9",
+      "target": "concept:426826b05a44d46ad079",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e6&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: P (atm) | 2: Dext_HF_EXPT | 4: P (atm) | 5: Dext_HF_model | 7: P (atm) | 8: Dext_CF_EXPT | 10: P (atm) | 11: Dext_CF_Model | 13: P (atm) | 14: Dext_CF_ErrorBar+ | 16: P (atm) | 17: Dext_CF_ErrorBar-"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:3b911dc5a9c14279735a",
+      "source": "exp:PSI-117:review:3006ee6c4c2c298faff9",
+      "target": "var:6c47da97cdee757b5f80",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e6&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: P (atm) | 2: Dext_HF_EXPT | 4: P (atm) | 5: Dext_HF_model | 7: P (atm) | 8: Dext_CF_EXPT | 10: P (atm) | 11: Dext_CF_Model | 13: P (atm) | 14: Dext_CF_ErrorBar+ | 16: P (atm) | 17: Dext_CF_ErrorBar-"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:01efaa2af3edfabcfb0e",
+      "source": "exp:PSI-117:review:3006ee6c4c2c298faff9",
+      "target": "var:737a619ba97569e6c52b",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e6&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: P (atm) | 2: Dext_HF_EXPT | 4: P (atm) | 5: Dext_HF_model | 7: P (atm) | 8: Dext_CF_EXPT | 10: P (atm) | 11: Dext_CF_Model | 13: P (atm) | 14: Dext_CF_ErrorBar+ | 16: P (atm) | 17: Dext_CF_ErrorBar-"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:d81737a3089c295865f8",
+      "source": "exp:PSI-117:review:3006ee6c4c2c298faff9",
+      "target": "var:9a297303f894fc1bee73",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e6&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: P (atm) | 2: Dext_HF_EXPT | 4: P (atm) | 5: Dext_HF_model | 7: P (atm) | 8: Dext_CF_EXPT | 10: P (atm) | 11: Dext_CF_Model | 13: P (atm) | 14: Dext_CF_ErrorBar+ | 16: P (atm) | 17: Dext_CF_ErrorBar-"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:a014e50c1a9656b0eb93",
+      "source": "inv:PSI-117",
+      "target": "exp:PSI-117:review:b21b3ef5174c6c70f662",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e8&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t/(Do)2 (s/mm2) | 3: (D/Do)2 | 6: t/(Do)2 (s/mm2) | 7: Dflame/Dodrop | 9: t/(Do)2 (s/mm2) | 10: Dflame (mm) | 12: Flame Radiance I | 13: t/(Do)2 | 14: Flame Radiance (W) | 16: Flame Radiance II | 17: t/(Do)2 | 18: Flame Radiance (W) | 21: t/(Do)2 | 22: Cool Flame Dia (HWFM) | 24: t/(Do)2 | 25: Cool Flame Dia (peak-peak) | 28: Simulations | 29: t (s) | 30: D (mm) | 31: K(mm^2/sec) | 32: T_max(K) | 33: D_Tmax/D_drop | 34: D_OHm/D_drop | 36: t/do^2 (s/mm2) | 37: (d/do)^2 | 38: Dflame(mm) | 40: t/do2(s/mm2) | 41: Radiance (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:e7cd9195d284485d5b1e",
+      "source": "exp:PSI-117:review:b21b3ef5174c6c70f662",
+      "target": "res:PSI-117:ac1824d10db2a04fa867",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e8&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t/(Do)2 (s/mm2) | 3: (D/Do)2 | 6: t/(Do)2 (s/mm2) | 7: Dflame/Dodrop | 9: t/(Do)2 (s/mm2) | 10: Dflame (mm) | 12: Flame Radiance I | 13: t/(Do)2 | 14: Flame Radiance (W) | 16: Flame Radiance II | 17: t/(Do)2 | 18: Flame Radiance (W) | 21: t/(Do)2 | 22: Cool Flame Dia (HWFM) | 24: t/(Do)2 | 25: Cool Flame Dia (peak-peak) | 28: Simulations | 29: t (s) | 30: D (mm) | 31: K(mm^2/sec) | 32: T_max(K) | 33: D_Tmax/D_drop | 34: D_OHm/D_drop | 36: t/do^2 (s/mm2) | 37: (d/do)^2 | 38: Dflame(mm) | 40: t/do2(s/mm2) | 41: Radiance (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:b228ee26f15e10e2abb7",
+      "source": "exp:PSI-117:review:b21b3ef5174c6c70f662",
+      "target": "concept:d20dd852123e56c05aa0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e8&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t/(Do)2 (s/mm2) | 3: (D/Do)2 | 6: t/(Do)2 (s/mm2) | 7: Dflame/Dodrop | 9: t/(Do)2 (s/mm2) | 10: Dflame (mm) | 12: Flame Radiance I | 13: t/(Do)2 | 14: Flame Radiance (W) | 16: Flame Radiance II | 17: t/(Do)2 | 18: Flame Radiance (W) | 21: t/(Do)2 | 22: Cool Flame Dia (HWFM) | 24: t/(Do)2 | 25: Cool Flame Dia (peak-peak) | 28: Simulations | 29: t (s) | 30: D (mm) | 31: K(mm^2/sec) | 32: T_max(K) | 33: D_Tmax/D_drop | 34: D_OHm/D_drop | 36: t/do^2 (s/mm2) | 37: (d/do)^2 | 38: Dflame(mm) | 40: t/do2(s/mm2) | 41: Radiance (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:8209e201c3a2eee0a65c",
+      "source": "exp:PSI-117:review:b21b3ef5174c6c70f662",
+      "target": "concept:426826b05a44d46ad079",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e8&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t/(Do)2 (s/mm2) | 3: (D/Do)2 | 6: t/(Do)2 (s/mm2) | 7: Dflame/Dodrop | 9: t/(Do)2 (s/mm2) | 10: Dflame (mm) | 12: Flame Radiance I | 13: t/(Do)2 | 14: Flame Radiance (W) | 16: Flame Radiance II | 17: t/(Do)2 | 18: Flame Radiance (W) | 21: t/(Do)2 | 22: Cool Flame Dia (HWFM) | 24: t/(Do)2 | 25: Cool Flame Dia (peak-peak) | 28: Simulations | 29: t (s) | 30: D (mm) | 31: K(mm^2/sec) | 32: T_max(K) | 33: D_Tmax/D_drop | 34: D_OHm/D_drop | 36: t/do^2 (s/mm2) | 37: (d/do)^2 | 38: Dflame(mm) | 40: t/do2(s/mm2) | 41: Radiance (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:9b8235d98213029ec546",
+      "source": "exp:PSI-117:review:b21b3ef5174c6c70f662",
+      "target": "var:2e030493296453be2052",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e8&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t/(Do)2 (s/mm2) | 3: (D/Do)2 | 6: t/(Do)2 (s/mm2) | 7: Dflame/Dodrop | 9: t/(Do)2 (s/mm2) | 10: Dflame (mm) | 12: Flame Radiance I | 13: t/(Do)2 | 14: Flame Radiance (W) | 16: Flame Radiance II | 17: t/(Do)2 | 18: Flame Radiance (W) | 21: t/(Do)2 | 22: Cool Flame Dia (HWFM) | 24: t/(Do)2 | 25: Cool Flame Dia (peak-peak) | 28: Simulations | 29: t (s) | 30: D (mm) | 31: K(mm^2/sec) | 32: T_max(K) | 33: D_Tmax/D_drop | 34: D_OHm/D_drop | 36: t/do^2 (s/mm2) | 37: (d/do)^2 | 38: Dflame(mm) | 40: t/do2(s/mm2) | 41: Radiance (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6fe2b2634b56c6bf4499",
+      "source": "exp:PSI-117:review:b21b3ef5174c6c70f662",
+      "target": "var:e6a384167ae2a2142da1",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e8&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t/(Do)2 (s/mm2) | 3: (D/Do)2 | 6: t/(Do)2 (s/mm2) | 7: Dflame/Dodrop | 9: t/(Do)2 (s/mm2) | 10: Dflame (mm) | 12: Flame Radiance I | 13: t/(Do)2 | 14: Flame Radiance (W) | 16: Flame Radiance II | 17: t/(Do)2 | 18: Flame Radiance (W) | 21: t/(Do)2 | 22: Cool Flame Dia (HWFM) | 24: t/(Do)2 | 25: Cool Flame Dia (peak-peak) | 28: Simulations | 29: t (s) | 30: D (mm) | 31: K(mm^2/sec) | 32: T_max(K) | 33: D_Tmax/D_drop | 34: D_OHm/D_drop | 36: t/do^2 (s/mm2) | 37: (d/do)^2 | 38: Dflame(mm) | 40: t/do2(s/mm2) | 41: Radiance (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:f2daf2b54313bf0af77a",
+      "source": "exp:PSI-117:review:b21b3ef5174c6c70f662",
+      "target": "var:2159757fb908c7693d1d",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e8&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t/(Do)2 (s/mm2) | 3: (D/Do)2 | 6: t/(Do)2 (s/mm2) | 7: Dflame/Dodrop | 9: t/(Do)2 (s/mm2) | 10: Dflame (mm) | 12: Flame Radiance I | 13: t/(Do)2 | 14: Flame Radiance (W) | 16: Flame Radiance II | 17: t/(Do)2 | 18: Flame Radiance (W) | 21: t/(Do)2 | 22: Cool Flame Dia (HWFM) | 24: t/(Do)2 | 25: Cool Flame Dia (peak-peak) | 28: Simulations | 29: t (s) | 30: D (mm) | 31: K(mm^2/sec) | 32: T_max(K) | 33: D_Tmax/D_drop | 34: D_OHm/D_drop | 36: t/do^2 (s/mm2) | 37: (d/do)^2 | 38: Dflame(mm) | 40: t/do2(s/mm2) | 41: Radiance (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:5d26b5f9eb76a28437c0",
+      "source": "inv:PSI-117",
+      "target": "exp:PSI-117:review:a7529dfb03d88b39e8b5",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43e9&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t | 3: d^2 (mm^2) | 5: t | 6: dflame (mm) | 8: time | 9: Q (W) | 10: time | 11: Q (W) | 13: Model | 14: t | 15: d^2 (mm^2) | 16: dflame (mm) | 18: Model | 19: t | 20: Q (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:af357c59597d5424ec5f",
+      "source": "exp:PSI-117:review:a7529dfb03d88b39e8b5",
+      "target": "res:PSI-117:301cfafe86e0ac8ee3cb",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43e9&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t | 3: d^2 (mm^2) | 5: t | 6: dflame (mm) | 8: time | 9: Q (W) | 10: time | 11: Q (W) | 13: Model | 14: t | 15: d^2 (mm^2) | 16: dflame (mm) | 18: Model | 19: t | 20: Q (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:3ba2021b69731d8d2f7c",
+      "source": "exp:PSI-117:review:a7529dfb03d88b39e8b5",
+      "target": "concept:d20dd852123e56c05aa0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43e9&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t | 3: d^2 (mm^2) | 5: t | 6: dflame (mm) | 8: time | 9: Q (W) | 10: time | 11: Q (W) | 13: Model | 14: t | 15: d^2 (mm^2) | 16: dflame (mm) | 18: Model | 19: t | 20: Q (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:115ca409e74c3f333bbe",
+      "source": "exp:PSI-117:review:a7529dfb03d88b39e8b5",
+      "target": "concept:426826b05a44d46ad079",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43e9&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t | 3: d^2 (mm^2) | 5: t | 6: dflame (mm) | 8: time | 9: Q (W) | 10: time | 11: Q (W) | 13: Model | 14: t | 15: d^2 (mm^2) | 16: dflame (mm) | 18: Model | 19: t | 20: Q (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:f363096bc9821d6bffd5",
+      "source": "exp:PSI-117:review:a7529dfb03d88b39e8b5",
+      "target": "var:e3af8c62f6daa4f17cbb",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43e9&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t | 3: d^2 (mm^2) | 5: t | 6: dflame (mm) | 8: time | 9: Q (W) | 10: time | 11: Q (W) | 13: Model | 14: t | 15: d^2 (mm^2) | 16: dflame (mm) | 18: Model | 19: t | 20: Q (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:57f801bbdfaecf81e813",
+      "source": "exp:PSI-117:review:a7529dfb03d88b39e8b5",
+      "target": "var:2159757fb908c7693d1d",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43e9&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t | 3: d^2 (mm^2) | 5: t | 6: dflame (mm) | 8: time | 9: Q (W) | 10: time | 11: Q (W) | 13: Model | 14: t | 15: d^2 (mm^2) | 16: dflame (mm) | 18: Model | 19: t | 20: Q (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:ac4ee9b2afe4e5f6010c",
+      "source": "exp:PSI-117:review:a7529dfb03d88b39e8b5",
+      "target": "var:a72f9827939202697af2",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43e9&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: t | 3: d^2 (mm^2) | 5: t | 6: dflame (mm) | 8: time | 9: Q (W) | 10: time | 11: Q (W) | 13: Model | 14: t | 15: d^2 (mm^2) | 16: dflame (mm) | 18: Model | 19: t | 20: Q (W)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:0a4656d501fbf10940bc",
+      "source": "inv:PSI-117",
+      "target": "exp:PSI-117:review:7985813fb5c9c9033876",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43eb&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Model | 2: Pressure | 3: Dext_cool | 4: Dext_hot | 6: Expt | 7: Pressure | 8: Dext_cool_Expt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:9595eadbb964c687a5a5",
+      "source": "exp:PSI-117:review:7985813fb5c9c9033876",
+      "target": "res:PSI-117:f409efe402a52ef2997c",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43eb&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Model | 2: Pressure | 3: Dext_cool | 4: Dext_hot | 6: Expt | 7: Pressure | 8: Dext_cool_Expt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:181b098a548a08ac4c5e",
+      "source": "exp:PSI-117:review:7985813fb5c9c9033876",
+      "target": "concept:d20dd852123e56c05aa0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43eb&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Model | 2: Pressure | 3: Dext_cool | 4: Dext_hot | 6: Expt | 7: Pressure | 8: Dext_cool_Expt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:91512666972af3b80946",
+      "source": "exp:PSI-117:review:7985813fb5c9c9033876",
+      "target": "concept:426826b05a44d46ad079",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43eb&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Model | 2: Pressure | 3: Dext_cool | 4: Dext_hot | 6: Expt | 7: Pressure | 8: Dext_cool_Expt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:825b4f26f09cf5cbba52",
+      "source": "exp:PSI-117:review:7985813fb5c9c9033876",
+      "target": "var:737a619ba97569e6c52b",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43eb&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Model | 2: Pressure | 3: Dext_cool | 4: Dext_hot | 6: Expt | 7: Pressure | 8: Dext_cool_Expt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6fa4b487735bd9d26e34",
+      "source": "exp:PSI-117:review:7985813fb5c9c9033876",
+      "target": "var:9a297303f894fc1bee73",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43eb&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Model | 2: Pressure | 3: Dext_cool | 4: Dext_hot | 6: Expt | 7: Pressure | 8: Dext_cool_Expt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:8ab8d4c2dd94f31692f0",
+      "source": "inv:PSI-117",
+      "target": "exp:PSI-117:review:a5cb5b45a2c6c0edae24",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ea&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Experiment | 2: Pressure | 3: Kavg_CF | 5: Model | 6: Pressure | 7: kb (mm2/s)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:8172f01ece55c9387d85",
+      "source": "exp:PSI-117:review:a5cb5b45a2c6c0edae24",
+      "target": "res:PSI-117:c0fa0f37fbb4a7de83e3",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ea&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Experiment | 2: Pressure | 3: Kavg_CF | 5: Model | 6: Pressure | 7: kb (mm2/s)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:45498212fe8eaea0dc42",
+      "source": "exp:PSI-117:review:a5cb5b45a2c6c0edae24",
+      "target": "concept:d20dd852123e56c05aa0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ea&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Experiment | 2: Pressure | 3: Kavg_CF | 5: Model | 6: Pressure | 7: kb (mm2/s)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:0842b81e013df841e01e",
+      "source": "exp:PSI-117:review:a5cb5b45a2c6c0edae24",
+      "target": "concept:426826b05a44d46ad079",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ea&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Experiment | 2: Pressure | 3: Kavg_CF | 5: Model | 6: Pressure | 7: kb (mm2/s)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:406b0bf6cf53af5eb76b",
+      "source": "exp:PSI-117:review:a5cb5b45a2c6c0edae24",
+      "target": "var:448229f9aa5e24c81d6c",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ea&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Experiment | 2: Pressure | 3: Kavg_CF | 5: Model | 6: Pressure | 7: kb (mm2/s)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:efa9324aa9f05d58e7bf",
+      "source": "exp:PSI-117:review:a5cb5b45a2c6c0edae24",
+      "target": "var:f14723a7c68309e0939a",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ea&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "1: Experiment | 2: Pressure | 3: Kavg_CF | 5: Model | 6: Pressure | 7: kb (mm2/s)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:81a400035f72d0c4d3e6",
+      "source": "inv:PSI-117",
+      "target": "exp:PSI-117:review:6fc231a84aa88d4585be",
+      "type": "CONTAINS",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ec&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: time | 3: Radiance (W) | 4: time | 5: df (mm) | 9: time | 10: Radiance (W) | 11: time | 12: df (mm) | 15: Simulation | 17: time (s) | 18: Q(W) | 20: Simulation | 21: time (s) | 22: Q (W) | 25: Simulation | 26: Time(sec) | 27: Dflame (mm) | 29: Simulation | 30: Time(sec) | 31: Dflame (mm) | 34: Simulation | 35: Time(sec) | 36: T_max(K) | 38: Simulation | 39: Time(sec) | 40: T_max(K)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6089b4c3376f175febe3",
+      "source": "exp:PSI-117:review:6fc231a84aa88d4585be",
+      "target": "res:PSI-117:c28c78768598564facd0",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ec&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: time | 3: Radiance (W) | 4: time | 5: df (mm) | 9: time | 10: Radiance (W) | 11: time | 12: df (mm) | 15: Simulation | 17: time (s) | 18: Q(W) | 20: Simulation | 21: time (s) | 22: Q (W) | 25: Simulation | 26: Time(sec) | 27: Dflame (mm) | 29: Simulation | 30: Time(sec) | 31: Dflame (mm) | 34: Simulation | 35: Time(sec) | 36: T_max(K) | 38: Simulation | 39: Time(sec) | 40: T_max(K)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:1b776664f4f63ee2fbfb",
+      "source": "exp:PSI-117:review:6fc231a84aa88d4585be",
+      "target": "concept:d20dd852123e56c05aa0",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ec&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: time | 3: Radiance (W) | 4: time | 5: df (mm) | 9: time | 10: Radiance (W) | 11: time | 12: df (mm) | 15: Simulation | 17: time (s) | 18: Q(W) | 20: Simulation | 21: time (s) | 22: Q (W) | 25: Simulation | 26: Time(sec) | 27: Dflame (mm) | 29: Simulation | 30: Time(sec) | 31: Dflame (mm) | 34: Simulation | 35: Time(sec) | 36: T_max(K) | 38: Simulation | 39: Time(sec) | 40: T_max(K)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:fdf3a64294e72573c410",
+      "source": "exp:PSI-117:review:6fc231a84aa88d4585be",
+      "target": "concept:426826b05a44d46ad079",
+      "type": "STUDIES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ec&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: time | 3: Radiance (W) | 4: time | 5: df (mm) | 9: time | 10: Radiance (W) | 11: time | 12: df (mm) | 15: Simulation | 17: time (s) | 18: Q(W) | 20: Simulation | 21: time (s) | 22: Q (W) | 25: Simulation | 26: Time(sec) | 27: Dflame (mm) | 29: Simulation | 30: Time(sec) | 31: Dflame (mm) | 34: Simulation | 35: Time(sec) | 36: T_max(K) | 38: Simulation | 39: Time(sec) | 40: T_max(K)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:64120dd06b0517f4682c",
+      "source": "exp:PSI-117:review:6fc231a84aa88d4585be",
+      "target": "var:2159757fb908c7693d1d",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ec&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: time | 3: Radiance (W) | 4: time | 5: df (mm) | 9: time | 10: Radiance (W) | 11: time | 12: df (mm) | 15: Simulation | 17: time (s) | 18: Q(W) | 20: Simulation | 21: time (s) | 22: Q (W) | 25: Simulation | 26: Time(sec) | 27: Dflame (mm) | 29: Simulation | 30: Time(sec) | 31: Dflame (mm) | 34: Simulation | 35: Time(sec) | 36: T_max(K) | 38: Simulation | 39: Time(sec) | 40: T_max(K)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:d460eeb1060144ec3e55",
+      "source": "exp:PSI-117:review:6fc231a84aa88d4585be",
+      "target": "var:26d6fb97c5e4fba32d05",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ec&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: time | 3: Radiance (W) | 4: time | 5: df (mm) | 9: time | 10: Radiance (W) | 11: time | 12: df (mm) | 15: Simulation | 17: time (s) | 18: Q(W) | 20: Simulation | 21: time (s) | 22: Q (W) | 25: Simulation | 26: Time(sec) | 27: Dflame (mm) | 29: Simulation | 30: Time(sec) | 31: Dflame (mm) | 34: Simulation | 35: Time(sec) | 36: T_max(K) | 38: Simulation | 39: Time(sec) | 40: T_max(K)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:903e6cc884b25779b549",
+      "source": "exp:PSI-117:review:6fc231a84aa88d4585be",
+      "target": "var:e6a384167ae2a2142da1",
+      "type": "MEASURES",
+      "properties": {
+        "origin": "source_review",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ec&version=1&studyVersion=2&redirect=true",
+            "locator": "table, row 1",
+            "text": "2: time | 3: Radiance (W) | 4: time | 5: df (mm) | 9: time | 10: Radiance (W) | 11: time | 12: df (mm) | 15: Simulation | 17: time (s) | 18: Q(W) | 20: Simulation | 21: time (s) | 22: Q (W) | 25: Simulation | 26: Time(sec) | 27: Dflame (mm) | 29: Simulation | 30: Time(sec) | 31: Dflame (mm) | 34: Simulation | 35: Time(sec) | 36: T_max(K) | 38: Simulation | 39: Time(sec) | 40: T_max(K)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:0da8d24c578a2f05ab72",
+      "source": "exp:PSI-117:campaign",
+      "target": "citation:a3be0b0c4a494d2ce1cc",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.publications",
+            "text": "Extinction characteristics of isolated n-alkane fuel droplets during low temperature cool flame burning in air (2023)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:5ac154552b98a8aa6ae4",
+      "source": "exp:PSI-117:campaign",
+      "target": "citation:6ef2c737c8f265a69699",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.publications",
+            "text": "Sub-millimeter sized multi-component jet fuel surrogate droplet combustion: Physicochemical preferential vaporization effects (2021)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:5e8ab2f4580e212ee366",
+      "source": "exp:PSI-117:campaign",
+      "target": "citation:e591c5e62faa15f1ccd6",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.publications",
+            "text": "Initial diameter effects on combustion of unsupported equi-volume n-heptane/iso-octane mixture droplets and the transition to cool flame behavior: Experimental observations and detailed numerical modeling (2020)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:dc9f4776dab3a8adb947",
+      "source": "exp:PSI-117:campaign",
+      "target": "citation:5c17ee21783a49fdd684",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.publications",
+            "text": "Oscillatory cool flame combustion behavior of submillimeter sized n-alkane droplet under near limit conditions (2019)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:6ebf34662a3cf16e67d7",
+      "source": "exp:PSI-117:campaign",
+      "target": "citation:de798c67fb7eda165492",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.publications",
+            "text": "Investigating the role of preferential vaporization during submillimeter sized multicomponent jet fuel surrogate droplet combustion (2019)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:a2a4687b8407d1e702ae",
+      "source": "exp:PSI-117:campaign",
+      "target": "citation:d03ffed43c893838ffd2",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.publications",
+            "text": "Multi-component jet fuel surrogate droplet combustion: Preferential vaporization behaviors under spray relevant conditions and effects on combustion behaviors (2019)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:854a4da3568351a193a9",
+      "source": "exp:PSI-117:campaign",
+      "target": "citation:3ed141227fdeccb3fcdb",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.publications",
+            "text": "Cool Flame Combustion of Sub-Millimeter Sized Higher n-Alkane Droplets at Atmospheric Condition (2017)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:7307600e3cd9168f9115",
+      "source": "exp:PSI-117:campaign",
+      "target": "citation:0412de8b8908389bc69b",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.publications",
+            "text": "Non-Premixed - Partially Premixed to Diffusive Burning: Initial Transient of Direct Cool Flame Burn (2017)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:eabc9b1ebe3abf3f5127",
+      "source": "exp:PSI-117:campaign",
+      "target": "citation:fac5148b3bf7a03d721a",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.publications",
+            "text": "Oscillatory Cool Flame Combustion Behavior of Submillimeter Sized n-Alkane Droplet under Near Limit Conditions (2018)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:9cf74a64c45d4de0f68c",
+      "source": "exp:PSI-117:campaign",
+      "target": "citation:cb0f2d23ed6eb1cb40d2",
+      "type": "HAS_RESOURCE",
+      "properties": {
+        "origin": "NASA_bibliographic_metadata",
+        "verification_status": "verified",
+        "evidence": [
+          {
+            "source_url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-117",
+            "locator": "metadata.publications",
+            "text": "Dynamics of cool flames (2019)"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:b2a7a1feac033db8ddd7",
+  "study": "PSI-22",
+  "filename": "PSI-22_Reference Data_ACME-DOC-010_D.pdf",
+  "key": "psi-data/PSI-22/Reference Data/PSI-22_Reference Data_ACME-DOC-010_D.pdf",
+  "category": "Reference Data",
+  "size_bytes": 2151284,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75b0eb4c0867600556b&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/b2a7a1feac033db8ddd7/PSI-22_Reference Data_ACME-DOC-010_D.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "9b966931336bf70c5bf544b5f02de1978ea206da55a51a0e5ee210f63e1de36c",
+  "status": "downloaded"
+}

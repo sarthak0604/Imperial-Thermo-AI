@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:639ba93fc02caeda1515",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Lopez-Camara et al 2017 Numerical Simulations of a Co-Flow Methane-Air Flame.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Lopez-Camara et al 2017 Numerical Simulations of a Co-Flow Methane-Air Flame.pdf",
+  "category": "Presentations",
+  "size_bytes": 1631600,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75c0eb4c08676005573&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/639ba93fc02caeda1515/PSI-22_Presentations_Lopez-Camara et al 2017 Numerical Simulations of a Co-Flow Methane-Air Flame.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f9b1cadb5b0ad77f2bf95e604aecbe4e433a5fb3b8398c5f8c38420b8ef7aefa",
+  "status": "downloaded"
+}

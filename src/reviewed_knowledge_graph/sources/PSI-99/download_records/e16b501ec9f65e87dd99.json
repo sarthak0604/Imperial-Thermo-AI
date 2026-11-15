@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-99:e16b501ec9f65e87dd99",
+  "study": "PSI-99",
+  "filename": "PSI-99_Science Documents_SAFFIRE Objectives, Development and Status.pdf",
+  "key": "psi-data/PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE Objectives, Development and Status.pdf",
+  "category": "Science Documents",
+  "size_bytes": 186259,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-99/download?file=6840cdd84a0e24d624cebd94&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-99/e16b501ec9f65e87dd99/PSI-99_Science Documents_SAFFIRE Objectives, Development and Status.pdf",
+  "sha256": "6cff0b55b8f1416f5b5b768b7fd22ae31991791ef633865471b72ff19ff4159b",
+  "status": "downloaded"
+}

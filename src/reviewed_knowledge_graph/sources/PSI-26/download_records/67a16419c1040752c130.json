@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:67a16419c1040752c130",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_BASS ERD.pptx",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_BASS ERD.pptx",
+  "category": "Engineering Documents",
+  "size_bytes": 2856973,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcf8c3501a37c2c60dc8&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/67a16419c1040752c130/PSI-26_Engineering Documents_BASS ERD.pptx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "bcc58d965f3e0f0b05d0c700e0d3311ef7a5bd49f96958cb0a11be473ac302be",
+  "status": "downloaded"
+}

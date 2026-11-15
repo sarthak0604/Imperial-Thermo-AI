@@ -1,0 +1,32 @@
+{
+  "id": "res:PSI-22:fa63ebdd549a1c1cc74f",
+  "study": "PSI-22",
+  "filename": "PSI-22_Science Documents_ACME E-FIELD Flames DoD.pdf",
+  "key": "psi-data/PSI-22/Science Documents/PSI-22_Science Documents_ACME E-FIELD Flames DoD.pdf",
+  "category": "Science Documents",
+  "size_bytes": 168744,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75d0eb4c0867600557d&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/fa63ebdd549a1c1cc74f/PSI-22_Science Documents_ACME E-FIELD Flames DoD.pdf",
+  "sha256": "ad7728785411e3a804cb884caa0c7bce44c034a1c0756bdded35b040ae447472",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "PSI Data Organization Document \nAdvanced Combustion via Microgravity Experiments (ACME) Electric-Field Effects on Laminar Diffusion \nFlames (E-FIELD Flames) \n \n1 \n \nTo gain an initial understanding of this experiment, refer to the documents “ACME non-imaging data file \ndescription.pdf” and “E-FIELD Flames data interpretation document.pdf” located in the “Data Organization \nDocument(s)” section of the “Scientific Data and Information” section on the “Data” tab.  \n \nThe E-FIELD Flames data is organization in PSI by co-flow burner position and mesh polarity, or power \nsupply. Raw data, and Images & Videos data are available on the “Scientific Data and Information Tab” of \neach of the four “Experiment Data” records:  \n \n• \nCo-Flow Burner – Negative Power Supply \n• \nCo-Flow Burner – Positive Power Supply \n• \nGas-Jet Burner – Negative Power Supply \n• \nGas-Jet Burner – Positive Power Supply \n \n \nWithin each “Experiment Data” record, “Raw Data”, “Images” and “Audio/Video Files” are available on the \n“Scientific Data and Information” tab. Data records are identified by year (2 digits), day of year (GMT, 3 \ndigits), a letter (1 character) and a number (1 digit) – where the different numbers can be for repeats but \nare typically variants, e.g., with different flow rate(s) or instrumentation setting(s), e.g. 18073A3. Record \nnaming and listings are based on the detailed information in the test conditions table below (page 2). \n \nTest specific raw data files are located on the “Raw Data and Information” tab of the “Raw & Analyzed \nData” record. The headers of the basic data in .csv files is explained in Section 10.1, beginning on page \n126 of the “ACME-DOC-010 Rev D.pdf” located in the “Data Organization Document(s)” section of the \n“Scientific Data and Information” section on the “Data” tab of the ACME E-FIELD Flames “Investigations” \nrecord. Associated videos are located on the “General” tab and associated images are located on the \n“Image Data and Information” tab of the “Videos & Images” record. \n \nThere are various other supporting engineering documents, videos, reports and publications available on \nthe other tabs of the “Investigations” record. \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "PSI Data Organization Document \nAdvanced Combustion via Microgravity Experiments (ACME) Electric-Field Effects on Laminar Diffusion \nFlames (E-FIELD Flames) \n \n2 \n \n \n"
+    }
+  ],
+  "details": {
+    "page_count": 2,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

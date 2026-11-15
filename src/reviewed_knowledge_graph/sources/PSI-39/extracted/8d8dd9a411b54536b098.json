@@ -1,0 +1,29 @@
+{
+  "id": "res:PSI-39:8d8dd9a411b54536b098",
+  "study": "PSI-39",
+  "filename": "PSI-39_Analyzed Data_FLEX-1211_Summary.pdf",
+  "key": "psi-data/PSI-39/Analyzed Data/PSI-39_Analyzed Data_FLEX-1211_Summary.pdf",
+  "category": "Analyzed Data",
+  "size_bytes": 238256,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-39/download?file=683f4b6eda33c6f4c4cec57f&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-39/8d8dd9a411b54536b098/PSI-39_Analyzed Data_FLEX-1211_Summary.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "37e63f116ed5dd77851185e517641111e3d4356fd4a6a55cb404aa4cc5463377",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "1.0\n0.8\n0.6\n0.4\n0.2\n0.0\n( D / D0 )\n2\n3.0\n2.5\n2.0\n1.5\n1.0\n0.5\n0.0\nt / D0\n2  ( s / mm\n2 )\n25\n20\n15\n10\n5\n0\nDf  ( mm ) ,  Df / Dd\n3\n4\n5\n6\n7\n8\n91\n2\n3\n4\n5\n6\n7\n8\n910\n2\nFlame Radiance  ( W )\nTue, Mar 21, 2017\nFLEX-1211\nF080A01\nP = 769.992 mmHg\nYO2 = 0.210\nYN2 = 0.790\nYCO2 = 0.000\nYHe = 0.000\nDodecane\nD0 = 4.268 mm\nDext = 3.934 mm\nkavg = 0.339 mm\n2/sec\nkavg, cool = 0.398 mm\n2/sec\nDext, cool = 0.380 mm\n"
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-20:6454076579f1845de438",
+  "study": "PSI-20",
+  "filename": "PSI-20_Experimental table_ACME BRE.csv",
+  "key": "psi-data/PSI-20/Experimental table/PSI-20_Experimental table_ACME BRE.csv",
+  "category": "Experimental table",
+  "size_bytes": 1113,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=67900e38b7b6ff8e6502900c&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/6454076579f1845de438/PSI-20_Experimental table_ACME BRE.csv",
+  "sha256": "4aa5d3f98708ceacced5c620d46858b9965f8d4d941b203229f46467d53e5ab7",
+  "status": "downloaded"
+}

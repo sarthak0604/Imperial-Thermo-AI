@@ -1,0 +1,185 @@
+{
+  "id": "res:PSI-20:512ab2673d2c732ef18a",
+  "study": "PSI-20",
+  "filename": "PSI-20_Science Documents_ACME_Integrated_Science_Requirements_Definition_Review_20100505.pdf",
+  "key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_ACME_Integrated_Science_Requirements_Definition_Review_20100505.pdf",
+  "category": "Science Documents",
+  "size_bytes": 3119886,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8261b4820d736ceccad&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/512ab2673d2c732ef18a/PSI-20_Science Documents_ACME_Integrated_Science_Requirements_Definition_Review_20100505.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "de4fbf2c4b4a88629b7938c8a61cd1530ed77440188015cccc60d56dbe85a08e",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "National Aeronautics and Space Administration\nACME\nACME\nAdvanced Combustion via Microgravity Experiments\nIntegrated Science Requirements\nR\ni\nt\nD fi iti\nR\ni\nRequirements Definition Review\nMay 10-11, 2010\nCleveland Ohio\nCleveland, Ohio\nwww.nasa.gov\n1\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "National Aeronautics and Space Administration\nIntegrated Science Requirements\ng\nq\n• Introduction\n– Experiments\np\n– Concept\n• Requirements*\nH\nd\nR\ni\nt\n– Hardware Requirements\n• Experiment Configuration\n• Monitoring Measurements\n• Science Diagnostics\n*Non-hardware requirements will be addressed by each experiment\nMDCA insert\nNon hardware requirements will be addressed by each experiment\n– Operational Requirements\n– Test Matrices\n– Success Criteria\nwww.nasa.gov\nSuccess Criteria\n2\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "National Aeronautics and Space Administration\n4 ACME Experiments\np\n•\nCLD Flame\n–\nCoflow Laminar Diffusion Flame\nPI\nM\nh ll L\n(Y l\nU )\n–\nPI\nMarshall Long (Yale U.) \n–\nCo-I\nMitchell Smooke (Yale U.)\n•\nE-FIELD Flames\n–\nElectric Field Effects on Laminar Diffusion Flames\n–\nPI\nDerek Dunn-Rankin (UC Irvine)\n–\nCo-Is\nFelix Weinberg (Imperial College) \nZeng-Guang Yuan (NCSER)\n•\nFlame Design\na novel approach to clean efficient diffusion flames\n•\nFlame Design - a novel approach to clean, efficient diffusion flames\n–\nPI\nRichard L. Axelbaum (Washington U. in St. Louis)\n–\nCo-Is\nBeei-Huan Chao (U. Hawaii), \nPeter B. Sunderland (U. Maryland),\nD\nid L U b\n(NASA Gl\n)\nDavid L. Urban (NASA Glenn)\n•\ns-Flame\n–\nStructure and Response of Spherical Diffusion Flames\n–\nPI\nC.K. Law (Princeton U.)\nwww.nasa.gov\nPI\nC.K. Law (Princeton U.)\n–\nCo-Is\nStephen D. Tse (Rutgers U.)\nKurt R. Sacksteder (NASA Glenn)\n3\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "National Aeronautics and Space Administration\nLaminar Gaseous Diffusion Flames\n•\n4 previous space experiments\n– LSP: Laminar Soot Processes\nPI: G M Faeth (U Michigan)\n• PI: G.M. Faeth (U. Michigan)\n• Combustion Module\n• STS-83 and STS-94 (1997), STS-107 (2003)\n– TGDF: Turbulent Gas-jet Diffusion Flames\nj\n• PI: M.Y. Bahadori (SAIC)\n• Get Away Special Canister (GAS can)\n• STS-87 (1997)\nELF: Enclosed Laminar Flames\n– ELF: Enclosed Laminar Flames\n• PI: L.-D. Chen (U. Iowa)\n• Middeck Glovebox (MGBX)\n• STS-87 (1997)\n– SPICE: Smoke Point In Coflow Experiment\n• PI: D.L. Urban (NASA Glenn) - initially G.M. Faeth\n• Microgravity Science Glovebox (MSG)\n• ISS Expeditions 18-19 (2009)\nwww.nasa.gov\nISS Expeditions 18 19 (2009)\n4\nRoger Crouch with CM-1 on STS-83 (top), Michael Barratt with SPICE (bottom)\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "National Aeronautics and Space Administration\nACME Concept\np\n•\nACME experiments all use laminar gaseous diffusion flames\n•\nConduct them using a single modular insert for the Combustion \nIntegrated Rack (CIR) on the International Space Station (ISS)\n–\nThe only currently existing insert is for droplet combustion experiments\nwww.nasa.gov\n5\nKoichi Wakata with MDCA in CIR (left), ISS (right)\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "National Aeronautics and Space Administration\nACME Hardware\n•\nACME hardware\n– single modular insert\n– avionics box\navionics box\n– color camera(s) & optics\n– gas bottles, filter cartridges, etc.\nwww.nasa.gov\n6\nNicole Stott with MDCA (left), CIR (right)\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "National Aeronautics and Space Administration\nACME Insert Concept\nMesh electrode or SiC fiber array for TFP \n(vertically translating) \nLamp(s) to \nilluminate \nconfiguration\nMesh electrode\nRadiometer\nRadiometer\nRadiometer\nPMT\nPMT\nPMT\nRadiometer\nad o\nete\nP\nIgniter (retracting)\nHigh-voltage \npower supply \nwith current \nmeasurement\nRadiometer\nFuel MFC\nInert MFC\nIgniter (retracting)\nThermocouples\nMixer\nwww.nasa.gov\n7\nOxidizer MFC\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "National Aeronautics and Space Administration\nScience Requirements Disallowed\nq\n•\nACME must be done within resource constraints\n•\nDifficult/costly or desired requirements were not allowed\nDifficult/costly or desired requirements were not allowed\n–\nMeasurements\n•\nCH* imaging\n•\ninfrared imaging\n•\ninfrared imaging\n•\nSchlieren and shadowgraph imaging\n•\nPAH limit\nsoot inception limit by laser scattering\n•\nsoot inception limit by laser scattering\n•\nsoot sampling\n•\nspecies concentrations (other than via CIR’s GC)\nb rner gas temperat res\n•\nburner gas temperatures\n–\nTesting\n•\noxygen concentrations over 40% in the chamber\nf\nwww.nasa.gov\n8\n•\ndynamic venting for constant pressure testing\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "National Aeronautics and Space Administration\nNominal Operational Sequence\np\nq\n• Flow > Ignite > Measure > Extinguish \n– Initiate burner flows at ignition condition \ng\n– Ignite flame\n• Wait for flame to stabilize\n– If needed adjust flows to initial test condition\n– If needed, adjust flows to initial test condition \n• Wait for flame to stabilize\n– If needed:\nramp burner flow(s)\n• ramp burner flow(s)\n• activate and adjust electric field\n• translate TFP array\nSt\nb\nfl\n– Stop burner flows\n• per extinction detection or test duration\nwww.nasa.gov\n9\nNicole Stott with CIR\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "National Aeronautics and Space Administration\nACME Hardware Requirements\nq\n• Experiment Configuration\n– General (1.1)\n(\n)\n– Burners (1.2-1.4)\n– Electric Field (1.5-1.7)\nGas Delivery (1 8 1 9)\n– Gas Delivery (1.8-1.9)\n– Ignition (1.10)\n– Ambient Environment (1.11)\n– Data Acquisition (1.12)\n• Monitoring Measurements\n• Science Diagnostics\n• Science Diagnostics\nwww.nasa.gov\n10\nFrank DeWinne with CIR\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "National Aeronautics and Space Administration\nGeneral Requirements (1.1)\nq\n(\n)\n•\nBurners\nall burners accommodated, but only one at a time\nexchangeable during spaceflight\none duplicate of each provided to Project Scientist\n•\nCompatibility of burners and gas delivery system\n– fuels\nH2, CH4, C2H6, C3H8, C2H4, C3H6, and mixes\n– inerts\nN2, CO2, He, Ne, Ar, Kr, Xe, and mixes\n– fuel/inert\nmixtures of any fuel(s) and inert(s) above\n– oxygen mix\n≤85% oxygen with any fuel(s) and/or inerts above\n•\nChamber \ncontents compatible with ≤40% oxygen\n•\nSimultaneous\nall configuration requirements apply simultaneously \nunless otherwise specified\nwww.nasa.gov\n11\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "National Aeronautics and Space Administration\nBurners (1.2-1.4)\n(\n)\n• 3 types of exchangeable burners \n– porous spherical burners (3 sizes)\np\np\n(\n)\n– circular gas-jet burners (6 sizes)\n– axisymmetric, coflow burner (1 size)\n• capable of inverse flames\n• capable of inverse flames\nwww.nasa.gov\n12\n"
+    },
+    {
+      "locator": "page 13",
+      "text": "National Aeronautics and Space Administration\nSpherical Burners (1.2)\np\n(\n)\n•\nPorous sphere ODs\n6.4, 9.5, 12.7 mm known to ±0.1 mm \n•\nBurner tube\n– inner diameter\nso pressure drop is ≤20% of that across burner\n– outer diameter\n≤25% of sphere diameter\n– length\n≥100 mm\n– material\nstainless steel\n•\nSphericity\n2.2s drop verification of flame with rmin/rmax>0.8\n•\nPositions\n(1) centered in chamber & windows\nor (2) 30 mm ‘below’ window center\n•\nVolume (internal)\n≤10 cc from last solenoid valves\n•\nResistance\nwithstand 0-450 oC\nwww.nasa.gov\n13\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "National Aeronautics and Space Administration\nGas-Jet Burners (1.3)\n(\n)\n•\nShape\nstraight tube with circular cross section\n•\nLength\n≥40 inner diameters\n•\nTube sizes\n0.4±0.1 mm ID, 0.8±0.1 mm OD\n0.8±0.1 mm ID, 1.2±0.1 mm OD\n1.3±0.1 mm ID, 1.6±0.1 mm OD\n2.1±0.1 mm ID, 2.4±0.1 mm OD\n2.7±0.1 mm ID, 3.1±0.1 mm wall\n3.2±0.1 mm ID, 3.6±0.1 mm wall\nID and OD known to ±0.05 mm\n•\nBurner tip\nsmooth, free from burs\n•\nPosition\non chamber axis either:\n(1) 10 mm ‘below’ window center\n(2) 30 mm ‘below’ window center\n•\nMaterial\nstainless steel\nwww.nasa.gov\n14\n•\nResistance \nwithstand 0-1000 oC\nSoot volume fraction measurement in LSP experiment on STS-83\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "National Aeronautics and Space Administration\nCoflow Burner (1.4)\n(\n)\n•\nConcentricity\nwithin ±0.3 mm\n•\nOutlets\northogonal and flat within ±0.1 mm\n•\nDimensions\nHoneycomb\n•\nDimensions\n– inner tube\n2.1±0.1 mm ID, 2.4±0.1 mm OD,\nlength of ≥40 inner diameters\n≤10 cc volume from last solenoid valves\n≤10 cc volume from last solenoid valves\n0.5 to 1.0 mm downstream of annular outlet\nstainless steel\n– outer tube\n25±0.5 mm ID\n0.0 to 0.5 downstream of annular outlet\n•\nAnnular flow\naxisymmetric, plug flow for velocities of ≤50 cm/s\nno swirl or turbulence\n≤0.75 mm boundary layer at inner tube\nwell characterized with cold flow for 10-50 cm/s\n•\nAxisymmetry\nflame axisymmetry demonstrated in 1g and 0g\nPosition\ncentered 12 mm ‘below’ window center\nwww.nasa.gov\n15\n•\nPosition\ncentered, 12 mm below window center\n•\nResistance\nwithstand 0-1000 oC range\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "National Aeronautics and Space Administration\nElectric Field (1.5-1.7)\n(\n)\nNozzle\nInsulator\nMesh \nGas supply\nH V\nelectrode\nShunt for current \nmeasurement, Rs\nGas supply \ntubes\nH.V.\nCh\nb\nmeasurement, Rs\nwww.nasa.gov\n16\nChamber\nLow voltage input, e.g., 0-24VDC\n"
+    },
+    {
+      "locator": "page 17",
+      "text": "National Aeronautics and Space Administration\nElectrodes: Burner (1.5) and Mesh (1.6)\n(\n)\n(\n)\nBurner as Electrode (1.5) - doesn’t apply to spherical burners\n•\nResistance \n<1 Ohm along/across burner (i.e., same potential)\n•\nInsulation \nburner insulated from the chamber\nElectrode Mesh (1.6)\n•\nShape\nflat circle\n•\nMaterial\ncopper (mesh and ring)\n•\nMesh\n16-22 wires/inch\n0.38-0.64 mm diameter wire\n•\nEdge\n2-3 mm diameter ring\n•\nSize\n≥80 mm diameter (ring OD)\n•\nOrientation\northogonal and on chamber axis\n•\nPosition\n25 or 40 mm ‘above’ window centers\n•\nRemovable\nduring spaceflight\nwww.nasa.gov\n17\ng p\ng\n"
+    },
+    {
+      "locator": "page 18",
+      "text": "National Aeronautics and Space Administration\nElectric Field (1.7)\n(\n)\n•\nVoltage range\n-10 to +10 kV set within ±0.1% of set point\n•\nStep change\nany polarity and magnitude within range\n≤5 ms rise time\n•\nAlternating polarity\nsequence of steps at 0-100 Hz (mimic AC field)\n•\nUplink\nvoltage, polarity, step changes, timing\n•\nNo conductive contact mesh and burner (except for temp. measurement)\n•\nConductive free zone\n≥30 mm more than mesh diameter\nfrom burner to ≥20 mm downstream of mesh\n•\nCurrent leakage\n<100 nanoamps (at ±10 kV with a 35-mm spacing)\n•\nRemovable\nhigh voltage power supplies, associated electronics\nwww.nasa.gov\n18\n"
+    },
+    {
+      "locator": "page 19",
+      "text": "National Aeronautics and Space Administration\nGas Supply (1.8)\npp y (\n)\n•\nFor required testing\n–\nfuels\n100% H2, 100% CH4, 100% C2H4 \nH2/CH4 mixes*: 55 6/44 4 44 4/55 6 66 7/33 3\nH2/CH4 mixes : 55.6/44.4, 44.4/55.6, 66.7/33.3\n–\noxidizers**\nO2/N2 mixes*: 85/15, 50/50, 30/70, 21/79\n40/60 O2/He \n–\ninerts\n100% N2 (available from ISS), 100% He\n•\nFor desired testing\n–\nfuels\nnone\n–\noxidizers**\nO2/CO2 mixes*: 85/15, 40/60\n–\ninerts\n100% CO2\ninerts\n100% CO2\nwww.nasa.gov\n19\n*Mixes on a molar (volume) basis\n**CIR gas bottles limited to ≤85% O2\n"
+    },
+    {
+      "locator": "page 20",
+      "text": "National Aeronautics and Space Administration\nBurner Gas Delivery (1.9)\ny (\n)\n•\nCapability\nsimultaneous flow of fuel, oxidizer, and inert to burner\n(coflow burner: each gas to inner or outer tube, not both) \n•\nUplink\nmixture composition, flow rates\n•\nComposition\n±0.01 mole fraction, known as function of time\n•\nFlow rate control\naccuracy of ≤5% (plus shut off capability)\n•\nFlow capacity\n60s at maximum flow rates (see below)\n•\nGas temperature\n300±10 K\n•\nContaminants\n≤0.001 mole fraction, dry\n•\nFlow ranges \nsee below (slpm on a N2 basis) \nCLD\nE-FIELD E-FIELD Flame\nFlame\nFlame\nFlame\nFlames\nFlames\nDesign\nDesign\nDesign\ns-Flame\nfl\nj t\nfl\nh\ni\nl\nfl\n*\nfl\n**\nh\ni\nl\ncoflow\ngas jet\ncoflow\nspherical coflow*\ncoflow**\nspherical\nfuel\n0.2\n0.1\n0.1\n0.3\n0.3\n2.0\n0.5\noxy\n15\nn/a\n2.0\n3.0\n20\n2.0\nn/a\ninert 0.1\n0.05\n0.05\n10\n2.0\n20\n1.0\nwww.nasa.gov\n20\ninert 0.1\n0.05\n0.05\n10\n2.0\n20\n1.0\n*normal\n**inverse\n"
+    },
+    {
+      "locator": "page 21",
+      "text": "National Aeronautics and Space Administration\nIgnition (1.10)\ng\n(\n)\n•\nReliable\nignite all initial flow conditions\nverified to ignite within 1 s in 1g at limiting/extreme conditions\n•\nDisturbance\nminimize hydrodynamic wakes\n•\nInsertion\n≥30 s before igniton\n•\nRetraction\n≤0.5 s after ignition\n•\nEnergy\nvariable and minimized\n•\nDuration\nuplinkable and variable between 0-10 s\nwww.nasa.gov\n21\nMDCA ignition\n"
+    },
+    {
+      "locator": "page 22",
+      "text": "National Aeronautics and Space Administration\nAmbient Environment (1.11)\n(\n)\n•\nComposition\nuplinkable and variable to ±0.01 mole fraction\n•\nContaminants\n≤0.01 mole fraction and dry, unless waived\n•\nAtmosphere\nwell mixed\n•\nQuiescent\n300 s hold period before ignition\n•\nPressure \n0.1 to 3 bar within ±3% of set point\n•\nTemperature\n290-310 K, uniform within ±5 K\n•\nFree volume\n≥80 liters, symmetric as possible\n•\nFree zone\n– spherical flames\n≥200 mm diameter\n– non-spherical\n≥150 mm diameter cylinder, ≥200 mm up, etc.\n•\nDisturbance limit\nburner flow, combustion, probe motion, g-jitter\n•\nNo test prohibition\nduring thruster firing, docking, or undocking\n•\n‘Black’ background\nno reflection or emission in view of sensor\n•\nEmissivity\n≥0.5 except for burners, probe tips, igniter, etc.\nwww.nasa.gov\n22\nReq’t for dynamic venting was disallowed because of difficulty & cost!\n"
+    },
+    {
+      "locator": "page 23",
+      "text": "National Aeronautics and Space Administration\nData Synchronization & Recording (1.12)\n•\nSynchronization\ncommon time reference, within 2x response time\n•\nData acquisition\nstart & stop times can be uplinked\nimaging\n≤1 min before ignition, ≤1 min after extinction\nnon-imaging\n≤5 min before ignition, ≤5 min after extinction\n•\nDownlink\ncan downlink from only selected imaging systems\ncan downlink image data for selected time period(s)\n•\nRecording\nsimultaneous for all of the following\nmonitoring\nchamber pressure, gas flow rates, burner pressure \ndiff\nti l (\nh\ni\nl fl\n)\nl\nt i\nl\nt\nti l (E\ndifferential (spherical flames), electrical potential (E-\nFIELD Flames only), acceleration\ndiagnostics\nimaging\ncolor imaging for operations color imaging for data\nimaging\ncolor imaging for operations, color imaging for data \nanalysis, UV imaging, pyrometry, soot volume fraction\nnon-imaging burner & far-field temperatures, radiant emission, \nchemiluminescent emission, ion current (E-FIELD\nwww.nasa.gov\n23\nchemiluminescent emission, ion current (E FIELD \nFlames only)\n"
+    },
+    {
+      "locator": "page 24",
+      "text": "National Aeronautics and Space Administration\nACME Hardware Requirements\nq\n• Experiment Configuration\n• Monitoring Measurements\nMonitoring Measurements\n– Chamber Pressure (2.1)\n– Oxygen Concentration (2.2)\nG\nFl\nR t\n(2 3)\n– Gas Flow Rates (2.3)\n– Burner Pressure Differential (2.4)\n– Electrical Potential (2.5)\n– Acceleration (2.6)\n• Science Diagnostics\nThese measurements are required to \nverify boundary and initial conditions \nwww.nasa.gov\n24\nand thus enable modeling and analysis.\nMichael Barratt with MDCA in CIR\n"
+    },
+    {
+      "locator": "page 25",
+      "text": "National Aeronautics and Space Administration\nGas Monitoring (2.1-2.3)\ng (\n)\nChamber Pressure (2.1)\n•\nAccuracy\n±1% of reading\n•\nRange\n0.1-4.0 bar absolute\n•\nFrequency\n≥1 samples/s\n•\nResponse time\n≤0.5 s\nChamber Oxygen Concentration (2.2)\n•\nInstrument\nGas Chromatograph Instrumentation Package (GCIP)\n•\nMeasure when?\nprior to each test, after filling, scrubbing (if any), & mixing\nGas Flow Rates (2.3)\n(\n)\n•\nAccuracy\n±5% of reading\n•\nFrequency\n≥10 samples/s\n•\nResponse time\n≤1 s\nwww.nasa.gov\n25\np\n•\nMeasure\nall supply lines during testing whether or not in use\n"
+    },
+    {
+      "locator": "page 26",
+      "text": "National Aeronautics and Space Administration\nOther Monitoring (2.4-2.6)\ng (\n)\nBurner Pressure Differential (2.4) – only required for spherical flames\n•\nDifference\nacross porous spherical burner (i.e., versus chamber)\n•\nAccuracy\n±2% of reading\n•\nRange\n0.1 to ~1.5x pressure drop at 5 slpm (on N2 basis)\n•\nFrequency\n≥10 samples/s\n•\nResponse time\n≤0.5 s\nElectric Potential (2.4) – for E-FIELD Flames only\n•\nAccuracy\n±1% of reading\n•\nRange\nmatching range of electric field\n•\nFrequency\n≥1 samples/s\n•\nResponse time\n≤0.5 s\nAcceleration (2.6)\nwww.nasa.gov\n26\n•\nInstrument\nSpace Acceleration Measurement System (SAMS)\n•\nSensor location\nat or near CIR\n"
+    },
+    {
+      "locator": "page 27",
+      "text": "National Aeronautics and Space Administration\nACME Hardware Requirements\nq\n• Experiment Configuration\n• Monitoring Measurements\nMonitoring Measurements\n• Science Diagnostics\n– Color Imaging for Ops (3.1)\n– Color Imaging for Data (3.2)\n– Ultraviolet (UV) Imaging (3.3)\n– Temperature (3.4)\np\n(3\n)\n– Soot Volume Fraction (3.5)\n– Radiant Emission (3.6)\nChemiluminescent Emission (3 7)\n– Chemiluminescent Emission (3.7)\n– Ion Current (3.8)\n– Post-Test Gas Composition (3.9)\nwww.nasa.gov\n27\nMDCA and CIR\n"
+    },
+    {
+      "locator": "page 28",
+      "text": "National Aeronautics and Space Administration\nColor Imaging for Operations (3.1)\ng\ng\np\n(\n)\n•\nRange, spectral\n0.4-0.7 µm\n•\nFocus\nchamber axis\n•\nFOV\ninclude ≥90 mm circle\n•\nUplink control\nat least gain or iris\n•\nFraming rate\n≥25 fps\n•\nDownlink\nnear-real time\n•\nExchangeable\nyes (e.g., because of radiation susceptibility)\n•\nIllumination\noptional via uplink\nwww.nasa.gov\n28\nMichael Barratt with MDCA and CIR\n"
+    },
+    {
+      "locator": "page 29",
+      "text": "National Aeronautics and Space Administration\nColor Imaging for Data Analysis (3.2)\ng\ng\ny\n(\n)\n•\nRange, spectral\n0.4-0.7 µm\n•\nSensitivity\n≥ cameras with Sony ICX285 2/3” CCD\n•\nLens f-number\n≤2.8\n•\nSpatial resolution\n≤0.2% FOV dimension\n•\nBit depth\n≥3x12 (i.e., 12 bits each for red, green, blue)\n•\nFocus\nchamber axis, centered with chamber windows\n•\nFOV: 1D flames\n≥90 mm diameter\n•\nFOV: 2D flames\n35 mm along axis, ≥20 mm wide \n•\nOrientation\nlong dimension (if any) with chamber axis\n•\nViews\n≥1\n•\nFilter\noption to image with or without BG-7 filter\n•\nFraming rate\n≥20 fps\n•\nUplink control\n≥bit depth, gain, iris, exposure time, \nframing rate, binning, Region Of Interest (ROI)\nwww.nasa.gov\n29\n•\nCharacterization\nblackbody with 800-1200 oC, etc., etc., etc.\n•\nExchangeable\nyes, in spaceflight\n"
+    },
+    {
+      "locator": "page 30",
+      "text": "National Aeronautics and Space Administration\nUltraviolet (UV) Imaging (3.3)\n•\nSpecifications \ngenerally similar to color imaging\n•\nSpectral range\nOH*, 310 nm, 10 nm FWHM*\n•\nFOV\n– 1D flames\n≥75 mm diameter\n– 2D flames\n60±5mm along chamber axis, \n≥30 mm wide\n* Full Width at Half Maximum\n   r - ←→r +\nwww.nasa.gov\n30\nAbel deconvolved OH* \nimage from s-Flame\nLLL-UV camera (right)\n"
+    },
+    {
+      "locator": "page 31",
+      "text": "National Aeronautics and Space Administration\nTemperature: Burner (3.4.1)\np\n(\n)\n•\nPosition\n– Spherical burner\n20o to 90o of tube\nnot visible in ≥1 color view\n– 2D burners\nat/near nozzle tip\n•\nNon-disturbance\nflame symmetry verified via testing\n•\nProbe size (if any)\n≤250 micron\n•\nRange\n– Spherical burner\n0-700 oC\n– 2D burners\n0-300 oC\n•\nPrecision\n±2 oC\n•\nAccuracy\n±5 oC\n•\nFrequency\n≥10 samples/s \n•\nResponse time\n≤0.5 s\nwww.nasa.gov\n31\nFrank DeWinne with CIR\n"
+    },
+    {
+      "locator": "page 32",
+      "text": "National Aeronautics and Space Administration\nTemperature: Hot Soot-Containing Regions (3.4.2)\n•\nFOV\n– Spherical flames\n≥85 mm diameter\n– 2D flames\n50±5 mm along axis, ≥20 mm wide\n•\nCharacterization\nrequired for any new instrumentation\n•\nGain\nvariable\n•\nFrequency\n≥0.2 sample/s\n•\nResponse time\n≤5 s\n•\nUplink\ngain, start & stop times\nwww.nasa.gov\n32\n32\nHiBMs camera\n"
+    },
+    {
+      "locator": "page 33",
+      "text": "National Aeronautics and Space Administration\nTemperature: Hot Soot-Free Regions (3.4.3)\n•\nWhere?\northogonal to chamber axis, in plane including axis\n•\nMultiple lines\n≥5 lines spaced 5±0.5 mm apart\nposition known to ±1 mm\nposition known to ±1 mm\n•\nIf fibers…\nretract to ≥100 mm from burner\npartial retraction to burn off soot\n15 micron oxidized SiC fibers\n≤25o t\nth\nl\nf\ndi\ni\ni\n≤25o to orthogonal of corresponding imaging\nremovable & exchangeable during spaceflight\n•\nFOV\nSpherical flames\n≥85 mm diameter\n– Spherical flames\n≥85 mm diameter\n– 2D flames\n50±5 mm along axis, ≥20 mm wide\n•\nCharacterization\nrequired for any new instrumentation\n•\nFrequency\n≥0 2 sample/s\n•\nFrequency\n≥0.2 sample/s\n•\nResponse time\n≤5 s\n•\nUplink\ngain, start & stop times\nwww.nasa.gov\n33\n"
+    },
+    {
+      "locator": "page 34",
+      "text": "National Aeronautics and Space Administration\nTemperature: Far-Field (3.4.4)\np\n(\n)\n•\nUnobstructed\nopen path to burner, avoid ≤20o of burner tube\n•\nPositions (radial)\nclose or\n13 25 50 100 200 200 mm\nclose or\n13, 25, 50, 100, 200, 200 mm\ndistant\n45, 60, 100, 100, 200, 200 mm\n•\nRange\n700-1700 oC for r≤40 mm, otherwise 0-1250 oC\n•\nAccuracy\n±3 oC for r≤40 mm ±1 oC for outer positions\nAccuracy\n±3 C for r≤40 mm, ±1 C for outer positions\n•\nFrequency\n≥10 sample/s\n•\nResponse time\n≤0.1 s in air at 1 bar at ≤20 m/s\n•\nFree zone\n≥50 mm dia cylinder from center to position & beyond\nFree zone\n≥50 mm dia. cylinder from center to position & beyond\n•\nTC probe, if any\nwithin ±10o of parallel to ray from center for r≤100 mm\n•\nTC size\n≤0.2 mm OD within 5 mm of tip\n≤2 mm OD within 20 mm of tip\n≤2 mm OD within 20 mm of tip\n≤3.5 mm OD within 50 mm of tip\n•\nExchangeable\nduring spaceflight\n•\nE-FIELD Flames\nnot required\nwww.nasa.gov\n34\nE FIELD Flames\nnot required\n"
+    },
+    {
+      "locator": "page 35",
+      "text": "National Aeronautics and Space Administration\nSoot Volume Fraction (3.5)\n(\n)\n•\nFOV: 1D flames\n≥45 mm along the chamber axis, ≥45 mm wide\n•\nFOV: 2D flames\n≥25 mm along the chamber axis, ≥25 mm wide\n•\nImages\nillumination flame illumination plus flame\n•\nImages\nillumination, flame, illumination plus flame\n•\nFrequency\n≥1 samples/s\n•\nResponse time\n≤1 s\n•\nUplink control\nstart and stop times\nUplink control\nstart and stop times\nwww.nasa.gov\n35\nSandra Magnus with CIR (left), CIR illumination package (right)\n"
+    },
+    {
+      "locator": "page 36",
+      "text": "National Aeronautics and Space Administration\nRadiant Emission (3.6)\n(\n)\n•\nAccuracy\n±10%\n•\nFOV\ncone ≥120 mm in diameter at the chamber axis\n•\nLinear array\n≥5 sensors spaced ≤30 mm\n•\nLinear array\n≥5 sensors spaced ≤30 mm\northogonal (±3 degrees) to chamber axis\ncentered with chamber windows\n•\nAngled array\n≥1 non-orthogonal sensors extending to ≥60o\nAngled array\n≥1 non orthogonal sensors extending to ≥60\n•\nRange\n– Spectral\n0.2-11 microns \n– Irradiance\n0.0001-0.1 W/cm2\n•\nFrequency\n≥60 samples/s\n•\nResponse time \n≤0.05 s\nwww.nasa.gov\n36\nMichael Fincke with MDCA\n"
+    },
+    {
+      "locator": "page 37",
+      "text": "National Aeronautics and Space Administration\nChemiluminescent Emission (3.7)\n(\n)\n•\nRange, spectral\nsimultaneous for each\n– OH* \n310 nm with ≥10 nm or larger FWHM\nCH*\n431 nm with ≥10 nm or larger FWHM\n– CH* \n431 nm with ≥10 nm or larger FWHM\n– broadband \n≤300 to at least ~600 nm \n•\nFOV\n120 mm diameter sphere at window center\n•\nSensitivity to flame\ngood as human eye verified in 1g\nSensitivity to flame\ngood as human eye, verified in 1g\n•\nFrequency\n≥120 samples/s\n•\nResponse time\n≤5 ms\n•\nExchangeable\nin spaceflight\ng\np\ng\nwww.nasa.gov\n37\nKoichi Wakata with MDCA in CIR\n"
+    },
+    {
+      "locator": "page 38",
+      "text": "National Aeronautics and Space Administration\nOther Science Diagnostics (3.8-3.9)\ng\n(\n)\nIon Current (3.8) – E-FIELD Flames only\n•\nMeasure \nbetween the burner and mesh \n•\nRange\n0-25 microamps\n•\nAccuracy \n≤larger of (±5% of reading) or (±0.05 microamps)\n•\nFrequency\n≥120 samples/s\n•\nResponse time\n≤1 ms\nPost-Test Gas Composition (3.9)\n•\nInstrument\nGas Chromatograph Instrumentation Package (GCIP)\n•\nMeasure when?\n(1) immediately after extinction and/or (2) after mixing\n•\nSpecies\nat least CO, CO2, CH4, C2H2, C2H4, N2, O2\nwww.nasa.gov\n38\n"
+    },
+    {
+      "locator": "page 39",
+      "text": "National Aeronautics and Space Administration\nMajor Changes since SCR\najo C a ges s\nce SC\n• Added\n– Inverse spherical flame testing (tentative, assuming safety approval)\np\ng (\n,\ng\ny\npp\n)\n– Color imaging for operations (i.e., with near real-time downlink)\n• Eliminated (where most items were desired)\nD\ni\nti\n– Dynamic venting\n– Oxygen measurement (other than via GCIP)\n– Burner gas temperature measurement\n– CH* imaging\n– IR imaging\n– Schlieren or shadowgraph imaging\nSchlieren or shadowgraph imaging\n• Other Changes\n– Reduced maximum oxygen in chamber from 50% to 40%\nwww.nasa.gov\n39\n"
+    },
+    {
+      "locator": "page 40",
+      "text": "National Aeronautics and Space Administration\nNASA Science Team\nS\nSc e ce\nea\n• Dennis Stocker, Project Scientist\n• Dr Fumiaki Takahashi Deputy Project Scientist\nDr. Fumiaki Takahashi, Deputy Project Scientist\n• Jay Owens, Imaging Technology\nwww.nasa.gov\n40\nWile E. Coyote ®\n"
+    }
+  ],
+  "details": {
+    "page_count": 40,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

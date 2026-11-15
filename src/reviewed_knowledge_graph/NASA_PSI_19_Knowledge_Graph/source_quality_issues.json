@@ -1,0 +1,2934 @@
+[
+  {
+    "study": "PSI-159",
+    "filename": "PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+    "row": 111,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-159",
+    "filename": "PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+    "row": 112,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-159",
+    "filename": "PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+    "row": 113,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-98",
+    "filename": "PSI-98_Experimental table_SAFFIRE-1.csv",
+    "row": 2,
+    "issues": [
+      "Geometry/thickness values are preserved from this table; do not assume agreement with narrative or other Saffire tables."
+    ]
+  },
+  {
+    "study": "PSI-98",
+    "filename": "PSI-98_Experimental table_SAFFIRE-1.csv",
+    "row": 3,
+    "issues": [
+      "Geometry/thickness values are preserved from this table; do not assume agreement with narrative or other Saffire tables."
+    ]
+  },
+  {
+    "study": "PSI-98",
+    "filename": "PSI-98_Experimental table_SAFFIRE-1.csv",
+    "row": 4,
+    "issues": [
+      "Geometry/thickness values are preserved from this table; do not assume agreement with narrative or other Saffire tables."
+    ]
+  },
+  {
+    "study": "PSI-98",
+    "filename": "PSI-98_Experimental table_SAFFIRE-1.csv",
+    "row": 5,
+    "issues": [
+      "Geometry/thickness values are preserved from this table; do not assume agreement with narrative or other Saffire tables."
+    ]
+  },
+  {
+    "study": "PSI-39",
+    "filename": "PSI-39_Experimental table_CFI.csv",
+    "row": 81,
+    "issues": [
+      "Exact duplicate of source row 24; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-39",
+    "filename": "PSI-39_Experimental table_CFI.csv",
+    "row": 82,
+    "issues": [
+      "Exact duplicate of source row 25; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-39",
+    "filename": "PSI-39_Experimental table_CFI.csv",
+    "row": 83,
+    "issues": [
+      "Exact duplicate of source row 26; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-39",
+    "filename": "PSI-39_Experimental table_CFI.csv",
+    "row": 84,
+    "issues": [
+      "Exact duplicate of source row 27; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-39",
+    "filename": "PSI-39_Experimental table_CFI.csv",
+    "row": 85,
+    "issues": [
+      "Exact duplicate of source row 28; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-39",
+    "filename": "PSI-39_Experimental table_CFI.csv",
+    "row": 86,
+    "issues": [
+      "Exact duplicate of source row 29; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-39",
+    "filename": "PSI-39_Experimental table_CFI.csv",
+    "row": 87,
+    "issues": [
+      "Exact duplicate of source row 30; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-39",
+    "filename": "PSI-39_Experimental table_CFI.csv",
+    "row": 88,
+    "issues": [
+      "Exact duplicate of source row 31; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-99",
+    "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+    "row": 2,
+    "issues": [
+      "Source gravity label contains an unreadable ? character."
+    ]
+  },
+  {
+    "study": "PSI-99",
+    "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+    "row": 3,
+    "issues": [
+      "Source gravity label contains an unreadable ? character."
+    ]
+  },
+  {
+    "study": "PSI-99",
+    "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+    "row": 4,
+    "issues": [
+      "Source gravity label contains an unreadable ? character."
+    ]
+  },
+  {
+    "study": "PSI-99",
+    "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+    "row": 5,
+    "issues": [
+      "Source gravity label contains an unreadable ? character.",
+      "Thickness is written 037 mm in source; decimal placement is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-99",
+    "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+    "row": 6,
+    "issues": [
+      "Source gravity label contains an unreadable ? character.",
+      "Thickness is written 037 mm in source; decimal placement is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-99",
+    "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+    "row": 7,
+    "issues": [
+      "Source gravity label contains an unreadable ? character.",
+      "Thickness is written 037 mm in source; decimal placement is unresolved.",
+      "Material cell is blank; not inferred from the preceding row."
+    ]
+  },
+  {
+    "study": "PSI-99",
+    "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+    "row": 8,
+    "issues": [
+      "Source gravity label contains an unreadable ? character."
+    ]
+  },
+  {
+    "study": "PSI-99",
+    "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+    "row": 9,
+    "issues": [
+      "Source gravity label contains an unreadable ? character."
+    ]
+  },
+  {
+    "study": "PSI-99",
+    "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+    "row": 10,
+    "issues": [
+      "Source gravity label contains an unreadable ? character.",
+      "Material cell is blank; not inferred from the preceding row."
+    ]
+  },
+  {
+    "study": "PSI-99",
+    "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+    "row": 11,
+    "issues": [
+      "Source gravity label contains an unreadable ? character."
+    ]
+  },
+  {
+    "study": "PSI-99",
+    "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+    "row": 12,
+    "issues": [
+      "Source gravity label contains an unreadable ? character."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 3,
+    "issues": [
+      "Exact duplicate of source row 2; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 7,
+    "issues": [
+      "Exact duplicate of source row 6; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 10,
+    "issues": [
+      "Exact duplicate of source row 9; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 12,
+    "issues": [
+      "Exact duplicate of source row 11; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 14,
+    "issues": [
+      "Exact duplicate of source row 13; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 103,
+    "issues": [
+      "Exact duplicate of source row 102; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 125,
+    "issues": [
+      "Exact duplicate of source row 123; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 131,
+    "issues": [
+      "Exact duplicate of source row 129; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 132,
+    "issues": [
+      "Exact duplicate of source row 129; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 146,
+    "issues": [
+      "Exact duplicate of source row 142; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 148,
+    "issues": [
+      "Exact duplicate of source row 144; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 153,
+    "issues": [
+      "Exact duplicate of source row 150; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 155,
+    "issues": [
+      "Exact duplicate of source row 151; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 159,
+    "issues": [
+      "Exact duplicate of source row 156; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 160,
+    "issues": [
+      "Exact duplicate of source row 157; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 165,
+    "issues": [
+      "Exact duplicate of source row 162; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 167,
+    "issues": [
+      "Exact duplicate of source row 164; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 172,
+    "issues": [
+      "Exact duplicate of source row 169; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 173,
+    "issues": [
+      "Exact duplicate of source row 170; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 174,
+    "issues": [
+      "Exact duplicate of source row 171; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 184,
+    "issues": [
+      "Exact duplicate of source row 182; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 185,
+    "issues": [
+      "Exact duplicate of source row 183; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 192,
+    "issues": [
+      "Exact duplicate of source row 191; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 216,
+    "issues": [
+      "Exact duplicate of source row 215; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 222,
+    "issues": [
+      "Exact duplicate of source row 220; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 231,
+    "issues": [
+      "Exact duplicate of source row 229; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 232,
+    "issues": [
+      "Exact duplicate of source row 230; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 235,
+    "issues": [
+      "Exact duplicate of source row 234; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 236,
+    "issues": [
+      "Exact duplicate of source row 234; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 241,
+    "issues": [
+      "Exact duplicate of source row 240; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 242,
+    "issues": [
+      "Exact duplicate of source row 240; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 253,
+    "issues": [
+      "Exact duplicate of source row 251; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 267,
+    "issues": [
+      "Exact duplicate of source row 266; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Experimental table_Spice.csv",
+    "row": 336,
+    "issues": [
+      "Exact duplicate of source row 330; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-100",
+    "filename": "PSI-100_Experimental table_SAFFIRE-3.csv",
+    "row": 2,
+    "issues": [
+      "Geometry/thickness values are preserved from this table; do not assume agreement with narrative or other Saffire tables."
+    ]
+  },
+  {
+    "study": "PSI-100",
+    "filename": "PSI-100_Experimental table_SAFFIRE-3.csv",
+    "row": 3,
+    "issues": [
+      "Geometry/thickness values are preserved from this table; do not assume agreement with narrative or other Saffire tables."
+    ]
+  },
+  {
+    "study": "PSI-21",
+    "filename": "PSI-21_Experimental table_CLD Flame.csv",
+    "row": 3,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-21",
+    "filename": "PSI-21_Experimental table_CLD Flame.csv",
+    "row": 4,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-21",
+    "filename": "PSI-21_Experimental table_CLD Flame.csv",
+    "row": 5,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-21",
+    "filename": "PSI-21_Experimental table_CLD Flame.csv",
+    "row": 6,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-21",
+    "filename": "PSI-21_Experimental table_CLD Flame.csv",
+    "row": 7,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-21",
+    "filename": "PSI-21_Experimental table_CLD Flame.csv",
+    "row": 14,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-21",
+    "filename": "PSI-21_Experimental table_CLD Flame.csv",
+    "row": 15,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-21",
+    "filename": "PSI-21_Experimental table_CLD Flame.csv",
+    "row": 33,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-20",
+    "filename": "PSI-20_Experimental table_ACME BRE.csv",
+    "row": 6,
+    "issues": [
+      "Oxygen percentage exceeds 100%; apparent source formatting error, not corrected."
+    ]
+  },
+  {
+    "study": "PSI-20",
+    "filename": "PSI-20_Experimental table_ACME BRE.csv",
+    "row": 9,
+    "issues": [
+      "Oxygen percentage exceeds 100%; apparent source formatting error, not corrected."
+    ]
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "row": 4,
+    "issues": [
+      "Continuation or annotation row without date/test identifier; context not silently filled down."
+    ]
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "row": 7,
+    "issues": [
+      "Continuation or annotation row without date/test identifier; context not silently filled down."
+    ]
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "row": 15,
+    "issues": [
+      "Continuation or annotation row without date/test identifier; context not silently filled down.",
+      "Exact duplicate of source row 7; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "row": 19,
+    "issues": [
+      "Continuation or annotation row without date/test identifier; context not silently filled down.",
+      "Exact duplicate of source row 7; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "row": 25,
+    "issues": [
+      "Continuation or annotation row without date/test identifier; context not silently filled down.",
+      "Exact duplicate of source row 7; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "row": 27,
+    "issues": [
+      "Continuation or annotation row without date/test identifier; context not silently filled down."
+    ]
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "row": 28,
+    "issues": [
+      "Continuation or annotation row without date/test identifier; context not silently filled down."
+    ]
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "row": 29,
+    "issues": [
+      "Continuation or annotation row without date/test identifier; context not silently filled down.",
+      "Exact duplicate of source row 7; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "row": 30,
+    "issues": [
+      "Exact duplicate of source row 26; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "row": 31,
+    "issues": [
+      "Continuation or annotation row without date/test identifier; context not silently filled down.",
+      "Exact duplicate of source row 27; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "row": 32,
+    "issues": [
+      "Continuation or annotation row without date/test identifier; context not silently filled down.",
+      "Exact duplicate of source row 28; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+    "row": 33,
+    "issues": [
+      "Continuation or annotation row without date/test identifier; context not silently filled down.",
+      "Exact duplicate of source row 7; not an independent replicate."
+    ]
+  },
+  {
+    "study": "PSI-23",
+    "filename": "PSI-23_Experimental table_ACME s-Flame.csv",
+    "row": 3,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-23",
+    "filename": "PSI-23_Experimental table_ACME s-Flame.csv",
+    "row": 4,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-23",
+    "filename": "PSI-23_Experimental table_ACME s-Flame.csv",
+    "row": 5,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-23",
+    "filename": "PSI-23_Experimental table_ACME s-Flame.csv",
+    "row": 7,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-23",
+    "filename": "PSI-23_Experimental table_ACME s-Flame.csv",
+    "row": 8,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-23",
+    "filename": "PSI-23_Experimental table_ACME s-Flame.csv",
+    "row": 9,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-23",
+    "filename": "PSI-23_Experimental table_ACME s-Flame.csv",
+    "row": 10,
+    "issues": [
+      "Apparent chemical-formula sequence-fill error in source; unchanged."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 2,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 3,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 4,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 5,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 6,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 7,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 8,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 9,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 10,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 11,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 12,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 13,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 14,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 15,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 16,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 17,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 18,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 19,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 20,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 21,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 22,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 23,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 24,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 25,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 26,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 27,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 28,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 29,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 30,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 31,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 32,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 33,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 34,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 35,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 36,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 37,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 38,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 39,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 40,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 41,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 42,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 43,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 44,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 45,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 46,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 47,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 48,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 49,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 50,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 51,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 52,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 53,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 54,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 55,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 56,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 57,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 58,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 59,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 60,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 61,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 62,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 63,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 64,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 65,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 66,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 67,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 68,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 69,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 70,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 71,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 72,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 73,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 74,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 75,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 76,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 77,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 78,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 79,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 80,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 81,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 82,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 83,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 84,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 85,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 86,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 87,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 88,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 89,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 90,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 91,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 92,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 93,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 94,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 95,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 96,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 97,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 98,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 99,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 100,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 101,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 102,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 103,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 104,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 105,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 106,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 107,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 108,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 109,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 110,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 111,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 112,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 113,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 114,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 115,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 116,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 117,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 118,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 119,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 120,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 121,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 122,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 123,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 124,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 125,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 126,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 127,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 128,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 129,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 130,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 131,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 132,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 133,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 134,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 135,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 136,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 137,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 138,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 139,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 140,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 141,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 142,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 143,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 144,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 145,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 146,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 147,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 148,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 149,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 150,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 151,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 152,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 153,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 154,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 155,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 156,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 157,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 158,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 159,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 160,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 161,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 162,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 163,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 164,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 165,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 166,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 167,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 168,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 169,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 170,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 171,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 172,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 173,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 174,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 175,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 176,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 177,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 178,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 179,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 180,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 181,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 182,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 183,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 184,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 185,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 186,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 187,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 188,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 189,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 190,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 191,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 192,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 193,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 194,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 195,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 196,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 197,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 198,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 199,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 200,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 201,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 202,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 203,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 204,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 205,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 206,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 207,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 208,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 209,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 210,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 211,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 212,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 213,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 214,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 215,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 216,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 217,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 218,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 219,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 220,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 221,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 222,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 223,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 224,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 225,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 226,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 227,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 228,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 229,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 230,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 231,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 232,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 233,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 234,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 235,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 236,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 237,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 238,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 239,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 240,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 241,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 242,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 243,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 244,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 245,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 246,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 247,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 248,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 249,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 250,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 251,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 252,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 253,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 254,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 255,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 256,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 257,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 258,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 259,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 260,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 261,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 262,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 263,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 264,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 265,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 266,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 267,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 268,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 269,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 270,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 271,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 272,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 273,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 274,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Experimental table_FLEX.csv",
+    "row": 275,
+    "issues": [
+      "Source burning-rate unit is labelled mm; physical rate unit is unresolved."
+    ]
+  }
+]

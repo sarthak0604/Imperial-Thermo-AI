@@ -1,0 +1,186 @@
+{
+  "id": "res:PSI-68:d087b15f04a3096a4a37",
+  "study": "PSI-68",
+  "filename": "PSI-68_Experimental table_Flex2.csv",
+  "key": "psi-data/PSI-68/Experimental table/PSI-68_Experimental table_Flex2.csv",
+  "category": "Experimental table",
+  "size_bytes": 1029,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-68/download?file=67929004b7b6ff8e6502ecd0&version=1&studyVersion=6&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-68/d087b15f04a3096a4a37/PSI-68_Experimental table_Flex2.csv",
+  "sha256": "cc57ad1bd9977aa13e7ac6c3aa618303012686e232b36c052c6a9f1a74e5f528",
+  "status": "downloaded",
+  "sections": [
+    {
+      "locator": "table, row 1",
+      "text": "1: Sample (Fuel Type) | 2: Initial Droplet Diameter (mm) | 3: Ambient Gas Mixture  | 4: Oxygen Mole Fraction | 5: Ambient Pressure (atm) | 6:  Ambient Temperature (C) | 7: Flow Velocity (cm/s)"
+    },
+    {
+      "locator": "table, row 2",
+      "text": "1: IsoOctane (pure) | 2: 1.5 - 5 | 3: O2/N2 or O2/He | 4: 0.17; 0.21;0.25; 0.3 | 5: 0.5; 1.0; 1.5; 2.0; or 3.0  | 6: 25 | 7: 0.1 - 5"
+    },
+    {
+      "locator": "table, row 3",
+      "text": "1: n-Octane (pure) | 2: 1.5 - 5 | 3: O2/N2 or O2/He | 4: 0.17; 0.21;0.25; 0.3 | 5: 0.5; 1.0; 1.5; 2.0; or 3.0  | 6: 25 | 7: 0.1 - 5"
+    },
+    {
+      "locator": "table, row 4",
+      "text": "1: Heptane (pure) | 2: 1.5 - 5 | 3: O2/N2 or O2/He | 4: 0.17; 0.21;0.25; 0.3 | 5: 0.5; 1.0; 1.5; 2.0; or 3.0  | 6: 25 | 7: 0.1 - 5"
+    },
+    {
+      "locator": "table, row 5",
+      "text": "1: Decane (pure) | 2: 1.5 - 5 | 3: O2/N2 or O2/He | 4: 0.17; 0.21;0.25; 0.3 | 5: 0.5; 1.0; 1.5; 2.0; or 3.0  | 6: 25 | 7: 0.1 - 5"
+    },
+    {
+      "locator": "table, row 6",
+      "text": "1: Ethanol (pure) | 2: 1.5 - 5 | 3: O2/N2 or O2/He | 4: 0.17; 0.21;0.25; 0.3 | 5: 0.5; 1.0; 1.5; 2.0; or 3.0  | 6: 25 | 7: 0.1 - 5"
+    },
+    {
+      "locator": "table, row 7",
+      "text": "1: Propanol (95%) Glycerol (5%) (mixture) | 2: 1.5 - 5 | 3: O2/N2 or O2/He | 4: 0.17; 0.21;0.25; 0.3 | 5: 0.5; 1.0; 1.5; 2.0; or 3.0  | 6: 25 | 7: 0.1 - 5"
+    },
+    {
+      "locator": "table, row 8",
+      "text": "1: Heptane (50%) IsoOctane (50%) (mixture) | 2: 1.5 - 5 | 3: O2/N2 or O2/He | 4: 0.17; 0.21;0.25; 0.3 | 5: 0.5; 1.0; 1.5; 2.0; or 3.0  | 6: 25 | 7: 0.1 - 5"
+    },
+    {
+      "locator": "table, row 9",
+      "text": "1: Propanol (80%) Glycerol (20%) (mixture) | 2: 1.5 - 5 | 3: O2/N2 or O2/He | 4: 0.17; 0.21;0.25; 0.3 | 5: 0.5; 1.0; 1.5; 2.0; or 3.0  | 6: 25 | 7: 0.1 - 5"
+    }
+  ],
+  "details": {
+    "name": "table",
+    "row_count": 9,
+    "column_count": 7,
+    "column_statistics": [
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 8,
+        "min": 25.0,
+        "max": 25.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      }
+    ],
+    "rows": [
+      [
+        "Sample (Fuel Type)",
+        "Initial Droplet Diameter (mm)",
+        "Ambient Gas Mixture ",
+        "Oxygen Mole Fraction",
+        "Ambient Pressure (atm)",
+        " Ambient Temperature (C)",
+        "Flow Velocity (cm/s)"
+      ],
+      [
+        "IsoOctane (pure)",
+        "1.5 - 5",
+        "O2/N2 or O2/He",
+        "0.17; 0.21;0.25; 0.3",
+        "0.5; 1.0; 1.5; 2.0; or 3.0 ",
+        "25",
+        "0.1 - 5"
+      ],
+      [
+        "n-Octane (pure)",
+        "1.5 - 5",
+        "O2/N2 or O2/He",
+        "0.17; 0.21;0.25; 0.3",
+        "0.5; 1.0; 1.5; 2.0; or 3.0 ",
+        "25",
+        "0.1 - 5"
+      ],
+      [
+        "Heptane (pure)",
+        "1.5 - 5",
+        "O2/N2 or O2/He",
+        "0.17; 0.21;0.25; 0.3",
+        "0.5; 1.0; 1.5; 2.0; or 3.0 ",
+        "25",
+        "0.1 - 5"
+      ],
+      [
+        "Decane (pure)",
+        "1.5 - 5",
+        "O2/N2 or O2/He",
+        "0.17; 0.21;0.25; 0.3",
+        "0.5; 1.0; 1.5; 2.0; or 3.0 ",
+        "25",
+        "0.1 - 5"
+      ],
+      [
+        "Ethanol (pure)",
+        "1.5 - 5",
+        "O2/N2 or O2/He",
+        "0.17; 0.21;0.25; 0.3",
+        "0.5; 1.0; 1.5; 2.0; or 3.0 ",
+        "25",
+        "0.1 - 5"
+      ],
+      [
+        "Propanol (95%) Glycerol (5%) (mixture)",
+        "1.5 - 5",
+        "O2/N2 or O2/He",
+        "0.17; 0.21;0.25; 0.3",
+        "0.5; 1.0; 1.5; 2.0; or 3.0 ",
+        "25",
+        "0.1 - 5"
+      ],
+      [
+        "Heptane (50%) IsoOctane (50%) (mixture)",
+        "1.5 - 5",
+        "O2/N2 or O2/He",
+        "0.17; 0.21;0.25; 0.3",
+        "0.5; 1.0; 1.5; 2.0; or 3.0 ",
+        "25",
+        "0.1 - 5"
+      ],
+      [
+        "Propanol (80%) Glycerol (20%) (mixture)",
+        "1.5 - 5",
+        "O2/N2 or O2/He",
+        "0.17; 0.21;0.25; 0.3",
+        "0.5; 1.0; 1.5; 2.0; or 3.0 ",
+        "25",
+        "0.1 - 5"
+      ]
+    ],
+    "all_rows_retained": true
+  },
+  "warnings": [],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

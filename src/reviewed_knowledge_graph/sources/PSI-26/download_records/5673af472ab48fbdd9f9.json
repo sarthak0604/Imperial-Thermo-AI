@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:5673af472ab48fbdd9f9",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_Drawing_Solid.Fuel.Sample_2cmSphere.pdf",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_Drawing_Solid.Fuel.Sample_2cmSphere.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 54006,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcfac3501a37c2c60ddc&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/5673af472ab48fbdd9f9/PSI-26_Engineering Documents_Drawing_Solid.Fuel.Sample_2cmSphere.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "51aaea3a2a31c4322f9ade9f4a2d3fcf29134324afec89c60789b5d364e1627d",
+  "status": "downloaded"
+}

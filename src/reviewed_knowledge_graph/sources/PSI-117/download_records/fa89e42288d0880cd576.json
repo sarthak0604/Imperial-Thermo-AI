@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-117:fa89e42288d0880cd576",
+  "study": "PSI-117",
+  "filename": "PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+  "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+  "category": "Analyzed Data",
+  "size_bytes": 37138,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e5&version=1&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/fa89e42288d0880cd576/PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "5d329362ea8b6ff78cded953b289b95c83c45956ae36d136bfd33750a80a5a11",
+  "status": "downloaded"
+}

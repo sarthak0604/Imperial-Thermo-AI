@@ -1,0 +1,29 @@
+{
+  "id": "res:PSI-23:97df86dc5dac6a56d136",
+  "study": "PSI-23",
+  "filename": "PSI-23_Presentations_ACME fact sheet 20180519.pdf",
+  "key": "psi-data/PSI-23/Presentations/PSI-23_Presentations_ACME fact sheet 20180519.pdf",
+  "category": "Presentations",
+  "size_bytes": 437766,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdc56daf91e274cec834&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/97df86dc5dac6a56d136/PSI-23_Presentations_ACME fact sheet 20180519.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "39e4cbd2e7985b54a25cee3f8a7f60884eb75881ce9e1a512beeea4128a881c7",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "19 May 2018 \n \n \nAdvanced Combustion via Microgravity Experiments (ACME) \n \nPURPOSE:  ACME is focused on advanced combustion \ntechnology via fundamental microgravity research.  The \nprimary goal is to improve efficiency and reduce pollutant \nemission in practical terrestrial combustion.  A secondary \nobjective is fire prevention, especially for spacecraft. \n \nRESEARCH:  ACME includes six independent experiments \ninvestigating laminar, gaseous, non-premixed flames.  They \nare being conducted with a single set of modular hardware \nin the Combustion Integrated Rack (CIR) on the International \nSpace Station (ISS). \nSTATUS:  ACME set-up and check-out was carried out by the \nISS crew in Sept.-Oct. 2017, where science testing began in \nNovember.  The first round of testing for the Coflow Laminar \nDiffusion Flame (CLD Flame) experiment of Marshall B. Long \net al. was completed in Feb. 2018, where 130 methane \nflames (at a range of concentrations) were ignited.  The first \nround of testing for the Electric-Field Effects on Laminar \nDiffusion Flames (E-FIELD Flames) experiment of Derek \nDunn-Rankin et al. was completed on May 18, where 120 \ncoflow flames were ignited.  On May 20, burners and \nadditional hardware for the next three ACME experiments \nare scheduled to launch.  The ACME hardware should be \nreconfigured on May 22 by astronaut Ricky Arnold (NASA) \nfor CLD Flame’s second round, where the ethylene flame \ntesting should begin later in the week. \n \nWEB SITE:  http://spaceflightsystems.grc.nasa.gov/acme/ \nUPDATES:  www.facebook.com/space.flames  \nPHOTOGRAPHS:  www.flickr.com/photos/space-flames \nEDUCATION:  https://tinyurl.com/space-flames \n \nPaolo Nespoli (ESA) installing the ACME chamber insert \ninto the Combustion Integrated Rack (CIR) \nJoe Acaba (NASA) working on the ACME chamber insert \nExample image of a lifted coflow flame from the CLD Flame \nexperiment of Marshall B, Long et al. \nAnton Shkaplerov (RSA) and Oleg Artemyev (RSA) \nexchanging a CIR gas bottle for E-FIELD Flames testing \n \nCONTACT: \nDennis Stocker, ACME Project Scientist \nNASA Glenn Research Center, Cleveland, OH \n216-433-2166, dennis.p.stocker@nasa.gov \n"
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

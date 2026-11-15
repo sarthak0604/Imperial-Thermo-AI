@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:66a01fbf169ea2ff2bce",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_60054MAFH000_C.pdf",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_60054MAFH000_C.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 562119,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcf9c3501a37c2c60dd8&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/66a01fbf169ea2ff2bce/PSI-26_Engineering Documents_60054MAFH000_C.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f94951103d4468a91fb94e6fcc44ea12592daf493de6e8817bd116edd1fbc05c",
+  "status": "downloaded"
+}

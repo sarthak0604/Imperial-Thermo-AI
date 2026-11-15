@@ -1,0 +1,110 @@
+{
+  "id": "res:PSI-26:13231f9352d8c7f4ac87",
+  "study": "PSI-26",
+  "filename": "PSI-26_Presentations_BASS Overview.pptx",
+  "key": "psi-data/PSI-26/Presentations/PSI-26_Presentations_BASS Overview.pptx",
+  "category": "Presentations",
+  "size_bytes": 1623251,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcf8c3501a37c2c60dc9&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/13231f9352d8c7f4ac87/PSI-26_Presentations_BASS Overview.pptx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "fa2a579bb703d456716dc9d50402204d067502eca75836274bb4e9fea791d15b",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "ppt/slides/slide1.xml",
+      "text": "Principal Investigator:\tPaul Ferkul, NCSER \nCo-Investigators:\t\tSandra Olson, NASA GRC\n\t\t\tJames T’ien, CWRU\n\t\t\tFumiaki Takahashi, NCSER\nProject Manager:\n  \t\t\nRobert Hawersaat, NASA GRC\nImaging:\t\t\tJay Owens, NCSER\n\t\nEngineering Team:\n  \t\t\nTibor Lorik, \n ZIN \nTechnologies, Inc.\n\t\t\tChuck \nBunnell, \nZIN Technologies, Inc.\n\t\n\t\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide2.xml",
+      "text": "Overall Experiment Hardware Summary:\nBASS will utilize the on-orbit SPICE hardware which was launched on STS-126 and operates on ISS.  Minor modifications needed to burn solid samples.\nSmall \nflow \ntunnel\nSolid samples \nare installed, ignited, extinguished, and recorded\nVideo and 35mm still camera provides bulk of the data.  Flame appearance, behavior, spread rate, and extinction dynamics will be \nmeasured\nAirflow speed is main variable; some cases will be vitiated or extinguished using nitrogen from nozzle\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide3.xml",
+      "text": "SPICE Hardware\nNew top window for BASS\nPermits variety of solid samples to be mounted, ignited, and burned:\nThin, \nflat (17)\n\t\t     \nSpheres (12)\n\t\tThick, flat\t\n(4)\n\t\nCandles (8)\n(Note: samples are not to scale; samples \ncan be flipped 180 degrees if desired)\nHardware Details\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide4.xml",
+      "text": "Top Window and Sample Holder\nExperiment Operation:\nAir Flow\nFlow Duct\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide5.xml",
+      "text": "Fuel Sample Installed\nAir Flow\nExperiment Operation:\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide6.xml",
+      "text": "Air Flow\nIgniter On\nExperiment Operation:\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide7.xml",
+      "text": "Air Flow\nFlame \nExperiment Operation:\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide8.xml",
+      "text": "Air Flow\nFlame Spread\nExperiment Operation:\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide9.xml",
+      "text": "Air Flow \nChanges\nFlame Spread\nExperiment Operation:\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide10.xml",
+      "text": "Air Flow\nExperiment Operation:\nNitrogen Extinguishment\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide11.xml",
+      "text": "Air Flow\nExperiment Operation:\nFlame Extinction\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide12.xml",
+      "text": "Science Background:\nCombustion of solid fuels in microgravity has been an active area of research\nNumerical models predict that 1-g buoyant flows profoundly affect fuel flammability\nMicrogravity experiments burning thin fuels have verified this prediction, but ground-based facilities are too short to examine the burning of thicker fuels\n \nFlow speed (cm/s)\nO\n2\n Mole\nFraction\n0.23\n0.22\n0.21\n0.20\n0.19\n0.18\n0.17\n0.16\n0.15\n  1\n    10\n 100\n300\nFlammable\nNot Flammable\n1-g buoyant flow limit\nTypical Flammability Boundary for a Solid Fuel\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide13.xml",
+      "text": "Hypotheses\n:\nMaterials in microgravity, with adequate ventilation, may burn more readily compared to normal gravity with other conditions being identical (pressure, oxygen concentration, temperature, etc.)   \nAs a result, the 1-g test currently used by NASA to rate materials for space may need to be re-evaluated from a margin-of-safety point of view.\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide14.xml",
+      "text": "Objective:\nBridge the gap between normal gravity, NASA-STD-6001 Test # 1 method, ground based microgravity tests, and actual material flammability in microgravity.\nMaterial selection for spacecraft is based on 1-g tests\nModel and drop tower results suggest 1-g may not represent the most flammable condition in some cases\nLong duration tests will refine test criteria and modeling efforts\nTest the effectiveness of an inert, gaseous extinguishing agent (similar to that used on ISS) in putting out flames over different materials, geometries, and flow.\nLocal extinguishment of flame has some advantages\nGeometry and flow can affect optimal suppression delivery\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide15.xml",
+      "text": "Drop tower results and \nmodeling:   \n2-cm \nPMMA \nsphere; 17\n% oxygen, \n2 \ncm/s forced \nflow \nExperiment \nimages \nand \ncomputer \nsimulations show transition \nfrom 1-g to 0-g\n.\nLeft contours: reaction \nrate (\nkgmol\n/m\n3\n/s); right \ncontours: temperature \n(K)\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide16.xml",
+      "text": "\nWhy ISS for BASS?\nRelationship \nbetween ground test and microgravity test can be determined by observing flames burning for longer times.\nPractical, realistic fuels in typical geometries will be examined, including wake flames which have characteristics of a fire burning behind another object.\nModels can be validated and developed.\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide17.xml",
+      "text": "Science Applications \nfor Space\n: \nThe microgravity burning \nand extinction characteristics of a wide variety of fuel samples \nwill be determined.  \nThe \ncurrent NASA spacecraft materials selection is based on 1-g behavior without consideration of low gravity effects.  These results will suggest \nimproved strategies by linking actual long-duration burn behavior in microgravity to Earth-based selection methods.\nGuidance for strategies to extinguish \naccidental fires in \nmicrogravity will be provided.  \nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide18.xml",
+      "text": "Science Applications \nfor Earth\n: \n \nBASS results contribute to the combustion computational models used in the design of fire detection and suppression systems in microgravity and on Earth.  \nDetailed \ncombustion models are validated using the simpler flow environment afforded by tests in microgravity.  Once validated, they can be used to build more complex combustion models needed to capture the important details of flames burning in normal gravity.  These models have wide applicability to the general understanding of many terrestrial combustion problems.\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide19.xml",
+      "text": "Differences from SLICE:\nSolid fuel samples burned (instead of gaseous jets)\nAll but the flat samples will be burned multiple times\nThe nozzle is used to deliver nitrogen (for extinguishment) in some cases\nThe igniter typically needs to be positioned manually prior to the test\nWithin 1 mm of fuel (but not touching fuel) when in position \nOut of flame zone and camera fields of view when retracted\nImmediately after ignition: don’t touch window when retracted, or hold away to cool for first ~ 10 s or it may stick to plastic door or break\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide20.xml",
+      "text": "Differences from SLICE (\ncon’t\n):\nFlow: Control box is different\nAllows potentiometer to go all the way to zero so the flow may be shut off gradually \nThere is some fan hysteresis because the fan must start from a stopped position and thus overcome static coefficient of friction and resistance\nNozzle flow is labeled “GN2” instead of “Fuel” (but note that screen display will still indicate “Fuel”)\nFan calibration to be performed with 0, 1, and 2 screens; we will likely use mostly one of these configurations based on the calibration results\nWax sample tests will be done last to minimize possible flow system blockage by wax re-condensation on downstream flow system\nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide21.xml",
+      "text": "Differences from SLICE (\ncon’t\n):\nBrief test objective and test plan review prior to each days operations can be provided if desired\nOver the shoulder view is requested, if possible\nFor each burn, N\n2\n flow setting, fan airflow setting, and radiometer setting provided\nDuring burn, feedback on changes to airflow, N\n2\n, and photos will be provided \nLet sample cool after test \nRemoves sample using tissue to avoid soot on hands, use tissue to remove soot from PMMA, candles, and slabs, and re-stow in bag\n \nBurning And Suppression of Solids (BASS)"
+    },
+    {
+      "locator": "ppt/slides/slide22.xml",
+      "text": "Flame photography and \nvideography\n:\n7 s brackets or up to 300 pictures per test, with retriggers every 100\nFor 1 fps tests, we request a countdown (3-2-1) to start of photos so we can time\nGround will monitor time for 1 fps tests, and keep track of camera picture number\nBlue filter on camera for only candle tests\nBurning And Suppression of Solids (BASS)"
+    }
+  ],
+  "details": {},
+  "warnings": [
+    "Document text extracted; embedded images not interpreted automatically."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

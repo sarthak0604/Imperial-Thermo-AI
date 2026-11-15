@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:284ed5f3aa46984d96ca",
+  "study": "PSI-20",
+  "filename": "PSI-20_Reports_Dissertation-PD-revised_.pdf",
+  "key": "psi-data/PSI-20/Reports/PSI-20_Reports_Dissertation-PD-revised_.pdf",
+  "category": "Reports",
+  "size_bytes": 12433641,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8261b4820d736ceccac&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/284ed5f3aa46984d96ca/PSI-20_Reports_Dissertation-PD-revised_.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "2ada277f4accf3ff7dca0c4701609480a32c76141fe008d8253c341848b28cf0",
+  "status": "downloaded"
+}

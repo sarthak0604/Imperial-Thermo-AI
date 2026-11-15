@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:abd85afd0dcbe14a745e",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_ACME_CSSCI_2014 - Gaseous Non-Premixed Flame Research Planned for the International Space Station.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_ACME_CSSCI_2014 - Gaseous Non-Premixed Flame Research Planned for the International Space Station.pdf",
+  "category": "Presentations",
+  "size_bytes": 767030,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e6400eb4c08676004ba6&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/abd85afd0dcbe14a745e/PSI-22_Presentations_ACME_CSSCI_2014 - Gaseous Non-Premixed Flame Research Planned for the International Space Station.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "ba5d2a1f472b45bb20394fa034647c35490df80f970db18d8ac14d9f0c33d9da",
+  "status": "downloaded"
+}

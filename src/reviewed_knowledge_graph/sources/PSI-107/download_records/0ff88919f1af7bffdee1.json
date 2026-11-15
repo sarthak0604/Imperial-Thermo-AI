@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-107:0ff88919f1af7bffdee1",
+  "study": "PSI-107",
+  "filename": "PSI-107_Experimental table_Spice.csv",
+  "key": "psi-data/PSI-107/Experimental table/PSI-107_Experimental table_Spice.csv",
+  "category": "Experimental table",
+  "size_bytes": 31205,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-107/download?file=67a3845a09ed061032c13804&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-107/0ff88919f1af7bffdee1/PSI-107_Experimental table_Spice.csv",
+  "sha256": "fb0d7e60cf5367afb429089e9901d27288f78038efd26c8de1db4fbe04117136",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-10:4e009dfc2851672353e2",
+  "study": "PSI-10",
+  "filename": "PSI-10_Science Documents_ACME_SORD.pdf",
+  "key": "psi-data/PSI-10/Science Documents/PSI-10_Science Documents_ACME_SORD.pdf",
+  "category": "Science Documents",
+  "size_bytes": 300262,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-10/download?file=691f7ef317f78b371b2714b7&version=1&studyVersion=1&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-10/4e009dfc2851672353e2/PSI-10_Science Documents_ACME_SORD.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "32afd4c0d3c9fe5be1c8e992b7d6a615418911712a93d204a3b220dcbc6601f6",
+  "status": "downloaded"
+}

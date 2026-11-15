@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-10:3618e28e9b24c5499245",
+  "study": "PSI-10",
+  "filename": "PSI-10_Science Documents_ACME_ISRD.pdf",
+  "key": "psi-data/PSI-10/Science Documents/PSI-10_Science Documents_ACME_ISRD.pdf",
+  "category": "Science Documents",
+  "size_bytes": 1860945,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-10/download?file=691f7ef317f78b371b2714b8&version=1&studyVersion=1&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-10/3618e28e9b24c5499245/PSI-10_Science Documents_ACME_ISRD.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f7f9e49476606f0f9da67dd655d08237090f89139ecb2d295c4c25ab5c5342e9",
+  "status": "downloaded"
+}

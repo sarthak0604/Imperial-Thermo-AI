@@ -1,0 +1,327 @@
+{
+  "id": "res:PSI-101:2fd9212c288c4d02ac4f",
+  "study": "PSI-101",
+  "filename": "PSI-101_Engineering Documents_SAME-R_ThermalPrecipitatorUsage.xlsx",
+  "key": "psi-data/PSI-101/Engineering Documents/PSI-101_Engineering Documents_SAME-R_ThermalPrecipitatorUsage.xlsx",
+  "category": "Engineering Documents",
+  "size_bytes": 11054,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc544b8656d2315bf5177&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/2fd9212c288c4d02ac4f/PSI-101_Engineering Documents_SAME-R_ThermalPrecipitatorUsage.xlsx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "2b94b57f4dcf1ea89f23073896f0cd4c5c6449e69a75dbd8b302fdee048c7440",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "sheet Sheet1, row 1",
+      "text": "3: SAME-R Thermal Precipitator Usage"
+    },
+    {
+      "locator": "sheet Sheet1, row 2",
+      "text": ""
+    },
+    {
+      "locator": "sheet Sheet1, row 3",
+      "text": "3: Thermal Precipitator 1 | 7: Thermal Precipitator 4"
+    },
+    {
+      "locator": "sheet Sheet1, row 4",
+      "text": "3: A | 4: B | 7: A | 8: B"
+    },
+    {
+      "locator": "sheet Sheet1, row 5",
+      "text": "2: 1 | 3: 48 (SAMERFLT 1S) | 4: 67 (SAMERFLT 20S) | 6: 1 | 7: 78 preage (SAMERFLT 31L) | 8: 78 postage (SAMERFLT 31L)"
+    },
+    {
+      "locator": "sheet Sheet1, row 6",
+      "text": "2: 2 | 3: 49 (SAMERFLT 2L) | 4: 68 (SAMERFLT 21L) | 6: 2 | 7: 79 preage (SAMERFLT 32T) | 8: 79 postage (SAMERFLT 32T)"
+    },
+    {
+      "locator": "sheet Sheet1, row 7",
+      "text": "2: 3 | 3: 50 (SAMERFLT 3T) | 4: 69 (SAMERFLT 22T) | 6: 3 | 7: 80 preage (SAMERFLT 33L) | 8: 80 postage (SAMERFLT 33L)"
+    },
+    {
+      "locator": "sheet Sheet1, row 8",
+      "text": "2: 4 | 3: 51 (SAMERFLT 4K) | 4: 70 (SAMERFLT 23K) | 6: 4 | 7: 81 preage (SAMERFLT 34T) | 8: 81 postage (SAMERFLT 34T)"
+    },
+    {
+      "locator": "sheet Sheet1, row 9",
+      "text": "2: 5 | 3: 52 (SAMERFLT 5P) | 4: 71 (SAMERFLT 24P) | 6: 5 | 7: 82 preage (SAMERFLT 35L) | 8: 82 postage (SAMERFLT 35L)"
+    },
+    {
+      "locator": "sheet Sheet1, row 10",
+      "text": "2: 6 | 3: 53 (SAMERFLT 6S) | 4: 72 (SAMERFLT 25S) | 6: 6 | 7: 83 preage (SAMERFLT 36T) | 8: 83 postage (SAMERFLT 36T)"
+    },
+    {
+      "locator": "sheet Sheet1, row 11",
+      "text": ""
+    },
+    {
+      "locator": "sheet Sheet1, row 12",
+      "text": "3: Thermal Precipitator 2 | 7: Thermal Precipitator 3"
+    },
+    {
+      "locator": "sheet Sheet1, row 13",
+      "text": "3: A | 4: B | 7: A | 8: B"
+    },
+    {
+      "locator": "sheet Sheet1, row 14",
+      "text": "2: 1 | 3: 54 (SAMERFLT 7L) | 4: 62 preage (SAMERFLT 15K) | 6: 1 | 7: 84 preage (SAMERFLT 37P) | 8: 84 postage (SAMERFLT 37P)"
+    },
+    {
+      "locator": "sheet Sheet1, row 15",
+      "text": "2: 2 | 3: 55 (SAMERFLT 8L) | 4: 62 postage (SAMERFLT 15K) | 6: 2 | 7: 85 (SAMERFLT 38K) | 8: 87 (SAMERFLT 40P)"
+    },
+    {
+      "locator": "sheet Sheet1, row 16",
+      "text": "2: 3 | 3: 56 (SAMERFLT 9T) | 4: 63 preage (SAMERFLT 16P) | 6: 3 | 7: 106 (SAMERFLT 59L) | 8: 89 (SAMERFLT 42T)"
+    },
+    {
+      "locator": "sheet Sheet1, row 17",
+      "text": "2: 4 | 3: #58 Preage (SAMERFLT 11T) | 4: 63 postage (SAMERFLT 16P) | 6: 4 | 7: 105 preage (SAMERFLT 58T) | 8: 105 postage (SAMERFLT 58T)"
+    },
+    {
+      "locator": "sheet Sheet1, row 18",
+      "text": "2: 5 | 3: #58 Postage (SAMERFLT 11T) | 4: 64 preage (SAMERFLT 17P) | 6: 5 | 7: 107 preage (SAMERFLT 60P) | 8: 107 postage (SAMERFLT 60P)"
+    },
+    {
+      "locator": "sheet Sheet1, row 19",
+      "text": "2: 6 | 3: 60 (SAMERFLT 13S) | 4: 64 postage (SAMERFLT 17P) | 6: 6 | 7: 108 preage (SAMERFLT 61K) | 8: 108 postage (SAMERFLT 61K)"
+    },
+    {
+      "locator": "sheet Sheet1, row 21",
+      "text": "3: Thermal Precipitator 5 | 7: Thermal Precipitator 6"
+    },
+    {
+      "locator": "sheet Sheet1, row 22",
+      "text": "3: A | 4: B | 7: A | 8: B"
+    },
+    {
+      "locator": "sheet Sheet1, row 23",
+      "text": "2: 1 | 3: 73 preage (SAMERFLT 26K) | 4: 73 postage (SAMERFLT 26K) | 6: 1 | 7: 93 preage (SAMERFLT 46K) | 8: 93 postage (SAMERFLT 46K)"
+    },
+    {
+      "locator": "sheet Sheet1, row 24",
+      "text": "2: 2 | 3: 74 preage (SAMERFLT 27P) | 4: 74 postage (SAMERFLT 27P) | 6: 2 | 7: 94 preage (SAMERFLT 47K) | 8: 94 postage (SAMERFLT 47K)"
+    },
+    {
+      "locator": "sheet Sheet1, row 25",
+      "text": "2: 3 | 3: 75 preage (SAMERFLT 28K) | 4: 75 postage (SAMERFLT 28K) | 6: 3 | 7: 95 (SAMERFLT 48P) | 8: 96 (SAMERFLT 49L)"
+    },
+    {
+      "locator": "sheet Sheet1, row 26",
+      "text": "2: 4 | 3: 76 preage (SAMERFLT 29P) | 4: 76 postage (SAMERFLT 29P) | 6: 4 | 7: 97 (SAMERFLT 50P) | 8: 100 (SAMERFLT 53T)"
+    },
+    {
+      "locator": "sheet Sheet1, row 27",
+      "text": "2: 5 | 3: 77 preage (SAMERFLT 30K) | 4: 77 postage (SAMERFLT 30K) | 6: 5 | 7: 98 preage (SAMERFLT 51L) | 8: 98 postage (SAMERFLT 51L)"
+    },
+    {
+      "locator": "sheet Sheet1, row 28",
+      "text": "2: 6 | 3: empty | 4: empty | 6: 6 | 7: 101 preage (SAMERFLT 54K) | 8: 101 postage (SAMERFLT 54K)"
+    }
+  ],
+  "details": {
+    "sheets": [
+      {
+        "name": "sheet Sheet1",
+        "row_count": 28,
+        "column_count": 8,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 18,
+            "min": 1.0,
+            "max": 6.0,
+            "blank_count": 10
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 3
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 7
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 18,
+            "min": 1.0,
+            "max": 6.0,
+            "blank_count": 10
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 4
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 7
+          }
+        ],
+        "rows": [
+          [
+            null,
+            null,
+            "SAME-R Thermal Precipitator Usage",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "Thermal Precipitator 1",
+            null,
+            null,
+            null,
+            "Thermal Precipitator 4",
+            null
+          ],
+          [
+            null,
+            null,
+            "A",
+            "B",
+            null,
+            null,
+            "A",
+            "B"
+          ],
+          [
+            null,
+            1,
+            "48 (SAMERFLT 1S)",
+            "67 (SAMERFLT 20S)",
+            null,
+            1,
+            "78 preage (SAMERFLT 31L)",
+            "78 postage (SAMERFLT 31L)"
+          ],
+          [
+            null,
+            2,
+            "49 (SAMERFLT 2L)",
+            "68 (SAMERFLT 21L)",
+            null,
+            2,
+            "79 preage (SAMERFLT 32T)",
+            "79 postage (SAMERFLT 32T)"
+          ],
+          [
+            null,
+            3,
+            "50 (SAMERFLT 3T)",
+            "69 (SAMERFLT 22T)",
+            null,
+            3,
+            "80 preage (SAMERFLT 33L)",
+            "80 postage (SAMERFLT 33L)"
+          ],
+          [
+            null,
+            4,
+            "51 (SAMERFLT 4K)",
+            "70 (SAMERFLT 23K)",
+            null,
+            4,
+            "81 preage (SAMERFLT 34T)",
+            "81 postage (SAMERFLT 34T)"
+          ],
+          [
+            null,
+            5,
+            "52 (SAMERFLT 5P)",
+            "71 (SAMERFLT 24P)",
+            null,
+            5,
+            "82 preage (SAMERFLT 35L)",
+            "82 postage (SAMERFLT 35L)"
+          ],
+          [
+            null,
+            6,
+            "53 (SAMERFLT 6S)",
+            "72 (SAMERFLT 25S)",
+            null,
+            6,
+            "83 preage (SAMERFLT 36T)",
+            "83 postage (SAMERFLT 36T)"
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "Thermal Precipitator 2",
+            null,
+            null,
+            null,
+            "Thermal Precipitator 3",
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Sheet2",
+        "row_count": 0,
+        "column_count": 0,
+        "column_statistics": [],
+        "rows": [],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Sheet3",
+        "row_count": 0,
+        "column_count": 0,
+        "column_statistics": [],
+        "rows": [],
+        "all_rows_retained": false
+      }
+    ]
+  },
+  "warnings": [
+    "Values read from saved workbook; formulas not recalculated."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

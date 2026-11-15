@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-20:38eb1d460881237232ec",
+  "study": "PSI-20",
+  "filename": "PSI-20_Science Documents_ACME-BRE_Test_Summary.docx",
+  "key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_ACME-BRE_Test_Summary.docx",
+  "category": "Science Documents",
+  "size_bytes": 127529,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8151b4820d736cecc0b&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/38eb1d460881237232ec/PSI-20_Science Documents_ACME-BRE_Test_Summary.docx",
+  "sha256": "c60bcab8c39487114c20936a625db2b705ae53c556442e05dfed2bd599ecc0a6",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:185c27412613ae5ef89b",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_Drawing_PMMA.Blk.Rod.Sample.pdf",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_Drawing_PMMA.Blk.Rod.Sample.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 65282,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcf9c3501a37c2c60dd5&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/185c27412613ae5ef89b/PSI-26_Engineering Documents_Drawing_PMMA.Blk.Rod.Sample.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "0424a734b91e4366f7d32d54daadafcc9494fd769c1ffb6479d241bd7283e7c8",
+  "status": "downloaded"
+}

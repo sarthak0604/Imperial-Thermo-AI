@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-69:be110d19640aa2ccfef4",
+  "study": "PSI-69",
+  "filename": "PSI-69_Presentations_1G17-070HE-0166.pdf",
+  "key": "psi-data/PSI-69/Presentations/PSI-69_Presentations_1G17-070HE-0166.pdf",
+  "category": "Presentations",
+  "size_bytes": 516392,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-69/download?file=684344b89e44646b7402706c&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-69/be110d19640aa2ccfef4/PSI-69_Presentations_1G17-070HE-0166.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "bb9458a288d65ee4e835e0569286ddcdd44d0f2bee173ca2932384c91d73211f",
+  "status": "downloaded"
+}

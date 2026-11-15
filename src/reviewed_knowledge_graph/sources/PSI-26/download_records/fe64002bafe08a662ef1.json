@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:fe64002bafe08a662ef1",
+  "study": "PSI-26",
+  "filename": "PSI-26_Presentations_Flammability Aspects of Fabric_USNationalCombustion2013.pdf",
+  "key": "psi-data/PSI-26/Presentations/PSI-26_Presentations_Flammability Aspects of Fabric_USNationalCombustion2013.pdf",
+  "category": "Presentations",
+  "size_bytes": 2804257,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafce9c3501a37c2c60d12&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/fe64002bafe08a662ef1/PSI-26_Presentations_Flammability Aspects of Fabric_USNationalCombustion2013.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "d87675b105c4e44e49b7d375b48bb97dbf3d2b681911f122934a913aa296303d",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:26967fbd815185db6b20",
+  "study": "PSI-23",
+  "filename": "PSI-23_Reports_s-Flame 30-day report Inc 63 20201216.pdf",
+  "key": "psi-data/PSI-23/Reports/PSI-23_Reports_s-Flame 30-day report Inc 63 20201216.pdf",
+  "category": "Reports",
+  "size_bytes": 301047,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdf26daf91e274ceca0d&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/26967fbd815185db6b20/PSI-23_Reports_s-Flame 30-day report Inc 63 20201216.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "6686f5f2038e6e3a8ade2744861533f525019a297ea1e732c13234a7680a9dac",
+  "status": "downloaded"
+}

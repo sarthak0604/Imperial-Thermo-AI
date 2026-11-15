@@ -1,0 +1,21 @@
+{
+  "id": "res:PSI-68:ac93fe9db06b82a863fb",
+  "study": "PSI-68",
+  "filename": "PSI-68_Engineering Documents_FLEX-2 Hardware Presentation.ppt",
+  "key": "psi-data/PSI-68/Engineering Documents/PSI-68_Engineering Documents_FLEX-2 Hardware Presentation.ppt",
+  "category": "Engineering Documents",
+  "size_bytes": 5725184,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-68/download?file=685da233ee20136af540136d&version=1&studyVersion=6&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-68/ac93fe9db06b82a863fb/PSI-68_Engineering Documents_FLEX-2 Hardware Presentation.ppt",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "fe807d053060d2c90f09804d8b2f0ff06082d0c1f01a277fb5f7d7718cb167c3",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [],
+  "details": {},
+  "warnings": [
+    "Legacy binary Office format; contents not extracted."
+  ],
+  "extraction_status": "unsupported",
+  "review_status": "not_yet_reviewed"
+}
