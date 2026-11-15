@@ -35,7 +35,8 @@ def graph_catalogue(graph):
             return
         for key, child in value.items():
             path = f'{prefix}.{key}' if prefix else key
-            fields[kind].add(path)
+            if all(part.isidentifier() for part in path.split('.')):
+                fields[kind].add(path)
             if isinstance(child, dict) and not {'value', 'unit'} & child.keys():
                 add_paths(kind, child, path)
     for node in graph.get('nodes', []):
@@ -44,11 +45,14 @@ def graph_catalogue(graph):
             continue
         props = node.get('properties', {})
         add_paths(kind, props)
-        if kind in {'Concept', 'Variable', 'Investigation'} and len(names) < 80:
+        if kind in {'Concept', 'Variable', 'Investigation'}:
             names.append({'type': kind, 'name': str(props.get('name', props.get('title', '')))[:120],
                           'synonyms': [str(x)[:80] for x in props.get('synonyms', [])[:6]]})
     return {'fields': {key: sorted(value)[:100] for key, value in fields.items()},
-            'vocabulary_sample': names, 'note': 'Vocabulary is a sample, not an exhaustive list.'}
+            'vocabulary_sample': names,
+            'resource_types': sorted({n['properties'].get('resource_type', '') for n in graph.get('nodes', []) if n.get('type') == 'Resource'}),
+            'file_formats': sorted({n['properties'].get('file_format', '') or '' for n in graph.get('nodes', []) if n.get('type') == 'Resource'}),
+            'note': 'Vocabulary is a sample, not an exhaustive list.'}
 
 
 def _json_object(text):
@@ -125,10 +129,12 @@ class QuestionParser:
                 load_in_4bit=True, bnb_4bit_quant_type='nf4', bnb_4bit_use_double_quant=True,
                 bnb_4bit_compute_dtype=dtype))
         else:
-            kwargs.update(device_map='cpu', dtype=torch.float32)
+            # Preserve checkpoint precision: the 4B model needs about 8 GB in
+            # BF16, whereas expanding to FP32 can exhaust a 16 GB CPU machine.
+            kwargs.update(device_map='cpu', dtype='auto')
         self.model = AutoModelForCausalLM.from_pretrained(self.model_id, **kwargs).eval()
 
-    def generate(self, messages):
+    def generate(self, messages, *, max_time=None):
         if self._generator is not None:
             return self._generator(messages)
         import torch
@@ -142,7 +148,7 @@ class QuestionParser:
             raise ParserError('Question and graph vocabulary exceed the configured input limit.')
         with torch.inference_mode():
             tokens = self.model.generate(**inputs, max_new_tokens=self.max_new_tokens,
-                                         do_sample=False, pad_token_id=self.tokenizer.eos_token_id)
+                                         do_sample=False, pad_token_id=self.tokenizer.eos_token_id, max_time=max_time)
         return self.tokenizer.decode(tokens[0, inputs.input_ids.shape[1]:], skip_special_tokens=True).strip()
 
     def parse(self, question, graph=None):

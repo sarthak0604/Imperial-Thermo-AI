@@ -1,0 +1,3261 @@
+{
+  "graph_id": "NASA-PSI-19-reviewed-2026-11-15",
+  "baseline_commit": "1ae7c06",
+  "scope": "Automatically labelled metadata discovery, not human-adjudicated scientific answer or LLM evaluation.",
+  "case_count": 114,
+  "baseline_top1_correct": 109,
+  "current_top1_correct": 114,
+  "cases": [
+    {
+      "prompt": "Find PSI-25 experimental table",
+      "expected_file_id": "res:PSI-25:a8a37c3002bb8108a044",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0383,
+      "current_seconds": 0.0668,
+      "baseline_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044",
+        "res:PSI-25:00192635d4ef9d31ebfc",
+        "res:PSI-25:007d1fdf9c72ebfb561e",
+        "res:PSI-25:017993a9586012b03e57",
+        "res:PSI-25:017aa5264453f07d7aaa",
+        "res:PSI-25:01daa1cf9a331d1fe669"
+      ],
+      "current_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044"
+      ]
+    },
+    {
+      "prompt": "Show PSI-25 measurement CSV",
+      "expected_file_id": "res:PSI-25:a8a37c3002bb8108a044",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0514,
+      "current_seconds": 0.077,
+      "baseline_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044",
+        "res:PSI-25:00192635d4ef9d31ebfc",
+        "res:PSI-25:007d1fdf9c72ebfb561e",
+        "res:PSI-25:017993a9586012b03e57",
+        "res:PSI-25:017aa5264453f07d7aaa",
+        "res:PSI-25:01daa1cf9a331d1fe669"
+      ],
+      "current_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044"
+      ]
+    },
+    {
+      "prompt": "Find BASS-II experimental table",
+      "expected_file_id": "res:PSI-25:a8a37c3002bb8108a044",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0327,
+      "current_seconds": 0.0515,
+      "baseline_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044",
+        "res:PSI-25:00192635d4ef9d31ebfc",
+        "res:PSI-25:007d1fdf9c72ebfb561e",
+        "res:PSI-25:017993a9586012b03e57",
+        "res:PSI-25:017aa5264453f07d7aaa",
+        "res:PSI-25:01daa1cf9a331d1fe669"
+      ],
+      "current_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044",
+        "res:PSI-25:d87c0ff8965737bede6a",
+        "res:PSI-25:dcbc83defce3a151e1d2",
+        "res:PSI-25:f0c79a51d2edadaefd92"
+      ]
+    },
+    {
+      "prompt": "PSI-25 PSI-25_Experimental table_BASS-II.csv",
+      "expected_file_id": "res:PSI-25:a8a37c3002bb8108a044",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0354,
+      "current_seconds": 0.0554,
+      "baseline_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044",
+        "res:PSI-25:00192635d4ef9d31ebfc",
+        "res:PSI-25:007d1fdf9c72ebfb561e",
+        "res:PSI-25:017993a9586012b03e57",
+        "res:PSI-25:017aa5264453f07d7aaa",
+        "res:PSI-25:01daa1cf9a331d1fe669"
+      ],
+      "current_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044",
+        "res:PSI-25:d87c0ff8965737bede6a",
+        "res:PSI-25:dcbc83defce3a151e1d2",
+        "res:PSI-25:f0c79a51d2edadaefd92"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for BASS-II",
+      "expected_file_id": "res:PSI-25:a8a37c3002bb8108a044",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0374,
+      "current_seconds": 0.0503,
+      "baseline_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044",
+        "res:PSI-25:00192635d4ef9d31ebfc",
+        "res:PSI-25:007d1fdf9c72ebfb561e",
+        "res:PSI-25:017993a9586012b03e57",
+        "res:PSI-25:017aa5264453f07d7aaa",
+        "res:PSI-25:01daa1cf9a331d1fe669"
+      ],
+      "current_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044",
+        "res:PSI-25:d87c0ff8965737bede6a",
+        "res:PSI-25:dcbc83defce3a151e1d2",
+        "res:PSI-25:f0c79a51d2edadaefd92"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-25 table measurements",
+      "expected_file_id": "res:PSI-25:a8a37c3002bb8108a044",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0633,
+      "current_seconds": 0.088,
+      "baseline_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044",
+        "res:PSI-25:00192635d4ef9d31ebfc",
+        "res:PSI-25:007d1fdf9c72ebfb561e",
+        "res:PSI-25:017993a9586012b03e57",
+        "res:PSI-25:017aa5264453f07d7aaa",
+        "res:PSI-25:01daa1cf9a331d1fe669"
+      ],
+      "current_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044"
+      ]
+    },
+    {
+      "prompt": "Find PSI-26 experimental table",
+      "expected_file_id": "res:PSI-26:f2d530960116bb4a6341",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0342,
+      "current_seconds": 0.0358,
+      "baseline_ids": [
+        "res:PSI-26:f2d530960116bb4a6341",
+        "res:PSI-26:01d3675fcc7cf06b0104",
+        "res:PSI-26:01ff85d7992deaf0ce03",
+        "res:PSI-26:0208c99775a40e2e5c4c",
+        "res:PSI-26:031508c8deba054bd030",
+        "res:PSI-26:04212b3a8f01b92fade8"
+      ],
+      "current_ids": [
+        "res:PSI-26:f2d530960116bb4a6341",
+        "res:PSI-26:c246b1917ea8bfefef89"
+      ]
+    },
+    {
+      "prompt": "Show PSI-26 measurement CSV",
+      "expected_file_id": "res:PSI-26:f2d530960116bb4a6341",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.05,
+      "current_seconds": 0.0723,
+      "baseline_ids": [
+        "res:PSI-26:f2d530960116bb4a6341",
+        "res:PSI-26:01d3675fcc7cf06b0104",
+        "res:PSI-26:01ff85d7992deaf0ce03",
+        "res:PSI-26:0208c99775a40e2e5c4c",
+        "res:PSI-26:031508c8deba054bd030",
+        "res:PSI-26:04212b3a8f01b92fade8"
+      ],
+      "current_ids": [
+        "res:PSI-26:f2d530960116bb4a6341"
+      ]
+    },
+    {
+      "prompt": "Find BASS experimental table",
+      "expected_file_id": "res:PSI-26:f2d530960116bb4a6341",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0313,
+      "current_seconds": 0.0411,
+      "baseline_ids": [
+        "res:PSI-26:f2d530960116bb4a6341",
+        "res:PSI-26:01d3675fcc7cf06b0104",
+        "res:PSI-26:01ff85d7992deaf0ce03",
+        "res:PSI-26:0208c99775a40e2e5c4c",
+        "res:PSI-26:031508c8deba054bd030",
+        "res:PSI-26:04212b3a8f01b92fade8"
+      ],
+      "current_ids": [
+        "res:PSI-26:f2d530960116bb4a6341",
+        "res:PSI-26:c246b1917ea8bfefef89"
+      ]
+    },
+    {
+      "prompt": "PSI-26 PSI-26_Experimental table_BASS.csv",
+      "expected_file_id": "res:PSI-26:f2d530960116bb4a6341",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.033,
+      "current_seconds": 0.0462,
+      "baseline_ids": [
+        "res:PSI-26:f2d530960116bb4a6341",
+        "res:PSI-26:01d3675fcc7cf06b0104",
+        "res:PSI-26:01ff85d7992deaf0ce03",
+        "res:PSI-26:0208c99775a40e2e5c4c",
+        "res:PSI-26:031508c8deba054bd030",
+        "res:PSI-26:04212b3a8f01b92fade8"
+      ],
+      "current_ids": [
+        "res:PSI-26:f2d530960116bb4a6341",
+        "res:PSI-26:c246b1917ea8bfefef89",
+        "res:PSI-26:3bee5a8f8ce71f39e81c",
+        "res:PSI-26:3e93719e7ab6130e3813",
+        "res:PSI-26:a161266d56f35fff5858",
+        "res:PSI-26:d4cbd9af8617d9f8cb81",
+        "res:PSI-26:0025bcd2b6999024dbd4",
+        "res:PSI-26:019a0a5fb159814fabbf",
+        "res:PSI-26:0964203c723fb53ea2d7",
+        "res:PSI-26:09e29a8be86b0a96ba0c",
+        "res:PSI-26:0b9c5052f1bfd4126117",
+        "res:PSI-26:0cce734290741ffef918",
+        "res:PSI-26:0f5bc093eeb1b43bbc71",
+        "res:PSI-26:0fde89792790e91a3abb",
+        "res:PSI-26:1481edd3242953a08a25",
+        "res:PSI-26:17f062615a53fbd40792",
+        "res:PSI-26:185c27412613ae5ef89b",
+        "res:PSI-26:1933f94c4a98a3526066",
+        "res:PSI-26:19fbddb6e5ac333c89f9",
+        "res:PSI-26:1aaa44a72081183bff34"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for BASS",
+      "expected_file_id": "res:PSI-26:f2d530960116bb4a6341",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0322,
+      "current_seconds": 0.0393,
+      "baseline_ids": [
+        "res:PSI-26:f2d530960116bb4a6341",
+        "res:PSI-26:01d3675fcc7cf06b0104",
+        "res:PSI-26:01ff85d7992deaf0ce03",
+        "res:PSI-26:0208c99775a40e2e5c4c",
+        "res:PSI-26:031508c8deba054bd030",
+        "res:PSI-26:04212b3a8f01b92fade8"
+      ],
+      "current_ids": [
+        "res:PSI-26:f2d530960116bb4a6341",
+        "res:PSI-26:c246b1917ea8bfefef89"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-26 table measurements",
+      "expected_file_id": "res:PSI-26:f2d530960116bb4a6341",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.065,
+      "current_seconds": 0.0795,
+      "baseline_ids": [
+        "res:PSI-26:f2d530960116bb4a6341",
+        "res:PSI-26:01d3675fcc7cf06b0104",
+        "res:PSI-26:01ff85d7992deaf0ce03",
+        "res:PSI-26:0208c99775a40e2e5c4c",
+        "res:PSI-26:031508c8deba054bd030",
+        "res:PSI-26:04212b3a8f01b92fade8"
+      ],
+      "current_ids": [
+        "res:PSI-26:f2d530960116bb4a6341",
+        "res:PSI-26:c246b1917ea8bfefef89"
+      ]
+    },
+    {
+      "prompt": "Find PSI-10 experimental table",
+      "expected_file_id": "res:PSI-10:811747eb531c1b70cdc8",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0414,
+      "current_seconds": 0.094,
+      "baseline_ids": [
+        "res:PSI-10:811747eb531c1b70cdc8",
+        "res:PSI-10:cd6fb02acacdca6a3c7d",
+        "res:PSI-10:00134bafb8fe966a3f9c",
+        "res:PSI-10:00190aff404d2f047574",
+        "res:PSI-10:0035c0910afd38fe2aba",
+        "res:PSI-10:0049e76a037aa79bec9c"
+      ],
+      "current_ids": [
+        "res:PSI-10:811747eb531c1b70cdc8",
+        "res:PSI-10:cd6fb02acacdca6a3c7d",
+        "res:PSI-10:00190aff404d2f047574",
+        "res:PSI-10:0035c0910afd38fe2aba",
+        "res:PSI-10:00c24ddab3f579feca3f",
+        "res:PSI-10:0169a2e9e909aae01a78",
+        "res:PSI-10:02d39d7af8a9ac562496",
+        "res:PSI-10:031b4bc051c912b4115b",
+        "res:PSI-10:03213d90f75739125869",
+        "res:PSI-10:036d35142d9d815d00ec",
+        "res:PSI-10:03c1886cfffe296267a2",
+        "res:PSI-10:03ea44ee20cd943e6238",
+        "res:PSI-10:03fdd8838fda0bfe5e03",
+        "res:PSI-10:04cd98dd8d0bdedac640",
+        "res:PSI-10:052a1361b831bd586ff8",
+        "res:PSI-10:055289ad2fed07bc24e6",
+        "res:PSI-10:058586d33511f5a2d767",
+        "res:PSI-10:06fcc75ce94bcccdb903"
+      ]
+    },
+    {
+      "prompt": "Show PSI-10 measurement CSV",
+      "expected_file_id": "res:PSI-10:811747eb531c1b70cdc8",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.061,
+      "current_seconds": 0.1249,
+      "baseline_ids": [
+        "res:PSI-10:811747eb531c1b70cdc8",
+        "res:PSI-10:cd6fb02acacdca6a3c7d",
+        "res:PSI-10:00190aff404d2f047574",
+        "res:PSI-10:0035c0910afd38fe2aba",
+        "res:PSI-10:00c24ddab3f579feca3f",
+        "res:PSI-10:0169a2e9e909aae01a78"
+      ],
+      "current_ids": [
+        "res:PSI-10:811747eb531c1b70cdc8",
+        "res:PSI-10:cd6fb02acacdca6a3c7d",
+        "res:PSI-10:00190aff404d2f047574",
+        "res:PSI-10:0035c0910afd38fe2aba",
+        "res:PSI-10:00c24ddab3f579feca3f",
+        "res:PSI-10:0169a2e9e909aae01a78",
+        "res:PSI-10:02d39d7af8a9ac562496",
+        "res:PSI-10:031b4bc051c912b4115b",
+        "res:PSI-10:03213d90f75739125869",
+        "res:PSI-10:036d35142d9d815d00ec",
+        "res:PSI-10:03c1886cfffe296267a2",
+        "res:PSI-10:03ea44ee20cd943e6238",
+        "res:PSI-10:03fdd8838fda0bfe5e03",
+        "res:PSI-10:04cd98dd8d0bdedac640",
+        "res:PSI-10:052a1361b831bd586ff8",
+        "res:PSI-10:055289ad2fed07bc24e6",
+        "res:PSI-10:058586d33511f5a2d767",
+        "res:PSI-10:06fcc75ce94bcccdb903",
+        "res:PSI-10:0802432dfcbe602d3913",
+        "res:PSI-10:0869e28a71ee2efa0210"
+      ]
+    },
+    {
+      "prompt": "Find ACME/Flame Design experimental table",
+      "expected_file_id": "res:PSI-10:811747eb531c1b70cdc8",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.053,
+      "current_seconds": 0.1128,
+      "baseline_ids": [
+        "res:PSI-10:811747eb531c1b70cdc8",
+        "res:PSI-10:cd6fb02acacdca6a3c7d",
+        "res:PSI-10:00134bafb8fe966a3f9c",
+        "res:PSI-10:006905520d7391d46066",
+        "res:PSI-10:00daafd447a78f17cf6c",
+        "res:PSI-10:01f634830b98cc202617"
+      ],
+      "current_ids": [
+        "res:PSI-10:811747eb531c1b70cdc8",
+        "res:PSI-10:cd6fb02acacdca6a3c7d",
+        "res:PSI-10:8c12d68b30539095ed75",
+        "res:PSI-10:71b6ffd6aaccadc35a1c",
+        "res:PSI-10:83a0027bf527820c8e35"
+      ]
+    },
+    {
+      "prompt": "PSI-10 PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+      "expected_file_id": "res:PSI-10:811747eb531c1b70cdc8",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0614,
+      "current_seconds": 0.1118,
+      "baseline_ids": [
+        "res:PSI-10:811747eb531c1b70cdc8",
+        "res:PSI-10:cd6fb02acacdca6a3c7d",
+        "res:PSI-10:00190aff404d2f047574",
+        "res:PSI-10:0035c0910afd38fe2aba",
+        "res:PSI-10:00c24ddab3f579feca3f",
+        "res:PSI-10:0169a2e9e909aae01a78"
+      ],
+      "current_ids": [
+        "res:PSI-10:811747eb531c1b70cdc8",
+        "res:PSI-10:cd6fb02acacdca6a3c7d",
+        "res:PSI-10:478f2b7579917f075ef1",
+        "res:PSI-10:71b6ffd6aaccadc35a1c",
+        "res:PSI-10:83a0027bf527820c8e35",
+        "res:PSI-10:8c12d68b30539095ed75",
+        "res:PSI-10:00190aff404d2f047574",
+        "res:PSI-10:0035c0910afd38fe2aba",
+        "res:PSI-10:00c24ddab3f579feca3f",
+        "res:PSI-10:0169a2e9e909aae01a78",
+        "res:PSI-10:02d39d7af8a9ac562496",
+        "res:PSI-10:031b4bc051c912b4115b",
+        "res:PSI-10:03213d90f75739125869",
+        "res:PSI-10:036d35142d9d815d00ec",
+        "res:PSI-10:03c1886cfffe296267a2",
+        "res:PSI-10:03ea44ee20cd943e6238",
+        "res:PSI-10:03fdd8838fda0bfe5e03",
+        "res:PSI-10:04cd98dd8d0bdedac640",
+        "res:PSI-10:052a1361b831bd586ff8",
+        "res:PSI-10:055289ad2fed07bc24e6"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for ACME/Flame Design",
+      "expected_file_id": "res:PSI-10:811747eb531c1b70cdc8",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0566,
+      "current_seconds": 0.1155,
+      "baseline_ids": [
+        "res:PSI-10:811747eb531c1b70cdc8",
+        "res:PSI-10:cd6fb02acacdca6a3c7d",
+        "res:PSI-10:00134bafb8fe966a3f9c",
+        "res:PSI-10:00190aff404d2f047574",
+        "res:PSI-10:0035c0910afd38fe2aba",
+        "res:PSI-10:006905520d7391d46066"
+      ],
+      "current_ids": [
+        "res:PSI-10:811747eb531c1b70cdc8",
+        "res:PSI-10:cd6fb02acacdca6a3c7d",
+        "res:PSI-10:8c12d68b30539095ed75",
+        "res:PSI-10:71b6ffd6aaccadc35a1c",
+        "res:PSI-10:83a0027bf527820c8e35",
+        "res:PSI-10:00190aff404d2f047574",
+        "res:PSI-10:0035c0910afd38fe2aba",
+        "res:PSI-10:00c24ddab3f579feca3f",
+        "res:PSI-10:0169a2e9e909aae01a78",
+        "res:PSI-10:02d39d7af8a9ac562496",
+        "res:PSI-10:031b4bc051c912b4115b",
+        "res:PSI-10:03213d90f75739125869",
+        "res:PSI-10:036d35142d9d815d00ec",
+        "res:PSI-10:03c1886cfffe296267a2",
+        "res:PSI-10:03ea44ee20cd943e6238",
+        "res:PSI-10:03fdd8838fda0bfe5e03",
+        "res:PSI-10:04cd98dd8d0bdedac640",
+        "res:PSI-10:052a1361b831bd586ff8",
+        "res:PSI-10:055289ad2fed07bc24e6",
+        "res:PSI-10:058586d33511f5a2d767"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-10 table measurements",
+      "expected_file_id": "res:PSI-10:811747eb531c1b70cdc8",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0694,
+      "current_seconds": 0.1487,
+      "baseline_ids": [
+        "res:PSI-10:811747eb531c1b70cdc8",
+        "res:PSI-10:cd6fb02acacdca6a3c7d",
+        "res:PSI-10:00134bafb8fe966a3f9c",
+        "res:PSI-10:00190aff404d2f047574",
+        "res:PSI-10:0035c0910afd38fe2aba",
+        "res:PSI-10:0049e76a037aa79bec9c"
+      ],
+      "current_ids": [
+        "res:PSI-10:811747eb531c1b70cdc8",
+        "res:PSI-10:cd6fb02acacdca6a3c7d",
+        "res:PSI-10:00190aff404d2f047574",
+        "res:PSI-10:0035c0910afd38fe2aba",
+        "res:PSI-10:00c24ddab3f579feca3f",
+        "res:PSI-10:0169a2e9e909aae01a78",
+        "res:PSI-10:02d39d7af8a9ac562496",
+        "res:PSI-10:031b4bc051c912b4115b",
+        "res:PSI-10:03213d90f75739125869",
+        "res:PSI-10:036d35142d9d815d00ec",
+        "res:PSI-10:03c1886cfffe296267a2",
+        "res:PSI-10:03ea44ee20cd943e6238",
+        "res:PSI-10:03fdd8838fda0bfe5e03",
+        "res:PSI-10:04cd98dd8d0bdedac640",
+        "res:PSI-10:052a1361b831bd586ff8",
+        "res:PSI-10:055289ad2fed07bc24e6",
+        "res:PSI-10:058586d33511f5a2d767",
+        "res:PSI-10:06fcc75ce94bcccdb903"
+      ]
+    },
+    {
+      "prompt": "Find PSI-159 experimental table",
+      "expected_file_id": "res:PSI-159:091037dd063b76bf393c",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0427,
+      "current_seconds": 0.0984,
+      "baseline_ids": [
+        "res:PSI-159:091037dd063b76bf393c",
+        "res:PSI-159:c0043968579e9cce7cab",
+        "res:PSI-159:000b9a2b872ed2e5c45e",
+        "res:PSI-159:0012a1f798e286ff3074",
+        "res:PSI-159:0015eb92b8fe9d3f3797",
+        "res:PSI-159:002e6733e0a8a9295ddf"
+      ],
+      "current_ids": [
+        "res:PSI-159:091037dd063b76bf393c",
+        "res:PSI-159:c0043968579e9cce7cab",
+        "res:PSI-159:0015eb92b8fe9d3f3797",
+        "res:PSI-159:002e6733e0a8a9295ddf",
+        "res:PSI-159:00c9037171b7e497d51a",
+        "res:PSI-159:02aac4414ede0552d4a6",
+        "res:PSI-159:03a472c48094e36e1e7d",
+        "res:PSI-159:03bc6c3960a347fb18af",
+        "res:PSI-159:03ce05f456a5f6036f06",
+        "res:PSI-159:03ec00aa8ac9ffe26e89",
+        "res:PSI-159:043673569652e2fe8344",
+        "res:PSI-159:04dc1358460ad7384b08",
+        "res:PSI-159:04f2b72779feb6129e2e",
+        "res:PSI-159:04fcea6ba8f9eb9ab814",
+        "res:PSI-159:05704ab613f814880766",
+        "res:PSI-159:05db0cba09b3fe23e2a3",
+        "res:PSI-159:0610b92a22a7e1510863",
+        "res:PSI-159:0624397c6c133e9e37e9",
+        "res:PSI-159:0667c49098ed054dd1b8",
+        "res:PSI-159:066b21dd275d73c71db6"
+      ]
+    },
+    {
+      "prompt": "Show PSI-159 measurement CSV",
+      "expected_file_id": "res:PSI-159:091037dd063b76bf393c",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0587,
+      "current_seconds": 0.1221,
+      "baseline_ids": [
+        "res:PSI-159:091037dd063b76bf393c",
+        "res:PSI-159:c0043968579e9cce7cab",
+        "res:PSI-159:0015eb92b8fe9d3f3797",
+        "res:PSI-159:002e6733e0a8a9295ddf",
+        "res:PSI-159:00c9037171b7e497d51a",
+        "res:PSI-159:02aac4414ede0552d4a6"
+      ],
+      "current_ids": [
+        "res:PSI-159:091037dd063b76bf393c",
+        "res:PSI-159:c0043968579e9cce7cab",
+        "res:PSI-159:0015eb92b8fe9d3f3797",
+        "res:PSI-159:002e6733e0a8a9295ddf",
+        "res:PSI-159:00c9037171b7e497d51a",
+        "res:PSI-159:02aac4414ede0552d4a6",
+        "res:PSI-159:03a472c48094e36e1e7d",
+        "res:PSI-159:03bc6c3960a347fb18af",
+        "res:PSI-159:03ce05f456a5f6036f06",
+        "res:PSI-159:03ec00aa8ac9ffe26e89",
+        "res:PSI-159:043673569652e2fe8344",
+        "res:PSI-159:04dc1358460ad7384b08",
+        "res:PSI-159:04f2b72779feb6129e2e",
+        "res:PSI-159:04fcea6ba8f9eb9ab814",
+        "res:PSI-159:05704ab613f814880766",
+        "res:PSI-159:05db0cba09b3fe23e2a3",
+        "res:PSI-159:0610b92a22a7e1510863",
+        "res:PSI-159:0624397c6c133e9e37e9",
+        "res:PSI-159:0667c49098ed054dd1b8",
+        "res:PSI-159:066b21dd275d73c71db6"
+      ]
+    },
+    {
+      "prompt": "Find ACME CFI-G experimental table",
+      "expected_file_id": "res:PSI-159:091037dd063b76bf393c",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0455,
+      "current_seconds": 0.1073,
+      "baseline_ids": [
+        "res:PSI-159:091037dd063b76bf393c",
+        "res:PSI-159:c0043968579e9cce7cab",
+        "res:PSI-159:000b9a2b872ed2e5c45e",
+        "res:PSI-159:002f563952af9274d057",
+        "res:PSI-159:0151d790b6a49164e638",
+        "res:PSI-159:0159e938cd888fc583d3"
+      ],
+      "current_ids": [
+        "res:PSI-159:091037dd063b76bf393c",
+        "res:PSI-159:c0043968579e9cce7cab",
+        "res:PSI-159:5d1c9395b206173d5a04",
+        "res:PSI-159:5d57d3fddfcd91fe2440"
+      ]
+    },
+    {
+      "prompt": "PSI-159 PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+      "expected_file_id": "res:PSI-159:091037dd063b76bf393c",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.058,
+      "current_seconds": 0.1065,
+      "baseline_ids": [
+        "res:PSI-159:091037dd063b76bf393c",
+        "res:PSI-159:c0043968579e9cce7cab",
+        "res:PSI-159:0015eb92b8fe9d3f3797",
+        "res:PSI-159:002e6733e0a8a9295ddf",
+        "res:PSI-159:00c9037171b7e497d51a",
+        "res:PSI-159:02aac4414ede0552d4a6"
+      ],
+      "current_ids": [
+        "res:PSI-159:091037dd063b76bf393c",
+        "res:PSI-159:c0043968579e9cce7cab",
+        "res:PSI-159:5d1c9395b206173d5a04",
+        "res:PSI-159:5d57d3fddfcd91fe2440",
+        "res:PSI-159:0015eb92b8fe9d3f3797",
+        "res:PSI-159:002e6733e0a8a9295ddf",
+        "res:PSI-159:00c9037171b7e497d51a",
+        "res:PSI-159:02aac4414ede0552d4a6",
+        "res:PSI-159:03a472c48094e36e1e7d",
+        "res:PSI-159:03bc6c3960a347fb18af",
+        "res:PSI-159:03ce05f456a5f6036f06",
+        "res:PSI-159:03ec00aa8ac9ffe26e89",
+        "res:PSI-159:043673569652e2fe8344",
+        "res:PSI-159:04dc1358460ad7384b08",
+        "res:PSI-159:04f2b72779feb6129e2e",
+        "res:PSI-159:04fcea6ba8f9eb9ab814",
+        "res:PSI-159:05704ab613f814880766",
+        "res:PSI-159:05db0cba09b3fe23e2a3",
+        "res:PSI-159:0610b92a22a7e1510863",
+        "res:PSI-159:0624397c6c133e9e37e9"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for ACME CFI-G",
+      "expected_file_id": "res:PSI-159:091037dd063b76bf393c",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0459,
+      "current_seconds": 0.0982,
+      "baseline_ids": [
+        "res:PSI-159:091037dd063b76bf393c",
+        "res:PSI-159:c0043968579e9cce7cab",
+        "res:PSI-159:000b9a2b872ed2e5c45e",
+        "res:PSI-159:0015eb92b8fe9d3f3797",
+        "res:PSI-159:002e6733e0a8a9295ddf",
+        "res:PSI-159:002f563952af9274d057"
+      ],
+      "current_ids": [
+        "res:PSI-159:091037dd063b76bf393c",
+        "res:PSI-159:c0043968579e9cce7cab",
+        "res:PSI-159:5d1c9395b206173d5a04",
+        "res:PSI-159:5d57d3fddfcd91fe2440",
+        "res:PSI-159:0015eb92b8fe9d3f3797",
+        "res:PSI-159:002e6733e0a8a9295ddf",
+        "res:PSI-159:00c9037171b7e497d51a",
+        "res:PSI-159:02aac4414ede0552d4a6",
+        "res:PSI-159:03a472c48094e36e1e7d",
+        "res:PSI-159:03bc6c3960a347fb18af",
+        "res:PSI-159:03ce05f456a5f6036f06",
+        "res:PSI-159:03ec00aa8ac9ffe26e89",
+        "res:PSI-159:043673569652e2fe8344",
+        "res:PSI-159:04dc1358460ad7384b08",
+        "res:PSI-159:04f2b72779feb6129e2e",
+        "res:PSI-159:04fcea6ba8f9eb9ab814",
+        "res:PSI-159:05704ab613f814880766",
+        "res:PSI-159:05db0cba09b3fe23e2a3",
+        "res:PSI-159:0610b92a22a7e1510863",
+        "res:PSI-159:0624397c6c133e9e37e9"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-159 table measurements",
+      "expected_file_id": "res:PSI-159:091037dd063b76bf393c",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0675,
+      "current_seconds": 0.1398,
+      "baseline_ids": [
+        "res:PSI-159:091037dd063b76bf393c",
+        "res:PSI-159:c0043968579e9cce7cab",
+        "res:PSI-159:000b9a2b872ed2e5c45e",
+        "res:PSI-159:0012a1f798e286ff3074",
+        "res:PSI-159:0015eb92b8fe9d3f3797",
+        "res:PSI-159:002e6733e0a8a9295ddf"
+      ],
+      "current_ids": [
+        "res:PSI-159:091037dd063b76bf393c",
+        "res:PSI-159:c0043968579e9cce7cab",
+        "res:PSI-159:0015eb92b8fe9d3f3797",
+        "res:PSI-159:002e6733e0a8a9295ddf",
+        "res:PSI-159:00c9037171b7e497d51a",
+        "res:PSI-159:02aac4414ede0552d4a6",
+        "res:PSI-159:03a472c48094e36e1e7d",
+        "res:PSI-159:03bc6c3960a347fb18af",
+        "res:PSI-159:03ce05f456a5f6036f06",
+        "res:PSI-159:03ec00aa8ac9ffe26e89",
+        "res:PSI-159:043673569652e2fe8344",
+        "res:PSI-159:04dc1358460ad7384b08",
+        "res:PSI-159:04f2b72779feb6129e2e",
+        "res:PSI-159:04fcea6ba8f9eb9ab814",
+        "res:PSI-159:05704ab613f814880766",
+        "res:PSI-159:05db0cba09b3fe23e2a3",
+        "res:PSI-159:0610b92a22a7e1510863",
+        "res:PSI-159:0624397c6c133e9e37e9",
+        "res:PSI-159:0667c49098ed054dd1b8",
+        "res:PSI-159:066b21dd275d73c71db6"
+      ]
+    },
+    {
+      "prompt": "Find PSI-101 experimental table",
+      "expected_file_id": "res:PSI-101:b38660379553ac19bfed",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0319,
+      "current_seconds": 0.0418,
+      "baseline_ids": [
+        "res:PSI-101:b38660379553ac19bfed",
+        "res:PSI-101:c02de68f59f2117ea6c5",
+        "res:PSI-101:0013c3c644b5518f8bbb",
+        "res:PSI-101:019a0e336fefbc642766",
+        "res:PSI-101:01ac427de1e62f6aac49",
+        "res:PSI-101:01ed7f98e2312163ce7c"
+      ],
+      "current_ids": [
+        "res:PSI-101:b38660379553ac19bfed",
+        "res:PSI-101:0013c3c644b5518f8bbb",
+        "res:PSI-101:1b9bbc05662f465ff77c",
+        "res:PSI-101:1e7a3e21c3ca11d7743e",
+        "res:PSI-101:1fd85b35bb7e5c1565b6",
+        "res:PSI-101:23b574afb0a695f0c287",
+        "res:PSI-101:245925f2992ecd5ccc3f",
+        "res:PSI-101:2a9ef27132e7dcc84224",
+        "res:PSI-101:2ac09cf55613c7cdd022",
+        "res:PSI-101:2fd6ae5505ee6769b979",
+        "res:PSI-101:34bf2051483c015aeff0",
+        "res:PSI-101:3a31cb79628a003339fc",
+        "res:PSI-101:3ae8c4662e535a6c33ec",
+        "res:PSI-101:4080330f8585babe014e",
+        "res:PSI-101:41379850ab9e8ba696bb",
+        "res:PSI-101:419c1de669a489903cfd"
+      ]
+    },
+    {
+      "prompt": "Show PSI-101 measurement CSV",
+      "expected_file_id": "res:PSI-101:b38660379553ac19bfed",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0449,
+      "current_seconds": 0.0698,
+      "baseline_ids": [
+        "res:PSI-101:b38660379553ac19bfed",
+        "res:PSI-101:0013c3c644b5518f8bbb",
+        "res:PSI-101:1b9bbc05662f465ff77c",
+        "res:PSI-101:1e7a3e21c3ca11d7743e",
+        "res:PSI-101:1fd85b35bb7e5c1565b6",
+        "res:PSI-101:23b574afb0a695f0c287"
+      ],
+      "current_ids": [
+        "res:PSI-101:b38660379553ac19bfed",
+        "res:PSI-101:0013c3c644b5518f8bbb",
+        "res:PSI-101:1b9bbc05662f465ff77c",
+        "res:PSI-101:1e7a3e21c3ca11d7743e",
+        "res:PSI-101:1fd85b35bb7e5c1565b6",
+        "res:PSI-101:23b574afb0a695f0c287",
+        "res:PSI-101:245925f2992ecd5ccc3f",
+        "res:PSI-101:2a9ef27132e7dcc84224",
+        "res:PSI-101:2ac09cf55613c7cdd022",
+        "res:PSI-101:2fd6ae5505ee6769b979",
+        "res:PSI-101:34bf2051483c015aeff0",
+        "res:PSI-101:3a31cb79628a003339fc",
+        "res:PSI-101:3ae8c4662e535a6c33ec",
+        "res:PSI-101:4080330f8585babe014e",
+        "res:PSI-101:41379850ab9e8ba696bb",
+        "res:PSI-101:419c1de669a489903cfd",
+        "res:PSI-101:52c8aa5e1c87f9f8c7ea",
+        "res:PSI-101:5342a1e8fed2b6d92ed3",
+        "res:PSI-101:557663bd92e5ac1b0c3e",
+        "res:PSI-101:5beed4a220dcfbf0f0b9"
+      ]
+    },
+    {
+      "prompt": "Find SAME-R experimental table",
+      "expected_file_id": "res:PSI-101:b38660379553ac19bfed",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0328,
+      "current_seconds": 0.0385,
+      "baseline_ids": [
+        "res:PSI-101:b38660379553ac19bfed",
+        "res:PSI-101:097dadb5b39193514438",
+        "res:PSI-101:c02de68f59f2117ea6c5",
+        "res:PSI-101:0013c3c644b5518f8bbb",
+        "res:PSI-101:019a0e336fefbc642766",
+        "res:PSI-101:01ac427de1e62f6aac49"
+      ],
+      "current_ids": [
+        "res:PSI-101:b38660379553ac19bfed",
+        "res:PSI-101:f901ab9402751998307a",
+        "res:PSI-101:07765ceb52e093026616",
+        "res:PSI-101:0a6a0c87b51b87ce5976",
+        "res:PSI-101:383e5b0c363f18e3ed63",
+        "res:PSI-101:3cf700bddc72220675ca",
+        "res:PSI-101:41fa311f7950b03fbabd",
+        "res:PSI-101:4ef1617ede4941eabc13",
+        "res:PSI-101:5ef2373dc02ef56605c3",
+        "res:PSI-101:9d03ac2a8549a1f40836",
+        "res:PSI-101:aed7a9a45755489c72c8",
+        "res:PSI-101:c55d7aa59acd724d7595",
+        "res:PSI-101:ede96402c59ffc8ff208",
+        "res:PSI-101:0013c3c644b5518f8bbb",
+        "res:PSI-101:1b9bbc05662f465ff77c",
+        "res:PSI-101:1e7a3e21c3ca11d7743e",
+        "res:PSI-101:1fd85b35bb7e5c1565b6",
+        "res:PSI-101:23b574afb0a695f0c287",
+        "res:PSI-101:245925f2992ecd5ccc3f",
+        "res:PSI-101:2a9ef27132e7dcc84224"
+      ]
+    },
+    {
+      "prompt": "PSI-101 PSI-101_Experimental table_SAME-R.csv",
+      "expected_file_id": "res:PSI-101:b38660379553ac19bfed",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0339,
+      "current_seconds": 0.0424,
+      "baseline_ids": [
+        "res:PSI-101:b38660379553ac19bfed",
+        "res:PSI-101:097dadb5b39193514438",
+        "res:PSI-101:0013c3c644b5518f8bbb",
+        "res:PSI-101:1b9bbc05662f465ff77c",
+        "res:PSI-101:1e7a3e21c3ca11d7743e",
+        "res:PSI-101:1fd85b35bb7e5c1565b6"
+      ],
+      "current_ids": [
+        "res:PSI-101:b38660379553ac19bfed",
+        "res:PSI-101:f901ab9402751998307a",
+        "res:PSI-101:07765ceb52e093026616",
+        "res:PSI-101:0a6a0c87b51b87ce5976",
+        "res:PSI-101:383e5b0c363f18e3ed63",
+        "res:PSI-101:3cf700bddc72220675ca",
+        "res:PSI-101:41fa311f7950b03fbabd",
+        "res:PSI-101:4ef1617ede4941eabc13",
+        "res:PSI-101:5ef2373dc02ef56605c3",
+        "res:PSI-101:9d03ac2a8549a1f40836",
+        "res:PSI-101:aed7a9a45755489c72c8",
+        "res:PSI-101:c55d7aa59acd724d7595",
+        "res:PSI-101:ede96402c59ffc8ff208",
+        "res:PSI-101:0013c3c644b5518f8bbb",
+        "res:PSI-101:1b9bbc05662f465ff77c",
+        "res:PSI-101:1e7a3e21c3ca11d7743e",
+        "res:PSI-101:1fd85b35bb7e5c1565b6",
+        "res:PSI-101:23b574afb0a695f0c287",
+        "res:PSI-101:245925f2992ecd5ccc3f",
+        "res:PSI-101:2a9ef27132e7dcc84224"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for SAME-R",
+      "expected_file_id": "res:PSI-101:b38660379553ac19bfed",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0309,
+      "current_seconds": 0.0435,
+      "baseline_ids": [
+        "res:PSI-101:b38660379553ac19bfed",
+        "res:PSI-101:097dadb5b39193514438",
+        "res:PSI-101:0013c3c644b5518f8bbb",
+        "res:PSI-101:1b9bbc05662f465ff77c",
+        "res:PSI-101:1e7a3e21c3ca11d7743e",
+        "res:PSI-101:1fd85b35bb7e5c1565b6"
+      ],
+      "current_ids": [
+        "res:PSI-101:b38660379553ac19bfed",
+        "res:PSI-101:f901ab9402751998307a",
+        "res:PSI-101:07765ceb52e093026616",
+        "res:PSI-101:0a6a0c87b51b87ce5976",
+        "res:PSI-101:383e5b0c363f18e3ed63",
+        "res:PSI-101:3cf700bddc72220675ca",
+        "res:PSI-101:41fa311f7950b03fbabd",
+        "res:PSI-101:4ef1617ede4941eabc13",
+        "res:PSI-101:5ef2373dc02ef56605c3",
+        "res:PSI-101:9d03ac2a8549a1f40836",
+        "res:PSI-101:aed7a9a45755489c72c8",
+        "res:PSI-101:c55d7aa59acd724d7595",
+        "res:PSI-101:ede96402c59ffc8ff208",
+        "res:PSI-101:0013c3c644b5518f8bbb",
+        "res:PSI-101:1b9bbc05662f465ff77c",
+        "res:PSI-101:1e7a3e21c3ca11d7743e",
+        "res:PSI-101:1fd85b35bb7e5c1565b6",
+        "res:PSI-101:23b574afb0a695f0c287",
+        "res:PSI-101:245925f2992ecd5ccc3f",
+        "res:PSI-101:2a9ef27132e7dcc84224"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-101 table measurements",
+      "expected_file_id": "res:PSI-101:b38660379553ac19bfed",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0576,
+      "current_seconds": 0.0913,
+      "baseline_ids": [
+        "res:PSI-101:b38660379553ac19bfed",
+        "res:PSI-101:c02de68f59f2117ea6c5",
+        "res:PSI-101:0013c3c644b5518f8bbb",
+        "res:PSI-101:019a0e336fefbc642766",
+        "res:PSI-101:01ac427de1e62f6aac49",
+        "res:PSI-101:01ed7f98e2312163ce7c"
+      ],
+      "current_ids": [
+        "res:PSI-101:b38660379553ac19bfed",
+        "res:PSI-101:0013c3c644b5518f8bbb",
+        "res:PSI-101:1b9bbc05662f465ff77c",
+        "res:PSI-101:1e7a3e21c3ca11d7743e",
+        "res:PSI-101:1fd85b35bb7e5c1565b6",
+        "res:PSI-101:23b574afb0a695f0c287",
+        "res:PSI-101:245925f2992ecd5ccc3f",
+        "res:PSI-101:2a9ef27132e7dcc84224",
+        "res:PSI-101:2ac09cf55613c7cdd022",
+        "res:PSI-101:2fd6ae5505ee6769b979",
+        "res:PSI-101:34bf2051483c015aeff0",
+        "res:PSI-101:3a31cb79628a003339fc",
+        "res:PSI-101:3ae8c4662e535a6c33ec",
+        "res:PSI-101:4080330f8585babe014e",
+        "res:PSI-101:41379850ab9e8ba696bb",
+        "res:PSI-101:419c1de669a489903cfd"
+      ]
+    },
+    {
+      "prompt": "Find PSI-98 experimental table",
+      "expected_file_id": "res:PSI-98:6e2195e0fa49a0b02f7f",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0372,
+      "current_seconds": 0.0396,
+      "baseline_ids": [
+        "res:PSI-98:6e2195e0fa49a0b02f7f",
+        "res:PSI-98:00773c585ca7ef6c3226",
+        "res:PSI-98:02fdcbf16297f815afc3",
+        "res:PSI-98:0630d530a8acae1480f9",
+        "res:PSI-98:08bb9480e265e8e9e025",
+        "res:PSI-98:0bd109bd8c29cf9a5226"
+      ],
+      "current_ids": [
+        "res:PSI-98:6e2195e0fa49a0b02f7f",
+        "res:PSI-98:16cd677150e25518960b",
+        "res:PSI-98:6fc04796229ff0ba9548",
+        "res:PSI-98:84c5744b2c284ed2d0a9",
+        "res:PSI-98:916bfe75b0ca314c89fc",
+        "res:PSI-98:caa82b4b1931aeff46ab"
+      ]
+    },
+    {
+      "prompt": "Show PSI-98 measurement CSV",
+      "expected_file_id": "res:PSI-98:6e2195e0fa49a0b02f7f",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0499,
+      "current_seconds": 0.0659,
+      "baseline_ids": [
+        "res:PSI-98:6e2195e0fa49a0b02f7f",
+        "res:PSI-98:00773c585ca7ef6c3226",
+        "res:PSI-98:02fdcbf16297f815afc3",
+        "res:PSI-98:0630d530a8acae1480f9",
+        "res:PSI-98:08bb9480e265e8e9e025",
+        "res:PSI-98:0bd109bd8c29cf9a5226"
+      ],
+      "current_ids": [
+        "res:PSI-98:6e2195e0fa49a0b02f7f"
+      ]
+    },
+    {
+      "prompt": "Find SAFFIRE-I experimental table",
+      "expected_file_id": "res:PSI-98:6e2195e0fa49a0b02f7f",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0285,
+      "current_seconds": 0.0385,
+      "baseline_ids": [
+        "res:PSI-98:6e2195e0fa49a0b02f7f",
+        "res:PSI-98:00773c585ca7ef6c3226",
+        "res:PSI-98:02fdcbf16297f815afc3",
+        "res:PSI-98:08bb9480e265e8e9e025",
+        "res:PSI-98:0bd109bd8c29cf9a5226",
+        "res:PSI-98:0cae67ddef103b2d71e0"
+      ],
+      "current_ids": [
+        "res:PSI-98:6e2195e0fa49a0b02f7f",
+        "res:PSI-98:16cd677150e25518960b",
+        "res:PSI-98:6fc04796229ff0ba9548",
+        "res:PSI-98:84c5744b2c284ed2d0a9",
+        "res:PSI-98:916bfe75b0ca314c89fc",
+        "res:PSI-98:caa82b4b1931aeff46ab"
+      ]
+    },
+    {
+      "prompt": "PSI-98 PSI-98_Experimental table_SAFFIRE-1.csv",
+      "expected_file_id": "res:PSI-98:6e2195e0fa49a0b02f7f",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0333,
+      "current_seconds": 0.044,
+      "baseline_ids": [
+        "res:PSI-98:6e2195e0fa49a0b02f7f",
+        "res:PSI-98:00773c585ca7ef6c3226",
+        "res:PSI-98:02fdcbf16297f815afc3",
+        "res:PSI-98:08bb9480e265e8e9e025",
+        "res:PSI-98:0bd109bd8c29cf9a5226",
+        "res:PSI-98:0cae67ddef103b2d71e0"
+      ],
+      "current_ids": [
+        "res:PSI-98:6e2195e0fa49a0b02f7f",
+        "res:PSI-98:16cd677150e25518960b",
+        "res:PSI-98:6fc04796229ff0ba9548",
+        "res:PSI-98:84c5744b2c284ed2d0a9",
+        "res:PSI-98:916bfe75b0ca314c89fc",
+        "res:PSI-98:caa82b4b1931aeff46ab"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for SAFFIRE-I",
+      "expected_file_id": "res:PSI-98:6e2195e0fa49a0b02f7f",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0341,
+      "current_seconds": 0.0437,
+      "baseline_ids": [
+        "res:PSI-98:6e2195e0fa49a0b02f7f",
+        "res:PSI-98:00773c585ca7ef6c3226",
+        "res:PSI-98:02fdcbf16297f815afc3",
+        "res:PSI-98:08bb9480e265e8e9e025",
+        "res:PSI-98:0bd109bd8c29cf9a5226",
+        "res:PSI-98:0cae67ddef103b2d71e0"
+      ],
+      "current_ids": [
+        "res:PSI-98:6e2195e0fa49a0b02f7f",
+        "res:PSI-98:16cd677150e25518960b",
+        "res:PSI-98:6fc04796229ff0ba9548",
+        "res:PSI-98:84c5744b2c284ed2d0a9",
+        "res:PSI-98:916bfe75b0ca314c89fc",
+        "res:PSI-98:caa82b4b1931aeff46ab"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-98 table measurements",
+      "expected_file_id": "res:PSI-98:6e2195e0fa49a0b02f7f",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0564,
+      "current_seconds": 0.0784,
+      "baseline_ids": [
+        "res:PSI-98:6e2195e0fa49a0b02f7f",
+        "res:PSI-98:00773c585ca7ef6c3226",
+        "res:PSI-98:02fdcbf16297f815afc3",
+        "res:PSI-98:0630d530a8acae1480f9",
+        "res:PSI-98:08bb9480e265e8e9e025",
+        "res:PSI-98:0bd109bd8c29cf9a5226"
+      ],
+      "current_ids": [
+        "res:PSI-98:6e2195e0fa49a0b02f7f",
+        "res:PSI-98:16cd677150e25518960b",
+        "res:PSI-98:6fc04796229ff0ba9548",
+        "res:PSI-98:84c5744b2c284ed2d0a9",
+        "res:PSI-98:916bfe75b0ca314c89fc",
+        "res:PSI-98:caa82b4b1931aeff46ab"
+      ]
+    },
+    {
+      "prompt": "Find PSI-39 experimental table",
+      "expected_file_id": "res:PSI-39:1dc12da3f1d46c6dbc89",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0346,
+      "current_seconds": 0.0785,
+      "baseline_ids": [
+        "res:PSI-39:1dc12da3f1d46c6dbc89",
+        "res:PSI-39:000df207c7aceefbc694",
+        "res:PSI-39:0033b8e5df961d615741",
+        "res:PSI-39:0045e0a7f0206fd37f96",
+        "res:PSI-39:004a4f9f9912bfbe81d8",
+        "res:PSI-39:005e59f010e84b505fd3"
+      ],
+      "current_ids": [
+        "res:PSI-39:1dc12da3f1d46c6dbc89"
+      ]
+    },
+    {
+      "prompt": "Show PSI-39 measurement CSV",
+      "expected_file_id": "res:PSI-39:1dc12da3f1d46c6dbc89",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0529,
+      "current_seconds": 0.1069,
+      "baseline_ids": [
+        "res:PSI-39:1dc12da3f1d46c6dbc89",
+        "res:PSI-39:000df207c7aceefbc694",
+        "res:PSI-39:0033b8e5df961d615741",
+        "res:PSI-39:0045e0a7f0206fd37f96",
+        "res:PSI-39:004a4f9f9912bfbe81d8",
+        "res:PSI-39:005e59f010e84b505fd3"
+      ],
+      "current_ids": [
+        "res:PSI-39:1dc12da3f1d46c6dbc89"
+      ]
+    },
+    {
+      "prompt": "Find CFI experimental table",
+      "expected_file_id": "res:PSI-39:1dc12da3f1d46c6dbc89",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0355,
+      "current_seconds": 0.0791,
+      "baseline_ids": [
+        "res:PSI-39:1dc12da3f1d46c6dbc89",
+        "res:PSI-39:0033b8e5df961d615741",
+        "res:PSI-39:00a91b80dbd1902a50fa",
+        "res:PSI-39:00db86323e787a825380",
+        "res:PSI-39:01f7b195bf22a7a5d066",
+        "res:PSI-39:045f5acd031767e9980b"
+      ],
+      "current_ids": [
+        "res:PSI-39:1dc12da3f1d46c6dbc89"
+      ]
+    },
+    {
+      "prompt": "PSI-39 PSI-39_Experimental table_CFI.csv",
+      "expected_file_id": "res:PSI-39:1dc12da3f1d46c6dbc89",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0373,
+      "current_seconds": 0.088,
+      "baseline_ids": [
+        "res:PSI-39:1dc12da3f1d46c6dbc89",
+        "res:PSI-39:0033b8e5df961d615741",
+        "res:PSI-39:00a91b80dbd1902a50fa",
+        "res:PSI-39:00db86323e787a825380",
+        "res:PSI-39:01f7b195bf22a7a5d066",
+        "res:PSI-39:045f5acd031767e9980b"
+      ],
+      "current_ids": [
+        "res:PSI-39:1dc12da3f1d46c6dbc89"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for CFI",
+      "expected_file_id": "res:PSI-39:1dc12da3f1d46c6dbc89",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0372,
+      "current_seconds": 0.0817,
+      "baseline_ids": [
+        "res:PSI-39:1dc12da3f1d46c6dbc89",
+        "res:PSI-39:0033b8e5df961d615741",
+        "res:PSI-39:00a91b80dbd1902a50fa",
+        "res:PSI-39:00db86323e787a825380",
+        "res:PSI-39:01f7b195bf22a7a5d066",
+        "res:PSI-39:045f5acd031767e9980b"
+      ],
+      "current_ids": [
+        "res:PSI-39:1dc12da3f1d46c6dbc89"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-39 table measurements",
+      "expected_file_id": "res:PSI-39:1dc12da3f1d46c6dbc89",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0653,
+      "current_seconds": 0.1155,
+      "baseline_ids": [
+        "res:PSI-39:1dc12da3f1d46c6dbc89",
+        "res:PSI-39:000df207c7aceefbc694",
+        "res:PSI-39:0033b8e5df961d615741",
+        "res:PSI-39:0045e0a7f0206fd37f96",
+        "res:PSI-39:004a4f9f9912bfbe81d8",
+        "res:PSI-39:005e59f010e84b505fd3"
+      ],
+      "current_ids": [
+        "res:PSI-39:1dc12da3f1d46c6dbc89"
+      ]
+    },
+    {
+      "prompt": "Find PSI-102 experimental table",
+      "expected_file_id": "res:PSI-102:e85becf37f55d8e4a738",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0282,
+      "current_seconds": 0.0421,
+      "baseline_ids": [
+        "res:PSI-102:e85becf37f55d8e4a738",
+        "res:PSI-102:02fab70bcbdf2f728b29",
+        "res:PSI-102:02fd444b666e2256b533",
+        "res:PSI-102:05cf31f135d00a28dc60",
+        "res:PSI-102:0cac59c3e58c21ce3081",
+        "res:PSI-102:11fffaa27e463762ca16"
+      ],
+      "current_ids": [
+        "res:PSI-102:e85becf37f55d8e4a738",
+        "res:PSI-102:aea2c6a9cf80227ccbb2",
+        "res:PSI-102:004bcad4b8396ecdf3a3",
+        "res:PSI-102:060a4fb0a87fe849022a",
+        "res:PSI-102:131655676d37cf3ebf15",
+        "res:PSI-102:1ecb98cb56de4d342c3a",
+        "res:PSI-102:27a30407e31e3ab19985",
+        "res:PSI-102:2847befb3ce7eceec2f1",
+        "res:PSI-102:2ef083bc79e476ab7469",
+        "res:PSI-102:42f13082e15eba8a3862",
+        "res:PSI-102:43056f86612a93b1e216",
+        "res:PSI-102:4d1606b082f50b5de010",
+        "res:PSI-102:519a7207358f283fbe99",
+        "res:PSI-102:58faf2734a3b95073caa",
+        "res:PSI-102:59ed29b1641df79fafeb",
+        "res:PSI-102:68cc4b3a82e35cd4984a",
+        "res:PSI-102:7ed2cd38b05e00bb3919",
+        "res:PSI-102:86ec9ad319919fd6b829",
+        "res:PSI-102:8b5205f8217578e7e6fe",
+        "res:PSI-102:8fbaff9dc2eab18d5df9"
+      ]
+    },
+    {
+      "prompt": "Show PSI-102 measurement CSV",
+      "expected_file_id": "res:PSI-102:e85becf37f55d8e4a738",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0434,
+      "current_seconds": 0.0707,
+      "baseline_ids": [
+        "res:PSI-102:e85becf37f55d8e4a738",
+        "res:PSI-102:02fab70bcbdf2f728b29",
+        "res:PSI-102:02fd444b666e2256b533",
+        "res:PSI-102:05cf31f135d00a28dc60",
+        "res:PSI-102:0cac59c3e58c21ce3081",
+        "res:PSI-102:11fffaa27e463762ca16"
+      ],
+      "current_ids": [
+        "res:PSI-102:e85becf37f55d8e4a738",
+        "res:PSI-102:aea2c6a9cf80227ccbb2",
+        "res:PSI-102:004bcad4b8396ecdf3a3",
+        "res:PSI-102:060a4fb0a87fe849022a",
+        "res:PSI-102:131655676d37cf3ebf15",
+        "res:PSI-102:1ecb98cb56de4d342c3a",
+        "res:PSI-102:27a30407e31e3ab19985",
+        "res:PSI-102:2847befb3ce7eceec2f1",
+        "res:PSI-102:2ef083bc79e476ab7469",
+        "res:PSI-102:42f13082e15eba8a3862",
+        "res:PSI-102:43056f86612a93b1e216",
+        "res:PSI-102:4d1606b082f50b5de010",
+        "res:PSI-102:519a7207358f283fbe99",
+        "res:PSI-102:58faf2734a3b95073caa",
+        "res:PSI-102:59ed29b1641df79fafeb",
+        "res:PSI-102:68cc4b3a82e35cd4984a",
+        "res:PSI-102:7ed2cd38b05e00bb3919",
+        "res:PSI-102:86ec9ad319919fd6b829",
+        "res:PSI-102:8b5205f8217578e7e6fe",
+        "res:PSI-102:8fbaff9dc2eab18d5df9"
+      ]
+    },
+    {
+      "prompt": "Find SAME experimental table",
+      "expected_file_id": "res:PSI-102:e85becf37f55d8e4a738",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0281,
+      "current_seconds": 0.0436,
+      "baseline_ids": [
+        "res:PSI-102:e85becf37f55d8e4a738",
+        "res:PSI-102:02fab70bcbdf2f728b29",
+        "res:PSI-102:02fd444b666e2256b533",
+        "res:PSI-102:05cf31f135d00a28dc60",
+        "res:PSI-102:0cac59c3e58c21ce3081",
+        "res:PSI-102:11fffaa27e463762ca16"
+      ],
+      "current_ids": [
+        "res:PSI-102:e85becf37f55d8e4a738",
+        "res:PSI-102:aea2c6a9cf80227ccbb2",
+        "res:PSI-102:004bcad4b8396ecdf3a3",
+        "res:PSI-102:1ecb98cb56de4d342c3a",
+        "res:PSI-102:42f13082e15eba8a3862",
+        "res:PSI-102:43056f86612a93b1e216",
+        "res:PSI-102:4d1606b082f50b5de010",
+        "res:PSI-102:519a7207358f283fbe99",
+        "res:PSI-102:59ed29b1641df79fafeb",
+        "res:PSI-102:7ed2cd38b05e00bb3919",
+        "res:PSI-102:86ec9ad319919fd6b829",
+        "res:PSI-102:b2628530383e25b7d230",
+        "res:PSI-102:e5bd54a2899522d8eb2d",
+        "res:PSI-102:f27878e2ff4dfbced7de",
+        "res:PSI-102:060a4fb0a87fe849022a",
+        "res:PSI-102:131655676d37cf3ebf15",
+        "res:PSI-102:27a30407e31e3ab19985",
+        "res:PSI-102:2847befb3ce7eceec2f1",
+        "res:PSI-102:2ef083bc79e476ab7469"
+      ]
+    },
+    {
+      "prompt": "PSI-102 PSI-102_Experimental table_SAME.csv",
+      "expected_file_id": "res:PSI-102:e85becf37f55d8e4a738",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0353,
+      "current_seconds": 0.0435,
+      "baseline_ids": [
+        "res:PSI-102:e85becf37f55d8e4a738",
+        "res:PSI-102:02fab70bcbdf2f728b29",
+        "res:PSI-102:02fd444b666e2256b533",
+        "res:PSI-102:05cf31f135d00a28dc60",
+        "res:PSI-102:0cac59c3e58c21ce3081",
+        "res:PSI-102:11fffaa27e463762ca16"
+      ],
+      "current_ids": [
+        "res:PSI-102:e85becf37f55d8e4a738",
+        "res:PSI-102:aea2c6a9cf80227ccbb2",
+        "res:PSI-102:004bcad4b8396ecdf3a3",
+        "res:PSI-102:1ecb98cb56de4d342c3a",
+        "res:PSI-102:42f13082e15eba8a3862",
+        "res:PSI-102:43056f86612a93b1e216",
+        "res:PSI-102:4d1606b082f50b5de010",
+        "res:PSI-102:519a7207358f283fbe99",
+        "res:PSI-102:59ed29b1641df79fafeb",
+        "res:PSI-102:7ed2cd38b05e00bb3919",
+        "res:PSI-102:86ec9ad319919fd6b829",
+        "res:PSI-102:b2628530383e25b7d230",
+        "res:PSI-102:e5bd54a2899522d8eb2d",
+        "res:PSI-102:f27878e2ff4dfbced7de",
+        "res:PSI-102:060a4fb0a87fe849022a",
+        "res:PSI-102:131655676d37cf3ebf15",
+        "res:PSI-102:27a30407e31e3ab19985",
+        "res:PSI-102:2847befb3ce7eceec2f1",
+        "res:PSI-102:2ef083bc79e476ab7469"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for SAME",
+      "expected_file_id": "res:PSI-102:e85becf37f55d8e4a738",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0344,
+      "current_seconds": 0.0446,
+      "baseline_ids": [
+        "res:PSI-102:e85becf37f55d8e4a738",
+        "res:PSI-102:02fab70bcbdf2f728b29",
+        "res:PSI-102:02fd444b666e2256b533",
+        "res:PSI-102:05cf31f135d00a28dc60",
+        "res:PSI-102:0cac59c3e58c21ce3081",
+        "res:PSI-102:11fffaa27e463762ca16"
+      ],
+      "current_ids": [
+        "res:PSI-102:e85becf37f55d8e4a738",
+        "res:PSI-102:aea2c6a9cf80227ccbb2",
+        "res:PSI-102:004bcad4b8396ecdf3a3",
+        "res:PSI-102:1ecb98cb56de4d342c3a",
+        "res:PSI-102:42f13082e15eba8a3862",
+        "res:PSI-102:43056f86612a93b1e216",
+        "res:PSI-102:4d1606b082f50b5de010",
+        "res:PSI-102:519a7207358f283fbe99",
+        "res:PSI-102:59ed29b1641df79fafeb",
+        "res:PSI-102:7ed2cd38b05e00bb3919",
+        "res:PSI-102:86ec9ad319919fd6b829",
+        "res:PSI-102:b2628530383e25b7d230",
+        "res:PSI-102:e5bd54a2899522d8eb2d",
+        "res:PSI-102:f27878e2ff4dfbced7de",
+        "res:PSI-102:060a4fb0a87fe849022a",
+        "res:PSI-102:131655676d37cf3ebf15",
+        "res:PSI-102:27a30407e31e3ab19985",
+        "res:PSI-102:2847befb3ce7eceec2f1",
+        "res:PSI-102:2ef083bc79e476ab7469"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-102 table measurements",
+      "expected_file_id": "res:PSI-102:e85becf37f55d8e4a738",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0545,
+      "current_seconds": 0.0769,
+      "baseline_ids": [
+        "res:PSI-102:e85becf37f55d8e4a738",
+        "res:PSI-102:02fab70bcbdf2f728b29",
+        "res:PSI-102:02fd444b666e2256b533",
+        "res:PSI-102:05cf31f135d00a28dc60",
+        "res:PSI-102:0cac59c3e58c21ce3081",
+        "res:PSI-102:11fffaa27e463762ca16"
+      ],
+      "current_ids": [
+        "res:PSI-102:e85becf37f55d8e4a738",
+        "res:PSI-102:aea2c6a9cf80227ccbb2",
+        "res:PSI-102:004bcad4b8396ecdf3a3",
+        "res:PSI-102:060a4fb0a87fe849022a",
+        "res:PSI-102:131655676d37cf3ebf15",
+        "res:PSI-102:1ecb98cb56de4d342c3a",
+        "res:PSI-102:27a30407e31e3ab19985",
+        "res:PSI-102:2847befb3ce7eceec2f1",
+        "res:PSI-102:2ef083bc79e476ab7469",
+        "res:PSI-102:42f13082e15eba8a3862",
+        "res:PSI-102:43056f86612a93b1e216",
+        "res:PSI-102:4d1606b082f50b5de010",
+        "res:PSI-102:519a7207358f283fbe99",
+        "res:PSI-102:58faf2734a3b95073caa",
+        "res:PSI-102:59ed29b1641df79fafeb",
+        "res:PSI-102:68cc4b3a82e35cd4984a",
+        "res:PSI-102:7ed2cd38b05e00bb3919",
+        "res:PSI-102:86ec9ad319919fd6b829",
+        "res:PSI-102:8b5205f8217578e7e6fe",
+        "res:PSI-102:8fbaff9dc2eab18d5df9"
+      ]
+    },
+    {
+      "prompt": "Find PSI-106 experimental table",
+      "expected_file_id": "res:PSI-106:6624891838586ce96f1b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0833,
+      "current_seconds": 0.0746,
+      "baseline_ids": [
+        "res:PSI-106:6624891838586ce96f1b",
+        "res:PSI-106:0001e2c61a44c39f1a50",
+        "res:PSI-106:00061e6a1496ea114218",
+        "res:PSI-106:000e34e4c2dce445cfd7",
+        "res:PSI-106:00123e49b5979ee3811c",
+        "res:PSI-106:0012a96310e40f3abc72"
+      ],
+      "current_ids": [
+        "res:PSI-106:6624891838586ce96f1b",
+        "res:PSI-106:5dc25f83a97ae437afdf"
+      ]
+    },
+    {
+      "prompt": "Show PSI-106 measurement CSV",
+      "expected_file_id": "res:PSI-106:6624891838586ce96f1b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.1042,
+      "current_seconds": 0.4145,
+      "baseline_ids": [
+        "res:PSI-106:6624891838586ce96f1b",
+        "res:PSI-106:18ca1567ef1ae495b7b7",
+        "res:PSI-106:19ac28e2a4a52492075c",
+        "res:PSI-106:2140fa803323da3f7508",
+        "res:PSI-106:60b51730de1ffd998908",
+        "res:PSI-106:6976790e6046303e6e51"
+      ],
+      "current_ids": [
+        "res:PSI-106:6624891838586ce96f1b",
+        "res:PSI-106:18ca1567ef1ae495b7b7",
+        "res:PSI-106:19ac28e2a4a52492075c",
+        "res:PSI-106:2140fa803323da3f7508",
+        "res:PSI-106:60b51730de1ffd998908",
+        "res:PSI-106:6976790e6046303e6e51",
+        "res:PSI-106:6b9d724d5d7ae56551d6",
+        "res:PSI-106:77613d2c70ab5fc8e31b",
+        "res:PSI-106:7e44431ea19e7702b09e",
+        "res:PSI-106:8a76688af4cc29bd65a5",
+        "res:PSI-106:9cc3c83d5d9a7c767f54",
+        "res:PSI-106:a08a11b73d147b93f8bf",
+        "res:PSI-106:ecab724a3e355439e5ab",
+        "res:PSI-106:f5bed9d425a7973ae876",
+        "res:PSI-106:fd306e6974bffaf0ad97"
+      ]
+    },
+    {
+      "prompt": "Find SLICE experimental table",
+      "expected_file_id": "res:PSI-106:6624891838586ce96f1b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0918,
+      "current_seconds": 0.0824,
+      "baseline_ids": [
+        "res:PSI-106:6624891838586ce96f1b",
+        "res:PSI-106:0386e3877daf71f2f852",
+        "res:PSI-106:14d79445ff0368077463",
+        "res:PSI-106:14da9ef42b18c67956df",
+        "res:PSI-106:1fcf434ceafd9f121217",
+        "res:PSI-106:23569f9a16f9c24af337"
+      ],
+      "current_ids": [
+        "res:PSI-106:6624891838586ce96f1b",
+        "res:PSI-106:5dc25f83a97ae437afdf"
+      ]
+    },
+    {
+      "prompt": "PSI-106 PSI-106_Experimental table_Slice.csv",
+      "expected_file_id": "res:PSI-106:6624891838586ce96f1b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0952,
+      "current_seconds": 0.3924,
+      "baseline_ids": [
+        "res:PSI-106:6624891838586ce96f1b",
+        "res:PSI-106:8a76688af4cc29bd65a5",
+        "res:PSI-106:0386e3877daf71f2f852",
+        "res:PSI-106:14d79445ff0368077463",
+        "res:PSI-106:14da9ef42b18c67956df",
+        "res:PSI-106:18ca1567ef1ae495b7b7"
+      ],
+      "current_ids": [
+        "res:PSI-106:6624891838586ce96f1b",
+        "res:PSI-106:5dc25f83a97ae437afdf",
+        "res:PSI-106:8a76688af4cc29bd65a5",
+        "res:PSI-106:18ca1567ef1ae495b7b7",
+        "res:PSI-106:19ac28e2a4a52492075c",
+        "res:PSI-106:2140fa803323da3f7508",
+        "res:PSI-106:60b51730de1ffd998908",
+        "res:PSI-106:6976790e6046303e6e51",
+        "res:PSI-106:6b9d724d5d7ae56551d6",
+        "res:PSI-106:77613d2c70ab5fc8e31b",
+        "res:PSI-106:7e44431ea19e7702b09e",
+        "res:PSI-106:9cc3c83d5d9a7c767f54",
+        "res:PSI-106:a08a11b73d147b93f8bf",
+        "res:PSI-106:ecab724a3e355439e5ab",
+        "res:PSI-106:f5bed9d425a7973ae876",
+        "res:PSI-106:fd306e6974bffaf0ad97",
+        "res:PSI-106:047076f93198df8e2c38",
+        "res:PSI-106:062c8f2b49ef9a51a2fb",
+        "res:PSI-106:069d0185df8b9416ea08",
+        "res:PSI-106:126fdc45a00d0ba932a6"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for SLICE",
+      "expected_file_id": "res:PSI-106:6624891838586ce96f1b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0943,
+      "current_seconds": 0.1325,
+      "baseline_ids": [
+        "res:PSI-106:6624891838586ce96f1b",
+        "res:PSI-106:8a76688af4cc29bd65a5",
+        "res:PSI-106:0386e3877daf71f2f852",
+        "res:PSI-106:14d79445ff0368077463",
+        "res:PSI-106:14da9ef42b18c67956df",
+        "res:PSI-106:18ca1567ef1ae495b7b7"
+      ],
+      "current_ids": [
+        "res:PSI-106:6624891838586ce96f1b",
+        "res:PSI-106:5dc25f83a97ae437afdf",
+        "res:PSI-106:8a76688af4cc29bd65a5",
+        "res:PSI-106:18ca1567ef1ae495b7b7",
+        "res:PSI-106:19ac28e2a4a52492075c",
+        "res:PSI-106:2140fa803323da3f7508",
+        "res:PSI-106:60b51730de1ffd998908",
+        "res:PSI-106:6976790e6046303e6e51",
+        "res:PSI-106:6b9d724d5d7ae56551d6",
+        "res:PSI-106:77613d2c70ab5fc8e31b",
+        "res:PSI-106:7e44431ea19e7702b09e",
+        "res:PSI-106:9cc3c83d5d9a7c767f54",
+        "res:PSI-106:a08a11b73d147b93f8bf",
+        "res:PSI-106:ecab724a3e355439e5ab",
+        "res:PSI-106:f5bed9d425a7973ae876",
+        "res:PSI-106:fd306e6974bffaf0ad97"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-106 table measurements",
+      "expected_file_id": "res:PSI-106:6624891838586ce96f1b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.1268,
+      "current_seconds": 0.4475,
+      "baseline_ids": [
+        "res:PSI-106:6624891838586ce96f1b",
+        "res:PSI-106:0001e2c61a44c39f1a50",
+        "res:PSI-106:00061e6a1496ea114218",
+        "res:PSI-106:000e34e4c2dce445cfd7",
+        "res:PSI-106:00123e49b5979ee3811c",
+        "res:PSI-106:0012a96310e40f3abc72"
+      ],
+      "current_ids": [
+        "res:PSI-106:6624891838586ce96f1b",
+        "res:PSI-106:5dc25f83a97ae437afdf"
+      ]
+    },
+    {
+      "prompt": "Find PSI-99 experimental table",
+      "expected_file_id": "res:PSI-99:b1b4bc9fd9d2ed88816b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0286,
+      "current_seconds": 0.0401,
+      "baseline_ids": [
+        "res:PSI-99:b1b4bc9fd9d2ed88816b",
+        "res:PSI-99:00d0d156947c682217f7",
+        "res:PSI-99:01d9767f76ad6aa2df45",
+        "res:PSI-99:047f91aebbf9585da518",
+        "res:PSI-99:06098d6fcc69aea321b5",
+        "res:PSI-99:07760628edaed5ee0829"
+      ],
+      "current_ids": [
+        "res:PSI-99:b1b4bc9fd9d2ed88816b"
+      ]
+    },
+    {
+      "prompt": "Show PSI-99 measurement CSV",
+      "expected_file_id": "res:PSI-99:b1b4bc9fd9d2ed88816b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0455,
+      "current_seconds": 0.0706,
+      "baseline_ids": [
+        "res:PSI-99:b1b4bc9fd9d2ed88816b",
+        "res:PSI-99:00d0d156947c682217f7",
+        "res:PSI-99:01d9767f76ad6aa2df45",
+        "res:PSI-99:047f91aebbf9585da518",
+        "res:PSI-99:06098d6fcc69aea321b5",
+        "res:PSI-99:07760628edaed5ee0829"
+      ],
+      "current_ids": [
+        "res:PSI-99:b1b4bc9fd9d2ed88816b"
+      ]
+    },
+    {
+      "prompt": "Find SAFFIRE-II experimental table",
+      "expected_file_id": "res:PSI-99:b1b4bc9fd9d2ed88816b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0286,
+      "current_seconds": 0.0379,
+      "baseline_ids": [
+        "res:PSI-99:b1b4bc9fd9d2ed88816b",
+        "res:PSI-99:00d0d156947c682217f7",
+        "res:PSI-99:01d9767f76ad6aa2df45",
+        "res:PSI-99:047f91aebbf9585da518",
+        "res:PSI-99:06098d6fcc69aea321b5",
+        "res:PSI-99:07760628edaed5ee0829"
+      ],
+      "current_ids": [
+        "res:PSI-99:b1b4bc9fd9d2ed88816b"
+      ]
+    },
+    {
+      "prompt": "PSI-99 PSI-99_Experimental table_SAFFIRE-2.csv",
+      "expected_file_id": "res:PSI-99:b1b4bc9fd9d2ed88816b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0314,
+      "current_seconds": 0.04,
+      "baseline_ids": [
+        "res:PSI-99:b1b4bc9fd9d2ed88816b",
+        "res:PSI-99:00d0d156947c682217f7",
+        "res:PSI-99:01d9767f76ad6aa2df45",
+        "res:PSI-99:047f91aebbf9585da518",
+        "res:PSI-99:06098d6fcc69aea321b5",
+        "res:PSI-99:07760628edaed5ee0829"
+      ],
+      "current_ids": [
+        "res:PSI-99:b1b4bc9fd9d2ed88816b"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for SAFFIRE-II",
+      "expected_file_id": "res:PSI-99:b1b4bc9fd9d2ed88816b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0325,
+      "current_seconds": 0.0384,
+      "baseline_ids": [
+        "res:PSI-99:b1b4bc9fd9d2ed88816b",
+        "res:PSI-99:00d0d156947c682217f7",
+        "res:PSI-99:01d9767f76ad6aa2df45",
+        "res:PSI-99:047f91aebbf9585da518",
+        "res:PSI-99:06098d6fcc69aea321b5",
+        "res:PSI-99:07760628edaed5ee0829"
+      ],
+      "current_ids": [
+        "res:PSI-99:b1b4bc9fd9d2ed88816b"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-99 table measurements",
+      "expected_file_id": "res:PSI-99:b1b4bc9fd9d2ed88816b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0547,
+      "current_seconds": 0.0849,
+      "baseline_ids": [
+        "res:PSI-99:b1b4bc9fd9d2ed88816b",
+        "res:PSI-99:00d0d156947c682217f7",
+        "res:PSI-99:01d9767f76ad6aa2df45",
+        "res:PSI-99:047f91aebbf9585da518",
+        "res:PSI-99:06098d6fcc69aea321b5",
+        "res:PSI-99:07760628edaed5ee0829"
+      ],
+      "current_ids": [
+        "res:PSI-99:b1b4bc9fd9d2ed88816b"
+      ]
+    },
+    {
+      "prompt": "Find PSI-107 experimental table",
+      "expected_file_id": "res:PSI-107:0ff88919f1af7bffdee1",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0359,
+      "current_seconds": 0.0394,
+      "baseline_ids": [
+        "res:PSI-107:0ff88919f1af7bffdee1",
+        "res:PSI-107:004d734b8c7532994593",
+        "res:PSI-107:02014eba45afe1bfd7cb",
+        "res:PSI-107:028e8b39e7360e859dc5",
+        "res:PSI-107:048d4b57b8661bec4534",
+        "res:PSI-107:07452479a80667aaa7f1"
+      ],
+      "current_ids": [
+        "res:PSI-107:0ff88919f1af7bffdee1"
+      ]
+    },
+    {
+      "prompt": "Show PSI-107 measurement CSV",
+      "expected_file_id": "res:PSI-107:0ff88919f1af7bffdee1",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0496,
+      "current_seconds": 0.0711,
+      "baseline_ids": [
+        "res:PSI-107:0ff88919f1af7bffdee1",
+        "res:PSI-107:004d734b8c7532994593",
+        "res:PSI-107:02014eba45afe1bfd7cb",
+        "res:PSI-107:028e8b39e7360e859dc5",
+        "res:PSI-107:048d4b57b8661bec4534",
+        "res:PSI-107:07452479a80667aaa7f1"
+      ],
+      "current_ids": [
+        "res:PSI-107:0ff88919f1af7bffdee1"
+      ]
+    },
+    {
+      "prompt": "Find SPICE experimental table",
+      "expected_file_id": "res:PSI-107:0ff88919f1af7bffdee1",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0296,
+      "current_seconds": 0.0401,
+      "baseline_ids": [
+        "res:PSI-107:0ff88919f1af7bffdee1",
+        "res:PSI-107:028e8b39e7360e859dc5",
+        "res:PSI-107:07452479a80667aaa7f1",
+        "res:PSI-107:084ca0d859b0f02e61d4",
+        "res:PSI-107:0862bad0c20fbb027b47",
+        "res:PSI-107:0cfa2e8a45be076827ff"
+      ],
+      "current_ids": [
+        "res:PSI-107:0ff88919f1af7bffdee1",
+        "res:PSI-107:1c8bd04a0a35df00fa53",
+        "res:PSI-107:08fd8d02d0d54ac98f46",
+        "res:PSI-107:0fffeb7df4f7014e45ab",
+        "res:PSI-107:1bf59ee1c52f5e157578",
+        "res:PSI-107:458a66015f92431e9103",
+        "res:PSI-107:45c79cab333fd21460ed",
+        "res:PSI-107:5396d0fa13f7a823bf1d",
+        "res:PSI-107:586ada3abe3d84e7ea60",
+        "res:PSI-107:5c5cffe166cccad06b5e",
+        "res:PSI-107:7174dbc3bcf44eee55b0",
+        "res:PSI-107:7d8508ad2000cfdefcd7",
+        "res:PSI-107:8527dfbc3b2319e0ac37",
+        "res:PSI-107:88a6967fdea6c300a73c",
+        "res:PSI-107:8d22488f974de1662808",
+        "res:PSI-107:90967bb9b811b8ed58eb",
+        "res:PSI-107:9a28266d38d7d9512d83",
+        "res:PSI-107:b21921307030b474e91e",
+        "res:PSI-107:c20bccbd13fd16a3f601",
+        "res:PSI-107:c2cc64abd95a3e120cba"
+      ]
+    },
+    {
+      "prompt": "PSI-107 PSI-107_Experimental table_Spice.csv",
+      "expected_file_id": "res:PSI-107:0ff88919f1af7bffdee1",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0351,
+      "current_seconds": 0.0496,
+      "baseline_ids": [
+        "res:PSI-107:0ff88919f1af7bffdee1",
+        "res:PSI-107:028e8b39e7360e859dc5",
+        "res:PSI-107:07452479a80667aaa7f1",
+        "res:PSI-107:084ca0d859b0f02e61d4",
+        "res:PSI-107:0862bad0c20fbb027b47",
+        "res:PSI-107:0cfa2e8a45be076827ff"
+      ],
+      "current_ids": [
+        "res:PSI-107:0ff88919f1af7bffdee1",
+        "res:PSI-107:1c8bd04a0a35df00fa53",
+        "res:PSI-107:08fd8d02d0d54ac98f46",
+        "res:PSI-107:0fffeb7df4f7014e45ab",
+        "res:PSI-107:1bf59ee1c52f5e157578",
+        "res:PSI-107:458a66015f92431e9103",
+        "res:PSI-107:45c79cab333fd21460ed",
+        "res:PSI-107:5396d0fa13f7a823bf1d",
+        "res:PSI-107:586ada3abe3d84e7ea60",
+        "res:PSI-107:5c5cffe166cccad06b5e",
+        "res:PSI-107:7174dbc3bcf44eee55b0",
+        "res:PSI-107:7d8508ad2000cfdefcd7",
+        "res:PSI-107:8527dfbc3b2319e0ac37",
+        "res:PSI-107:88a6967fdea6c300a73c",
+        "res:PSI-107:8d22488f974de1662808",
+        "res:PSI-107:90967bb9b811b8ed58eb",
+        "res:PSI-107:9a28266d38d7d9512d83",
+        "res:PSI-107:b21921307030b474e91e",
+        "res:PSI-107:c20bccbd13fd16a3f601",
+        "res:PSI-107:c2cc64abd95a3e120cba"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for SPICE",
+      "expected_file_id": "res:PSI-107:0ff88919f1af7bffdee1",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0404,
+      "current_seconds": 0.049,
+      "baseline_ids": [
+        "res:PSI-107:0ff88919f1af7bffdee1",
+        "res:PSI-107:028e8b39e7360e859dc5",
+        "res:PSI-107:07452479a80667aaa7f1",
+        "res:PSI-107:084ca0d859b0f02e61d4",
+        "res:PSI-107:0862bad0c20fbb027b47",
+        "res:PSI-107:0cfa2e8a45be076827ff"
+      ],
+      "current_ids": [
+        "res:PSI-107:0ff88919f1af7bffdee1",
+        "res:PSI-107:1c8bd04a0a35df00fa53",
+        "res:PSI-107:08fd8d02d0d54ac98f46",
+        "res:PSI-107:0fffeb7df4f7014e45ab",
+        "res:PSI-107:1bf59ee1c52f5e157578",
+        "res:PSI-107:458a66015f92431e9103",
+        "res:PSI-107:45c79cab333fd21460ed",
+        "res:PSI-107:5396d0fa13f7a823bf1d",
+        "res:PSI-107:586ada3abe3d84e7ea60",
+        "res:PSI-107:5c5cffe166cccad06b5e",
+        "res:PSI-107:7174dbc3bcf44eee55b0",
+        "res:PSI-107:7d8508ad2000cfdefcd7",
+        "res:PSI-107:8527dfbc3b2319e0ac37",
+        "res:PSI-107:88a6967fdea6c300a73c",
+        "res:PSI-107:8d22488f974de1662808",
+        "res:PSI-107:90967bb9b811b8ed58eb",
+        "res:PSI-107:9a28266d38d7d9512d83",
+        "res:PSI-107:b21921307030b474e91e",
+        "res:PSI-107:c20bccbd13fd16a3f601",
+        "res:PSI-107:c2cc64abd95a3e120cba"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-107 table measurements",
+      "expected_file_id": "res:PSI-107:0ff88919f1af7bffdee1",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0555,
+      "current_seconds": 0.0794,
+      "baseline_ids": [
+        "res:PSI-107:0ff88919f1af7bffdee1",
+        "res:PSI-107:004d734b8c7532994593",
+        "res:PSI-107:02014eba45afe1bfd7cb",
+        "res:PSI-107:028e8b39e7360e859dc5",
+        "res:PSI-107:048d4b57b8661bec4534",
+        "res:PSI-107:07452479a80667aaa7f1"
+      ],
+      "current_ids": [
+        "res:PSI-107:0ff88919f1af7bffdee1"
+      ]
+    },
+    {
+      "prompt": "Find PSI-100 experimental table",
+      "expected_file_id": "res:PSI-100:8976e5c4beea7991ceab",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0286,
+      "current_seconds": 0.0407,
+      "baseline_ids": [
+        "res:PSI-100:8976e5c4beea7991ceab",
+        "res:PSI-100:068002de2ee6c4d66910",
+        "res:PSI-100:149881278535e8bc43f4",
+        "res:PSI-100:17b778d58165273337c3",
+        "res:PSI-100:19a1a592a9e2822c8745",
+        "res:PSI-100:1f21160513f1b131cb5d"
+      ],
+      "current_ids": [
+        "res:PSI-100:8976e5c4beea7991ceab",
+        "res:PSI-100:1f21160513f1b131cb5d",
+        "res:PSI-100:e469c101f5bb0774c601",
+        "res:PSI-100:73c27304a780db757838",
+        "res:PSI-100:73fc47f37d661069dbf7",
+        "res:PSI-100:bba2168ea22d22235942"
+      ]
+    },
+    {
+      "prompt": "Show PSI-100 measurement CSV",
+      "expected_file_id": "res:PSI-100:8976e5c4beea7991ceab",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0443,
+      "current_seconds": 0.0647,
+      "baseline_ids": [
+        "res:PSI-100:8976e5c4beea7991ceab",
+        "res:PSI-100:1f21160513f1b131cb5d",
+        "res:PSI-100:e469c101f5bb0774c601",
+        "res:PSI-100:068002de2ee6c4d66910",
+        "res:PSI-100:149881278535e8bc43f4",
+        "res:PSI-100:17b778d58165273337c3"
+      ],
+      "current_ids": [
+        "res:PSI-100:8976e5c4beea7991ceab",
+        "res:PSI-100:1f21160513f1b131cb5d",
+        "res:PSI-100:e469c101f5bb0774c601"
+      ]
+    },
+    {
+      "prompt": "Find SAFFIRE-III experimental table",
+      "expected_file_id": "res:PSI-100:8976e5c4beea7991ceab",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0279,
+      "current_seconds": 0.0352,
+      "baseline_ids": [
+        "res:PSI-100:8976e5c4beea7991ceab",
+        "res:PSI-100:068002de2ee6c4d66910",
+        "res:PSI-100:149881278535e8bc43f4",
+        "res:PSI-100:17b778d58165273337c3",
+        "res:PSI-100:19a1a592a9e2822c8745",
+        "res:PSI-100:25b7a1a15f3161185d90"
+      ],
+      "current_ids": [
+        "res:PSI-100:8976e5c4beea7991ceab",
+        "res:PSI-100:73c27304a780db757838",
+        "res:PSI-100:bba2168ea22d22235942",
+        "res:PSI-100:e469c101f5bb0774c601",
+        "res:PSI-100:73fc47f37d661069dbf7",
+        "res:PSI-100:1f21160513f1b131cb5d"
+      ]
+    },
+    {
+      "prompt": "PSI-100 PSI-100_Experimental table_SAFFIRE-3.csv",
+      "expected_file_id": "res:PSI-100:8976e5c4beea7991ceab",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0306,
+      "current_seconds": 0.0394,
+      "baseline_ids": [
+        "res:PSI-100:8976e5c4beea7991ceab",
+        "res:PSI-100:e469c101f5bb0774c601",
+        "res:PSI-100:068002de2ee6c4d66910",
+        "res:PSI-100:149881278535e8bc43f4",
+        "res:PSI-100:17b778d58165273337c3",
+        "res:PSI-100:19a1a592a9e2822c8745"
+      ],
+      "current_ids": [
+        "res:PSI-100:8976e5c4beea7991ceab",
+        "res:PSI-100:e469c101f5bb0774c601",
+        "res:PSI-100:1f21160513f1b131cb5d",
+        "res:PSI-100:73c27304a780db757838",
+        "res:PSI-100:73fc47f37d661069dbf7",
+        "res:PSI-100:bba2168ea22d22235942"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for SAFFIRE-III",
+      "expected_file_id": "res:PSI-100:8976e5c4beea7991ceab",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0306,
+      "current_seconds": 0.0397,
+      "baseline_ids": [
+        "res:PSI-100:8976e5c4beea7991ceab",
+        "res:PSI-100:068002de2ee6c4d66910",
+        "res:PSI-100:149881278535e8bc43f4",
+        "res:PSI-100:17b778d58165273337c3",
+        "res:PSI-100:19a1a592a9e2822c8745",
+        "res:PSI-100:25b7a1a15f3161185d90"
+      ],
+      "current_ids": [
+        "res:PSI-100:8976e5c4beea7991ceab",
+        "res:PSI-100:e469c101f5bb0774c601",
+        "res:PSI-100:73c27304a780db757838",
+        "res:PSI-100:bba2168ea22d22235942",
+        "res:PSI-100:1f21160513f1b131cb5d",
+        "res:PSI-100:73fc47f37d661069dbf7"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-100 table measurements",
+      "expected_file_id": "res:PSI-100:8976e5c4beea7991ceab",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0532,
+      "current_seconds": 0.077,
+      "baseline_ids": [
+        "res:PSI-100:8976e5c4beea7991ceab",
+        "res:PSI-100:068002de2ee6c4d66910",
+        "res:PSI-100:149881278535e8bc43f4",
+        "res:PSI-100:17b778d58165273337c3",
+        "res:PSI-100:19a1a592a9e2822c8745",
+        "res:PSI-100:1f21160513f1b131cb5d"
+      ],
+      "current_ids": [
+        "res:PSI-100:8976e5c4beea7991ceab",
+        "res:PSI-100:1f21160513f1b131cb5d",
+        "res:PSI-100:e469c101f5bb0774c601",
+        "res:PSI-100:73c27304a780db757838",
+        "res:PSI-100:73fc47f37d661069dbf7",
+        "res:PSI-100:bba2168ea22d22235942"
+      ]
+    },
+    {
+      "prompt": "Find PSI-21 experimental table",
+      "expected_file_id": "res:PSI-21:8fe82e36730c7053cad2",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0459,
+      "current_seconds": 0.1019,
+      "baseline_ids": [
+        "res:PSI-21:8fe82e36730c7053cad2",
+        "res:PSI-21:0005e5b3003ef7f258bb",
+        "res:PSI-21:001457868c8b105c53a8",
+        "res:PSI-21:001d44d18192a0c8c823",
+        "res:PSI-21:002a14ff5750cf4f55d2",
+        "res:PSI-21:003293ed01de551ac30a"
+      ],
+      "current_ids": [
+        "res:PSI-21:8fe82e36730c7053cad2",
+        "res:PSI-21:be6c11661882ea8b2468",
+        "res:PSI-21:ecb7b0bde42d34e7b7ad",
+        "res:PSI-21:0005e5b3003ef7f258bb",
+        "res:PSI-21:001457868c8b105c53a8",
+        "res:PSI-21:001d44d18192a0c8c823",
+        "res:PSI-21:003d0476dba9c94c58af",
+        "res:PSI-21:0057ea2a5459fc2f99c6",
+        "res:PSI-21:00ebde063c719dd78e2d",
+        "res:PSI-21:0106be858c6b0959b695",
+        "res:PSI-21:012a084eb640c8058113",
+        "res:PSI-21:01e175a2587f20a75db4",
+        "res:PSI-21:01eba775f66d1d7ad86f",
+        "res:PSI-21:027b0f29a2136ab5ac44",
+        "res:PSI-21:029cd752b37505c8beaf",
+        "res:PSI-21:030645b6071acf17eded",
+        "res:PSI-21:03375a057930a4a8e1c8",
+        "res:PSI-21:038a4b541c25c85d3071",
+        "res:PSI-21:03ce25e2b8cedc908450",
+        "res:PSI-21:03d88fc9a5672ff978c4"
+      ]
+    },
+    {
+      "prompt": "Show PSI-21 measurement CSV",
+      "expected_file_id": "res:PSI-21:8fe82e36730c7053cad2",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0631,
+      "current_seconds": 0.1357,
+      "baseline_ids": [
+        "res:PSI-21:8fe82e36730c7053cad2",
+        "res:PSI-21:0005e5b3003ef7f258bb",
+        "res:PSI-21:001457868c8b105c53a8",
+        "res:PSI-21:001d44d18192a0c8c823",
+        "res:PSI-21:003d0476dba9c94c58af",
+        "res:PSI-21:0057ea2a5459fc2f99c6"
+      ],
+      "current_ids": [
+        "res:PSI-21:8fe82e36730c7053cad2",
+        "res:PSI-21:0005e5b3003ef7f258bb",
+        "res:PSI-21:001457868c8b105c53a8",
+        "res:PSI-21:001d44d18192a0c8c823",
+        "res:PSI-21:003d0476dba9c94c58af",
+        "res:PSI-21:0057ea2a5459fc2f99c6",
+        "res:PSI-21:00ebde063c719dd78e2d",
+        "res:PSI-21:0106be858c6b0959b695",
+        "res:PSI-21:012a084eb640c8058113",
+        "res:PSI-21:01e175a2587f20a75db4",
+        "res:PSI-21:01eba775f66d1d7ad86f",
+        "res:PSI-21:027b0f29a2136ab5ac44",
+        "res:PSI-21:029cd752b37505c8beaf",
+        "res:PSI-21:030645b6071acf17eded",
+        "res:PSI-21:03375a057930a4a8e1c8",
+        "res:PSI-21:038a4b541c25c85d3071",
+        "res:PSI-21:03ce25e2b8cedc908450",
+        "res:PSI-21:03d88fc9a5672ff978c4",
+        "res:PSI-21:0431d6116d0f8ddb48ae",
+        "res:PSI-21:0445b8eb2cb46f289a2d"
+      ]
+    },
+    {
+      "prompt": "Find ACME CLD Flame experimental table",
+      "expected_file_id": "res:PSI-21:8fe82e36730c7053cad2",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0526,
+      "current_seconds": 0.1207,
+      "baseline_ids": [
+        "res:PSI-21:8fe82e36730c7053cad2",
+        "res:PSI-21:002a14ff5750cf4f55d2",
+        "res:PSI-21:003293ed01de551ac30a",
+        "res:PSI-21:00466f0e08d8d4e34a91",
+        "res:PSI-21:0063ad8fd0d7df1e8f1e",
+        "res:PSI-21:0069ea522e9a528576e1"
+      ],
+      "current_ids": [
+        "res:PSI-21:8fe82e36730c7053cad2",
+        "res:PSI-21:7b61131e418de54ab228",
+        "res:PSI-21:9eb17c86188b4042a584",
+        "res:PSI-21:815bfcc631bfe1131e72",
+        "res:PSI-21:ab6191de35df5e60fd00",
+        "res:PSI-21:f5edd3303b5d9484ddb1",
+        "res:PSI-21:be6c11661882ea8b2468",
+        "res:PSI-21:ecb7b0bde42d34e7b7ad",
+        "res:PSI-21:f8dc755e200f10f2ec05",
+        "res:PSI-21:3269ac023e19e0221777",
+        "res:PSI-21:621ee53af9c8a1a47c47"
+      ]
+    },
+    {
+      "prompt": "PSI-21 PSI-21_Experimental table_CLD Flame.csv",
+      "expected_file_id": "res:PSI-21:8fe82e36730c7053cad2",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0599,
+      "current_seconds": 0.1189,
+      "baseline_ids": [
+        "res:PSI-21:8fe82e36730c7053cad2",
+        "res:PSI-21:0005e5b3003ef7f258bb",
+        "res:PSI-21:001457868c8b105c53a8",
+        "res:PSI-21:001d44d18192a0c8c823",
+        "res:PSI-21:003d0476dba9c94c58af",
+        "res:PSI-21:0057ea2a5459fc2f99c6"
+      ],
+      "current_ids": [
+        "res:PSI-21:8fe82e36730c7053cad2",
+        "res:PSI-21:9eb17c86188b4042a584",
+        "res:PSI-21:7b61131e418de54ab228",
+        "res:PSI-21:815bfcc631bfe1131e72",
+        "res:PSI-21:ab6191de35df5e60fd00",
+        "res:PSI-21:f5edd3303b5d9484ddb1",
+        "res:PSI-21:be6c11661882ea8b2468",
+        "res:PSI-21:ecb7b0bde42d34e7b7ad",
+        "res:PSI-21:f8dc755e200f10f2ec05",
+        "res:PSI-21:0005e5b3003ef7f258bb",
+        "res:PSI-21:001457868c8b105c53a8",
+        "res:PSI-21:001d44d18192a0c8c823",
+        "res:PSI-21:003d0476dba9c94c58af",
+        "res:PSI-21:0057ea2a5459fc2f99c6",
+        "res:PSI-21:00ebde063c719dd78e2d",
+        "res:PSI-21:0106be858c6b0959b695",
+        "res:PSI-21:012a084eb640c8058113",
+        "res:PSI-21:01e175a2587f20a75db4",
+        "res:PSI-21:01eba775f66d1d7ad86f",
+        "res:PSI-21:027b0f29a2136ab5ac44"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for ACME CLD Flame",
+      "expected_file_id": "res:PSI-21:8fe82e36730c7053cad2",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0562,
+      "current_seconds": 0.1116,
+      "baseline_ids": [
+        "res:PSI-21:8fe82e36730c7053cad2",
+        "res:PSI-21:0005e5b3003ef7f258bb",
+        "res:PSI-21:001457868c8b105c53a8",
+        "res:PSI-21:001d44d18192a0c8c823",
+        "res:PSI-21:002a14ff5750cf4f55d2",
+        "res:PSI-21:003293ed01de551ac30a"
+      ],
+      "current_ids": [
+        "res:PSI-21:8fe82e36730c7053cad2",
+        "res:PSI-21:7b61131e418de54ab228",
+        "res:PSI-21:9eb17c86188b4042a584",
+        "res:PSI-21:815bfcc631bfe1131e72",
+        "res:PSI-21:ab6191de35df5e60fd00",
+        "res:PSI-21:f5edd3303b5d9484ddb1",
+        "res:PSI-21:be6c11661882ea8b2468",
+        "res:PSI-21:ecb7b0bde42d34e7b7ad",
+        "res:PSI-21:f8dc755e200f10f2ec05",
+        "res:PSI-21:3269ac023e19e0221777",
+        "res:PSI-21:621ee53af9c8a1a47c47",
+        "res:PSI-21:0005e5b3003ef7f258bb",
+        "res:PSI-21:001457868c8b105c53a8",
+        "res:PSI-21:001d44d18192a0c8c823",
+        "res:PSI-21:003d0476dba9c94c58af",
+        "res:PSI-21:0057ea2a5459fc2f99c6",
+        "res:PSI-21:00ebde063c719dd78e2d",
+        "res:PSI-21:0106be858c6b0959b695",
+        "res:PSI-21:012a084eb640c8058113",
+        "res:PSI-21:01e175a2587f20a75db4"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-21 table measurements",
+      "expected_file_id": "res:PSI-21:8fe82e36730c7053cad2",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0634,
+      "current_seconds": 0.1454,
+      "baseline_ids": [
+        "res:PSI-21:8fe82e36730c7053cad2",
+        "res:PSI-21:0005e5b3003ef7f258bb",
+        "res:PSI-21:001457868c8b105c53a8",
+        "res:PSI-21:001d44d18192a0c8c823",
+        "res:PSI-21:002a14ff5750cf4f55d2",
+        "res:PSI-21:003293ed01de551ac30a"
+      ],
+      "current_ids": [
+        "res:PSI-21:8fe82e36730c7053cad2",
+        "res:PSI-21:0005e5b3003ef7f258bb",
+        "res:PSI-21:001457868c8b105c53a8",
+        "res:PSI-21:001d44d18192a0c8c823",
+        "res:PSI-21:003d0476dba9c94c58af",
+        "res:PSI-21:0057ea2a5459fc2f99c6",
+        "res:PSI-21:00ebde063c719dd78e2d",
+        "res:PSI-21:0106be858c6b0959b695",
+        "res:PSI-21:012a084eb640c8058113",
+        "res:PSI-21:01e175a2587f20a75db4",
+        "res:PSI-21:01eba775f66d1d7ad86f",
+        "res:PSI-21:027b0f29a2136ab5ac44",
+        "res:PSI-21:029cd752b37505c8beaf",
+        "res:PSI-21:030645b6071acf17eded",
+        "res:PSI-21:03375a057930a4a8e1c8",
+        "res:PSI-21:038a4b541c25c85d3071",
+        "res:PSI-21:03ce25e2b8cedc908450",
+        "res:PSI-21:03d88fc9a5672ff978c4",
+        "res:PSI-21:0431d6116d0f8ddb48ae",
+        "res:PSI-21:0445b8eb2cb46f289a2d"
+      ]
+    },
+    {
+      "prompt": "Find PSI-20 experimental table",
+      "expected_file_id": "res:PSI-20:6454076579f1845de438",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0323,
+      "current_seconds": 0.0404,
+      "baseline_ids": [
+        "res:PSI-20:6454076579f1845de438",
+        "res:PSI-20:0033e741642153760d97",
+        "res:PSI-20:0040b2cc47667534c929",
+        "res:PSI-20:00543a94fb8085e36048",
+        "res:PSI-20:00604a9ba4ddbcc374a0",
+        "res:PSI-20:00cd5f6ca193bc49bdc3"
+      ],
+      "current_ids": [
+        "res:PSI-20:6454076579f1845de438"
+      ]
+    },
+    {
+      "prompt": "Show PSI-20 measurement CSV",
+      "expected_file_id": "res:PSI-20:6454076579f1845de438",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0462,
+      "current_seconds": 0.1013,
+      "baseline_ids": [
+        "res:PSI-20:6454076579f1845de438",
+        "res:PSI-20:0033e741642153760d97",
+        "res:PSI-20:014409f26d9e99c65c66",
+        "res:PSI-20:02149b62e9ba6d471989",
+        "res:PSI-20:02402846cbbddcdc44c6",
+        "res:PSI-20:025964dfa7ac53a4e9bd"
+      ],
+      "current_ids": [
+        "res:PSI-20:6454076579f1845de438",
+        "res:PSI-20:0033e741642153760d97",
+        "res:PSI-20:014409f26d9e99c65c66",
+        "res:PSI-20:02149b62e9ba6d471989",
+        "res:PSI-20:02402846cbbddcdc44c6",
+        "res:PSI-20:025964dfa7ac53a4e9bd",
+        "res:PSI-20:0464403efc650e445b3d",
+        "res:PSI-20:0515ef6f0a05c28d98d2",
+        "res:PSI-20:059a383d2385219a38cf",
+        "res:PSI-20:06a7cbb74a998767577f",
+        "res:PSI-20:06e06749129117becae2",
+        "res:PSI-20:078ef56788955b08c377",
+        "res:PSI-20:08caf80362d69270f7a7",
+        "res:PSI-20:0a03c1c4f1a010e64711",
+        "res:PSI-20:0d07f864df03a82f7227",
+        "res:PSI-20:0d6f9f7fdcb35be3c5c8",
+        "res:PSI-20:0fa715846a711593d01c",
+        "res:PSI-20:10bd9343d1d8102cfd19",
+        "res:PSI-20:10e08f5eb7778b697636",
+        "res:PSI-20:115f88e283a4994f8ed9"
+      ]
+    },
+    {
+      "prompt": "Find ACME BRE experimental table",
+      "expected_file_id": "res:PSI-20:6454076579f1845de438",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0356,
+      "current_seconds": 0.0403,
+      "baseline_ids": [
+        "res:PSI-20:6454076579f1845de438",
+        "res:PSI-20:00543a94fb8085e36048",
+        "res:PSI-20:00cd5f6ca193bc49bdc3",
+        "res:PSI-20:018d59cf786931b9a66e",
+        "res:PSI-20:01e5ba914ccd03e7b64a",
+        "res:PSI-20:0223107fe2fb741970eb"
+      ],
+      "current_ids": [
+        "res:PSI-20:6454076579f1845de438"
+      ]
+    },
+    {
+      "prompt": "PSI-20 PSI-20_Experimental table_ACME BRE.csv",
+      "expected_file_id": "res:PSI-20:6454076579f1845de438",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0433,
+      "current_seconds": 0.0738,
+      "baseline_ids": [
+        "res:PSI-20:6454076579f1845de438",
+        "res:PSI-20:0033e741642153760d97",
+        "res:PSI-20:00543a94fb8085e36048",
+        "res:PSI-20:00cd5f6ca193bc49bdc3",
+        "res:PSI-20:014409f26d9e99c65c66",
+        "res:PSI-20:018d59cf786931b9a66e"
+      ],
+      "current_ids": [
+        "res:PSI-20:6454076579f1845de438",
+        "res:PSI-20:74f73dfa41e1adaee921",
+        "res:PSI-20:955d083a1b9c176a67e1",
+        "res:PSI-20:bb7cf0c425a14a9f49b0",
+        "res:PSI-20:ef46ca271fec02c47973",
+        "res:PSI-20:f57358f125e62b64c2ca",
+        "res:PSI-20:f9662f8a8dee9bd044b7",
+        "res:PSI-20:0033e741642153760d97",
+        "res:PSI-20:014409f26d9e99c65c66",
+        "res:PSI-20:02149b62e9ba6d471989",
+        "res:PSI-20:02402846cbbddcdc44c6",
+        "res:PSI-20:025964dfa7ac53a4e9bd",
+        "res:PSI-20:0464403efc650e445b3d",
+        "res:PSI-20:0515ef6f0a05c28d98d2",
+        "res:PSI-20:059a383d2385219a38cf",
+        "res:PSI-20:06a7cbb74a998767577f",
+        "res:PSI-20:06e06749129117becae2",
+        "res:PSI-20:078ef56788955b08c377",
+        "res:PSI-20:08caf80362d69270f7a7",
+        "res:PSI-20:0a03c1c4f1a010e64711"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for ACME BRE",
+      "expected_file_id": "res:PSI-20:6454076579f1845de438",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0366,
+      "current_seconds": 0.0752,
+      "baseline_ids": [
+        "res:PSI-20:6454076579f1845de438",
+        "res:PSI-20:0033e741642153760d97",
+        "res:PSI-20:00543a94fb8085e36048",
+        "res:PSI-20:00cd5f6ca193bc49bdc3",
+        "res:PSI-20:014409f26d9e99c65c66",
+        "res:PSI-20:018d59cf786931b9a66e"
+      ],
+      "current_ids": [
+        "res:PSI-20:6454076579f1845de438",
+        "res:PSI-20:0033e741642153760d97",
+        "res:PSI-20:014409f26d9e99c65c66",
+        "res:PSI-20:02149b62e9ba6d471989",
+        "res:PSI-20:02402846cbbddcdc44c6",
+        "res:PSI-20:025964dfa7ac53a4e9bd",
+        "res:PSI-20:0464403efc650e445b3d",
+        "res:PSI-20:0515ef6f0a05c28d98d2",
+        "res:PSI-20:059a383d2385219a38cf",
+        "res:PSI-20:06a7cbb74a998767577f",
+        "res:PSI-20:06e06749129117becae2",
+        "res:PSI-20:078ef56788955b08c377",
+        "res:PSI-20:08caf80362d69270f7a7",
+        "res:PSI-20:0a03c1c4f1a010e64711",
+        "res:PSI-20:0d07f864df03a82f7227",
+        "res:PSI-20:0d6f9f7fdcb35be3c5c8",
+        "res:PSI-20:0fa715846a711593d01c",
+        "res:PSI-20:10bd9343d1d8102cfd19",
+        "res:PSI-20:10e08f5eb7778b697636",
+        "res:PSI-20:115f88e283a4994f8ed9"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-20 table measurements",
+      "expected_file_id": "res:PSI-20:6454076579f1845de438",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0617,
+      "current_seconds": 0.1189,
+      "baseline_ids": [
+        "res:PSI-20:6454076579f1845de438",
+        "res:PSI-20:0033e741642153760d97",
+        "res:PSI-20:0040b2cc47667534c929",
+        "res:PSI-20:00543a94fb8085e36048",
+        "res:PSI-20:00604a9ba4ddbcc374a0",
+        "res:PSI-20:00cd5f6ca193bc49bdc3"
+      ],
+      "current_ids": [
+        "res:PSI-20:6454076579f1845de438",
+        "res:PSI-20:0033e741642153760d97",
+        "res:PSI-20:014409f26d9e99c65c66",
+        "res:PSI-20:02149b62e9ba6d471989",
+        "res:PSI-20:02402846cbbddcdc44c6",
+        "res:PSI-20:025964dfa7ac53a4e9bd",
+        "res:PSI-20:0464403efc650e445b3d",
+        "res:PSI-20:0515ef6f0a05c28d98d2",
+        "res:PSI-20:059a383d2385219a38cf",
+        "res:PSI-20:06a7cbb74a998767577f",
+        "res:PSI-20:06e06749129117becae2",
+        "res:PSI-20:078ef56788955b08c377",
+        "res:PSI-20:08caf80362d69270f7a7",
+        "res:PSI-20:0a03c1c4f1a010e64711"
+      ]
+    },
+    {
+      "prompt": "Find PSI-68 experimental table",
+      "expected_file_id": "res:PSI-68:d087b15f04a3096a4a37",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0631,
+      "current_seconds": 0.2258,
+      "baseline_ids": [
+        "res:PSI-68:d087b15f04a3096a4a37",
+        "res:PSI-68:00056cbcd507e5d24f7f",
+        "res:PSI-68:00066f14f73a0349e8bb",
+        "res:PSI-68:0006e2abcc97e5e543bd",
+        "res:PSI-68:000b65a75da270fa00da",
+        "res:PSI-68:000f13114c7418a04953"
+      ],
+      "current_ids": [
+        "res:PSI-68:d087b15f04a3096a4a37",
+        "res:PSI-68:78173645868668d226cb"
+      ]
+    },
+    {
+      "prompt": "Show PSI-68 measurement CSV",
+      "expected_file_id": "res:PSI-68:d087b15f04a3096a4a37",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0842,
+      "current_seconds": 0.2684,
+      "baseline_ids": [
+        "res:PSI-68:d087b15f04a3096a4a37",
+        "res:PSI-68:00056cbcd507e5d24f7f",
+        "res:PSI-68:00066f14f73a0349e8bb",
+        "res:PSI-68:0006e2abcc97e5e543bd",
+        "res:PSI-68:000b65a75da270fa00da",
+        "res:PSI-68:000f13114c7418a04953"
+      ],
+      "current_ids": [
+        "res:PSI-68:d087b15f04a3096a4a37"
+      ]
+    },
+    {
+      "prompt": "Find FLEX-2 experimental table",
+      "expected_file_id": "res:PSI-68:d087b15f04a3096a4a37",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0615,
+      "current_seconds": 0.2064,
+      "baseline_ids": [
+        "res:PSI-68:d087b15f04a3096a4a37",
+        "res:PSI-68:00056cbcd507e5d24f7f",
+        "res:PSI-68:00066f14f73a0349e8bb",
+        "res:PSI-68:0006e2abcc97e5e543bd",
+        "res:PSI-68:000b65a75da270fa00da",
+        "res:PSI-68:000f13114c7418a04953"
+      ],
+      "current_ids": [
+        "res:PSI-68:d087b15f04a3096a4a37",
+        "res:PSI-68:78173645868668d226cb"
+      ]
+    },
+    {
+      "prompt": "PSI-68 PSI-68_Experimental table_Flex2.csv",
+      "expected_file_id": "res:PSI-68:d087b15f04a3096a4a37",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0713,
+      "current_seconds": 0.2212,
+      "baseline_ids": [
+        "res:PSI-68:d087b15f04a3096a4a37",
+        "res:PSI-68:733820e97daa4f4274eb",
+        "res:PSI-68:7db884a1698bf9a908e0",
+        "res:PSI-68:00056cbcd507e5d24f7f",
+        "res:PSI-68:00066f14f73a0349e8bb",
+        "res:PSI-68:0006e2abcc97e5e543bd"
+      ],
+      "current_ids": [
+        "res:PSI-68:d087b15f04a3096a4a37",
+        "res:PSI-68:78173645868668d226cb"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for FLEX-2",
+      "expected_file_id": "res:PSI-68:d087b15f04a3096a4a37",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0639,
+      "current_seconds": 0.2506,
+      "baseline_ids": [
+        "res:PSI-68:d087b15f04a3096a4a37",
+        "res:PSI-68:00056cbcd507e5d24f7f",
+        "res:PSI-68:00066f14f73a0349e8bb",
+        "res:PSI-68:0006e2abcc97e5e543bd",
+        "res:PSI-68:000b65a75da270fa00da",
+        "res:PSI-68:000f13114c7418a04953"
+      ],
+      "current_ids": [
+        "res:PSI-68:d087b15f04a3096a4a37",
+        "res:PSI-68:78173645868668d226cb"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-68 table measurements",
+      "expected_file_id": "res:PSI-68:d087b15f04a3096a4a37",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.1015,
+      "current_seconds": 0.2685,
+      "baseline_ids": [
+        "res:PSI-68:d087b15f04a3096a4a37",
+        "res:PSI-68:00056cbcd507e5d24f7f",
+        "res:PSI-68:00066f14f73a0349e8bb",
+        "res:PSI-68:0006e2abcc97e5e543bd",
+        "res:PSI-68:000b65a75da270fa00da",
+        "res:PSI-68:000f13114c7418a04953"
+      ],
+      "current_ids": [
+        "res:PSI-68:d087b15f04a3096a4a37",
+        "res:PSI-68:78173645868668d226cb"
+      ]
+    },
+    {
+      "prompt": "Find PSI-22 experimental table",
+      "expected_file_id": "res:PSI-22:e4fff2c7fc774a642617",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0379,
+      "current_seconds": 0.0825,
+      "baseline_ids": [
+        "res:PSI-22:e4fff2c7fc774a642617",
+        "res:PSI-22:000881be25b4d6be7910",
+        "res:PSI-22:000bbac8d7c423ef5ed1",
+        "res:PSI-22:0010419c59f67cf98c3d",
+        "res:PSI-22:005db8fa5ac28ad81514",
+        "res:PSI-22:0067394118674f852d73"
+      ],
+      "current_ids": [
+        "res:PSI-22:e4fff2c7fc774a642617",
+        "res:PSI-22:0010419c59f67cf98c3d",
+        "res:PSI-22:0067394118674f852d73",
+        "res:PSI-22:0250008cd589ae5807d5",
+        "res:PSI-22:02dca35ad7ac83a4e30c",
+        "res:PSI-22:0362a73d74779f6cdc7b",
+        "res:PSI-22:038604fb27962a327280",
+        "res:PSI-22:048502ea498950d24683",
+        "res:PSI-22:04f1816bbfc5d8fc20ab",
+        "res:PSI-22:06eb4c01ccee729e7820",
+        "res:PSI-22:08397a464586a59f984b",
+        "res:PSI-22:08be31ed862956b1e38f",
+        "res:PSI-22:0bcbbd6cb5a2e85a3d66",
+        "res:PSI-22:0c2f7c67a4389c678517"
+      ]
+    },
+    {
+      "prompt": "Show PSI-22 measurement CSV",
+      "expected_file_id": "res:PSI-22:e4fff2c7fc774a642617",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0543,
+      "current_seconds": 0.1058,
+      "baseline_ids": [
+        "res:PSI-22:e4fff2c7fc774a642617",
+        "res:PSI-22:0010419c59f67cf98c3d",
+        "res:PSI-22:0067394118674f852d73",
+        "res:PSI-22:0250008cd589ae5807d5",
+        "res:PSI-22:02dca35ad7ac83a4e30c",
+        "res:PSI-22:0362a73d74779f6cdc7b"
+      ],
+      "current_ids": [
+        "res:PSI-22:e4fff2c7fc774a642617",
+        "res:PSI-22:0010419c59f67cf98c3d",
+        "res:PSI-22:0067394118674f852d73",
+        "res:PSI-22:0250008cd589ae5807d5",
+        "res:PSI-22:02dca35ad7ac83a4e30c",
+        "res:PSI-22:0362a73d74779f6cdc7b",
+        "res:PSI-22:038604fb27962a327280",
+        "res:PSI-22:048502ea498950d24683",
+        "res:PSI-22:04f1816bbfc5d8fc20ab",
+        "res:PSI-22:06eb4c01ccee729e7820",
+        "res:PSI-22:08397a464586a59f984b",
+        "res:PSI-22:08be31ed862956b1e38f",
+        "res:PSI-22:0bcbbd6cb5a2e85a3d66",
+        "res:PSI-22:0c2f7c67a4389c678517",
+        "res:PSI-22:0cb194f0aefee16c9125",
+        "res:PSI-22:0d8b94233b86b1884914",
+        "res:PSI-22:0e4ee08275b32c350807",
+        "res:PSI-22:0f2d9df62638be9edde7",
+        "res:PSI-22:0f7c83d9da46b82ef63f",
+        "res:PSI-22:1006e3dd6fb77ad863e8"
+      ]
+    },
+    {
+      "prompt": "Find ACME E-FIELD Flames experimental table",
+      "expected_file_id": "res:PSI-22:e4fff2c7fc774a642617",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0534,
+      "current_seconds": 0.0907,
+      "baseline_ids": [
+        "res:PSI-22:e4fff2c7fc774a642617",
+        "res:PSI-22:005db8fa5ac28ad81514",
+        "res:PSI-22:00cd17fbff70bd480910",
+        "res:PSI-22:01ce682479c1373c3344",
+        "res:PSI-22:020efe5546ef2ae651af",
+        "res:PSI-22:02c0bf54607f7775ed4d"
+      ],
+      "current_ids": [
+        "res:PSI-22:e4fff2c7fc774a642617",
+        "res:PSI-22:fa63ebdd549a1c1cc74f",
+        "res:PSI-22:7d55502c5faab78a9e96",
+        "res:PSI-22:0dbc38a483b39bdf29cf",
+        "res:PSI-22:0f7b8d8d5e1c9e496036",
+        "res:PSI-22:17cefc54eee46fa89cb6",
+        "res:PSI-22:616099b692fb05db0e3f",
+        "res:PSI-22:b8442ac2d80c18449188",
+        "res:PSI-22:baae30e586ebf20c5e24",
+        "res:PSI-22:bcfef79fef2ae1bab646",
+        "res:PSI-22:c0148954ec0d75f38618",
+        "res:PSI-22:c0fdac7ced760809bf9f",
+        "res:PSI-22:c77a146c5a0e38d416ad",
+        "res:PSI-22:d0212c75ea962758adba",
+        "res:PSI-22:696a964b7eee17dc3552",
+        "res:PSI-22:bbaf3d16d42356d95c8a",
+        "res:PSI-22:0dffde06a720371dbe76",
+        "res:PSI-22:a1f41aac7e265ccd2b1d",
+        "res:PSI-22:abd85afd0dcbe14a745e",
+        "res:PSI-22:e5fbcc9288708ba59a40"
+      ]
+    },
+    {
+      "prompt": "PSI-22 PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+      "expected_file_id": "res:PSI-22:e4fff2c7fc774a642617",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.048,
+      "current_seconds": 0.0925,
+      "baseline_ids": [
+        "res:PSI-22:e4fff2c7fc774a642617",
+        "res:PSI-22:0010419c59f67cf98c3d",
+        "res:PSI-22:005db8fa5ac28ad81514",
+        "res:PSI-22:0067394118674f852d73",
+        "res:PSI-22:00cd17fbff70bd480910",
+        "res:PSI-22:01ce682479c1373c3344"
+      ],
+      "current_ids": [
+        "res:PSI-22:e4fff2c7fc774a642617",
+        "res:PSI-22:fa63ebdd549a1c1cc74f",
+        "res:PSI-22:7d55502c5faab78a9e96",
+        "res:PSI-22:0dbc38a483b39bdf29cf",
+        "res:PSI-22:0f7b8d8d5e1c9e496036",
+        "res:PSI-22:17cefc54eee46fa89cb6",
+        "res:PSI-22:616099b692fb05db0e3f",
+        "res:PSI-22:b8442ac2d80c18449188",
+        "res:PSI-22:baae30e586ebf20c5e24",
+        "res:PSI-22:bcfef79fef2ae1bab646",
+        "res:PSI-22:c0148954ec0d75f38618",
+        "res:PSI-22:c0fdac7ced760809bf9f",
+        "res:PSI-22:c77a146c5a0e38d416ad",
+        "res:PSI-22:d0212c75ea962758adba",
+        "res:PSI-22:696a964b7eee17dc3552",
+        "res:PSI-22:bbaf3d16d42356d95c8a",
+        "res:PSI-22:0dffde06a720371dbe76",
+        "res:PSI-22:a1f41aac7e265ccd2b1d",
+        "res:PSI-22:abd85afd0dcbe14a745e",
+        "res:PSI-22:e5fbcc9288708ba59a40"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for ACME E-FIELD Flames",
+      "expected_file_id": "res:PSI-22:e4fff2c7fc774a642617",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0582,
+      "current_seconds": 0.0982,
+      "baseline_ids": [
+        "res:PSI-22:e4fff2c7fc774a642617",
+        "res:PSI-22:0010419c59f67cf98c3d",
+        "res:PSI-22:005db8fa5ac28ad81514",
+        "res:PSI-22:0067394118674f852d73",
+        "res:PSI-22:00cd17fbff70bd480910",
+        "res:PSI-22:01ce682479c1373c3344"
+      ],
+      "current_ids": [
+        "res:PSI-22:e4fff2c7fc774a642617",
+        "res:PSI-22:fa63ebdd549a1c1cc74f",
+        "res:PSI-22:7d55502c5faab78a9e96",
+        "res:PSI-22:0dbc38a483b39bdf29cf",
+        "res:PSI-22:0f7b8d8d5e1c9e496036",
+        "res:PSI-22:17cefc54eee46fa89cb6",
+        "res:PSI-22:616099b692fb05db0e3f",
+        "res:PSI-22:b8442ac2d80c18449188",
+        "res:PSI-22:baae30e586ebf20c5e24",
+        "res:PSI-22:bcfef79fef2ae1bab646",
+        "res:PSI-22:c0148954ec0d75f38618",
+        "res:PSI-22:c0fdac7ced760809bf9f",
+        "res:PSI-22:c77a146c5a0e38d416ad",
+        "res:PSI-22:d0212c75ea962758adba",
+        "res:PSI-22:696a964b7eee17dc3552",
+        "res:PSI-22:bbaf3d16d42356d95c8a",
+        "res:PSI-22:0dffde06a720371dbe76",
+        "res:PSI-22:a1f41aac7e265ccd2b1d",
+        "res:PSI-22:abd85afd0dcbe14a745e",
+        "res:PSI-22:e5fbcc9288708ba59a40"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-22 table measurements",
+      "expected_file_id": "res:PSI-22:e4fff2c7fc774a642617",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0646,
+      "current_seconds": 0.1202,
+      "baseline_ids": [
+        "res:PSI-22:e4fff2c7fc774a642617",
+        "res:PSI-22:000881be25b4d6be7910",
+        "res:PSI-22:000bbac8d7c423ef5ed1",
+        "res:PSI-22:0010419c59f67cf98c3d",
+        "res:PSI-22:005db8fa5ac28ad81514",
+        "res:PSI-22:0067394118674f852d73"
+      ],
+      "current_ids": [
+        "res:PSI-22:e4fff2c7fc774a642617",
+        "res:PSI-22:0010419c59f67cf98c3d",
+        "res:PSI-22:0067394118674f852d73",
+        "res:PSI-22:0250008cd589ae5807d5",
+        "res:PSI-22:02dca35ad7ac83a4e30c",
+        "res:PSI-22:0362a73d74779f6cdc7b",
+        "res:PSI-22:038604fb27962a327280",
+        "res:PSI-22:048502ea498950d24683",
+        "res:PSI-22:04f1816bbfc5d8fc20ab",
+        "res:PSI-22:06eb4c01ccee729e7820",
+        "res:PSI-22:08397a464586a59f984b",
+        "res:PSI-22:08be31ed862956b1e38f",
+        "res:PSI-22:0bcbbd6cb5a2e85a3d66",
+        "res:PSI-22:0c2f7c67a4389c678517"
+      ]
+    },
+    {
+      "prompt": "Find PSI-23 experimental table",
+      "expected_file_id": "res:PSI-23:14cc1854f202bb7b7727",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0415,
+      "current_seconds": 0.1024,
+      "baseline_ids": [
+        "res:PSI-23:14cc1854f202bb7b7727",
+        "res:PSI-23:000243a40e9d4f0ab2dd",
+        "res:PSI-23:0012003ab0713818bf50",
+        "res:PSI-23:00266de87e3b7bb0afd7",
+        "res:PSI-23:002d9754b112e9a3820f",
+        "res:PSI-23:002f829e766a52b76a97"
+      ],
+      "current_ids": [
+        "res:PSI-23:14cc1854f202bb7b7727",
+        "res:PSI-23:00466c738196199b9cf2",
+        "res:PSI-23:0047de3e614b7076a04c",
+        "res:PSI-23:0066d01f5b526f4c0eac",
+        "res:PSI-23:00c9e3e11589101c4f65",
+        "res:PSI-23:0105503ae679aa9f19ce",
+        "res:PSI-23:018b34ff2f1a05f19b8c",
+        "res:PSI-23:01ab790927fbae43664f",
+        "res:PSI-23:01d416bec473b06d826c",
+        "res:PSI-23:022115d298c3e903bfd7",
+        "res:PSI-23:023cb9303e6c1565f44b",
+        "res:PSI-23:03164aa7fca5bd35b202",
+        "res:PSI-23:03e5dc18513ad7d257e7",
+        "res:PSI-23:043faac505f95aef05e5",
+        "res:PSI-23:0444638db8c50072d665",
+        "res:PSI-23:04cfc655c16cb6ba0d05",
+        "res:PSI-23:05b356ff0d62dc8877d9",
+        "res:PSI-23:061c92fe681837b1a8a2",
+        "res:PSI-23:0636966acfeb2bacde68"
+      ]
+    },
+    {
+      "prompt": "Show PSI-23 measurement CSV",
+      "expected_file_id": "res:PSI-23:14cc1854f202bb7b7727",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0544,
+      "current_seconds": 0.1342,
+      "baseline_ids": [
+        "res:PSI-23:14cc1854f202bb7b7727",
+        "res:PSI-23:00466c738196199b9cf2",
+        "res:PSI-23:0047de3e614b7076a04c",
+        "res:PSI-23:0066d01f5b526f4c0eac",
+        "res:PSI-23:00c9e3e11589101c4f65",
+        "res:PSI-23:0105503ae679aa9f19ce"
+      ],
+      "current_ids": [
+        "res:PSI-23:14cc1854f202bb7b7727",
+        "res:PSI-23:00466c738196199b9cf2",
+        "res:PSI-23:0047de3e614b7076a04c",
+        "res:PSI-23:0066d01f5b526f4c0eac",
+        "res:PSI-23:00c9e3e11589101c4f65",
+        "res:PSI-23:0105503ae679aa9f19ce",
+        "res:PSI-23:018b34ff2f1a05f19b8c",
+        "res:PSI-23:01ab790927fbae43664f",
+        "res:PSI-23:01d416bec473b06d826c",
+        "res:PSI-23:022115d298c3e903bfd7",
+        "res:PSI-23:023cb9303e6c1565f44b",
+        "res:PSI-23:03164aa7fca5bd35b202",
+        "res:PSI-23:03e5dc18513ad7d257e7",
+        "res:PSI-23:043faac505f95aef05e5",
+        "res:PSI-23:0444638db8c50072d665",
+        "res:PSI-23:04cfc655c16cb6ba0d05",
+        "res:PSI-23:05b356ff0d62dc8877d9",
+        "res:PSI-23:061c92fe681837b1a8a2",
+        "res:PSI-23:0636966acfeb2bacde68",
+        "res:PSI-23:082200812dbc2c6763d2"
+      ]
+    },
+    {
+      "prompt": "Find ACME s-Flame experimental table",
+      "expected_file_id": "res:PSI-23:14cc1854f202bb7b7727",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0579,
+      "current_seconds": 0.1268,
+      "baseline_ids": [
+        "res:PSI-23:14cc1854f202bb7b7727",
+        "res:PSI-23:000243a40e9d4f0ab2dd",
+        "res:PSI-23:00266de87e3b7bb0afd7",
+        "res:PSI-23:01699c4c6cad3510da74",
+        "res:PSI-23:029bc4d1b2482804ed6c",
+        "res:PSI-23:02e6cd92864949f1b19d"
+      ],
+      "current_ids": [
+        "res:PSI-23:14cc1854f202bb7b7727",
+        "res:PSI-23:a329d70bf59eb10d36e9",
+        "res:PSI-23:c2bcd18fbde7d7a6ea04",
+        "res:PSI-23:142064ebcc6e59e55ba2",
+        "res:PSI-23:26967fbd815185db6b20",
+        "res:PSI-23:34644395e0fbf9be18e0",
+        "res:PSI-23:520be254147e372d06df",
+        "res:PSI-23:9abfca0bf23ec83a9b98",
+        "res:PSI-23:c25320ce879da6105682"
+      ]
+    },
+    {
+      "prompt": "PSI-23 PSI-23_Experimental table_ACME s-Flame.csv",
+      "expected_file_id": "res:PSI-23:14cc1854f202bb7b7727",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0624,
+      "current_seconds": 0.1323,
+      "baseline_ids": [
+        "res:PSI-23:14cc1854f202bb7b7727",
+        "res:PSI-23:000243a40e9d4f0ab2dd",
+        "res:PSI-23:00266de87e3b7bb0afd7",
+        "res:PSI-23:00466c738196199b9cf2",
+        "res:PSI-23:0047de3e614b7076a04c",
+        "res:PSI-23:0066d01f5b526f4c0eac"
+      ],
+      "current_ids": [
+        "res:PSI-23:14cc1854f202bb7b7727",
+        "res:PSI-23:a329d70bf59eb10d36e9",
+        "res:PSI-23:c2bcd18fbde7d7a6ea04",
+        "res:PSI-23:142064ebcc6e59e55ba2",
+        "res:PSI-23:26967fbd815185db6b20",
+        "res:PSI-23:34644395e0fbf9be18e0",
+        "res:PSI-23:520be254147e372d06df",
+        "res:PSI-23:9abfca0bf23ec83a9b98",
+        "res:PSI-23:c25320ce879da6105682",
+        "res:PSI-23:00466c738196199b9cf2",
+        "res:PSI-23:0047de3e614b7076a04c",
+        "res:PSI-23:0066d01f5b526f4c0eac",
+        "res:PSI-23:00c9e3e11589101c4f65",
+        "res:PSI-23:0105503ae679aa9f19ce",
+        "res:PSI-23:018b34ff2f1a05f19b8c",
+        "res:PSI-23:01ab790927fbae43664f",
+        "res:PSI-23:01d416bec473b06d826c",
+        "res:PSI-23:022115d298c3e903bfd7",
+        "res:PSI-23:023cb9303e6c1565f44b",
+        "res:PSI-23:03164aa7fca5bd35b202"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for ACME s-Flame",
+      "expected_file_id": "res:PSI-23:14cc1854f202bb7b7727",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0615,
+      "current_seconds": 0.1245,
+      "baseline_ids": [
+        "res:PSI-23:14cc1854f202bb7b7727",
+        "res:PSI-23:000243a40e9d4f0ab2dd",
+        "res:PSI-23:00266de87e3b7bb0afd7",
+        "res:PSI-23:00466c738196199b9cf2",
+        "res:PSI-23:0047de3e614b7076a04c",
+        "res:PSI-23:0066d01f5b526f4c0eac"
+      ],
+      "current_ids": [
+        "res:PSI-23:14cc1854f202bb7b7727",
+        "res:PSI-23:a329d70bf59eb10d36e9",
+        "res:PSI-23:c2bcd18fbde7d7a6ea04",
+        "res:PSI-23:142064ebcc6e59e55ba2",
+        "res:PSI-23:26967fbd815185db6b20",
+        "res:PSI-23:34644395e0fbf9be18e0",
+        "res:PSI-23:520be254147e372d06df",
+        "res:PSI-23:9abfca0bf23ec83a9b98",
+        "res:PSI-23:c25320ce879da6105682",
+        "res:PSI-23:00466c738196199b9cf2",
+        "res:PSI-23:0047de3e614b7076a04c",
+        "res:PSI-23:0066d01f5b526f4c0eac",
+        "res:PSI-23:00c9e3e11589101c4f65",
+        "res:PSI-23:0105503ae679aa9f19ce",
+        "res:PSI-23:018b34ff2f1a05f19b8c",
+        "res:PSI-23:01ab790927fbae43664f",
+        "res:PSI-23:01d416bec473b06d826c",
+        "res:PSI-23:022115d298c3e903bfd7",
+        "res:PSI-23:023cb9303e6c1565f44b",
+        "res:PSI-23:03164aa7fca5bd35b202"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-23 table measurements",
+      "expected_file_id": "res:PSI-23:14cc1854f202bb7b7727",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0717,
+      "current_seconds": 0.1511,
+      "baseline_ids": [
+        "res:PSI-23:14cc1854f202bb7b7727",
+        "res:PSI-23:000243a40e9d4f0ab2dd",
+        "res:PSI-23:0012003ab0713818bf50",
+        "res:PSI-23:00266de87e3b7bb0afd7",
+        "res:PSI-23:002d9754b112e9a3820f",
+        "res:PSI-23:002f829e766a52b76a97"
+      ],
+      "current_ids": [
+        "res:PSI-23:14cc1854f202bb7b7727",
+        "res:PSI-23:00466c738196199b9cf2",
+        "res:PSI-23:0047de3e614b7076a04c",
+        "res:PSI-23:0066d01f5b526f4c0eac",
+        "res:PSI-23:00c9e3e11589101c4f65",
+        "res:PSI-23:0105503ae679aa9f19ce",
+        "res:PSI-23:018b34ff2f1a05f19b8c",
+        "res:PSI-23:01ab790927fbae43664f",
+        "res:PSI-23:01d416bec473b06d826c",
+        "res:PSI-23:022115d298c3e903bfd7",
+        "res:PSI-23:023cb9303e6c1565f44b",
+        "res:PSI-23:03164aa7fca5bd35b202",
+        "res:PSI-23:03e5dc18513ad7d257e7",
+        "res:PSI-23:043faac505f95aef05e5",
+        "res:PSI-23:0444638db8c50072d665",
+        "res:PSI-23:04cfc655c16cb6ba0d05",
+        "res:PSI-23:05b356ff0d62dc8877d9",
+        "res:PSI-23:061c92fe681837b1a8a2",
+        "res:PSI-23:0636966acfeb2bacde68"
+      ]
+    },
+    {
+      "prompt": "Find PSI-69 experimental table",
+      "expected_file_id": "res:PSI-69:362640cdca82cde2c61b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0501,
+      "current_seconds": 0.1437,
+      "baseline_ids": [
+        "res:PSI-69:362640cdca82cde2c61b",
+        "res:PSI-69:0003b3b707be65a1e1d5",
+        "res:PSI-69:0024821249ff6a9eda19",
+        "res:PSI-69:0034b9d97d699a36892c",
+        "res:PSI-69:003ec934edf5dbefc4eb",
+        "res:PSI-69:0049a06ab50878dece82"
+      ],
+      "current_ids": [
+        "res:PSI-69:362640cdca82cde2c61b",
+        "res:PSI-69:290d37a4c31a86ea7b91"
+      ]
+    },
+    {
+      "prompt": "Show PSI-69 measurement CSV",
+      "expected_file_id": "res:PSI-69:362640cdca82cde2c61b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0656,
+      "current_seconds": 0.1689,
+      "baseline_ids": [
+        "res:PSI-69:362640cdca82cde2c61b",
+        "res:PSI-69:0003b3b707be65a1e1d5",
+        "res:PSI-69:0024821249ff6a9eda19",
+        "res:PSI-69:0034b9d97d699a36892c",
+        "res:PSI-69:003ec934edf5dbefc4eb",
+        "res:PSI-69:0049a06ab50878dece82"
+      ],
+      "current_ids": [
+        "res:PSI-69:362640cdca82cde2c61b"
+      ]
+    },
+    {
+      "prompt": "Find FLEX experimental table",
+      "expected_file_id": "res:PSI-69:362640cdca82cde2c61b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0487,
+      "current_seconds": 0.1434,
+      "baseline_ids": [
+        "res:PSI-69:362640cdca82cde2c61b",
+        "res:PSI-69:006e36a95570eed29a52",
+        "res:PSI-69:00913027b23695d4d402",
+        "res:PSI-69:00a9bd4f6e27c662517d",
+        "res:PSI-69:00d9fd91863e7e67a4f6",
+        "res:PSI-69:012bdb8ecc9a48ad0ec1"
+      ],
+      "current_ids": [
+        "res:PSI-69:362640cdca82cde2c61b",
+        "res:PSI-69:290d37a4c31a86ea7b91"
+      ]
+    },
+    {
+      "prompt": "PSI-69 PSI-69_Experimental table_FLEX.csv",
+      "expected_file_id": "res:PSI-69:362640cdca82cde2c61b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0544,
+      "current_seconds": 0.1431,
+      "baseline_ids": [
+        "res:PSI-69:362640cdca82cde2c61b",
+        "res:PSI-69:006e36a95570eed29a52",
+        "res:PSI-69:00913027b23695d4d402",
+        "res:PSI-69:00a9bd4f6e27c662517d",
+        "res:PSI-69:00d9fd91863e7e67a4f6",
+        "res:PSI-69:012bdb8ecc9a48ad0ec1"
+      ],
+      "current_ids": [
+        "res:PSI-69:362640cdca82cde2c61b",
+        "res:PSI-69:290d37a4c31a86ea7b91"
+      ]
+    },
+    {
+      "prompt": "Find experimental CSV table for FLEX",
+      "expected_file_id": "res:PSI-69:362640cdca82cde2c61b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0517,
+      "current_seconds": 0.1509,
+      "baseline_ids": [
+        "res:PSI-69:362640cdca82cde2c61b",
+        "res:PSI-69:006e36a95570eed29a52",
+        "res:PSI-69:00913027b23695d4d402",
+        "res:PSI-69:00a9bd4f6e27c662517d",
+        "res:PSI-69:00d9fd91863e7e67a4f6",
+        "res:PSI-69:012bdb8ecc9a48ad0ec1"
+      ],
+      "current_ids": [
+        "res:PSI-69:362640cdca82cde2c61b",
+        "res:PSI-69:290d37a4c31a86ea7b91"
+      ]
+    },
+    {
+      "prompt": "Locate PSI-69 table measurements",
+      "expected_file_id": "res:PSI-69:362640cdca82cde2c61b",
+      "category": "metadata_table_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0816,
+      "current_seconds": 0.2003,
+      "baseline_ids": [
+        "res:PSI-69:362640cdca82cde2c61b",
+        "res:PSI-69:0003b3b707be65a1e1d5",
+        "res:PSI-69:0024821249ff6a9eda19",
+        "res:PSI-69:0034b9d97d699a36892c",
+        "res:PSI-69:003ec934edf5dbefc4eb",
+        "res:PSI-69:0049a06ab50878dece82"
+      ],
+      "current_ids": [
+        "res:PSI-69:362640cdca82cde2c61b",
+        "res:PSI-69:290d37a4c31a86ea7b91"
+      ]
+    },
+    {
+      "prompt": "PSI-25 quantum banana zebra",
+      "expected_file_id": null,
+      "category": "negative_discovery",
+      "baseline_top1_correct": false,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0112,
+      "current_seconds": 0.0115,
+      "baseline_ids": [
+        "res:PSI-25:74cd074ee159c16f0ac9",
+        "res:PSI-25:a8a37c3002bb8108a044",
+        "res:PSI-25:d87c0ff8965737bede6a",
+        "citation:169376ab8c899ff2bbec",
+        "citation:1e255efcb36c836a49bb",
+        "citation:42b082ae98721879ae22"
+      ],
+      "current_ids": []
+    },
+    {
+      "prompt": "PSI-69 quantum banana zebra",
+      "expected_file_id": null,
+      "category": "negative_discovery",
+      "baseline_top1_correct": false,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0234,
+      "current_seconds": 0.0207,
+      "baseline_ids": [
+        "res:PSI-69:290d37a4c31a86ea7b91",
+        "res:PSI-69:362640cdca82cde2c61b",
+        "citation:10f606f5c45dc6aa66f2",
+        "citation:16cfbcca5d550dbedff3",
+        "citation:1c62556158d814a569c7",
+        "citation:1fd45dac844782a271bc"
+      ],
+      "current_ids": []
+    },
+    {
+      "prompt": "PSI-39 quantum banana zebra",
+      "expected_file_id": null,
+      "category": "negative_discovery",
+      "baseline_top1_correct": false,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.015,
+      "current_seconds": 0.0147,
+      "baseline_ids": [
+        "res:PSI-39:005de6340957ec7efe5a",
+        "res:PSI-39:1dc12da3f1d46c6dbc89",
+        "citation:bdebd256bfc97ad79aa6",
+        "citation:d96ba2785b30730c4421",
+        "res:PSI-39:000df207c7aceefbc694",
+        "res:PSI-39:0033b8e5df961d615741"
+      ],
+      "current_ids": []
+    },
+    {
+      "prompt": "Find BASS-II videos excluding PSI-25",
+      "expected_file_id": null,
+      "category": "negative_discovery",
+      "baseline_top1_correct": false,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0107,
+      "current_seconds": 0.0003,
+      "baseline_ids": [
+        "res:PSI-25:00faf854ccfbd2bc8803",
+        "res:PSI-25:0195b125548b1dfd6e10",
+        "res:PSI-25:01ce54decc9d6cafa875",
+        "res:PSI-25:0220032be629284be086",
+        "res:PSI-25:029a78c4b69314302d66",
+        "res:PSI-25:02a003ab70be56b3b0ca"
+      ],
+      "current_ids": []
+    },
+    {
+      "prompt": "Find FLEX video excluding PSI-69",
+      "expected_file_id": null,
+      "category": "negative_discovery",
+      "baseline_top1_correct": false,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.0327,
+      "current_seconds": 0.0003,
+      "baseline_ids": [
+        "res:PSI-69:31b7e00425bab0dfa701",
+        "res:PSI-69:02353daa176b25f04b8c",
+        "res:PSI-69:03c4c97f66dc2b4f56a6",
+        "res:PSI-69:03cf430967e438396c03",
+        "res:PSI-69:04047358bee10793d930",
+        "res:PSI-69:04588d06e886561369e0"
+      ],
+      "current_ids": []
+    },
+    {
+      "prompt": "Find PSI-99999 data",
+      "expected_file_id": null,
+      "category": "negative_discovery",
+      "baseline_top1_correct": true,
+      "current_top1_correct": true,
+      "baseline_seconds": 0.006,
+      "current_seconds": 0.0119,
+      "baseline_ids": [],
+      "current_ids": []
+    }
+  ]
+}

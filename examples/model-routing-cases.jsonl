@@ -1,0 +1,4 @@
+{"id":"lewis-implicit","question":"What is the Lewis number at 300 K?","intent":"calculation","model_ids":["THM-02"]}
+{"id":"equilibrium","question":"Calculate adiabatic flame temperature","intent":"calculation","model_ids":["THM-01"]}
+{"id":"definition","question":"Define Lewis number","intent":"explanation","model_ids":["THM-02"]}
+{"id":"report","question":"Show CFI final report","intent":"discovery","model_ids":[]}

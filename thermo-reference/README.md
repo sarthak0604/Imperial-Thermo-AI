@@ -1,6 +1,6 @@
 # Thermo input audit and starter library
 
-This folder gives the backend team a field-by-field reference for every current THM model and a working example of populating model JSON from reviewed property records. The audit covers all 20 canonical model interfaces under `src/Functions/` on `test`. The [retrieved-data mapper](../docs/thermo-input-mapping.md) builds live workflow inputs from cited sources.
+This folder gives the backend team a field-by-field reference for every current THM model and a working example of populating model JSON from reviewed property records. The audit covers all 20 canonical model interfaces under `src/Functions/`. The live dashboard uses this library through its function pipeline.
 
 | File | Use |
 |---|---|
@@ -21,6 +21,12 @@ Use Python 3.10 or newer. The builder and the eight demo models use the standard
 
 Select a case ID from `--list` to print its assembled JSON. To pipe it into a file on Windows, use `| Set-Content -Encoding utf8 model_input.json`, then pass that file as the argument to the corresponding model CLI. For example, the snapshot uses `src/Functions/THM-12/thm_12.py`. See the case catalog for model IDs and expected results.
 
+## Live fallback
+
+The function planner prioritises explicit user inputs and sourced data. The backend fills compatible missing library properties for THM-12 and THM-18 and uses NASA's nominal ISS reference for the methane Lewis-number example. Record IDs, units, validity conditions and source links are included in the calculation provenance. THM-12 uses pure-component references at their stated reference temperature. THM-18 checks the pressure and temperature range of gas heat-capacity fits and matches the water saturation state before using the water-mist records.
+
+For a quick solver test, ask `Run THM-16` or use another THM ID. The result is marked illustrative and names its bundled package. For general questions, the configured AI can choose a compatible package or provide a labelled value for an unspecified scenario input. It supplies `target_pointer`, `value`, `unit` and `reason` under `task.assumptions`. A user quote, measurement or upstream result keeps priority. Model-specific evidence such as measured time series and ignition calibrations still comes from an applicable source or from a labelled worked example.
+
 ## Backend handoff
 
 1. The AI selects the model and extracts the requested scenario. Its result can include candidate property IDs and experiment/calibration IDs. Original user conditions remain part of the request.
@@ -30,7 +36,7 @@ Select a case ID from `--list` to print its assembled JSON. To pipe it into a fi
 
 `properties.json` keeps scientific inputs individually traceable. The `unit` for a structured heat-capacity value describes its dependent variable, and the member keys carry their own units. `compatible_reference` means the value can be filled after matching the complete property state. `sensitivity_only` means a specific grade/state link is unavailable and using the record needs an explicit what-if. `demo_only` means the value was reduced for a specific demo input, such as the water enthalpy secant over two temperatures. The gas heat capacities are NIST curves linearized for the 300–400 K THM-18 demonstration. Their pressure window is a demo assumption. The PMMA records come from a reference with an unspecified grade and are not used to calibrate the BASS-II results.
 
-`demo_cases.json` is a set of reviewed recipes for known example scenarios. Paths in `remove`, `set`, `bindings` and `expected` use JSON Pointer syntax. The builder reads `base_payload` relative to the repository, applies removals and overrides, copies library values into bound fields, and attaches per-field provenance under `evidence.provenance.property_bindings`. `expected` addresses outputs and is checked with a numeric tolerance. The builder assembles these fixed recipes. Live matching, user confirmation for what-ifs, and source retrieval belong to the backend's workflow.
+`demo_cases.json` is a set of reviewed recipes for known example scenarios. Paths in `remove`, `set`, `bindings` and `expected` use JSON Pointer syntax. The builder reads `base_payload` relative to the repository, applies removals and overrides, copies library values into bound fields, and attaches per-field provenance under `evidence.provenance.property_bindings`. `expected` addresses outputs and is checked with a numeric tolerance. The builder and backend share these fixed recipes. The backend can choose one when its scope matches the requested example.
 
 ## Demo coverage
 

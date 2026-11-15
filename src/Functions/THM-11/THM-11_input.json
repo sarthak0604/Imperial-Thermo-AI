@@ -50,6 +50,7 @@
             ],
             "observed_initial_diameter_mm": 4.03,
             "hot_extinction_time_s": 14.6,
+            "reported_hot_burning_rate_mm2_s": 0.41,
             "hot_extinction_diameter_squared_mm2": 10.9,
             "cool_burning_rate_mm2_s": 0.33,
             "source_url": "https://ntrs.nasa.gov/api/citations/20140006750/downloads/20140006750.pdf#page=3",

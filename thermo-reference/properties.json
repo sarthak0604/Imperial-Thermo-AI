@@ -474,6 +474,46 @@
       "kind": "published_value",
       "usage": "sensitivity_only",
       "notes": "Generic PMMA reference for declared sensitivity studies. No verified match to the BASS-II material grade or an ignition calibration."
+    },
+    {
+      "id": "iss_cabin_pressure_nominal",
+      "material": "ISS nominal oxidizer",
+      "phase": "gas",
+      "property": "oxidizer_pressure",
+      "unit": "kPa",
+      "value": 101.3,
+      "conditions": {
+        "regime": "nominal ISS cabin"
+      },
+      "kind": "published_value",
+      "usage": "compatible_reference",
+      "sources": [
+        {
+          "url": "https://ntrs.nasa.gov/api/citations/20050185597/downloads/20050185597.pdf",
+          "locator": "Table 1-1, ISS/US cabin atmosphere"
+        }
+      ],
+      "notes": "NASA gives nominal cabin pressure and oxidizer oxygen volume fraction. Volume fraction is used as mole fraction for the ideal-gas scenario."
+    },
+    {
+      "id": "iss_oxidizer_o2_nominal",
+      "material": "ISS nominal oxidizer",
+      "phase": "gas",
+      "property": "oxygen_mole_fraction",
+      "unit": "mol/mol",
+      "value": 0.21,
+      "conditions": {
+        "regime": "nominal ISS cabin"
+      },
+      "kind": "published_value",
+      "usage": "compatible_reference",
+      "sources": [
+        {
+          "url": "https://ntrs.nasa.gov/api/citations/20050185597/downloads/20050185597.pdf",
+          "locator": "Table 1-1, ISS/US cabin atmosphere"
+        }
+      ],
+      "notes": "NASA gives nominal cabin pressure and oxidizer oxygen volume fraction. Volume fraction is used as mole fraction for the ideal-gas scenario."
     }
   ]
 }

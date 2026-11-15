@@ -48,7 +48,12 @@ def build_demo(case_id):
     catalog = read_json(REFERENCE_ROOT / "demo_cases.json")
     cases = index_records(catalog["cases"])
     case = cases[case_id]
-    payload = read_json(REPO_ROOT / case["base_payload"])
+    base = REPO_ROOT / case["base_payload"]
+    if not base.is_file():
+        from request_planner.function_registry import function_root, model_spec
+
+        base = function_root().joinpath(model_spec(case["model_id"])["example"])
+    payload = read_json(base)
 
     for pointer in case.get("remove", []):
         parent, key = parent_and_key(payload, pointer)

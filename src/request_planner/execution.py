@@ -15,13 +15,14 @@ from urllib.parse import urljoin, urlsplit
 
 import httpx
 
-from .flex_input import build_flex_input, supports_flex_table
 from .function_registry import model_spec
-from .input_mapping import build_model_input, mapping_from_request
-from .input_sources import MappingError, Sources, TEXT_MEDIA
 from .models import SearchResults, ThermoOperation, Variable
 from .planner import PlanningError, validate_plan
 from .plotting import numeric_pairs
+
+
+class CalculationResult(dict):
+    """Scientific output with an in-process reference to its executed input JSON."""
 
 
 class ExecutionError(ValueError):
@@ -96,18 +97,16 @@ def preview_json(value, depth=0):
 class ExecutionSession:
     """One bounded workflow; the caller owns a TemporaryDirectory for its lifetime."""
 
-    def __init__(self, directory, limits, client=None, url_validator=public_url, *, on_model_input=None, raw_prompt=""):
+    def __init__(self, directory, limits, client=None, url_validator=public_url, trusted_source_hashes=None):
         self.directory = Path(directory)
         self.deadline = time.monotonic() + min(limits.max_runtime_seconds, 60)
         self.budget = min(limits.max_download_bytes, 100_000_000)
         self.client = client
-        self.on_model_input = on_model_input
-        self.raw_prompt = raw_prompt
-        self.input_sources = Sources({}, self.fetch, self.remaining)
         self.url_validator = url_validator
         self.downloads = {}
         self.inspection = []
         self.sources = {}
+        self.trusted_source_hashes = trusted_source_hashes or {}
 
     def remaining(self):
         remaining = self.deadline - time.monotonic()
@@ -139,6 +138,10 @@ class ExecutionSession:
         if file.size_bytes is not None and size != file.size_bytes:
             raise ExecutionError("Downloaded size differs from search metadata; refresh the source")
         digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        expected = self.trusted_source_hashes.get(file.file_id) or next((note.removeprefix('Profiled source SHA-256: ') for note in file.data_notes
+                         if note.startswith('Profiled source SHA-256: ')), None)
+        if expected and digest != expected:
+            raise ExecutionError('Source checksum differs from the trusted profile; refresh metadata before calculating')
         self.downloads[file.file_id] = (file.model_dump(mode="json"), path)
         self.sources[file.file_id] = {
             "file_id": file.file_id, "investigation_id": file.investigation_id,
@@ -196,19 +199,6 @@ class ExecutionSession:
                                "note": "Preview arrays contain at most three items; execution uses the full file."}
                 else:
                     content = {"kind": "unsupported", "message": "Function input JSON must contain an object."}
-            elif file.media_type in TEXT_MEDIA:
-                try:
-                    excerpts = self.input_sources.preview_document(file.file_id, self.raw_prompt)
-                except (MappingError, UnicodeError) as exc:
-                    excerpts = []
-                    message = str(exc)
-                else:
-                    message = "The source has no extractable text in the inspected pages."
-                if excerpts:
-                    content = {"kind": "json", "preview": {"pages": excerpts},
-                               "note": "Cite exact quotes with the one-based PDF page if present."}
-                else:
-                    content = {"kind": "unsupported", "message": message}
             else:
                 content = {"kind": "unsupported", "media_type": file.media_type,
                            "message": "Provide CSV or a function-compatible JSON dataset for calculation."}
@@ -228,7 +218,6 @@ class ExecutionSession:
             raise PlanningError("Request query_id differs from search results")
         validate_plan(request.plan, results, request.limits)
         files = {file.file_id: file for file in results.files}
-        self.input_sources.files = files
         plan = request.plan
         blocks = []
         if plan.action == "inspect_files":
@@ -241,16 +230,7 @@ class ExecutionSession:
             path = self.fetch(file)
             if isinstance(operation, ThermoOperation):
                 payload = self.thermo_payload(operation, files, path)
-                model_id = operation.parameters.model_id
-                if self.on_model_input is not None:
-                    self.on_model_input(model_id, copy.deepcopy(payload))
-                result = self.calculate(model_id, payload)
-                request_mapping = mapping_from_request(operation.parameters.request_json)
-                if request_mapping is not None:
-                    result["assembled_input_provenance"] = (
-                        payload["evidence"]["provenance"] if "evidence" in payload
-                        else payload["investigation_context"]
-                    )
+                result = self.calculate(operation.parameters.model_id, payload)
                 presented = present_result(operation.parameters.model_id, result)
                 for block in presented:
                     block["source_file_ids"] = plan.selected_file_ids
@@ -278,19 +258,6 @@ class ExecutionSession:
         params = operation.parameters
         spec = model_spec(params.model_id)
         file = files[operation.file_id]
-        mapping = mapping_from_request(params.request_json)
-        if mapping is not None:
-            try:
-                return build_model_input(params.model_id, mapping, self.input_sources, self.raw_prompt)
-            except MappingError as exc:
-                raise ExecutionError(f"Function needs compatible inputs: {exc}") from exc
-        if (not params.bindings and params.template_file_id is None
-                and supports_flex_table(file, params.model_id)):
-            values = strict_json(params.request_json) if params.request_json is not None else None
-            try:
-                return build_flex_input(params.model_id, values, path, file)
-            except (ValueError, csv.Error, UnicodeError) as exc:
-                raise ExecutionError(f"Function needs compatible inputs: {exc}") from exc
         if params.template_file_id:
             template = files[params.template_file_id]
             payload = strict_json(self.fetch(template).read_text(encoding=template.encoding or "utf-8-sig"))
@@ -340,7 +307,9 @@ class ExecutionSession:
         output = strict_json(output_path.read_text())
         if "error" in output:
             raise ExecutionError(f"Function needs compatible inputs: {output['error']}")
-        return output["result"]
+        result = CalculationResult(output['result'])
+        result.input_payload = copy.deepcopy(payload)
+        return result
 
 
 def apply_bindings(payload, path, file, bindings):
@@ -374,6 +343,12 @@ def apply_bindings(payload, path, file, bindings):
                 expected_unit = parent.get("unit")
             if expected_unit is None or column.unit != expected_unit:
                 raise ExecutionError(f"No matching destination unit contract for {target_field}")
+            from imperial_thermo_ai.quantities import validate_quantity
+            source_variable = next(v for v in variables if v.name == column.column)
+            try:
+                validate_quantity(source_variable, target_field)
+            except ValueError as exc:
+                raise ExecutionError(str(exc)) from exc
         if binding.mode == "scalar":
             if isinstance(existing, bool) or not isinstance(existing, (int, float)):
                 raise ExecutionError("Scalar binding must replace an existing number")
@@ -410,28 +385,156 @@ INPUT_UNITS = {
 }
 
 
-def present_result(model_id, result):
+def present_result(model_id, result, *, include_input=False):
     """Keep full model output and expose aligned arrays as renderable chart blocks."""
+    from .model_presentation import model_highlights, scenario_charts
+
     evidence_type = "data_reduction" if result.get("status") == "data_reduction" else "model_estimate"
     illustrative = result.get("illustrative", result.get("provenance", {}).get("illustrative"))
     blocks = [{"type": "calculation", "model_id": model_id, "evidence_type": evidence_type,
-               "illustrative": illustrative, "data": result}]
+               "illustrative": illustrative, "data": result,
+               **({'input_json':result.input_payload} if include_input and hasattr(result,'input_payload') else {})}]
+
+    highlights = model_highlights(model_id, result)
+    if highlights:
+        blocks[0]["headline_metrics"] = highlights
+    curated = scenario_charts(model_id, result, evidence_type, illustrative)
+    if curated:
+        return blocks + curated
+
+    if model_id == "THM-01":
+        fractions = [
+            (species, value)
+            for species, value in result.get("outputs", {}).get("equilibrium_mole_fractions", {}).items()
+            if type(value) in (int, float) and math.isfinite(value) and 0 <= value <= 1
+        ]
+        if fractions:
+            fractions.sort(key=lambda item: (-item[1], item[0]))
+            blocks.append({
+                "type": "chart", "chart_type": "bar",
+                "title": "THM-01 equilibrium gas composition",
+                "categories": [species for species, _ in fractions],
+                "x": {"label": "Gas species", "unit": None, "values": list(range(len(fractions)))},
+                "series": [{"label": "Mole fraction", "unit": "%",
+                            "values": [100 * value for _, value in fractions]}],
+                "evidence_type": evidence_type, "illustrative": illustrative,
+            })
+
+    if model_id == "THM-02":
+        transport = result.get("transport_properties", {})
+        values = [transport.get(key) for key in ("thermal_diffusivity_m2_s", "mass_diffusivity_m2_s")]
+        if all(type(value) in (int, float) and math.isfinite(value) and value >= 0 for value in values):
+            blocks.append({
+                "type": "chart", "chart_type": "bar", "title": "THM-02 thermal and mass diffusivity",
+                "categories": ["Thermal diffusivity", "Mass diffusivity"],
+                "x": {"label": "Transport property", "unit": None, "values": [0, 1]},
+                "series": [{"label": "Diffusivity", "unit": "m²/s", "values": values}],
+                "evidence_type": evidence_type, "illustrative": illustrative,
+            })
+
+    if model_id == "THM-08":
+        speeds = [result.get("inputs", {}).get("u_forced_cms"),
+                  result.get("outputs", {}).get("effective_mixed_velocity_cms")]
+        if all(type(value) in (int, float) and math.isfinite(value) and value >= 0 for value in speeds):
+            blocks.append({
+                "type": "chart", "chart_type": "bar", "title": "THM-08 ventilation and mixed-convection speeds",
+                "categories": ["Forced ventilation", "Effective mixed convection"],
+                "x": {"label": "Flow", "unit": None, "values": [0, 1]},
+                "series": [{"label": "Speed", "unit": "cm/s", "values": speeds}],
+                "evidence_type": evidence_type, "illustrative": illustrative,
+            })
+    if model_id == "THM-12" and result.get("components"):
+        labels, pressures = [], []
+        for component in result["components"]:
+            name = component["id"].capitalize()
+            labels.extend((f"{name} at surface", f"{name} in surrounding gas"))
+            pressures.extend((component["surface_partial_pressure_kpa"], component["ambient_partial_pressure_kpa"]))
+        blocks.append({
+            "type": "chart", "chart_type": "bar", "title": "THM-12 surface and ambient partial pressures",
+            "categories": labels, "x": {"label": "Component and location", "unit": None,
+                                        "values": list(range(len(labels)))},
+            "series": [{"label": "Partial pressure", "unit": "kPa", "values": pressures}],
+            "evidence_type": evidence_type, "illustrative": illustrative,
+        })
+    if model_id == "THM-15":
+        curve = result.get("threshold_curve", [])
+        if len(curve) > 1:
+            blocks.append({
+                "type": "chart", "chart_type": "line", "title": "THM-15 soot inception threshold",
+                "x": {"label": "Residence time", "unit": "s",
+                      "values": [point["residence_time_s"] for point in curve]},
+                "series": [{"label": "Threshold temperature", "unit": "K",
+                            "values": [point["threshold_temperature_K"] for point in curve]}],
+                "evidence_type": evidence_type, "illustrative": illustrative,
+            })
+    if model_id == "THM-18":
+        sweep = result.get("sweep", {})
+        x, y = sweep.get("agent_mole_fraction", []), sweep.get("oxygen_mole_fraction", [])
+        if len(x) > 1 and len(x) == len(y):
+            blocks.append({
+                "type": "chart", "chart_type": "line", "title": "THM-18 oxygen under inert gas dilution",
+                "x": {"label": "Added agent mole fraction", "unit": "1", "values": x},
+                "series": [{"label": "Oxygen mole fraction", "unit": "1", "values": y}],
+                "evidence_type": evidence_type, "illustrative": illustrative,
+            })
+
+    declared=result.get('frontend_summary',{}).get('chart_series',{})
+    rows=declared.get('data',[])
+    axis=declared.get('x_axis')
+    axes=declared.get('y_axes',[])
+    chart_units={'u_flow_cms':'cm/s','u_flow_ms':'m/s','damkohler_number':'1','da_critical':'1',
+        'y_ox_stream':'1','x_o2':'1','z_st':'1','stoichiometric_mixture_fraction_zst':'1',
+        'flame_to_burner_radius_ratio':'1','theoretical_flame_radius_mm':'mm',
+        'burner_radius_mm':'mm','time_s':'s','pressure_kpa':'kPa'}
+    if model_id == "THM-07" and len(rows) > 1:
+        inputs, outputs = result["inputs"], result["outputs"]
+        points = {row["u_flow_cms"] / 100: row["damkohler_number"] for row in rows}
+        points[inputs["u_flow_ms"]] = outputs["damkohler_number"]
+        points[outputs["critical_blowoff_velocity_ms"]] = inputs["da_critical"]
+        speeds = sorted(points)
+        blocks.append({
+            "type": "chart", "chart_type": "line", "title": "THM-07 blowoff threshold",
+            "x": {"label": "Airflow speed", "unit": "m/s", "values": speeds},
+            "series": [
+                {"label": "Damköhler number", "unit": None, "values": [points[speed] for speed in speeds]},
+                {"label": "Blowoff threshold", "unit": None, "values": [inputs["da_critical"]] * len(speeds)},
+            ],
+            "evidence_type": evidence_type, "illustrative": illustrative,
+        })
+    elif axis and isinstance(rows,list) and len(rows)>1 and all(isinstance(row,dict) for row in rows):
+        for y in axes:
+            if all(type(row.get(axis)) in (int,float) and math.isfinite(row[axis]) and
+                   type(row.get(y)) in (int,float) and math.isfinite(row[y]) for row in rows):
+                blocks.append({'type':'chart','chart_type':'line','title':model_id+': '+y.replace('_',' '),
+                    'x':{'label':axis.replace('_',' '),'unit':chart_units.get(axis),'values':[row[axis] for row in rows]},
+                    'series':[{'label':y.replace('_',' '),'unit':chart_units.get(y),'values':[row[y] for row in rows]}],
+                    'evidence_type':evidence_type,'illustrative':illustrative})
+
+    units = ({"sample_thickness_m": "m", "air_speed_m_s": "m/s",
+              "spread_rate_mm_s": "mm/s", "spread_rate_m_s": "m/s"}
+             if model_id == "THM-05" else {})
 
     def visit(value, path="result"):
+        if isinstance(value, list):
+            for index, child in enumerate(value):
+                if isinstance(child, (dict, list)):
+                    visit(child, f"{path}[{index}]")
+            return
         if not isinstance(value, dict):
             return
         arrays = {k: v for k, v in value.items() if isinstance(v, list) and len(v) > 1
                   and all(type(n) in (int, float) and math.isfinite(n) for n in v)}
-        x_name = next((k for k in ("time_s", "air_speed_m_s", "diameter_mm", "thickness_m") if k in arrays), None)
+        x_name = next((k for k in ("time_s", "air_speed_m_s", "diameter_mm",
+                                   "thickness_m", "sample_thickness_m") if k in arrays), None)
         if x_name:
-            series = [{"label": k, "unit": None, "values": v} for k, v in arrays.items()
+            series = [{"label": k, "unit": units.get(k), "values": v} for k, v in arrays.items()
                       if k != x_name and len(v) == len(arrays[x_name])]
             for item in series:
                 blocks.append({"type": "chart", "chart_type": "line", "title": f"{model_id}: {path}",
-                               "x": {"label": x_name, "unit": None, "values": arrays[x_name]},
+                               "x": {"label": x_name, "unit": units.get(x_name), "values": arrays[x_name]},
                                "series": [item], "evidence_type": evidence_type, "illustrative": illustrative})
         for key, child in value.items():
-            if isinstance(child, dict):
+            if isinstance(child, (dict, list)):
                 visit(child, f"{path}.{key}")
     visit(result)
     return blocks

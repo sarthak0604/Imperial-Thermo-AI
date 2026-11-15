@@ -1,0 +1,683 @@
+{
+ "THM-01": {
+  "model_id": "THM-01",
+  "file_name": "calc_adiabatic_flame_temp_equilibrium.py",
+  "function_name": "calc_adiabatic_flame_temp_equilibrium",
+  "runtime": "Python",
+  "domain": "1. Gas-Phase & Chemical Equilibrium",
+  "scientific_method_summary": "Solves a constant-pressure, zero-heat-loss First Law enthalpy balance (H_reactants(T_init) = H_products(T_ad)) coupled with Second Law Gibbs free energy minimization across reactive product species (CO2, CO, H2O, OH, H2, O2, H, O, N2). Temperature-dependent molar specific heats are integrated via NASA-7 polynomial curve fits to capture high-temperature vibrational excitation and endothermic product dissociation in reduced-pressure, oxygen-enriched spacecraft exploration atmospheres (e.g., 70.3 kPa / 30% O2 Lunar habitats).",
+  "governing_equations": [
+   "sum_r n_r * [h_f,r^0 + dh_r(T_i)] = sum_p n_p * [h_f,p^0 + int_{298.15}^{T_ad} c_p,p(T) dT]",
+   "min G(T, P, n_k) = sum_k n_k * [mu_k^0(T) + R*T*ln(X_k * P / P_0)]"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Gordon, S., & McBride, B. J. (1994). Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications: I. Analysis. NASA Reference Publication 1311.",
+    "identifier": "NASA-RP-1311",
+    "relevance": "Derives the NASA CEA Gibbs free energy minimization and constant-pressure enthalpy-balance algorithm."
+   },
+   {
+    "citation": "McBride, B. J., Zehe, M. J., & Gordon, S. (2002). NASA Glenn Coefficients for Calculating Thermodynamic Properties of Individual Species. NASA/TP-2002-211556.",
+    "identifier": "NASA/TP-2002-211556",
+    "relevance": "Provides the 7-coefficient polynomial fits for c_p(T), h(T), and s(T) up to 6000 K."
+   },
+   {
+    "citation": "Turns, S. R. (2012). An Introduction to Combustion: Concepts and Applications (3rd ed.). McGraw-Hill (Ch. 2: Combustion and Thermochemistry).",
+    "identifier": "ISBN 978-0073380193",
+    "relevance": "Standard aerospace/mechanical engineering formulation for dissociated adiabatic flame temperatures."
+   }
+  ],
+  "evidence_boundary": "Theoretical / Partial-g Bound",
+  "psi_investigations": [
+   "ACME (BRE, CFI-G) [CIR]",
+   "FLEX [MDCA/CIR]"
+  ]
+ },
+ "THM-02": {
+  "model_id": "THM-02",
+  "file_name": "compute_mixture_transport_and_lewis_number.py",
+  "function_name": "compute_mixture_transport_and_lewis_number",
+  "runtime": "Python",
+  "domain": "1. Gas-Phase & Chemical Equilibrium",
+  "scientific_method_summary": "Evaluates temperature- and pressure-dependent multicomponent gas transport properties from Chapman-Enskog kinetic theory using Lennard-Jones (12-6) collision integrals and Eucken polyatomic thermal conductivity corrections. Pure-species properties are combined via Wilke's semi-empirical viscosity rule, Mathur-Saxena thermal conductivity averaging, and Hirschfelder-Curtiss mixture-averaged mass diffusivity (D_im) to compute Prandtl (Pr), Schmidt (Sc), and effective Lewis numbers (Le = alpha / D_im), classifying microgravity thermo-diffusive cellular and flame-ball instability regimes (Le < 1 vs. Le > 1).",
+  "governing_equations": [
+   "alpha = k_mix / (rho_mix * c_p,mix)",
+   "D_im = (1 - X_i) / sum_{j != i} (X_j / D_ij)",
+   "Le_i = alpha / D_im = Sc_i / Pr"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Hirschfelder, J. O., Curtiss, C. F., & Bird, R. B. (1954). Molecular Theory of Gases and Liquids. John Wiley & Sons.",
+    "identifier": "ISBN 978-0471400653",
+    "relevance": "Foundational Chapman-Enskog kinetic theory equations for binary diffusivity D_ij, viscosity, and Hirschfelder-Curtiss mixture diffusion."
+   },
+   {
+    "citation": "Wilke, C. R. (1950). A viscosity equation for gas mixtures. Journal of Chemical Physics, 18(4), 517-519.",
+    "identifier": "DOI: 10.1063/1.1747673",
+    "relevance": "Derives the semi-empirical mixing rule used to compute multicomponent gas dynamic viscosity."
+   },
+   {
+    "citation": "Ronney, P. D. (1990). Near-limit flame structures at low Lewis number. Combustion and Flame, 82(1), 1-14.",
+    "identifier": "DOI: 10.1016/0010-2180(90)90074-2",
+    "relevance": "Establishes how sub-unity Lewis numbers drive thermo-diffusive flame-ball instabilities in microgravity."
+   }
+  ],
+  "evidence_boundary": "Theoretical / Semi-Empirical Transport",
+  "psi_investigations": [
+   "ACME (BRE, CFI-G, Flame Design) [CIR]",
+   "FLEX [MDCA/CIR]"
+  ]
+ },
+ "THM-03": {
+  "model_id": "THM-03",
+  "file_name": "calc_stoichiometric_mixture_fraction_zst.py",
+  "function_name": "calc_stoichiometric_mixture_fraction_zst",
+  "runtime": "Python",
+  "domain": "1. Gas-Phase & Chemical Equilibrium",
+  "scientific_method_summary": "Applies the Burke-Schumann infinitely fast, irreversible single-step chemistry assumption and Bilger's conserved-scalar coupling formulation to track mixing between a fuel stream (Z = 1) and an oxidizer stream (Z = 0). Solves for the stoichiometric mixture fraction (Z_st) where fuel and oxygen meet in exact stoichiometric proportions, and derives the purely diffusive spherical flame-sheet radius ratio (r_f / r_b) for both normal diffusion flames (Z_st < 0.5) and oxygen-jet 'inside-out' inverse flames (Z_st > 0.5).",
+  "governing_equations": [
+   "Z_st = Y_O2,2 / (s * Y_F,1 + Y_O2,2)",
+   "r_f / r_b = -1 / ln(1 - Z_st)  (purely diffusive spherical limit)"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Burke, S. P., & Schumann, T. E. W. (1928). Diffusion flames. Industrial & Engineering Chemistry, 20(10), 998-1004.",
+    "identifier": "DOI: 10.1021/ie50226a005",
+    "relevance": "Original flame-sheet conservation analysis locating the reaction zone where fuel and oxidizer fluxes vanish stoichiometrically."
+   },
+   {
+    "citation": "Bilger, R. W. (1976). The structure of diffusion flames. Combustion Science and Technology, 13(1-6), 155-170.",
+    "identifier": "DOI: 10.1080/00102207608946733",
+    "relevance": "Formalizes the conserved-scalar mixture fraction Z and Z_st mapping across arbitrary fuel/oxidizer stream dilutions."
+   },
+   {
+    "citation": "Sunderland, P. B., Axelbaum, R. L., Urban, D. L., Chao, B. H., & Liu, S. (2003). Effects of structure and hydrodynamics on the sooting behavior of spherical microgravity diffusion flames. Combustion and Flame, 132(1-2), 25-33.",
+    "identifier": "DOI: 10.1016/S0010-2180(02)00424-8",
+    "relevance": "Applies Z_st and spherical flame standoff scaling to normal vs. inverse microgravity flames in NASA ACME."
+   }
+  ],
+  "evidence_boundary": "Direct PSI Data Reduction",
+  "psi_investigations": [
+   "ACME (CFI-G, Flame Design) [CIR]"
+  ]
+ },
+ "THM-04": {
+  "model_id": "THM-04",
+  "file_name": "estimate_hrr_oxygen_consumption_calorimetry.py",
+  "function_name": "estimate_hrr_oxygen_consumption_calorimetry",
+  "runtime": "Python",
+  "domain": "1. Gas-Phase & Chemical Equilibrium",
+  "scientific_method_summary": "Calculates instantaneous Heat Release Rate Q_dot(t) [kW] and integrated total heat release [kJ] from forced-flow exhaust duct gas analyzer telemetry (O2, CO2, and CO volume fractions plus duct mass flow rate) using Thornton-Huggett oxygen consumption calorimetry. Exploits the empirical constant E_O2 ~ 13.1 MJ released per kg of O2 consumed across organic fuels, applying Janssens' oxygen depletion factor (phi) and incomplete-combustion CO/CO2 corrections.",
+  "governing_equations": [
+   "Q_dot(t) = E_O2 * phi * m_dot_air * (M_O2 / M_air) * X_O2^0",
+   "phi = (X_O2^0 * (1 - X_CO2 - X_CO) - X_O2 * (1 - X_CO2^0)) / ((1 - X_O2 - X_CO2 - X_CO) * X_O2^0)"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Huggett, C. (1980). Estimation of rate of heat release by means of oxygen consumption measurements. Fire and Materials, 4(2), 61-65.",
+    "identifier": "DOI: 10.1002/fam.810040202",
+    "relevance": "Establishes the 13.1 MJ/kg_O2 calorimetric constant across polymeric and cellulosic fire fuels."
+   },
+   {
+    "citation": "Janssens, M. L. (1991). Measuring rate of heat release by oxygen consumption. Fire Technology, 27(3), 234-249.",
+    "identifier": "DOI: 10.1007/BF01038449",
+    "relevance": "Provides the standard exhaust-duct gas-analyzer equations accounting for O2, CO2, CO, and H2O molar shifts."
+   },
+   {
+    "citation": "Jomaas, G., Torero, J. L., Eigenbrod, C., Niehaus, J., Olson, S. L., Ferkul, P. V., ... & Fernandez-Pello, A. C. (2015). Fire safety in space \u2014 beyond flammability testing of small samples. Acta Astronautica, 109, 208-216.",
+    "identifier": "DOI: 10.1016/j.actaastro.2014.11.025",
+    "relevance": "Details exhaust-duct oxygen consumption calorimetry instrumentation and HRR reduction for NASA SAFFIRE experiments."
+   }
+  ],
+  "evidence_boundary": "Direct PSI Data Reduction",
+  "psi_investigations": [
+   "SAFFIRE-I/II/III [Cygnus]",
+   "BASS-II [MSG Flow Duct]"
+  ]
+ },
+ "THM-05": {
+  "model_id": "THM-05",
+  "file_name": "model_opposed_flow_flame_spread_deris.m",
+  "function_name": "model_opposed_flow_flame_spread_deris",
+  "runtime": "MATLAB",
+  "domain": "2. Boundary Layer & Flame Spread",
+  "scientific_method_summary": "Predicts steady laminar flame spread velocity (V_f) against an opposing low-speed cabin ventilation flow (0.5-40 cm/s) using the de Ris analytical eigenvalue solution. Balances forward gas-phase conduction ahead of the pyrolysis front against solid-phase thermal capacity (rho_s * c_s * tau for thermally thin fabrics such as cotton/Sibal, yielding V_f independent of U_flow in the pure diffusive limit, vs. k_s * rho_s * c_s for thermally thick polymers such as PMMA, where V_f scales linearly with U_flow), modified by surface radiative heat losses at low microgravity flow speeds.",
+  "governing_equations": [
+   "V_f,thin = (sqrt(2) * k_g * (T_f - T_v)) / (rho_s * c_s * tau * (T_v - T_0))",
+   "V_f,thick = U_flow * (k_g * rho_g * c_p,g) / (k_s * rho_s * c_s) * ((T_f - T_v) / (T_v - T_0))^2"
+  ],
+  "literature_sources": [
+   {
+    "citation": "de Ris, J. N. (1969). Spread of a laminar diffusion flame. Symposium (International) on Combustion, 12(1), 241-252.",
+    "identifier": "DOI: 10.1016/S0082-0784(69)80407-8",
+    "relevance": "Derives the exact analytical opposed-flow flame spread formulas for thermally thin and thermally thick solid fuels."
+   },
+   {
+    "citation": "Bhattacharjee, S., & Altenkirch, R. A. (1990). Radiation-controlled, opposed-flow flame spread in a microgravity environment. Symposium (International) on Combustion, 23(1), 1627-1633.",
+    "identifier": "DOI: 10.1016/S0082-0784(06)80435-2",
+    "relevance": "Extends de Ris theory to include surface radiation losses that govern low-velocity microgravity flame spread."
+   },
+   {
+    "citation": "Olson, S. L. (1991). Mechanisms of microgravity flame spread over a thin solid fuel: Oxygen and opposed flow effects. Combustion Science and Technology, 76(4-6), 233-249.",
+    "identifier": "DOI: 10.1080/00102209108951711",
+    "relevance": "Maps the radiative-to-kinetic opposed-flow flame spread curve across microgravity ventilation velocities."
+   }
+  ],
+  "evidence_boundary": "Semi-Empirical Correlation",
+  "psi_investigations": [
+   "BASS-II [MSG Flow Duct]",
+   "SAFFIRE-I [Cygnus]"
+  ]
+ },
+ "THM-06": {
+  "model_id": "THM-06",
+  "file_name": "model_concurrent_flow_boundary_layer_spread.m",
+  "function_name": "model_concurrent_flow_boundary_layer_spread",
+  "runtime": "MATLAB",
+  "domain": "2. Boundary Layer & Flame Spread",
+  "scientific_method_summary": "Models flow-assisted (concurrent) boundary-layer flame propagation in which forced cabin airflow sweeps hot combustion gases downstream over unburned solid fuel. Couples an Emmons-Blasius laminar boundary-layer solution for downstream convective wall heat flux (q''_w ~ x^(-1/2)) and excess-pyrolyzate flame length (x_f) with solid-phase thermal preheating to integrate accelerating pyrolysis front position x_p(t) and spread velocity V_p = dx_p/dt.",
+  "governing_equations": [
+   "V_p = dx_p / dt = (x_f - x_p) / t_ign",
+   "q''_w(x) = 0.332 * (k_g / x) * Re_x^(1/2) * Pr^(1/3) * (T_f - T_s)"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Fernandez-Pello, A. C. (1979). Flame spread in a forward forced flow. Combustion and Flame, 36, 63-78.",
+    "identifier": "DOI: 10.1016/0010-2180(79)90046-4",
+    "relevance": "Establishes the laminar boundary-layer similarity model for concurrent-flow flame spread over solid fuels."
+   },
+   {
+    "citation": "Ferkul, P. V., & T'ien, J. S. (1994). A model of low-speed concurrent flow flame spread over a thin fuel. Combustion Science and Technology, 99(4-6), 345-370.",
+    "identifier": "DOI: 10.1080/00102209408935440",
+    "relevance": "Models low-velocity microgravity concurrent flame spread, showing finite flame length stabilization in 0g."
+   },
+   {
+    "citation": "Olson, S. L., & Miller, F. J. (2009). Experimental comparison of opposed and concurrent flame spread in a forced convective microgravity environment. Proceedings of the Combustion Institute, 32(2), 2445-2452.",
+    "identifier": "DOI: 10.1016/j.proci.2008.05.081",
+    "relevance": "Provides benchmark microgravity concurrent vs. opposed spread correlations for spacecraft cabin ventilation."
+   }
+  ],
+  "evidence_boundary": "Semi-Empirical Correlation",
+  "psi_investigations": [
+   "BASS-II [MSG Flow Duct]",
+   "SAFFIRE-II [Cygnus]"
+  ]
+ },
+ "THM-07": {
+  "model_id": "THM-07",
+  "file_name": "evaluate_damkohler_blowoff_extinction.py",
+  "function_name": "evaluate_damkohler_blowoff_extinction",
+  "runtime": "Python",
+  "domain": "2. Boundary Layer & Flame Spread",
+  "scientific_method_summary": "Evaluates the critical high-velocity convective blow-off limit using leading-edge Damkohler number scaling (Da = tau_flow / tau_chem). Compares the convective-diffusive flow residence time at the flame stabilization zone (tau_flow ~ alpha_g / U_flow^2) against a one-step Arrhenius chemical reaction timescale (tau_chem ~ P^(-n) * Y_O2^(-m) * exp(E_a / (R * T_f))), predicting flame blow-off extinction when forced ventilation sweeps heat and radicals downstream faster than reactions replenish them (Da < Da_crit).",
+  "governing_equations": [
+   "Da = tau_flow / tau_chem",
+   "tau_flow ~ alpha_g / U_flow^2,   tau_chem ~ (A * P^n * Y_O2^m)^(-1) * exp(E_a / (R * T_f))"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Williams, F. A. (1985). Combustion Theory (2nd ed.). Benjamin/Cummings (Ch. 12: Asymptotic Analysis of Diffusion Flame Extinction).",
+    "identifier": "ISBN 978-0805398014",
+    "relevance": "Derives the large-activation-energy Damkohler number extinction criterion for strained diffusion flames."
+   },
+   {
+    "citation": "Law, C. K. (2006). Combustion Physics. Cambridge University Press (Ch. 8: Extinction of Diffusion Flames).",
+    "identifier": "DOI: 10.1017/CBO9780511754517",
+    "relevance": "Formulates S-curve diffusion-flame blow-off limits as a competition between residence time and chemical time."
+   },
+   {
+    "citation": "Fernandez-Pello, A. C., Ray, S. R., & Glassman, I. (1981). Flame spread in an opposed forced flow: The effect of ambient oxygen concentration. Symposium (International) on Combustion, 18(1), 579-589.",
+    "identifier": "DOI: 10.1016/S0082-0784(81)80063-X",
+    "relevance": "Demonstrates Damkohler-number blow-off correlation across flow velocity and ambient O2 mole fraction."
+   }
+  ],
+  "evidence_boundary": "Semi-Empirical Correlation",
+  "psi_investigations": [
+   "BASS-II [MSG Flow Duct]",
+   "SLICE [MSG]"
+  ]
+ },
+ "THM-08": {
+  "model_id": "THM-08",
+  "file_name": "calc_mixed_convection_richardson_scaling.py",
+  "function_name": "calc_mixed_convection_richardson_scaling",
+  "runtime": "Python",
+  "domain": "2. Boundary Layer & Flame Spread",
+  "scientific_method_summary": "Quantifies the ratio of buoyancy-driven natural convection to forced cabin ventilation via boundary-layer similarity groups evaluated at mean film temperature: Grashof (Gr), Reynolds (Re), and Richardson (Ri = Gr / Re^2) numbers, alongside Sacksteder's characteristic buoyant plume velocity scale (U_b). Classifies forced-convection (Ri < 0.1), mixed-convection (0.1 <= Ri <= 10), and buoyancy-dominated (Ri > 10) regimes across 0g (ISS), 0.16g (Moon), 0.38g (Mars), and 1g (Earth) to establish theoretical partial-gravity flammability bounds.",
+  "governing_equations": [
+   "Gr = (g * beta * Delta_T * L^3) / nu^2,   Re = (U_forced * L) / nu",
+   "Ri = Gr / Re^2 = (g * beta * Delta_T * L) / U_forced^2",
+   "U_b,Sacksteder ~ (g * beta * Delta_T * L)^(1/2)"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Sacksteder, K. R. (1990). The implication of experimentally controlled gravitational accelerations for combustion science. Symposium (International) on Combustion, 23(1), 1589-1596.",
+    "identifier": "DOI: 10.1016/S0082-0784(06)80430-3",
+    "relevance": "Derives buoyant velocity and Froude/Richardson scaling laws across variable gravitational accelerations (0g to 1g)."
+   },
+   {
+    "citation": "Olson, S. L., Ferkul, P. V., & T'ien, J. S. (1988). Near-limit flame spread over a thin solid fuel in microgravity. Symposium (International) on Combustion, 22(1), 1213-1222.",
+    "identifier": "DOI: 10.1016/S0082-0784(89)80132-8",
+    "relevance": "Uses characteristic buoyant velocity equivalence to map microgravity forced-flow flammability against reduced-g regimes."
+   },
+   {
+    "citation": "Incropera, F. P., DeWitt, D. P., Bergman, T. L., & Lavine, A. S. (2007). Fundamentals of Heat and Mass Transfer (6th ed.). John Wiley & Sons (Ch. 9: Combined Free and Forced Convection).",
+    "identifier": "ISBN 978-0471457282",
+    "relevance": "Standard boundary-layer Richardson number (Gr/Re^2) thresholds delineating forced, mixed, and natural convection."
+   }
+  ],
+  "evidence_boundary": "Theoretical / Partial-g Bound",
+  "psi_investigations": [
+   "BASS-II [MSG Flow Duct]",
+   "E-FIELD Flames [ACME/CIR] (Analogue)"
+  ]
+ },
+ "THM-09": {
+  "model_id": "THM-09",
+  "file_name": "calc_spalding_mass_transfer_b_number.py",
+  "function_name": "calc_spalding_mass_transfer_b_number",
+  "runtime": "Python",
+  "domain": "2. Boundary Layer & Flame Spread",
+  "scientific_method_summary": "Applies the Reynolds-Colburn heat-mass transfer analogy across a blowing laminar boundary layer (Le = 1) to compute the dimensionless Spalding mass-transfer driving potential (B-number) and surface pyrolysis gasification mass flux (m''_f) for solid polymers (PMMA, silicone) and cellulosic fabrics (cotton/Sibal, Nomex). Solves both the adiabatic B_ideal and the radiatively coupled B_eff incorporating surface Stefan-Boltzmann re-radiation and the boundary-layer blowing reduction factor ln(1+B)/B.",
+  "governing_equations": [
+   "B_ideal = [Y_O2,inf * (Delta_H_c / nu_s) - c_p,g * (T_v - T_inf)] / Delta_H_pyr",
+   "B_eff = [Y_O2,inf * (Delta_H_c / nu_s) - c_p,g * (T_v - T_inf)] / (Delta_H_pyr + q''_rad / m''_f)",
+   "m''_f = (h_c / c_p,g) * ln(1 + B_eff)"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Spalding, D. B. (1953). The combustion of liquid fuels. Symposium (International) on Combustion, 4(1), 847-864.",
+    "identifier": "DOI: 10.1016/S0082-0784(53)80110-4",
+    "relevance": "Introduces the dimensionless mass-transfer driving force B and logarithmic blowing mass-flux law."
+   },
+   {
+    "citation": "Quintiere, J. G. (2006). Fundamentals of Fire Phenomena. John Wiley & Sons (Ch. 7: Burning Rate and Mass Transfer Number).",
+    "identifier": "DOI: 10.1002/0470091150",
+    "relevance": "Extends Spalding B-number formulation to charring and non-charring solid polymers with surface radiative heat losses."
+   },
+   {
+    "citation": "Glassman, I., & Yetter, R. A. (2008). Combustion (4th ed.). Academic Press (Ch. 6: Diffusion Flames).",
+    "identifier": "ISBN 978-0120885732",
+    "relevance": "Derives boundary-layer blowing corrections and material B-number tables for condensed-phase fuels."
+   }
+  ],
+  "evidence_boundary": "Direct PSI Data Reduction",
+  "psi_investigations": [
+   "BASS & BASS-II [MSG Flow Duct]",
+   "Saffire-I/II/III [Cygnus]"
+  ]
+ },
+ "THM-10": {
+  "model_id": "THM-10",
+  "file_name": "model_droplet_d2_vaporization_combustion.m",
+  "function_name": "model_droplet_d2_vaporization_combustion",
+  "runtime": "MATLAB",
+  "domain": "3. Droplet & Multiphase Phase-Change",
+  "scientific_method_summary": "Models spherically symmetric, quasi-steady combustion of an isolated liquid fuel droplet (methanol, n-heptane, n-octane, n-decane) in quiescent microgravity where natural convection vanishes. Integrates radial gas-phase energy and species conservation with a thin Burke-Schumann flame sheet to solve the Godsave-Spalding D^2-law linear squared-diameter regression D^2(t) = D_0^2 - K*t, burning rate constant K, droplet lifetime t_burn, and flame-to-droplet standoff ratio (r_f / r_d).",
+  "governing_equations": [
+   "D^2(t) = D_0^2 - K * t",
+   "K = (8 * k_g / (rho_l * c_p,g)) * ln(1 + B_q)",
+   "r_f / r_d = ln(1 + B_q) / ln(1 + Y_O2,inf / s)"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Godsave, G. A. E. (1953). Studies of the combustion of drops in a fuel spray\u2014the burning of single drops of fuel. Symposium (International) on Combustion, 4(1), 818-830.",
+    "identifier": "DOI: 10.1016/S0082-0784(53)80107-4",
+    "relevance": "Establishes the fundamental D^2-law of spherically symmetric single-droplet vaporization and burning."
+   },
+   {
+    "citation": "Williams, F. A. (1973). Combustion of droplets of liquid fuels: A review. Combustion and Flame, 21(1), 1-31.",
+    "identifier": "DOI: 10.1016/0010-2180(73)90002-3",
+    "relevance": "Comprehensive theoretical synthesis of quasi-steady droplet burning rate constants and flame standoff ratios."
+   },
+   {
+    "citation": "Dietrich, D. L., Nayagam, V., Hicks, M. C., Ferkul, P. V., Dryer, F. L., Farouk, T., ... & Williams, F. A. (2014). Droplet combustion experiments aboard the International Space Station. Microgravity Science and Technology, 26(2), 65-76.",
+    "identifier": "DOI: 10.1007/s12217-014-9372-2",
+    "relevance": "Provides ISS FLEX benchmark K-values, flame standoff histories, and radiative/diffusive extinction diameters."
+   }
+  ],
+  "evidence_boundary": "Direct PSI Data Reduction",
+  "psi_investigations": [
+   "FLEX & FLEX-2 [MDCA/CIR]",
+   "CFI"
+  ]
+ },
+ "THM-11": {
+  "model_id": "THM-11",
+  "file_name": "model_two_stage_cool_flame_kinetics.py",
+  "function_name": "model_two_stage_cool_flame_kinetics",
+  "runtime": "Python",
+  "domain": "3. Droplet & Multiphase Phase-Change",
+  "scientific_method_summary": "Simulates two-stage combustion observed in large normal-alkane droplets (n-heptane, n-octane, n-decane) in microgravity. Tracks Stage 1 high-temperature visible hot-flame burning until the expanding flame sphere's volumetric radiative heat loss triggers radiative extinction at diameter D_ext,rad, followed by Stage 2 quasi-steady, invisible low-temperature Negative Temperature Coefficient (NTC, ~550-800 K) peroxy-radical (RO2 -> QOOH) cool-flame oxidation with a reduced burning rate constant K_cool until final diffusive extinction at D_ext,diff.",
+  "governing_equations": [
+   "Stage 1 (Hot Flame): D^2(t) = D_0^2 - K_hot * t  for D > D_ext,rad",
+   "Stage 2 (Cool Flame, T_flame ~ T_NTC): D^2(t) = D_ext,rad^2 - K_cool * (t - t_ext,rad)  for D > D_ext,diff"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Nayagam, V., Dietrich, D. L., Ferkul, P. V., Hicks, M. C., & Williams, F. A. (2012). Can cool flames support quasi-steady alkane droplet burning? Combustion and Flame, 159(12), 3583-3588.",
+    "identifier": "DOI: 10.1016/j.combustflame.2012.07.012",
+    "relevance": "First experimental and theoretical identification of sustained quasi-steady cool-flame droplet burning aboard ISS."
+   },
+   {
+    "citation": "Farouk, T. I., & Dryer, F. L. (2014). Isolated n-heptane droplet combustion in microgravity: 'Cool Flames' \u2014 Two-stage combustion. Combustion and Flame, 161(2), 565-581.",
+    "identifier": "DOI: 10.1016/j.combustflame.2013.09.011",
+    "relevance": "Detailed kinetic-transport modeling of radiative hot-flame extinction transitioning into NTC cool-flame burning."
+   },
+   {
+    "citation": "Nayagam, V., Dietrich, D. L., & Williams, F. A. (2016). Partial-burning regime for quasi-steady droplet combustion supported by cool flames. AIAA Journal, 54(4), 1235-1239.",
+    "identifier": "DOI: 10.2514/1.J054437",
+    "relevance": "Derives analytical B-number and burning-rate expressions anchored at the NTC crossover temperature."
+   }
+  ],
+  "evidence_boundary": "Semi-Empirical Correlation",
+  "psi_investigations": [
+   "FLEX & FLEX-2 [MDCA/CIR]",
+   "ACME Cool Flames [CIR]"
+  ]
+ },
+ "THM-12": {
+  "model_id": "THM-12",
+  "file_name": "calc_clausius_clapeyron_multicomponent_evap.py",
+  "function_name": "calc_clausius_clapeyron_multicomponent_evap",
+  "runtime": "Python",
+  "domain": "3. Droplet & Multiphase Phase-Change",
+  "scientific_method_summary": "Solves vapor-liquid phase equilibrium (VLE) at the droplet surface by coupling the Clausius-Clapeyron / Antoine saturation vapor pressure equation P_i^sat(T_s) with modified Raoult's law (y_i * P = gamma_i * x_i * P_i^sat(T_s)) and liquid-phase species conservation. Captures preferential distillation of volatile components and back-condensation/absorption of combustion-generated water vapor into hygroscopic alcohol droplets (e.g., methanol in 0g), which elevates surface boiling point and triggers premature diffusive/radiative extinction.",
+  "governing_equations": [
+   "ln(P_i^sat / P_ref) = -(Delta_H_vap,i / R) * (1 / T_s - 1 / T_boil,i)",
+   "y_i,s = gamma_i(x, T_s) * x_i,s * (P_i^sat(T_s) / P)"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Law, C. K. (1978). Internal boiling and superheating in vaporizing multicomponent droplets. AIChE Journal, 24(4), 626-632.",
+    "identifier": "DOI: 10.1002/aic.690240410",
+    "relevance": "Formulates multicomponent droplet surface VLE coupling Raoult's law, Clausius-Clapeyron vapor pressure, and internal diffusion."
+   },
+   {
+    "citation": "Marchese, A. J., & Dryer, F. L. (1996). The effect of liquid mass transport on the combustion and extinction of bicomponent droplets of methanol and water. Combustion and Flame, 105(1-2), 104-122.",
+    "identifier": "DOI: 10.1016/0010-2180(95)00179-4",
+    "relevance": "Quantifies water-vapor absorption by burning methanol droplets in microgravity and its control of extinction diameter."
+   },
+   {
+    "citation": "Zhang, B. L., Card, J. M., & Williams, F. A. (1996). Application of rate-ratio asymptotics to the prediction of extinction for methanol droplet combustion. Combustion and Flame, 105(3), 267-290.",
+    "identifier": "DOI: 10.1016/0010-2180(95)00208-1",
+    "relevance": "Provides asymptotic extinction predictions for water-absorbing methanol droplets under microgravity conditions."
+   }
+  ],
+  "evidence_boundary": "Semi-Empirical Correlation",
+  "psi_investigations": [
+   "FLEX & FLEX-2 [MDCA/CIR]"
+  ]
+ },
+ "THM-13": {
+  "model_id": "THM-13",
+  "file_name": "evaluate_radiative_quenching_extinction.m",
+  "function_name": "evaluate_radiative_quenching_extinction",
+  "runtime": "MATLAB",
+  "domain": "4. Radiative Heat Transfer & Quenching",
+  "scientific_method_summary": "Determines the fundamental low-velocity radiative quenching limit (typically U_flow < 1-2 cm/s in 0g) using T'ien's low-stretch diffusion flame energy balance. At ultra-low convective/diffusive transport rates, heat generation scales down with oxygen supply while optically thin gas-band Planck-mean radiation (CO2, H2O) and solid-surface Stefan-Boltzmann radiation remain finite, driving the radiative heat-loss fraction above the critical quenching threshold and extinguishing the flame.",
+  "governing_equations": [
+   "q''_chem(U_flow, Y_O2) = q''_cond + q''_rad,gas(CO2, H2O) + eps * sigma * (T_s^4 - T_inf^4)",
+   "chi_r = Q_dot_rad / Q_dot_chem >= chi_r,crit  =>  Radiative Quenching"
+  ],
+  "literature_sources": [
+   {
+    "citation": "T'ien, J. S. (1986). Diffusion flame extinction at small stretch rates: The mechanism of radiative loss. Combustion and Flame, 65(1), 31-34.",
+    "identifier": "DOI: 10.1016/0010-2180(86)90069-6",
+    "relevance": "Discovers the low-stretch radiative extinction branch of the diffusion-flame S-curve unique to microgravity/low-flow environments."
+   },
+   {
+    "citation": "Chao, B. H., Law, C. K., & T'ien, J. S. (1990). Structure and extinction of diffusion flames with flame radiation. Symposium (International) on Combustion, 23(1), 523-531.",
+    "identifier": "DOI: 10.1016/S0082-0784(06)80300-0",
+    "relevance": "Derives asymptotic dual-extinction limits (high-stretch blow-off vs. low-stretch radiative quenching)."
+   },
+   {
+    "citation": "Olson, S. L., & T'ien, J. S. (2000). Buoyant low-stretch diffusion flames beneath cylindrical PMMA samples. Combustion and Flame, 121(3), 439-452.",
+    "identifier": "DOI: 10.1016/S0010-2180(99)00161-3",
+    "relevance": "Validates low-stretch radiative quenching boundaries and critical oxygen-velocity flammability maps for solid polymers."
+   }
+  ],
+  "evidence_boundary": "Semi-Empirical Correlation",
+  "psi_investigations": [
+   "BASS-II [MSG Flow Duct]",
+   "ACME (BRE) [CIR]"
+  ]
+ },
+ "THM-14": {
+  "model_id": "THM-14",
+  "file_name": "compute_radiative_heat_flux_fraction.m",
+  "function_name": "compute_radiative_heat_flux_fraction",
+  "runtime": "MATLAB",
+  "domain": "4. Radiative Heat Transfer & Quenching",
+  "scientific_method_summary": "Inverts directional wide-angle radiometer heat flux measurements (q''_rad) using flame-to-sensor geometric configuration factors (F_12) to reconstruct total radiant power emitted by a microgravity solid or gaseous flame (Q_dot_rad). Normalizes Q_dot_rad by total chemical Heat Release Rate (Q_dot_total) to quantify the radiative heat-loss fraction chi_r, which increases substantially in 0g due to larger flame volumes and longer residence times.",
+  "governing_equations": [
+   "Q_dot_rad = (A_sensor * q''_rad) / F_12  (or 4 * pi * R^2 * q''_rad for isotropic point source)",
+   "chi_r = Q_dot_rad / Q_dot_total"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Markstein, G. H. (1976). Scaling of radiative characteristics of turbulent diffusion flames. Symposium (International) on Combustion, 16(1), 1407-1419.",
+    "identifier": "DOI: 10.1016/S0082-0784(77)80425-6",
+    "relevance": "Establishes wide-angle radiometer scaling and radiative fraction (chi_r) reduction methods for diffusion flames."
+   },
+   {
+    "citation": "Siegel, R., & Howell, J. R. (2002). Thermal Radiation Heat Transfer (4th ed.). Taylor & Francis (Ch. 5: Configuration Factors).",
+    "identifier": "ISBN 978-1560328391",
+    "relevance": "Provides analytical geometric view-factor (F_12) relations between finite flame sheets and directional radiometers."
+   },
+   {
+    "citation": "Urban, D. L., Ferkul, P. V., Olson, S. L., Ruff, G. A., Easton, J., T'ien, J. S., ... & Fernandez-Pello, A. C. (2019). Flame spread: Effects of microgravity and scale. Combustion and Flame, 199, 168-182.",
+    "identifier": "DOI: 10.1016/j.combustflame.2018.10.012",
+    "relevance": "Applies radiometer view-factor inversion to determine chi_r in full-scale microgravity SAFFIRE burns."
+   }
+  ],
+  "evidence_boundary": "Direct PSI Data Reduction",
+  "psi_investigations": [
+   "SAFFIRE-I/II/III [Cygnus]",
+   "ACME Flame Design [CIR]"
+  ]
+ },
+ "THM-15": {
+  "model_id": "THM-15",
+  "file_name": "calc_soot_inception_temperature_threshold.py",
+  "function_name": "calc_soot_inception_temperature_threshold",
+  "runtime": "Python",
+  "domain": "4. Radiative Heat Transfer & Quenching",
+  "scientific_method_summary": "Predicts whether a microgravity diffusion flame burns as a dim, soot-free blue chemiluminescent flame or transitions to a luminous, yellow sooting flame. Evaluates peak flame temperature against the critical aromatic soot-inception threshold (T_soot ~ 1300-1400 K), checks the fuel-side C/O ratio governed by stoichiometric mixture fraction Z_st, and compares hydrodynamic residence time (tau_res) and thermophoretic soot-shell trapping (v_th ~ -nu * grad(T) / T) against pyrolysis kinetics.",
+  "governing_equations": [
+   "Sooting Criterion: T_flame > T_soot (~1350 K)  AND  tau_res > tau_inception(Z_st)",
+   "v_th = -K_th * (nu / T) * grad(T)"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Glassman, I. (1988). Soot formation in combustion processes. Symposium (International) on Combustion, 22(1), 295-311.",
+    "identifier": "DOI: 10.1016/S0082-0784(89)80036-0",
+    "relevance": "Establishes the fundamental temperature-controlled soot inception threshold (~1300-1400 K) in laminar diffusion flames."
+   },
+   {
+    "citation": "Gomez, A., Sidebotham, G., & Glassman, I. (1984). Sooting behavior in temperature-controlled laminar diffusion flames. Combustion and Flame, 58(1), 45-57.",
+    "identifier": "DOI: 10.1016/0010-2180(84)90077-4",
+    "relevance": "Separates temperature, residence time, and fuel structure effects on the blue-to-yellow sooting transition."
+   },
+   {
+    "citation": "Sunderland, P. B., Urban, D. L., Stocker, D. P., Chao, B. H., & Axelbaum, R. L. (2004). Sooting limits of microgravity spherical diffusion flames in oxygen-enriched air and diluted fuel. Combustion Science and Technology, 176(12), 2143-2164.",
+    "identifier": "DOI: 10.1080/00102200490514994",
+    "relevance": "Defines blue soot-free vs. yellow sooting boundaries in microgravity spherical flames across Z_st and residence time."
+   }
+  ],
+  "evidence_boundary": "Semi-Empirical Correlation",
+  "psi_investigations": [
+   "ACME (Flame Design, CFI-G) [CIR]",
+   "FLEX [MDCA/CIR]"
+  ]
+ },
+ "THM-16": {
+  "model_id": "THM-16",
+  "file_name": "model_solid_pyrolysis_transient_conduction.m",
+  "function_name": "model_solid_pyrolysis_transient_conduction",
+  "runtime": "MATLAB",
+  "domain": "4. Radiative Heat Transfer & Quenching",
+  "scientific_method_summary": "Solves one-dimensional transient Fourier heat conduction inside spacecraft cabin polymers and textiles exposed to an external radiative/convective heat flux (q''_ext). Evaluates the thermal penetration depth delta_T ~ sqrt(alpha_s * t) and Fourier number (Fo = alpha_s * t / L^2) to classify thermally thick vs. thermally thin response, computing surface temperature rise T_s(t) and time-to-ignition (t_ign) via Carslaw-Jaeger semi-infinite error-function and finite-slab analytical solutions.",
+  "governing_equations": [
+   "dT/dt = alpha_s * d^2T/dx^2,   alpha_s = k_s / (rho_s * c_s)",
+   "t_ign,thick = (pi / 4) * k_s * rho_s * c_s * ((T_ign - T_0) / q''_net)^2",
+   "t_ign,thin = rho_s * c_s * L * (T_ign - T_0) / q''_net"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Carslaw, H. S., & Jaeger, J. C. (1959). Conduction of Heat in Solids (2nd ed.). Oxford University Press (Ch. 2: Linear Flow of Heat in the Semi-Infinite Solid).",
+    "identifier": "ISBN 978-0198533689",
+    "relevance": "Derives the exact analytical surface-temperature solution for a semi-infinite solid under constant surface heat flux."
+   },
+   {
+    "citation": "Quintiere, J. G. (2006). Fundamentals of Fire Phenomena. John Wiley & Sons (Ch. 5: Ignition).",
+    "identifier": "DOI: 10.1002/0470091150",
+    "relevance": "Formulates thermally thick and thermally thin solid ignition times using thermal inertia (k*rho*c) and critical heat flux."
+   },
+   {
+    "citation": "Delichatsios, M. A., Panagiotou, T., & Kiley, F. (1991). The use of time to ignition data for characterizing the thermal inertia and the minimum (critical) heat flux for ignition or pyrolysis. Combustion and Flame, 84(3-4), 323-332.",
+    "identifier": "DOI: 10.1016/0010-2180(91)90009-Z",
+    "relevance": "Provides engineering correlations linking external radiant flux, surface re-radiation losses, and t_ign^(-1/2)."
+   }
+  ],
+  "evidence_boundary": "Theoretical / Partial-g Bound",
+  "psi_investigations": [
+   "BASS-II [MSG Flow Duct]",
+   "SAFFIRE-I [Cygnus]"
+  ]
+ },
+ "THM-17": {
+  "model_id": "THM-17",
+  "file_name": "predict_limiting_oxygen_index_0g.py",
+  "function_name": "predict_limiting_oxygen_index_0g",
+  "runtime": "Python",
+  "domain": "5. Habitat Control-Volume & Suppression",
+  "scientific_method_summary": "Solves for the microgravity Limiting Oxygen Index (LOI_0g)\u2014the minimum ambient O2 mole fraction required to sustain flame propagation\u2014by finding the root where combustion heat feedback balances convective and radiative losses at a specified cabin ventilation velocity and total pressure. Contrasts LOI_0g directly against Earth 1g upward-burn Maximum Oxygen Concentration / LOI screening under NASA-STD-6001B Test 1 to flag materials that pass 1g screening yet burn in low-speed 0g airflow.",
+  "governing_equations": [
+   "LOI_0g(U_flow, P) = min { X_O2 : q''_flame(X_O2, U_flow, P) >= q''_loss,crit }",
+   "Delta_LOI_margin = LOI_0g(U_flow, P) - LOI_1g,NASA-STD-6001B"
+  ],
+  "literature_sources": [
+   {
+    "citation": "NASA (2011). Flammability, Offgassing, and Compatibility Requirements and Test Procedures (NASA-STD-6001B, Test 1). National Aeronautics and Space Administration.",
+    "identifier": "NASA-STD-6001B",
+    "relevance": "Defines the baseline Earth 1g upward flame-propagation screening standard and 1g MOC/ULOI criteria."
+   },
+   {
+    "citation": "Olson, S. L., Ruff, G. A., & Miller, F. J. (2008). Microgravity flame spread in exploration atmospheres: Pressure, oxygen, and velocity effects on opposed and concurrent flame spread. NASA/TM-2008-215260 / SAE Technical Paper 2008-01-2055.",
+    "identifier": "NASA/TM-2008-215260",
+    "relevance": "Demonstrates how 0g flammability limits shift below 1g NASA-STD-6001 limits in low-velocity exploration atmospheres."
+   },
+   {
+    "citation": "Fujita, O. (2015). Solid combustion research in microgravity as a basis of fire safety in space. Proceedings of the Combustion Institute, 35(3), 2487-2502.",
+    "identifier": "DOI: 10.1016/j.proci.2014.08.010",
+    "relevance": "Synthesizes U-shaped 0g flammability maps (LOI_0g vs. flow velocity) across spacecraft textiles and polymers."
+   }
+  ],
+  "evidence_boundary": "Semi-Empirical Correlation",
+  "psi_investigations": [
+   "BASS-II [MSG Flow Duct]",
+   "ACME (BRE) [CIR]"
+  ]
+ },
+ "THM-18": {
+  "model_id": "THM-18",
+  "file_name": "calc_inert_suppressant_thermal_capacity.py",
+  "function_name": "calc_inert_suppressant_thermal_capacity",
+  "runtime": "Python",
+  "domain": "5. Habitat Control-Volume & Suppression",
+  "scientific_method_summary": "Evaluates the thermodynamic extinguishing efficacy of spacecraft fire suppression agents (CO2, N2, He, and fine water mist) via the Sheinson-Coward thermal dilution criterion. Integrates temperature-dependent sensible molar heat capacity (int c_p dT) and latent heat of vaporization (for water mist) from ambient to a critical limit flame temperature (~1500-1600 K), while contrasting high heat-sink agents (CO2, H2O) against high-conductivity diffusive-quenching agents (He).",
+  "governing_equations": [
+   "Delta_H_sink = sum_i X_i * [int_{T_0}^{T_crit} c_p,i(T) dT + Delta_h_vap,i]",
+   "T_ad(X_agent >= X_ext) <= T_flame,crit (~1550 K)"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Sheinson, R. S., Penner-Hahn, J. E., & Indritz, D. (1989). The physical and chemical action of fire suppressants. Fire Safety Journal, 15(6), 437-450.",
+    "identifier": "DOI: 10.1016/0379-7112(89)90015-5",
+    "relevance": "Quantifies physical heat-capacity dilution vs. chemical radical scavenging in gaseous fire extinguishment."
+   },
+   {
+    "citation": "Coward, H. F., & Jones, G. W. (1952). Limits of Flammability of Gases and Vapors (Bulletin 503). U.S. Bureau of Mines.",
+    "identifier": "USBM-Bulletin-503",
+    "relevance": "Establishes classical inert-dilution flammability envelopes for N2, CO2, He, and water vapor."
+   },
+   {
+    "citation": "Takahashi, F., Linteris, G. T., & Katta, V. R. (2007). Extinguishment mechanisms of coflow diffusion flames in a cup-burner apparatus. Proceedings of the Combustion Institute, 31(2), 2721-2729.",
+    "identifier": "DOI: 10.1016/j.proci.2006.07.141",
+    "relevance": "Resolves critical agent mole fractions and thermal-capacity vs. diffusivity extinction mechanisms in diffusion flames."
+   }
+  ],
+  "evidence_boundary": "Direct PSI Data Reduction",
+  "psi_investigations": [
+   "FLEX (CO2 & He Dilution) [MDCA/CIR]",
+   "BASS-II [MSG Flow Duct]"
+  ]
+ },
+ "THM-19": {
+  "model_id": "THM-19",
+  "file_name": "model_closed_cabin_first_law_pressure_rise.m",
+  "function_name": "model_closed_cabin_first_law_pressure_rise",
+  "runtime": "MATLAB",
+  "domain": "5. Habitat Control-Volume & Suppression",
+  "scientific_method_summary": "Integrates an unsteady, lumped-parameter closed control-volume First Law energy balance (m_gas * c_v * dT/dt = Q_dot_fire(t) - U*A*(T - T_wall)) coupled with the ideal gas law (P(t) = m_gas * R_mix * T(t) / V_cabin) and stoichiometric species conservation. Predicts transient cabin overpressure (Delta_P), bulk gas temperature rise, O2 depletion, and CO2 toxicity buildup inside a sealed spacecraft module, Lunar habitat, or pressurized rover.",
+  "governing_equations": [
+   "m * c_v * (dT / dt) = Q_dot_fire(t) - U * A_wall * (T(t) - T_wall)",
+   "P(t) = (m * R_mix * T(t)) / V_cabin,   Delta_P(t) = P(t) - P_0"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Drysdale, D. (2011). An Introduction to Fire Dynamics (3rd ed.). John Wiley & Sons (Ch. 9: The Pre-Flashover Compartment Fire).",
+    "identifier": "DOI: 10.1002/9781119975465",
+    "relevance": "Derives closed-compartment energy conservation, wall heat-loss conductance, and pressure-rise equations."
+   },
+   {
+    "citation": "Quintiere, J. G. (2006). Fundamentals of Fire Phenomena. John Wiley & Sons (Ch. 10: Conservation Laws for Control Volumes).",
+    "identifier": "DOI: 10.1002/0470091150",
+    "relevance": "Formulates unsteady control-volume mass, species (O2/CO2), and internal-energy differential equations."
+   },
+   {
+    "citation": "Jomaas, G., Torero, J. L., Eigenbrod, C., Niehaus, J., Olson, S. L., Ferkul, P. V., ... & Fernandez-Pello, A. C. (2015). Fire safety in space \u2014 beyond flammability testing of small samples. Acta Astronautica, 109, 208-216.",
+    "identifier": "DOI: 10.1016/j.actaastro.2014.11.025",
+    "relevance": "Models sealed Cygnus vehicle pressure and temperature transients for NASA SAFFIRE full-scale burn experiments."
+   }
+  ],
+  "evidence_boundary": "Semi-Empirical Correlation",
+  "psi_investigations": [
+   "SAFFIRE-I/II/III [Cygnus]"
+  ]
+ },
+ "THM-20": {
+  "model_id": "THM-20",
+  "file_name": "model_aerosol_thermophoretic_coagulation_transport.py",
+  "function_name": "model_aerosol_thermophoretic_coagulation_transport",
+  "runtime": "Python",
+  "domain": "5. Habitat Control-Volume & Suppression",
+  "scientific_method_summary": "Models smoke particulate evolution and detector transport in microgravity by coupling Smoluchowski Brownian coagulation kinetics (dN/dt = -0.5 * K_coag * N^2), Talbot thermophoretic wall-drift velocity (v_th = -K_th * nu * grad(T) / T), and forced ventilation duct advection. Accounts for the absence of buoyant plumes in 0g, which lengthens particle residence times near the heat source, grows mean agglomerate diameters (>300-400 nm), and shifts detection reliability toward photoelectric light-scattering sensors over ionization chambers.",
+  "governing_equations": [
+   "dN / dt = -0.5 * K_coag * N^2,   d_p(t) = d_p,0 * (N_0 / N(t))^(1/3)",
+   "v_th = -K_th * (nu / T) * grad(T),   t_transit = L_duct / U_flow"
+  ],
+  "literature_sources": [
+   {
+    "citation": "Friedlander, S. K. (2000). Smoke, Dust, and Haze: Fundamentals of Aerosol Dynamics (2nd ed.). Oxford University Press (Ch. 7: Coagulation).",
+    "identifier": "ISBN 978-0195129991",
+    "relevance": "Derives Smoluchowski Brownian coagulation kernels and lognormal aerosol size-distribution growth."
+   },
+   {
+    "citation": "Talbot, L., Cheng, R. K., Schefer, R. W., & Willis, D. R. (1980). Thermophoresis of particles in a heated boundary layer. Journal of Fluid Mechanics, 101(4), 737-758.",
+    "identifier": "DOI: 10.1017/S0022112080001905",
+    "relevance": "Establishes the standard Talbot thermophoretic velocity expression governing aerosol drift in thermal gradients."
+   },
+   {
+    "citation": "Meyer, M. E., Urban, D. L., Mulholland, G. W., Bryg, V., Yuan, Z.-G., Ruff, G. A., Cleary, T., & Yang, J. (2018). Evaluation of spacecraft smoke detector performance in the low-gravity environment. Fire Safety Journal, 98, 74-81.",
+    "identifier": "DOI: 10.1016/j.firesaf.2018.04.004",
+    "relevance": "Analyzes ISS SAME / SAME-R microgravity smoke agglomeration and photoelectric vs. ionization detector response."
+   }
+  ],
+  "evidence_boundary": "Direct PSI Data Reduction",
+  "psi_investigations": [
+   "SAME & SAME-R [MSG]"
+  ]
+ }
+}

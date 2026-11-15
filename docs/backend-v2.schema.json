@@ -1,0 +1,1204 @@
+{
+  "$defs": {
+    "CalculationBlock": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "calculation",
+          "title": "Type",
+          "type": "string"
+        },
+        "model_id": {
+          "title": "Model Id",
+          "type": "string"
+        },
+        "evidence_type": {
+          "enum": [
+            "data_reduction",
+            "model_estimate"
+          ],
+          "title": "Evidence Type",
+          "type": "string"
+        },
+        "illustrative": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Illustrative"
+        },
+        "source_file_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source File Ids",
+          "type": "array"
+        },
+        "data": {
+          "additionalProperties": true,
+          "title": "Data",
+          "type": "object"
+        }
+      },
+      "required": [
+        "type",
+        "model_id",
+        "evidence_type",
+        "illustrative",
+        "source_file_ids",
+        "data"
+      ],
+      "title": "CalculationBlock",
+      "type": "object"
+    },
+    "ChartAxis": {
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "values": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Values",
+          "type": "array"
+        }
+      },
+      "required": [
+        "label",
+        "unit",
+        "values"
+      ],
+      "title": "ChartAxis",
+      "type": "object"
+    },
+    "ChartBlock": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "chart",
+          "title": "Type",
+          "type": "string"
+        },
+        "chart_type": {
+          "enum": [
+            "line",
+            "scatter"
+          ],
+          "title": "Chart Type",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "x": {
+          "$ref": "#/$defs/ChartAxis"
+        },
+        "series": {
+          "items": {
+            "$ref": "#/$defs/ChartAxis"
+          },
+          "title": "Series",
+          "type": "array"
+        },
+        "evidence_type": {
+          "enum": [
+            "measured",
+            "data_reduction",
+            "model_estimate"
+          ],
+          "title": "Evidence Type",
+          "type": "string"
+        },
+        "illustrative": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Illustrative"
+        },
+        "source_file_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source File Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "type",
+        "chart_type",
+        "title",
+        "x",
+        "series",
+        "evidence_type",
+        "source_file_ids"
+      ],
+      "title": "ChartBlock",
+      "type": "object"
+    },
+    "ColumnBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "column": {
+          "title": "Column",
+          "type": "string"
+        },
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "column",
+        "field",
+        "unit"
+      ],
+      "title": "ColumnBinding",
+      "type": "object"
+    },
+    "DatasetBinding": {
+      "additionalProperties": false,
+      "description": "Copy measured CSV values into an existing JSON input slot, without conversion.",
+      "properties": {
+        "target": {
+          "pattern": "^/",
+          "title": "Target",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "scalar",
+            "series",
+            "records"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "columns": {
+          "items": {
+            "$ref": "#/$defs/ColumnBinding"
+          },
+          "minItems": 1,
+          "title": "Columns",
+          "type": "array"
+        },
+        "row": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Row"
+        }
+      },
+      "required": [
+        "target",
+        "mode",
+        "columns",
+        "row"
+      ],
+      "title": "DatasetBinding",
+      "type": "object"
+    },
+    "EvidenceItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "file_id": {
+          "title": "File Id",
+          "type": "string"
+        },
+        "investigation_id": {
+          "title": "Investigation Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "locator": {
+          "title": "Locator",
+          "type": "string"
+        },
+        "source_url": {
+          "title": "Source Url",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "review_status": {
+          "title": "Review Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "file_id",
+        "investigation_id",
+        "title",
+        "text",
+        "locator",
+        "source_url",
+        "sha256",
+        "review_status"
+      ],
+      "title": "EvidenceItem",
+      "type": "object"
+    },
+    "ExecutionLimits": {
+      "additionalProperties": false,
+      "properties": {
+        "max_download_bytes": {
+          "default": 100000000,
+          "exclusiveMinimum": 0,
+          "title": "Max Download Bytes",
+          "type": "integer"
+        },
+        "max_runtime_seconds": {
+          "default": 60,
+          "exclusiveMinimum": 0,
+          "title": "Max Runtime Seconds",
+          "type": "integer"
+        }
+      },
+      "title": "ExecutionLimits",
+      "type": "object"
+    },
+    "FileRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "file_id": {
+          "minLength": 1,
+          "title": "File Id",
+          "type": "string"
+        },
+        "investigation_id": {
+          "minLength": 1,
+          "title": "Investigation Id",
+          "type": "string"
+        },
+        "run_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Run Ids",
+          "type": "array"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "measurement",
+            "documentation",
+            "video",
+            "image",
+            "other"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "media_type": {
+          "title": "Media Type",
+          "type": "string"
+        },
+        "size_bytes": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Size Bytes"
+        },
+        "retrieval_url": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Retrieval Url"
+        },
+        "source_page_url": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Page Url"
+        },
+        "variables": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Variable"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variables"
+        },
+        "encoding": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Encoding"
+        },
+        "data_notes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Data Notes",
+          "type": "array"
+        },
+        "conditions": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": "Conditions",
+          "type": "object"
+        },
+        "related_file_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Related File Ids",
+          "type": "array"
+        },
+        "match_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Match Reason"
+        }
+      },
+      "required": [
+        "file_id",
+        "investigation_id",
+        "title",
+        "role",
+        "media_type"
+      ],
+      "title": "FileRecord",
+      "type": "object"
+    },
+    "FrontendResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "query_id": {
+          "title": "Query Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "completed",
+            "needs_input",
+            "no_match",
+            "error"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "requests": {
+          "items": {
+            "$ref": "#/$defs/ServiceRequest"
+          },
+          "title": "Requests",
+          "type": "array"
+        },
+        "blocks": {
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/CalculationBlock"
+              },
+              {
+                "$ref": "#/$defs/ChartBlock"
+              },
+              {
+                "$ref": "#/$defs/MediaBlock"
+              },
+              {
+                "$ref": "#/$defs/InspectionBlock"
+              }
+            ]
+          },
+          "title": "Blocks",
+          "type": "array"
+        },
+        "sources": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Sources",
+          "type": "array"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        },
+        "errors": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Errors",
+          "type": "array"
+        },
+        "generated_by": {
+          "default": "SI-assisted planner; deterministic Python execution",
+          "title": "Generated By",
+          "type": "string"
+        }
+      },
+      "required": [
+        "query_id",
+        "status",
+        "message"
+      ],
+      "title": "FrontendResponse",
+      "type": "object"
+    },
+    "InspectionBlock": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "inspection",
+          "title": "Type",
+          "type": "string"
+        },
+        "file_id": {
+          "title": "File Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "table",
+            "json",
+            "unsupported"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "columns": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Columns",
+          "type": "array"
+        },
+        "row_count": {
+          "title": "Row Count",
+          "type": "integer"
+        },
+        "preview": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "items": {},
+              "type": "array"
+            }
+          ],
+          "title": "Preview"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "media_type": {
+          "title": "Media Type",
+          "type": "string"
+        },
+        "note": {
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "file_id",
+        "kind"
+      ],
+      "title": "InspectionBlock",
+      "type": "object"
+    },
+    "MediaBlock": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": [
+            "video",
+            "document",
+            "image"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "file_id": {
+          "title": "File Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "media_type": {
+          "title": "Media Type",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "source_page_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Source Page Url"
+        }
+      },
+      "required": [
+        "type",
+        "file_id",
+        "title",
+        "media_type",
+        "url",
+        "source_page_url"
+      ],
+      "title": "MediaBlock",
+      "type": "object"
+    },
+    "Plan": {
+      "additionalProperties": false,
+      "description": "All fields required so this is also an API Structured Outputs schema.",
+      "properties": {
+        "action": {
+          "enum": [
+            "inspect_files",
+            "calculate",
+            "retrieve_assets",
+            "no_match"
+          ],
+          "title": "Action",
+          "type": "string"
+        },
+        "selected_file_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Selected File Ids",
+          "type": "array"
+        },
+        "requested_asset_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Requested Asset Ids",
+          "type": "array"
+        },
+        "operation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PlotOperation"
+            },
+            {
+              "$ref": "#/$defs/ThermoOperation"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Operation"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "action",
+        "selected_file_ids",
+        "requested_asset_ids",
+        "operation",
+        "explanation",
+        "warnings"
+      ],
+      "title": "Plan",
+      "type": "object"
+    },
+    "PlotOperation": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "const": "plot_relationship",
+          "title": "Name",
+          "type": "string"
+        },
+        "file_id": {
+          "title": "File Id",
+          "type": "string"
+        },
+        "parameters": {
+          "$ref": "#/$defs/PlotParameters"
+        }
+      },
+      "required": [
+        "name",
+        "file_id",
+        "parameters"
+      ],
+      "title": "PlotOperation",
+      "type": "object"
+    },
+    "PlotParameters": {
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "title": "X",
+          "type": "string"
+        },
+        "y": {
+          "title": "Y",
+          "type": "string"
+        }
+      },
+      "required": [
+        "x",
+        "y"
+      ],
+      "title": "PlotParameters",
+      "type": "object"
+    },
+    "RequestSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "2.0",
+          "default": "2.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "original_prompt": {
+          "maxLength": 12000,
+          "minLength": 1,
+          "title": "Original Prompt",
+          "type": "string"
+        },
+        "requirements": {
+          "items": {
+            "$ref": "#/$defs/Requirement"
+          },
+          "title": "Requirements",
+          "type": "array"
+        },
+        "investigations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Investigations",
+          "type": "array"
+        },
+        "excluded_investigations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Excluded Investigations",
+          "type": "array"
+        },
+        "clarifications": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Clarifications",
+          "type": "array"
+        },
+        "context": {
+          "additionalProperties": true,
+          "title": "Context",
+          "type": "object"
+        },
+        "semantic_plan": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Semantic Plan"
+        },
+        "explicit_conditions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Explicit Conditions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "original_prompt",
+        "requirements"
+      ],
+      "title": "RequestSpec",
+      "type": "object"
+    },
+    "Requirement": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "calculation",
+            "chart",
+            "inspection",
+            "document",
+            "video",
+            "image",
+            "explanation",
+            "discovery"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "source_text": {
+          "title": "Source Text",
+          "type": "string"
+        },
+        "model_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model Id"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "source_text"
+      ],
+      "title": "Requirement",
+      "type": "object"
+    },
+    "RetrievalBundle": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "2.0",
+          "default": "2.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "query_id": {
+          "title": "Query Id",
+          "type": "string"
+        },
+        "graph_id": {
+          "title": "Graph Id",
+          "type": "string"
+        },
+        "files": {
+          "items": {
+            "$ref": "#/$defs/FileRecord"
+          },
+          "title": "Files",
+          "type": "array"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/EvidenceItem"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "coverage": {
+          "additionalProperties": true,
+          "title": "Coverage",
+          "type": "object"
+        },
+        "diagnostics": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Diagnostics",
+          "type": "array"
+        },
+        "trusted_source_hashes": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Trusted Source Hashes",
+          "type": "object"
+        }
+      },
+      "required": [
+        "query_id",
+        "graph_id",
+        "files"
+      ],
+      "title": "RetrievalBundle",
+      "type": "object"
+    },
+    "ServiceRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "query_id": {
+          "title": "Query Id",
+          "type": "string"
+        },
+        "plan": {
+          "$ref": "#/$defs/Plan"
+        },
+        "limits": {
+          "$ref": "#/$defs/ExecutionLimits"
+        },
+        "generated_by": {
+          "const": "SI-assisted request planner",
+          "default": "SI-assisted request planner",
+          "title": "Generated By",
+          "type": "string"
+        }
+      },
+      "required": [
+        "query_id",
+        "plan"
+      ],
+      "title": "ServiceRequest",
+      "type": "object"
+    },
+    "ThermoOperation": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "const": "run_thermo_model",
+          "title": "Name",
+          "type": "string"
+        },
+        "file_id": {
+          "title": "File Id",
+          "type": "string"
+        },
+        "parameters": {
+          "$ref": "#/$defs/ThermoParameters"
+        }
+      },
+      "required": [
+        "name",
+        "file_id",
+        "parameters"
+      ],
+      "title": "ThermoOperation",
+      "type": "object"
+    },
+    "ThermoParameters": {
+      "additionalProperties": false,
+      "properties": {
+        "model_id": {
+          "enum": [
+            "THM-01",
+            "THM-02",
+            "THM-03",
+            "THM-04",
+            "THM-05",
+            "THM-06",
+            "THM-07",
+            "THM-08",
+            "THM-09",
+            "THM-10",
+            "THM-11",
+            "THM-12",
+            "THM-13",
+            "THM-14",
+            "THM-15",
+            "THM-16",
+            "THM-17",
+            "THM-18",
+            "THM-19",
+            "THM-20"
+          ],
+          "title": "Model Id",
+          "type": "string"
+        },
+        "request_json": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Request Json"
+        },
+        "template_file_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Template File Id"
+        },
+        "bindings": {
+          "items": {
+            "$ref": "#/$defs/DatasetBinding"
+          },
+          "title": "Bindings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "model_id",
+        "request_json",
+        "template_file_id",
+        "bindings"
+      ],
+      "title": "ThermoParameters",
+      "type": "object"
+    },
+    "Variable": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "numeric": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Numeric"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "Variable",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "2.0",
+      "default": "2.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "trace_id": {
+      "title": "Trace Id",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "partial",
+        "needs_input",
+        "no_evidence",
+        "unsupported",
+        "error"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "message": {
+      "title": "Message",
+      "type": "string"
+    },
+    "request": {
+      "$ref": "#/$defs/RequestSpec"
+    },
+    "retrieval": {
+      "$ref": "#/$defs/RetrievalBundle"
+    },
+    "result": {
+      "$ref": "#/$defs/FrontendResponse"
+    },
+    "fulfilment": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Fulfilment",
+      "type": "array"
+    },
+    "claims": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Claims",
+      "type": "array"
+    },
+    "timings": {
+      "additionalProperties": true,
+      "title": "Timings",
+      "type": "object"
+    }
+  },
+  "required": [
+    "trace_id",
+    "status",
+    "message",
+    "request",
+    "retrieval",
+    "result",
+    "fulfilment"
+  ],
+  "title": "AnswerResult",
+  "type": "object"
+}

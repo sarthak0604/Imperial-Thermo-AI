@@ -1,7 +1,7 @@
 """Synthetic vector retrieval and contract tests. SI: OpenAI Codex."""
 import copy
 import unittest
-from imperial_thermo_ai.vector_search import VectorGraphSearch, fingerprint, MODEL_ID
+from imperial_thermo_ai.vector_search import VectorGraphSearch, documents, fingerprint, MODEL_ID
 from imperial_thermo_ai.file_contract import SearchResults
 
 
@@ -26,6 +26,19 @@ def fixture():
 
 
 class VectorTests(unittest.TestCase):
+    def test_large_table_context_is_bounded_and_deduplicated(self):
+        graph, _ = fixture()
+        for i in range(30):
+            key = f'exp:row:{i}'
+            graph['nodes'].append({'id': key, 'type': 'Experiment', 'properties': {'summary': 'Source row ' * 300}})
+            graph['edges'].extend([
+                dict(id=f'contains:{i}', source='inv:PSI-test', target=key, type='CONTAINS', properties={}),
+                dict(id=f'resource:{i}', source=key, target='file:0', type='HAS_RESOURCE', properties={}),
+            ])
+        text = documents(graph)['file:0']
+        self.assertLessEqual(len(text), 24000)
+        self.assertEqual(text.count('"title": "Synthetic"'), 1)
+
     def test_both_modes_emit_all_media_and_exact_contract(self):
         service = VectorGraphSearch(*fixture())
         for search in (service.local_search, service.global_search):
@@ -50,6 +63,18 @@ class VectorTests(unittest.TestCase):
         service = VectorGraphSearch(*fixture())
         self.assertEqual(service.local_search([1, 0], query_id='q', seed_k=1, hops=0)['files'], [])
         self.assertEqual(len(service.global_search([1, 0], query_id='q')['files']), 4)
+
+    def test_compact_index_preserves_retrieval(self):
+        import tempfile
+        from pathlib import Path
+        from imperial_thermo_ai.vector_search import save_index, load_index
+        graph, index = fixture()
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'index.npz'
+            save_index(index, path)
+            service = VectorGraphSearch(graph, load_index(path))
+            result = service.global_search([1, 0], query_id='q')
+        self.assertEqual(len(result['files']), 4)
 
     def test_stale_index_rejected(self):
         graph, index = fixture()

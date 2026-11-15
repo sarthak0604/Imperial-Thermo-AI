@@ -31,10 +31,7 @@ def model_droplet_d2_vaporization_combustion(scenario, profile):
     diameter = number(scenario["d0_mm"], "initial diameter", positive=True)
     oxygen = number(scenario["x_o2"], "oxygen mole fraction", 0, 1)
     pressure = number(scenario["pressure_kpa"], "ambient pressure", positive=True)
-    method = profile["method"]
-    temperature = scenario.get("t_amb_k")
-    if temperature is not None or method != "measured_rate" or "t_amb_k" in profile["validity"]:
-        temperature = number(temperature, "ambient temperature", positive=True)
+    temperature = number(scenario["t_amb_k"], "ambient temperature", positive=True)
     process = scenario["process"]
     if process not in ("combustion", "evaporation"):
         raise ValueError("Choose combustion or evaporation.")
@@ -42,14 +39,15 @@ def model_droplet_d2_vaporization_combustion(scenario, profile):
         raise ValueError("Combustion requires oxygen.")
     if (profile["fuel_type"], profile["process"]) != (scenario["fuel_type"], process):
         raise ValueError("Fuel and process must match the supplied profile.")
-    conditions = {"d0_mm": diameter, "x_o2": oxygen, "pressure_kpa": pressure}
-    if temperature is not None:
-        conditions["t_amb_k"] = temperature
-    for key, value in conditions.items():
+    for key, value in (
+        ("d0_mm", diameter), ("x_o2", oxygen),
+        ("pressure_kpa", pressure), ("t_amb_k", temperature),
+    ):
         lower, upper = (number(v, f"{key} range") for v in profile["validity"][key])
         if not lower <= value <= upper:
             raise ValueError(f"{key} falls outside the profile range [{lower}, {upper}].")
 
+    method = profile["method"]
     density = profile.get("liquid_density_kg_m3")
     if density is not None:
         density = number(density, "liquid density", positive=True)
@@ -101,14 +99,8 @@ def model_droplet_d2_vaporization_combustion(scenario, profile):
     series = {"time_s": times, "diameter_squared_mm2": squares, "diameter_mm": diameters}
     if density is not None:
         series["droplet_mass_kg"] = [density * (pi / 6) * (d * 1e-3) ** 3 for d in diameters]
-    assumptions = ["The droplet is isolated and treated as spherical. Its diameter squared decreases at a constant rate over the selected phase."]
-    if endpoint is None and duration is not None:
-        assumptions.append("With no endpoint diameter supplied, the model uses 0 mm for its mathematical endpoint. Physical flame extinction can occur sooner.")
-    if "plot_points" not in scenario:
-        assumptions.append(f"The plotted curve defaults to {count} points.")
     result = {
         "status": "model_estimate",
-        "assumptions": assumptions,
         "process": process,
         "method": method,
         "regression_rate_mm2_s": rate,

@@ -1,26 +1,22 @@
 #!/usr/bin/env python3
-"""STAND-IN AI BACKEND for local testing — replaced by the backend team's knowledge-graph service later.
+"""Serve Omri's interface using the Hayk2 backend.
 
-Serves the website at http://localhost:8000 and answers POST /api/ask in the agreed answer contract.
-It does a simple keyword search over standin/context.json (NASA PSI data + our model catalogue),
-sends the best matches to an OpenAI-style chat API, then checks the reply before the site sees it.
-
-Keys are read from environment variables or from frontend/.env.local (git-ignored), never from website code:
-  GROQ_API_KEY   Groq, console.groq.com (free plan, rate-limited)
-  XAI_API_KEY    xAI Grok, console.x.ai (paid per use)
-Optional: AI_PROVIDER=thermo|groq|xai|claude, AI_MODEL=<model id>, PORT=8000
-
-Run from the frontend folder:   python3 standin/server.py
-The stand-in modes use only the standard library. Thermo mode uses the project environment.
+HTTP requests use the shared Thermo service. Legacy Omri formatting helpers are
+retained for their tests; they do not select the live HTTP provider.
 """
 from __future__ import annotations
-import chart_facts
+import secrets
+import urllib.parse
+from http.cookies import SimpleCookie
+from threading import BoundedSemaphore
 import thermo
+import chart_facts
 import json, os, re, shutil, subprocess, sys, tempfile, time, urllib.error, urllib.request
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent          # frontend/
+INFERENCE_SLOT = BoundedSemaphore(1)
 CTX = json.loads((Path(__file__).parent / "context.json").read_text(encoding="utf-8"))
 
 PROVIDERS = {  # name: (key env var, chat-completions URL, default model)  — same set-up as Bot Tracker's old ask.py
@@ -74,6 +70,7 @@ def load_env():
             if "=" in line and not line.strip().startswith("#"):
                 k, v = line.split("=", 1)
                 env.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+    env["AI_PROVIDER"] = "thermo"
     return env
 
 
@@ -135,7 +132,23 @@ def slim(inv):
     return out
 
 
-def build_messages(question, persona, scenario, history):
+FIG_ID = re.compile(r"^[A-Za-z0-9_-]{1,48}$")
+
+
+def clean_figures(figs):
+    """Figures the page generated for this question (js/pipeline.js): id, title, model, what it shows, NASA ids.
+    Only their words reach the AI; anything malformed is dropped."""
+    out = []
+    for f in figs if isinstance(figs, list) else []:
+        if not isinstance(f, dict) or not FIG_ID.match(str(f.get("id", ""))):
+            continue
+        out.append({"id": f["id"], "title": str(f.get("title", ""))[:90], "model": str(f.get("model", ""))[:12],
+                    "shows": str(f.get("shows", ""))[:400],
+                    "built_on": [i for i in (f.get("built_on") or []) if str(i).upper() in INV_IDS][:4]})
+    return out[:6]
+
+
+def build_messages(question, persona, scenario, history, figures=None):
     hits = search(question, k=int(os.environ.get("AI_CONTEXT_K", 4)))
     index = [f'{i["id"]} {i["acronym"] or ""}: {i["title"][:38]}' for i in CTX["investigations"]]
     models = [f'{m["id"]} [{m["evidence"]}] {m["description"][:55]} (PSI: {", ".join(m["linkedInvestigations"])})' for m in CTX["models"]]
@@ -146,13 +159,21 @@ def build_messages(question, persona, scenario, history):
         "hardware": [{"name": h["name"], "investigations": h["investigations"]} for h in CTX["hardware"]],
         "thermo_models_catalogue": models,
     }
-    charts = chart_facts.facts(compact=not rich(), linked={m["id"]: m["linkedInvestigations"] for m in CTX["models"]})
+    figures = clean_figures(figures)
+    fig_note = ("\nThese figures were generated for THIS question: the thermo models were re-run on its conditions (environment, oxygen,\n"
+                "pressure, gravity, material) with synthetic demo data in place of the NASA database. Their \"Shows:\" numbers are exactly\n"
+                "what the reader sees; quote them, attach each figure to the point it supports, and say once in limitations that the\n"
+                "figures use synthetic demo data.") if figures else ""
+    if figures:   # the page ran the models on this question: these figures are what the reader will see
+        charts = {f["id"]: f'{f["title"]} ({f["model"]}, re-run for this question on DEMO data). Shows: {f["shows"]} Built on: {", ".join(f["built_on"]) or "-"}.' for f in figures}
+    else:
+        charts = chart_facts.facts(compact=not rich(), linked={m["id"]: m["linkedInvestigations"] for m in CTX["models"]})
     system = f"""You answer questions on a NASA Space Apps 2026 website ({CTX["challenge"]["name"]}) about fire safety in crewed spacecraft and habitats.
 Your sources: NASA PSI microgravity combustion investigations (in <data>) and the thermo team's model charts (CHARTS below).
 Reader: {PERSONA.get(persona, PERSONA["general"])}
 
 WHAT A GOOD ANSWER LOOKS LIKE
-The page shows your summary, then your points one by one, each next to the charts you attach and a card for the NASA investigation it cites.
+The page shows your summary and key facts first, then your points as boxes in order, each with the charts you attach, then the NASA investigations you cite and a numbered reference list.
 It must read like a clear explanation from an expert who knows this data, not a list of caveats.
 1. summary: answer the question directly in 1-2 sentences: the conclusion first (yes/no, which, how much, what happens), then the main reason. If the honest answer is uncertain, still give the best-supported answer and say what it rests on.
 2. points: 3-5 steps that build to that conclusion, in reading order:
@@ -160,6 +181,7 @@ It must read like a clear explanation from an expert who knows this data, not a 
    - go from what is known/measured, to the mechanism (why), to the consequence for the question;
    - quote numbers from a chart's "Shows:" line when they make the point (they are exactly what the reader sees on the chart); never quote numbers from charts marked ILLUSTRATIVE; never state a number, ratio or comparison ("half", "twice") that is not written in <data>, a "Shows:" line or a "Means:" line;
    - attach 0-2 charts to a point ONLY if that chart directly shows the claim; each chart in one point at most; no chart beats a loosely related one;
+   - readers see the first points and charts first: put the chart that most directly answers the question on the earliest point it supports;
    - each chart's "Means:" line is the correct reading of it: never contradict it; if it disagrees with what you expected, the chart wins and your claim changes;
    - when a point rests on a chart, also cite in psi_ids the NASA investigations in its "Built on:" line that are relevant to the point;
    - when a point explains WHY something happens, you may name the chart's method and one source from its "Method:" line, e.g. "Richardson-number scaling (Sacksteder 1990)"; never cite a paper that is not on a "Method:" line;
@@ -169,7 +191,7 @@ It must read like a clear explanation from an expert who knows this data, not a 
 5. Research support only, not safety certification. Refer to charts by what they show, never by THM number.
 6. Before replying, check each point: is the claim supported by <data> or a chart? is every number written there? does it contradict any chart's "Means:" line, including charts you did not attach? Fix it if so.
 
-CHARTS (type: what it shows)
+CHARTS (type: what it shows){fig_note}
 {chr(10).join(f"- {t}: {d}" for t, d in charts.items())}
 
 OTHER FIELDS
@@ -204,7 +226,7 @@ def call_claude(provider, messages):
         cmd = [provider["bin"], "-p", "--model", provider["model"], "--output-format", "json", "--system-prompt-file", str(sp),
                "--tools", "", "--strict-mcp-config", "--no-session-persistence"]
         try:
-            r = subprocess.run(cmd, input=prompt, capture_output=True, encoding="utf-8", cwd=tmp, env=env, timeout=180)
+            r = subprocess.run(cmd, input=prompt, capture_output=True, text=True, cwd=tmp, env=env, timeout=180)
         except subprocess.TimeoutExpired:
             raise RuntimeError("claude: no answer within 3 minutes")
     try:
@@ -260,8 +282,9 @@ def fix_chart(t):
     return same[0] if len(same) == 1 else t
 
 
-def parse_and_check(raw):
-    """Never trust model output: keep only known widget types, known PSI ids and known tags."""
+def parse_and_check(raw, figures=None):
+    """Never trust model output: keep only known widget types (or this question's figures), known PSI ids and known tags."""
+    known = set(WIDGETS) | {f["id"] for f in clean_figures(figures)}
     m = re.search(r"\{.*\}", raw, re.S)
     obj = json.loads(m.group(0)) if m else {}
     dropped = []
@@ -274,7 +297,7 @@ def parse_and_check(raw):
             dropped.append(f"evidence {pid or '?'}")
     widgets = []
     for w in obj.get("widgets") or []:
-        if isinstance(w, dict) and w.get("type") in WIDGETS:
+        if isinstance(w, dict) and w.get("type") in known:
             p = w.get("params") if isinstance(w.get("params"), dict) else {}
             for key in ("id", "node"):
                 if key in p and str(p[key]).upper() not in INV_IDS:
@@ -314,10 +337,10 @@ def parse_and_check(raw):
                 dropped.append(f"point evidence {i}")
         charts = []
         for t in p.get("charts") if isinstance(p.get("charts"), list) else []:
-            t = fix_chart(t)
-            if t in WIDGETS and t not in used and len(charts) < 2:
+            t = t if t in known else fix_chart(t)
+            if t in known and t not in used and len(charts) < 2:
                 charts.append(t); used.add(t)
-            elif t not in WIDGETS:
+            elif t not in known:
                 dropped.append(f"chart {t}")
         points.append({"text": text, "psi_ids": psi[:3], "charts": charts})
     if points:   # the charts the page shows are the ones attached to points
@@ -338,6 +361,8 @@ class Handler(SimpleHTTPRequestHandler):
 
     def end_headers(self):                                       # always serve the latest files (no stale page after an update)
         self.send_header("Cache-Control", "no-store")
+        if getattr(self, 'session_cookie', None):
+            self.send_header('Set-Cookie', 'thermo_session='+self.session_cookie+'; HttpOnly; SameSite=Strict; Path=/')
         super().end_headers()
 
     def log_message(self, fmt, *args):
@@ -359,16 +384,42 @@ class Handler(SimpleHTTPRequestHandler):
             return None
         return super().send_head()
 
+    def do_DELETE(self):
+        if not self.path.startswith('/api/conversation?'):
+            return self._json(404, {'error':'not found'})
+        origin = self.headers.get('Origin')
+        if origin and urllib.parse.urlsplit(origin).netloc != self.headers.get('Host'):
+            return self._json(403, {'error':'Cross-origin mutation rejected.'})
+        from request_planner.conversation import ConversationStore
+        cookie = SimpleCookie(self.headers.get('Cookie',''))
+        if 'thermo_session' not in cookie:
+            return self._json(403, {'error':'Session required.'})
+        cid = urllib.parse.parse_qs(urllib.parse.urlsplit(self.path).query).get('id',[''])[0]
+        ConversationStore(load_env().get('THERMO_CONVERSATION_DB','/tmp/thermo-conversations.sqlite3')).delete(cookie['thermo_session'].value,cid)
+        return self._json(200, {'deleted':True})
+
     def do_GET(self):
+        if self.path.startswith('/api/conversation?'):
+            from request_planner.conversation import ConversationStore, ConversationError
+            cookie = SimpleCookie(self.headers.get('Cookie',''))
+            if 'thermo_session' not in cookie:
+                return self._json(403, {'error':'Session required.'})
+            cid = urllib.parse.parse_qs(urllib.parse.urlsplit(self.path).query).get('id',[''])[0]
+            if not cid:
+                return self._json(400, {'error':'Conversation ID required.'})
+            try:
+                _,revision,state = ConversationStore(load_env().get('THERMO_CONVERSATION_DB','/tmp/thermo-conversations.sqlite3')).load(cookie['thermo_session'].value,cid)
+                return self._json(200, {'conversation_id':cid,'state_revision':revision,'turns':state['turns'],'clarifications':state['pending']})
+            except ConversationError as exc:
+                return self._json(exc.status, {'error':str(exc)})
         if self.path == "/api/health":
             env = load_env()
             if env.get("AI_PROVIDER") == "thermo":
                 try:
-                    name = thermo.model_id(env)
+                    return self._json(200, thermo.health(env))
                 except ImportError:
                     return self._json(503, {"ok": False, "provider": "thermo",
                                             "error": "Start the server from the project environment."})
-                return self._json(200, {"ok": True, "provider": "thermo", "model": name})
             p = pick_provider(env)
             return self._json(200, {"ok": True, "provider": p and p["name"], "model": p and p["model"]})
         return super().do_GET()
@@ -376,19 +427,48 @@ class Handler(SimpleHTTPRequestHandler):
     def do_POST(self):
         if self.path != "/api/ask":
             return self._json(404, {"error": "not found"})
+        if not INFERENCE_SLOT.acquire(blocking=False):
+            return self._json(503, {"provider": "thermo", "code": "model_busy",
+                                    "error": "The model is processing another request. Try again shortly."})
         try:
-            req = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0)) or 0) or b"{}")
+            return self._handle_post()
+        finally:
+            INFERENCE_SLOT.release()
+
+    def _handle_post(self):
+        if self.path != "/api/ask":
+            return self._json(404, {"error": "not found"})
+        try:
+            length = int(self.headers.get("Content-Length", 0))
+            if not 0 <= length <= 100000:
+                return self._json(413, {"error": "Request body too large"})
+            req = json.loads(self.rfile.read(length) or b"{}")
         except ValueError:
             return self._json(400, {"error": "bad JSON"})
         if not isinstance(req, dict) or not isinstance(req.get("question"), str):
             return self._json(400, {"error": "question must be text"})
-        q = req["question"].strip()[:600]
+        q = req["question"].strip()
+        if len(q) > 12000:
+            return self._json(400, {"provider": "thermo", "error": "Question exceeds 12,000 characters. Split it into smaller questions."})
         if not q:
             return self._json(400, {"error": "empty question"})
         env = load_env()
         if env.get("AI_PROVIDER") == "thermo":
             try:
-                out = thermo.ask(q, env)
+                if req.get('client_request_id'):
+                    from request_planner.conversation import ConversationError
+                    origin = self.headers.get('Origin')
+                    if origin and urllib.parse.urlsplit(origin).netloc != self.headers.get('Host'):
+                        return self._json(403, {'error':'Cross-origin conversation request rejected.'})
+                    cookie = SimpleCookie(self.headers.get('Cookie', ''))
+                    owner = cookie['thermo_session'].value if 'thermo_session' in cookie else secrets.token_urlsafe(32)
+                    self.session_cookie = owner
+                    try:
+                        out = thermo.ask_session(q, env, owner, req)
+                    except ConversationError as exc:
+                        return self._json(exc.status, {'error':str(exc)})
+                else:
+                    out = thermo.ask(q, env, context={k: req[k] for k in ("history", "persona", "scenario") if k in req})
             except ImportError:
                 return self._json(503, {"provider": "thermo", "error": "Start the server from the project environment with the search extra."})
             except thermo.ModelLoadError:
@@ -414,14 +494,9 @@ class Handler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     env = load_env()
     port = int(env.get("PORT", 8000))
-    p = pick_provider(env)
-    print(f"Stand-in AI server: http://localhost:{port}")
-    if env.get("AI_PROVIDER") == "thermo":
-        print("  Thermo workflow · local Qwen planning")
-    elif p:
-        print(f"  AI: {p['name']} / {p['model']}" + (f"  (Claude Code at {p['bin']}, using your Claude plan login)" if p["name"] == "claude" else ""))
-    elif str(env.get("AI_PROVIDER", "")).lower() == "claude":
-        print("  AI: Claude Code not found — install it (https://code.claude.com) or set CLAUDE_BIN=/path/to/claude (site will use mock answers)")
-    else:
-        print("  AI: NO KEY FOUND — add GROQ_API_KEY or XAI_API_KEY to frontend/.env.local (site will use mock answers)")
-    ThreadingHTTPServer(("127.0.0.1", port), Handler).serve_forever()
+    # Build the shared graph once before accepting concurrent health checks and
+    # questions. lru_cache alone allows concurrent cold loads of the 83 MB graph.
+    thermo.health(env)
+    print(f"Thermo website: http://localhost:{port}")
+    print("  Thermo backend · " + env.get("THERMO_PLANNER", "local") + " planning")
+    ThreadingHTTPServer((env.get("HOST", "127.0.0.1"), port), Handler).serve_forever()

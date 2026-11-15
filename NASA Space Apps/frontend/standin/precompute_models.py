@@ -2,7 +2,7 @@
 """Runs the thermo team's models and saves their outputs for the website (data/model_outputs.js).
 
 Usage (from the frontend folder):
-    uv run python "NASA Space Apps/frontend/standin/precompute_models.py" --thermo src/Functions --out "NASA Space Apps/frontend/data/model_outputs.js"
+    python3 standin/precompute_models.py --thermo "../../Documents/Imperial-Thermo-AI" --out data/model_outputs.js
     # if THM-04/05/06/15/17-20 are in a different checkout (e.g. the haykm branch): add  --models "<that folder>"
 
     # THM-01/03/07/08/09 (Liem's branch) sit as loose files in that checkout: add  --liem "<that folder>"  if it differs from --thermo
@@ -69,11 +69,8 @@ def req_ev(folder, n):
     """Request + evidence for a model: the single THM-nn_input.json (new layout) or the older _request/_evidence pair."""
     one = folder / f"THM-{n}_input.json"
     if one.exists():
-        data = json.loads(one.read_text(encoding="utf-8-sig"))
-        return data["request"], data["evidence"]
-    request = json.loads((folder / f"THM-{n}_request.json").read_text(encoding="utf-8-sig"))
-    evidence = json.loads((folder / f"THM-{n}_evidence.json").read_text(encoding="utf-8-sig"))
-    return request, evidence
+        d = json.loads(one.read_text()); return d["request"], d["evidence"]
+    return json.loads((folder / f"THM-{n}_request.json").read_text()), json.loads((folder / f"THM-{n}_evidence.json").read_text())
 
 
 def thm11(thermo):
@@ -249,10 +246,7 @@ def thm20(models):
 
 # ---------- Liem's models: THM-01, 03, 07, 08, 09 (loose files) ----------
 def thm01(liem):
-    path = liem / "THM-01.py"
-    if not path.is_file():
-        path = liem / "calc_adiabatic_flame_temp_equilibrium.py"
-    m = load(path, "thm01")
+    m = load(liem / "calc_adiabatic_flame_temp_equilibrium.py", "thm01")
     atm = [("ISS cabin air", 0.21, 101.325), ("Lunar habitat", 0.30, 70.3), ("Spacesuit", 1.0, 29.6)]
     fuels = [("methane", "Methane"), ("hydrogen", "Hydrogen"), ("propane", "Propane")]
     out = {"atmospheres": [{"name": n, "o2_pct": r(x * 100, 4), "kpa": p} for n, x, p in atm], "fuels": {}}

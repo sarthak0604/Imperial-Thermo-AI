@@ -110,7 +110,7 @@ window.CH = (() => {
       b: (c ? 18 : 22) + (o.xlabel ? (c ? 14 : 18) : 0) + (o.bottom || 0)
     };
     const X0 = m.l, X1 = w - m.r, Y0 = h - m.b, Y1 = m.t;
-    const sx = scale(o.x[0], o.x[1], X0, X1, o.xlog), sy = scale(o.y[0], o.y[1], Y0, Y1);
+    const sx = scale(o.x[0], o.x[1], X0, X1, o.xlog), sy = scale(o.y[0], o.y[1], Y0, Y1, o.ylog);
     const yt = thin(o.yticks || [], sy, fs + 8), xt = thin(o.xticks || [], sx, Math.max(...(o.xticks || [0]).map(v => monoW(xf(v), fs))) + 14);
     let g = `<g class="grid">${yt.filter(v => r1(sy(v)) !== r1(Y0)).map(v => `<line x1="${X0}" x2="${X1}" y1="${r1(sy(v))}" y2="${r1(sy(v))}"/>`).join("")}</g>`;
     g += `<line class="base" x1="${X0}" x2="${X1}" y1="${Y0}" y2="${Y0}"/>`;

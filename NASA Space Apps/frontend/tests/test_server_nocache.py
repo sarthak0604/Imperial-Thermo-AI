@@ -17,7 +17,6 @@ class NoCacheTests(unittest.TestCase):
                     self.assertIn("no-store", r.headers.get("Cache-Control", ""), path)
         finally:
             httpd.shutdown()
-            httpd.server_close()
 
 
 if __name__ == "__main__":

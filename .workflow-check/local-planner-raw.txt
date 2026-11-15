@@ -1,0 +1,18 @@
+{
+  "action": "inspect_files",
+  "selected_file_ids": [],
+  "requested_asset_ids": [
+    "res:PSI-117:8f99f24f48bb7f642d39",
+    "res:PSI-117:9de29bd5ec2033aa5824",
+    "res:PSI-117:db9af4f6cdd35c0d3d1e",
+    "res:PSI-117:3c69bbed73f148eba760",
+    "res:PSI-117:a79899507b0332ece2ea"
+  ],
+  "operation": null,
+  "explanation": "The user request is for datasets about cool flame extinction. While several files are semantically relevant (e.g., titles mentioning extinction characteristics and cool flame burning), none of the files contain verifiable measurement data with known column headers, units, or numeric types. The only measurement file (CSV) has unverified data structure. To ensure accurate data handling, inspection of metadata and structure is required before any analysis or retrieval. No calculation or model operation is applicable without verified data. Therefore, inspection of all relevant files is necessary to confirm content and format.",
+  "warnings": [
+    "No retrieval URLs are available for any of the files; download is not possible at this time.",
+    "Column headers, units, and numeric types are not verified; cannot proceed to calculation or model execution.",
+    "The measurement CSV file has minimal size (745 bytes) and unverified data structure; it may not contain meaningful data."
+  ]
+}

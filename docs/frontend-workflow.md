@@ -74,37 +74,6 @@ envelope and actions remain compatible with earlier examples. A THM operation is
 }
 ```
 
-### Run a FLEX dataset directly
-
-The PSI-69 FLEX experimental CSV (version 1) can supply THM-10 measured-rate
-reconstruction and THM-02 inlet gas composition without a separate JSON evidence
-template. The adapter recognizes the NASA source URL and validates the actual
-table headers and selected row. The planner uses a FLEX test ID (e.g. FLEX-002),
-rather than a row offset. Source units follow the NASA report: pressure converts
-from mmHg to kPa and the CSV column labeled `Burning rate; mm` carries the
-diameter-squared regression rate in mm²/s.
-
-- THM-10: send `request_json` as
-  `{"topic":"droplet_combustion","analysis":"estimate_droplet_regression","scenario":{"run_id":"FLEX-002"}}`.
-  The builder copies fuel, pressure, oxygen, initial diameter, visible extinction
-  diameter and regression rate from that row. It requires an extinction row with
-  the main fields present. Ambient temperature is unreported in the table, so its
-  measured-rate input is null. Reported burn time stays in provenance for comparison,
-  since the initial diameter is taken at igniter-on and the regression fit starts later.
-- THM-02: send `request_json` as `{"run_id":"FLEX-002","temp_k":300}`,
-  optionally with `target_species`. The table provides pressure and the gas
-  mixture. Temperature comes from the request or other applicable evidence.
-  The result is a calculated gas property at that temperature.
-
-Select just the CSV, use `template_file_id: null` and `bindings: []` for these
-two routes. Other models continue to use the sourced JSON or exact-unit CSV
-mapping described below. A file's presence in search results does not establish
-a model calibration.
-
-For raw NASA CSV, JSON and report text to any THM model, see the [20-model input mapping workflow](thermo-input-mapping.md).
-
-### General THM inputs
-
 For JSON datasets, the downloaded object contains a function-compatible payload.
 THM-04–06 and THM-10–20 use `{request, evidence}`. The older adapters use their
 `params`/`inputs` conventions; repository example wrappers with `example_request`
@@ -187,7 +156,8 @@ column names and source units and emit scatter arrays without needing Matplotlib
 Display `message`, `warnings`, model limitations and provenance with the results.
 Keep `illustrative`, `data_reduction` and `model_estimate` labels visible. Render
 file/model text as text rather than HTML. Media URLs reference the original source;
-browser playback/embedding depends on that host's access and CORS rules. For selected PDF sources, the raw-data route can inspect extractable text. Video assets are presented as source links.
+browser playback/embedding depends on that host's access and CORS rules. PDFs and
+videos are not semantically analyzed or summarized by this executor.
 
 `needs_input` means inspection/missing metadata or an incompatible function input
 needs attention. `no_match` means the planner found no supported calculation or
@@ -208,22 +178,8 @@ uv run thermo-execute --prompt "Your question" --model YOUR_MODEL_ID \
 uv run thermo-execute --request service-request.json \
   --search-results actual-search-results.json --output frontend-response.json
 
-# Real FLEX data, saved plan and exported THM-10 input. No LLM call.
-uv run thermo-search --graph examples/psi_graph.json --query FLEX \
-  --investigation PSI-69 --role measurement --output flex-search.json
-uv run thermo-execute --request examples/flex_002_request.json --search-results flex-search.json \
-  --model-input flex-model-input.json --output flex-response.json
-
 uv run --extra plotting python -m unittest discover -s tests -v
 ```
-
-Start the saved plan from [flex_002_request.json](../examples/flex_002_request.json).
-For other backend search results or queries, copy that result's `query_id` into
-the plan and use the corresponding `file_id`. You can also execute from
-Python with `execute_request(request, results, on_model_input=save)`. The callback
-receives `(model_id, payload)` after assembly and before the worker runs. The
-CLI's `--model-input` saves that exact payload in a new file. The ordinary
-`--output` file contains the frontend response.
 
 The offline demo uses a mock HTTP transport for the explicitly synthetic URLs;
 it still writes temporary downloads and runs the real THM-04 worker. It does not

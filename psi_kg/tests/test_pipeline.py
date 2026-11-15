@@ -156,13 +156,7 @@ def test_real_snapshot_rejects_dangling_and_wrong_direction_edges():
     graph = read_json(out / "knowledge_graph.json")
     docs = read_json(out / "documents.json")
     resources = read_json(out / "resources_manifest.json")["resources"]
-    # The committed snapshot carries cache URIs from the machine that built it.
-    # This test verifies the graph structure using the bundled evidence text.
-    for node in graph["nodes"]:
-        if node["type"] == "Resource" and (node["properties"].get("storage_uri") or "").startswith("file:"):
-            node["properties"]["storage_uri"] = None
-    report = validate(graph, docs, resources)
-    assert report["passed"], report["errors"]
+    assert validate(graph, docs, resources)["passed"]
     bad = copy.deepcopy(graph)
     bad["edges"][0]["target"] = "missing"
     assert any(

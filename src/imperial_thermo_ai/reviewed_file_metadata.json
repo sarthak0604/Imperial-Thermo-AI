@@ -1,0 +1,189 @@
+{
+  "res:PSI-25:a8a37c3002bb8108a044": {
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=67a3a17b09ed061032c19775&version=1&studyVersion=4&redirect=true",
+    "size_bytes": 16590,
+    "sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+    "encoding": "utf-8-sig",
+    "column_metadata": [
+      {
+        "name": "PI",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Test #",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Date",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "GMT",
+        "unit": null,
+        "numeric": true
+      },
+      {
+        "name": "Sample #",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Fuel Sample Material",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Flow restrictor",
+        "unit": null,
+        "numeric": true
+      },
+      {
+        "name": "Fan display",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Air display",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Radiometer gain   (1000   250   50   10)",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Total Frames Shot",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Calibrated  initial O2 % by vol ",
+        "unit": null,
+        "numeric": true
+      },
+      {
+        "name": "Calibrated final O2 % by vol",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Initial CO2 % by vol",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Final CO2 % by vol",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Initial CO (ppm)",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Final CO (ppm)",
+        "unit": null,
+        "numeric": false
+      }
+    ],
+    "data_notes": [
+      "Column numeric suitability profiled across all source rows; units supplied only for explicitly mapped headers.",
+      "Decoded as utf-8-sig; this is an inspection choice, not a NASA-declared encoding.",
+      "Conditions vary between table rows; do not infer a shared run."
+    ]
+  },
+  "res:PSI-69:362640cdca82cde2c61b": {
+    "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-69/download?file=6792be99b7b6ff8e65037e3a&version=1&studyVersion=5&redirect=true",
+    "size_bytes": 24776,
+    "sha256": "37c88ce8ae9391b7544ff630a45ce87543d04d317cdbfbed104fe7d5c27e1b96",
+    "encoding": "cp1252",
+    "column_metadata": [
+      {
+        "name": "FLEX Test #",
+        "unit": null,
+        "numeric": true
+      },
+      {
+        "name": "FLEX Identifier",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Test Date",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Test GMT",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Fuel",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Ambient pressure; mmHg",
+        "unit": "mmHg",
+        "numeric": true
+      },
+      {
+        "name": "O initial ambient composition; mole fraction",
+        "unit": "1",
+        "numeric": true
+      },
+      {
+        "name": "N initial ambient composition; mole fraction",
+        "unit": null,
+        "numeric": true
+      },
+      {
+        "name": "CO initial ambient composition; mole fraction",
+        "unit": null,
+        "numeric": true
+      },
+      {
+        "name": "He initial ambient composition; mole fraction",
+        "unit": null,
+        "numeric": true
+      },
+      {
+        "name": "Droplet initial diameter; mm",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Visible flame extinction diameter; mm",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Burning rate; mm",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Burn time; s",
+        "unit": null,
+        "numeric": false
+      },
+      {
+        "name": "Test end",
+        "unit": null,
+        "numeric": false
+      }
+    ],
+    "data_notes": [
+      "Column numeric suitability profiled across all source rows; units supplied only for explicitly mapped headers.",
+      "Decoded as cp1252; this is an inspection choice, not a NASA-declared encoding.",
+      "Conditions vary between table rows; do not infer a shared run.",
+      "The source header Burning rate; mm has an unresolved unit; it is not treated as mm\u00b2/s."
+    ]
+  }
+}

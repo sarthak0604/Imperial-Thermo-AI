@@ -148,7 +148,7 @@ def search_graph(
                        if item.source == investigation.id and item.relation == "has_file"
                        and item.target != file.id]
         record = file.record.model_copy(update={
-            "source_page_url": file.record.source_page_url or investigation.source_page_url,
+            "source_page_url": investigation.source_page_url,
             "related_file_ids": related_ids,
             "match_reason": (
                 f"Matched terms: {', '.join(sorted(matched))}. "

@@ -14,7 +14,7 @@ from openai import OpenAI
 from request_planner.execution import ExecutionError, ExecutionSession, public_url
 from request_planner.function_registry import function_root, model_spec, operation_catalog
 from request_planner.models import ExecutionLimits, Plan, SearchResults, ServiceRequest
-from request_planner.planner import OpenAIPlanner, PlanningError
+from request_planner.planner import LocalPlanner, OpenAIPlanner, PlanningError
 from request_planner.service import execute_request, run_workflow
 
 
@@ -63,6 +63,24 @@ class ExecutionTests(unittest.TestCase):
         self.assertEqual(response.sources[0]["size_bytes"], len(payload))
         self.assertEqual(len(response.sources[0]["sha256"]), 64)
         self.assertNotIn("/tmp/", response.model_dump_json())
+
+    def test_named_thm05_plot_runs_folder_function_and_returns_chart(self):
+        payload = (Path(__file__).resolve().parents[1] /
+                   "src/Functions/THM-05/THM-05_input.json").read_bytes()
+        plan = thermo_plan("THM-05")
+        response = run_workflow(
+            "Plot THM-05 flame spread against acrylic sheet thickness",
+            SearchResults(query_id="test", files=[file_record()]),
+            LocalPlanner(lambda _: plan.model_dump_json()),
+            client=self.client({"/dataset": payload}),
+            url_validator=lambda url: None,
+        )
+        self.assertEqual(response.status, "completed", response.message)
+        self.assertEqual([block["type"] for block in response.blocks], ["calculation", "chart"])
+        chart = response.blocks[1]
+        self.assertEqual(chart["x"]["label"], "sample_thickness_m")
+        self.assertEqual(chart["series"][0]["unit"], "mm/s")
+        self.assertEqual(chart["source_file_ids"], ["dataset"])
 
     def test_inspect_then_llm_request_then_csv_function_and_supporting_media(self):
         csv = b"clock,inlet,outlet\n0,0.002,0.001\n1,0.002,0.001\n2,0.002,0.001\n"
@@ -117,12 +135,37 @@ class ExecutionTests(unittest.TestCase):
         self.assertTrue(any(b["type"] == "document" for b in response.blocks))
         self.assertEqual(self.fetched, ["/dataset", "/template"])
 
+    def test_repeated_inspection_returns_missing_inputs_without_a_third_plan(self):
+        inspect = Plan(action="inspect_files", selected_file_ids=["dataset"], requested_asset_ids=[],
+                       operation=None, explanation="Mixture temperature is missing.", warnings=[])
+
+        class RepeatedInspection:
+            calls = 0
+
+            def propose(self, prompt, results, limits):
+                self.calls += 1
+                return inspect
+
+            def with_context(self, inspection):
+                return self
+
+        planner = RepeatedInspection()
+        response = run_workflow("Calculate a Lewis number.",
+                                {"query_id": "test", "files": [file_record(media_type="text/csv")]},
+                                planner, client=self.client({"/dataset": b"oxygen\n0.21\n"}),
+                                url_validator=lambda url: None)
+        self.assertEqual(response.status, "needs_input")
+        self.assertIn("Mixture temperature is missing", response.message)
+        self.assertEqual(planner.calls, 2)
+        self.assertEqual(self.fetched, ["/dataset"])
+        self.assertEqual([block["type"] for block in response.blocks], ["inspection"])
+
     def test_csv_can_supply_legacy_params_without_calibration_template(self):
         plan = thermo_plan(request_json=json.dumps({"fuel_formula": "CH4", "y_fuel_stream": 1, "y_ox_stream": 0}),
                            bindings=[{"target": "/params/y_ox_stream", "mode": "scalar", "row": 0,
-                                      "columns": [{"column": "oxygen", "field": "y_ox_stream", "unit": "1"}]}])
-        record = file_record(media_type="text/csv", variables=[{"name": "oxygen", "numeric": True, "unit": "1"}])
-        response = self.run_saved(plan, [record], {"/dataset": b"oxygen\n0.232\n"})
+                                      "columns": [{"column": "oxygen mass fraction", "field": "y_ox_stream", "unit": "1"}]}])
+        record = file_record(media_type="text/csv", variables=[{"name": "oxygen mass fraction", "numeric": True, "unit": "1"}])
+        response = self.run_saved(plan, [record], {"/dataset": b"oxygen mass fraction\n0.232\n"})
         self.assertEqual(response.status, "completed", response.model_dump())
 
     def test_unknown_unit_does_not_become_dimensionless(self):
@@ -135,7 +178,7 @@ class ExecutionTests(unittest.TestCase):
 
         response = run_workflow("Inspect", {"query_id": "test", "files": [file_record(media_type="text/csv")]}, Once(),
                                 client=self.client({"/dataset": b"x\n1\n"}), url_validator=lambda url: None)
-        self.assertEqual(response.status, "needs_input")
+        self.assertEqual(response.status, "completed")
         self.assertIsNone(response.blocks[0]["columns"][0]["unit"])
 
     def test_byte_cap_cleans_up_and_reports_error(self):

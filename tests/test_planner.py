@@ -55,12 +55,34 @@ class PlannerTests(unittest.TestCase):
         repair = generate.call_args.args[0][-1]["content"]
         self.assertIn("CSV calculations require explicit column bindings", repair)
 
+    def test_local_planner_sends_full_inputs_for_the_named_calculation(self):
+        plan = Plan(action="no_match", selected_file_ids=[], requested_asset_ids=[],
+                    operation=None, explanation="Missing mixture temperature.", warnings=[])
+        timed = Mock(return_value=plan.model_dump_json())
+        planner = LocalPlanner(Mock(), timed_generate=timed).with_timeout(30)
+        build_request("What is the Lewis number?", SearchResults.model_validate(self.graph_data), planner)
+        inputs, limits = timed.call_args
+        catalog = json.loads(inputs[0][1]["content"])["thermo_functions"]
+        self.assertEqual(len(catalog), 20)
+        self.assertEqual([entry["model_id"] for entry in catalog if "input_shape" in entry], ["THM-02"])
+        self.assertGreater(limits["max_time"], 0)
+        self.assertLessEqual(limits["max_time"], 30)
+
     def test_known_columns_produce_calculation_request_with_provenance(self):
         request = self.request()
         self.assertEqual(request.plan.operation.parameters.x, "airflow_speed")
         self.assertEqual(request.query_id, self.graph_data["query_id"])
         self.assertEqual(request.limits.max_download_bytes, 100_000_000)
         self.assertNotIn("https://", request.model_dump_json())
+
+    def test_local_retrieval_prompt_keeps_catalog_compact(self):
+        plan = Plan(action="no_match", selected_file_ids=[], requested_asset_ids=[],
+                    operation=None, explanation="No matching report.", warnings=[])
+        generate = Mock(return_value=plan.model_dump_json())
+        build_request("Show the final report PDF", SearchResults.model_validate(self.graph_data), LocalPlanner(generate))
+        catalog = json.loads(generate.call_args.args[0][1]['content'])['thermo_functions']
+        self.assertEqual(len(catalog), 20)
+        self.assertFalse(any('input_shape' in entry for entry in catalog))
 
     def test_unknown_or_duplicate_ids_rejected(self):
         for selected in [["invented-file"], ["demo-measurements", "demo-measurements"]]:
@@ -108,8 +130,10 @@ class PlannerTests(unittest.TestCase):
                     self.request()
             self.graph_data["files"][0][field] = original
 
-    def test_budget_includes_assets(self):
+    def test_budget_excludes_link_only_assets(self):
         self.graph_data["files"][0]["size_bytes"] = 99_000_000
+        self.request()
+        self.graph_data["files"][0]["size_bytes"] = 101_000_000
         with self.assertRaisesRegex(PlanningError, "budget"):
             self.request()
 

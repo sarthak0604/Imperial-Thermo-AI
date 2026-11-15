@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Model widgets — preview</title>
+  <link rel="stylesheet" href="css/skeleton.css">
+  <style>
+    body.preview { max-width: 1240px; padding: 0 24px 60px; }
+    .preview h1 { margin: 32px 0 4px; }
+    .preview .lead { color: var(--ink-2); margin: 0 0 8px; max-width: 760px; }
+    .preview h2 { margin-top: 36px; }
+    .preview .model-note { color: var(--ink-2); font-size: 13px; margin: 0 0 12px; }
+    .mw-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .mw { margin: 0; display: flex; flex-direction: column; padding: 12px 14px; min-width: 0; }
+    .mw.size-s { grid-column: span 1; } .mw.size-w { grid-column: span 2; } .mw.size-b { grid-column: span 2; grid-row: span 2; }
+    .mw header { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: baseline; padding-bottom: 6px; margin-bottom: 8px; border-bottom: var(--line); }
+    .mw header .kind { font-family: var(--mono); font-size: 11px; color: var(--ink-2); }
+    .mw header .badge { margin-left: auto; }
+    .mw .why { font-size: 12.5px; color: var(--ink-2); margin: 0 0 8px; }
+    .mw .controls { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; margin-bottom: 6px; font-size: 12.5px; }
+    .mw select { padding: 3px 6px; font-size: 12.5px; }
+    .readout-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: var(--line); margin-top: 8px; }
+    .readout-grid div { padding: 8px 10px; border-right: 1px solid var(--bone-2); border-bottom: 1px solid var(--bone-2); display: flex; flex-direction: column; }
+    .readout-grid b { font-size: 18px; } .readout-grid span { font-size: 11px; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; }
+    .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; height: 100%; }
+    .facts.one { grid-template-columns: 1fr; }
+    .facts div { border: var(--line); padding: 12px; display: flex; flex-direction: column; gap: 4px; justify-content: center; }
+    .facts b { font-size: 28px; font-weight: 600; } .facts span { font-size: 11.5px; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; }
+    @media (max-width: 900px) { .mw-grid { grid-template-columns: 1fr; } .mw.size-w, .mw.size-b, .mw.size-s { grid-column: span 1; grid-row: auto; } .multiples { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="preview">
+  <h1>Model widgets — preview</h1>
+  <p class="lead">Built from the thermo team's models in <code>Imperial-Thermo-AI</code>, run by <code>standin/precompute_models.py</code>. Not on the main site yet. Badges show what each one is: a model calculation, a reconstruction of a real NASA test, a model estimate, or a synthetic demo.</p>
+  <p class="lead" id="generated"></p>
+
+  <h2>THM-02 · Gas transport &amp; Lewis number</h2>
+  <p class="model-note">Kinetic-theory calculation from the inputs — no fake data. 459 pre-computed mixtures: 3 fuels × 3 diluents × 3 cabin pressures × O₂ 15–95%, at 300 K.</p>
+  <div class="mw-grid" data-model="THM-02"></div>
+
+  <h2>THM-11 · Two-stage droplet burning</h2>
+  <p class="model-note">Real NASA FLEX evidence (n-decane, 0.5 atm). R377 is reproduced from its own data; R379 is an estimate whose cool-flame end was held out and checked.</p>
+  <div class="mw-grid" data-model="THM-11"></div>
+
+  <h2>THM-16 · Time to ignition of a solid</h2>
+  <p class="model-note">Physics model with a SYNTHETIC demo material (4 mm slab) — the thermo team marked it illustrative. Only calibrated case: 101.3 kPa, 21% O₂, 20 cm/s airflow.</p>
+  <div class="mw-grid" data-model="THM-16"></div>
+
+  <script src="js/util.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="data/model_outputs.js"></script>
+  <script src="js/model_widgets.js"></script>
+  <script>
+    document.querySelectorAll("[data-model]").forEach(g => {
+      g.innerHTML = MW.types().filter(t => MW.lib[t].model === g.dataset.model).map(MW.render).join("");
+    });
+    MW.mountAll(document);
+    document.getElementById("generated").textContent = "Model outputs generated " + DATA.modelOutputs.generated + ".";
+  </script>
+</body>
+</html>

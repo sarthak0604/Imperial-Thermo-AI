@@ -7,3 +7,25 @@
 !src/**
 **/__pycache__/
 **/*.pyc
+
+# Ship the canonical runtime graph, not duplicate exports or collection sources.
+src/reviewed_knowledge_graph/*
+!src/reviewed_knowledge_graph/__init__.py
+!src/reviewed_knowledge_graph/output/
+src/reviewed_knowledge_graph/output/*
+!src/reviewed_knowledge_graph/output/knowledge_graph.json
+!src/reviewed_knowledge_graph/output/source_quality_issues.json
+!src/reviewed_knowledge_graph/output/evidence-index.json
+!NASA Space Apps/
+!NASA Space Apps/frontend/
+!NASA Space Apps/frontend/**
+NASA Space Apps/frontend/_backup*/
+NASA Space Apps/frontend/tests/
+**/.env*
+**/.DS_Store
+**/__pycache__/
+**/*.pyc
+
+!thermo-reference/
+!thermo-reference/**
+thermo-reference/__pycache__/

@@ -11,6 +11,9 @@ RUN uv sync --locked --no-dev --no-install-project
 
 COPY README.md ./
 COPY src/ ./src/
+COPY thermo-reference/ ./thermo-reference/
 RUN uv sync --locked --no-dev --no-editable
+
+COPY ["NASA Space Apps/frontend/", "/app/frontend/"]
 
 ENTRYPOINT ["/app/.venv/bin/thermo-execute"]

@@ -1,0 +1,47 @@
+{
+  "model": "gpt-4.1-mini",
+  "graph_id": "NASA-PSI-19-reviewed-2026-11-15",
+  "scope": "Targeted live functional checks after the relevant fixes; not an independent scientific-entailment evaluation.",
+  "cases": [
+    {
+      "prompt": "Show the PSI-39 CFI final science report PDF",
+      "status": "completed",
+      "passed": true,
+      "seconds": 4.97
+    },
+    {
+      "prompt": "Calculate THM-03 for CH4 with fuel mass fraction 1 and oxygen mass fraction 0.232",
+      "status": "completed",
+      "passed": true,
+      "resolved_inputs": {
+        "fuel_formula": "CH4",
+        "y_fuel_stream": 1.0,
+        "y_ox_stream": 0.232,
+        "burner_radius_mm": 3.2,
+        "total_flow_rate_sccm": 250.0,
+        "pressure_kpa": 101.325,
+        "flame_configuration": "normal"
+      },
+      "z_st": 0.05496,
+      "seconds": 6.168
+    },
+    {
+      "prompt": "Explain what BASS-II reports about PMMA rod extinction oscillations",
+      "status": "completed",
+      "passed": true,
+      "seconds": 4.02,
+      "claims": [
+        {
+          "text": "BASS-II reports on PMMA rod extinction oscillations indicating that premixed flame oscillations along the rod have been observed for the concurrent rod geometry, which persist much longer in microgravity than in normal gravity due to the lower rate of convective cooling of the rod. This suggests that spacecraft fire suppression efforts should be maintained until the burning material has cooled and stopped emitting vapors.",
+          "evidence_ids": [
+            "41d4dd1757fce4a3229d6e74"
+          ],
+          "psi_ids": [
+            "PSI-25"
+          ],
+          "kind": "supported_summary"
+        }
+      ]
+    }
+  ]
+}

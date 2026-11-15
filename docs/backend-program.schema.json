@@ -1,0 +1,221 @@
+{
+  "$defs": {
+    "ProgramStep": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "depends_on": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Depends On",
+          "type": "array"
+        },
+        "kind": {
+          "enum": [
+            "scenario",
+            "table"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "scenario": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ScenarioTask"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "table": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TableTask"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "input_source_spans": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Input Source Spans",
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "kind"
+      ],
+      "title": "ProgramStep",
+      "type": "object"
+    },
+    "RowPredicate": {
+      "additionalProperties": false,
+      "properties": {
+        "column": {
+          "title": "Column",
+          "type": "string"
+        },
+        "operator": {
+          "enum": [
+            "eq",
+            "ne",
+            "lt",
+            "lte",
+            "gt",
+            "gte"
+          ],
+          "title": "Operator",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "column",
+        "operator",
+        "value"
+      ],
+      "title": "RowPredicate",
+      "type": "object"
+    },
+    "ScenarioTask": {
+      "additionalProperties": false,
+      "properties": {
+        "model_id": {
+          "title": "Model Id",
+          "type": "string"
+        },
+        "params": {
+          "additionalProperties": true,
+          "title": "Params",
+          "type": "object"
+        },
+        "input_origins": {
+          "additionalProperties": {
+            "enum": [
+              "user",
+              "default"
+            ],
+            "type": "string"
+          },
+          "title": "Input Origins",
+          "type": "object"
+        },
+        "allowed_defaults": {
+          "additionalProperties": true,
+          "title": "Allowed Defaults",
+          "type": "object"
+        }
+      },
+      "required": [
+        "model_id",
+        "params",
+        "input_origins"
+      ],
+      "title": "ScenarioTask",
+      "type": "object"
+    },
+    "TableTask": {
+      "additionalProperties": false,
+      "properties": {
+        "file_id": {
+          "title": "File Id",
+          "type": "string"
+        },
+        "columns": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Columns",
+          "type": "array"
+        },
+        "predicates": {
+          "items": {
+            "$ref": "#/$defs/RowPredicate"
+          },
+          "title": "Predicates",
+          "type": "array"
+        },
+        "aggregate": {
+          "default": "none",
+          "enum": [
+            "none",
+            "mean",
+            "min",
+            "max",
+            "sum",
+            "count"
+          ],
+          "title": "Aggregate",
+          "type": "string"
+        },
+        "missing": {
+          "default": "reject",
+          "enum": [
+            "reject",
+            "omit_selected"
+          ],
+          "title": "Missing",
+          "type": "string"
+        },
+        "conversions": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Conversions",
+          "type": "object"
+        }
+      },
+      "required": [
+        "file_id",
+        "columns"
+      ],
+      "title": "TableTask",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "steps": {
+      "items": {
+        "$ref": "#/$defs/ProgramStep"
+      },
+      "maxItems": 8,
+      "title": "Steps",
+      "type": "array"
+    },
+    "missing_inputs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Missing Inputs",
+      "type": "array"
+    }
+  },
+  "required": [
+    "steps"
+  ],
+  "title": "Program",
+  "type": "object"
+}

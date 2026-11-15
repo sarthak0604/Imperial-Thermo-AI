@@ -1,0 +1,107 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<02:51,  2.31it/s]Loading weights:   1%|          | 3/398 [00:00<01:00,  6.50it/s]Loading weights:   4%|▎         | 14/398 [00:00<00:11, 32.58it/s]Loading weights:   6%|▋         | 25/398 [00:00<00:07, 48.49it/s]Loading weights:   9%|▉         | 36/398 [00:00<00:05, 60.69it/s]Loading weights:  12%|█▏        | 47/398 [00:01<00:04, 70.55it/s]Loading weights:  15%|█▍        | 58/398 [00:01<00:04, 77.24it/s]Loading weights:  17%|█▋        | 69/398 [00:01<00:03, 83.92it/s]Loading weights:  20%|██        | 80/398 [00:01<00:03, 86.94it/s]Loading weights:  23%|██▎       | 91/398 [00:01<00:03, 91.85it/s]Loading weights:  26%|██▌       | 102/398 [00:01<00:03, 96.01it/s]Loading weights:  28%|██▊       | 113/398 [00:01<00:03, 92.78it/s]Loading weights:  31%|███       | 123/398 [00:01<00:03, 89.94it/s]Loading weights:  33%|███▎      | 133/398 [00:01<00:03, 86.73it/s]Loading weights:  36%|███▌      | 142/398 [00:02<00:03, 83.52it/s]Loading weights:  38%|███▊      | 151/398 [00:02<00:03, 80.05it/s]Loading weights:  40%|████      | 160/398 [00:02<00:03, 73.99it/s]Loading weights:  42%|████▏     | 169/398 [00:02<00:03, 74.32it/s]Loading weights:  45%|████▌     | 180/398 [00:02<00:02, 77.77it/s]Loading weights:  48%|████▊     | 191/398 [00:02<00:02, 81.43it/s]Loading weights:  51%|█████     | 202/398 [00:02<00:02, 87.99it/s]Loading weights:  54%|█████▎    | 213/398 [00:02<00:02, 89.98it/s]Loading weights:  56%|█████▌    | 223/398 [00:03<00:02, 83.40it/s]Loading weights:  58%|█████▊    | 232/398 [00:03<00:01, 83.75it/s]Loading weights:  61%|██████    | 243/398 [00:03<00:01, 89.93it/s]Loading weights:  64%|██████▍   | 256/398 [00:03<00:01, 97.01it/s]Loading weights:  67%|██████▋   | 268/398 [00:03<00:01, 98.49it/s]Loading weights:  70%|███████   | 280/398 [00:03<00:01, 98.06it/s]Loading weights:  74%|███████▍  | 296/398 [00:03<00:00, 114.46it/s]Loading weights:  77%|███████▋  | 308/398 [00:03<00:00, 115.85it/s]Loading weights:  81%|████████  | 322/398 [00:03<00:00, 113.37it/s]Loading weights:  84%|████████▍ | 334/398 [00:04<00:00, 109.22it/s]Loading weights:  87%|████████▋ | 346/398 [00:04<00:00, 105.73it/s]Loading weights:  91%|█████████ | 363/398 [00:04<00:00, 117.55it/s]Loading weights:  94%|█████████▍| 375/398 [00:04<00:00, 50.59it/s] Loading weights:  96%|█████████▋| 384/398 [00:05<00:00, 50.69it/s]Loading weights:  99%|█████████▉| 394/398 [00:05<00:00, 57.67it/s]Loading weights: 100%|██████████| 398/398 [00:05<00:00, 76.36it/s]
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:   5%|▍         | 15/310 [00:00<00:02, 144.76it/s]Loading weights:  23%|██▎       | 71/310 [00:00<00:00, 378.95it/s]Loading weights:  50%|█████     | 155/310 [00:00<00:00, 578.79it/s]Loading weights:  80%|███████▉  | 247/310 [00:00<00:00, 690.11it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 635.07it/s]
+{
+  "query_id": "test-branch-local-001",
+  "files": [
+    {
+      "file_id": "res:PSI-117:8f99f24f48bb7f642d39",
+      "investigation_id": "PSI-117",
+      "title": "PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+      "role": "documentation",
+      "media_type": "application/pdf",
+      "retrieval_url": null,
+      "source_page_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true",
+      "size_bytes": 11802360,
+      "run_ids": [],
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "Download URL unknown; a landing page is not a file download. Planner cannot select this file yet.",
+        "Column headers, units and numeric suitability have not been verified."
+      ],
+      "conditions": {},
+      "related_file_ids": [],
+      "match_reason": "Local semantic match via node res:PSI-117:8f99f24f48bb7f642d39; graph distance 0. Requested graph metadata conditions match."
+    },
+    {
+      "file_id": "res:PSI-117:9de29bd5ec2033aa5824",
+      "investigation_id": "PSI-117",
+      "title": "Extinction characteristics of isolated n-alkane fuel droplets during low temperature cool flame burning in air (2023)",
+      "role": "documentation",
+      "media_type": "application/octet-stream",
+      "retrieval_url": null,
+      "source_page_url": "https://www.sciencedirect.com/science/article/am/pii/S1540748922001134",
+      "size_bytes": null,
+      "run_ids": [],
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "Download URL unknown; a landing page is not a file download. Planner cannot select this file yet.",
+        "Column headers, units and numeric suitability have not been verified."
+      ],
+      "conditions": {},
+      "related_file_ids": [],
+      "match_reason": "Local semantic match via node res:PSI-117:9de29bd5ec2033aa5824; graph distance 0. Requested graph metadata conditions match."
+    },
+    {
+      "file_id": "res:PSI-117:db9af4f6cdd35c0d3d1e",
+      "investigation_id": "PSI-117",
+      "title": "Extinction characteristics of isolated n-alkane fuel droplets during low temperature cool flame burning in air (2023)",
+      "role": "documentation",
+      "media_type": "application/octet-stream",
+      "retrieval_url": null,
+      "source_page_url": "https://doi.org/10.1016/j.proci.2022.07.094",
+      "size_bytes": 172918,
+      "run_ids": [],
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "Download URL unknown; a landing page is not a file download. Planner cannot select this file yet.",
+        "Column headers, units and numeric suitability have not been verified."
+      ],
+      "conditions": {},
+      "related_file_ids": [],
+      "match_reason": "Local semantic match via node res:PSI-117:db9af4f6cdd35c0d3d1e; graph distance 0. Requested graph metadata conditions match."
+    },
+    {
+      "file_id": "res:PSI-117:3c69bbed73f148eba760",
+      "investigation_id": "PSI-117",
+      "title": "PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+      "role": "measurement",
+      "media_type": "text/csv",
+      "retrieval_url": null,
+      "source_page_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true",
+      "size_bytes": 745,
+      "run_ids": [],
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "Download URL unknown; a landing page is not a file download. Planner cannot select this file yet.",
+        "Column headers, units and numeric suitability have not been verified."
+      ],
+      "conditions": {},
+      "related_file_ids": [],
+      "match_reason": "Local semantic match via node res:PSI-117:3c69bbed73f148eba760; graph distance 0. Requested graph metadata conditions match."
+    },
+    {
+      "file_id": "res:PSI-117:a79899507b0332ece2ea",
+      "investigation_id": "PSI-117",
+      "title": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+      "role": "measurement",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "retrieval_url": null,
+      "source_page_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e3&version=1&studyVersion=2&redirect=true",
+      "size_bytes": 11059,
+      "run_ids": [],
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "Download URL unknown; a landing page is not a file download. Planner cannot select this file yet.",
+        "Column headers, units and numeric suitability have not been verified."
+      ],
+      "conditions": {},
+      "related_file_ids": [],
+      "match_reason": "Local semantic match via node res:PSI-117:8f99f24f48bb7f642d39; graph distance 2. Requested graph metadata conditions match."
+    }
+  ]
+}

@@ -5,7 +5,8 @@ import json
 import sys
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
-from .vector_search import MODEL_ID, QwenEmbedder, VectorGraphSearch, build_index, fingerprint
+from .vector_search import MODEL_ID, QwenEmbedder, VectorGraphSearch, build_index, fingerprint, load_index, save_index
+from .reviewed_graph import default_graph_path, read_graph
 
 
 def read(path):
@@ -38,7 +39,7 @@ def attach_manifest_downloads(graph, manifest):
 def main():
     cli = argparse.ArgumentParser(description=__doc__)
     cli.add_argument('question', nargs='?')
-    cli.add_argument('--graph', type=Path, required=True)
+    cli.add_argument('--graph', type=Path, default=default_graph_path())
     cli.add_argument('--query-id', required=True)
     cli.add_argument('--mode', choices=['local', 'global'], default='local')
     cli.add_argument('--output', type=Path, default=Path('search-results.json'))
@@ -56,7 +57,7 @@ def main():
             raise ValueError('Supply a question or --query-vector.')
         if args.query_vector and not args.question and not args.plan and not args.semantic_only:
             raise ValueError('Vector-only search needs --plan for constraints or explicit --semantic-only.')
-        graph = read(args.graph)
+        graph = read_graph(args.graph)
         manifest = args.manifest or args.graph.with_name('resources_manifest.json')
         if args.manifest or manifest.is_file():
             attach_manifest_downloads(graph, read(manifest))
@@ -73,13 +74,13 @@ def main():
             import torch
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
-        cached = read(args.index) if args.index.exists() else None
+        cached = load_index(args.index) if args.index.exists() else None
         embedder = None
         if cached is None or cached.get('graph_fingerprint') != fingerprint(graph) or cached.get('model_id') != MODEL_ID:
             embedder = QwenEmbedder()
             cached = build_index(graph, embedder)
             args.index.parent.mkdir(parents=True, exist_ok=True)
-            args.index.write_text(json.dumps(cached, allow_nan=False), encoding='utf-8')
+            save_index(cached, args.index)
         service = VectorGraphSearch(graph, cached)
         if args.query_vector:
             vector = read(args.query_vector)

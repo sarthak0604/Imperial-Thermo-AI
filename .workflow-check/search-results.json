@@ -1,0 +1,105 @@
+{
+  "query_id": "test-branch-local-001",
+  "files": [
+    {
+      "file_id": "res:PSI-117:8f99f24f48bb7f642d39",
+      "investigation_id": "PSI-117",
+      "title": "PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+      "role": "documentation",
+      "media_type": "application/pdf",
+      "retrieval_url": null,
+      "source_page_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e0&version=1&studyVersion=2&redirect=true",
+      "size_bytes": 11802360,
+      "run_ids": [],
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "Download URL unknown; a landing page is not a file download. Planner cannot select this file yet.",
+        "Column headers, units and numeric suitability have not been verified."
+      ],
+      "conditions": {},
+      "related_file_ids": [],
+      "match_reason": "Local semantic match via node res:PSI-117:8f99f24f48bb7f642d39; graph distance 0. Requested graph metadata conditions match."
+    },
+    {
+      "file_id": "res:PSI-117:9de29bd5ec2033aa5824",
+      "investigation_id": "PSI-117",
+      "title": "Extinction characteristics of isolated n-alkane fuel droplets during low temperature cool flame burning in air (2023)",
+      "role": "documentation",
+      "media_type": "application/octet-stream",
+      "retrieval_url": null,
+      "source_page_url": "https://www.sciencedirect.com/science/article/am/pii/S1540748922001134",
+      "size_bytes": null,
+      "run_ids": [],
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "Download URL unknown; a landing page is not a file download. Planner cannot select this file yet.",
+        "Column headers, units and numeric suitability have not been verified."
+      ],
+      "conditions": {},
+      "related_file_ids": [],
+      "match_reason": "Local semantic match via node res:PSI-117:9de29bd5ec2033aa5824; graph distance 0. Requested graph metadata conditions match."
+    },
+    {
+      "file_id": "res:PSI-117:db9af4f6cdd35c0d3d1e",
+      "investigation_id": "PSI-117",
+      "title": "Extinction characteristics of isolated n-alkane fuel droplets during low temperature cool flame burning in air (2023)",
+      "role": "documentation",
+      "media_type": "application/octet-stream",
+      "retrieval_url": null,
+      "source_page_url": "https://doi.org/10.1016/j.proci.2022.07.094",
+      "size_bytes": 172918,
+      "run_ids": [],
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "Download URL unknown; a landing page is not a file download. Planner cannot select this file yet.",
+        "Column headers, units and numeric suitability have not been verified."
+      ],
+      "conditions": {},
+      "related_file_ids": [],
+      "match_reason": "Local semantic match via node res:PSI-117:db9af4f6cdd35c0d3d1e; graph distance 0. Requested graph metadata conditions match."
+    },
+    {
+      "file_id": "res:PSI-117:3c69bbed73f148eba760",
+      "investigation_id": "PSI-117",
+      "title": "PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+      "role": "measurement",
+      "media_type": "text/csv",
+      "retrieval_url": null,
+      "source_page_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e4&version=1&studyVersion=2&redirect=true",
+      "size_bytes": 745,
+      "run_ids": [],
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "Download URL unknown; a landing page is not a file download. Planner cannot select this file yet.",
+        "Column headers, units and numeric suitability have not been verified."
+      ],
+      "conditions": {},
+      "related_file_ids": [],
+      "match_reason": "Local semantic match via node res:PSI-117:3c69bbed73f148eba760; graph distance 0. Requested graph metadata conditions match."
+    },
+    {
+      "file_id": "res:PSI-117:a79899507b0332ece2ea",
+      "investigation_id": "PSI-117",
+      "title": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+      "role": "measurement",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "retrieval_url": null,
+      "source_page_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e3&version=1&studyVersion=2&redirect=true",
+      "size_bytes": 11059,
+      "run_ids": [],
+      "variables": null,
+      "encoding": null,
+      "data_notes": [
+        "Download URL unknown; a landing page is not a file download. Planner cannot select this file yet.",
+        "Column headers, units and numeric suitability have not been verified."
+      ],
+      "conditions": {},
+      "related_file_ids": [],
+      "match_reason": "Local semantic match via node res:PSI-117:8f99f24f48bb7f642d39; graph distance 2. Requested graph metadata conditions match."
+    }
+  ]
+}

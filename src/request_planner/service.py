@@ -1,7 +1,6 @@
 """Public prompt → plan → temporary execution → frontend JSON boundary."""
 
 import argparse
-import json
 import os
 from pathlib import Path
 import sys
@@ -17,19 +16,17 @@ from .models import ExecutionLimits, FrontendResponse, SearchResults, ServiceReq
 from .planner import OpenAIPlanner, PlanningError, build_request
 
 
-def run_workflow(
-    prompt, results, planner, *, client=None, url_validator=None, temp_dir=None, limits=None,
-    planning_seconds=0, on_model_input=None,
-):
+def run_workflow(prompt, results, planner, *, client=None, url_validator=None, temp_dir=None, limits=None, planning_seconds=0, request_spec=None, verify_prompt=True, trusted_source_hashes=None):
     """Accept the search team's wire contract; return a JSON-serializable frontend model.
 
     `with_context(inspection)` is optional on a planner. Without it, inspection
     returns needs_input so a caller can review/enrich records before replanning.
-    Downloads are shared across at most three planning rounds and always removed.
+    Downloads are shared across bounded planning rounds and always removed.
     A caller may give local inference a separate allowance within the workflow.
-    An optional on_model_input(model_id, payload) receives a copy of the assembled
-    input before the worker starts. Hooks belong to the application, never the plan.
     """
+    from .intent import interpret, fulfilment, summarize_result, validate_action
+    if request_spec is None and verify_prompt:
+        request_spec = interpret(prompt)
     if not isinstance(results, SearchResults):
         results = SearchResults.model_validate(results)
     response = FrontendResponse(query_id=results.query_id, status="needs_input", message="")
@@ -39,27 +36,55 @@ def run_workflow(
     planning_allowance = max(0, min(planning_seconds, 60))
     options = {"url_validator": url_validator} if url_validator is not None else {}
     with tempfile.TemporaryDirectory(prefix="thermo-request-", dir=temp_dir) as directory:
-        session = ExecutionSession(directory, limits, client=client, on_model_input=on_model_input,
-                                   raw_prompt=prompt, **options)
+        session = ExecutionSession(directory, limits, client=client, trusted_source_hashes=trusted_source_hashes, **options)
         try:
-            for _ in range(3):
+            seen_plans = set()
+            for _ in range(8):
                 session.remaining()
                 if hasattr(planner, "with_timeout"):
                     planner = planner.with_timeout(session.remaining() + planning_allowance)
                 planning_started = time.monotonic()
                 request = build_request(prompt, results, planner, limits=limits)
+                if request_spec:
+                    validate_action(request_spec, request.plan, results)
                 elapsed = min(planning_allowance, time.monotonic() - planning_started)
                 session.deadline += elapsed
                 planning_allowance -= elapsed
                 session.remaining()
+                signature = request.plan.model_dump_json(exclude={'explanation', 'warnings'})
+                if signature in seen_plans and request.plan.action != 'inspect_files':
+                    response.message = 'Planner repeated an action without progress. Supply the missing inputs.'
+                    break
+                seen_plans.add(signature)
                 response.requests.append(request)
                 response.warnings.extend(request.plan.warnings)
                 response.message = request.plan.explanation
                 if request.plan.action == "no_match":
                     response.status = "no_match"
                     break
-                blocks, results = session.execute(request, results)
-                response.blocks.extend(blocks)
+                if request.plan.action == "inspect_files":
+                    inspected = {block["file_id"] for block in session.inspection}
+                    new_files = [file_id for file_id in request.plan.selected_file_ids if file_id not in inspected]
+                    new_assets = [file_id for file_id in request.plan.requested_asset_ids if file_id not in session.sources]
+                    if not new_files and not new_assets:
+                        response.message = (
+                            "The available files have already been inspected. "
+                            + response.message
+                        )
+                        break
+                    # Preserve the planner's original request in the response audit trail.
+                    plan = request.plan.model_copy(update={"selected_file_ids": new_files,
+                                                           "requested_asset_ids": new_assets})
+                    if not new_files:
+                        plan = plan.model_copy(update={"action": "retrieve_assets"})
+                    request = request.model_copy(update={"plan": plan})
+                    blocks, results = session.execute(request, results)
+                    response.blocks.extend(blocks)
+                    if not new_files:
+                        break
+                else:
+                    blocks, results = session.execute(request, results)
+                    response.blocks.extend(blocks)
                 for block in blocks:
                     if block["type"] == "calculation":
                         data = block["data"]
@@ -67,9 +92,20 @@ def run_workflow(
                             response.warnings.extend(w for w in data.get(key, []) if isinstance(w, str))
                 if request.plan.action != "inspect_files":
                     response.status = "completed"
+                    pending = fulfilment(request_spec, response) if request_spec else []
+                    if any(not row['satisfied'] for row in pending) and hasattr(planner, 'with_context'):
+                        response.status = 'needs_input'
+                        planner = planner.with_context(session.inspection + [
+                            {'type': 'execution_progress', 'completed_blocks': [
+                                {k: b[k] for k in ('type', 'model_id', 'file_id') if k in b} for b in response.blocks],
+                             'remaining_requirements': [r for r in pending if not r['satisfied']]}])
+                        continue
                     break
-                if not hasattr(planner, "with_context"):
-                    response.message = "Files inspected. Review missing units/evidence before calculating."
+                if request_spec and all(r.kind == 'inspection' for r in request_spec.requirements):
+                    response.status = 'completed'
+                    break
+                if not hasattr(planner, 'with_context'):
+                    response.message = 'Files inspected. Review missing units/evidence before calculating.'
                     break
                 planner = planner.with_context(session.inspection)
             else:
@@ -92,10 +128,18 @@ def run_workflow(
             response.errors.append({"code": "planning_provider_error", "message": response.message})
         response.sources = list(session.sources.values())
     response.warnings = list(dict.fromkeys(response.warnings))
+    if request_spec and response.status != 'error':
+        completed = fulfilment(request_spec, response)
+        if not all(row['satisfied'] for row in completed):
+            if response.status == 'completed':
+                response.status = 'needs_input'
+            response.warnings.extend(row['missing'] for row in completed if not row['satisfied'])
+        if response.status == 'completed':
+            response.message = summarize_result(response)
     return FrontendResponse.model_validate(response.model_dump())
 
 
-def execute_request(request, results, *, prompt=None, **kwargs):
+def execute_request(request, results, **kwargs):
     """Execute a saved validated request without another LLM call."""
     if not isinstance(request, ServiceRequest):
         request = ServiceRequest.model_validate(request)
@@ -109,39 +153,67 @@ def execute_request(request, results, *, prompt=None, **kwargs):
             return request.plan
 
     # Fixed server caps apply even if a saved request advertises larger limits.
-    return run_workflow(prompt or "Execute saved request", results, SavedPlanner(), limits=request.limits, **kwargs)
+    return run_workflow("Execute saved request", results, SavedPlanner(), limits=request.limits, verify_prompt=False, **kwargs)
 
 
 def main():
     parser = argparse.ArgumentParser(description="Execute graph results and return frontend response JSON")
-    parser.add_argument("--search-results", required=True, type=Path)
+    inputs = parser.add_mutually_exclusive_group()
+    inputs.add_argument("--search-results", type=Path, help="Use previously retrieved file records")
+    inputs.add_argument("--graph", type=Path, help="Override the bundled reviewed PSI graph")
     parser.add_argument("--prompt")
+    parser.add_argument("--backend", choices=['v1', 'v2'], default='v2')
+    parser.add_argument("--provider", choices=['api', 'local', 'retrieval', 'open_source'], default='api')
+    parser.add_argument("--evidence-index", type=Path)
+    parser.add_argument('--conversation', action='store_true', help='Create a conversation')
+    parser.add_argument('--conversation-id', help='Continue a CLI conversation')
     parser.add_argument("--model", default=os.getenv("OPENAI_MODEL"))
     parser.add_argument("--request", type=Path, help="Execute a saved service request without an LLM")
     parser.add_argument("--output", type=Path)
-    parser.add_argument("--model-input", type=Path, help="Save the exact model input to a new JSON file")
     args = parser.parse_args()
-    if not args.request and (not args.prompt or not args.model or not os.getenv("OPENAI_API_KEY")):
+    if not args.request and (not args.prompt or args.provider == "api" and (not args.model or not os.getenv("OPENAI_API_KEY"))):
         parser.error("Supply --request, or --prompt, --model and OPENAI_API_KEY")
-    if args.model_input and args.output and args.model_input.resolve() == args.output.resolve():
-        parser.error("--model-input and --output must name different files")
-
-    def save_model_input(_model_id, payload):
-        content = json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False) + "\n"
-        with args.model_input.open("x", encoding="utf-8") as handle:
-            handle.write(content)
-
-    options = {"on_model_input": save_model_input} if args.model_input else {}
+    if args.request and not args.search_results:
+        parser.error("Saved requests require their original --search-results")
     try:
-        results = SearchResults.model_validate_json(args.search_results.read_text(encoding="utf-8-sig"))
-        if args.request:
-            response = execute_request(ServiceRequest.model_validate_json(args.request.read_text(encoding="utf-8-sig")),
-                                       results, prompt=args.prompt, **options)
+        if args.backend == 'v2' and not args.request and not args.search_results:
+            from .backend import answer
+            from .providers import configure
+            env = {**os.environ, 'THERMO_PLANNER': args.provider}
+            if args.model:
+                env['OPENAI_MODEL'] = args.model
+            if args.conversation or args.conversation_id:
+                import getpass
+                import json
+                import uuid
+                from .conversation import ask_conversation
+                if args.graph: env['THERMO_GRAPH'] = str(args.graph)
+                if args.evidence_index: env['THERMO_EVIDENCE_INDEX'] = str(args.evidence_index)
+                result = ask_conversation(args.prompt, env, 'cli:'+getpass.getuser(),
+                    {'conversation_id':args.conversation_id,'client_request_id':uuid.uuid4().hex})
+                content = json.dumps(result, indent=2)+'\n'
+                if args.output: args.output.write_text(content)
+                else: sys.stdout.write(content)
+                return 1 if result['meta']['status'] == 'error' else 0
+            response = answer(args.prompt, graph_path=args.graph, evidence_path=args.evidence_index, **configure(env))
+            content = response.model_dump_json(indent=2) + "\n"
+            if args.output:
+                args.output.write_text(content)
+            else:
+                sys.stdout.write(content)
+            return 1 if response.status == 'error' else 0
+        if args.search_results:
+            results = SearchResults.model_validate_json(args.search_results.read_text())
         else:
-            response = run_workflow(args.prompt, results, OpenAIPlanner(args.model), **options)
+            from imperial_thermo_ai.reviewed_graph import load_graph
+            results = load_graph(args.graph).search(args.prompt)
+        if args.request:
+            response = execute_request(ServiceRequest.model_validate_json(args.request.read_text()), results)
+        else:
+            response = run_workflow(args.prompt, results, OpenAIPlanner(args.model))
         content = response.model_dump_json(indent=2) + "\n"
         if args.output:
-            args.output.write_text(content, encoding="utf-8")
+            args.output.write_text(content)
         else:
             sys.stdout.write(content)
         return 1 if response.status == "error" else 0

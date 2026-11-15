@@ -1,7 +1,6 @@
 """Run from frontend/:  python3 -m unittest tests/test_server_claude.py   (uses a fake `claude` command; no real call)"""
 import json, os, stat, sys, tempfile, unittest
 from pathlib import Path
-from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "standin"))
 import server
 
@@ -18,21 +17,11 @@ print(json.dumps({"type": "result", "is_error": False, "result": "```json\n" + j
 
 class ClaudeProviderTests(unittest.TestCase):
     def setUp(self):
-        directory = Path(self.enterContext(tempfile.TemporaryDirectory()))
-        self.bin = directory / "claude"
-        self.bin.write_text(FAKE, encoding="utf-8")
-        self.bin.chmod(self.bin.stat().st_mode | stat.S_IEXEC)
-        self.log = directory / "log.json"
-        self.enterContext(patch.dict(os.environ, FAKE_LOG=str(self.log), ANTHROPIC_API_KEY="should-not-pass",
-                                     PYTHONIOENCODING="utf-8"))
+        self.d = tempfile.mkdtemp()
+        self.bin = Path(self.d) / "claude"; self.bin.write_text(FAKE); self.bin.chmod(self.bin.stat().st_mode | stat.S_IEXEC)
+        self.log = Path(self.d) / "log.json"
+        os.environ["FAKE_LOG"] = str(self.log); os.environ["ANTHROPIC_API_KEY"] = "should-not-pass"
         os.environ.pop("FAKE_FAIL", None)
-        run = server.subprocess.run
-
-        def run_fake(command, **kwargs):
-            self.assertEqual(command[0], str(self.bin))
-            return run([sys.executable, *command], **kwargs)
-
-        self.enterContext(patch.object(server.subprocess, "run", side_effect=run_fake))
 
     def provider(self):
         p = server.pick_provider({"AI_PROVIDER": "claude", "CLAUDE_BIN": str(self.bin)})

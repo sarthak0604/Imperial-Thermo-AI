@@ -134,14 +134,23 @@ class CalculationBlock(TypedDict):
     illustrative: bool | None
     source_file_ids: list[str]
     data: dict
+    task_id: NotRequired[str]
+    input_json: NotRequired[dict]
+    input_provenance: NotRequired[list[dict]]
+    model_defaults: NotRequired[dict]
+    headline_metrics: NotRequired[list[dict]]
+    depends_on: NotRequired[list[str]]
+    method: NotRequired[dict]
 
 
 class ChartBlock(TypedDict):
     type: Literal["chart"]
-    chart_type: Literal["line", "scatter"]
+    chart_type: Literal["line", "scatter", "bar"]
+    categories: NotRequired[list[str]]
     title: str
     x: ChartAxis
     series: list[ChartAxis]
+    markers: NotRequired[list[dict]]
     evidence_type: Literal["measured", "data_reduction", "model_estimate"]
     illustrative: NotRequired[bool | None]
     source_file_ids: list[str]
