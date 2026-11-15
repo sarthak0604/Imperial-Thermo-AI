@@ -102,8 +102,9 @@
         const lw = widths[0] - 44, chars = String(row.items[0].params.summary || "").length + 40;
         h = Math.max(h, 190 + Math.ceil(chars * 8.6 / Math.max(200, lw)) * 25);
       }
-      if (textOnly && row.kind === "point" && row.items.length === 1) h = Math.max(110, Math.min(h, 60 + Math.ceil(String(row.items[0].params.text).length * 11 / widths[0]) * 34));
-      return `<div class="srow ${row.kind}" data-row="${k}" style="height:${Math.round(h)}px">${row.items.map((it, j) =>
+      if (textOnly && row.kind === "point" && row.items[0].type === "point" && row.items.length === 1) h = Math.max(110, Math.min(h, 60 + Math.ceil(String(row.items[0].params.text).length * 11 / widths[0]) * 34));
+      const height = row.kind === "header" ? "min-height" : "height";
+      return `<div class="srow ${row.kind}" data-row="${k}" style="${height}:${Math.round(h)}px">${row.items.map((it, j) =>
         box(it, `width:${(widths[j]).toFixed(1)}px`)).join("")}</div>`;
     }).join("");
   }
@@ -234,7 +235,7 @@
     const rows = STORY.rows(ans, points);
     const walk = rows.length >= TOUR.MIN_BOXES;
     current = { story: true, a: ans, rows, widgets: [],
-      lead: `<h1>${esc(ans.title || q)}</h1>${live ? "" : `<span class="tag-mock">mock</span>`}
+      lead: `<h1>${esc(ans.title || q)}</h1>${live ? (ans.meta.provider === "thermo" && ans.meta.si_generated ? '<p class="centre-status">SI-assisted Thermo workflow</p>' : "") : `<span class="tag-mock">mock</span>`}
         <div class="lead-answer${ans.note ? " t-note" : ""}">${U.md(ans.summary || "")}</div>
         ${walk ? `<button type="button" class="replay" data-replay>▶ Walk me through it</button>` : ""}` };
     document.body.classList.add("is-story");

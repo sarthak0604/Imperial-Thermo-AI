@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import sys
 import tempfile
+import time
 
 import httpx
 from openai import OpenAIError
@@ -15,12 +16,13 @@ from .models import ExecutionLimits, FrontendResponse, SearchResults, ServiceReq
 from .planner import OpenAIPlanner, PlanningError, build_request
 
 
-def run_workflow(prompt, results, planner, *, client=None, url_validator=None, temp_dir=None, limits=None):
+def run_workflow(prompt, results, planner, *, client=None, url_validator=None, temp_dir=None, limits=None, planning_seconds=0):
     """Accept the search team's wire contract; return a JSON-serializable frontend model.
 
     `with_context(inspection)` is optional on a planner. Without it, inspection
     returns needs_input so a caller can review/enrich records before replanning.
     Downloads are shared across at most three planning rounds and always removed.
+    A caller may give local inference a separate allowance within the workflow.
     """
     if not isinstance(results, SearchResults):
         results = SearchResults.model_validate(results)
@@ -28,6 +30,7 @@ def run_workflow(prompt, results, planner, *, client=None, url_validator=None, t
     limits = limits or ExecutionLimits()
     limits = ExecutionLimits(max_download_bytes=min(limits.max_download_bytes, 100_000_000),
                              max_runtime_seconds=min(limits.max_runtime_seconds, 60))
+    planning_allowance = max(0, min(planning_seconds, 60))
     options = {"url_validator": url_validator} if url_validator is not None else {}
     with tempfile.TemporaryDirectory(prefix="thermo-request-", dir=temp_dir) as directory:
         session = ExecutionSession(directory, limits, client=client, **options)
@@ -35,8 +38,12 @@ def run_workflow(prompt, results, planner, *, client=None, url_validator=None, t
             for _ in range(3):
                 session.remaining()
                 if hasattr(planner, "with_timeout"):
-                    planner = planner.with_timeout(session.remaining())
+                    planner = planner.with_timeout(session.remaining() + planning_allowance)
+                planning_started = time.monotonic()
                 request = build_request(prompt, results, planner, limits=limits)
+                elapsed = min(planning_allowance, time.monotonic() - planning_started)
+                session.deadline += elapsed
+                planning_allowance -= elapsed
                 session.remaining()
                 response.requests.append(request)
                 response.warnings.extend(request.plan.warnings)

@@ -44,6 +44,9 @@ const STORY = (() => {
       if (psi && p.charts.length < 2) { shownPsi.add(psi); others.push({ type: "experiment", params: { psi_id: psi } }); }
       out.push({ kind: "point", items: side === "left" ? [pt, ...others] : [...others.reverse(), pt] });
     });
+    for (const block of arr(a.blocks)) {
+      out.push({ kind: "point", items: [{ type: "workflow_result", params: block }] });
+    }
     const close = [];
     if (str(a.limitations)) close.push({ type: "limitations", params: { text: a.limitations } });
     if (arr(a.evidence).length) close.push({ type: "evidence", params: { items: a.evidence.slice(0, 6) } });

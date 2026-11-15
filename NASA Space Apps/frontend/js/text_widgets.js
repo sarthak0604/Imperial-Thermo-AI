@@ -43,6 +43,7 @@ window.TW = (() => {
   ];
 
   const DEF = {
+    workflow_result: { title: "Thermo result", desc: "Output from the Thermo research workflow.", src: "Thermo workflow" },
     answer: { title: "Answer", desc: "A direct answer to your question, written by the stand-in AI from the NASA PSI investigations in the data. The Evidence box lists what it relied on.",
       src: "Written by the stand-in AI from the NASA PSI data. Check it against the evidence." },
     key_fact: { title: "Key fact", desc: "One number or fact copied from the data, with where it came from.", src: "Copied from the NASA PSI data or the challenge brief." },
@@ -56,7 +57,7 @@ window.TW = (() => {
     about: { title: "About these widgets", desc: "How to read the widget badges and which model each chart comes from.", src: "" }
   };
   const has = t => t in DEF, def = t => DEF[t];
-  const titleOf = (t, p = {}) => t === "point" ? `Point ${p.n || ""}`.trim() : t === "key_fact" ? (p.label || DEF.key_fact.title) : t === "about" ? (p.kind === "models" ? "The thermo models" : "Badges") : DEF[t].title;
+  const titleOf = (t, p = {}) => t === "workflow_result" ? (p.title || p.model_id || (p.type === "inspection" ? "File inspection" : "Thermo result")) : t === "point" ? `Point ${p.n || ""}`.trim() : t === "key_fact" ? (p.label || DEF.key_fact.title) : t === "about" ? (p.kind === "models" ? "The thermo models" : "Badges") : DEF[t].title;
 
   const askHref = q => (U.askHref ? U.askHref(q) : "#q=" + encodeURIComponent(q));
   const invOf = id => U.inv(id) || null;
@@ -103,12 +104,13 @@ window.TW = (() => {
       case "point": return md(p.text) + ((p.psi_ids || []).length ? `<p class="t-rests">NASA data: ${(p.psi_ids || []).map(id => full
         ? `<a href="${esc(U.invHref(id))}">${esc(invName(id, true))}</a>` : `<b>${esc(invName(id))}</b>`).join(", ")}</p>` : "") + methodLine(p.charts, full);
       case "experiment": return expBody(p, full);
+      case "workflow_result": return workflowResult(p, full);
       case "answer": return (p.note ? `<div class="t-note">` : "") + md(p.text) + (p.note ? `</div>` : "");
       case "limitations": return md(p.text);
       case "key_fact": return stat(p, full);
       case "explain": return `<ul class="t-list">${(p.items || []).map(it => `<li><b>${esc(it.title)}</b> ${esc(full ? it.text : clip(it.text, 90))}</li>`).join("")}</ul>`;
       case "evidence": return `<ul class="t-list">${(p.items || []).map(e => full
-        ? `<li><a href="${esc(U.invHref(e.psi_id))}">${esc(invName(e.psi_id, true))}</a> <span class="t-id">${esc(e.psi_id)}</span>${e.note ? " — " + esc(e.note) : ""}${invOf(e.psi_id) ? ` · <a href="${esc(invOf(e.psi_id).url)}" target="_blank" rel="noopener">PSI ↗</a>` : ""}</li>`
+        ? `<li><a href="${esc(U.invHref(e.psi_id))}">${esc(invName(e.psi_id, true))}</a> <span class="t-id">${esc(e.psi_id)}</span>${e.note ? " — " + esc(e.note) : ""}${safeUrl(e.url || invOf(e.psi_id)?.url) ? ` · <a href="${esc(e.url || invOf(e.psi_id).url)}" target="_blank" rel="noopener">PSI ↗</a>` : ""}</li>`
         : `<li><span class="t-id">${esc(e.psi_id)}</span> ${esc(invName(e.psi_id))}${e.note ? " — " + esc(clip(e.note, 80)) : ""}</li>`).join("")}</ul>`;
       case "follow_ups": return `<ul class="t-list t-links">${(p.items || []).map(q => `<li><a href="${esc(askHref(q))}">${esc(q)}</a></li>`).join("")}</ul>`;
       case "about": return p.kind === "models"
@@ -117,12 +119,51 @@ window.TW = (() => {
     }
     return "";
   }
+  const safeUrl = url => typeof url === "string" && /^https?:\/\//i.test(url) ? url : null;
+  function workflowResult(p, full) {
+    const label = [p.illustrative ? "Illustrative" : "", (p.evidence_type || "").replaceAll("_", " ")].filter(Boolean).join(" · ");
+    const citation = p.source_file_ids?.length ? `<p>Source files: ${esc(p.source_file_ids.join(", "))}</p>` : "";
+    const header = label ? `<p class="muted">${esc(label)}</p>` : "";
+    if (p.type === "chart" && p.x?.values?.length && p.series?.length) {
+      const plots = p.series.map(series => {
+        const points = p.x.values.map((x, i) => [x, series.values[i]]).filter(pair => pair.every(Number.isFinite));
+        if (!points.length) return "";
+        const bounds = values => {
+          let lo = Infinity, hi = -Infinity;
+          for (const v of values) { lo = Math.min(lo, v); hi = Math.max(hi, v); }
+          return lo === hi ? [lo - 1, hi + 1] : [lo, hi];
+        };
+        const x = bounds(points.map(pair => pair[0])), y = bounds(points.map(pair => pair[1]));
+        return `<div style="height:240px">${CH.host(size => {
+          const f = CH.frame(size, { x, y, xticks: CH.range(...x, 4), yticks: CH.range(...y, 4),
+            xlabel: p.x.label, xunit: p.x.unit, ylabel: series.label, yunit: series.unit });
+          const marks = p.chart_type === "scatter"
+            ? points.map(([xv, yv]) => CH.dot(f.sx(xv), f.sy(yv), { r: 2 })).join("")
+            : CH.line(points, f.sx, f.sy);
+          return f.axes + marks;
+        }, { label: series.label })}</div>`;
+      }).join("");
+      return header + plots + citation;
+    }
+    const url = safeUrl(p.url);
+    if (url) return `<p><a href="${esc(url)}" target="_blank" rel="noopener">Open ${esc(p.type)} ↗</a></p>`;
+    if (p.type === "inspection") {
+      const preview = p.row_count != null ? `${p.row_count} rows` : p.file_id;
+      return `<p>${esc(p.message || preview || "")}</p>` +
+        (full ? `<pre>${esc(JSON.stringify(p, null, 2))}</pre>` : "");
+    }
+    if (p.result_summary) return header + citation + `<p>${esc(p.result_summary)}</p>`;
+    return header + citation + (full
+      ? `<pre>${esc(JSON.stringify(p.data || p, null, 2))}</pre>`
+      : "<p>Open to read the calculation output.</p>");
+  }
+
   const srcOf = (t, p = {}) => t === "answer" && p.note ? "Preview mode: no AI connected." : DEF[t].src;
   const full = (t, p) => body(t, p, true);
 
   // ---------- shape: how much room the words need, and which proportions read well ----------
   const SHAPES = {   // [natural, narrowest, widest] width:height
-    answer: [1.35, 0.85, 2.3], key_fact: [1.25, 0.85, 1.9], explain: [1.2, 0.6, 2.4], evidence: [1.2, 0.55, 2.4],
+    workflow_result: [1.4, 0.65, 3.5], answer: [1.35, 0.85, 2.3], key_fact: [1.25, 0.85, 1.9], explain: [1.2, 0.6, 2.4], evidence: [1.2, 0.55, 2.4],
     limitations: [1.7, 0.9, 3.2], point: [1.4, 0.6, 3.5], experiment: [1.3, 0.7, 2.6], follow_ups: [1.5, 0.7, 3.2], about: [1.3, 0.7, 2.4]
   };
   function chars(t, p = {}) {
@@ -132,6 +173,7 @@ window.TW = (() => {
     if (t === "follow_ups") return (p.items || []).reduce((s, q) => s + String(q).length + 10, 0);
     if (t === "about") return p.kind === "models" ? 280 : 250;
     if (t === "point") return plain(p.text).length + (p.psi_ids || []).length * 14 + ((p.charts || []).length ? 70 : 0);
+    if (t === "workflow_result") return p.type === "chart" ? 2200 : 450;
     if (t === "experiment") return 300;
     return 0;
   }

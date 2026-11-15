@@ -360,7 +360,7 @@ INPUT_UNITS = {
     "soot_carbon_kg_s": "kg/s", "reference_hrr_W": "W", "hrr_W": "W",
     "radiometer_flux_w_m2": "W/m2", "total_hrr_w": "W", "background_flux_w_m2": "W/m2",
     "o2_vol_frac": "1", "co2_vol_frac": "1", "co_vol_frac": "1",
-    "y_fuel_stream": "1", "y_ox_stream": "1", "x_o2": "1", "d0_mm": "mm",
+    "y_fuel_stream": "1", "y_ox_stream": "1", "x_o2": "1", "o2_mole_frac": "1", "d0_mm": "mm",
     "pressure_kpa": "kPa", "pressure_kPa": "kPa", "t_amb_k": "K", "t_surface_k": "K",
     "temp_k": "K", "air_speed_m_s": "m/s", "u_flow_ms": "m/s",
     "oxygen_consumption_kg_s": "kg/s", "co2_production_kg_s": "kg/s",

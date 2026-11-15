@@ -8,13 +8,14 @@ sends the best matches to an OpenAI-style chat API, then checks the reply before
 Keys are read from environment variables or from frontend/.env.local (git-ignored), never from website code:
   GROQ_API_KEY   Groq, console.groq.com (free plan, rate-limited)
   XAI_API_KEY    xAI Grok, console.x.ai (paid per use)
-Optional: AI_PROVIDER=groq|xai, AI_MODEL=<model id>, PORT=8000
+Optional: AI_PROVIDER=thermo|groq|xai|claude, AI_MODEL=<model id>, PORT=8000
 
 Run from the frontend folder:   python3 standin/server.py
-Standard library only — nothing to install.
+The stand-in modes use only the standard library. Thermo mode uses the project environment.
 """
 from __future__ import annotations
 import chart_facts
+import thermo
 import json, os, re, shutil, subprocess, sys, tempfile, time, urllib.error, urllib.request
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -347,11 +348,28 @@ class Handler(SimpleHTTPRequestHandler):
         self.send_response(code); self.send_header("Content-Type", "application/json"); self.send_header("Content-Length", str(len(b)))
         self.end_headers(); self.wfile.write(b)
 
+    def send_head(self):
+        try:
+            path = Path(self.translate_path(self.path)).resolve().relative_to(ROOT)
+        except (OSError, ValueError):
+            self.send_error(404)
+            return None
+        if any(part.startswith(".") or part == "standin" for part in path.parts):
+            self.send_error(404)
+            return None
+        return super().send_head()
+
     def do_GET(self):
-        if self.path.startswith("/.env") or "standin" in self.path:   # never serve secrets or server code
-            return self._json(404, {"error": "not found"})
         if self.path == "/api/health":
-            p = pick_provider(load_env())
+            env = load_env()
+            if env.get("AI_PROVIDER") == "thermo":
+                try:
+                    name = thermo.model_id(env)
+                except ImportError:
+                    return self._json(503, {"ok": False, "provider": "thermo",
+                                            "error": "Start the server from the project environment."})
+                return self._json(200, {"ok": True, "provider": "thermo", "model": name})
+            p = pick_provider(env)
             return self._json(200, {"ok": True, "provider": p and p["name"], "model": p and p["model"]})
         return super().do_GET()
 
@@ -362,10 +380,23 @@ class Handler(SimpleHTTPRequestHandler):
             req = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0)) or 0) or b"{}")
         except ValueError:
             return self._json(400, {"error": "bad JSON"})
-        q = str(req.get("question", "")).strip()[:600]
+        if not isinstance(req, dict) or not isinstance(req.get("question"), str):
+            return self._json(400, {"error": "question must be text"})
+        q = req["question"].strip()[:600]
         if not q:
             return self._json(400, {"error": "empty question"})
-        provider = pick_provider(load_env())
+        env = load_env()
+        if env.get("AI_PROVIDER") == "thermo":
+            try:
+                out = thermo.ask(q, env)
+            except ImportError:
+                return self._json(503, {"provider": "thermo", "error": "Start the server from the project environment with the search extra."})
+            except thermo.ModelLoadError:
+                return self._json(503, {"provider": "thermo", "error": "Could not load the local Qwen model. Check the model cache and GPU setup."})
+            except (OSError, ValueError, KeyError):
+                return self._json(500, {"provider": "thermo", "error": "The Thermo workflow could not load its PSI graph or results."})
+            return self._json(200, out)
+        provider = pick_provider(env)
         if not provider:
             return self._json(503, {"error": "No AI key found. Add GROQ_API_KEY or XAI_API_KEY to frontend/.env.local, then restart."})
         t0 = time.time()
@@ -385,7 +416,9 @@ if __name__ == "__main__":
     port = int(env.get("PORT", 8000))
     p = pick_provider(env)
     print(f"Stand-in AI server: http://localhost:{port}")
-    if p:
+    if env.get("AI_PROVIDER") == "thermo":
+        print("  Thermo workflow · local Qwen planning")
+    elif p:
         print(f"  AI: {p['name']} / {p['model']}" + (f"  (Claude Code at {p['bin']}, using your Claude plan login)" if p["name"] == "claude" else ""))
     elif str(env.get("AI_PROVIDER", "")).lower() == "claude":
         print("  AI: Claude Code not found — install it (https://code.claude.com) or set CLAUDE_BIN=/path/to/claude (site will use mock answers)")
