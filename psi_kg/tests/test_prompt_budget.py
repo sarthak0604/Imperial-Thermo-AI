@@ -6,6 +6,7 @@ import json
 import pytest
 
 from psi_graph.local_model import LocalModelError
+from psi_graph.prompt_budget import extraction_requests
 from psi_graph.science import SYSTEM, Extraction, extract_all
 
 
@@ -45,7 +46,7 @@ def document(text, **overrides):
     }
 
 
-def test_large_inventory_and_source_are_both_bounded_without_losing_coverage(tmp_path):
+def test_explicit_full_inventory_batches_preserve_all_source_pairs():
     text = "".join(f"Observation {n}: temperature ΔT={n} K.\n" for n in range(180))
     resources = [
         {
@@ -63,12 +64,17 @@ def test_large_inventory_and_source_are_both_bounded_without_losing_coverage(tmp
     doc = document(text)
     original_doc = copy.deepcopy(doc)
 
-    results, failures = extract_all(client, [doc], resources, tmp_path)
+    payload = dict(
+        document_id=doc["id"],
+        source_title=doc["title"],
+        resource_type=doc["resource_type"],
+        sections=doc["sections"],
+        resource_inventory=resources,
+    )
+    for request in extraction_requests(client, payload, Extraction):
+        client.call("extract", request, Extraction)
 
     assert len(client.requests) > 1
-    assert not failures
-    assert len(results) == len(client.requests)
-    assert len({(row["document_id"], row["chunk"]) for row in results}) == len(results)
     assert doc == original_doc
     assert resources == original_resources
     # Every inventory entry must see the complete source, even if its source
@@ -93,8 +99,6 @@ def test_large_inventory_and_source_are_both_bounded_without_losing_coverage(tmp
         for request in client.requests
         for section in request["sections"]
     } == {"page 1"}
-    saved = json.loads((tmp_path / "extractions.json").read_text())
-    assert saved == results
 
 
 def test_long_section_without_inventory_preserves_every_character(tmp_path):
@@ -125,6 +129,7 @@ def test_indivisible_metadata_stops_before_generation(tmp_path, oversize):
         doc["title"] = "Very long title " * 1000
     else:
         resources = [{"id": "resource-1", "title": "Very long inventory title " * 1000}]
+        doc["resource_id"] = "resource-1"
 
     with pytest.raises(LocalModelError):
         extract_all(client, [doc], resources, tmp_path)

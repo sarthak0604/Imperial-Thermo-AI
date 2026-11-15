@@ -337,7 +337,7 @@ def scientific_review(client, graph, provenance, documents, output):
                 ],
             )
         )
-    from .synthesis_batches import bounded_batches, fit_review_items
+    from .synthesis_batches import adaptive_calls, bounded_batches, fit_review_items
 
     def payload(batch):
         return dict(
@@ -352,13 +352,14 @@ def scientific_review(client, graph, provenance, documents, output):
         client, "scientific_review", scoped, payload, Review, max_items=16
     )
     try:
-        for batch in batches:
+        for batch, review in adaptive_calls(
+            client, "scientific_review", batches, payload, Review
+        ):
             print(
                 f"LLM scientific audit: {len(verdicts) + 1}-"
                 f"{len(verdicts) + len(batch)} of {len(items)}",
                 flush=True,
             )
-            review = client.call("scientific_review", payload(batch), Review)
             expected = {item["id"] for item in batch}
             seen = set()
             for verdict in review.verdicts:

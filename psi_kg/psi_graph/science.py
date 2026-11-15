@@ -1,12 +1,16 @@
 """Typed provider-neutral extraction and synthesis; source text is always untrusted data."""
 
+import time
+from collections import deque
 from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from .common import normalized, write_json
+from . import extraction_checkpoint
+from .common import digest, normalized, write_json
 from .parsing import chunks
-from .prompt_budget import extraction_requests
+from .prompt_budget import extraction_requests, split_request
+from .resource_context import ResourceContext
 
 PROMPT_VERSION = "1.1.0"
 
@@ -137,47 +141,89 @@ def check_evidence(items, documents_by_id):
 
 
 def extract_all(client, documents, resources, output, *, results=None, failures=None):
-    from .local_model import LocalModelError
+    from .local_model import LocalModelError, LocalOutputLimitError
     from .providers import QuotaExceededError
 
     results = [] if results is None else results
     failures = [] if failures is None else failures
     index = evidence_index(documents)
-    inventory = [
-        {
-            k: r.get(k)
-            for k in (
-                "id",
-                "title",
-                "resource_type",
-                "doi",
-                "nasa_path",
-                "access_status",
-            )
-        }
-        for r in resources
-    ]
+    resource_context = ResourceContext(resources)
     for document in documents:
-
-        def requests():
-            for sections in chunks(document):
-                payload = dict(
-                    instruction="Extract studies and resource science from this chunk. Use resource inventory only to resolve exact matching files and titles, not to invent content. Use evidence from this chunk. If no study evidence, leave studies empty.",
+        scoped = []
+        for sections in chunks(document):
+            selected = resource_context.select(document, sections)
+            inventory = [
+                {
+                    k: r.get(k)
+                    for k in ("id", "title", "resource_type", "doi", "nasa_path")
+                }
+                for r in selected
+            ]
+            scoped.append(
+                dict(
+                    instruction="Extract studies and resource science from this chunk. The resource inventory contains only this source and explicitly named files. Use it only to resolve exact matching files and titles, not to invent content or associations to unlisted files. Use evidence from this chunk. Use concise summaries and short exact evidence quotes; do not repeat identical objects. Include resource science only where this text provides scientific evidence. If no study evidence, leave studies empty.",
                     document_id=document["id"],
                     source_title=document["title"],
                     resource_type=document["resource_type"],
                     sections=sections,
                     resource_inventory=inventory,
                 )
-                try:
-                    yield from extraction_requests(client, payload, Extraction)
-                except LocalModelError as exc:
-                    failures.append(dict(document_id=document["id"], issue=str(exc)))
-                    write_json(output / "extraction_failures.json", failures)
-                    raise
-
-        for number, payload in enumerate(requests(), 1):
-            print(f"LLM extract: {document['title']} chunk {number}", flush=True)
+            )
+        if not scoped:
+            continue
+        fingerprint = extraction_checkpoint.identity(
+            client, scoped, SYSTEM, Extraction, document
+        )
+        checkpoint = (
+            output / "extraction_checkpoints" / (digest(document["id"]) + ".json")
+        )
+        cached = extraction_checkpoint.load(
+            checkpoint, fingerprint, document["id"], Extraction
+        )
+        if cached is not None:
+            print(
+                f"LLM extract: {document['title']} — reused {len(cached[0])} completed chunks",
+                flush=True,
+            )
+            results.extend(cached[0])
+            failures.extend(cached[1])
+            write_json(output / "extractions.json", results)
+            write_json(output / "extraction_failures.json", failures)
+            continue
+        print(f"Planning extraction: {document['title']}", flush=True)
+        try:
+            requests = [
+                request
+                for payload in scoped
+                for request in extraction_requests(client, payload, Extraction)
+            ]
+        except LocalModelError as exc:
+            failures.append(dict(document_id=document["id"], issue=str(exc)))
+            write_json(output / "extraction_failures.json", failures)
+            raise
+        document_start, failure_start = len(results), len(failures)
+        started = time.monotonic()
+        pending = deque((request, 0) for request in requests)
+        total, number = len(requests), 0
+        while pending:
+            payload, depth = pending.popleft()
+            split_key = extraction_checkpoint.identity(
+                client, [payload], SYSTEM, Extraction
+            )
+            split_path = output / "extraction_splits" / (split_key + ".json")
+            if split_path.exists() and depth < 6:
+                parts = split_request(payload, prefer_sections=True)
+                if parts:
+                    pending.extendleft(reversed([(part, depth + 1) for part in parts]))
+                    total += len(parts) - 1
+                    continue
+            number += 1
+            print(
+                f"LLM extract: {document['title']} chunk {number}/{total} "
+                f"({len(payload['resource_inventory'])} relevant resources)",
+                flush=True,
+            )
+            call_started = time.monotonic()
             try:
                 result = client.call("extract", payload, Extraction)
                 data = result.model_dump()
@@ -208,6 +254,41 @@ def extract_all(client, documents, resources, output, *, results=None, failures=
                 results.append(
                     dict(document_id=document["id"], chunk=number, extraction=data)
                 )
+                write_json(output / "extractions.json", results)
+                elapsed = time.monotonic() - started
+                remaining = elapsed / number * (total - number)
+                print(
+                    f"Completed chunk {number}/{total} in "
+                    f"{time.monotonic() - call_started:.1f}s; "
+                    f"estimated extraction time left for this document: {remaining / 60:.1f} min",
+                    flush=True,
+                )
+            except LocalOutputLimitError as exc:
+                parts = (
+                    split_request(payload, prefer_sections=True) if depth < 6 else None
+                )
+                if not parts:
+                    failures.append(
+                        dict(
+                            document_id=document["id"],
+                            chunk=number,
+                            issue=str(exc),
+                            output_split_depth=depth,
+                        )
+                    )
+                    write_json(output / "extraction_failures.json", failures)
+                    raise LocalOutputLimitError(
+                        "Output still exceeds the token budget after bounded splitting; "
+                        "completed chunks remain cached. No partial JSON was accepted."
+                    ) from exc
+                write_json(split_path, dict(reason="output_token_limit", depth=depth))
+                print(
+                    f"Output limit at chunk {number}; retrying as smaller source pieces",
+                    flush=True,
+                )
+                pending.extendleft(reversed([(part, depth + 1) for part in parts]))
+                total += len(parts) - 1
+                number -= 1
             except RuntimeError as exc:
                 failures.append(
                     dict(document_id=document["id"], chunk=number, issue=str(exc))
@@ -218,6 +299,13 @@ def extract_all(client, documents, resources, output, *, results=None, failures=
                     exc, (QuotaExceededError, LocalModelError)
                 ) or "rejected" in str(exc):
                     raise
+        if len(results) - document_start == total:
+            extraction_checkpoint.save(
+                checkpoint,
+                fingerprint,
+                results[document_start:],
+                failures[failure_start:],
+            )
     write_json(output / "extractions.json", results)
     write_json(output / "extraction_failures.json", failures)
     if not results:
@@ -243,6 +331,7 @@ def synthesize(client, extractions, resources, metadata, output):
         extractions=extractions,
     )
     from .synthesis_batches import (
+        adaptive_calls,
         bounded_batches,
         extraction_atoms,
         merge_syntheses,
@@ -268,9 +357,12 @@ def synthesize(client, extractions, resources, metadata, output):
             client, "synthesize", extraction_atoms(extractions), payload, Synthesis
         )
     results = []
-    for number, batch in enumerate(batches, 1):
-        print(f"LLM synthesis batch {number}", flush=True)
-        results.append(client.call("synthesize", payload(batch), Synthesis))
+    calls = adaptive_calls(
+        client, "synthesize", batches, payload, Synthesis, atomize=extraction_atoms
+    )
+    for number, (_, result) in enumerate(calls, 1):
+        print(f"LLM synthesis batch {number} completed", flush=True)
+        results.append(result)
         write_json(output / "synthesis_batches.json", [r.model_dump() for r in results])
     result = merge_syntheses(results)
     result.caveats.append(

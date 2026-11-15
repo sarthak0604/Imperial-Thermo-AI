@@ -17,6 +17,10 @@ class LocalModelError(RuntimeError):
     """Local configuration/capacity failure: stop rather than skip source documents."""
 
 
+class LocalOutputLimitError(LocalModelError):
+    """The caller can retry smaller source batches; partial JSON is never accepted."""
+
+
 def model_source(model_id):
     """Use the image's pinned default snapshot without writing a runtime cache."""
     if model_id == os.environ.get("LLM_BUNDLED_MODEL_ID"):
@@ -177,8 +181,8 @@ class LocalModel:
         eos = self.model.generation_config.eos_token_id
         eos = eos if isinstance(eos, list) else [eos]
         if len(generated) >= self.max_new_tokens and int(generated[-1]) not in eos:
-            raise LocalModelError(
-                "Local output reached LLM_MAX_NEW_TOKENS; increase the output/context budget. "
+            raise LocalOutputLimitError(
+                "Local output reached LLM_MAX_NEW_TOKENS; retry with smaller source batches. "
                 "Truncated output was rejected."
             )
         return self.tokenizer.decode(generated, skip_special_tokens=True).strip(), {

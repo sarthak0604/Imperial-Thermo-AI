@@ -174,3 +174,41 @@ def test_initial_and_repair_working_guards_precede_gpu_transfer(
         with pytest.raises(LocalModelError, match=error):
             client.complete(messages)
         assert not moved
+
+
+@pytest.mark.parametrize("ends_with_eos", [False, True])
+def test_exhausted_generation_is_distinguished_for_adaptive_retry(ends_with_eos):
+    from contextlib import nullcontext
+
+    import numpy as np
+
+    from psi_graph.local_model import LocalOutputLimitError
+
+    class Inputs(dict):
+        def to(self, device):
+            return self
+
+    client = LocalModel.__new__(LocalModel)
+    client.load = lambda: None
+    client.device = "cpu"
+    client.input_tokens = 100
+    client.context_tokens = 100
+    client.max_new_tokens = 2
+    client.torch = SimpleNamespace(inference_mode=nullcontext)
+    client.tokenizer = SimpleNamespace(
+        eos_token_id=9,
+        apply_chat_template=lambda *a, **k: Inputs(input_ids=np.array([[1, 2]])),
+        decode=lambda *a, **k: "{}",
+    )
+    client.model = SimpleNamespace(
+        device="cpu",
+        generation_config=SimpleNamespace(eos_token_id=9),
+        generate=lambda **k: np.array([[1, 2, 7, 9 if ends_with_eos else 7]]),
+    )
+    if ends_with_eos:
+        assert client.complete([])[0] == "{}"
+    else:
+        with pytest.raises(
+            LocalOutputLimitError, match="Truncated output was rejected"
+        ):
+            client.complete([])

@@ -22,6 +22,7 @@ from .incremental import prepare_incrementally
 from .nasa_access import investigation_id
 from .parsing import parse_resources
 from .providers import LLM
+from .resource_context import SCOPE_CAVEAT
 from .science import extract_all, synthesize
 from .storage import source_storage
 
@@ -93,6 +94,7 @@ def report(
                 "contradictions outside those excerpts were not assessed."
             )
     if provider is not None:
+        report["limitations"].append(SCOPE_CAVEAT)
         report["model_execution"] = {"provider": provider, "model": model}
         report["extraction_mode"] = "local_model" if provider == "local" else "llm_api"
         if provider == "local":

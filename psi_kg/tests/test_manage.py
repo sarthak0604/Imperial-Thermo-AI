@@ -159,6 +159,15 @@ def fake_pipeline(command, check):
     output = Path(command[command.index("--output") + 1])
     accession = command[3].rsplit("/", 1)[-1]
     write_json(output / accession / "knowledge_graph.json", graph(accession))
+    write_json(
+        output / accession / "validation_report.json",
+        {
+            "source_url": graph(accession)["source_url"],
+            "structural_validation": {"passed": True},
+        },
+    )
+    write_json(output / accession / "resources_manifest.json", {"resources": []})
+    write_json(output / accession / "documents.json", [])
 
 
 @pytest.mark.parametrize("choice", ["1", "2"])
@@ -365,13 +374,12 @@ def test_multiple_studies_publish_one_graph(tmp_path, monkeypatch, mode):
 
 
 @pytest.mark.parametrize("mode", ["create", "update"])
-def test_later_study_failure_does_not_publish_partial_batch(
+def test_later_study_failure_retains_validated_partial_batch(
     tmp_path, monkeypatch, mode
 ):
     target = tmp_path / "combined.json"
     if mode == "update":
         write_json(target, graph())
-    before = target.read_bytes() if target.exists() else None
     monkeypatch.setattr(
         sys,
         "argv",
@@ -396,6 +404,14 @@ def test_later_study_failure_does_not_publish_partial_batch(
     monkeypatch.setattr(manage.subprocess, "run", run)
     with pytest.raises(subprocess.CalledProcessError):
         manage.main()
-    assert (target.read_bytes() if target.exists() else None) == before
-    assert not target.with_suffix(".publication.json").exists()
+    result = read_json(target)
+    investigations = {n["id"] for n in result["nodes"] if n["type"] == "Investigation"}
+    assert investigations == (
+        {"inv:PSI-1", "inv:PSI-2"} if mode == "update" else {"inv:PSI-2"}
+    )
+    receipt = read_json(target.with_suffix(".publication.json"))
+    assert receipt["status"] == "partial"
+    assert receipt["complete"] is False
+    assert receipt["completed_studies"] == ["PSI-2"]
+    assert receipt["pending_studies"] == ["PSI-3"]
     assert list((tmp_path / "runs").glob("PSI-2-*/PSI-2/knowledge_graph.json"))

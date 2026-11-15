@@ -163,6 +163,57 @@ def bounded_batches(client, stage, values, payload, schema, max_items=None):
         yield batch
 
 
+def adaptive_calls(client, stage, batches, payload, schema, atomize=None):
+    """Bisect output-limited batches; never accept or persist truncated output.
+
+    Each failed parent is replaced by two strictly smaller batches. Synthesis
+    may first decompose a lone extraction record into whole scientific objects.
+    A single indivisible object is never truncated or retried indefinitely.
+    """
+    from .local_model import LocalOutputLimitError
+
+    fits = getattr(client, "fits", lambda *args: True)
+    for batch in batches:
+        pending = [batch]
+        while pending:
+            current = pending.pop()
+            if not fits(stage, payload(current), schema):
+                pieces = current
+                if len(pieces) == 1 and atomize is not None:
+                    pieces = list(atomize(current))
+                if len(pieces) <= 1:
+                    raise LocalModelError(
+                        f"A single {stage} record exceeds the complete request budget; "
+                        "no evidence was truncated and no oversized request was sent."
+                    )
+                # Atomizing one extraction duplicates document/wrapper metadata.
+                # Re-budget the full payload rather than assuming child batches fit.
+                smaller = list(bounded_batches(client, stage, pieces, payload, schema))
+                pending.extend(reversed(smaller))
+                continue
+            try:
+                result = client.call(stage, payload(current), schema)
+            except LocalOutputLimitError:
+                pieces = current
+                if len(pieces) == 1 and atomize is not None:
+                    pieces = list(atomize(current))
+                if len(pieces) <= 1:
+                    raise LocalOutputLimitError(
+                        f"A single {stage} record still exceeds LLM_MAX_NEW_TOKENS. "
+                        "No truncated output was accepted; successful batches remain cached. "
+                        "Inspect this record or increase the output allowance if memory permits."
+                    ) from None
+                middle = len(pieces) // 2
+                print(
+                    f"LLM {stage}: output limit reached; splitting {len(pieces)} "
+                    "records into smaller requests",
+                    flush=True,
+                )
+                pending.extend((pieces[middle:], pieces[:middle]))
+            else:
+                yield current, result
+
+
 def excerpt_context(context, quote, radius=600):
     """Preserve the full quote with nearby source text, never an arbitrary prefix."""
     from .common import normalized

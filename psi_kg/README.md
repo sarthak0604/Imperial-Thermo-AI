@@ -26,7 +26,7 @@ uv run --extra local psi-graph-manage --study PSI-10 \
 
 These options are also accepted by `psi-graph`. Raise the cap only after checking available disk capacity. Incremental mode uses one download at a time; `--workers` applies to the legacy `--keep-originals` path. That explicit retention option keeps originals and uses the original whole-study preparation flow, without the incremental storage cap.
 
-Retained outputs include extracted text/profiles, per-document parse caches, scientific extractions, source URLs, checksums, `documents.json`, `resources_manifest.json`, and `storage_report.json`. Discarded originals have null `storage_uri` and a verification record in the manifest. Previously retained originals are never automatically deleted. Parsed ordinary files can be reused on rerunning preparation in the same output directory when source version/hash and parser version still match; ZIPs are downloaded again. Managed runs use separate directories, so rerunning the managed command starts a new run.
+Retained outputs include extracted text/profiles, per-document parse caches, scientific extractions, source URLs, checksums, `documents.json`, `resources_manifest.json`, and `storage_report.json`. Discarded originals have null `storage_uri` and a verification record in the manifest. Previously retained originals are never automatically deleted. Parsed ordinary files can be reused on rerunning preparation in the same output directory when source version/hash and parser version still match; ZIPs are downloaded again. Managed runs record their directories in a graph-specific `.run-state.json`. Rerun the same command with `--resume` to reuse completed documents and validated studies. A plain command still starts a new session.
 
 `preparation_state.json` records whether preparation finished. `--stage generate` refuses an incomplete incremental preparation. Resume preparation with the same URL and `--output`, then generate from that completed output. Cleanup runs on exceptions and normal interruption, but force-killing a process or losing power can leave `.originals-*` directories; remove them only after confirming their run has stopped.
 
@@ -69,7 +69,7 @@ uv run --extra local psi-graph-manage 'https://psi.nasa.gov/physci/repo/data/inv
 
 No API key or model server is required. Transformers downloads roughly 8 GB of model weights on first inference and reuses the Hugging Face cache (`~/.cache/huggingface` by default; override with `HF_HOME`). Local inference automatically uses CUDA, Apple MPS, or CPU. MPS uses fp16; CPU uses fp32 like the test branch and needs substantially more RAM. The cloud configuration uses CPU inference, not the branch's CUDA 4-bit path. CPU extraction can be slow. Original NASA downloads are still temporary unless `--keep-originals` is selected; cached model weights are kept separately.
 
-JSON output is validated against the existing extraction schema, with one bounded repair attempt. Source-evidence checks still apply. Context overflow, exhausted output budgets, or invalid JSON stop the run without publishing the graph; no input is silently truncated or sent to a paid provider. `LLM_CONTEXT_TOKENS` caps input plus reserved output tokens, and `LLM_MAX_NEW_TOKENS` caps output. The native context ceiling is separate from `LLM_INPUT_TOKENS` (default 8192): initial local requests, including the chat template and JSON schema, are token-counted before inference. One JSON repair may additionally use at most `LLM_MAX_NEW_TOKENS + 1024` input tokens for the previous response and validation feedback; that explicit ceiling and the native context ceiling are checked before GPU transfer. Extraction splits text and resource inventories without dropping their contents. Synthesis uses bounded batches and merges matching study keys/resource IDs while preserving evidence; differently named studies may remain duplicated across batches. Scientific review batches by token size and, where necessary, uses quote-centered source excerpts; those restrictions are recorded in `scientific_review_scope.json` and the validation report. An indivisible oversized record stops clearly rather than being truncated or sent to the GPU. If other GPU usage still causes OOM, reduce `LLM_INPUT_TOKENS` to 4096; this creates smaller batches. Increasing the disk cap does not increase GPU memory. Set `LLM_LOCAL_FILES_ONLY=1` to prohibit model downloads after the model is cached. Smaller-model scientific quality must be checked against sources; structural validation alone does not prove correctness.
+JSON output is validated against the existing extraction schema, with one bounded repair attempt. Source-evidence checks still apply. Output-limit failures retry smaller batches. Unrecoverable context overflow, output exhaustion, or invalid JSON stops the affected study without publishing it; no input is silently truncated or sent to a paid provider. `LLM_CONTEXT_TOKENS` caps input plus reserved output tokens, and `LLM_MAX_NEW_TOKENS` caps output. The native context ceiling is separate from `LLM_INPUT_TOKENS` (default 8192): initial local requests, including the chat template and JSON schema, are token-counted before inference. One JSON repair may additionally use at most `LLM_MAX_NEW_TOKENS + 1024` input tokens for the previous response and validation feedback; that explicit ceiling and the native context ceiling are checked before GPU transfer. Extraction selects the source resource and files explicitly named by filename/path/title/DOI/URL, then splits only when the complete request needs it. All source text is processed and all original resources remain in the graph; implicit or abbreviated cross-file references may remain unresolved. This avoids repeating every source chunk against unrelated inventory batches. Synthesis uses bounded batches and merges matching study keys/resource IDs while preserving evidence; differently named studies may remain duplicated across batches. Scientific review batches by token size and, where necessary, uses quote-centered source excerpts; those restrictions are recorded in `scientific_review_scope.json` and the validation report. An indivisible oversized record stops clearly rather than being truncated or sent to the GPU. If other GPU usage still causes OOM, reduce `LLM_INPUT_TOKENS` to 4096; this creates smaller batches. Increasing the disk cap does not increase GPU memory. Set `LLM_LOCAL_FILES_ONLY=1` to prohibit model downloads after the model is cached. Smaller-model scientific quality must be checked against sources; structural validation alone does not prove correctness.
 
 ### Optional Gemini setup and interactive graph selection
 
@@ -279,3 +279,42 @@ Never put credentials in `.env.example`: it is tracked by Git. Keep keys in the 
 ### Combine multiple NASA studies
 
 `psi-graph-manage` and the automatic `google` launcher accept repeated `--study` options for study titles, acronyms, PSI IDs or URLs. At the interactive study prompt, separate entries with `;`. All selected studies are processed into the same graph; choose update to add to an existing file. See [the multi-study instructions](CLOUD_RUN.md#multiple-studies-in-one-json-file) for examples, title disambiguation and failure behavior.
+
+## Faster extraction, output recovery, and progressive graphs
+
+Initial source requests use only relevant resource candidates. Completed document
+contributions are checkpointed with source/parser/model/schema fingerprints, so
+resuming does not rerun unchanged documents. GPU input budget changes and mutable
+download status do not invalidate completed contributions. The log shows chunk
+`X/Y`, relevant-resource counts, elapsed time and a rough remaining extraction time
+for the current document (not an ETA for all studies). Output-limit retries may
+increase Y.
+
+If Qwen exhausts its output budget, the pipeline rejects the partial JSON and
+retries smaller source pieces, up to six split levels. Successful calls and split
+decisions are saved. Synthesis and scientific review likewise split overflowing
+batches; an indivisible overflowing record stops with a clear error. Output limits
+are not raised automatically, and scientific evidence checks remain required.
+
+The manager publishes the combined graph after **each validated study**. Its
+`.publication.json` receipt names completed and pending studies and marks the
+result `partial` until all requested studies finish. A later failure preserves the
+last published graph. Start a run normally, then use the **same command plus
+`--resume`** after an interruption. Resume checks saved source/model configuration,
+graph and artifact hashes. Stop the prior process before resuming; do not remove
+locks until you have confirmed its writer has stopped.
+
+To adopt the older failed BASS run once, append this to the original command:
+
+```sh
+--resume-from runs/PSI-25-j5xsnxtp
+```
+
+This preserves the old directory and its source/parse caches. The new scoped prompts
+may require new model calls. Subsequent retries use `--resume` in place of
+`--resume-from`; keep the same `--mode`, `--graph` and study list. Completed parsing
+uses the generate stage directly. A source refresh requires a new session, not
+`--resume --refresh`.
+
+These changes reduce redundant work; they do not guarantee that all 19 investigations
+will finish within two hours on an L4. Each completed study becomes usable sooner.
