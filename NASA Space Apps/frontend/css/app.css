@@ -453,13 +453,3 @@ svg.chart text { font-size: 10px; fill: var(--ink); }
   .acts-top .btn span { display: none; }
   .flame-stage { height: 160px; }
 }
-
-/* Computed model output uses the same restrained typography as report cards. */
-.workflow-result { overflow: hidden; }
-.workflow-result table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; margin: 12px 0; }
-.workflow-result th, .workflow-result td { padding: 10px 14px; border-bottom: 1px solid color-mix(in srgb, currentColor 14%, transparent); text-align: left; }
-.workflow-result td { text-align: right; }
-.workflow-result thead th { font-size: 12px; font-weight: 600; }
-.workflow-result details { margin-top: 14px; }
-.workflow-result summary { cursor: pointer; padding: 8px 0; }
-.workflow-result .fups { margin-top: 14px; flex-wrap: wrap; }

@@ -155,7 +155,7 @@ Your sources: NASA PSI microgravity combustion investigations (in <data>) and th
 Reader: {PERSONA.get(persona, PERSONA["general"])}
 
 WHAT A GOOD ANSWER LOOKS LIKE
-The page shows your summary, then your points one by one, each next to the charts you attach and a card for the NASA investigation it cites.
+The page shows your summary and key facts first, then your points as boxes in order, each with the charts you attach, then the NASA investigations you cite and a numbered reference list.
 It must read like a clear explanation from an expert who knows this data, not a list of caveats.
 1. summary: answer the question directly in 1-2 sentences: the conclusion first (yes/no, which, how much, what happens), then the main reason. If the honest answer is uncertain, still give the best-supported answer and say what it rests on.
 2. points: 3-5 steps that build to that conclusion, in reading order:
@@ -163,6 +163,7 @@ It must read like a clear explanation from an expert who knows this data, not a 
    - go from what is known/measured, to the mechanism (why), to the consequence for the question;
    - quote numbers from a chart's "Shows:" line when they make the point (they are exactly what the reader sees on the chart); never quote numbers from charts marked ILLUSTRATIVE; never state a number, ratio or comparison ("half", "twice") that is not written in <data>, a "Shows:" line or a "Means:" line;
    - attach 0-2 charts to a point ONLY if that chart directly shows the claim; each chart in one point at most; no chart beats a loosely related one;
+   - readers see the first points and charts first: put the chart that most directly answers the question on the earliest point it supports;
    - each chart's "Means:" line is the correct reading of it: never contradict it; if it disagrees with what you expected, the chart wins and your claim changes;
    - when a point rests on a chart, also cite in psi_ids the NASA investigations in its "Built on:" line that are relevant to the point;
    - when a point explains WHY something happens, you may name the chart's method and one source from its "Method:" line, e.g. "Richardson-number scaling (Sacksteder 1990)"; never cite a paper that is not on a "Method:" line;
