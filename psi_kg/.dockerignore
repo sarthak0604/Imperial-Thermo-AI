@@ -1,8 +1,0 @@
-*
-!Dockerfile
-!pyproject.toml
-!uv.lock
-!*.py
-!psi_graph/
-psi_graph/*
-!psi_graph/*.py
