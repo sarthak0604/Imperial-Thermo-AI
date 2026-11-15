@@ -15,3 +15,13 @@ src/reviewed_knowledge_graph/*
 src/reviewed_knowledge_graph/output/*
 !src/reviewed_knowledge_graph/output/knowledge_graph.json
 !src/reviewed_knowledge_graph/output/source_quality_issues.json
+!src/reviewed_knowledge_graph/output/evidence-index.json
+!NASA Space Apps/
+!NASA Space Apps/frontend/
+!NASA Space Apps/frontend/**
+NASA Space Apps/frontend/_backup*/
+NASA Space Apps/frontend/tests/
+**/.env*
+**/.DS_Store
+**/__pycache__/
+**/*.pyc

@@ -224,6 +224,7 @@ window.ANS = (() => {
     if (M.facts.length) { L.push("Key facts"); M.facts.forEach(f => L.push(`- ${f.value}: ${f.label}${f.refs.length ? " [" + f.refs.join(",") + "]" : ""}`)); L.push(""); }
     if (M.finds.length) { L.push("Findings"); M.finds.forEach(f => L.push(`${f.n}. ${plain(f.text)}${f.refs.filter(Boolean).length ? " [" + [...new Set(f.refs.filter(Boolean))].join(",") + "]" : ""}`)); L.push(""); }
     if (M.limitations) L.push("What the data can't say", M.limitations, "");
+    if (M.blocks?.length) L.push("Computed results", ...M.blocks.map(WORKFLOW.text), "");
     if (M.refs.length) { L.push("References"); M.refs.forEach(r => { L.push(`[${r.n}] ${r.title}${r.url ? " " + r.url : ""}`); (r.sub || []).forEach(s => L.push(`     ${s.text}${s.url ? " " + s.url : ""}`)); }); L.push(""); }
     L.push(madeLine(M));
     return L.join("\n");

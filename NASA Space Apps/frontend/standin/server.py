@@ -1,17 +1,11 @@
 #!/usr/bin/env python3
-"""STAND-IN AI BACKEND for local testing — replaced by the backend team's knowledge-graph service later.
+"""Serve the Omri website and the shared Thermo backend.
 
-Serves the website at http://localhost:8000 and answers POST /api/ask in the agreed answer contract.
-It does a simple keyword search over standin/context.json (NASA PSI data + our model catalogue),
-sends the best matches to an OpenAI-style chat API, then checks the reply before the site sees it.
-
-Keys are read from environment variables or from frontend/.env.local (git-ignored), never from website code:
-  GROQ_API_KEY   Groq, console.groq.com (free plan, rate-limited)
-  XAI_API_KEY    xAI Grok, console.x.ai (paid per use)
-Optional: AI_PROVIDER=thermo|groq|xai|claude, AI_MODEL=<model id>, PORT=8000
-
-Run from the frontend folder:   python3 standin/server.py
-The stand-in modes use only the standard library. Thermo mode uses the project environment.
+Run from the project environment. POST /api/ask uses request_planner.backend;
+THERMO_PLANNER selects local Qwen, API inference, or retrieval-only planning.
+HOST defaults to loopback locally; Cloud Run sets it to 0.0.0.0 and supplies PORT.
+Secrets are read server-side from the environment or frontend/.env.local.
+Legacy stand-in utilities below remain for their unit tests, not HTTP routing.
 """
 from __future__ import annotations
 import secrets
@@ -20,10 +14,12 @@ from http.cookies import SimpleCookie
 import chart_facts
 import thermo
 import json, os, re, shutil, subprocess, sys, tempfile, time, urllib.error, urllib.request
+from threading import BoundedSemaphore
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent          # frontend/
+INFERENCE_SLOT = BoundedSemaphore(1)
 CTX = json.loads((Path(__file__).parent / "context.json").read_text(encoding="utf-8"))
 
 PROVIDERS = {  # name: (key env var, chat-completions URL, default model)  — same set-up as Bot Tracker's old ask.py
@@ -77,6 +73,9 @@ def load_env():
             if "=" in line and not line.strip().startswith("#"):
                 k, v = line.split("=", 1)
                 env.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+    # This website always uses the shared scientific backend, including when an
+    # old .env.local still names the former Claude stand-in.
+    env["AI_PROVIDER"] = "thermo"
     return env
 
 
@@ -408,6 +407,17 @@ class Handler(SimpleHTTPRequestHandler):
     def do_POST(self):
         if self.path != "/api/ask":
             return self._json(404, {"error": "not found"})
+        if not INFERENCE_SLOT.acquire(blocking=False):
+            return self._json(503, {"provider": "thermo", "code": "model_busy",
+                                    "error": "The model is processing another request. Try again shortly."})
+        try:
+            return self._handle_post()
+        finally:
+            INFERENCE_SLOT.release()
+
+    def _handle_post(self):
+        if self.path != "/api/ask":
+            return self._json(404, {"error": "not found"})
         try:
             length = int(self.headers.get("Content-Length", 0))
             if not 0 <= length <= 100000:
@@ -464,14 +474,9 @@ class Handler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     env = load_env()
     port = int(env.get("PORT", 8000))
-    p = pick_provider(env)
-    print(f"Stand-in AI server: http://localhost:{port}")
-    if env.get("AI_PROVIDER") == "thermo":
-        print("  Thermo backend · " + env.get("THERMO_PLANNER", "local") + " planning")
-    elif p:
-        print(f"  AI: {p['name']} / {p['model']}" + (f"  (Claude Code at {p['bin']}, using your Claude plan login)" if p["name"] == "claude" else ""))
-    elif str(env.get("AI_PROVIDER", "")).lower() == "claude":
-        print("  AI: Claude Code not found — install it (https://code.claude.com) or set CLAUDE_BIN=/path/to/claude (site will use mock answers)")
-    else:
-        print("  AI: NO KEY FOUND — add GROQ_API_KEY or XAI_API_KEY to frontend/.env.local (site will use mock answers)")
-    ThreadingHTTPServer(("127.0.0.1", port), Handler).serve_forever()
+    # Build the shared graph once before accepting concurrent health checks and
+    # questions. lru_cache alone allows concurrent cold loads of the 83 MB graph.
+    thermo.health(env)
+    print(f"Thermo website: http://localhost:{port}")
+    print("  Thermo backend · " + env.get("THERMO_PLANNER", "local") + " planning")
+    ThreadingHTTPServer((env.get("HOST", "127.0.0.1"), port), Handler).serve_forever()

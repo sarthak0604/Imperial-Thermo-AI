@@ -47,8 +47,6 @@
   }
   function open(q, p, s, o = {}) {
     EXPAND.close();
-    const saved = API.status.provider !== "thermo" && !API.conversation && !o.fresh && UI.find(q, p, s);
-    if (saved) return render(saved.a, { q, p, s, at: saved.t, cached: true });
     return ask(q, p, s, o.history || []);
   }
   async function ask(q, p, s, hist) {

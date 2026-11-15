@@ -171,9 +171,9 @@ window.UI = (() => {
   }
   function setRoute(r) { document.querySelectorAll(".si[data-route]").forEach(a => a.classList.toggle("on", a.dataset.route === r)); }
   function setStatus(s) {
-    const el = document.getElementById("ai-status"), live = s.mode === "live" && s.provider;
+    const el = document.getElementById("ai-status"), live = s.mode === "live" && s.provider === "thermo" && !s.error;
     el.classList.toggle("live", !!live);
-    el.querySelector("span").textContent = live ? `Live AI · ${s.provider} / ${s.model}` : s.mode === "live" ? "Server found, no AI key — mock answers" : "Mock answers (open through the server for live AI)";
+    el.querySelector("span").textContent = live ? `Live backend · ${s.provider} / ${s.model}` : "Backend unavailable — start the server";
   }
 
   // ---------- share menu (top bar) ----------

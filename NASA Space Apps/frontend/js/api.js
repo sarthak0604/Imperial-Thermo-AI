@@ -1,5 +1,5 @@
 // AI client.
-// - Opened as a file (double-click index.html): MOCK answers from data/mock_answers.js.
+// - Requires the HTTP backend. Errors are displayed without invented answers.
 // - Served by standin/server.py: LIVE answers from the configured backend.
 // - The integrated Thermo provider reports its active reviewed graph at /api/health.
 window.API = {
@@ -10,7 +10,7 @@ window.API = {
     if (id) fetch('/api/conversation?id='+encodeURIComponent(id), {method:'DELETE'}).catch(() => {});
     this.conversation = null; sessionStorage.removeItem('thermo-conversation');
   },
-  status: { mode: location.protocol.startsWith("http") ? "live" : "mock", provider: null, model: null, graph_id: null, planner: null, error: null },
+  status: { mode: location.protocol.startsWith("http") ? "live" : "unavailable", provider: null, model: null, graph_id: null, planner: null, error: null },
 
   async health() {
     if (this.status.mode !== "live") return this.status;
@@ -18,15 +18,15 @@ window.API = {
       const r = await fetch("/api/health");
       const j = await r.json();
       Object.assign(this.status, { provider: j.provider, model: j.model, graph_id: j.graph_id || null, planner: j.planner || null,
-        error: j.provider ? null : (j.error || "no AI provider is active") });
+        error: r.ok && j.ok && j.provider === "thermo" ? null : (j.error || "Thermo backend is unavailable") });
     } catch (e) { Object.assign(this.status, { error: "backend server not reachable" }); }
     return this.status;
   },
 
   describe() {
     const s = this.status;
-    if (s.mode === "live" && s.provider) return `live — ${s.provider} / ${s.model}${s.graph_id ? ` · ${s.graph_id}` : " · no reviewed graph reported"}`;
-    return "mock" + (s.error ? ` (${s.error})` : " (open via standin/server.py for live answers)");
+    if (s.mode === "live" && s.provider && !s.error) return `live — ${s.provider} / ${s.model}${s.graph_id ? ` · ${s.graph_id}` : " · no reviewed graph reported"}`;
+    return "backend unavailable" + (s.error ? ` (${s.error})` : " (start the backend server)");
   },
 
   async ask({ question, persona, scenario, history, signal }) {
@@ -63,18 +63,11 @@ window.API = {
       } catch (e) {
         if (e.name === "AbortError") return { meta: { aborted: true } };   // the user pressed stop
         return this.normalise({ summary: e.message, limitations: "The request failed. Try again or check the backend configuration.",
-          meta: { source: "live", provider: this.status.provider || "backend", status: "error" } });   // never leave the user with nothing
+          meta: { source: "live", provider: "thermo", status: "error" } });   // never leave the user with nothing
       }
     }
-    return this.mock({ question, persona, scenario, signal });
-  },
-
-  async mock({ question, persona, scenario, signal }, error) {
-    await new Promise(res => setTimeout(res, error ? 0 : 1400));
-    if (signal && signal.aborted) return { meta: { aborted: true } };
-    const a = window.MOCKGEN ? MOCKGEN.answer(question, persona) : JSON.parse(JSON.stringify(DATA.mockAnswers[persona] || DATA.mockAnswers.student));
-    a.meta = { ...a.meta, source: error ? "fallback-mock" : "mock", error: error || null, echo_question: question, scenario };
-    return a;
+    return this.normalise({ summary: "Start the backend server and open its HTTP address to ask a question.",
+      meta: { source: "live", provider: "thermo", status: "error" } });
   },
 
   // Make any answer safe to render, whatever the backend sends

@@ -13,10 +13,10 @@ window.REPORT = (() => {
 
   // ---------- a chart as a PNG, drawn off-screen in the light theme ----------
   const PROPS = ["fill", "fill-opacity", "stroke", "stroke-width", "stroke-opacity", "stroke-dasharray", "stroke-linecap", "stroke-linejoin", "opacity", "font-family", "font-size", "font-weight", "letter-spacing", "paint-order", "text-anchor", "rx", "ry"];
-  async function chartPNG(t, wpx = 760) {
-    const [aspect] = MW.shape(t), a = Math.max(1.3, Math.min(2.6, aspect)), hpx = Math.round(wpx / a);
+  async function chartPNG(t, wpx = 760, block = null) {
+    const [aspect] = block ? [2] : MW.shape(t), a = Math.max(1.3, Math.min(2.6, aspect)), hpx = Math.round(wpx / a);
     const stage = document.createElement("div"); stage.className = "pdf-stage";
-    stage.innerHTML = `<div style="width:${wpx}px;height:${hpx}px;display:flex">${MW.tile(t)}</div>`;
+    stage.innerHTML = block ? `<div style="width:${wpx}px">${WORKFLOW.render(block)}</div>` : `<div style="width:${wpx}px;height:${hpx}px;display:flex">${MW.tile(t)}</div>`;
     document.body.appendChild(stage);
     try {
       await frame();
@@ -76,6 +76,22 @@ window.REPORT = (() => {
     }
 
     let fig = 0;
+    if (M.blocks?.length) {
+      label("Computed results");
+      for (const block of M.blocks) {
+        WORKFLOW.text(block).split('\n').forEach(line => text(line, { size: 9.5 }));
+        if (block.type === 'chart' && block.chart_type !== 'bar') {
+          for (const series of block.series) {
+            const im = await chartPNG(null, 760, { ...block, series: [series] });
+            if (im) {
+              const { iw, ih } = fit(im, CW); need(ih + 9);
+              doc.addImage(im.png, "PNG", ML, y, iw, ih, undefined, "FAST"); y += ih + 1.5;
+              text(`${block.title || 'Computed chart'} · ${series.label}`, { size: 8, color: MUTED, gap: 4 });
+            }
+          }
+        }
+      }
+    }
     if (M.finds.length) {
       label("Findings");
       for (const f of M.finds) {

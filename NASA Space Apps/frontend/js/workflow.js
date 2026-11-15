@@ -76,5 +76,21 @@ window.WORKFLOW = (() => {
     if (b.type === 'inspection') return title+`<p>${esc(b.row_count != null ? `${b.row_count} rows` : b.message || '')}</p><pre style="overflow:auto">${esc(JSON.stringify(b.columns || b.preview || b, null, 2))}</pre>`;
     return title+label+`<details><summary>Calculation inputs and outputs</summary><pre style="overflow:auto">${esc(JSON.stringify(b.data || b, null, 2))}</pre></details>`;
   }
-  return { render };
+  function text(b) {
+    const title = b.title || b.model_id || b.type;
+    if (b.type === 'chart') {
+      const xs = b.categories || b.x.values;
+      return [title, ...b.series.map(s => `${s.label}${s.unit ? ' (' + s.unit + ')' : ''}: ` +
+        xs.slice(0, 20).map((x, i) => `${x}: ${s.values[i] ?? 'unavailable'}`).join('; ')),
+        xs.length > 20 ? `First 20 of ${xs.length} points; full values are available in the output JSON.` : ''].filter(Boolean).join('\n');
+    }
+    if (b.type === 'calculation') {
+      const data = b.data || {}, outputs = data.outputs || data.metrics || data;
+      const rows = Object.entries(outputs).filter(([, v]) => v != null &&
+        (typeof v !== 'object' || Array.isArray(v) && v.length <= 8 && v.every(x => typeof x !== 'object')));
+      return [title, ...rows.map(([k, v]) => `${k.replaceAll('_', ' ')}: ${Array.isArray(v) ? v.join(', ') : v}`)].join('\n');
+    }
+    return [title, b.message, b.url].filter(Boolean).join('\n');
+  }
+  return { render, text };
 })();

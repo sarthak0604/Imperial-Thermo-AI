@@ -14,9 +14,9 @@ This folder gives the backend team a field-by-field reference for every current 
 Use Python 3.10 or newer. The builder and the eight demo models use the standard library.
 
 ```powershell
-.\.venv\Scripts\python.exe -B .\thermo-reference\build_demo.py --list
-.\.venv\Scripts\python.exe -B .\thermo-reference\build_demo.py --check
-.\.venv\Scripts\python.exe -B .\thermo-reference\build_demo.py methanol_water_snapshot
+.\.venv\Scripts\python.exe -B .\inputs\build_demo.py --list
+.\.venv\Scripts\python.exe -B .\inputs\build_demo.py --check
+.\.venv\Scripts\python.exe -B .\inputs\build_demo.py methanol_water_snapshot
 ```
 
 Select a case ID from `--list` to print its assembled JSON. To pipe it into a file on Windows, use `| Set-Content -Encoding utf8 model_input.json`, then pass that file as the argument to the corresponding model CLI. For example, the snapshot uses `src/Functions/THM-12/thm_12.py`. See the case catalog for model IDs and expected results.
