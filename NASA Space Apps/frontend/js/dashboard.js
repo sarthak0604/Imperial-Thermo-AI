@@ -1,208 +1,352 @@
 // APP — routing and the ask flow.
-// #            home: the flame, one question, the ask box
-// #q=…&p=…&s=… an answer (p = persona, s = environment); reopened from the sidebar's Recent instantly, without asking again
-// #library     every thermo-model widget · #experiments  the 26 NASA PSI investigations
+// #              home: the environment (or the flame, before one is chosen) and the prompt bar
+// #q=…&p=…&s=…   an answer (p = persona, s = environment); reopened from Recent / All questions instantly
+// #questions     All questions (folders, pins, rename) · #experiments  the 26 NASA PSI investigations
+// #display       data display settings (#library still works and lands there)
+//
+// Asking: the prompt bar glides down into the dock and the rocket on the send button lifts off into the question tab
+// above it, then climbs the tab's rail as each step is done (the pipeline really runs: it reads the question, picks the
+// NASA data and models, and draws the figures). When the answer is ready the rocket leaves the top and the tab grows
+// to fill the screen as the overview: the only thing on the page. Clicking it opens the full answer in a focus window.
 // Written with SI assistance (Claude, Anthropic).
 (() => {
   const { esc } = U, ic = (...a) => UI.ic(...a), $ = s => document.querySelector(s);
+  const RM = matchMedia("(prefers-reduced-motion: reduce)").matches, NAME = "IMPER-ai-L";
+  const EASE = "cubic-bezier(.2,.8,.2,1)";
   UI.init();
-  const form = $("#ask-form"), ta = form.elements.q, home = $("#home"), ansEl = $("#answer"), page = $("#page"), dock = $("#dock"), acts = $("#acts-top");
+  const form = $("#ask-form"), ta = form.elements.q, home = $("#home"), ansEl = $("#answer"), page = $("#page"), dock = $("#dock"), acts = $("#acts-top"), qslot = $("#qtab-slot"), send = form.querySelector(".send");
   const PERS = ["student", "professor", "engineer"], vp = p => PERS.includes(p) ? p : null, ve = s => UI.ENVS.some(e => e.v === s) ? s : "iss";
-  let view = null, M = null, boxes = [], pageBoxes = [], stopReveal = null, ctrl = null, seq = 0, flame = null, tflame = null, routeKey = null, timers = [];
+  const PAGES = { experiments: "NASA experiments", questions: "All questions", display: "Data display settings" };
+  let view = null, M = null, cur = null, boxes = [], stopReveal = null, ctrl = null, seq = 0, flame = null, aflame = null, tflame = null, routeKey = null, timers = [], pending = null;
 
   // links that widgets and text boxes make (an experiment, a model, a question) become new questions
-  U.askHref = q => UI.href(q, UI.persona(), UI.env());
+  U.askHref = q => UI.href(q, UI.persona(), (M && M.s) || UI.env() || "iss");
   U.invHref = id => U.askHref(`Everything about ${U.invLabel(U.inv(id))} (${id})`);
   U.modelHref = id => U.askHref(`Thermo model ${id}`);
 
-  const SUGG = ["Can fabric catch fire in a lunar habitat?", "Why is a flame in microgravity a sphere?", "How does helium change how a fire behaves?", "How well does the droplet model match NASA's data?"];
-  $("#sugg").innerHTML = SUGG.map(q => `<button type="button" class="chip" data-q="${esc(q)}">${esc(q)}</button>`).join("");
+  // ---------- the centre: the flame until an environment is chosen, then that environment ----------
+  const envCap = $("#env-cap");
+  let capSet = false;
+  function syncEnv() {
+    const e = UI.env(), d = UI.ENVS.find(x => x.v === e);
+    if (flame) flame.setGlyph(e || null);
+    const html = d ? `<b>${esc(d.label)}</b><span>${esc(d.d)}</span>` : `<span>Choose an environment to begin</span>`;
+    const put = () => { envCap.innerHTML = html; envCap.classList.toggle("none", !d); };
+    if (!capSet || RM || view !== "home") { put(); capSet = true; return; }
+    // the caption sinks with the drawing and rises with the new one
+    envCap.getAnimations().forEach(a => a.cancel());
+    envCap.animate([{ opacity: 1, transform: "none" }, { opacity: 0, transform: "translateY(8px)" }], { duration: 300, easing: "cubic-bezier(.5,0,.75,0)", fill: "forwards" }).onfinish = () => {
+      put(); envCap.animate([{ opacity: 0, transform: "translateY(10px)" }, { opacity: 1, transform: "none" }], { duration: 520, delay: 420, easing: "cubic-bezier(.2,1.25,.4,1)", fill: "forwards" });
+    };
+  }
+  UI.onEnv((e, o) => {
+    syncEnv();
+    if (o && o.picked && pending) { const p = pending; pending = null; go(p.q, p.o); }
+  });
 
   // ---------- views ----------
   function show(v) {
-    view = v; home.hidden = v !== "home"; ansEl.hidden = v !== "answer"; page.hidden = v !== "library" && v !== "experiments"; dock.hidden = v === "home";
-    (v === "home" ? $("#home-slot") : $("#dock-slot")).appendChild(form);
+    const prev = view, r0 = !RM && prev && prev !== v && (v === "home" || v === "answer") ? form.getBoundingClientRect() : null;
+    view = v; home.hidden = v !== "home"; ansEl.hidden = v !== "answer"; page.hidden = !PAGES[v]; dock.hidden = v !== "answer";
+    if (v === "home") $("#home-slot").appendChild(form); else if (v === "answer") $("#dock-slot").appendChild(form);
+    form.classList.toggle("flat", v === "answer"); ta.placeholder = v === "answer" ? "Ask a follow-up, or anything new" : "Ask about any flame in microgravity"; autosize();
     acts.hidden = !(v === "answer" && M);
-    UI.setRoute(v === "library" || v === "experiments" ? v : null);
-    if (v === "home" && !flame) flame = FLAME.mount($("#flame"), { R: 30, n: 90 });
+    UI.setRoute(PAGES[v] ? v : null);
+    if (v === "home" && !flame) { flame = FLAME.mount($("#flame"), { R: 40, n: 100, glyph: UI.env() || null, cy: () => $(".flame-stage").clientHeight / 2, sink: form }); syncEnv(); }
+    if (v === "home") fitStage();
     if (stopReveal && v !== "answer") { stopReveal(); stopReveal = null; }
+    if (v !== "answer") qslot.innerHTML = "";
     document.body.classList.toggle("on-home", v === "home");
+    document.body.dataset.view = v;
+    // the prompt bar glides between the middle of the home screen and the dock
+    if (r0 && r0.width && (prev === "home" || prev === "answer")) {
+      const r1 = form.getBoundingClientRect(), dx = r0.left - r1.left, dy = r0.top - r1.top;
+      if (Math.abs(dx) + Math.abs(dy) > 2) form.animate([{ transform: `translate(${dx}px,${dy}px)` }, { transform: "none" }], { duration: 620, easing: EASE });
+    }
+    if (PAGES[v] && prev !== v) page.animate([{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 420, easing: EASE });
   }
+  // the home drawing's canvas reaches down behind the prompt bar, so it can sink into it
+  function fitStage() {
+    const st = $(".flame-stage"); if (!st || home.hidden) return;
+    const ext = form.getBoundingClientRect().bottom - st.getBoundingClientRect().bottom;
+    st.style.setProperty("--ext", Math.max(0, Math.round(ext + 6)) + "px");
+  }
+  addEventListener("resize", fitStage);
   function clearTimers() { timers.forEach(clearTimeout); timers = []; }
-  function stopThinking() { document.body.classList.remove("thinking"); BG.thinking(false); if (flame) flame.think(false); if (tflame) { tflame.stop(); tflame = null; } clearTimers(); }
-
+  // the overview leaves softly (a copy fades and settles) instead of vanishing when you ask again or go home
+  function fadeOutOverview() {
+    const ov = ansEl.querySelector(".box.ov"); if (!ov || RM || ansEl.hidden) return;
+    const r = ov.getBoundingClientRect(), c = ov.cloneNode(true); c.classList.add("ov-leaving"); c.removeAttribute("tabindex");
+    Object.assign(c.style, { position: "fixed", left: r.left + "px", top: r.top + "px", width: r.width + "px", height: r.height + "px", margin: 0, zIndex: 13, pointerEvents: "none" });
+    document.body.appendChild(c);
+    c.animate([{ opacity: 1, transform: "none" }, { opacity: 0, transform: "translateY(10px) scale(.985)" }], { duration: 360, easing: "cubic-bezier(.4,0,.2,1)", fill: "forwards" }).onfinish = () => c.remove();
+  }
+  function stopThinking() {
+    document.body.classList.remove("thinking"); BG.thinking(false);
+    if (tflame) { tflame.stop(); tflame = null; } if (aflame) { aflame.stop(); aflame = null; } clearTimers();
+    document.querySelectorAll(".rk-fly").forEach(f => f.remove());
+  }
   function goHome() {
     API.resetConversation();
-    abort(); stopThinking(); M = null; show("home"); ta.value = ""; autosize(); UI.setActive(null);
-    document.title = "Flame in Freefall"; ansEl.innerHTML = "";
+    abort(); stopThinking(); M = null; cur = null; pending = null;
+    EXPAND.closeAll(); fadeOutOverview(); show("home"); ta.value = ""; autosize(); UI.setActive(null);
+    document.title = NAME; ansEl.innerHTML = ""; landRocket();
+  }
+
+  // ---------- the question tab above the prompt bar, and the rocket ----------
+  function setQtab(o) {
+    if (tflame) { tflame.stop(); tflame = null; }
+    qslot.innerHTML = ANS.qtab(o);
+    const cv = qslot.querySelector(".tflame");
+    if (cv) { tflame = FLAME.mount(cv, { R: 7, n: 48, lean: false, dotScale: .75, seed: 3 }); tflame.think(true); }
+    placeRail();
+  }
+  // the rail sits exactly above the send button, so the rocket flies straight up into it
+  function placeRail() {
+    const tab = qslot.querySelector(".qtab"), rail = tab && tab.querySelector(".rail"); if (!rail) return;
+    const t = tab.getBoundingClientRect(), b = send.getBoundingClientRect();
+    if (b.width) rail.style.right = Math.max(8, Math.round(t.right - (b.left + b.width / 2) - 1 - rail.offsetWidth / 2)) + "px";
+  }
+  const railEl = () => qslot.querySelector(".rail");
+  function rocketTo(i, n) {                             // step i of n (0 = bottom row)
+    const rail = railEl(); if (!rail) return;
+    const lis = rail.parentElement.querySelectorAll(".rk-steps li"), li = lis[Math.min(i, lis.length - 1)];
+    const y = li ? rail.getBoundingClientRect().bottom - (li.getBoundingClientRect().top + li.offsetHeight / 2) : 0;
+    rail.style.setProperty("--y", Math.max(0, Math.round(y)) + "px");
+  }
+  function launchRocket(delay) {
+    send.classList.remove("land"); send.classList.add("gone");
+    const b = send.getBoundingClientRect();
+    if (RM || !b.width) { const r = railEl(); if (r) r.classList.add("on"); return; }
+    const fly = document.createElement("span"); fly.className = "rk-fly"; fly.innerHTML = UI.rocket(); document.body.appendChild(fly);
+    Object.assign(fly.style, { left: b.left + b.width / 2 + "px", top: b.top + b.height / 2 + "px", opacity: 0 });
+    timers.push(setTimeout(() => {
+      const rail = railEl(); if (!rail) { fly.remove(); return; }
+      const s0 = send.getBoundingClientRect(), rr = rail.querySelector(".rk-r").getBoundingClientRect();
+      const x0 = s0.left + s0.width / 2, y0 = s0.top + s0.height / 2, x1 = rr.left + rr.width / 2, y1 = rr.top + rr.height / 2;
+      Object.assign(fly.style, { left: x0 + "px", top: y0 + "px", opacity: 1 });
+      fly.animate([{ transform: "translate(-50%,-50%) scale(1)", offset: 0 }, { transform: `translate(calc(-50% + ${(x1 - x0) * .2}px), calc(-50% + ${(y1 - y0) * .35 + 6}px)) scale(1.06)`, offset: .3 },
+        { transform: `translate(calc(-50% + ${x1 - x0}px), calc(-50% + ${y1 - y0}px)) scale(1)`, offset: 1 }], { duration: 640, easing: "cubic-bezier(.45,.05,.25,1)", fill: "forwards" })
+        .onfinish = () => { rail.classList.add("on"); fly.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 120, fill: "forwards" }).onfinish = () => fly.remove(); };
+    }, delay));
+  }
+  function exitRocket(then) {
+    const rail = railEl();
+    if (!rail || RM) { then(); return; }
+    rail.classList.add("on", "out"); rail.style.setProperty("--y", rail.offsetHeight + 52 + "px");
+    timers.push(setTimeout(then, 440));
+  }
+  function landRocket() { send.classList.remove("gone"); if (!RM) { send.classList.remove("land"); void send.offsetWidth; send.classList.add("land"); } }
+  function threadFor(th, q, p, s) {
+    const T = UI.thread(th);
+    return T.some(h => h.q.trim().toLowerCase() === q.trim().toLowerCase()) ? T : [...T, { q, p, s, t: Date.now() }];
   }
 
   // ---------- asking ----------
   function abort() { if (ctrl) { ctrl.abort(); ctrl = null; } }
   function go(q, o = {}) {
-    const p = o.p !== undefined ? o.p : UI.persona(), s = o.s || UI.env(), href = UI.href(q, p, s);
+    const s = o.s || UI.env();
+    if (!s) {                                                     // an environment is needed first: ask for it, then go on
+      pending = { q, o };
+      if (view !== "answer" && view !== "home") { EXPAND.closeAll(); history.pushState(null, "", location.pathname + location.search); routeKey = ""; abort(); stopThinking(); M = null; show("home"); }
+      ta.value = q; autosize(); requestAnimationFrame(() => UI.askEnv()); return;
+    }
+    const p = o.p !== undefined ? o.p : UI.persona(), href = UI.href(q, p, s);
     if (location.hash !== href) history.pushState(null, "", href);
     routeKey = href;
-    open(q, p, s, { fresh: true, history: o.history || [] });
+    open(q, p, s, { fresh: true, history: o.history || [], th: o.th || null });
   }
   function open(q, p, s, o = {}) {
-    EXPAND.close();
-    return ask(q, p, s, o.history || []);
+    EXPAND.closeAll();
+    return ask(q, p, s, o);
   }
-  async function ask(q, p, s, hist) {
-    abort(); stopThinking(); const my = ++seq; M = null; show("answer");
-    window.scrollTo(0, 0); ta.value = ""; autosize(); UI.setActive(q, p, s);
-    document.title = `${q} · Flame in Freefall`;
-    ansEl.innerHTML = `<div class="qrow"><div class="bub">${esc(q)}<small>${esc(ANS.forWho({ p, s }))}</small></div></div>${ANS.thinkingHTML({ p })}<div class="res"></div>`;
+  async function ask(q, p, s, o) {
+    abort(); stopThinking(); const my = ++seq; M = null; cur = { q, p, s, th: o.th || null };
+    const fromHome = view === "home";
+    const run = { thinking: ["Processing your question with the Thermo backend"] };
+    fadeOutOverview(); show("answer"); window.scrollTo(0, 0); ta.value = ""; autosize(); UI.setActive(q, p, s);
+    if (UI.env() !== s) UI.setEnv(s);
+    document.title = `${q} · ${NAME}`;
+    ansEl.innerHTML = `<div class="astage" aria-hidden="true"><canvas class="aflame"></canvas><p class="astage-cap"></p></div>`;
+    setQtab({ q, p, s, state: "thinking", open: true, thread: o.th ? threadFor(o.th, q, p, s) : [], thinking: run.thinking });
+    if (fromHome && !RM) qslot.querySelector(".qtab").style.animationDelay = ".26s";
     document.body.classList.add("thinking"); BG.thinking(true);
-    tflame = FLAME.mount(ansEl.querySelector(".tflame"), { R: 7, n: 48, lean: false, dotScale: .75, seed: 3 }); tflame.think(true);
-    const lis = [...ansEl.querySelectorAll(".steps li")], mark = i => lis.forEach((d, j) => d.className = j < i ? "done" : j === i ? "on" : "");
-    mark(0);
+    aflame = FLAME.mount(ansEl.querySelector(".aflame"), { R: 44, n: 120, glyph: s, seed: 11 }); aflame.think(true);
+    const lis = [...qslot.querySelectorAll(".rk-steps li")], cap = ansEl.querySelector(".astage-cap"), N = lis.length;
+    const mark = i => { lis.forEach((d, j) => d.className = j < i ? "done" : j === i ? "on" : ""); if (lis[i]) cap.textContent = lis[i].textContent; rocketTo(Math.min(i, N - 1), N); };
+    mark(0); launchRocket(fromHome ? 560 : 120);
     ctrl = new AbortController(); const t0 = performance.now();
-    const a = await API.ask({ question: q, persona: p || "general", scenario: s, history: hist, signal: ctrl.signal });
+    const a = await API.ask({ question: q, persona: p || "general", scenario: s, history: o.history || [], signal: ctrl.signal, run });
     if (my !== seq) return;
     ctrl = null;
-    if (a.meta && a.meta.aborted) return stopped(q, p, s);
-    clearTimers(); mark(lis.length - 1);
+    if (a.meta && a.meta.aborted) return stopped();
+    clearTimers(); mark(N - 1);
     timers.push(setTimeout(() => {
       if (my !== seq) return;
-      mark(lis.length);
+      mark(N);
       const secs = a.meta && a.meta.seconds ? a.meta.seconds : Math.round((performance.now() - t0) / 100) / 10;
-      render(a, { q, p, s, at: Date.now(), secs });
-    }, 420));
+      exitRocket(() => { if (my === seq) render(a, { q, p, s, at: Date.now(), secs, th: o.th, grow: true }); });
+    }, 480));
   }
-  function stopped(q, p, s) {
-    stopThinking();
-    const th = ansEl.querySelector(".think"); if (th) th.outerHTML = `<div class="think done"><div class="th-h"><span class="done-line">Stopped before the answer arrived.</span></div></div>`;
-    ansEl.querySelector(".res").innerHTML = `<div class="fups"><button type="button" class="chip" data-again>${ic("refresh")}Ask again</button></div>`;
-    ta.value = q; autosize(); ta.focus();
+  function stopped() {
+    stopThinking(); landRocket();
+    const c = cur || {};
+    setQtab({ q: c.q || "", p: c.p, s: c.s, state: "stopped", line: "Stopped before the answer arrived", open: false, thread: c.th ? threadFor(c.th, c.q, c.p, c.s) : [] });
+    const st = ansEl.querySelector(".astage"); if (st) st.classList.add("idle");
+    const cp = ansEl.querySelector(".astage-cap"); if (cp) cp.textContent = "Stopped. Edit the question below, or ask again.";
+    ta.value = c.q || ""; autosize(); ta.focus();
   }
 
-  // ---------- the answer page ----------
+  // ---------- the answer: one overview widget ----------
   function render(a, ctx) {
-    stopThinking(); if (stopReveal) stopReveal();
-    M = ANS.build(a, ctx);
-    const r = ANS.render(M); boxes = r.boxes;
+    const tab = ctx.grow && !RM ? qslot.querySelector(".qtab") : null, from = tab ? tab.getBoundingClientRect() : null, snap = tab ? tab.cloneNode(true) : null;
+    stopThinking(); if (stopReveal) { stopReveal(); stopReveal = null; }
+    const id = String(Date.now());
+    let th = ctx.th;
+    if (!ctx.cached && !(a.meta && a.meta.aborted)) { th = th || id; UI.save({ id, q: ctx.q, p: ctx.p, s: ctx.s, t: ctx.at, a, th }); }
+    M = ANS.build(a, ctx); M.th = th || null;
+    cur = { q: M.q, p: M.p, s: M.s, th: M.th };
     show("answer");
-    if (ctx.cached) {
-      ansEl.innerHTML = `<div class="qrow"><div class="bub">${esc(M.q)}<small>${esc(ANS.forWho(M))}</small></div></div>
-        <div class="think done"><div class="th-h"><span class="done-line">Saved answer from ${esc(new Date(M.at).toLocaleString([], { dateStyle: "medium", timeStyle: "short" }))}</span><button type="button" class="tg" data-again>${ic("refresh")}Ask again</button></div></div><div class="res"></div>`;
-      window.scrollTo(0, 0);
-    } else {
-      const th = ansEl.querySelector(".think");
-      if (th) {
-        const m = M.meta || {}, n = M.refs.length;
-        const line = `${M.meta?.provider === "thermo" ? (M.meta.status || "Result") : M.live ? "Answered" : "Preview ready"} in ${ctx.secs || "?"} s${M.live && m.provider ? ` · ${m.provider}${m.model ? " / " + m.model : ""}` : ""} · ${n} source${n === 1 ? "" : "s"} listed`;
-        th.classList.add("done", "collapsed");
-        th.querySelector(".th-h").innerHTML = `<span class="done-line">${esc(line)}</span><button type="button" class="tg" aria-expanded="false" data-steps>Show steps${ic("chev")}</button>`;
-        th.querySelectorAll(".steps li").forEach(li => li.className = "done");
-      }
-    }
-    const res = ansEl.querySelector(".res");
-    res.innerHTML = r.html;
-    const dur = ANS.stream(res.querySelector("[data-stream]"));
-    stopReveal = ANS.reveal(res, ctx.cached ? 0 : Math.min(520, dur * .3));
+    if (UI.env() !== M.s) UI.setEnv(M.s);
+    qslot.innerHTML = "";                                                   // the tab becomes the overview
+    ansEl.innerHTML = ANS.overview(M);
+    const ov = ansEl.querySelector(".box.ov");
+    if (ctx.cached) window.scrollTo(0, 0);
+    const start = () => { ov.classList.add("in"); ANS.stream(ov.querySelector("[data-stream]")); };
+    if (from) grow(from, ov, start, snap); else { ov.classList.add("enter"); requestAnimationFrame(start); }
+    landRocket();
     acts.hidden = false; UI.setActive(M.q, M.p, M.s);
-    document.title = `${M.title} · Flame in Freefall`;
-    if (!ctx.cached && !(a.meta && a.meta.aborted)) UI.save({ id: String(Date.now()), q: M.q, p: M.p, s: M.s, t: M.at, a });
+    document.title = `${M.title} · ${NAME}`;
+  }
+  // the question tab grows into the overview: a glass panel moves from the tab to the overview's place, then the
+  // overview's contents arrive in order
+  function grow(from, ov, then, snap) {
+    ov.classList.add("growing");
+    requestAnimationFrame(() => {
+      const to = ov.getBoundingClientRect(), g = document.createElement("div"); g.className = "grow-ghost"; document.body.appendChild(g);
+      if (snap) {                                                            // the tab's own contents fade out as it starts to grow
+        snap.querySelectorAll("canvas").forEach(c => c.remove()); snap.classList.add("gg-snap"); snap.style.width = from.width + "px"; g.appendChild(snap);
+        snap.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 240, easing: "ease-out", fill: "forwards" });
+      }
+      const geo = r => ({ left: r.left + "px", top: r.top + "px", width: r.width + "px", height: r.height + "px" });
+      g.animate([{ ...geo(from), borderRadius: "16px" }, { ...geo(to), borderRadius: "20px" }], { duration: 640, easing: "cubic-bezier(.65,0,.15,1)", fill: "forwards" }).onfinish = () => {
+        ov.classList.remove("growing"); then();
+        g.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 300, easing: "ease-out", fill: "forwards" }).onfinish = () => g.remove();
+      };
+    });
+  }
+  // the full answer, in a focus window that lifts out of the overview
+  function openFull(find) {
+    const ov = ansEl.querySelector(".box.ov"); if (!ov || !M || view !== "answer") return;
+    const F = ANS.full(M); boxes = F.boxes;
+    let stop = null;
+    EXPAND.open(ov, { label: `${UI.mark()} Full answer`, title: M.title, one: true, cls: "doss-fx", html: F.html,
+      actions: `<button type="button" class="btn sm" data-share="link">${ic("link")}<span>Copy link</span></button><button type="button" class="btn sm" data-pdf>${ic("download")}<span>PDF</span></button>`,
+      mount: inn => {
+        const body = inn.querySelector(".fx-body");
+        stop = ANS.reveal(body, 260);
+        if (find) setTimeout(() => { const el = body.querySelector("#find-" + find); if (el) { el.classList.add("in"); body.scrollTo({ top: el.offsetTop - 70, behavior: smooth() }); el.classList.add("flash"); setTimeout(() => el.classList.remove("flash"), 1300); } }, 480);
+      },
+      onClose: () => { if (stop) stop(); } });
   }
 
-  // ---------- library and experiments ----------
-  function library() {
-    abort(); stopThinking(); M = null; show("library"); window.scrollTo(0, 0); document.title = "Widget library · Flame in Freefall";
-    const types = MW.types(), cats = [...new Set(types.map(t => W.def(t).cat))];
-    pageBoxes = types.map(t => ({ kind: "chart", c: { type: t } }));
-    page.innerHTML = `<div class="page-h"><div><h1>Widget library</h1><p>All ${types.length} charts built from the thermo team's models. Open one to use it: its sliders, dropdowns and readouts are live.</p></div><span class="sp"></span>
-      <div class="seg" role="group" aria-label="Show">${["all", ...cats].map(c => `<button type="button" data-cat="${c}" aria-pressed="${c === "all"}">${c === "all" ? "All" : c.charAt(0).toUpperCase() + c.slice(1)}</button>`).join("")}</div></div>
-      <div class="grid">${types.map((t, i) => ANS.chartBoxHTML({ type: t }, i, "s4").replace('class="box', `data-cat="${W.def(t).cat}" class="box`)).join("")}</div>`;
-    stopReveal = ANS.reveal(page);
-  }
-  function experiments() {
-    abort(); stopThinking(); M = null; show("experiments"); window.scrollTo(0, 0); document.title = "NASA experiments · Flame in Freefall";
-    const inv = [...DATA.investigations].sort((a, b) => (!!b.acronym - !!a.acronym) || String(a.acronym || a.id).localeCompare(String(b.acronym || b.id)));
-    pageBoxes = inv.map(i => ({ kind: "exp", e: { psi: i.id } }));
-    page.innerHTML = `<div class="page-h"><div><h1>NASA experiments</h1><p>The ${inv.length} microgravity combustion investigations from NASA's Physical Sciences Informatics database that the answers draw on.</p></div><span class="sp"></span>
-      <label class="side-search" style="width:min(280px,100%);padding:0"><span class="visually-hidden">Filter experiments</span><input type="search" id="exp-filter" placeholder="Filter experiments" autocomplete="off"></label></div>
-      <div class="grid">${inv.map((i, k) => ANS.expHTML({ psi: i.id }, k, "s4")).join("")}</div>`;
-    page.querySelector("#exp-filter").addEventListener("input", e => { const f = e.target.value.toLowerCase(); page.querySelectorAll(".box").forEach((b, k) => { const i = inv[k]; b.hidden = !!f && ![i.id, i.acronym, i.title, i.keywords, i.platform].join(" ").toLowerCase().includes(f); }); });
-    stopReveal = ANS.reveal(page);
+  // ---------- management pages ----------
+  function managePage(k) {
+    abort(); stopThinking(); M = null; cur = null; show(k); window.scrollTo(0, 0); document.title = `${PAGES[k]} · ${NAME}`;
+    page.innerHTML = ""; page.onclick = null; landRocket();
+    MANAGE[k](page);
   }
 
   // ---------- routing ----------
   function route() {
-    const key = location.hash; if (key === routeKey && view) return; routeKey = key;
-    EXPAND.close();
-    if (key === "#library") return library();
-    if (key === "#experiments") return experiments();
+    let key = location.hash; if (key === routeKey && view) return; routeKey = key;
+    EXPAND.closeAll();
+    if (key === "#library") { history.replaceState(null, "", "#display"); key = routeKey = "#display"; }
+    const pg = key.replace(/^#/, ""); if (PAGES[pg]) return managePage(pg);
     const hp = new URLSearchParams(key.replace(/^#/, "")), q = (hp.get("q") || "").trim();
     if (!q) return goHome();
-    const p = vp(hp.get("p")), s = ve(hp.get("s"));
+    // an embedding page (the claude.ai preview) can rewrite the address: if it still names the open question, stay put
+    if (cur && cur.q === q && (!hp.get("s") || hp.get("s") === cur.s)) return;
+    const p = vp(hp.get("p")), s = hp.get("s") ? ve(hp.get("s")) : (UI.env() || "iss");
     if (p !== UI.persona()) UI.setPersona(p);
     open(q, p, s);
   }
   addEventListener("hashchange", route);
   addEventListener("popstate", route);
 
-  // ---------- the ask box ----------
-  function autosize() { ta.style.height = "auto"; ta.style.height = Math.min(ta.scrollHeight, 168) + "px"; }
+  // ---------- the prompt bar ----------
+  function autosize() { ta.style.height = "auto"; ta.style.height = Math.min(ta.scrollHeight, form.classList.contains("flat") ? 120 : 168) + "px"; }
   ta.addEventListener("input", autosize);
   ta.addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event("submit", { cancelable: true })); } });
   form.addEventListener("submit", e => {
     e.preventDefault();
-    if (document.body.classList.contains("thinking")) { const q = (M && M.q) || ansEl.querySelector(".bub")?.firstChild?.textContent || ""; abort(); ++seq; stopped(q); return; }
+    if (document.body.classList.contains("thinking")) { abort(); ++seq; stopped(); return; }
     const q = ta.value.trim(); if (!q) { ta.focus(); return; }
-    go(q, { history: view === "answer" && M && M.summary ? [{ q: M.q, a: M.summary, source_file_ids: [...new Set((M.raw.evidence || []).map(e => e.file_id).filter(Boolean))] }] : [] });
+    go(q, view === "answer" && M ? { history: M.summary ? [{ q: M.q, a: M.summary }] : [], th: M.th } : {});
   });
+  new ResizeObserver(() => { document.documentElement.style.setProperty("--dockh", dock.offsetHeight + "px"); placeRail(); }).observe(dock);
 
   // ---------- clicks ----------
   function openBox(el) {
-    const i = +el.dataset.box, list = view === "answer" ? boxes : pageBoxes, b = list[i]; if (!b) return;
-    const sp = EXPAND.spec(b, view === "answer" ? M : null); if (sp) EXPAND.open(el, sp);
+    const b = boxes[+el.dataset.box]; if (!b || view !== "answer") return;
+    const sp = EXPAND.spec(b, M); if (sp) EXPAND.open(el, sp);
   }
+  const smooth = () => matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
   function toRef(n) {
-    const go2 = () => { const li = document.getElementById("ref-" + n); if (!li) return;
-      li.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" });
+    const go2 = () => { const d = document.getElementById("references"); if (d) d.open = true;
+      const li = document.getElementById("ref-" + n); if (!li) return;
+      li.scrollIntoView({ behavior: smooth(), block: "center" });
       li.classList.add("flash"); setTimeout(() => li.classList.remove("flash"), 1400); };
-    EXPAND.isOpen() ? EXPAND.close(go2) : go2();
+    if (EXPAND.depth() > 1) EXPAND.close(go2); else if (EXPAND.depth() === 1) go2(); else { openFull(); setTimeout(go2, 700); }
   }
+  function goTo(id) {
+    const el = document.getElementById(id); if (!el) return;
+    el.classList.add("in"); el.scrollIntoView({ behavior: smooth(), block: "start" });
+    el.classList.add("flash"); setTimeout(() => el.classList.remove("flash"), 1300);
+  }
+  const followCtx = () => M ? { history: M.summary ? [{ q: M.q, a: M.summary }] : [], th: M.th, p: M.p, s: M.s } : {};
   document.addEventListener("click", e => {
     const t = e.target;
     const reply = t.closest("[data-reply]");
     if (reply) return go(reply.dataset.reply);
     const ref = t.closest("[data-ref]"); if (ref) { e.preventDefault(); return toRef(ref.dataset.ref); }
+    const gt = t.closest("[data-goto]"); if (gt) { e.preventDefault(); return goTo(gt.dataset.goto); }
     const q = t.closest("[data-q]"); if (q) { ta.value = q.dataset.q; return go(q.dataset.q); }
-    const fu = t.closest("[data-followup]"); if (fu) { e.preventDefault(); return go(fu.textContent.trim(), { history: M && M.summary ? [{ q: M.q, a: M.summary, source_file_ids: [...new Set((M.raw.evidence || []).map(e => e.file_id).filter(Boolean))] }] : [] }); }
-    const ak = t.closest("[data-ask]"); if (ak) { const qq = ak.dataset.ask; return EXPAND.close(() => go(qq)); }
+    const fu = t.closest("[data-followup]"); if (fu) { e.preventDefault(); const qq = fu.textContent.trim(), c = followCtx(); return EXPAND.closeAll(() => go(qq, c)); }
+    const ak = t.closest("[data-ask]"); if (ak) { const qq = ak.dataset.ask; return EXPAND.closeAll(() => go(qq, M ? { p: M.p, s: M.s } : {})); }
     if (t.closest("[data-home]")) { e.preventDefault(); if (location.hash) history.pushState(null, "", location.pathname + location.search); routeKey = ""; goHome(); ta.focus(); return; }
-    if (t.closest("[data-again]")) { const qq = (M && M.q) || ta.value.trim(); if (qq) go(qq); return; }
+    if (t.closest("[data-again]")) { const c = M || cur; if (c && c.q) EXPAND.closeAll(() => go(c.q, { p: c.p, s: c.s, th: c.th })); return; }
+    const qt = t.closest("[data-qtab]"); if (qt) { const tab = qt.closest(".qtab"), o = !tab.classList.contains("open"); tab.classList.toggle("open", o); qt.setAttribute("aria-expanded", String(o)); return; }
     const act = t.closest("[data-act]");
     if (act && M) {
       if (act.dataset.act === "copy") UI.copy(ANS.text(M)).then(ok => { const c = act.parentElement.querySelector(".cpm"); if (c) { c.textContent = ok ? "Copied" : "Copy failed"; setTimeout(() => c.textContent = "", 1600); } });
-      if (act.dataset.act === "again") go(M.q);
+      if (act.dataset.act === "again") go(M.q, { p: M.p, s: M.s, th: M.th });
       return;
     }
-    const op = t.closest("[data-open]"); if (op) { const el = op.closest(".box"); if (el) { const sp = EXPAND.spec(boxes[+op.dataset.open], M); EXPAND.open(el, sp); } return; }
-    const st = t.closest("[data-steps]"); if (st) { const th = st.closest(".think"), o = st.getAttribute("aria-expanded") !== "true"; st.setAttribute("aria-expanded", String(o)); st.firstChild.textContent = o ? "Hide steps" : "Show steps"; th.classList.toggle("collapsed", !o); return; }
     const sh = t.closest("[data-share]"); if (sh && M) { UI.closeMenus(); return share(sh.dataset.share); }
     if (t.closest("[data-pdf]") && M) { UI.closeMenus(); REPORT.download(M).catch(err => { console.error(err); UI.toast("Couldn't make the PDF: " + err.message); }); return; }
-    const cat = t.closest("[data-cat]:not(.box)"); if (cat) { page.querySelectorAll("[data-cat]:not(.box)").forEach(b => b.setAttribute("aria-pressed", String(b === cat))); page.querySelectorAll(".box").forEach(b => b.hidden = cat.dataset.cat !== "all" && b.dataset.cat !== cat.dataset.cat); return; }
-    const fc = t.closest(".fcell[data-box]"); if (fc) return openBox(fc);
+    const of = t.closest("[data-open-find]"); if (of && of.closest("#answer")) { e.preventDefault(); return openFull(+of.dataset.openFind || 0); }
+    if (t.closest("#answer [data-ov]") && !t.closest("a, button, input, select, textarea, label, summary")) return openFull();
+    const fc = t.closest(".fcell[data-box]"); if (fc && fc.closest(".fx-layer")) return openBox(fc);
     const box = t.closest(".box[data-box]");
-    if (box && !t.closest("a, button, input, select, textarea, label") && box.closest("#answer, #page")) { if (box.classList.contains("ov") && !t.closest("h1, .sum")) return; openBox(box); }
+    if (box && box.closest(".fx-layer") && !t.closest("a, button, input, select, textarea, label, summary")) openBox(box);
   });
   document.addEventListener("keydown", e => {
-    const box = e.target.closest && e.target.closest(".box[data-box][role=button]");
-    if (box && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); openBox(box); }
-    if (e.key === "/" && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) && !EXPAND.isOpen()) { e.preventDefault(); ta.focus(); }
+    const el = e.target;
+    if (el && el.matches && (e.key === "Enter" || e.key === " ")) {
+      if (el.matches("#answer [data-ov]")) { e.preventDefault(); return openFull(); }
+      if (el.matches(".fx-layer .box[data-box][role=button]")) { e.preventDefault(); return openBox(el); }
+    }
+    if (e.key === "/" && !/INPUT|TEXTAREA|SELECT/.test(el.tagName) && !EXPAND.isOpen()) { e.preventDefault(); ta.focus(); }
   });
   async function share(kind) {
     const url = location.href.split("#")[0] + UI.href(M.q, M.p, M.s);
     if (kind === "link") { UI.toast(await UI.copy(url) ? "Link copied" : "Couldn't copy the link"); }
-    if (kind === "native") { try { await navigator.share({ title: `${M.title} · Flame in Freefall`, text: ANS.plain(M.summary || M.q).slice(0, 240), url }); } catch (e) {} }
+    if (kind === "native") { try { await navigator.share({ title: `${M.title} · ${NAME}`, text: ANS.plain(M.summary || M.q).slice(0, 240), url }); } catch (e) {} }
     if (kind === "text") { UI.toast(await UI.copy(ANS.text(M) + "\n\n" + url) ? "Answer copied as text" : "Couldn't copy"); }
   }
   addEventListener("scroll", () => document.body.classList.toggle("scrolled", scrollY > 6), { passive: true });
-  UI.onTheme(() => { BG.redraw(); if (flame) flame.redraw(); });
+  UI.onTheme(() => { BG.redraw(); if (flame) flame.redraw(); if (aflame) aflame.redraw(); });
 
   show("home");
   API.health().then(s => { UI.setStatus(s); route(); });

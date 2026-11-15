@@ -5,6 +5,25 @@ Graph search → LLM request planning → temporary dataset downloads → THM fu
 
 See [the shared backend and Omri interface](docs/backend-v2.md) for the v2 workflow and website launch instructions.
 
+## Website: Omri frontend + Hayk2 backend
+
+`final` uses the new IMPER-ai-L interface from `omri` (`4bb5afe`) and the complete
+backend from `hayk2` (`23e17ea`). These sources were copied directly, without a
+branch merge. The HTTP and result-rendering adapters connect the two; live
+questions use Hayk2's backend rather than the frontend demo pipeline.
+
+From a checkout of **final**, deploy the website with:
+
+```bash
+uv sync --locked
+uv run google-website --project nasa26 --region europe-west1 --service ic-dynamics --public
+```
+
+This builds the current checkout on Google Cloud and deploys the website with
+Qwen on one L4 GPU. Model weights are downloaded in Cloud Build, not locally.
+`uv run google` is the separate batch-job launcher. For requirements, previewing
+the build command and local testing, see [Cloud Run website setup](docs/cloud-website.md).
+
 ## Run locally
 
 Use Python 3.14 and [uv](https://docs.astral.sh/uv/). From the repository root:
@@ -62,7 +81,7 @@ The graph builder retains its own dependencies and Docker image in `psi_kg`.
 
 The root Docker image runs `thermo-execute`. Supply runtime arguments and files
 through the cloud job configuration. Only `src`, the package manifest/lockfile,
-README and Dockerfile enter the root build context.
+README, Dockerfile, frontend and thermo-reference data enter the root build context.
 
 See [cloud setup and container usage](docs/cloud-run.md). The separate graph
 builder has its own [cloud guide](psi_kg/CLOUD_RUN.md).

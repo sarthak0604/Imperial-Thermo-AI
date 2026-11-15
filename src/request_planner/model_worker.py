@@ -2,15 +2,24 @@
 
 import atexit
 import json
-import selectors
 import subprocess
 import sys
 import time
-from threading import Lock
+from queue import Empty, Queue
+from threading import Lock, Thread
 
 
 class InferenceError(ValueError):
     """Inference failure rather than absent scientific evidence."""
+
+
+def exchange(process, request, messages):
+    try:
+        process.stdin.write(request)
+        process.stdin.flush()
+        messages.put(process.stdout.readline(4_000_000))
+    except (OSError, ValueError):
+        messages.put("")
 
 
 class ModelWorker:
@@ -49,24 +58,18 @@ class ModelWorker:
                     text=True,
                     bufsize=1,
                 )
-            self.process.stdin.write(
-                json.dumps(
-                    {
-                        "messages": messages,
-                        "max_time": max(0.1, deadline - time.monotonic()),
-                    }
-                )
-                + "\n"
-            )
-            self.process.stdin.flush()
-            with selectors.DefaultSelector() as selector:
-                selector.register(self.process.stdout, selectors.EVENT_READ)
-                if not selector.select(max(0, deadline - time.monotonic())):
-                    self.close()
-                    raise InferenceError(
-                        "Local inference deadline exceeded, including model loading."
-                    )
-                line = self.process.stdout.readline(4_000_000)
+            request = json.dumps({
+                "messages": messages, "max_time": max(0.1, deadline - time.monotonic()),
+            }) + "\n"
+            replies = Queue(maxsize=1)
+            Thread(target=exchange, args=(self.process, request, replies), daemon=True).start()
+            try:
+                line = replies.get(timeout=max(0, deadline - time.monotonic()))
+            except Empty as exc:
+                self.close()
+                raise InferenceError(
+                    "Local inference deadline exceeded, including model loading."
+                ) from exc
             if not line:
                 self.close()
                 raise InferenceError(

@@ -35,10 +35,11 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["imperial_thermo_ai", "request_planner", "thermo_functions", "reviewed_knowledge_graph"]
-package-dir = {imperial_thermo_ai = "src/imperial_thermo_ai", request_planner = "src/request_planner", thermo_functions = "src/Functions", reviewed_knowledge_graph = "src/reviewed_knowledge_graph"}
+packages = ["imperial_thermo_ai", "request_planner", "thermo_functions", "reviewed_knowledge_graph", "thermo_reference"]
+package-dir = {imperial_thermo_ai = "src/imperial_thermo_ai", request_planner = "src/request_planner", thermo_functions = "src/Functions", reviewed_knowledge_graph = "src/reviewed_knowledge_graph", thermo_reference = "thermo-reference"}
 
 [tool.setuptools.package-data]
+thermo_reference = ["properties.json", "demo_cases.json"]
 imperial_thermo_ai = ["flat_prompt.txt", "reviewed_file_metadata.json"]
 thermo_functions = ["*.json", "THM-*/*.py", "THM-*/*.json"]
 reviewed_knowledge_graph = ["output/knowledge_graph.json", "output/source_quality_issues.json", "output/evidence-index.json"]

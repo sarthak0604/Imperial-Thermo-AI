@@ -5,64 +5,81 @@ window.EXPAND = (() => {
   const RM = matchMedia("(prefers-reduced-motion: reduce)").matches, { esc } = U, ic = (...a) => UI.ic(...a);
   const host = document.getElementById("focus");
   const EASE_OPEN = "cubic-bezier(.2,.8,.2,1)", EASE_CLOSE = "cubic-bezier(.4,0,.2,1)";
-  let cur = null;
-  const target = () => { const m = innerWidth <= 640 ? 0 : 14; return { x: m, y: m, w: innerWidth - 2 * m, h: innerHeight - 2 * m }; };
+  // layers stack: the full answer opens over the page, and any box inside it opens over the full answer
+  const stack = [];
+  const target = d => { const m = (innerWidth <= 640 ? 0 : 14) + (innerWidth <= 640 ? 0 : d * 22); return { x: m, y: m, w: innerWidth - 2 * m, h: innerHeight - 2 * m }; };
   const geo = g => ({ left: g.x + "px", top: g.y + "px", width: g.w + "px", height: g.h + "px" });
   const rectOf = el => { const r = el.getBoundingClientRect(); return { x: r.left, y: r.top, w: r.width, h: r.height }; };
 
   function open(box, spec) {
-    if (cur) finish(cur);
-    const from = rectOf(box), T = target(), lastFocus = document.activeElement;
+    const d = stack.length, from = rectOf(box), T = target(d), lastFocus = document.activeElement;
     host.hidden = false; document.body.classList.add("focus-open");
-    host.innerHTML = `<div class="fx-scrim" data-fx-close></div><div class="fx" role="dialog" aria-modal="true" aria-labelledby="fx-title"><div class="fx-snap"></div><div class="fx-in">
-      <div class="fx-head"><span class="bl">${spec.label}</span><h2 id="fx-title">${esc(spec.title)}</h2><span class="esc" aria-hidden="true">Esc</span><button type="button" class="ib" data-fx-close aria-label="Close" title="Close">${ic("x")}</button></div>
+    const layer = document.createElement("div"); layer.className = "fx-layer"; layer.style.zIndex = String(80 + d * 3);
+    layer.innerHTML = `<div class="fx-scrim" data-fx-close></div><div class="fx${spec.cls ? " " + spec.cls : ""}" role="dialog" aria-modal="true" aria-labelledby="fx-title-${d}"><div class="fx-snap"></div><div class="fx-in">
+      <div class="fx-head"><span class="bl">${spec.label}</span><h2 id="fx-title-${d}">${esc(spec.title)}</h2>${spec.actions || ""}<span class="esc" aria-hidden="true">Esc</span><button type="button" class="ib" data-fx-close aria-label="Close" title="Close">${ic("x")}</button></div>
       <div class="fx-body${spec.one ? " one" : ""}">${spec.html}</div></div></div>`;
-    const fx = host.querySelector(".fx"), snap = fx.querySelector(".fx-snap"), inn = fx.querySelector(".fx-in"), scrim = host.querySelector(".fx-scrim");
-    const clone = box.cloneNode(true); clone.classList.add("in"); clone.removeAttribute("tabindex"); clone.removeAttribute("role"); clone.style.cssText = `width:${from.w}px;height:${from.h}px;visibility:visible`;
+    host.appendChild(layer);
+    const fx = layer.querySelector(".fx"), snap = fx.querySelector(".fx-snap"), inn = fx.querySelector(".fx-in"), scrim = layer.querySelector(".fx-scrim");
+    const clone = box.cloneNode(true); clone.classList.add("in"); clone.removeAttribute("tabindex"); clone.removeAttribute("role"); clone.removeAttribute("id"); clone.style.cssText = `width:${from.w}px;height:${from.h}px;visibility:visible`;
+    clone.querySelectorAll("[id]").forEach(e => e.removeAttribute("id"));
     snap.appendChild(clone); Object.assign(snap.style, { width: from.w + "px", height: from.h + "px" });
     Object.assign(inn.style, { width: T.w + "px", height: T.h + "px" }); Object.assign(fx.style, geo(T));
-    if (spec.mount) try { spec.mount(inn); } catch (e) { console.error(e); }
-    cur = { box, fx, snap, inn, scrim, lastFocus, spec };
+    const c = { box, fx, snap, inn, scrim, layer, lastFocus, spec, d };
+    stack.push(c);
+    if (spec.mount) try { spec.mount(inn, c); } catch (e) { console.error(e); }
     if (RM) { inn.style.opacity = 1; snap.style.opacity = 0; }
     else {
-      fx.animate([{ ...geo(from), borderRadius: "16px" }, { ...geo(T), borderRadius: "16px" }], { duration: 430, easing: EASE_OPEN });
-      snap.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 230, easing: "ease-out", fill: "forwards" });
-      inn.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 260, delay: 150, easing: "ease-out", fill: "forwards" });
-      scrim.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 320, easing: "ease-out" });
+      const big = from.w * from.h > T.w * T.h * .45;                          // a big box (the overview) lifts; a small one grows
+      fx.classList.add("moving");
+      fx.animate([{ ...geo(from), borderRadius: "18px" }, { ...geo(T), borderRadius: "18px" }], { duration: big ? 520 : 460, easing: EASE_OPEN }).onfinish = () => fx.classList.remove("moving");
+      snap.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 260, easing: "ease-out", fill: "forwards" });
+      inn.animate([{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 340, delay: 140, easing: EASE_OPEN, fill: "forwards" });
+      scrim.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 380, easing: "ease-out" });
     }
     box.style.visibility = "hidden";                         // the box lifts off the page while it is open
     fx.querySelector(".fx-head [data-fx-close]").focus({ preventScroll: true });
+    return c;
   }
   function finish(c) {
-    host.hidden = true; host.innerHTML = ""; document.body.classList.remove("focus-open");
+    c.layer.remove();
+    const i = stack.indexOf(c); if (i >= 0) stack.splice(i, 1);
+    if (!stack.length) { host.hidden = true; document.body.classList.remove("focus-open"); }
     c.box.style.visibility = "";
     if (c.lastFocus && c.lastFocus.isConnected) c.lastFocus.focus({ preventScroll: true });
     if (c.spec.onClose) c.spec.onClose();
   }
+  // close the top layer (Esc, ×, the backdrop): it shrinks back into the box it came from
   function close(then) {
-    if (!cur) { if (then) then(); return; }
-    const c = cur; cur = null;
+    const c = [...stack].reverse().find(x => !x.closing);              // Esc again while one is closing closes the next
+    if (!c) { if (then) then(); return; }
+    c.closing = true;
     const done = () => { finish(c); if (then) then(); };
     const to = c.box.isConnected ? rectOf(c.box) : null, seen = to && to.y + to.h > 0 && to.y < innerHeight && to.w > 0;
     if (RM || !seen) { done(); return; }
     const from = rectOf(c.fx);
     c.inn.getAnimations().forEach(a => a.cancel()); c.snap.getAnimations().forEach(a => a.cancel());
-    c.inn.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 130, fill: "forwards" });
-    c.snap.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 180, delay: 70, fill: "forwards" });
-    c.scrim.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 340, fill: "forwards" });
-    c.fx.animate([geo(from), geo(to)], { duration: 340, easing: EASE_CLOSE, fill: "forwards" }).onfinish = done;
+    c.box.style.visibility = "hidden"; c.fx.classList.add("moving");
+    c.inn.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 140, fill: "forwards" });
+    c.snap.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 200, delay: 60, fill: "forwards" });
+    c.scrim.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 360, fill: "forwards" });
+    c.fx.animate([{ ...geo(from), borderRadius: "18px" }, { ...geo(to), borderRadius: "18px" }], { duration: 380, easing: EASE_CLOSE, fill: "forwards" }).onfinish = done;
   }
-  host.addEventListener("click", e => { if (e.target.closest("[data-fx-close]")) close(); });
+  // close everything (moving to another question or page): the layers above go at once, the bottom one shrinks home
+  function closeAll(then) {
+    while (stack.length > 1) finish(stack[stack.length - 1]);
+    close(then);
+  }
+  host.addEventListener("click", e => { const x = e.target.closest("[data-fx-close]"); if (x && x.closest(".fx-layer") === (stack[stack.length - 1] || {}).layer) close(); });
   document.addEventListener("keydown", e => {
-    if (!cur) return;
+    const c = stack[stack.length - 1]; if (!c) return;
     if (e.key === "Escape") { if (document.querySelector(".dd.open,.pop.open")) return; e.preventDefault(); close(); return; }
-    if (e.key === "Tab") {                                                   // keep Tab inside the open box
-      const f = [...host.querySelectorAll("button:not([disabled]),input,select,textarea,a[href],[tabindex]:not([tabindex='-1'])")].filter(x => x.offsetParent !== null);
+    if (e.key === "Tab") {                                                   // keep Tab inside the top layer
+      const f = [...c.layer.querySelectorAll("button:not([disabled]),input,select,textarea,a[href],summary,[tabindex]:not([tabindex='-1'])")].filter(x => x.offsetParent !== null);
       if (!f.length) return; const k = f.indexOf(document.activeElement);
       if (k < 0 || (e.shiftKey && k === 0) || (!e.shiftKey && k === f.length - 1)) { e.preventDefault(); f[e.shiftKey ? f.length - 1 : 0].focus(); }
     }
   });
-  addEventListener("resize", () => { if (!cur) return; const T = target(); Object.assign(cur.fx.style, geo(T)); Object.assign(cur.inn.style, { width: T.w + "px", height: T.h + "px" }); });
+  addEventListener("resize", () => stack.forEach(c => { const T = target(c.d); Object.assign(c.fx.style, geo(T)); Object.assign(c.inn.style, { width: T.w + "px", height: T.h + "px" }); }));
 
   // ---------- what each kind of box shows when open ----------
   const pad = n => String(n).padStart(2, "0");
@@ -112,9 +129,10 @@ window.EXPAND = (() => {
           ${M.facts.length ? `<h3>Key facts</h3><ul class="t-list">${M.facts.map(f => `<li><b>${esc(f.value)}</b> ${esc(f.label)}${ANS.cites(f.refs)}</li>`).join("")}</ul>` : ""}
           ${M.finds.length ? `<h3>The answer, step by step</h3><ol class="ov-outline" style="gap:10px">${M.finds.map(f => `<li><span>${pad(f.n)}</span><div style="color:var(--text)">${esc(ANS.plain(f.text))}${ANS.cites(f.refs)}</div></li>`).join("")}</ol>` : ""}
           ${M.limitations ? `<h3>What the data can't say</h3><p>${esc(M.limitations)}</p>` : ""}
+          ${M.follow_ups.length ? `<h3>Ask next</h3><div class="fups">${M.follow_ups.map(q => `<a class="chip" href="${esc(UI.href(q, M.p, M.s))}" data-followup>${ic("spark")}${esc(q)}</a>`).join("")}</div>` : ""}
           <h3>How this answer was made</h3><p class="fs" style="font-size:12px">${esc(ANS.madeLine(M))}</p></div>` };
     }
     return null;
   }
-  return { open, close, spec, isOpen: () => !!cur };
+  return { open, close, closeAll, spec, isOpen: () => stack.length > 0, depth: () => stack.length, top: () => stack[stack.length - 1] || null };
 })();

@@ -5,6 +5,29 @@ import re
 from .backend_models import RequestSpec, Requirement
 
 
+def refers_to_prior_turn(prompt):
+    """Identify references to chat history, excluding later references within a prompt."""
+    first_sentence = re.split(r"(?<=[.!?])\s+|\n", prompt.strip(), maxsplit=1)[0]
+    local = re.search(r"\bthat\s+(experiment|study|dataset|run|report|paper|case|result|limit|value|one)\b",
+                      first_sentence, re.I)
+    if local:
+        before = first_sentence[:local.start()]
+        subjects = r"\b(?:blow[-\s]?off|threshold|limit)\b" if local[1].casefold() == "limit" else (
+            r"\b" + re.escape(local[1]) + r"\b"
+        )
+        if re.search(subjects, before, re.I):
+            first_sentence = before
+    return bool(re.search(
+        r"\b(?:the\s+(?:previous|last|earlier)\s+(?:answer|result|run|study|experiment|case|"
+        r"calculation|conditions?|limit|value)|same\s+(?:conditions?|setup|run|experiment|case))\b",
+        prompt, re.I,
+    ) or re.search(
+        r"\bthat\s+(?:experiment|study|dataset|run|report|paper|case|result|limit|value|one)\b"
+        r"|^\s*(?:what (?:about|does)|why did|how did)\s+that\b",
+        first_sentence, re.I,
+    ))
+
+
 def interpret(prompt, *, aliases=None, context=None):
     if not isinstance(prompt, str) or not prompt.strip() or len(prompt) > 12000:
         raise ValueError(
@@ -80,10 +103,13 @@ def interpret(prompt, *, aliases=None, context=None):
             else positive
         )
         target.add(re.sub(r"\s+", "", m.group().upper()))
-    remaining = prompt
+    remaining = re.sub(r"[‐‑‒–—]", "-", prompt)
     for alias, study in sorted((aliases or {}).items(), key=lambda x: -len(x[0])):
         pattern = r"(?<![\w-])" + re.escape(alias) + r"(?![\w-])"
-        if m := re.search(pattern, remaining, re.IGNORECASE):
+        # SAME is an investigation acronym and a common English adjective.
+        if alias.casefold() == "same":
+            pattern = r"(?<![\w-])(?:SAME|(?i:same (?:study|experiment)))(?![\w-])"
+        if m := re.search(pattern, remaining, 0 if alias.casefold() == "same" else re.IGNORECASE):
             (
                 negative
                 if re.search(
@@ -93,16 +119,14 @@ def interpret(prompt, *, aliases=None, context=None):
                 )
                 else positive
             ).add(study)
-            remaining = re.sub(pattern, "", remaining, flags=re.IGNORECASE)
+            remaining = re.sub(pattern, "", remaining, flags=0 if alias.casefold() == "same" else re.IGNORECASE)
     clarifications = []
     if positive & negative:
         clarifications.append(
             "The requested investigation is also excluded: "
             + ", ".join(sorted(positive & negative))
         )
-    if re.search(r"\b(that|previous)\b", prompt, re.IGNORECASE) and not (
-        context or {}
-    ).get("history"):
+    if refers_to_prior_turn(prompt) and not (context or {}).get("history"):
         clarifications.append(
             "Specify the experiment or conditions referred to by the follow-up."
         )
@@ -189,6 +213,8 @@ def fulfilment(spec, response, *, claims=(), files=()):
 
 def summarize_result(response):
     """Use actual worker results rather than pre-execution planner promises."""
+    from .model_presentation import scenario_summary
+
     messages = []
     for block in response.blocks:
         if block["type"] == "calculation":
@@ -199,6 +225,50 @@ def summarize_result(response):
                     f"THM-01 estimates {o['adiabatic_flame_temp_k']:,.2f} K for {i['fuel_species']} "
                     f"at oxygen mole fraction {i['o2_mole_frac']:g}, {i['pressure_kpa']:g} kPa and {i['t_init_k']:g} K."
                 )
+            elif block["model_id"] == "THM-12" and data.get("components"):
+                components = data["components"]
+                actions = {"evaporating": "evaporates", "condensing": "condenses",
+                           "equilibrium": "is at equilibrium"}
+                descriptions = [
+                    f"{row['id'].capitalize()} {actions[row['transfer_direction']]} "
+                    f"({row['surface_partial_pressure_kpa']:.3g} kPa at the surface vs. "
+                    f"{row['ambient_partial_pressure_kpa']:.3g} kPa in the surrounding gas)"
+                    for row in components
+                ]
+                messages.append("THM-12 estimates the initial transfer direction. " + ". ".join(descriptions) + ".")
+            elif block["model_id"] == "THM-07" and "critical_blowoff_velocity_ms" in data.get("outputs", {}):
+                inputs, outputs = data["inputs"], data["outputs"]
+                limit = outputs["critical_blowoff_velocity_ms"]
+                speed = inputs["u_flow_ms"]
+                margin = outputs["blowoff_margin_cms"] / 100
+                direction = "above" if outputs["is_blown_off"] else "below"
+                comparison = (f"{abs(margin):g} m/s {direction} the limit" if margin
+                              else "at the limit to the displayed precision")
+                messages.append(
+                    f"THM-07 estimates a blowoff limit of {limit:g} m/s at "
+                    f"{100 * inputs['x_o2']:g}% oxygen and {inputs['pressure_kpa']:g} kPa. "
+                    f"The tested airflow of {speed:g} m/s is {comparison} "
+                    f"({outputs['blowoff_velocity_ratio']:.1%} of the estimated limit)."
+                )
+            elif block["model_id"] == "THM-02" and "lewis_number" in data.get("dimensionless_numbers", {}):
+                state = data["inputs"]
+                lewis = data["dimensionless_numbers"]["lewis_number"]
+                condition = {
+                    "methane-iss": "Nominal ISS oxidizer. ",
+                    "methane-iss-diluted": "Illustrative nitrogen-dilution case. ",
+                }.get(block.get("task_id"), "")
+                messages.append(
+                    condition + f"THM-02 estimates a Lewis number of {lewis:.4f} for {state['target_species']} "
+                    f"at {state['temp_k']:g} K and {state['pressure_kpa']:g} kPa."
+                )
+            elif summary := scenario_summary(block["model_id"], data):
+                messages.append(summary)
+            elif block.get("headline_metrics"):
+                values = ", ".join(
+                    f"{m['label'].lower()} {m['value']}{' ' + m['unit'] if m['unit'] else ''}"
+                    for m in block["headline_metrics"]
+                )
+                messages.append(f"{block['model_id']} estimates {values}.")
             else:
                 metric = data.get("frontend_summary", {}).get("headline_metric", {})
                 if metric.get("value") is not None and metric.get("label"):
@@ -226,7 +296,7 @@ def summarize_result(response):
                 + ", ".join(c["name"] for c in block["columns"])
                 + "."
             )
-        elif block["type"] == "chart":
+        elif block["type"] == "chart" and not any(b["type"] == "calculation" for b in response.blocks):
             messages.append(
                 f"Produced a {block['chart_type']} chart with {len(block['x']['values'])} points."
             )

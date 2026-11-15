@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Model widgets — preview</title>
+  <link rel="stylesheet" href="css/skeleton.css">
+  <style>
+    body.preview { max-width: 1240px; padding: 0 24px 60px; }
+    .preview h1 { margin: 32px 0 4px; }
+    .preview .lead { color: var(--ink-2); margin: 0 0 8px; max-width: 760px; }
+    .preview h2 { margin-top: 36px; }
+    .preview .model-note { color: var(--ink-2); font-size: 13px; margin: 0 0 12px; }
+    .mw-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .mw { margin: 0; display: flex; flex-direction: column; padding: 12px 14px; min-width: 0; }
+    .mw.size-s { grid-column: span 1; } .mw.size-w { grid-column: span 2; } .mw.size-b { grid-column: span 2; grid-row: span 2; }
+    .mw header { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: baseline; padding-bottom: 6px; margin-bottom: 8px; border-bottom: var(--line); }
+    .mw header .kind { font-family: var(--mono); font-size: 11px; color: var(--ink-2); }
+    .mw header .badge { margin-left: auto; }
+    .mw .why { font-size: 12.5px; color: var(--ink-2); margin: 0 0 8px; }
+    .mw .controls { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; margin-bottom: 6px; font-size: 12.5px; }
+    .mw select { padding: 3px 6px; font-size: 12.5px; }
+    .readout-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: var(--line); margin-top: 8px; }
+    .readout-grid div { padding: 8px 10px; border-right: 1px solid var(--bone-2); border-bottom: 1px solid var(--bone-2); display: flex; flex-direction: column; }
+    .readout-grid b { font-size: 18px; } .readout-grid span { font-size: 11px; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; }
+    .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; height: 100%; }
+    .facts.one { grid-template-columns: 1fr; }
+    .facts div { border: var(--line); padding: 12px; display: flex; flex-direction: column; gap: 4px; justify-content: center; }
+    .facts b { font-size: 28px; font-weight: 600; } .facts span { font-size: 11.5px; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; }
+    .mw .widget-body { display: flex; flex-direction: column; flex: 1; }
+    .mw .widget-body > .vc-host, .mw .chart-slot { height: 250px; flex: none; }
+    .mw.size-b .widget-body > .vc-host, .mw.size-b .chart-slot { height: 320px; }
+    @media (max-width: 900px) { .mw-grid { grid-template-columns: 1fr; } .mw.size-w, .mw.size-b, .mw.size-s { grid-column: span 1; grid-row: auto; } .multiples { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="preview">
+  <h1>Model widgets — preview</h1>
+  <p class="lead">Built from the thermo team's models in <code>Imperial-Thermo-AI</code>, run by <code>standin/precompute_models.py</code>. Not on the main site yet. Badges show what each one is: a model calculation, a reconstruction of a real NASA test, a model estimate, or a synthetic demo.</p>
+  <p class="lead" id="generated"></p>
+
+  <h2>THM-02 · Gas transport &amp; Lewis number</h2>
+  <p class="model-note">Kinetic-theory calculation from the inputs — no fake data. 459 pre-computed mixtures: 3 fuels × 3 diluents × 3 cabin pressures × O₂ 15–95%, at 300 K.</p>
+  <div class="mw-grid" data-model="THM-02"></div>
+
+  <h2>THM-11 · Two-stage droplet burning</h2>
+  <p class="model-note">Real NASA FLEX evidence (n-decane, 0.5 atm). R377 is reproduced from its own data; R379 is an estimate whose cool-flame end was held out and checked.</p>
+  <div class="mw-grid" data-model="THM-11"></div>
+
+  <h2>THM-16 · Time to ignition of a solid</h2>
+  <p class="model-note">Physics model with a SYNTHETIC demo material (4 mm slab) — the thermo team marked it illustrative. Only calibrated case: 101.3 kPa, 21% O₂, 20 cm/s airflow.</p>
+  <div class="mw-grid" data-model="THM-16"></div>
+
+
+  <h2>THM-04 · Heat release from oxygen use</h2>
+  <p class="model-note">Reduces a measured NIST burner-test record to heat release rate and total energy. Ground-based reference test, not a space run; the burner's own meter is drawn for comparison.</p>
+  <div class="mw-grid" data-model="THM-04"></div>
+
+  <h2>THM-05 · Opposed-flow flame spread</h2>
+  <p class="model-note">Thermally-thin spread speed against sheet thickness, checked against two measured points.</p>
+  <div class="mw-grid" data-model="THM-05"></div>
+
+  <h2>THM-06 · Concurrent flame spread</h2>
+  <p class="model-note">ILLUSTRATIVE inputs: the growth curve shows the model's shape, not a measured flame.</p>
+  <div class="mw-grid" data-model="THM-06"></div>
+
+  <h2>THM-15 · Soot inception</h2>
+  <p class="model-note">Screening estimate with ILLUSTRATIVE inputs: local flame temperature against the soot-inception threshold.</p>
+  <div class="mw-grid" data-model="THM-15"></div>
+
+  <h2>THM-17 · Limiting oxygen against airflow</h2>
+  <p class="model-note">Estimate of the lowest oxygen level that still burns at each airflow speed, between quench and blow-off limits.</p>
+  <div class="mw-grid" data-model="THM-17"></div>
+
+  <h2>THM-18 · Suppression thermal budget</h2>
+  <p class="model-note">ILLUSTRATIVE inputs: heat accounting for CO₂ dilution and a small water-mist dose.</p>
+  <div class="mw-grid" data-model="THM-18"></div>
+
+  <h2>THM-19 · Cabin pressure after a fire</h2>
+  <p class="model-note">ILLUSTRATIVE inputs: sealed-cabin pressure and temperature rise from a heat-release curve.</p>
+  <div class="mw-grid" data-model="THM-19"></div>
+
+  <h2>THM-20 · Smoke ageing in a duct</h2>
+  <p class="model-note">ILLUSTRATIVE inputs: particle count and size drifting along a duct to a detector.</p>
+  <div class="mw-grid" data-model="THM-20"></div>
+
+  <h2>THM-01 · Adiabatic flame temperature</h2>
+  <p class="model-note">Equilibrium calculation: the hottest a flame can get in ISS, lunar habitat and spacesuit air. A thermodynamic ceiling; real flames lose heat.</p>
+  <div class="mw-grid" data-model="THM-01"></div>
+
+  <h2>THM-03 · Flame position (Burke-Schumann)</h2>
+  <p class="model-note">Idealised infinitely fast chemistry: where a methane flame sphere sits around a small burner as the oxygen supplied changes.</p>
+  <div class="mw-grid" data-model="THM-03"></div>
+
+  <h2>THM-07 · Damköhler blow-off</h2>
+  <p class="model-note">Single-step reaction with generic constants: how ventilation speed pushes a flame towards blow-off.</p>
+  <div class="mw-grid" data-model="THM-07"></div>
+
+  <h2>THM-08 · Buoyancy vs forced airflow</h2>
+  <p class="model-note">Moon and Mars values are theoretical scaling bounds: PSI has no partial-gravity combustion data.</p>
+  <div class="mw-grid" data-model="THM-08"></div>
+
+  <h2>THM-09 · Spalding B-number</h2>
+  <p class="model-note">Mass-transfer driving force and burn rate for PMMA against oxygen level.</p>
+  <div class="mw-grid" data-model="THM-09"></div>
+
+  <script src="js/util.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="data/model_outputs.js"></script>
+  <script src="data/literature.js"></script>
+  <script src="js/model_widgets.js"></script>
+  <script src="js/model_widgets_more.js"></script>
+  <script src="js/model_widgets_liem.js"></script>
+  <script>
+    document.querySelectorAll("[data-model]").forEach(g => {
+      g.innerHTML = MW.types().filter(t => MW.lib[t].model === g.dataset.model).map(MW.render).join("");
+    });
+    MW.mountAll(document);
+    document.getElementById("generated").textContent = "Model outputs generated " + DATA.modelOutputs.generated + ".";
+  </script>
+</body>
+</html>

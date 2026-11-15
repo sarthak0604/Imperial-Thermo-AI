@@ -3,13 +3,15 @@
 import copy
 import json
 import math
+import re
 import tempfile
 from pathlib import Path
 
 import httpx
-from pydantic import AliasChoices, Field
+from pydantic import AliasChoices, Field, StrictFloat, StrictStr
 
 from imperial_thermo_ai.parser import _json_object
+from imperial_thermo_ai.quantities import user_quantity_spans
 
 from .execution import (
     ExecutionSession,
@@ -17,10 +19,25 @@ from .execution import (
     present_result,
     strict_json,
 )
-from .function_registry import input_contract, model_spec, operation_catalog
+from .function_registry import (
+    function_root,
+    input_contract,
+    model_spec,
+    operation_catalog,
+)
 from .models import Contract, DatasetBinding, ExecutionLimits
 from .operations import ScenarioTask
 from .program import ProgramStep, validate_origins
+from .reference_inputs import (
+    fill_properties,
+    is_iss_methane_lewis,
+    iss_methane_state,
+    reference_origin,
+    scenario_origin,
+)
+from .reference_inputs import (
+    records as property_records,
+)
 
 
 class SourceBinding(Contract):
@@ -49,6 +66,13 @@ class UserBinding(Contract):
     unit: str | None = None
 
 
+class AssumedInput(Contract):
+    target_pointer: str
+    value: StrictFloat | StrictStr | dict[str, StrictFloat]
+    unit: str | None = None
+    reason: str = Field(min_length=4, max_length=240)
+
+
 class FunctionTask(Contract):
     id: str = Field(pattern=r"^[A-Za-z][A-Za-z0-9_-]{0,63}$")
     model_id: str
@@ -62,6 +86,7 @@ class FunctionTask(Contract):
     user_inputs: list[UserBinding] = Field(default_factory=list)
     sources: list[SourceBinding] = Field(default_factory=list)
     results: list[ResultBinding] = Field(default_factory=list)
+    assumptions: list[AssumedInput] = Field(default_factory=list, max_length=20)
 
 
 class FunctionPlan(Contract):
@@ -125,6 +150,257 @@ def set_pointer(value, path, resolved):
         parent[key] = resolved
 
 
+def reviewed_function_plan(prompt):
+    """Handle deliberately scoped reference examples without a provider call."""
+    text = " ".join(prompt.split())
+    if re.search(r"\b(?:THM-(?:0[13-9]|1\d|20)|define|definition|means)\b", text, re.IGNORECASE):
+        methane = False
+    else:
+        methane = is_iss_methane_lewis(prompt)
+    if methane:
+        return FunctionPlan(tasks=[
+            FunctionTask(id="methane-iss", model_id="THM-02",
+                         purpose="Estimate methane Lewis number at nominal ISS conditions."),
+            FunctionTask(id="methane-iss-diluted", model_id="THM-02", scenario_id="nitrogen-sensitivity",
+                         purpose="Compare an illustrative nitrogen-enriched oxidizer."),
+        ])
+    match = re.fullmatch(
+        r"(?:(?:run|calculate|test|show|try)\s+)?(THM-(?:0[1-9]|1\d|20))(?:\s+(?:example|demo))?[?.]?",
+        text, re.IGNORECASE,
+    )
+    if match:
+        model = match[1].upper()
+        return FunctionPlan(tasks=[FunctionTask(
+            id="bundled-example", model_id=model, package_id="example-" + model.lower(),
+            purpose="Run the model's bundled worked example.",
+        )])
+    from .droplet_snapshot import snapshot_bindings
+
+    bindings = snapshot_bindings(prompt)
+    if bindings:
+        return FunctionPlan(tasks=[FunctionTask(
+            id="droplet-snapshot", model_id="THM-12", package_id="methanol_water_snapshot",
+            purpose="Compare surface and ambient vapour pressures for each droplet component.",
+            user_inputs=[UserBinding.model_validate(binding) for binding in bindings],
+        )])
+    blowoff = blowoff_function_plan(prompt)
+    if blowoff:
+        return blowoff
+    from .reviewed_scenarios import match_scenario
+
+    reviewed = match_scenario(prompt)
+    if reviewed:
+        scenario, bindings = reviewed
+        if scenario.package_id is None:
+            inputs = {b["target_pointer"].removeprefix("/params/"): b for b in bindings}
+            return FunctionPlan(tasks=[FunctionTask(
+                id="reviewed-scenario", model_id=scenario.model_id,
+                purpose="Compute the requested quantity from the supplied fuel and oxidizer.",
+                params={name: b["value"] for name, b in inputs.items()},
+                input_source_spans={name: b["quote"] for name, b in inputs.items()},
+            )])
+        return FunctionPlan(tasks=[FunctionTask(
+            id="reviewed-scenario", model_id=scenario.model_id, package_id=scenario.package_id,
+            purpose="Run the matched scenario with the stated conditions and reviewed reference inputs.",
+            user_inputs=[UserBinding.model_validate(binding) for binding in bindings],
+        )])
+    return None
+
+
+# The demo is selected by intent. Its kinetics come from the registered
+# THM-07 example while the prompt supplies any requested operating conditions.
+BLOWOFF_REQUEST = re.compile(
+    r"\b(?:blow[-\s]?off|damk[oö]hler number|blow (?:the |a )?flame (?:out|off)|"
+    r"(?:flame|flames)\s+(?:blows? out|go(?:es)? out)|"
+    r"airflow.{0,35}(?:flame extinguishes|extinguish(?:es)? (?:a |the )?flame))\b",
+    re.I,
+)
+DEMO_REQUEST = re.compile(
+    r"\b(?:demo|example|illustrative)\s+(?:kinetics|parameters|inputs|settings|values)\b"
+    r"|\b(?:using|use|with)\s+(?:the\s+)?(?:bundled\s+)?(?:demo|example)\b",
+    re.I,
+)
+
+
+def blowoff_function_plan(prompt):
+    from .intent import refers_to_prior_turn
+
+    explicit = {m.upper() for m in re.findall(r"\bTHM-\d+\b", prompt, re.I)}
+    if (explicit - {"THM-07"} or not (explicit or BLOWOFF_REQUEST.search(prompt))
+            or refers_to_prior_turn(prompt)
+            or re.search(r"\b(?:definition|define|means|measured|dataset|experiment|csv|"
+                         r"PSI-\d+|mass fraction|weight percent|by mass|wt\s*%|sweep|"
+                         r"flame temperature|flame spread|limiting oxygen|and ignition)\b", prompt, re.I)):
+        return None
+
+    values, quotes, spans = {}, {}, []
+    for field in ("x_o2", "pressure_kpa", "u_flow_ms", "activation_energy_j"):
+        matches = user_quantity_spans(field, prompt)
+        if len(matches) > 1:
+            return None
+        if matches:
+            values[field], (start, end) = matches[0]
+            quotes[field] = prompt[start:end]
+            spans.append((start, end))
+
+    remaining = prompt
+    for start, end in sorted(spans, reverse=True):
+        remaining = remaining[:start] + " " + remaining[end:]
+    if re.search(r"\d", re.sub(r"\b(?:THM-07|O2|N2)\b", "", remaining, flags=re.I)):
+        return None
+
+    use_demo = bool(DEMO_REQUEST.search(prompt))
+    if use_demo:
+        if not values:
+            return None
+        units = {"x_o2": "1", "pressure_kpa": "kPa", "u_flow_ms": "m/s", "activation_energy_j": "J/mol"}
+        return FunctionPlan(tasks=[FunctionTask(
+            id="blowoff", model_id="THM-07", package_id="example-thm-07",
+            purpose="Estimate the blowoff limit using the bundled demo kinetics.",
+            user_inputs=[
+                UserBinding(target_pointer=f"/params/{field}", value=value,
+                            quote=quotes[field], unit=units[field])
+                for field, value in values.items()
+            ],
+        )])
+    if not {"x_o2", "u_flow_ms"} <= values.keys():
+        return None
+    return FunctionPlan(tasks=[FunctionTask(
+        id="blowoff", model_id="THM-07",
+        purpose="Estimate the blowoff limit and compare the requested airflow.",
+        params=values, input_source_spans=quotes,
+    )])
+
+
+ASSUMPTION_UNITS = {
+    "mole_fracs": "mol/mol", "pressure_kpa": "kPa", "temp_k": "K", "t_init_k": "K",
+    "t_amb_k": "K", "flame_temp_k": "K", "t_film_k": "K", "delta_t_k": "K", "t_vap_k": "K",
+    "o2_mole_frac": "1", "x_o2": "1", "y_o2_amb": "1", "y_fuel_stream": "1", "y_ox_stream": "1",
+    "x_fuel_stream": "1", "x_ox_stream": "1", "gravity_g": "g", "equivalence_ratio": "1",
+    "u_flow_ms": "m/s", "u_forced_ms": "m/s", "char_length_m": "m", "burner_radius_mm": "mm",
+    "total_flow_rate_sccm": "sccm", "activation_energy_j": "J/mol",
+    "heat_combustion_jkg": "J/kg", "heat_pyrolysis_jkg": "J/kg",
+}
+
+
+SCENARIO_UNIT_SUFFIXES = (
+    ("_kg_s", "kg/s"), ("_m_s", "m/s"), ("_m2", "m2"), ("_m3", "m3"), ("_kpa", "kPa"),
+    ("_mm", "mm"), ("_kg", "kg"), ("_pct", "%"), ("_k", "K"), ("_s", "s"), ("_m", "m"),
+)
+
+
+def validate_user_binding(task, user, prompt):
+    if task.package_id:
+        from .reviewed_scenarios import match_scenario
+
+        reviewed = match_scenario(prompt)
+        if reviewed:
+            scenario, bindings = reviewed
+            if (task.model_id, task.package_id) == (scenario.model_id, scenario.package_id):
+                if user.model_dump() in bindings:
+                    return
+    if task.model_id == "THM-12" and task.package_id == "methanol_water_snapshot":
+        from .droplet_snapshot import snapshot_bindings
+
+        if user.model_dump() in snapshot_bindings(prompt):
+            return
+    key = user.target_pointer.rsplit("/", 1)[-1]
+    expected_unit = ASSUMPTION_UNITS.get(key)
+    if expected_unit and user.unit and user.unit.casefold() != expected_unit.casefold():
+        raise ValueError(f"User binding {key} needs units of {expected_unit}.")
+    validate_origins(
+        ProgramStep(
+            id=task.id,
+            kind="scenario",
+            scenario=ScenarioTask(
+                model_id=task.model_id,
+                params={key: user.value},
+                input_origins={key: "user"},
+            ),
+            input_source_spans={key: user.quote},
+        ),
+        prompt,
+    )
+
+
+def apply_assumptions(task, payload, item):
+    """Accept labelled scenario estimates while preserving retrieved and explicit values."""
+    if not task.assumptions:
+        return
+    locked = ["/params/" + key for key in task.params]
+    for p in item["provenance"]:
+        path = p.get("target_pointer") or p.get("mapping", {}).get("target")
+        if path:
+            locked.append(path)
+    locked += [binding.target_pointer for binding in task.results]
+    contract = input_contract(task.model_id)
+    allowed = set(contract.get("required_inputs", [])) | set(contract.get("defaults", {}))
+    allowed -= {"psi_citations", "investigation_context"}
+    for assumption in task.assumptions:
+        path, value = assumption.target_pointer, assumption.value
+        unit = assumption.unit
+        if any(path == key or path.startswith(key + "/") or key.startswith(path + "/") for key in locked):
+            raise ValueError("An assumption must not replace a supplied value at " + path)
+        values = value.values() if isinstance(value, dict) else [value]
+        if any(type(v) in (int, float) and not math.isfinite(v) for v in values):
+            raise ValueError("An assumption must be finite at " + path)
+        if path.startswith("/params/") and path.count("/") == 2:
+            name = path.rsplit("/", 1)[-1]
+            if name not in allowed or not isinstance(payload.get("params"), dict):
+                raise ValueError("Unknown model assumption field " + path)
+            if isinstance(value, dict) and name != "mole_fracs":
+                raise ValueError("Only a gas composition may be supplied as an assumption object.")
+            if name == "mole_fracs" and (
+                not isinstance(value, dict) or not value or any(v < 0 or v > 1 for v in value.values())
+                or not math.isclose(sum(value.values()), 1, abs_tol=1e-6)
+            ):
+                raise ValueError("Assumed gas mole fractions must be between 0 and 1 and sum to 1.")
+            expected = ASSUMPTION_UNITS.get(name)
+            if expected and unit and unit.casefold() != expected.casefold():
+                raise ValueError(f"Assumed {name} needs {expected}; received {unit}.")
+            if expected and not isinstance(value, str):
+                unit = expected
+            if payload["params"].get(name) is not None:
+                raise ValueError("An assumption must not replace a sourced value at " + path)
+            payload["params"][name] = value
+        else:
+            keys = path.split("/")
+            if (not path.startswith("/request/scenario/") or type(value) not in (int, float)
+                    or any(key in {"evidence", "setup_id", "materials", "id", "unit", "source_url"}
+                           or key.endswith("_id") for key in keys)):
+                raise ValueError("Assumptions can fill numeric scenario inputs only: " + path)
+            parent_path, _, key = path.rpartition("/")
+            key = key.replace("~1", "/").replace("~0", "~")
+            try:
+                parent = pointer(payload, parent_path)
+                if not isinstance(parent, dict):
+                    raise TypeError("Scenario assumptions require a named input.")
+                if key not in parent:
+                    example = strict_json(function_root().joinpath(model_spec(task.model_id)["example"])
+                                          .read_text(encoding="utf-8-sig"))
+                    if type(pointer(example, path)) not in (int, float):
+                        raise TypeError("Scenario slot is not a numeric input.")
+            except (KeyError, IndexError, TypeError) as exc:
+                raise ValueError("No declared scenario slot for assumption " + path) from exc
+            if parent.get(key) is not None:
+                raise ValueError("An assumption must not replace a sourced value at " + path)
+            expected = parent.get("unit") if key == "value" else next(
+                (u for suffix, u in SCENARIO_UNIT_SUFFIXES if key.lower().endswith(suffix)), None
+            )
+            if (key == "value" and (not unit or not expected)) or (
+                    expected and unit and unit.casefold() != expected.casefold()
+            ):
+                raise ValueError("Assumed quantity must match the declared units at " + path)
+            unit = expected or unit
+            parent[key] = value
+        locked.append(path)
+        item["provenance"].append(scenario_origin(
+            path, value, unit,
+            f"AI assumption for {path}: {json.dumps(value)}{(' ' + unit) if unit else ''}. "
+            + assumption.reason.strip(),
+        ))
+
+
 def propose_functions(
     prompt, files, generate, selected_models=(), packages=(), inspection=()
 ):
@@ -144,9 +420,17 @@ def propose_functions(
             + json.dumps(FunctionPlan.model_json_schema())
             + " Every task needs a scientific purpose tied to the question. Never run all functions by default. "
             "Legacy params contain ONLY explicit user inputs, with exact input_source_spans quoting their values. "
+            "For unspecified scenario inputs prefer supplied sources, compatible library properties and solver defaults. "
+            "For remaining gaps use task.assumptions: [{target_pointer,value,unit,reason}]. Choose physically "
+            "plausible values in model units and describe why. Assumptions are forecasts for illustrative "
+            "scenarios and must never provide measurements, calibrations, sample identity or user quotes. "
+            "When missing a calibration, a bundled package can provide an explicitly illustrative baseline "
+            "for a compatible question. Match requested material, test setup and phase. Preserve explicit "
+            "user conditions. If the user requests measured results for a specific experiment and its data "
+            "are unavailable, say what is needed. Do not quietly substitute an unrelated example. "
             "For CSV/result bindings, create a numeric placeholder in params and omit its source span; the executor fills it. "
             "For evidence-dependent functions choose a supplied compatible downloaded JSON template or approved package. "
-            "Never generate an evidence section or copy a bundled example. Sources map exact verified CSV headers/units "
+            "Never generate an evidence section. Select a listed package ID to use its reviewed baseline. Sources map exact verified CSV headers/units "
             "through DatasetBinding. Do not combine incompatible investigations or unverified runs. "
             "Only use supplied registered result links; declare dependencies. Keep the same scenario_id for linked tasks. "
             "Do not set params when using a sourced template/package; use user_inputs with exact quotes and matching units for scenario changes. "
@@ -190,10 +474,12 @@ def propose_functions(
         "results=[{source_task_id:temperature,source_pointer:/outputs/adiabatic_flame_temp_k,"
         "target_pointer:/params/flame_temp_k,unit:K}], "
         "input_source_spans={u_flow_ms:<exact flow quote>,x_o2:<exact oxygen quote>}. "
-        "Never add diluent_gas, equivalence_ratio or other default values absent from the user question; "
+        "Keep built-in diluent_gas, equivalence_ratio and other supported defaults omitted unless the user specifies them; "
         "omit them and let the actual solver apply its documented defaults, which will be disclosed. "
         "user_inputs is ONLY for literal user-provided scalar changes to a sourced template, "
-        "not for placeholders or calculated upstream values. Missing input messages must be natural-language "
+        "not for placeholders or calculated upstream values. For pressure, oxygen mole fraction, "
+        "airflow and activation energy, convert recognized prompt units to the stated solver units. "
+        "Keep the original amount and units in the exact quote. Missing input messages must be natural-language "
         "questions, not JSON pointers. A registered dependency value is not a missing user input."
     )
     if not selected_models or len(expanded) > len(selected_models) or len(selected_models) > 1:
@@ -274,19 +560,7 @@ def propose_functions(
                             + user.target_pointer
                             + "; it is filled by task.results, not a user quote. Put a zero placeholder in params instead."
                         )
-                    validate_origins(
-                        ProgramStep(
-                            id=task.id,
-                            kind="scenario",
-                            scenario=ScenarioTask(
-                                model_id=task.model_id,
-                                params={"value": user.value},
-                                input_origins={"value": "user"},
-                            ),
-                            input_source_spans={"value": user.quote},
-                        ),
-                        prompt,
-                    )
+                    validate_user_binding(task, user, prompt)
                 if not task.template_file_id and not task.package_id:
                     for binding in task.results:
                         try:
@@ -354,6 +628,7 @@ def execute_functions(
     records = {f.file_id: f for f in files}
     tasks = {t.id: t for t in plan.tasks}
     blocks, trace, outputs, prepared, failed = [], [], {}, {}, set()
+    package_sources = {}
     options = {"url_validator": url_validator} if url_validator else {}
     with tempfile.TemporaryDirectory(prefix="thermo-functions-") as directory:
         session = ExecutionSession(
@@ -416,6 +691,9 @@ def execute_functions(
                             "sha256": package.sha256,
                             "sources": package.provenance,
                             "illustrative": package.illustrative,
+                            "notes": package.notes,
+                            "bundled": package.bundled,
+                            "investigation_id": package.investigation_id,
                         }
                     )
                 else:
@@ -484,19 +762,7 @@ def execute_functions(
                         raise ValueError(
                             "User bindings may modify scenario quantities, not source identity or evidence."
                         )
-                    validate_origins(
-                        ProgramStep(
-                            id=task.id,
-                            kind="scenario",
-                            scenario=ScenarioTask(
-                                model_id=task.model_id,
-                                params={"value": user.value},
-                                input_origins={"value": "user"},
-                            ),
-                            input_source_spans={"value": user.quote},
-                        ),
-                        prompt,
-                    )
+                    validate_user_binding(task, user, prompt)
                     existing = pointer(payload, user.target_pointer)
                     if type(existing) not in (str, int, float):
                         raise ValueError(
@@ -557,6 +823,21 @@ def execute_functions(
                             "mapping": source.binding.model_dump(),
                         }
                     )
+                if (task.model_id == "THM-02" and not task.template_file_id and not task.package_id
+                        and not task.sources and not task.user_inputs and not task.assumptions
+                        and not task.params and is_iss_methane_lewis(prompt)):
+                    iss_methane_state(payload, item["provenance"], diluted=task.id == "methane-iss-diluted")
+                apply_assumptions(task, payload, item)
+                if spec["requires_evidence"]:
+                    fill_properties(task.model_id, payload, item["provenance"])
+                    if task.package_id and package.bundled:
+                        bindings = payload["evidence"].get("provenance", {}).get("property_bindings", {})
+                        for path, binding in bindings.items():
+                            record = property_records().get(binding.get("property_record_id"))
+                            if record:
+                                origin = reference_origin(record, path, pointer(payload, path))
+                                if origin not in item["provenance"]:
+                                    item["provenance"].append(origin)
                 for binding in task.results:
                     upstream = tasks[binding.task_id]
                     key = (
@@ -664,12 +945,27 @@ def execute_functions(
                 source_ids = [
                     p["file_id"] for p in item["provenance"] if "file_id" in p
                 ]
+                baseline = next((p for p in item["provenance"]
+                                 if p["kind"] == "evidence_package" and p.get("bundled")), None)
+                if baseline:
+                    for index, source in enumerate(result.get("sources") or baseline["sources"]):
+                        if not isinstance(source, dict) or not str(source.get("url", "")).startswith("https://"):
+                            continue
+                        source_id = f"{baseline['id']}-{index + 1}"
+                        package_sources[source_id] = {
+                            "file_id": source_id, "investigation_id": baseline.get("investigation_id"),
+                            "title": source.get("locator") or baseline["id"],
+                            "source_page_url": source["url"],
+                        }
+                        source_ids.append(source_id)
                 for dependency in task.results:
                     prior = next(t for t in trace if t["task_id"] == dependency.task_id)
                     source_ids += [
                         p["file_id"] for p in prior["provenance"] if p.get("file_id")
                     ]
                 source_ids = list(dict.fromkeys(source_ids))
+                defaults = input_contract(task.model_id).get("defaults", {})
+                item["model_defaults"] = {k: v for k, v in defaults.items() if k not in payload.get("params", {})}
                 for block in produced:
                     block["source_file_ids"] = source_ids
                     if any(p.get("illustrative") for p in item["provenance"]):
@@ -680,18 +976,13 @@ def execute_functions(
                             input_json=item["input_json"],
                             input_provenance=item["provenance"],
                             depends_on=item["depends_on"],
+                            model_defaults=item["model_defaults"],
                         )
                 blocks.extend(produced)
-                defaults = input_contract(task.model_id).get("defaults", {})
-                item["model_defaults"] = {
-                    k: v
-                    for k, v in defaults.items()
-                    if k not in payload.get("params", {})
-                }
             except (ValueError, KeyError, TypeError, OSError) as exc:
                 item.update(status="needs_input", message=str(exc))
                 failed.add(task.id)
-    return blocks, list(session.sources.values()), trace
+    return blocks, [*session.sources.values(), *package_sources.values()], trace
 
 
 def _answer_functions(
@@ -707,6 +998,7 @@ def _answer_functions(
     url_validator=None,
     package_registry=None,
     deadline=None,
+    reviewed_plan=None,
 ):
     import uuid
 
@@ -720,9 +1012,10 @@ def _answer_functions(
         packages = [
             p.model_dump(exclude={"payload_path"})
             for p in package_registry.packages
-            if p.review_status == "approved"
+            if p.review_status == "approved" and model_spec(p.model_id)["requires_evidence"]
+            and (not selected_models or p.model_id in selected_models)
         ]
-    plan = propose_functions(
+    plan = reviewed_plan if reviewed_plan is not None else propose_functions(
         spec.original_prompt, bundle.files, generate, selected_models, packages
     )
     if selected_models and not set(selected_models) <= {t.model_id for t in plan.tasks}:
@@ -771,6 +1064,19 @@ def _answer_functions(
         trusted_source_hashes=bundle.trusted_source_hashes,
         package_registry=package_registry,
     )
+    if reviewed_plan and {t.id for t in reviewed_plan.tasks} == {"methane-iss", "methane-iss-diluted"}:
+        comparison = [b for b in blocks if b["type"] == "calculation"]
+        if len(comparison) == 2:
+            from .reference_inputs import ISS_METHANE_DILUTION
+
+            blocks = comparison + [{
+                "type": "chart", "chart_type": "bar", "title": "THM-02 nitrogen-dilution comparison",
+                "categories": ["Nominal ISS oxidizer", f"{ISS_METHANE_DILUTION:.0%} oxygen in nitrogen"],
+                "x": {"label": "Oxidizer condition", "unit": None, "values": [0, 1]},
+                "series": [{"label": "Lewis number", "unit": None,
+                            "values": [b["data"]["dimensionless_numbers"]["lewis_number"] for b in comparison]}],
+                "evidence_type": "model_estimate", "illustrative": True, "source_file_ids": [],
+            }]
     bundle.diagnostics.append({"function_pipeline": trace})
     warnings = plan.missing_inputs + [
         t["message"] for t in trace if t["status"] != "completed"
@@ -782,6 +1088,11 @@ def _answer_functions(
     ]
     warnings += [
         p["assumption"] for t in trace for p in t["provenance"] if p.get("assumption")
+    ]
+    warnings += [
+        p.get("notes") or f"{t['model_id']} used an illustrative baseline."
+        for t in trace for p in t["provenance"]
+        if p["kind"] == "evidence_package" and (p.get("notes") or p["illustrative"])
     ]
     response = FrontendResponse(
         query_id=bundle.query_id,

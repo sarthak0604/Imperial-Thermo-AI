@@ -25,3 +25,7 @@ NASA Space Apps/frontend/tests/
 **/.DS_Store
 **/__pycache__/
 **/*.pyc
+
+!thermo-reference/
+!thermo-reference/**
+thermo-reference/__pycache__/

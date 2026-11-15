@@ -9,6 +9,7 @@ from .backend_models import AnswerResult, RetrievalBundle
 from .execution import ExecutionError, ExecutionSession
 from .function_registry import function_root, model_spec
 from .models import ExecutionLimits, FrontendResponse
+from .model_presentation import model_highlights
 
 
 NUMBER = r"(?<![\w.+-])(\d+(?:\.\d+)?)"
@@ -38,11 +39,11 @@ def pmma_comparison_inputs(spec):
     thicknesses = list(THICKNESSES.finditer(prompt))
     conditions = {key: list(re.finditer(pattern, prompt, re.I))
                   for key, pattern in CONDITIONS.items()}
-    if len(thicknesses) != 1 or any(len(values) != 1 for values in conditions.values()):
+    if len(thicknesses) != 1 or any(len(values) > 1 for values in conditions.values()):
         return None
     # Additional numerical inputs could specify a different or conflicting scenario.
     unparsed = prompt
-    for match in sorted([thicknesses[0], *(v[0] for v in conditions.values())],
+    for match in sorted([thicknesses[0], *(v[0] for v in conditions.values() if v)],
                         key=lambda m: m.start(), reverse=True):
         unparsed = unparsed[:match.start()] + unparsed[match.end():]
     if re.search(r"\d", re.sub(r"\b(?:THM-05|PSI-25)\b", "", unparsed, flags=re.I)):
@@ -51,7 +52,7 @@ def pmma_comparison_inputs(spec):
     values = [float(n) for n in thicknesses[0].groups()]
     if values[0] == values[1]:
         return None
-    return values, {key: float(matches[0].group(1)) for key, matches in conditions.items()}
+    return values, {key: float(matches[0].group(1)) for key, matches in conditions.items() if matches}
 
 
 def answer_pmma_comparison(spec, graph_id):
@@ -92,11 +93,14 @@ def answer_pmma_comparison(spec, graph_id):
         response.blocks = [
             {"type": "calculation", "model_id": model_id, "evidence_type": "model_estimate",
              "illustrative": False, "source_file_ids": [source_id],
+             "input_json": {f"case_{i+1}": r.input_payload for i, r in enumerate(results)},
+             "task_id": "pmma-thickness-comparison",
              "data": {"thicknesses_mm": values, "rates_mm_s": rates,
                       "calibration_id": results[0]["calibration_id"],
                       "ambient": results[0]["ambient"], "sample_width_m": results[0]["sample_width_m"],
                       "opposed_gas_speed_m_s": results[0]["opposed_gas_speed_m_s"]}},
         ]
+        response.blocks[0]["headline_metrics"] = model_highlights(model_id, response.blocks[0]["data"])
         if any(r.kind == "chart" for r in spec.requirements):
             response.blocks.append({
                 "type": "chart", "chart_type": "scatter", "title": "THM-05 predicted PMMA flame spread",
@@ -104,7 +108,16 @@ def answer_pmma_comparison(spec, graph_id):
                 "series": [{"label": "Predicted spread speed", "unit": "mm/s", "values": rates}],
                 "evidence_type": "model_estimate", "source_file_ids": [source_id],
             })
-        response.warnings = results[0]["limitations"]
+        response.warnings = list(results[0]["limitations"])
+        omitted = [key for key in CONDITIONS if key not in conditions]
+        if omitted:
+            notes = []
+            for key in omitted:
+                value = scenario[key] if key == "sample_width" else scenario["ambient"][key]
+                notes.append(f"{key.replace('_', ' ')} {value['value']:g} {value['unit']}")
+            assumption = "Used bundled BASS-II conditions for unspecified inputs: " + ", ".join(notes) + "."
+            response.warnings.append(assumption)
+            response.blocks[0]["input_provenance"] = [{"kind": "scenario_assumption", "assumption": assumption}]
         response.message = (
             f"Using the BASS-II calibration, THM-05 predicts {rates[0]:.3f} mm/s "
             f"at {values[0]:.2f} mm and {rates[1]:.3f} mm/s at {values[1]:.2f} mm."

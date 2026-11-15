@@ -387,11 +387,20 @@ INPUT_UNITS = {
 
 def present_result(model_id, result, *, include_input=False):
     """Keep full model output and expose aligned arrays as renderable chart blocks."""
+    from .model_presentation import model_highlights, scenario_charts
+
     evidence_type = "data_reduction" if result.get("status") == "data_reduction" else "model_estimate"
     illustrative = result.get("illustrative", result.get("provenance", {}).get("illustrative"))
     blocks = [{"type": "calculation", "model_id": model_id, "evidence_type": evidence_type,
                "illustrative": illustrative, "data": result,
                **({'input_json':result.input_payload} if include_input and hasattr(result,'input_payload') else {})}]
+
+    highlights = model_highlights(model_id, result)
+    if highlights:
+        blocks[0]["headline_metrics"] = highlights
+    curated = scenario_charts(model_id, result, evidence_type, illustrative)
+    if curated:
+        return blocks + curated
 
     if model_id == "THM-01":
         fractions = [
@@ -434,6 +443,19 @@ def present_result(model_id, result, *, include_input=False):
                 "series": [{"label": "Speed", "unit": "cm/s", "values": speeds}],
                 "evidence_type": evidence_type, "illustrative": illustrative,
             })
+    if model_id == "THM-12" and result.get("components"):
+        labels, pressures = [], []
+        for component in result["components"]:
+            name = component["id"].capitalize()
+            labels.extend((f"{name} at surface", f"{name} in surrounding gas"))
+            pressures.extend((component["surface_partial_pressure_kpa"], component["ambient_partial_pressure_kpa"]))
+        blocks.append({
+            "type": "chart", "chart_type": "bar", "title": "THM-12 surface and ambient partial pressures",
+            "categories": labels, "x": {"label": "Component and location", "unit": None,
+                                        "values": list(range(len(labels)))},
+            "series": [{"label": "Partial pressure", "unit": "kPa", "values": pressures}],
+            "evidence_type": evidence_type, "illustrative": illustrative,
+        })
     if model_id == "THM-15":
         curve = result.get("threshold_curve", [])
         if len(curve) > 1:
@@ -464,7 +486,22 @@ def present_result(model_id, result, *, include_input=False):
         'y_ox_stream':'1','x_o2':'1','z_st':'1','stoichiometric_mixture_fraction_zst':'1',
         'flame_to_burner_radius_ratio':'1','theoretical_flame_radius_mm':'mm',
         'burner_radius_mm':'mm','time_s':'s','pressure_kpa':'kPa'}
-    if axis and isinstance(rows,list) and len(rows)>1 and all(isinstance(row,dict) for row in rows):
+    if model_id == "THM-07" and len(rows) > 1:
+        inputs, outputs = result["inputs"], result["outputs"]
+        points = {row["u_flow_cms"] / 100: row["damkohler_number"] for row in rows}
+        points[inputs["u_flow_ms"]] = outputs["damkohler_number"]
+        points[outputs["critical_blowoff_velocity_ms"]] = inputs["da_critical"]
+        speeds = sorted(points)
+        blocks.append({
+            "type": "chart", "chart_type": "line", "title": "THM-07 blowoff threshold",
+            "x": {"label": "Airflow speed", "unit": "m/s", "values": speeds},
+            "series": [
+                {"label": "Damköhler number", "unit": None, "values": [points[speed] for speed in speeds]},
+                {"label": "Blowoff threshold", "unit": None, "values": [inputs["da_critical"]] * len(speeds)},
+            ],
+            "evidence_type": evidence_type, "illustrative": illustrative,
+        })
+    elif axis and isinstance(rows,list) and len(rows)>1 and all(isinstance(row,dict) for row in rows):
         for y in axes:
             if all(type(row.get(axis)) in (int,float) and math.isfinite(row[axis]) and
                    type(row.get(y)) in (int,float) and math.isfinite(row[y]) for row in rows):

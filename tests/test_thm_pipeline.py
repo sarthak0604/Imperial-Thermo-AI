@@ -185,6 +185,70 @@ class THMPipelineTests(unittest.TestCase):
         self.assertEqual(trace[0]["status"], "needs_input")
         self.assertIsNone(trace[0]["input_json"])
 
+    def test_ai_assumptions_fill_unspecified_state_and_keep_user_temperature(self):
+        from request_planner.backend import answer
+        from request_planner.task_router import Route
+
+        plan = {"tasks": [{
+            "id": "transport", "model_id": "THM-02", "purpose": "Estimate a reference mixture's Lewis number",
+            "params": {"temp_k": 310}, "input_source_spans": {"temp_k": "310 K"},
+            "assumptions": [
+                {"target_pointer": "/params/pressure_kpa", "value": 101.325, "unit": "kPa",
+                 "reason": "Use standard pressure for the test scenario."},
+                {"target_pointer": "/params/mole_fracs", "value": {"CH4": 0.095, "O2": 0.19, "N2": 0.715},
+                 "unit": "mol/mol", "reason": "Use a representative stoichiometric methane-air mixture."},
+            ],
+        }]}
+        question = "Calculate the methane Lewis number at 310 K."
+        result = answer(question, function_generator=lambda _: json.dumps(plan),
+                        routing_decision=Route(intent="calculation", model_ids=["THM-02"]))
+        self.assertEqual(result.status, "completed", result.message)
+        calc = next(b for b in result.result.blocks if b["type"] == "calculation")
+        self.assertTrue(calc["illustrative"])
+        self.assertEqual(calc["input_json"]["params"]["temp_k"], 310)
+        self.assertIn("AI assumption", result.frontend()["limitations"])
+
+        plan["tasks"][0]["assumptions"].append({"target_pointer": "/params/temp_k", "value": 400,
+            "unit": "K", "reason": "Attempt to overwrite the user's test temperature."})
+        blocks, _, trace = execute_functions(plan, question, [])
+        self.assertFalse(blocks)
+        self.assertIn("must not replace", trace[0]["message"])
+
+    def test_live_reference_fills_missing_heat_capacity_and_keeps_sourced_values(self):
+        from request_planner.evidence_packages import EvidencePackageRegistry
+
+        registry = EvidencePackageRegistry()
+        package, payload = registry.load("co2_30_percent_dilution", "THM-18")
+        del payload["evidence"]["profiles"][0]["species"]["nitrogen"]
+        del payload["evidence"]["provenance"]["property_bindings"]["/evidence/profiles/0/species/nitrogen"]
+        del payload["request"]["scenario"]["target_temperature_K"]
+        oxygen = payload["evidence"]["profiles"][0]["species"]["oxygen"]["cp_at_reference_J_mol_K"]
+        plan = {"tasks": [{"id": "dilution", "model_id": "THM-18",
+                            "purpose": "Estimate the heat budget", "package_id": package.id,
+                            "assumptions": [{"target_pointer": "/request/scenario/target_temperature_K",
+                                             "value": 400, "unit": "K",
+                                             "reason": "Compare heat capacity over the documented range."}]}]}
+        with patch.object(registry, "load", return_value=(package, payload)):
+            blocks, _, trace = execute_functions(plan, "Estimate gas dilution", [], package_registry=registry)
+        self.assertEqual(trace[0]["status"], "completed", trace[0].get("message"))
+        self.assertTrue(blocks[0]["illustrative"])
+        self.assertEqual(trace[0]["input_json"]["request"]["scenario"]["target_temperature_K"], 400)
+        self.assertIn("n2_cp_linear_300_400k", {p.get("record_id") for p in trace[0]["provenance"]})
+        profile = trace[0]["input_json"]["evidence"]["profiles"][0]
+        self.assertEqual(profile["species"]["oxygen"]["cp_at_reference_J_mol_K"], oxygen)
+
+    def test_gas_library_fits_are_not_extrapolated(self):
+        from request_planner.evidence_packages import EvidencePackageRegistry
+        from request_planner.reference_inputs import fill_properties
+
+        _, payload = EvidencePackageRegistry().load("co2_30_percent_dilution", "THM-18")
+        payload["request"]["scenario"]["target_temperature_K"] = 450
+        del payload["evidence"]["profiles"][0]["species"]["nitrogen"]
+        trace = []
+        fill_properties("THM-18", payload, trace)
+        self.assertFalse(trace)
+        self.assertNotIn("nitrogen", payload["evidence"]["profiles"][0]["species"])
+
     def test_all_base_json_files_exist_before_first_solver(self):
         from request_planner.execution import ExecutionSession
 

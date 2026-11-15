@@ -26,13 +26,13 @@
     "function_id": "THM-07",
     "status": "success",
     "metrics": {
-      "flow_residence_time_ms": 0.48,
-      "chemical_kinetic_time_ms": 0.53,
-      "damkohler_number": 0.91,
-      "critical_blowoff_velocity_ms": 0.39,
+      "flow_residence_time_ms": 1.2892,
+      "chemical_kinetic_time_ms": 8.0555,
+      "damkohler_number": 0.16,
+      "critical_blowoff_velocity_ms": 0.168,
       "flame_status": "Extinguished (Convective Blow-Off: Da < 1.0)"
     },
-    "summary_text": "At 42 cm/s and 18% O2, leading-edge residence time drops below the Arrhenius reaction timescale (Da = 0.91 < 1.0), triggering convective blow-off extinction.",
+    "summary_text": "With illustrative demo kinetics at 18% O2 and 101.325 kPa, THM-07 predicts blow-off at 0.168 m/s. The tested airflow of 0.42 m/s exceeds the limit by 0.252 m/s (Da = 0.16).",
     "plot_data": null,
     "evidence_boundary": "Semi-Empirical Correlation",
     "psi_citations": [

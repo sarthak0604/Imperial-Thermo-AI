@@ -149,7 +149,7 @@
     ],
     "provenance": {
       "illustrative": true,
-      "investigation": "NASA Saffire II, PSI-98",
+      "investigation": "NASA Saffire II, PSI-99",
       "generated_with": "OpenAI Codex",
       "notes": [
         "NASA measurements anchor the limiting spread rate and length. The 295 K inlet, the solid heat capacity and pyrolysis temperature, gas properties and effective flame temperature are engineering assumptions for this demo.",

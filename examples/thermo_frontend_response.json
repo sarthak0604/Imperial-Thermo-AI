@@ -144,7 +144,27 @@
           "The integration covers the returned time window.",
           "The exhaust balance treats the residual dry gas as conserved inert gas."
         ]
-      }
+      },
+      "headline_metrics": [
+        {
+          "label": "Total heat released",
+          "value": 26.2,
+          "unit": "kJ",
+          "note": null
+        },
+        {
+          "label": "Peak heat release rate",
+          "value": 13.1,
+          "unit": "kW",
+          "note": null
+        },
+        {
+          "label": "Time of peak",
+          "value": 0.0,
+          "unit": "s",
+          "note": null
+        }
+      ]
     },
     {
       "type": "chart",

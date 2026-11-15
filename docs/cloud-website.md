@@ -1,6 +1,8 @@
 # Deploy IC Dynamics
 
-The `final` branch merges `codex/thm-model-integration`, `omri` and `temp`.
+The `final` branch uses the `omri` frontend at `4bb5afe` and the complete
+`hayk2` backend at `23e17ea`, copied directly without a branch merge.
+The HTTP adapter and result renderer connect the two source trees.
 The Omri interface calls the shared Thermo backend at `/api/ask`. Claude is not
 used. The root `google` command still deploys a batch job; use `google-website`
 for the website service. Its default Cloud Run service ID is `ic-dynamics`,
@@ -49,8 +51,8 @@ gcloud run services logs read ic-dynamics \
   --project nasa26 --region europe-west1 --limit 50
 ```
 
-Use the URL printed by the describe command above after deployment. A URL for
-`ic-dynamics` has not been verified yet. The older service's URL is
+Use the URL printed by the describe command above after deployment. The service URL is <https://ic-dynamics-bwyvnsywwq-ew.a.run.app>.
+Run the deployment command above to replace its existing revision with this checkout. The older service's URL is
 <https://imperial-thermo-website-bwyvnsywwq-ew.a.run.app>; deploying `ic-dynamics`
 does not replace or stop that separate service. To disable the old website:
 
@@ -111,9 +113,7 @@ command. Neither mode uses Claude or frontend mock responses.
 uv sync --locked
 uv run pytest tests 'NASA Space Apps/frontend/tests'
 uv run python inputs/build_demo.py --check
-uv pip install playwright
-uv run python -m playwright install chromium
-uv run python 'NASA Space Apps/frontend/tests/final_e2e.py'
+uv run pytest tests/test_final_http.py
 ```
 
 To run the UI locally without downloading an LLM:
@@ -126,10 +126,11 @@ Open <http://localhost:8015>. Use `THERMO_PLANNER=local` only if you have separa
 installed the `search` extra and want local model inference.
 
 The main page does not load mock-answer scripts or replay saved legacy responses.
-Runtime calculation and chart values come from the backend. The existing **Widget
-library** still contains precomputed, labeled demonstrations, including illustrative
-and synthetic cases; these are not generated answers or experimental measurements.
-`inputs/demo_cases.json` likewise remains a test/example catalog, not an answer source.
+Runtime calculation and chart values come from the backend. Omri’s legacy demo assets remain in the repository, but the live question flow
+does not call its demo pipeline or select its precomputed widgets. Hayk2 may use
+bundled reference scenarios and illustrative input packages; their assumptions
+and provenance are shown with the returned results. The `thermo-reference`
+package is included in the wheel, Docker image and Cloud Build upload.
 
 References: [Cloud Run GPU services](https://docs.cloud.google.com/run/docs/configuring/services/gpu),
 [source deployment](https://docs.cloud.google.com/run/docs/deploying-source-code).
