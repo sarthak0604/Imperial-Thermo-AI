@@ -55,7 +55,7 @@ def operation_catalog():
     catalog = []
     for n in range(1, 21):
         spec = model_spec(f"THM-{n:02}")
-        template = json.loads(function_root().joinpath(spec["example"]).read_text())
+        template = json.loads(function_root().joinpath(spec["example"]).read_text(encoding="utf-8-sig"))
         payload = template.get("example_request", template)
         catalog.append({
             "model_id": spec["model_id"], "description": spec["description"],
@@ -91,7 +91,7 @@ def input_contract(model_id):
     """Read actual implementation signatures; examples do not define defaults."""
     import ast
     spec = model_spec(model_id)
-    tree = ast.parse(function_root().joinpath(spec['module']).read_text())
+    tree = ast.parse(function_root().joinpath(spec['module']).read_text(encoding="utf-8-sig"))
     candidates = [node for node in tree.body if isinstance(node, ast.FunctionDef) and
                   node.name == PUBLIC_FUNCTIONS.get(model_id)]
     if not candidates:

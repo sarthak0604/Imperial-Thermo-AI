@@ -4,6 +4,53 @@ import math
 import re
 
 
+# Explicit prompt units for scenario parameters. The named slots define the
+# solver units. A bare number can still be validated by the calling contract.
+NUMBER = r"(?<![\w.+-])(?P<value>[+-]?(?:\d+(?:\.\d+)?|\.\d+)(?:[eE][+-]?\d+)?)"
+OXYGEN = r"(?:oxygen|O2|O₂)"
+PERCENT = r"(?:mol\s*%|vol\s*%|%|percent\b)"
+FRACTION = re.compile(
+    rf"{NUMBER}\s*{PERCENT}\s*(?:of\s+)?{OXYGEN}\b"
+    rf"|\b{OXYGEN}\b(?:\s+(?:mole\s+fraction|content|concentration|level))?"
+    rf"\s*(?:is\b|of\b|at\b|=|:)?\s*{NUMBER.replace('value', 'after')}\s*(?P<percent>{PERCENT})?",
+    re.I,
+)
+MASS_FRACTION = re.compile(
+    rf"{NUMBER}\s*{PERCENT}\s*(?:of\s+)?{OXYGEN}\s+by\s+mass\b"
+    rf"|\b{OXYGEN}\s+mass\s+fraction\s*(?:is\b|of\b|=|:)?"
+    rf"\s*{NUMBER.replace('value', 'after')}\s*(?P<percent>{PERCENT})?",
+    re.I,
+)
+QUANTITY_UNITS = {
+    "u_flow_ms": (r"cm\s*/\s*s|m\s*/\s*s", {"m/s": 1, "cm/s": 0.01}),
+    "pressure_kpa": (r"kPa|Pa|atm|bar|psi", {"kpa": 1, "pa": 0.001, "atm": 101.325, "bar": 100, "psi": 6.894757}),
+    "activation_energy_j": (r"kJ\s*/\s*mol|J\s*/\s*mol", {"j/mol": 1, "kj/mol": 1000}),
+}
+
+
+def user_quantity_spans(field, text):
+    """Return canonical values and exact character spans for recognized units."""
+    if field in {"y_ox_stream", "y_o2_amb"}:
+        return [
+            (float(m["value"] or m["after"]) / (100 if m["value"] or m["percent"] else 1), m.span())
+            for m in MASS_FRACTION.finditer(text)
+        ]
+    if field in {"x_o2", "o2_mole_frac"}:
+        if re.search(r"\b(?:mass fraction|by mass|weight percent|wt\s*%)\b", text, re.I):
+            return []
+        return [
+            (float(m["value"] or m["after"]) / (100 if m["value"] or m["percent"] else 1), m.span())
+            for m in FRACTION.finditer(text)
+        ]
+    if field not in QUANTITY_UNITS:
+        return []
+    pattern, factors = QUANTITY_UNITS[field]
+    return [
+        (float(m["value"]) * factors[re.sub(r"\s+", "", m["unit"].casefold())], m.span())
+        for m in re.finditer(rf"{NUMBER}\s*(?P<unit>{pattern})\b", text, re.I)
+    ]
+
+
 def descriptor(name, unit=None):
     text = name.casefold().replace("_", " ")
     out = {

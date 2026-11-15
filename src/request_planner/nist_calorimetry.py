@@ -41,7 +41,7 @@ def run_nist_window(window):
     with tempfile.TemporaryDirectory(prefix="thermo-nist-") as directory:
         result = ExecutionSession(directory, ExecutionLimits()).calculate("THM-04", payload)
     source_id = "nist-ngqc-3m-2kgs"
-    blocks = [b for b in present_result("THM-04", result)
+    blocks = [b for b in present_result("THM-04", result, include_input=True)
               if b["type"] == "calculation" or b["series"][0]["label"] == "hrr_W"]
     for block in blocks:
         block["source_file_ids"] = [source_id]

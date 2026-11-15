@@ -5,6 +5,11 @@
 !uv.lock
 !src/
 !src/**
+!thermo-reference/
+!thermo-reference/__init__.py
+!thermo-reference/build_demo.py
+!thermo-reference/properties.json
+!thermo-reference/demo_cases.json
 **/__pycache__/
 **/*.pyc
 

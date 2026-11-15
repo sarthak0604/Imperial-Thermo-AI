@@ -104,6 +104,19 @@ class AnswerResult(Contract):
             }
             for s in self.result.sources
         ]
+        seen = {(entry.get("url"), entry.get("note")) for entry in evidence}
+        for block in self.result.blocks:
+            if block["type"] != "calculation":
+                continue
+            for origin in block.get("input_provenance", []):
+                if origin.get("kind") != "reference_property":
+                    continue
+                for source in origin.get("sources", []):
+                    key = (source["url"], source.get("locator"))
+                    if key not in seen:
+                        seen.add(key)
+                        evidence.append({"url": key[0], "note": key[1] or origin["record_id"],
+                                         "review_status": "Reference property"})
         return {
             "summary": self.message,
             "answer": self.message,

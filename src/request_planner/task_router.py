@@ -149,7 +149,7 @@ QUANTITIES = {
     "THM-02": r"lewis number|thermal diffusivity",
     "THM-03": r"stoichiometric mixture fraction",
     "THM-04": r"heat (?:release(?: rate)?|was released)|oxygen[- ]consumption (?:measurements|calorimetry)",
-    "THM-07": r"damk[oö]hler number",
+    "THM-07": r"damk[oö]hler number|blow[-\s]?off(?: (?:speed|limit|velocity))?",
     "THM-08": r"richardson number",
     "THM-09": r"spalding (?:mass transfer )?b.?number",
     "THM-10": r"droplet burning constant|droplet regression rate",
@@ -179,18 +179,6 @@ def quantity_route(prompt):
     matches = sorted(set(precise or matches))
     if len(matches) != 1:
         return None
-    if (matches == ["THM-02"] and re.search(r"\bISS\b", prompt, re.I)
-            and not re.search(r"\b(?:PSI|dataset|CSV|from the|previous|same)\b", prompt, re.I)
-            and not re.search(r"\d\s*(?:K\b|kPa\b|atm\b|psi\b|%)", prompt, re.I)):
-        return Route(
-            intent="calculation", model_ids=matches,
-            reason="THM-02 requires an explicit thermodynamic state.",
-            missing=[MissingSlot(
-                id="lewis_mixture_state", reason_code="required_model_state",
-                question="What gas temperature, pressure and methane/oxygen/nitrogen mole fractions "
-                         "should THM-02 use? For a dilution comparison, give the second mixture too.",
-            )],
-        )
     return Route(intent="chart" if re.search(r"\b(?:plot|chart|graph)\b", prompt, re.I)
                  else "calculation", model_ids=matches,
                  reason="Matched the requested physical quantity to its Python model.")
@@ -199,8 +187,16 @@ def quantity_route(prompt):
 def route(prompt, generate=None, context=None, *, function_planner=False):
     """One bounded schema repair; a technical failure never becomes science data."""
     from .intent import interpret
+    from .thm_pipeline import reviewed_function_plan
 
     spec = interpret(prompt)
+    reviewed = reviewed_function_plan(prompt)
+    if reviewed is not None:
+        return Route(
+            intent="chart" if any(r.kind == "chart" for r in spec.requirements) else "calculation",
+            model_ids=list(dict.fromkeys(t.model_id for t in reviewed.tasks)),
+            reason="The question matches a supported standalone model scenario.",
+        )
     from .nist_calorimetry import nist_window
 
     if nist_window(prompt) is not None:

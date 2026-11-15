@@ -149,7 +149,15 @@ window.ANS = (() => {
     }
     if (M.blocks.length) html += `<div class="sec-h"><h2>Results</h2></div><div class="grid">${M.blocks.map(b => `<article class="box s12 rv workflow-result">${WORKFLOW.render(b)}</article>`).join("")}</div>`;
     if (M.raw.function_pipeline?.length) {
-      html += `<section class="box s12"><h2>Calculation workflow</h2><ol>${M.raw.function_pipeline.map(t => `<li><strong>${esc(t.model_id)} · ${esc(t.purpose)}</strong><p>${esc(t.status)}${t.message ? ' — ' + esc(t.message) : ''}</p>${t.depends_on?.length ? `<p>Uses results from ${esc(t.depends_on.join(', '))}</p>` : ''}<div class="fups">${t.input_json ? `<a class="chip" download="${esc(t.task_id)}-input.json" href="data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(t.input_json,null,2))}">Input JSON</a>` : ''}${t.output_json ? `<a class="chip" download="${esc(t.task_id)}-output.json" href="data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(t.output_json,null,2))}">Output JSON</a>` : ''}</div></li>`).join('')}</ol></section>`;
+      const rendered = new Set(M.blocks.filter(b => b.type === "calculation").map(b => b.task_id));
+      const rows = M.raw.function_pipeline.map(t => {
+        const downloads = rendered.has(t.task_id) ? "" :
+          WORKFLOW.downloadJson(t.task_id, "Input JSON", "input", t.input_json) +
+          WORKFLOW.downloadJson(t.task_id, "Output JSON", "output", t.output_json);
+        return `<li><strong>${esc(t.model_id)}</strong> · ${esc(t.purpose)}<p>${esc(t.status.replaceAll("_", " "))}${t.message ? " · " + esc(t.message) : ""}</p>${t.depends_on?.length ? `<p>Uses results from ${esc(t.depends_on.join(", "))}</p>` : ""}${downloads ? `<div class="fups">${downloads}</div>` : ""}</li>`;
+      }).join("");
+      const open = M.raw.function_pipeline.some(t => t.status !== "completed") ? " open" : "";
+      html += `<section class="box s12 workflow-result workflow-trace"><details${open}><summary>Calculation workflow</summary><ol>${rows}</ol></details></section>`;
     }
     const methods = [...new Map(M.blocks.filter(b => b.type === 'calculation' && b.method).map(b => [b.model_id,b.method])).entries()];
     if (methods.length) {

@@ -7,7 +7,7 @@ from functools import lru_cache
 from pathlib import Path
 
 from .backend_models import AnswerResult, RetrievalBundle
-from .intent import fulfilment, interpret, summarize_result
+from .intent import fulfilment, interpret, refers_to_prior_turn, summarize_result
 from .model_worker import InferenceError
 from .models import FrontendResponse, SearchResults
 
@@ -201,6 +201,33 @@ def _answer(
     program_generator = budgeted(program_generator)
     graph = load_graph(graph_path)
     spec = interpret(prompt, aliases=graph.aliases, context=context)
+    from .thm_pipeline import reviewed_function_plan
+
+    from .reviewed_scenarios import PACKAGE_INVESTIGATIONS
+
+    reviewed = reviewed_function_plan(prompt)
+    if reviewed:
+        supported = {PACKAGE_INVESTIGATIONS.get(task.package_id) for task in reviewed.tasks}
+        if set(spec.investigations) - supported or set(spec.excluded_investigations) & supported:
+            reviewed = None
+    if reviewed is not None:
+        from .backend_models import Requirement
+
+        quantitative_scenario = all(task.id in {"blowoff", "droplet-snapshot", "reviewed-scenario"} for task in reviewed.tasks)
+        spec.requirements = [
+            r for r in spec.requirements
+            if r.kind != "discovery"
+            and (r.kind != "calculation" or r.model_id)
+            and not (quantitative_scenario and r.kind == "explanation"
+                     and r.source_text.casefold() in {
+                         "compare", "difference", "how", "can", "could", "does", "do",
+                         "is", "are", "would", "will", "what", "which",
+                     })
+        ]
+        for task in reviewed.tasks:
+            if not any(r.kind == "calculation" and r.model_id == task.model_id for r in spec.requirements):
+                spec.requirements.append(Requirement(id="reference-" + task.model_id,
+                                                     kind="calculation", model_id=task.model_id, source_text=prompt))
     from .calibrated_spread import answer_pmma_comparison
 
     calibrated = answer_pmma_comparison(spec, graph.graph.graph.get("graph_id", "unknown"))
@@ -254,12 +281,10 @@ def _answer(
                 spec.requirements.append(Requirement(id='route-explanation',kind='explanation',source_text=prompt))
         spec.clarifications.extend(
             slot.question for slot in routing_decision.missing
-            if function_generator is None or slot.reason_code == "required_model_state"
+            if function_generator is None and reviewed is None
         )
     context_sources = []
-    if re.search(r"\b(that|previous)\b", prompt, re.IGNORECASE) and (context or {}).get(
-        "history"
-    ):
+    if reviewed is None and refers_to_prior_turn(prompt) and (context or {}).get("history"):
         last = context["history"][-1]
         if isinstance(last, dict):
             context_sources = [
@@ -307,7 +332,7 @@ def _answer(
     from .flame_temperature import calculate_flame_temperature, flame_temperature_inputs
 
     temperature_inputs = flame_temperature_inputs(prompt)
-    if (temperature_inputs is None and function_generator is not None
+    if (temperature_inputs is None and (function_generator is not None or reviewed is not None)
             and not spec.clarifications
             and any(r.kind == "calculation" for r in spec.requirements)):
         from .thm_pipeline import answer_functions
@@ -316,11 +341,12 @@ def _answer(
         manifest = os.getenv('THERMO_EVIDENCE_PACKAGES')
         result = answer_functions(spec, graph, bundle, budgeted(function_generator, stage_limit=30),
             deadline=started+deadline_seconds,
-            answer_generator=answer_generator,
+            answer_generator=answer_generator if reviewed is None else None,
+            reviewed_plan=reviewed,
             selected_models={r.model_id for r in spec.requirements if r.model_id},
             limits=ExecutionLimits(max_runtime_seconds=max(1,min(60,int(deadline_seconds-(time.monotonic()-started))))),
             client=execution_options.get('client'),url_validator=execution_options.get('url_validator'),
-            package_registry=EvidencePackageRegistry(manifest) if manifest else None)
+            package_registry=EvidencePackageRegistry(manifest))
         result.timings={'retrieval':round(retrieved-started,3),'total':round(time.monotonic()-started,3)}
         return result
     response = FrontendResponse(
@@ -364,7 +390,7 @@ def _answer(
             response.status = "completed"
             package_ran = True
     package_match = re.search(r'using evidence package ([A-Za-z0-9_.-]+) unchanged', prompt, re.I)
-    if package_match and os.getenv('THERMO_EVIDENCE_PACKAGES'):
+    if package_match:
         from .evidence_packages import EvidencePackageRegistry
         from .execution import ExecutionSession, present_result
         from .models import ExecutionLimits
@@ -375,7 +401,7 @@ def _answer(
         elif not spec.clarifications:
             mid = next(iter(mids))
             try:
-                package, payload = EvidencePackageRegistry(os.environ['THERMO_EVIDENCE_PACKAGES']).load(package_match.group(1), mid)
+                package, payload = EvidencePackageRegistry(os.getenv('THERMO_EVIDENCE_PACKAGES')).load(package_match.group(1), mid)
                 with tempfile.TemporaryDirectory(prefix='thermo-evidence-') as directory:
                     worker = ExecutionSession(directory, ExecutionLimits())
                     computed = worker.calculate(mid, payload)

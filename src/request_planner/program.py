@@ -117,6 +117,8 @@ def validate_origins(step, prompt):
         raise ValueError(
             "Generated programs cannot invent permitted defaults; use the explicit typed scenario API."
         )
+    from imperial_thermo_ai.quantities import user_quantity_spans
+
     for key, value in task.params.items():
         span = step.input_source_spans.get(key, "")
         if (
@@ -135,10 +137,11 @@ def validate_origins(step, prompt):
                     "Generated scenario inputs require explicit scientific values."
                 )
             if isinstance(scalar, (int, float)):
-                nums = [
+                quantities = user_quantity_spans(key, span)
+                nums = [number for number, _ in quantities] or [
                     float(n)
                     for n in re.findall(
-                        r"(?<![\w.])-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?", span
+                        r"(?<![\w.+-])[+-]?(?:\d+(?:\.\d+)?|\.\d+)(?:[eE][+-]?\d+)?", span
                     )
                 ]
                 if not math.isfinite(scalar) or not any(

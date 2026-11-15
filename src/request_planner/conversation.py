@@ -109,6 +109,7 @@ def ask_conversation(question, env, owner, request):
     from .nist_calorimetry import nist_window
     from .providers import configure
     from .task_router import route
+    from .thm_pipeline import reviewed_function_plan
 
     store = ConversationStore(
         env.get("THERMO_CONVERSATION_DB", "/tmp/thermo-conversations.sqlite3")
@@ -156,6 +157,7 @@ def ask_conversation(question, env, owner, request):
     context_generator = generator
     if not clarification_answers and (
         flame_temperature_inputs(question) is not None or nist_window(question) is not None
+        or reviewed_function_plan(question) is not None
     ):
         context_generator = None
     from .model_worker import InferenceError

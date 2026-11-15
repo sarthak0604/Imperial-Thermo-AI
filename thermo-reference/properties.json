@@ -1,0 +1,519 @@
+{
+  "schema_version": 1,
+  "generated_with": "OpenAI Codex",
+  "description": "Source-backed starter properties for Flame in Freefall. Quantities are in the stated units, and conditions are part of the record.",
+  "records": [
+    {
+      "id": "n2_molar_mass",
+      "material": "nitrogen",
+      "phase": "gas",
+      "property": "molar_mass",
+      "unit": "kg/mol",
+      "value": 0.0280134,
+      "conditions": {},
+      "sources": [
+        {
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7727379&Mask=1",
+          "locator": "Species identification, molecular weight"
+        }
+      ],
+      "kind": "unit_conversion",
+      "usage": "compatible_reference",
+      "notes": "Molecular weight converted from g/mol to kg/mol. Match species identity and isotopic basis."
+    },
+    {
+      "id": "n2_cp_linear_300_400k",
+      "material": "nitrogen",
+      "phase": "gas",
+      "property": "molar_isobaric_heat_capacity",
+      "unit": "J/(mol K)",
+      "value": {
+        "cp_at_reference_J_mol_K": 29.12478708,
+        "cp_reference_temperature_K": 300,
+        "cp_slope_J_mol_K2": 0.0012501560999999839,
+        "temperature_range_K": [
+          300,
+          400
+        ]
+      },
+      "conditions": {
+        "temperature_range_K": [
+          300,
+          400
+        ],
+        "gas_model": "ideal gas standard-state heat capacity",
+        "demo_pressure_range_kPa": [
+          90,
+          110
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7727379&Mask=1",
+          "locator": "Gas Phase Heat Capacity, Shomate 100–500 K row (Chase, 1998)"
+        }
+      ],
+      "kind": "derived_correlation",
+      "usage": "compatible_reference",
+      "notes": "Secant through 300 K and 400 K calculated from the cited equation. At 1 K verification steps its maximum relative difference versus the source equation is 0.067%. The pressure interval is a demo selection, and the correlation is for ideal-gas heat capacity."
+    },
+    {
+      "id": "o2_molar_mass",
+      "material": "oxygen",
+      "phase": "gas",
+      "property": "molar_mass",
+      "unit": "kg/mol",
+      "value": 0.0319988,
+      "conditions": {},
+      "sources": [
+        {
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7782447&Mask=1",
+          "locator": "Species identification, molecular weight"
+        }
+      ],
+      "kind": "unit_conversion",
+      "usage": "compatible_reference",
+      "notes": "Molecular weight converted from g/mol to kg/mol. Match species identity and isotopic basis."
+    },
+    {
+      "id": "o2_cp_linear_300_400k",
+      "material": "oxygen",
+      "phase": "gas",
+      "property": "molar_isobaric_heat_capacity",
+      "unit": "J/(mol K)",
+      "value": {
+        "cp_at_reference_J_mol_K": 29.392124786666667,
+        "cp_reference_temperature_K": 300,
+        "cp_slope_J_mol_K2": 0.007122347533333375,
+        "temperature_range_K": [
+          300,
+          400
+        ]
+      },
+      "conditions": {
+        "temperature_range_K": [
+          300,
+          400
+        ],
+        "gas_model": "ideal gas standard-state heat capacity",
+        "demo_pressure_range_kPa": [
+          90,
+          110
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7782447&Mask=1",
+          "locator": "Gas Phase Heat Capacity, Shomate 100–700 K row (Chase, 1998)"
+        }
+      ],
+      "kind": "derived_correlation",
+      "usage": "compatible_reference",
+      "notes": "Secant through 300 K and 400 K calculated from the cited equation. At 1 K verification steps its maximum relative difference versus the source equation is 0.152%. The pressure interval is a demo selection, and the correlation is for ideal-gas heat capacity."
+    },
+    {
+      "id": "co2_molar_mass",
+      "material": "carbon_dioxide",
+      "phase": "gas",
+      "property": "molar_mass",
+      "unit": "kg/mol",
+      "value": 0.0440095,
+      "conditions": {},
+      "sources": [
+        {
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C124389&Mask=1",
+          "locator": "Species identification, molecular weight"
+        }
+      ],
+      "kind": "unit_conversion",
+      "usage": "compatible_reference",
+      "notes": "Molecular weight converted from g/mol to kg/mol. Match species identity and isotopic basis."
+    },
+    {
+      "id": "co2_cp_linear_300_400k",
+      "material": "carbon_dioxide",
+      "phase": "gas",
+      "property": "molar_isobaric_heat_capacity",
+      "unit": "J/(mol K)",
+      "value": {
+        "cp_at_reference_J_mol_K": 37.217621149,
+        "cp_reference_temperature_K": 300,
+        "cp_slope_J_mol_K2": 0.04118602918999997,
+        "temperature_range_K": [
+          300,
+          400
+        ]
+      },
+      "conditions": {
+        "temperature_range_K": [
+          300,
+          400
+        ],
+        "gas_model": "ideal gas standard-state heat capacity",
+        "demo_pressure_range_kPa": [
+          90,
+          110
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C124389&Mask=1",
+          "locator": "Gas Phase Heat Capacity, Shomate 298–1200 K row (Chase, 1998)"
+        }
+      ],
+      "kind": "derived_correlation",
+      "usage": "compatible_reference",
+      "notes": "Secant through 300 K and 400 K calculated from the cited equation. At 1 K verification steps its maximum relative difference versus the source equation is 0.342%. The pressure interval is a demo selection, and the correlation is for ideal-gas heat capacity."
+    },
+    {
+      "id": "he_molar_mass",
+      "material": "helium",
+      "phase": "gas",
+      "property": "molar_mass",
+      "unit": "kg/mol",
+      "value": 0.004002602,
+      "conditions": {},
+      "sources": [
+        {
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7440597&Mask=1",
+          "locator": "Species identification, molecular weight"
+        }
+      ],
+      "kind": "unit_conversion",
+      "usage": "compatible_reference",
+      "notes": "Molecular weight converted from g/mol to kg/mol. Match species identity and isotopic basis."
+    },
+    {
+      "id": "he_cp_linear_300_400k",
+      "material": "helium",
+      "phase": "gas",
+      "property": "molar_isobaric_heat_capacity",
+      "unit": "J/(mol K)",
+      "value": {
+        "cp_at_reference_J_mol_K": 20.786030000486836,
+        "cp_reference_temperature_K": 300,
+        "cp_slope_J_mol_K2": -1.1738876537492616e-12,
+        "temperature_range_K": [
+          300,
+          400
+        ]
+      },
+      "conditions": {
+        "temperature_range_K": [
+          300,
+          400
+        ],
+        "gas_model": "ideal gas standard-state heat capacity",
+        "demo_pressure_range_kPa": [
+          90,
+          110
+        ]
+      },
+      "sources": [
+        {
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7440597&Mask=1",
+          "locator": "Gas Phase Heat Capacity, Shomate 298–6000 K row (Chase, 1998)"
+        }
+      ],
+      "kind": "derived_correlation",
+      "usage": "compatible_reference",
+      "notes": "Secant through 300 K and 400 K calculated from the cited equation. At 1 K verification steps its maximum relative difference versus the source equation is 0.000%. The pressure interval is a demo selection, and the correlation is for ideal-gas heat capacity."
+    },
+    {
+      "id": "methanol_vapor_pressure_298_15k",
+      "material": "methanol",
+      "phase": "liquid",
+      "property": "saturation_vapor_pressure",
+      "unit": "kPa",
+      "value": 16.938450392599165,
+      "conditions": {
+        "temperature_K": 298.15,
+        "equilibrium": "pure-liquid saturation"
+      },
+      "sources": [
+        {
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Name=methanol&cTP=on",
+          "locator": "Antoine Equation Parameters, 288.1–356.83 K; Ambrose and Sprake (1970)"
+        }
+      ],
+      "kind": "derived_value",
+      "usage": "compatible_reference",
+      "notes": "NIST Antoine equation evaluated at 298.15 K and converted from bar to kPa. Coefficients for other temperatures are in the source."
+    },
+    {
+      "id": "water_vapor_pressure_298_15k",
+      "material": "water",
+      "phase": "liquid",
+      "property": "saturation_vapor_pressure",
+      "unit": "kPa",
+      "value": 3.16674874006291,
+      "conditions": {
+        "temperature_K": 298.15,
+        "equilibrium": "pure-liquid saturation"
+      },
+      "sources": [
+        {
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=4",
+          "locator": "Antoine Equation Parameters, 273–303 K; Bridgeman and Aldrich (1964)"
+        }
+      ],
+      "kind": "derived_value",
+      "usage": "compatible_reference",
+      "notes": "NIST Antoine equation evaluated at 298.15 K and converted from bar to kPa. Coefficients for other temperatures are in the source."
+    },
+    {
+      "id": "methanol_dhvap_298_15k",
+      "material": "methanol",
+      "phase": "liquid",
+      "property": "vaporization_enthalpy",
+      "unit": "J/mol",
+      "value": 37488.99249686521,
+      "conditions": {
+        "temperature_K": 298.15,
+        "equilibrium": "pure-liquid saturation"
+      },
+      "sources": [
+        {
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Name=methanol&cTP=on",
+          "locator": "Enthalpy of vaporization correlation, 298–477 K; Majer and Svoboda (1985)"
+        }
+      ],
+      "kind": "derived_correlation",
+      "usage": "compatible_reference",
+      "notes": "Evaluated the published saturation correlation at 298.15 K; used as the local constant in the THM-12 snapshot."
+    },
+    {
+      "id": "water_dhvap_298_15k",
+      "material": "water",
+      "phase": "liquid",
+      "property": "vaporization_enthalpy",
+      "unit": "J/mol",
+      "value": 44004,
+      "conditions": {
+        "temperature_K": 298.15,
+        "equilibrium": "standard-state enthalpy difference"
+      },
+      "sources": [
+        {
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=63&Units=SI",
+          "locator": "CODATA standard enthalpies of formation, gas and liquid"
+        }
+      ],
+      "kind": "derived_value",
+      "usage": "compatible_reference",
+      "notes": "Calculated from −241.826 minus −285.830 kJ/mol. Appropriate as a room-temperature approximation for the snapshot."
+    },
+    {
+      "id": "water_density_sat_298_15k",
+      "material": "water",
+      "phase": "liquid",
+      "property": "density",
+      "unit": "kg/m3",
+      "value": 997,
+      "conditions": {
+        "temperature_K": 298.15,
+        "pressure_kPa": 3.1699,
+        "equilibrium": "pure-liquid saturation"
+      },
+      "sources": [
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5078.pdf",
+          "locator": "Table 1, 25 °C saturation row"
+        }
+      ],
+      "kind": "published_value",
+      "usage": "compatible_reference",
+      "notes": "Saturated liquid density. Retain the stated phase/state or justify a pressure approximation."
+    },
+    {
+      "id": "water_liquid_cp_mean_293_373k",
+      "material": "water",
+      "phase": "liquid",
+      "property": "mean_isobaric_heat_capacity",
+      "unit": "J/(kg K)",
+      "value": 4190.75,
+      "conditions": {
+        "temperature_range_K": [
+          293.15,
+          373.15
+        ],
+        "equilibrium": "saturated-liquid enthalpy secant between endpoints"
+      },
+      "sources": [
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5078.pdf",
+          "locator": "Table 1, saturated-liquid enthalpies at 20 °C (83.91 kJ/kg) and 100 °C (419.17 kJ/kg)"
+        }
+      ],
+      "kind": "derived_value",
+      "usage": "demo_only",
+      "notes": "Valid as an endpoint secant for the mist demo. For other endpoints, reevaluate the enthalpy difference."
+    },
+    {
+      "id": "water_dhvap_sat_373_15k",
+      "material": "water",
+      "phase": "liquid",
+      "property": "vaporization_enthalpy",
+      "unit": "J/kg",
+      "value": 2256400,
+      "conditions": {
+        "temperature_K": 373.15,
+        "pressure_kPa": 101.42,
+        "equilibrium": "pure-liquid saturation"
+      },
+      "sources": [
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5078.pdf",
+          "locator": "Table 1, 100 °C saturation row"
+        }
+      ],
+      "kind": "published_value",
+      "usage": "compatible_reference",
+      "notes": "Rounded tabulated latent heat at 100 °C. Select new data for a different phase-change state."
+    },
+    {
+      "id": "pmma_unspecified_density",
+      "material": "PMMA",
+      "phase": "solid",
+      "property": "density",
+      "unit": "kg/m3",
+      "value": 1180,
+      "conditions": {
+        "grade": "unspecified in the cited entry"
+      },
+      "sources": [
+        {
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101567",
+          "locator": "Printed page 17, Polymethyl methacrylate property table"
+        }
+      ],
+      "kind": "published_value",
+      "usage": "sensitivity_only",
+      "notes": "Generic PMMA reference for declared sensitivity studies. No verified match to the BASS-II material grade or an ignition calibration."
+    },
+    {
+      "id": "pmma_unspecified_cp_293",
+      "material": "PMMA",
+      "phase": "solid",
+      "property": "specific_heat",
+      "unit": "J/(kg K)",
+      "value": 1300,
+      "conditions": {
+        "grade": "unspecified in the cited entry",
+        "temperature_K": 293.15
+      },
+      "sources": [
+        {
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101567",
+          "locator": "Printed page 17, Polymethyl methacrylate property table"
+        }
+      ],
+      "kind": "published_value",
+      "usage": "sensitivity_only",
+      "notes": "Generic PMMA reference for declared sensitivity studies. No verified match to the BASS-II material grade or an ignition calibration."
+    },
+    {
+      "id": "pmma_unspecified_cp_373",
+      "material": "PMMA",
+      "phase": "solid",
+      "property": "specific_heat",
+      "unit": "J/(kg K)",
+      "value": 1800,
+      "conditions": {
+        "grade": "unspecified in the cited entry",
+        "temperature_K": 373.15
+      },
+      "sources": [
+        {
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101567",
+          "locator": "Printed page 17, Polymethyl methacrylate property table"
+        }
+      ],
+      "kind": "published_value",
+      "usage": "sensitivity_only",
+      "notes": "Generic PMMA reference for declared sensitivity studies. No verified match to the BASS-II material grade or an ignition calibration."
+    },
+    {
+      "id": "pmma_unspecified_k_293",
+      "material": "PMMA",
+      "phase": "solid",
+      "property": "thermal_conductivity",
+      "unit": "W/(m K)",
+      "value": 0.15,
+      "conditions": {
+        "grade": "unspecified in the cited entry",
+        "temperature_K": 293.15
+      },
+      "sources": [
+        {
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101567",
+          "locator": "Printed page 17, Polymethyl methacrylate property table"
+        }
+      ],
+      "kind": "published_value",
+      "usage": "sensitivity_only",
+      "notes": "Generic PMMA reference for declared sensitivity studies. No verified match to the BASS-II material grade or an ignition calibration."
+    },
+    {
+      "id": "pmma_unspecified_k_373",
+      "material": "PMMA",
+      "phase": "solid",
+      "property": "thermal_conductivity",
+      "unit": "W/(m K)",
+      "value": 0.16,
+      "conditions": {
+        "grade": "unspecified in the cited entry",
+        "temperature_K": 373.15
+      },
+      "sources": [
+        {
+          "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=101567",
+          "locator": "Printed page 17, Polymethyl methacrylate property table"
+        }
+      ],
+      "kind": "published_value",
+      "usage": "sensitivity_only",
+      "notes": "Generic PMMA reference for declared sensitivity studies. No verified match to the BASS-II material grade or an ignition calibration."
+    },
+    {
+      "id": "iss_cabin_pressure_nominal",
+      "material": "ISS nominal oxidizer",
+      "phase": "gas",
+      "property": "oxidizer_pressure",
+      "unit": "kPa",
+      "value": 101.3,
+      "conditions": {
+        "regime": "nominal ISS cabin"
+      },
+      "kind": "published_value",
+      "usage": "compatible_reference",
+      "sources": [
+        {
+          "url": "https://ntrs.nasa.gov/api/citations/20050185597/downloads/20050185597.pdf",
+          "locator": "Table 1-1, ISS/US cabin atmosphere"
+        }
+      ],
+      "notes": "NASA gives nominal cabin pressure and oxidizer oxygen volume fraction. Volume fraction is used as mole fraction for the ideal-gas scenario."
+    },
+    {
+      "id": "iss_oxidizer_o2_nominal",
+      "material": "ISS nominal oxidizer",
+      "phase": "gas",
+      "property": "oxygen_mole_fraction",
+      "unit": "mol/mol",
+      "value": 0.21,
+      "conditions": {
+        "regime": "nominal ISS cabin"
+      },
+      "kind": "published_value",
+      "usage": "compatible_reference",
+      "sources": [
+        {
+          "url": "https://ntrs.nasa.gov/api/citations/20050185597/downloads/20050185597.pdf",
+          "locator": "Table 1-1, ISS/US cabin atmosphere"
+        }
+      ],
+      "notes": "NASA gives nominal cabin pressure and oxidizer oxygen volume fraction. Volume fraction is used as mole fraction for the ideal-gas scenario."
+    }
+  ]
+}
