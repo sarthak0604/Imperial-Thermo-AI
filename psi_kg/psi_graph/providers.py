@@ -1,6 +1,7 @@
 """Provider-neutral structured generation, content-addressed cache and secret-safe errors."""
 
 import json
+import math
 import os
 import time
 from urllib.request import Request, urlopen
@@ -9,6 +10,7 @@ from .common import digest, now, read_json, write_json
 from .nasa_access import tls_context
 
 KEYS = {
+    "local": (),
     "gemini": ("GEMINI_API_KEY", "GOOGLE_API_KEY"),
     "openai": ("OPENAI_API_KEY",),
     "anthropic": ("ANTHROPIC_API_KEY",),
@@ -18,6 +20,10 @@ DEFAULT_URLS = {
     "openai": "https://api.openai.com/v1",
     "anthropic": "https://api.anthropic.com/v1",
 }
+
+
+class QuotaExceededError(RuntimeError):
+    """Stop cleanly on rate/quota limits; preserve caches for a later resume."""
 
 
 class LLM:
@@ -31,7 +37,11 @@ class LLM:
         names = (api_key_env,) if api_key_env else KEYS[provider]
         self.key = next((os.environ[n] for n in names if os.environ.get(n)), None)
         local = self.base_url.startswith(("http://localhost:", "http://127.0.0.1:"))
-        if not self.key and not (provider == "openai-compatible" and local):
+        if (
+            not self.key
+            and provider != "local"
+            and not (provider == "openai-compatible" and local)
+        ):
             raise RuntimeError(
                 "Missing credential. Set "
                 + " or ".join(names)
@@ -49,9 +59,25 @@ class LLM:
             raise ValueError(
                 "API base URL must use HTTPS, except explicit localhost endpoints"
             )
+        self.min_request_interval = float(
+            os.environ.get("LLM_MIN_REQUEST_INTERVAL_SECONDS", "0")
+        )
+        if (
+            not math.isfinite(self.min_request_interval)
+            or not 0 <= self.min_request_interval <= 60
+        ):
+            raise ValueError(
+                "LLM_MIN_REQUEST_INTERVAL_SECONDS must be between 0 and 60"
+            )
+        self.last_request_at = None
         self.usage = []
         self.client = None
-        if provider == "gemini":
+        if provider == "local":
+            from .local_model import LocalModel
+
+            self.client = LocalModel(model)
+            self.base_url = ""
+        elif provider == "gemini":
             from google import genai
             from google.genai import types
 
@@ -69,6 +95,8 @@ class LLM:
             return json.load(response)
 
     def generate(self, system, prompt, schema):
+        if self.provider == "local":
+            return self.client.generate(system, prompt, schema)
         shape = schema.model_json_schema()
         if self.provider == "gemini":
             from google.genai import types
@@ -186,6 +214,21 @@ class LLM:
             + self.provider
             + self.base_url
             + self.model
+            + (
+                json.dumps(
+                    {
+                        name: os.environ.get(name)
+                        for name in (
+                            "LLM_CONTEXT_TOKENS",
+                            "LLM_MAX_NEW_TOKENS",
+                            "LLM_DEVICE",
+                        )
+                    },
+                    sort_keys=True,
+                )
+                if self.provider == "local"
+                else ""
+            )
             + stage
             + SYSTEM
             + body
@@ -201,6 +244,13 @@ class LLM:
         prompt = f"STAGE: {stage}\nReturn the requested schema.\nINPUT DATA:\n" + body
         for attempt in range(4):
             try:
+                if self.last_request_at is not None:
+                    delay = self.min_request_interval - (
+                        time.monotonic() - self.last_request_at
+                    )
+                    if delay > 0:
+                        time.sleep(delay)
+                self.last_request_at = time.monotonic()
                 result, usage = self.generate(SYSTEM, prompt, schema)
                 write_json(
                     cache,
@@ -220,7 +270,17 @@ class LLM:
                 write_json(self.output / "llm_usage.json", self.usage)
                 return result
             except Exception as exc:
+                from .local_model import LocalModelError
+
+                if isinstance(exc, LocalModelError):
+                    raise
                 code = getattr(exc, "code", None)
+                if code == 429:
+                    raise QuotaExceededError(
+                        f"{self.provider} quota/rate limit reached during {stage} (HTTP 429). "
+                        "Stopped without changing providers or models. Completed calls remain cached; "
+                        "resume the same prepared run with --stage generate after quota is available."
+                    ) from None
                 if code in (400, 401, 403, 404):
                     raise RuntimeError(
                         f"{self.provider} API rejected {stage}: HTTP {code}; check model, key, endpoint and billing."

@@ -24,7 +24,19 @@ from .science import extract_all, synthesize
 from .storage import source_storage
 
 
-def report(output, graph, resources, validation, rejected, verdicts, failures, usage):
+def report(
+    output,
+    graph,
+    resources,
+    validation,
+    rejected,
+    verdicts,
+    failures,
+    usage,
+    *,
+    provider=None,
+    model=None,
+):
     counts = Counter(r["extraction_status"] for r in resources)
     accesses = Counter(r["access_status"] for r in resources)
     report = dict(
@@ -66,6 +78,11 @@ def report(output, graph, resources, validation, rejected, verdicts, failures, u
             "Retrieval is lexical concept/synonym matching plus graph traversal, not global GraphRAG.",
         ],
     )
+    if provider is not None:
+        report["model_execution"] = {"provider": provider, "model": model}
+        report["extraction_mode"] = "local_model" if provider == "local" else "llm_api"
+        if provider == "local":
+            report["external_llm_api_calls"] = 0
     if any(r.get("original_retention") == "discarded" for r in resources):
         report["limitations"].append(
             "Original files were processed temporarily and removed. Evidence validation uses retained extracted text; source URLs and SHA-256 hashes remain available."
@@ -96,6 +113,8 @@ def report(output, graph, resources, validation, rejected, verdicts, failures, u
         "## Failures",
         "",
     ]
+    if provider is not None:
+        text[5:5] = [f"Model: {provider} / {model}", ""]
     for r in report["processing_failures"]:
         text.append(
             f"- {r['title']}: {r.get('error') or r.get('extraction_error') or '; '.join(r.get('extraction_warnings') or []) or r.get('extraction_status')}"
@@ -118,7 +137,7 @@ def main():
     )
     parser.add_argument(
         "--provider",
-        choices=["gemini", "openai", "anthropic", "openai-compatible"],
+        choices=["local", "gemini", "openai", "anthropic", "openai-compatible"],
         default=None,
     )
     parser.add_argument(
@@ -150,8 +169,16 @@ def main():
     )
     args = parser.parse_args()
     load_dotenv(args.env_file, override=False)
-    args.provider = args.provider or os.environ.get("LLM_PROVIDER", "gemini")
-    model = args.model or os.environ.get("LLM_MODEL") or os.environ.get("GEMINI_MODEL")
+    args.provider = args.provider or os.environ.get("LLM_PROVIDER", "local")
+    model = (
+        args.model
+        or os.environ.get("LLM_MODEL")
+        or (os.environ.get("GEMINI_MODEL") if args.provider == "gemini" else None)
+    )
+    if args.provider == "local" and not model:
+        from .local_model import DEFAULT_MODEL
+
+        model = DEFAULT_MODEL
     output = args.output.resolve() / investigation_id(args.url)
     output.mkdir(parents=True, exist_ok=True)
     write_json(output / "graph_schema.json", SCHEMA)
@@ -243,7 +270,16 @@ def main():
     validation = validate(graph, documents, resources)
     write_json(output / "llm_usage.json", client.usage)
     report(
-        output, graph, resources, validation, rejected, verdicts, failures, client.usage
+        output,
+        graph,
+        resources,
+        validation,
+        rejected,
+        verdicts,
+        failures,
+        client.usage,
+        provider=client.provider,
+        model=client.model,
     )
     if not validation["passed"]:
         write_json(output / "failed_graph.json", graph)

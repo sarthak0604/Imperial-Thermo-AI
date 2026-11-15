@@ -136,6 +136,9 @@ def check_evidence(items, documents_by_id):
 
 
 def extract_all(client, documents, resources, output):
+    from .local_model import LocalModelError
+    from .providers import QuotaExceededError
+
     results, failures = [], []
     index = evidence_index(documents)
     inventory = [
@@ -199,7 +202,9 @@ def extract_all(client, documents, resources, output):
                 )
                 write_json(output / "extraction_failures.json", failures)
                 # Configuration errors block the LLM stage; do not silently export a fake complete graph.
-                if "rejected" in str(exc):
+                if isinstance(
+                    exc, (QuotaExceededError, LocalModelError)
+                ) or "rejected" in str(exc):
                     raise
     write_json(output / "extractions.json", results)
     write_json(output / "extraction_failures.json", failures)

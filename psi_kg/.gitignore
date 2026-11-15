@@ -28,3 +28,5 @@ graphs/
 cloud-env.json
 
 !output/PSI-117/coverage_report.json
+
+cloud_results/

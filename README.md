@@ -12,9 +12,19 @@ uv run main
 ```
 
 The current `main` branch has the Python environment but no integrated application.
-Both commands run the same CPU PyTorch smoke test in
+The local `main` command runs the CPU PyTorch smoke test in
 `src/imperial_thermo_ai/main.py`. Replace the body of `main()` there to run
 the application in both environments.
+
+## Generate a knowledge graph on Google Cloud
+
+```sh
+uv run google
+```
+
+At the Python-file prompt, press Enter for `psi_kg/cloud_pipeline.py`, then choose create/update and supply the NASA investigation URL. The launcher reuses your current Google Cloud project, builds from source, automatically configures private result storage and API credentials, runs the job, and copies the graph to `psi_kg/cloud_results/`. Missing Gemini settings are prompted for securely. Google login, billing and resource-creation permissions remain necessary. See [the cloud guide](psi_kg/CLOUD_RUN.md).
+
+Enter `main` at the file prompt to run the previous application, or pass `--file src/imperial_thermo_ai/main.py` explicitly. The options below continue to apply to that application.
 
 ## Run on Google Cloud
 
@@ -28,7 +38,7 @@ gcloud services enable run.googleapis.com cloudbuild.googleapis.com artifactregi
 uv run google
 ```
 
-`uv run google` uploads the current checkout's build files, uses Cloud Build to
+For the `main` file selection, `uv run google` uploads the current checkout's build files, uses Cloud Build to
 build the image, deploys the `imperial-thermo-ai` Cloud Run job, and waits for it
 to finish. Source builds need
 [Cloud Run deployment permissions](https://cloud.google.com/run/docs/deploying-source-code).

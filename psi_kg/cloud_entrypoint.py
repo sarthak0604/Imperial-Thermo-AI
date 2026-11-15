@@ -6,6 +6,11 @@ import runpy
 import sys
 from pathlib import Path
 
+if os.environ.get("PSI_BUCKET"):
+    from psi_graph.cloud_runtime import main
+
+    raise SystemExit(main())
+
 root = Path("/app")
 script = (root / os.environ.get("PSI_ENTRY_FILE", "cloud_pipeline.py")).resolve()
 if not script.is_relative_to(root) or script.suffix != ".py" or not script.is_file():

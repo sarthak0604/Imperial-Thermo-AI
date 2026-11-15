@@ -1,4 +1,4 @@
-"""Create or expand a graph using an source-validated investigation run."""
+"""Create or expand a graph using one or more source-validated investigation runs."""
 
 import argparse
 import copy
@@ -14,6 +14,7 @@ from jsonschema import Draft202012Validator, FormatChecker
 from .common import digest, file_hash, now, read_json, write_json
 from .graph import DIRECTIONS, SCHEMA
 from .nasa_access import investigation_id
+from .studies import select_studies
 
 
 def check(graph):
@@ -122,13 +123,20 @@ def publish(path, graph, expected, receipt=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, allow_abbrev=False)
-    parser.add_argument("url", nargs="?")
+    parser.add_argument("url", nargs="*", help="Study names, PSI IDs or URLs")
+    parser.add_argument(
+        "--study",
+        action="append",
+        default=[],
+        help="Study name, PSI ID or URL; repeat for multiple studies",
+    )
     parser.add_argument("--mode", choices=["create", "update"])
     parser.add_argument("--graph", type=Path, help="Graph to create or update")
     parser.add_argument("--runs", type=Path, default=Path("runs"))
     parser.add_argument("--env-file", type=Path)
     parser.add_argument(
-        "--provider", choices=["gemini", "openai", "anthropic", "openai-compatible"]
+        "--provider",
+        choices=["local", "gemini", "openai", "anthropic", "openai-compatible"],
     )
     parser.add_argument("--model")
     parser.add_argument("--base-url")
@@ -160,14 +168,16 @@ def main():
         if answer not in ("1", "2"):
             parser.error("Choose 1 or 2")
         args.mode = "update" if answer == "1" else "create"
-    if not args.url:
-        args.url = input("NASA PSI investigation URL: ").strip()
-    accession = investigation_id(args.url)
+    try:
+        urls = select_studies(args.url + args.study)
+    except (ValueError, RuntimeError) as error:
+        parser.error(str(error))
+    accession = investigation_id(urls[0])
     if not args.graph:
         default = (
             "output/PSI-117/knowledge_graph.json"
             if args.mode == "update"
-            else "graphs/" + accession + ".json"
+            else "graphs/" + (accession if len(urls) == 1 else "combined") + ".json"
         )
         args.graph = Path(input(f"Graph path [{default}]: ").strip() or default)
     target = args.graph.resolve()
@@ -182,45 +192,61 @@ def main():
     if existing is not None:
         check(existing)
     args.runs.mkdir(parents=True, exist_ok=True)
-    run = Path(tempfile.mkdtemp(prefix=accession + "-", dir=args.runs.resolve()))
-    command = [
-        sys.executable,
-        "-m",
-        "psi_graph.pipeline",
-        args.url,
-        "--output",
-        str(run),
-        *extra,
-    ]
-    subprocess.run(command, check=True)
-    source = run / accession
-    incoming = read_json(source / "knowledge_graph.json")
-    # Normalize concept/variable identities on create as well as subsequent updates.
-    seed = existing if existing is not None else {**incoming, "nodes": [], "edges": []}
-    result = merge(seed, incoming)
+    result = existing
+    incoming_runs = []
+    for index, url in enumerate(urls, 1):
+        accession = investigation_id(url)
+        print(f"Processing study {index}/{len(urls)}: {accession}", flush=True)
+        run = Path(tempfile.mkdtemp(prefix=accession + "-", dir=args.runs.resolve()))
+        command = [
+            sys.executable,
+            "-m",
+            "psi_graph.pipeline",
+            url,
+            "--output",
+            str(run),
+            *extra,
+        ]
+        subprocess.run(command, check=True)
+        source = run / accession
+        incoming = read_json(source / "knowledge_graph.json")
+        # Normalize concept/variable identities on create as well as updates.
+        seed = result if result is not None else {**incoming, "nodes": [], "edges": []}
+        result = merge(seed, incoming)
+        incoming_runs.append(
+            dict(
+                investigation=accession,
+                source_url=url,
+                run_directory=str(source),
+                incoming_validation_report=str(source / "validation_report.json"),
+                incoming_resources_manifest=str(source / "resources_manifest.json"),
+            )
+        )
     check(result)
     receipt = dict(
         mode=args.mode,
-        investigation=accession,
-        source_url=args.url,
         target=str(target),
-        run_directory=str(source),
+        incoming_runs=incoming_runs,
         generated_at=now(),
         nodes=len(result["nodes"]),
         edges=len(result["edges"]),
         node_counts=dict(Counter(n["type"] for n in result["nodes"])),
         structural_validation="passed",
-        validation_scope="Combined graph structure checked; scientific review covers the incoming run only. Existing claims retain their original review status.",
+        validation_scope="Combined graph structure checked; scientific review covers the incoming runs only. Existing claims retain their original review status.",
         investigations=[
             {"id": n["id"], "source_url": n["properties"]["source_url"]}
             for n in result["nodes"]
             if n["type"] == "Investigation"
         ],
-        incoming_validation_report=str(source / "validation_report.json"),
-        incoming_resources_manifest=str(source / "resources_manifest.json"),
     )
+    if len(incoming_runs) == 1:
+        receipt.update(incoming_runs[0])  # Preserve single-study receipt fields.
+    # Publish only after all studies succeed; failure leaves the target unchanged.
     publish(target, result, expected, receipt)
-    write_json(source / "publication_receipt.json", receipt)
+    for incoming_run in incoming_runs:
+        write_json(
+            Path(incoming_run["run_directory"]) / "publication_receipt.json", receipt
+        )
     print(json.dumps(receipt, indent=2))
     return 0
 

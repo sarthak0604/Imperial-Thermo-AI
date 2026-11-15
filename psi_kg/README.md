@@ -14,7 +14,7 @@ The graph contains **12 documented study units**, including numerical studies, e
 
 New runs process original scientific files temporarily and remove those temporary copies after parsing, including extracted archive members. The graph, extracted text, numerical profiles, source URLs, source hashes and evidence remain saved. This still transfers file contents over the network and requires temporary disk capacity; it is not a metadata-only mode. The current parser batches downloads before parsing, so peak temporary storage can still approach the full study plus expanded archives.
 
-Use the normal `uv run psi-graph-manage` command locally or the same Cloud Run command. Add `--keep-originals` to `psi-graph` or `psi-graph-manage` (after the cloud launcher's `--` separator) to retain original downloads explicitly. The option applies to future downloads; existing retained files are not deleted automatically.
+Use the normal `uv run --extra local psi-graph-manage` command locally or the same Cloud Run command. Add `--keep-originals` to `psi-graph` or `psi-graph-manage` (after the cloud launcher's `--` separator) to retain original downloads explicitly. The option applies to future downloads; existing retained files are not deleted automatically.
 
 For discarded originals, Resource `storage_uri` is null and `source_url` remains the retrieval reference. Manifest records carry `original_retention: discarded` and verification status before removal. `--stage generate` can reuse retained extracted documents without original files. Re-running preparation can fetch originals again. A coverage report distinguishes files present now from files fetched and verified before intentional removal.
 
@@ -26,16 +26,47 @@ Run commands from this directory:
 
 ```sh
 cd "/Users/sarth/Documents/NASA Space Apps/Imperial-Thermo-AI/psi_kg"
-uv sync
+uv sync --extra local
 ```
 
-### Gemini setup and interactive graph selection
+### Default: local Qwen, matching the test branch
+
+The pipeline defaults to `LLM_PROVIDER=local` with `Qwen/Qwen3-4B-Instruct-2507`, the instruction model used in [`test` branch parser.py](https://github.com/sarthak0604/Imperial-Thermo-AI/blob/6005a8e0cc116073bcd681d1602b329fc0302a36/src/imperial_thermo_ai/parser.py). This is the generative model; the branch's separate Qwen embedding model is not used for extraction.
+
+Use these settings in your private `~/.config/imperial-thermo-ai/.env` (replace an older Gemini provider/model selection):
+
+```dotenv
+LLM_PROVIDER=local
+LLM_MODEL=Qwen/Qwen3-4B-Instruct-2507
+LLM_DEVICE=auto
+LLM_CONTEXT_TOKENS=32768
+LLM_MAX_NEW_TOKENS=8192
+LLM_MIN_REQUEST_INTERVAL_SECONDS=0
+```
+
+```sh
+uv run --extra local psi-graph-manage
+```
+
+Select create/update, enter the new study URL, and choose the graph path. For noninteractive execution:
+
+```sh
+uv run --extra local psi-graph-manage 'https://psi.nasa.gov/physci/repo/data/investigations/PSI-117' \
+  --provider local --model Qwen/Qwen3-4B-Instruct-2507 \
+  --mode create --graph graphs/qwen-study.json
+```
+
+No API key or model server is required. Transformers downloads roughly 8 GB of model weights on first inference and reuses the Hugging Face cache (`~/.cache/huggingface` by default; override with `HF_HOME`). Local inference automatically uses CUDA, Apple MPS, or CPU. MPS uses fp16; CPU uses fp32 like the test branch and needs substantially more RAM. The cloud configuration uses CPU inference, not the branch's CUDA 4-bit path. CPU extraction can be slow. Original NASA downloads are still temporary unless `--keep-originals` is selected; cached model weights are kept separately.
+
+JSON output is validated against the existing extraction schema, with one bounded repair attempt. Source-evidence checks still apply. Context overflow, exhausted output budgets, or invalid JSON stop the run without publishing the graph; no input is silently truncated or sent to a paid provider. `LLM_CONTEXT_TOKENS` caps input plus reserved output tokens, and `LLM_MAX_NEW_TOKENS` caps output. Large investigation synthesis can exceed the default context: raising it requires enough memory. This backend change does not add automatic multi-pass synthesis for oversized investigations. Set `LLM_LOCAL_FILES_ONLY=1` to prohibit model downloads after the model is cached. Smaller-model scientific quality must be checked against sources; structural validation alone does not prove correctness.
+
+### Optional Gemini setup and interactive graph selection
 
 Create a key at [Google AI Studio](https://aistudio.google.com/apikey), then run:
 
 ```sh
 uv run psi-setup-gemini
-uv run psi-graph-manage
+uv run --extra local psi-graph-manage
 ```
 
 The setup command asks for your key with hidden input, lists models returned for your account, and lets you select a text model. It tests one small structured JSON API request before saving `LLM_PROVIDER`, `LLM_MODEL`, and `GEMINI_API_KEY` to `$HOME/.config/imperial-thermo-ai/.env` with owner-only file permissions. Other provider settings in that file are preserved. The test uses your API quota. If it fails, the saved configuration stays unchanged. You can specify `--model MODEL_ID` or `--env-file /your/private/.env`; use the same custom env-file with the graph command. Shell environment variables take precedence over the saved file.
@@ -46,26 +77,26 @@ The graph command prompts for:
 2. The NASA PSI investigation URL to process.
 3. The graph JSON path. Update defaults to the delivered `output/PSI-117/knowledge_graph.json`; create defaults to `graphs/<accession>.json`.
 
-Update adds the supplied study, or replaces that study's previous nodes and relationships if already present. Other studies remain intact. Create refuses to overwrite an existing file. The full configured API pipeline runs before publication, and an update saves the previous JSON in `backups/` beside the graph. Failed processing leaves the selected graph unchanged. Concept and variable identities are scoped to the incoming investigation so similar labels cannot silently overwrite different source meanings. The five node types, four relationship types, and JSON property structures remain unchanged; no cross-investigation scientific relationships are inferred.
+Update adds the supplied study, or replaces that study's previous nodes and relationships if already present. Other studies remain intact. Create refuses to overwrite an existing file. The full configured extraction pipeline runs before publication, and an update saves the previous JSON in `backups/` beside the graph. Failed processing leaves the selected graph unchanged. Concept and variable identities are scoped to the incoming investigation so similar labels cannot silently overwrite different source meanings. The five node types, four relationship types, and JSON property structures remain unchanged; no cross-investigation scientific relationships are inferred.
 
 For noninteractive use, replace the quoted URL with your new study's URL:
 
 ```sh
-uv run psi-graph-manage 'https://psi.nasa.gov/physci/repo/data/investigations/PSI-117' \
+uv run --extra local psi-graph-manage 'https://psi.nasa.gov/physci/repo/data/investigations/PSI-117' \
   --mode create --graph graphs/my-study.json
 
-uv run psi-graph-manage 'https://psi.nasa.gov/physci/repo/data/investigations/PSI-117' \
+uv run --extra local psi-graph-manage 'https://psi.nasa.gov/physci/repo/data/investigations/PSI-117' \
   --mode update --graph graphs/my-study.json
 
 uv run python test_graph.py 'your scientific question' --graph graphs/my-study.json
 ```
 
-Each managed run keeps its extracted documents, manifest, extraction caches, and scientific validation report in a separate `runs/<accession>-<unique>/<accession>/` directory. Keep these directories for provenance. Original files are retained only with `--keep-originals`. A `<graph-name>.publication.json` sidecar records combined node counts, all investigation URLs, the graph hash, and the latest run location. Old per-investigation reports still describe their original runs; they are not combined-graph validation reports. A combined graph keeps its original top-level `graph_id` and seed `source_url`; use each Investigation node's `source_url` to enumerate studies. Existing evidence retains its original review status, while the incoming study receives the configured API review. Repeated managed runs currently use isolated caches; `psi-graph --stage generate` remains available for reusing a specific prepared run.
+Each managed run keeps its extracted documents, manifest, extraction caches, and scientific validation report in a separate `runs/<accession>-<unique>/<accession>/` directory. Keep these directories for provenance. Original files are retained only with `--keep-originals`. A `<graph-name>.publication.json` sidecar records combined node counts, all investigation URLs, the graph hash, and the latest run location. Old per-investigation reports still describe their original runs; they are not combined-graph validation reports. A combined graph keeps its original top-level `graph_id` and seed `source_url`; use each Investigation node's `source_url` to enumerate studies. Existing evidence retains its original review status, while the incoming study receives the configured model review. Repeated managed runs currently use isolated caches; `psi-graph --stage generate` remains available for reusing a specific prepared run.
 
 Download and parse an investigation **without an API key**:
 
 ```sh
-uv run psi-graph \
+uv run --extra local psi-graph \
   'https://psi.nasa.gov/physci/repo/data/investigations/PSI-117' \
   --stage prepare
 ```
@@ -75,7 +106,7 @@ The URL is an input. Replace it to process a different single investigation. Out
 A complete API run is:
 
 ```sh
-uv run psi-graph \
+uv run --extra local psi-graph \
   'https://psi.nasa.gov/physci/repo/data/investigations/PSI-117' \
   --env-file "$HOME/.config/imperial-thermo-ai/.env"
 ```
@@ -91,7 +122,7 @@ From this directory, paste the new NASA investigation URL when prompted:
 ```sh
 printf 'NASA PSI investigation URL: '
 read -r PSI_URL
-uv run psi-graph "$PSI_URL" \
+uv run --extra local psi-graph "$PSI_URL" \
   --env-file "$HOME/.config/imperial-thermo-ai/.env" \
   --output output
 ```
@@ -101,7 +132,7 @@ This invokes download, parsing, configured LLM extraction, synthesis, evidence r
 Results are saved in `output/<accession>/`, where accession is the PSI number in the supplied URL. Validate and query the new result:
 
 ```sh
-uv run psi-graph "$PSI_URL" --stage validate --output output
+uv run --extra local psi-graph "$PSI_URL" --stage validate --output output
 printf 'Accession from that URL (PSI- followed by its number): '
 read -r PSI_ACCESSION
 uv run python test_graph.py 'your scientific question' \
@@ -116,12 +147,13 @@ Set variables in your shell, or a local `.env` file. The default file location i
 
 | `LLM_PROVIDER` / `--provider` | Required credential | Protocol |
 | --- | --- | --- |
+| `local` (default) | None | Transformers Qwen inference on the executing machine |
 | `gemini` | `GEMINI_API_KEY` (or `GOOGLE_API_KEY`) | Google GenAI structured JSON |
 | `openai` | `OPENAI_API_KEY` | Responses API with strict JSON Schema |
 | `anthropic` | `ANTHROPIC_API_KEY` | Messages API with forced structured tool output |
 | `openai-compatible` | `LLM_API_KEY` | Chat Completions with JSON Schema |
 
-All providers require **`LLM_MODEL` or `--model`** set to a model available to your account. There is intentionally no fixed model/version dependency. Choose a model supporting structured output and enough context for the scientific synthesis. Gemini Flash-class models are a reasonable cost/latency starting point; larger reasoning models may improve scientific synthesis. Actual accuracy still depends on evidence checks and review. No cost or quality benchmark was performed in this credential-free run.
+API providers require **`LLM_MODEL` or `--model`** set to a model available to your account. The local provider defaults to the Qwen model above; its ID can also be overridden. Choose a model supporting structured output and enough context for the scientific synthesis. Gemini Flash-class models are a reasonable cost/latency starting point; larger reasoning models may improve scientific synthesis. Actual accuracy still depends on evidence checks and review. No cost or quality benchmark was performed in this credential-free run.
 
 Example configuration (fill in your own model and key locally):
 
@@ -197,7 +229,7 @@ Publisher access errors, empty/image-only pages, metadata-only citations and par
 This mode imports a deliberately reviewed artifact; it is not a substitute advertised as a live API call:
 
 ```sh
-uv run psi-graph \
+uv run --extra local psi-graph \
   'https://psi.nasa.gov/physci/repo/data/investigations/PSI-117' \
   --stage generate \
   --reviewed-bundle reviewed/PSI-117/reviewed_bundle.json
@@ -218,4 +250,21 @@ No global GraphRAG, cross-investigation graph, dashboard, commits, deployment, o
 
 ## Cloud execution and file coverage
 
-See [CLOUD_RUN.md](CLOUD_RUN.md) for `uv run google --file cloud_pipeline.py`, persistent cloud storage, choosing another Python file, and explicit raw-data coverage limits. Use `uv run psi-coverage INVESTIGATION_URL` to reconcile the latest NASA inventory with downloaded files.
+Run `uv run google` from this directory or the repository root for the automatic Cloud Run flow. It reuses your active gcloud project, prompts for create/update and the study URL, builds the code, saves results to Cloud Storage, and copies the final graph back to `psi_kg/cloud_results/`. See [CLOUD_RUN.md](CLOUD_RUN.md) for details and capacity limits. Use `uv run psi-coverage INVESTIGATION_URL` to reconcile the latest NASA inventory with downloaded files.
+
+## Free API tiers
+
+Google's pricing currently lists free-tier input/output for `gemini-3.5-flash-lite`, and a live structured-JSON probe succeeded with this project's saved key. Free-tier eligibility is determined by the API key's project billing tier, not a Gemini chat subscription and not a model name alone. Check the project's Billing Tier in [AI Studio](https://aistudio.google.com/projects). A successful request does not identify its billing tier. Do not enable paid billing merely to resolve a quota error if you want to remain on the free API tier. See [pricing](https://aistudio.google.com/docs/pricing#gemini-3.5-flash-lite) and [account-specific limits](https://aistudio.google.com/rate-limit).
+
+`LLM_MIN_REQUEST_INTERVAL_SECONDS=15` spaces uncached generation requests by at least 15 seconds. This is conservative pacing, not a guarantee against token/day limits. HTTP 429 stops extraction immediately, preserves completed response caches, and does not switch models/providers. Resume a prepared run after quota is available with `uv run --extra local psi-graph URL --stage generate --output runs/ACTUAL-RUN-DIRECTORY`; rerunning the managed create command creates a separate cache.
+
+For zero cloud-compute usage, use `uv run --extra local psi-graph-manage` locally. The default Qwen backend needs no API key. `uv run google` uses separately billed Cloud Run/build/storage resources even if LLM calls qualify for free usage.
+
+Hosted open-weight alternatives include [Groq's free plan](https://console.groq.com/docs/rate-limits) and [OpenRouter's free models](https://openrouter.ai/collections/free-models). The existing `openai-compatible` provider can use their Chat Completions endpoints, but end-to-end scientific extraction has not been validated against either service. Select a model that supports strict JSON Schema; token limits may require smaller chunks. OpenRouter's `:free` routes have daily/request caps; free access is not unlimited processing.
+
+Never put credentials in `.env.example`: it is tracked by Git. Keep keys in the private config file. If a key was committed, remove it from the template and rotate it; deleting the current value does not remove historical commits.
+
+
+### Combine multiple NASA studies
+
+`psi-graph-manage` and the automatic `google` launcher accept repeated `--study` options for study titles, acronyms, PSI IDs or URLs. At the interactive study prompt, separate entries with `;`. All selected studies are processed into the same graph; choose update to add to an existing file. See [the multi-study instructions](CLOUD_RUN.md#multiple-studies-in-one-json-file) for examples, title disambiguation and failure behavior.

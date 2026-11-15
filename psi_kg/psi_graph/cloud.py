@@ -4,6 +4,7 @@ import argparse
 import json
 import shlex
 import subprocess
+import sys
 import tempfile
 from pathlib import Path
 
@@ -83,6 +84,10 @@ def commands(args):
 
 
 def main():
+    if not any(a.startswith("--nfs-server") for a in sys.argv[1:]):
+        from .cloud_auto import main as automatic_main
+
+        return automatic_main()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--file", default="cloud_pipeline.py")
     for option in (

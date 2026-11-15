@@ -315,3 +315,87 @@ def test_missing_api_configuration_fails_before_download(tmp_path, monkeypatch):
     )
     with pytest.raises(RuntimeError, match="Missing credential"):
         pipeline.main()
+
+
+@pytest.mark.parametrize("mode", ["create", "update"])
+def test_multiple_studies_publish_one_graph(tmp_path, monkeypatch, mode):
+    target = tmp_path / "combined.json"
+    if mode == "update":
+        write_json(target, graph())
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "manage",
+            "PSI-2",
+            "--study",
+            "PSI-3; PSI-2",
+            "--mode",
+            mode,
+            "--graph",
+            str(target),
+            "--runs",
+            str(tmp_path / "runs"),
+        ],
+    )
+    calls = []
+
+    def run(command, check):
+        calls.append(command)
+        fake_pipeline(command, check)
+
+    monkeypatch.setattr(manage.subprocess, "run", run)
+    assert manage.main() == 0
+    result = read_json(target)
+    ids = {n["id"] for n in result["nodes"] if n["type"] == "Investigation"}
+    assert ids == (
+        {"inv:PSI-1", "inv:PSI-2", "inv:PSI-3"}
+        if mode == "update"
+        else {"inv:PSI-2", "inv:PSI-3"}
+    )
+    assert len(calls) == 2
+    receipt = read_json(target.with_suffix(".publication.json"))
+    assert [r["investigation"] for r in receipt["incoming_runs"]] == ["PSI-2", "PSI-3"]
+    for run in receipt["incoming_runs"]:
+        assert (
+            read_json(Path(run["run_directory"]) / "publication_receipt.json")
+            == receipt
+        )
+    manage.check(result)
+
+
+@pytest.mark.parametrize("mode", ["create", "update"])
+def test_later_study_failure_does_not_publish_partial_batch(
+    tmp_path, monkeypatch, mode
+):
+    target = tmp_path / "combined.json"
+    if mode == "update":
+        write_json(target, graph())
+    before = target.read_bytes() if target.exists() else None
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "manage",
+            "PSI-2",
+            "PSI-3",
+            "--mode",
+            mode,
+            "--graph",
+            str(target),
+            "--runs",
+            str(tmp_path / "runs"),
+        ],
+    )
+
+    def run(command, check):
+        if command[3].endswith("PSI-3"):
+            raise subprocess.CalledProcessError(1, command)
+        fake_pipeline(command, check)
+
+    monkeypatch.setattr(manage.subprocess, "run", run)
+    with pytest.raises(subprocess.CalledProcessError):
+        manage.main()
+    assert (target.read_bytes() if target.exists() else None) == before
+    assert not target.with_suffix(".publication.json").exists()
+    assert list((tmp_path / "runs").glob("PSI-2-*/PSI-2/knowledge_graph.json"))
