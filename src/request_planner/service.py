@@ -128,7 +128,9 @@ def execute_request(request, results, **kwargs):
 
 def main():
     parser = argparse.ArgumentParser(description="Execute graph results and return frontend response JSON")
-    parser.add_argument("--search-results", required=True, type=Path)
+    inputs = parser.add_mutually_exclusive_group()
+    inputs.add_argument("--search-results", type=Path, help="Use previously retrieved file records")
+    inputs.add_argument("--graph", type=Path, help="Override the bundled reviewed PSI graph")
     parser.add_argument("--prompt")
     parser.add_argument("--model", default=os.getenv("OPENAI_MODEL"))
     parser.add_argument("--request", type=Path, help="Execute a saved service request without an LLM")
@@ -136,8 +138,14 @@ def main():
     args = parser.parse_args()
     if not args.request and (not args.prompt or not args.model or not os.getenv("OPENAI_API_KEY")):
         parser.error("Supply --request, or --prompt, --model and OPENAI_API_KEY")
+    if args.request and not args.search_results:
+        parser.error("Saved requests require their original --search-results")
     try:
-        results = SearchResults.model_validate_json(args.search_results.read_text())
+        if args.search_results:
+            results = SearchResults.model_validate_json(args.search_results.read_text())
+        else:
+            from imperial_thermo_ai.reviewed_graph import load_graph
+            results = load_graph(args.graph).search(args.prompt)
         if args.request:
             response = execute_request(ServiceRequest.model_validate_json(args.request.read_text()), results)
         else:

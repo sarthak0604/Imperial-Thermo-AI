@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:c5734e5ccc80c78f1639",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_PS-01374 ACME posterFinal.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_PS-01374 ACME posterFinal.pdf",
+  "category": "Presentations",
+  "size_bytes": 6249084,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e63f0eb4c08676004b98&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/c5734e5ccc80c78f1639/PSI-22_Presentations_PS-01374 ACME posterFinal.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "90eb3719e787e11763bede35d8b21888dd460a595335b173a0b9dcee67caa63b",
+  "status": "downloaded"
+}

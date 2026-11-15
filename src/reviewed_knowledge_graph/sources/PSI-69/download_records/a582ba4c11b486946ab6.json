@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-69:a582ba4c11b486946ab6",
+  "study": "PSI-69",
+  "filename": "PSI-69_Raw Data_256R002_Readme.txt",
+  "key": "psi-data/PSI-69/Raw Data/PSI-69_Raw Data_256R002_Readme.txt",
+  "category": "Raw Data",
+  "size_bytes": 417,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-69/download?file=684345af9e44646b740279de&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-69/a582ba4c11b486946ab6/PSI-69_Raw Data_256R002_Readme.txt",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "031c4d596ea595954712457b97a6163153bd7c33e6bd0d1dd94e0be5c6a03168",
+  "status": "downloaded"
+}

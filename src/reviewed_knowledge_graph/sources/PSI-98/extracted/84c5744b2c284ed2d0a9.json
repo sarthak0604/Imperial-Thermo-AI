@@ -1,0 +1,29 @@
+{
+  "id": "res:PSI-98:84c5744b2c284ed2d0a9",
+  "study": "PSI-98",
+  "filename": "PSI-98_Science Documents_SAFFIRE-I Image Directory Nomenclature.pdf",
+  "key": "psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE-I Image Directory Nomenclature.pdf",
+  "category": "Science Documents",
+  "size_bytes": 262860,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=683f4a54746db1c87dcebebd&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-98/84c5744b2c284ed2d0a9/PSI-98_Science Documents_SAFFIRE-I Image Directory Nomenclature.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "c775153b5c68f5aa8bbdcdb455ef9f737f5291da752ce6befe1f5558cf3fd6ce",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "SAFFIRE-I  Image Directory Nomenclature\nXn_Raw_CamOriginal\nRAW Camera Original - contains 8 byte offset that must be corrected prior \nto color interpolation.  \nXn_Raw_DistroMaster\nRAW Distribution Master - 8 byte offset corrected using ImageJ.  Use this \nfile set to distribute RAW image files and color interpolation processing. \nXn_Raw2TIFF\nRAW_DistroMaster files color interpolated and saved as TIFF, using \nIrfanView Batch Conversion process.  \nXn_Raw2TIFF_icmad\nRaw2TIFF files annotated with ICMAD 'Exposure' and 'Gain' information.  \nData is appended to the bottom of each frame using ImageMagick script.  \nXn_jpeg\nFlight hardware generated jpeg images, created on-board from the RAW \nCamera Original.  \nXn_jpeg_corrupt\nJpeg images received corrupted after downlink. \nXn_jpeg2png_icmad\nFlight hardware generated jpeg images annotated with ICMAD 'Exposure' \nand 'Gain' information.  Data is appended to the bottom of each frame \nusing ImageMagick script and re-saved as .png format to prevent \nadditional compression artifacts.  \n\"X\" Denotes run type \n\"n\" Denotes run number\n"
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

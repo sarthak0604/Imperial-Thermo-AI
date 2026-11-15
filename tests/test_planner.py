@@ -75,6 +75,15 @@ class PlannerTests(unittest.TestCase):
         self.assertEqual(request.limits.max_download_bytes, 100_000_000)
         self.assertNotIn("https://", request.model_dump_json())
 
+    def test_local_retrieval_prompt_keeps_catalog_compact(self):
+        plan = Plan(action="no_match", selected_file_ids=[], requested_asset_ids=[],
+                    operation=None, explanation="No matching report.", warnings=[])
+        generate = Mock(return_value=plan.model_dump_json())
+        build_request("Show the final report PDF", SearchResults.model_validate(self.graph_data), LocalPlanner(generate))
+        catalog = json.loads(generate.call_args.args[0][1]['content'])['thermo_functions']
+        self.assertEqual(len(catalog), 20)
+        self.assertFalse(any('input_shape' in entry for entry in catalog))
+
     def test_unknown_or_duplicate_ids_rejected(self):
         for selected in [["invented-file"], ["demo-measurements", "demo-measurements"]]:
             with self.subTest(selected=selected):

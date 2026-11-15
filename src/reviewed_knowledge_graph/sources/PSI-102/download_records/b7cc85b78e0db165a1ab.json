@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:b7cc85b78e0db165a1ab",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_Run 2 DBP GMT 254 with averages.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_Run 2 DBP GMT 254 with averages.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 2917376,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d4ef91ab4427dbf43fe&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/b7cc85b78e0db165a1ab/PSI-102_Analyzed Data_Run 2 DBP GMT 254 with averages.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "637fadb2c06c248170f794d9929fbe22596a2139dd685c51e3308f726543f0a9",
+  "status": "downloaded"
+}

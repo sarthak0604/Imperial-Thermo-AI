@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:7d55502c5faab78a9e96",
+  "study": "PSI-22",
+  "filename": "PSI-22_Reports_E-FIELD Flames Final Report.pdf",
+  "key": "psi-data/PSI-22/Reports/PSI-22_Reports_E-FIELD Flames Final Report.pdf",
+  "category": "Reports",
+  "size_bytes": 3529827,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75e0eb4c08676005585&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/7d55502c5faab78a9e96/PSI-22_Reports_E-FIELD Flames Final Report.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "9be4013278966e85d99dc0ce05db9f3376d37724bf5ea9072ce7b2c48bc8e5a1",
+  "status": "downloaded"
+}

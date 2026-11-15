@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:7fdd0ebe835b66e82866",
+  "study": "PSI-23",
+  "filename": "PSI-23_metadata_PSI-99_ACME s-Flame.zip",
+  "key": "psi-data/PSI-23/metadata/PSI-23_metadata_PSI-99_ACME s-Flame.zip",
+  "category": "metadata",
+  "size_bytes": 20061,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841ccb86daf91e274cebd10&version=4&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/7fdd0ebe835b66e82866/PSI-23_metadata_PSI-99_ACME s-Flame.zip",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f27e04049fdabd83421e189b8ed12366adcb000723cf4e00cd9fa5f4d0d3ee2f",
+  "status": "downloaded"
+}

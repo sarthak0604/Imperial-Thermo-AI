@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-117:8d6ecc3d62315e27ecb7",
+  "study": "PSI-117",
+  "filename": "PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+  "key": "psi-data/PSI-117/Presentations/PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+  "category": "Presentations",
+  "size_bytes": 30873451,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e2&version=1&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/8d6ecc3d62315e27ecb7/PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "99b341840ed423878c622478b3b7817729d0ccf4d772f407f860a91d66972917",
+  "status": "downloaded"
+}

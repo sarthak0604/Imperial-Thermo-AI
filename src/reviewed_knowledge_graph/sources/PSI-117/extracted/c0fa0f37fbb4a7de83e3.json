@@ -1,0 +1,331 @@
+{
+  "id": "res:PSI-117:c0fa0f37fbb4a7de83e3",
+  "study": "PSI-117",
+  "filename": "PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+  "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+  "category": "Analyzed Data",
+  "size_bytes": 518,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ea&version=1&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/c0fa0f37fbb4a7de83e3/PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "a89e0639567f05f19a6d0dffa9b2f659048358dee1c603b6c65bfcebd1101796",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "table, row 1",
+      "text": "1: Experiment | 2: Pressure | 3: Kavg_CF | 5: Model | 6: Pressure | 7: kb (mm2/s)"
+    },
+    {
+      "locator": "table, row 2",
+      "text": "2: 0.5 | 3: 0.315175121 | 6: 5 | 7: 0.5012"
+    },
+    {
+      "locator": "table, row 3",
+      "text": "2: 0.5 | 3: 0.315175121 | 6: 3 | 7: 0.48689"
+    },
+    {
+      "locator": "table, row 4",
+      "text": "2: 0.5 | 3: 0.329710005 | 6: 1.25 | 7: 0.471387695"
+    },
+    {
+      "locator": "table, row 5",
+      "text": "2: 0.5 | 3: 0.332616982 | 6: 1 | 7: 0.447921"
+    },
+    {
+      "locator": "table, row 6",
+      "text": "2: 0.75 | 3: 0.369273871 | 6: 0.75 | 7: 0.4078"
+    },
+    {
+      "locator": "table, row 7",
+      "text": "2: 1 | 3: 0.365233085 | 6: 0.5 | 7: 0.37396"
+    },
+    {
+      "locator": "table, row 8",
+      "text": "2: 1 | 3: 0.383838614"
+    },
+    {
+      "locator": "table, row 9",
+      "text": "2: 1 | 3: 0.390233085"
+    },
+    {
+      "locator": "table, row 10",
+      "text": "2: 1 | 3: 0.401281353"
+    },
+    {
+      "locator": "table, row 11",
+      "text": "2: 1 | 3: 0.407675824"
+    },
+    {
+      "locator": "table, row 12",
+      "text": "2: 1.25 | 3: 0.404795194"
+    },
+    {
+      "locator": "table, row 13",
+      "text": "2: 1.25 | 3: 0.407121654"
+    },
+    {
+      "locator": "table, row 14",
+      "text": "2: 1.25 | 3: 0.431540259"
+    },
+    {
+      "locator": "table, row 15",
+      "text": "2: 1.25 | 3: 0.431540259"
+    },
+    {
+      "locator": "table, row 16",
+      "text": "2: 2 | 3: 0.457207721"
+    },
+    {
+      "locator": "table, row 17",
+      "text": "2: 3 | 3: 0.445111712"
+    },
+    {
+      "locator": "table, row 18",
+      "text": "2: 3 | 3: 0.493367526"
+    },
+    {
+      "locator": "table, row 19",
+      "text": "2: 5 | 3: 0.501739795"
+    },
+    {
+      "locator": "table, row 20",
+      "text": "2: 5 | 3: 0.527320312"
+    }
+  ],
+  "details": {
+    "name": "table",
+    "row_count": 20,
+    "column_count": 7,
+    "column_statistics": [
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 19
+      },
+      {
+        "numeric_count": 19,
+        "min": 0.5,
+        "max": 5.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 19,
+        "min": 0.315175121,
+        "max": 0.527320312,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 20
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 19
+      },
+      {
+        "numeric_count": 6,
+        "min": 0.5,
+        "max": 5.0,
+        "blank_count": 13
+      },
+      {
+        "numeric_count": 6,
+        "min": 0.37396,
+        "max": 0.5012,
+        "blank_count": 13
+      }
+    ],
+    "rows": [
+      [
+        "Experiment",
+        "Pressure",
+        "Kavg_CF",
+        "",
+        "Model",
+        "Pressure",
+        "kb (mm2/s)"
+      ],
+      [
+        "",
+        "0.5",
+        "0.315175121",
+        "",
+        "",
+        "5",
+        "0.5012"
+      ],
+      [
+        "",
+        "0.5",
+        "0.315175121",
+        "",
+        "",
+        "3",
+        "0.48689"
+      ],
+      [
+        "",
+        "0.5",
+        "0.329710005",
+        "",
+        "",
+        "1.25",
+        "0.471387695"
+      ],
+      [
+        "",
+        "0.5",
+        "0.332616982",
+        "",
+        "",
+        "1",
+        "0.447921"
+      ],
+      [
+        "",
+        "0.75",
+        "0.369273871",
+        "",
+        "",
+        "0.75",
+        "0.4078"
+      ],
+      [
+        "",
+        "1",
+        "0.365233085",
+        "",
+        "",
+        "0.5",
+        "0.37396"
+      ],
+      [
+        "",
+        "1",
+        "0.383838614",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "1",
+        "0.390233085",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "1",
+        "0.401281353",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "1",
+        "0.407675824",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "1.25",
+        "0.404795194",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "1.25",
+        "0.407121654",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "1.25",
+        "0.431540259",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "1.25",
+        "0.431540259",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "2",
+        "0.457207721",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "3",
+        "0.445111712",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "3",
+        "0.493367526",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "5",
+        "0.501739795",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "5",
+        "0.527320312",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "all_rows_retained": true
+  },
+  "warnings": [],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

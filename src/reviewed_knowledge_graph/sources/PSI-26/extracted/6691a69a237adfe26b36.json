@@ -1,0 +1,133 @@
+{
+  "id": "res:PSI-26:6691a69a237adfe26b36",
+  "study": "PSI-26",
+  "filename": "PSI-26_Presentations_Crew Training 2010.pdf",
+  "key": "psi-data/PSI-26/Presentations/PSI-26_Presentations_Crew Training 2010.pdf",
+  "category": "Presentations",
+  "size_bytes": 1348519,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafce9c3501a37c2c60d16&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/6691a69a237adfe26b36/PSI-26_Presentations_Crew Training 2010.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "1ec77f2a2a2a9835e7e94b5ba1f10f7e855c1a4339e4ad1458a8d1fc8effe192",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "SPICE, SLICE, and BASS Crew Training \nOctober, 2010 \nChuck Bunnell \nTechnical Lead \nGlenn Research Center \nbunnellc@ZIN-Tech.com \n(440)625-2280 \n \nCarol Reynolds \nMSG Investigations Lead \nMarshall Space Flight Center \ncarol.reynolds@nasa.gov  \n(256)961-0205 \n \nRobert Hawersaat \nProject Manager \nGlenn Research Center \nrobert.w.hawersaat@nasa.gov \n(216)433-8157  \nDr. Marshall Long \nSLICE Principal Investigator \nYale University \nMarshall.long@yale.edu \n(203)432-4229 \n \nDr. Paul Ferkul \nBASS Principal Investigator \nGlenn Research Center \npaul.v.ferkul@nasa.gov  \n(216)433-8107 \n \nDr. David Urban \nSPICE Principal Investigator \nGlenn Research Center \ndavid.l.urban@nasa.gov  \n(216)433-2835 \n1 \n"
+    },
+    {
+      "locator": "page 2",
+      "text": " \n \nTraining Objectives \n•\nA brief description of the SPICE, SLICE, and BASS \ninvestigations, predecessor experiments and science objectives. \n \n•\nAn overview and description of the SPICE, SLICE, and BASS \nhardware. \n \n•\nAn overview of the astronaut’s importance to the experiment, \nMicro-gravity Science Glovebox (MSG) interfaces, and science \ndata collection operations. \n \n•\nStep-by-step discussion of the science data collection process, \nby completing portions of the crew procedures for each \ninvestigation \n2 \n"
+    },
+    {
+      "locator": "page 3",
+      "text": "INTRODUCTION \n•\nThree investigations will be performed:   SPICE, SLICE, and BASS.   \n•\nThese investigations will be performed inside the Microgravity Science \nGlovebox (MSG). \n•\nSPICE is based on the Enclosed Laminar Flames (ELF) hardware which \nflew on STS-87 in 1997. \n•\nSPICE hardware is already on-orbit.  It has successfully completed all of its \nobjectives with the collection of 200 data points in the first half of 2009. \nSpare gas onboard will now be used to collect additional data.  New fuel is \nbeing flown on ULF5 to support the SLICE and BASS experiments. \n•\nSPICE hardware will also be used to perform SLICE and BASS. \n•\nSPICE burns different fuels to investigate the point at which they begin to \nsmoke.  \n•\nSLICE burns different fuels to investigate the structure of flames when lifted \nfrom the fuel nozzle.   \n•\nBASS burns different materials to investigate how they burn in microgravity. \n"
+    },
+    {
+      "locator": "page 4",
+      "text": "The objective of the SPICE experiment is to find \nthe laminar smoke-point properties of \nnonbuoyant jet diffusion flames (i.e., the \nproperties of the largest laminar jet diffusion \nflames that do not emit soot) for two fuel types \nunder different nozzle diameter / co-flow velocity \nconfigurations.  \n \nSPICE will stabilize an enclosed laminar flame, \nmeasure the overall flame shape to validate the \ntheoretical and numerical predictions, measure \nthe flame stabilization heights, and measure the \ntemperature field to verify flame structure \npredictions. \nSPICE Science Overview \n4 \n"
+    },
+    {
+      "locator": "page 5",
+      "text": " \nTarget Setting: The target setting is just above the setting that \nproduces a distinct edge (only a small portion of the tip will emit \nsmoke). The smoke will probably emerge from the center of the tip \nbut may emerge at the tip edges (horns) for the larger nozzle. The \npictures show the onset of smoke points for various fuels on the \nKC-135. The size of the flame when it emits smoke is a fuel \nproperty. The expected size sequence will be Propylene, Ethylene, \nPropane and Methane (probably no smoke point). The diluted \npropylene smoke points will be longer than pure propylene. \n \nSPICE Smoke Point Determination Cue Card  \nBackground:  The smoke point is the flame length, \nabove which, soot particles are no longer consumed in \nthe flame and instead emerge through the flame tip \nand glow as they cool. The glowing soot causes a \nchange from a sharp edge to a gradual transition \nbetween the bright flame and black background. \n \nAdvisory note: For the test points with the 0.4 mm \nnozzle, the possibility exists that the flame could blow \noff. When this happens, the blue flame-base no longer \ntouches the nozzle. When the base of the flame starts \nto separate from the nozzle, reduce the flow rate until \nit is well attached as the smoke height is not \nachievable. \n50% Propylene 1.6 mm \nnozzle, smoke point \nindicated by the arrow \nEthylene, 1.6 mm nozzle, \nsmoke point indicated by \nthe arrow \nPropane, 0.8 mm nozzle, \nSmoke point indicated by \nthe arrow \nPropane, 1.6 mm nozzle, \nSmoke point just below \nsmaller flame \nNote: Relative sizes \ncorrespond to expected result \nLook for the transition between a distinct flame tip and dull \nred/orange breaking through the flame tip (indistinct tip).  \n"
+    },
+    {
+      "locator": "page 6",
+      "text": "SLICE Science Background \n•\nThe goal of the SLICE investigation is to investigate the structure of lifting \nand lifted flames; whereby the flame detaches from the nozzle and \nstabilizes at a downstream position.  \n•\nThe results of the SLICE experiment will be used to minimize risk and \nmaximize the scientific return of the CLD (Coflow Laminar Diffusion) \nFlame experiment, which is one of the four ACME (Advanced Combustion \nvia Microgravity Experiments) investigations that are currently in \ndevelopment for conduct within the Combustion Integrated Rack (CIR).  \n6 \nThe lifted nature of the flames can be discerned from the outward flare of the \nflame base in the example images below (which are not at the same scale) and \nthe distance from the nozzle tip (which is not visible).  \nAre CLD or ACME the approved names?  I could not find them.  (these \npayloads are in-development and haven’t touched  the ops world yet) \n"
+    },
+    {
+      "locator": "page 7",
+      "text": "BASS Science Background \n•\nThe BASS investigation tests the hypothesis that materials in microgravity burn as well \nif not better than the same material in normal gravity with other conditions being \nidentical (ie. pressure, oxygen concentration, temperature).  \n•\nTo test this hypothesis with any but the thinnest materials requires extended \nmicrogravity time – longer than available in drop towers or parabolic aircraft. If this \nhypothesis is true, it implies serious safety concerns over the utility and margin of \nsafety provided NASA-STD-6001 Test #1 (upward flammability test used to evaluate \nmaterials intended for use in the habitable environments of US spacecraft).  Practical, \nrealistic (thicker) fuels in typical geometries will be examined, including wake flames \nwhich have characteristics of a fire burning behind another object (for example, a fire \nburning in tight area which may not be easily accessible).  \n•\nThere are important differences in the suppression of fires in space compared to on \nEarth. On Earth it is understood that best results are generally obtained when the \nextinguisher “attacks” the base of the flame, which is both the stabilization point and \nthe point of fresh air entrainment. For a fire burning in microgravity, the best point of \napplication of suppressant may not be immediately apparent, especially for a partially \nobstructed flame or a wake-stabilized flame. Depending on the geometry of the flame \nand the characteristics of the extinguisher (distance from flame, dispersion angle) it is \npossible that the suppressant stream will be ineffective or might actually make the \nflame worse through the entrainment of oxygen. \n7 \n"
+    },
+    {
+      "locator": "page 8",
+      "text": "8 \nBASS Samples \n1cm Flat Sample \n2cm Sphere Sample \nWake Flame \nZero-g facility test burning 2-cm-diameter PMMA \nsphere in 30 cm/s airflow. Left: 1 g; Middle: 0 g, 1 s \nafter drop; right: 0 g, 4 s after application of nitrogen \nextinguishing agent. \n"
+    },
+    {
+      "locator": "page 9",
+      "text": "Earth Applications \n•\nSPICE \n \nThe smoke-point phenomena is a classical metric in the understanding of the heat \nrelease and spread rate of fires. It is commonly used in fire modeling on Earth and to \nunderstand the soot growth and emission by flames. The dominant characteristics of \nmany flames of practical interest are nonbuoyant. SPICE seeks to extend our \nunderstanding by looking at the interaction of ambient flow with the smoke point, \nenabling us to better predict heat release from non-buoyant flames in practical \ncombustors (e.g. jet engines and furnaces). \n•\nSLICE \n \nThe twin purposes for the SLICE research are increased efficiency and reduced \npollutant emission in practical combustion devices. More explicitly, the experiment is \nbeing conducted to advance combustion modeling capability, which “allows system \ndesigners to improve efficiency and reduce harmful pollutants in ways never before \npossible” (as stated by an external reviewer of the SLICE experiment). In other \nwords, the SLICE research is being conducted to advance energy technology and \nimprove our global environment. \n•\nBASS \n \nIt is highly desirable to develop a new and/or improved Earth-based test method for \nmaterial flammability. The data obtained in this experiment will begin to bridge the \ngap between the normal gravity method, ground-based microgravity tests, and actual \nmaterial flammability in microgravity \n9 \n"
+    },
+    {
+      "locator": "page 10",
+      "text": "SPICE Hardware installed in MSG Work Volume \nSPICE Hardware Overview \n10 \n"
+    },
+    {
+      "locator": "page 11",
+      "text": "SPICE science \nobjectives are met \nsolely through photo \nand video downlink. \n \nSPICE is a very crew \nintensive experiment \nas the crew must \nadjust fuel flow and \nfan speed as well as \ntake photos. \n \nMSG Work Volume \nshould be retracted \nthroughout all SPICE \noperations except \nSetup and Stow. \nSPICE Hardware Overview (continued) \n11 \n"
+    },
+    {
+      "locator": "page 12",
+      "text": "SPICE Hardware – Experiment Assembly \nFan and flow \nstraightener \nHeat sink and \nsoot trap \nScale and \nignitor \nactuators.  \nFuel enable \nnot visible \nFlow tunnel behind \nfront door \nTop window \n12 \n"
+    },
+    {
+      "locator": "page 13",
+      "text": "SPICE Hardware – Experiment Assembly cont’d \nExperiment Assembly features: \n•\nMounts to floor of MSG bridging cold plate and airlock lid \n•\nFlow tunnel for flame and air stream \n•\nAir stream fan driven with ceramic flow straightener \n•\nAnemometer for air stream \n•\nSoot trap on air stream exit of flow tunnel \n•\nTop and front windows for flame view \n•\nFront window opens for burner tube and igniter changeout \n•\nRedundant fuel enable switch \n•\nLevers for focus target deploy and igniter actuation \n•\nFront window interlocks to prevent igniter or fuel actuation \n \n13 \n"
+    },
+    {
+      "locator": "page 14",
+      "text": " (Diameters 3.2mm, \n2.1mm, 1.6mm, \n0.8mm, 0.4mm) \n0.4mm Burner Tube is  \na sharp edge hazard \nEthylene 100% (1) \nEthylene 20%/Diluent GN2 (2) \nPropane 100% (1) \nMethane 100% (3) \nMethane 70% / Diluent GN2 (2) \nMethane 40% / Diluent GN2 (2) \nEthane 100% (1) \n14 \n6 Burner Tubes \n7 SLICE Fuels (in 12 Gas Bottles) \nSPICE Hardware – Experiment Assembly cont’d \n"
+    },
+    {
+      "locator": "page 15",
+      "text": "SPICE Hardware – Experiment Assembly cont’d \nFuel plumbing pictorial schematic \nFilter \nPressure \nRegulator \nFlow \nController \nQuick \nDisconnec\nt \nGas Bottle \nValve \n15 \n"
+    },
+    {
+      "locator": "page 16",
+      "text": "  \nSPICE Hardware - Power/Video Box Assembly \nPower/Video Box features: \n•\nMounts to back wall of MSG \n•\nPower Conversion & \nDistribution \n•\nComposite to S-Video \nConverters \n– Still Camera \n– Color Video Camera \n•\nVideo Titler Data Overlay \n– Date/Time \n– Fan Speed/Airflow \n– Radiometer \n– Fuel Flow \n16 \n"
+    },
+    {
+      "locator": "page 17",
+      "text": "SPICE Hardware – Control Box \nControl Box features: \n•\nLocated External to the MSG Work \nVolume – mates to a feed-through \nconnector \n•\nAllows crew to make experiment \nadjustments \n– Radiometer Gain \n– Fan Speed/Air flow rate \n– Fuel Flow Rate \n– Fuel/Ignitor Enable \n– Data Record Enable \n•\nStill Camera Shutter \n•\nSPICE Control Box used for SPICE \nand SLICE \n•\nBASS has its own Control Box \n17 \n"
+    },
+    {
+      "locator": "page 18",
+      "text": "SPICE Hardware – Control Box cont’d \n18 \n"
+    },
+    {
+      "locator": "page 19",
+      "text": "–\nAcquires images from above \nExperiment Assembly  \n–\nImage sent to MSG via Power/Video \nUnit \n–\nRemovable Flash Card for Image \nStorage \n–\nProgrammable for multiple exposures \n–\nFocus is preset \n–\nWrites to removable drives \n–\nSupported by bracket mounted to \ncold plate and Experiment Assembly  \n–\nSlides over guide pins and secured \nwith spring pin \nSPICE Hardware – Still Camera \n19 \nNikon DX-300 Digital Still High Resolution Camera \n"
+    },
+    {
+      "locator": "page 20",
+      "text": "SPICE Hardware – Video Camera \nColor Video Camera \n– Auto Gain \n– Acquires images from \nfront of Experiment \nAssembly \n– Image sent to MSG via \nPower/Video Unit \n \n20 \n"
+    },
+    {
+      "locator": "page 21",
+      "text": "21 \nBASS Hardware – Samples \n2cm and 1cm Flat Samples \n•   SIBAL- cotton-fiberglass \nfabric  \n•   Nomex- flame resistant \nmaterial related to nylon \n•   Ultem - thermoplastic resins \nused in medical and chemical \ninstrumentation \n2cm and 1cm Sphere Samples \nPMMA  \nPoly(methyl methacrylate) - Acrylic glass  \nCandle Samples \nJapan Wax and Paraffin Wax \nThick Flat Samples \nAcrylic and Flat Wax \n"
+    },
+    {
+      "locator": "page 22",
+      "text": "SLICE and BASS Crew procedures \n•\n2.001 SLICE Hardware Setup \n•\n2.002 SLICE Soot Removal \n•\n2.003 SLICE Fan Calibration \n•\n2.004 SLICE Ops Prep \n•\n2.005 SLICE Operations \n•\n2.006 SLICE Videotape Exchange \n•\n2.007 SLICE Flash Card Exchange \n•\n2.008 SLICE Stow \n•\n2.001 BASS Hardware Setup \n•\n2.002 BASS GN2 Leak Test \n•\n2.003 BASS Fan Calibration \n•\n2.004 BASS Ops Prep \n•\n2.005 BASS Operations \n•\n2.006 BASS Videotape Exchange \n•\n2.007 BASS Flash Card Exchange \n•\n2.008 BASS Stow \n•\n2.009 BASS Hardware Setup Following \nSLICE Operations \n22 \nProcedures in red will be performed during crew training session. \n"
+    },
+    {
+      "locator": "page 23",
+      "text": "SLICE Nominal Ops Flow  \n    \nSLICE \nPayload \nFAM \nSLICE PL \nCrew \nConference \n     MSG \nFacility Act \nMSG Video \nEquip \nSetup* \n     SLICE Test Sequence \n(repeat for each fuel type) \nSLICE \nStow \nMSG Facility \nDeact \n:15 \n:15 \n:10 \n:05 \n2:00 \n1:00 \n:25 \nSLICE \nSetup \nSequence 1-6 \nSeq 7 \n \nOrder of \nOperations \nSPICE Gas Bottle \nAssembly Number \nFuel Type & Percentage \n1st  \n4, 5, 6 \nMethane 100% @ 210 psia \n2nd  \n1 \nEthylene 100% @ 210 psia \n3rd  \n12 \nEthane 100% @ 210 psia  \n4th  \n11 \n Propane 100% @ 110 psia \n5th  \n7, 8 \n Methane 70% , Diluent GN2 @ 210 psia \n6th  \n9, 10 \nMethane 40% , Diluent GN2 @ 210 psia \n7th \n2, 3 \nEthylene 20%, Diluent GN2  @ 210 psia \n"
+    },
+    {
+      "locator": "page 24",
+      "text": "Test Sequence Flow for Methane 70% \n:10 \nMSG Act \n 0.4 BURNER \nXCHG \n:10 \nGAS BOTTLE \nXCHG 7 \n:10 \n1.6 \nBURNER \nXCHG \nCAMERA \nSETUP \n:10 \nVIDEO \nTAPE \nXCHG \n0.8 \nBURNER \nXCHG \n:10 \nMSG/SLICE \nPHOTO D/L \nCMD \n:15 \nSLICE \nOPERATIONS \n  \n:10 \n:60* \n:15 \nSLICE \nPHOTO \nPLAYBACK \n:10 \n:50 \nMSG/SLICE \nPHOTO D/L \nCMD \n:15 \nSLICE \nOPERATIONS \n:10 \n:60* \n:15 \nSLICE \nPHOTO \nPLAYBACK \n:10 \n:50 \nCAMERA \nSETUP \n VIDEO \nTAPE \nXCHG \n:10 \nGAS \nBOTTLE \nXCHG 8 \n:10 \nCrew activity \nMSG Commanding \nUnattended  \nS & KU required  \n* During SPICE Operations the crew will perform multiple test \npoints. \n----- The sequence can be broken at any point, except for the \nactivities in the dotted line.   \n"
+    },
+    {
+      "locator": "page 25",
+      "text": "FLASH \nCARD \nXCHG \n:10 \nMSG/SLICE \nPHOTO D/L \nCMD \n:15 \nSLICE \nOPERATIONS \n:10 \n:60* \n:15 \nSLICE \nPHOTO \nPLAYBACK \n:10 \n:50 \nCAMERA \nSETUP \nVIDEO \nTAPE \nXCHG \n:05 \nMSG \nDeact \nTest Sequence Flow for Methane 70% \nCrew activity \nMSG Commanding \nUnattended  \nS & KU required  \n* During SPICE Operations the crew will perform six test points. \n----- The sequence can be broken at any point, except for the \nactivities in the dotted line.   \n25 \n"
+    },
+    {
+      "locator": "page 26",
+      "text": "Major Unique Hazard Controls \n•\nAfter every 2 burns the MSG Work Volume must be purged for 3 \nminutes to promote air mixing to dilute any HF concentration \nbyproduct produced during combustion. \n–\nMSG Glove Port open \n–\nMSG Air Cir ON \n•\nEach Gas Bottle Assembly must have a tie wrap valve restraint \nin place before stowing. \n•\nPrior to crew access into MSG, the Gas Bottle Assembly valve \nmust be closed. \n•\nWhen the MSG Work Volume is open and a Gas Bottle \nAssembly is present, MSG Air Cir must be ON. \n•\nThe inside of the Experiment Assembly must be permitted to \ncool to a temp below 49°C before crew access is permitted. \n–\nWait time for SLICE is 1 minute (covered by 3 minute purge) \n–\nWait time for BASS thin and candle samples is 2 minutes (covered by 3 \nminute purge) \n–\nWait time for BASS sphere and thick samples is 9 minutes \n26 \n"
+    },
+    {
+      "locator": "page 27",
+      "text": "•\nACME - Advanced Combustion via Microgravity Experiments \n•\nBASS – Burning and Suppression of Solids \n•\nCLD - Coflow Laminar Diffusion \n•\nCIR - Combustion Integrated Rack \n•\nELF- Enclosed Laminar Flames  \n•\nMSG – Microgravity Science Glovebox \n•\nSLICE – Structure and Liftoff In Combustion Experiment \n•\nSPICE – Smoke Point in Coflow Experiment \n27 \nAcronyms \n"
+    }
+  ],
+  "details": {
+    "page_count": 27,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

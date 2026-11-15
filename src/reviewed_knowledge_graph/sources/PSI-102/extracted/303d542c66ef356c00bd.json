@@ -1,0 +1,1149 @@
+{
+  "id": "res:PSI-102:303d542c66ef356c00bd",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT255 log.xlsx",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT255 log.xlsx",
+  "category": "Analyzed Data",
+  "size_bytes": 18763,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d4ef91ab4427dbf4404&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/303d542c66ef356c00bd/PSI-102_Analyzed Data_GMT255 log.xlsx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "0f93839a15584804d5293e957b0a12dc686d2ffc5051df32d9b140c0bfa82aee",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "sheet Copy of GMT255log, row 1",
+      "text": "1: 2007/255/11:38:10 | 2: Aging chamber is filled | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 2",
+      "text": "1: 2007/255/11:38:22 | 2: Starting to save heater data | 4: 4 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 3",
+      "text": "1: 2007/255/11:38:22 | 2: Video recording stopped | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 4",
+      "text": "1: 2007/255/11:38:23 | 2: Heater data saved | 4: 4 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 5",
+      "text": "1: 2007/255/11:38:24 | 2: Light and camera turned off | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 6",
+      "text": "1: 2007/255/11:38:25 | 2: Video recorder powered off | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 7",
+      "text": "1: 2007/255/11:38:26 | 2: Entering PrimaryAging State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 8",
+      "text": "1: 2007/255/11:38:26 | 2: Primary aging for 8 seconds | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 9",
+      "text": "1: 2007/255/11:38:30 | 2: Sending file via FTP | 3: /data/2007_255/2007_255_11_38.htr | 4: 1 | 5: 314"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 10",
+      "text": "1: 2007/255/11:38:30 | 2: File sent via FTP | 3: 2007_255_11_38.htr | 4: 1 | 5: 314"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 11",
+      "text": "1: 2007/255/11:38:33 | 2: Entering PrimaryDiagnostic State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 12",
+      "text": "1: 2007/255/11:38:33 | 2: Exhausting at 6.68 LPM | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 13",
+      "text": "1: 2007/255/11:38:33 | 2: Preparing to exhaust aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 14",
+      "text": "1: 2007/255/11:38:43 | 2: Event occurred. | 3: HighVacuumPressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 15",
+      "text": "1: 2007/255/11:38:44 | 2: Event clear. | 3: HighVacuumPressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 16",
+      "text": "1: 2007/255/11:38:44 | 2: Exhausting aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 17",
+      "text": "1: 2007/255/11:38:47 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 18",
+      "text": "1: 2007/255/11:39:35 | 2: Aging chamber is exhausted | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 19",
+      "text": "1: 2007/255/11:39:36 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 20",
+      "text": "1: 2007/255/11:39:36 | 2: Entering SecondaryAging State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 21",
+      "text": "1: 2007/255/11:39:36 | 2: Secondary aging period is categorized as medium | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 22",
+      "text": "1: 2007/255/11:39:37 | 2: Secondary aging for 150 seconds | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 23",
+      "text": "1: 2007/255/11:39:57 | 2: Starting diagnostic flow | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 24",
+      "text": "1: 2007/255/11:39:59 | 2: Starting diagnostic flow complete | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 25",
+      "text": "1: 2007/255/11:42:08 | 2: Entering SecondaryDiagnostic State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 26",
+      "text": "1: 2007/255/11:42:08 | 2: Exhausting at 2.08 LPM | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 27",
+      "text": "1: 2007/255/11:42:08 | 2: Preparing to exhaust aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 28",
+      "text": "1: 2007/255/11:42:11 | 2: Exhausting aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 29",
+      "text": "1: 2007/255/11:42:13 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 30",
+      "text": "1: 2007/255/11:42:55 | 2: Aging chamber is exhausted | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 31",
+      "text": "1: 2007/255/11:42:55 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 32",
+      "text": "1: 2007/255/11:43:07 | 2: Entering FastPurge State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 33",
+      "text": "1: 2007/255/11:43:09 | 2: Fast purge for 120 seconds | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 34",
+      "text": "1: 2007/255/11:43:55 | 2: Command Received | 3: AbortTest() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 35",
+      "text": "1: 2007/255/11:43:55 | 2: Command Completed | 3: AbortTest() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 36",
+      "text": "1: 2007/255/11:43:59 | 2: Starting SAME software... | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 37",
+      "text": "1: 2007/255/11:44:00 | 2: Changed system time | 3: 2007/255/11:44:00 | 4: 5 | 5: 280"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 38",
+      "text": "1: 2007/255/11:44:02 | 2: Getting Version and Checksum... | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 39",
+      "text": "1: 2007/255/11:44:02 | 2: Report of version information | 3: Version:1.0 Checksum:Check Disabled | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 40",
+      "text": "1: 2007/255/11:44:02 | 2: Startup complete | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 41",
+      "text": "1: 2007/255/11:44:15 | 2: Command Received | 3: Shutdown(Shutdown) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 42",
+      "text": "1: 2007/255/11:44:15 | 2: Starting Shutdown | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 43",
+      "text": "1: 2007/255/11:44:15 | 2: Shutting down Watchdog Timer | 4: 1 | 5: 2019"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 44",
+      "text": "1: 2007/255/11:44:15 | 2: Watchdog Timer Disabled | 4: 1 | 5: 2019"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 45",
+      "text": "1: 2007/255/11:44:15 | 2: Shutting down Video System | 4: 1 | 5: 2018"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 46",
+      "text": "1: 2007/255/11:44:15 | 2: Shutting down Thermal Precipitator | 4: 1 | 5: 2017"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 47",
+      "text": "1: 2007/255/11:44:15 | 2: Shutting down STSDetector | 4: 1 | 5: 2016"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 48",
+      "text": "1: 2007/255/11:44:15 | 2: Shutting down Sample Heater | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 49",
+      "text": "1: 2007/255/11:46:25 | 2: Changed system time | 3: 2007/255/11:46:25 | 4: 5 | 5: 280"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 50",
+      "text": "1: 2007/255/11:46:27 | 2: Getting Version and Checksum... | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 51",
+      "text": "1: 2007/255/11:46:27 | 2: Report of version information | 3: Version:1.0 Checksum:Check Disabled | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 52",
+      "text": "1: 2007/255/11:46:27 | 2: Startup complete | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 53",
+      "text": "1: 2007/255/11:46:31 | 2: Sending file via FTP | 3: /data/1980_001/1980_001_00.log | 4: 1 | 5: 314"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 54",
+      "text": "1: 2007/255/11:46:32 | 2: File sent via FTP | 3: 1980_001_00.log | 4: 1 | 5: 314"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 55",
+      "text": "1: 2007/255/11:46:39 | 2: Sending file via FTP | 3: /data/1980_001/1980_001_00.hkp | 4: 1 | 5: 314"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 56",
+      "text": "1: 2007/255/11:46:41 | 2: File sent via FTP | 3: 1980_001_00.hkp | 4: 1 | 5: 314"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 57",
+      "text": "1: 2007/255/11:46:50 | 2: Command Received | 3: Initialize() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 58",
+      "text": "1: 2007/255/11:46:50 | 2: Starting Initialize | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 59",
+      "text": "1: 2007/255/11:46:58 | 2: Initializing CrewInterfacePanel | 4: 5 | 5: 2007"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 60",
+      "text": "1: 2007/255/11:46:58 | 2: CrewInterfacePanel initialized | 4: 5 | 5: 2007"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 61",
+      "text": "1: 2007/255/11:46:58 | 2: Initializing DustTrak at port 5 | 3: DustTrakA | 4: 5 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 62",
+      "text": "1: 2007/255/11:46:58 | 2: DustTrak initialized | 3: DustTrakA | 4: 5 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 63",
+      "text": "1: 2007/255/11:46:58 | 2: Initializing DustTrak at port 8 | 3: DustTrakB | 4: 5 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 64",
+      "text": "1: 2007/255/11:46:59 | 2: DustTrak initialized | 3: DustTrakB | 4: 5 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 65",
+      "text": "1: 2007/255/11:46:59 | 2: Initializing DynamicDilutor | 4: 5 | 5: 2020"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 66",
+      "text": "1: 2007/255/11:46:59 | 2: DynamicDilutor initialized | 4: 5 | 5: 2020"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 67",
+      "text": "1: 2007/255/11:46:59 | 2: Initializing FluidsControlBox | 4: 5 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 68",
+      "text": "1: 2007/255/11:46:59 | 2: Initializing Mass Flow Controller | 4: 1 | 5: 2010"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 69",
+      "text": "1: 2007/255/11:47:04 | 2: Mass Flow Controller initialized | 4: 1 | 5: 2010"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 70",
+      "text": "1: 2007/255/11:47:05 | 2: FluidsControlBox initialized | 4: 5 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 71",
+      "text": "1: 2007/255/11:47:05 | 2: Initializing ISSDetector | 4: 5 | 5: 2011"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 72",
+      "text": "1: 2007/255/11:47:05 | 2: ISSDetector initialized | 4: 5 | 5: 2011"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 73",
+      "text": "1: 2007/255/11:47:05 | 2: Initializing P-Trak | 4: 5 | 5: 2012"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 74",
+      "text": "1: 2007/255/11:47:05 | 2: P-Trak initialized | 4: 5 | 5: 2012"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 75",
+      "text": "1: 2007/255/11:47:05 | 2: Initializing Sample Carousel | 4: 5 | 5: 2013"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 76",
+      "text": "1: 2007/255/11:47:05 | 2: Sample Carousel initialized | 4: 5 | 5: 2013"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 77",
+      "text": "1: 2007/255/11:47:05 | 2: Initializing Sample Heater | 4: 5 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 78",
+      "text": "1: 2007/255/11:47:05 | 2: Sample Heater Initialized | 4: 5 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 79",
+      "text": "1: 2007/255/11:47:05 | 2: Initializing STSDetector | 4: 5 | 5: 2016"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 80",
+      "text": "1: 2007/255/11:47:05 | 2: STSDetector initialized | 4: 5 | 5: 2016"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 81",
+      "text": "1: 2007/255/11:47:05 | 2: Initializing Thermal Precipitator | 4: 5 | 5: 2017"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 82",
+      "text": "1: 2007/255/11:47:05 | 2: Thermal Precipitator initialized | 4: 5 | 5: 2017"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 83",
+      "text": "1: 2007/255/11:47:05 | 2: Initializing Video System | 4: 5 | 5: 2018"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 84",
+      "text": "1: 2007/255/11:47:10 | 2: Error setting camera settings | 3: Exception: Not enough bytes read from camera serial port | 4: 2 | 5: 2018"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 85",
+      "text": "1: 2007/255/11:47:10 | 2: Video System initialized | 4: 5 | 5: 2018"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 86",
+      "text": "1: 2007/255/11:47:10 | 2: Initializing Watchdog Timer | 4: 5 | 5: 2019"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 87",
+      "text": "1: 2007/255/11:47:10 | 2: Watchdog Timer initialized | 4: 5 | 5: 2019"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 88",
+      "text": "1: 2007/255/11:47:10 | 2: Command Completed | 3: Initialize() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 89",
+      "text": "1: 2007/255/11:47:10 | 2: WatchDogTimer Enabled | 4: 1 | 5: 2019"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 90",
+      "text": "1: 2007/255/11:48:09 | 2: Command Received | 3: SelfTest(1) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 91",
+      "text": "1: 2007/255/11:48:09 | 2: Starting SelfTest | 3: Test:1 P1:0 P2:0 | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 92",
+      "text": "1: 2007/255/11:48:09 | 2: Engaging sample carousel | 3: As part of self test | 4: 1 | 5: 2001"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 93",
+      "text": "1: 2007/255/11:48:18 | 2: SelfTest complete | 4: 5 | 5: 2001"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 94",
+      "text": "1: 2007/255/11:48:18 | 2: Command Complete | 3: SelfTest(1) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 95",
+      "text": "1: 2007/255/12:00:07 | 2: Sending file via FTP | 3: /data/2007_255/2007_255_11.hkp | 4: 1 | 5: 314"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 96",
+      "text": "1: 2007/255/12:00:54 | 2: File sent via FTP | 3: 2007_255_11.hkp | 4: 1 | 5: 314"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 97",
+      "text": "1: 2007/255/12:18:02 | 2: Command Received | 3: SetDigitalOutput(12VDC_HTR_ENABLE | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 98",
+      "text": "1: 2007/255/12:18:02 | 2: Command Completed | 3: SetDigitalOutput(12VDC_HTR_ENABLE | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 99",
+      "text": "1: 2007/255/12:18:50 | 2: Command Received | 3: SetDigitalOutput(ILLUM_LED_PWR | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 100",
+      "text": "1: 2007/255/12:18:51 | 2: Command Completed | 3: SetDigitalOutput(ILLUM_LED_PWR | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 101",
+      "text": "1: 2007/255/12:19:18 | 2: Command Received | 3: DownlinkTestParameters(2) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 102",
+      "text": "1: 2007/255/12:19:18 | 2: Command Completed | 3: DownlinkTestParameters(2) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 103",
+      "text": "1: 2007/255/12:19:49 | 2: Command Received | 3: CreateNewTest(998) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 104",
+      "text": "1: 2007/255/12:19:49 | 2: Command Rejected | 3: Test already exists | 4: 2 | 5: 2003"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 105",
+      "text": "1: 2007/255/12:19:49 | 2: Command Failed | 3: CreateNewTest(998) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 106",
+      "text": "1: 2007/255/12:20:05 | 2: Command Received | 3: DownlinkTestParameters(998) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 107",
+      "text": "1: 2007/255/12:20:05 | 2: Command Completed | 3: DownlinkTestParameters(998) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 108",
+      "text": "1: 2007/255/12:20:28 | 2: Command Received | 3: SetSampleNumber(998 | 4: 5) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 109",
+      "text": "1: 2007/255/12:20:28 | 2: Command Completed | 3: SetSampleNumber(998 | 4: 5) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 110",
+      "text": "1: 2007/255/12:20:50 | 2: Command Received | 3: StartTest(SAMETest | 4: 998) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 111",
+      "text": "1: 2007/255/12:20:51 | 2: Entering Start State | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 112",
+      "text": "1: 2007/255/12:20:51 | 2: Manual positioning option in effect | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 113",
+      "text": "1: 2007/255/12:20:51 | 2: Zeroing the LFE | 4: 1 | 5: 2020"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 114",
+      "text": "1: 2007/255/12:20:53 | 2: Test Started | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 115",
+      "text": "1: 2007/255/12:20:53 | 2: Command Complete | 3: StartTest(SAMETest | 4: 998) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 116",
+      "text": "1: 2007/255/12:21:03 | 2: Entering PreConfigure State | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 117",
+      "text": "1: 2007/255/12:21:03 | 2: Video recorder powered on | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 118",
+      "text": "1: 2007/255/12:21:03 | 2: Preparing to exhaust aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 119",
+      "text": "1: 2007/255/12:21:04 | 2: Lights! Cameras! | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 120",
+      "text": "1: 2007/255/12:21:06 | 2: Exhausting aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 121",
+      "text": "1: 2007/255/12:21:08 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 122",
+      "text": "1: 2007/255/12:21:09 | 2: Sample Heater offset corrected | 3: Offset(uV)=26.2264 | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 123",
+      "text": "1: 2007/255/12:21:09 | 2: Sample type should be DBP | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 124",
+      "text": "1: 2007/255/12:21:09 | 2: Sample type is confirmed | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 125",
+      "text": "1: 2007/255/12:21:09 | 2: Setting heating parameters | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 126",
+      "text": "1: 2007/255/12:21:09 | 2: Setting heater setpoint to 0 or 0 Ohms | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 127",
+      "text": "1: 2007/255/12:21:09 | 2: Setting heater duration to 2250 cycles or 60 secs | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 128",
+      "text": "1: 2007/255/12:21:09 | 2: Setting heater PIDs to 15360 | 3: 1536 | 4: 384 | 6: 1 | 7: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 129",
+      "text": "1: 2007/255/12:21:09 | 2: Setting MaxRt to 0.989 Ohms | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 130",
+      "text": "1: 2007/255/12:21:09 | 2: Warning:  Sample was heated 5 time(s) before | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 131",
+      "text": "1: 2007/255/12:21:11 | 2: Video recording started | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 132",
+      "text": "1: 2007/255/12:21:18 | 2: Aging chamber is exhausted | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 133",
+      "text": "1: 2007/255/12:21:18 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 134",
+      "text": "1: 2007/255/12:21:21 | 2: Video recording stopped | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 135",
+      "text": "1: 2007/255/12:21:29 | 2: Entering Pause State | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 136",
+      "text": "1: 2007/255/12:21:29 | 2: Test paused at 00:00:35 elapsed test time | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 137",
+      "text": "1: 2007/255/12:21:29 | 2: Paused 20 secs into PreConfigure State | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 138",
+      "text": "1: 2007/255/12:23:12 | 2: Command Received | 3: AbortTest() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 139",
+      "text": "1: 2007/255/12:23:12 | 2: Error while running test | 3: Exception: Test Aborting | 4: 2 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 140",
+      "text": "1: 2007/255/12:23:13 | 2: Entering Abort State | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 141",
+      "text": "1: 2007/255/12:23:13 | 2: Command Completed | 3: AbortTest() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 142",
+      "text": "1: 2007/255/12:23:20 | 2: Video recording stopped | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 143",
+      "text": "1: 2007/255/12:23:20 | 2: DustTrak turning off | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 144",
+      "text": "1: 2007/255/12:23:20 | 2: P-Trak turning off | 4: 1 | 5: 2012"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 145",
+      "text": "1: 2007/255/12:23:20 | 2: DustTrak turning off | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 146",
+      "text": "1: 2007/255/12:23:21 | 2: Light and camera turned off | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 147",
+      "text": "1: 2007/255/12:23:22 | 2: Video recorder powered off | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 148",
+      "text": "1: 2007/255/12:23:23 | 2: Test Complete | 3: /config/test_matrices/same_test_998.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 149",
+      "text": "1: 2007/255/12:23:37 | 2: Command Received | 3: DownlinkTestParameters(2) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 150",
+      "text": "1: 2007/255/12:23:37 | 2: Command Completed | 3: DownlinkTestParameters(2) | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 151",
+      "text": "1: 2007/255/12:24:02 | 2: Command Received | 3: SetHeaterSetpoint(2 | 4: 9511) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 152",
+      "text": "1: 2007/255/12:24:03 | 2: Command Completed | 3: SetHeaterSetpoint(2 | 4: 9511) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 153",
+      "text": "1: 2007/255/12:24:43 | 2: Command Received | 3: SetTestSetup(2 | 4: 505 | 5: 496) | 6: 3 | 7: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 154",
+      "text": "1: 2007/255/12:24:43 | 2: Command Completed | 3: SetTestSetup(2 | 4: 505 | 5: 496) | 6: 3 | 7: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 155",
+      "text": "1: 2007/255/12:25:15 | 2: Command Received | 3: SetSecondaryAgingDuration(2 | 4: 0) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 156",
+      "text": "1: 2007/255/12:25:15 | 2: Command Completed | 3: SetSecondaryAgingDuration(2 | 4: 0) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 157",
+      "text": "1: 2007/255/12:25:32 | 2: Command Received | 3: SetSecondaryAgingVolume(2 | 4: 0) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 158",
+      "text": "1: 2007/255/12:25:32 | 2: Command Completed | 3: SetSecondaryAgingVolume(2 | 4: 0) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 159",
+      "text": "1: 2007/255/12:41:46 | 2: Command Received | 3: SetDigitalOutput(12VDC_HTR_ENABLE | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 160",
+      "text": "1: 2007/255/12:41:46 | 2: Command Completed | 3: SetDigitalOutput(12VDC_HTR_ENABLE | 4: on) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 161",
+      "text": "1: 2007/255/12:42:06 | 2: Command Received | 3: StartTest(SAMETest | 4: 2) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 162",
+      "text": "1: 2007/255/12:42:06 | 2: Entering Start State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 163",
+      "text": "1: 2007/255/12:42:06 | 2: Manual positioning option in effect | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 164",
+      "text": "1: 2007/255/12:42:06 | 2: Zeroing the LFE | 4: 1 | 5: 2020"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 165",
+      "text": "1: 2007/255/12:42:08 | 2: Test Started | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 166",
+      "text": "1: 2007/255/12:42:09 | 2: Command Complete | 3: StartTest(SAMETest | 4: 2) | 5: 3 | 6: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 167",
+      "text": "1: 2007/255/12:42:14 | 2: P-Trak turning on and warming up | 4: 1 | 5: 2012"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 168",
+      "text": "1: 2007/255/12:42:16 | 2: DustTrak turning on | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 169",
+      "text": "1: 2007/255/12:42:17 | 2: DustTrak turning on | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 170",
+      "text": "1: 2007/255/12:42:18 | 2: Entering PreConfigure State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 171",
+      "text": "1: 2007/255/12:42:18 | 2: Video recorder powered on | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 172",
+      "text": "1: 2007/255/12:42:18 | 2: Preparing to exhaust aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 173",
+      "text": "1: 2007/255/12:42:19 | 2: Lights! Cameras! | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 174",
+      "text": "1: 2007/255/12:42:21 | 2: Exhausting aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 175",
+      "text": "1: 2007/255/12:42:23 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 176",
+      "text": "1: 2007/255/12:42:24 | 2: Sample Heater offset corrected | 3: Offset(uV)=26.2264 | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 177",
+      "text": "1: 2007/255/12:42:24 | 2: Sample type should be DBP | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 178",
+      "text": "1: 2007/255/12:42:24 | 2: Sample type is confirmed | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 179",
+      "text": "1: 2007/255/12:42:24 | 2: Setting heating parameters | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 180",
+      "text": "1: 2007/255/12:42:24 | 2: Setting heater setpoint to 9510 or 0.907053 Ohms | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 181",
+      "text": "1: 2007/255/12:42:24 | 2: Setting heater duration to 2250 cycles or 60 secs | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 182",
+      "text": "1: 2007/255/12:42:25 | 2: Setting heater PIDs to 15360 | 3: 1536 | 4: 384 | 6: 1 | 7: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 183",
+      "text": "1: 2007/255/12:42:25 | 2: Setting MaxRt to 0.989 Ohms | 4: 1 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 184",
+      "text": "1: 2007/255/12:42:25 | 2: Warning:  Sample was heated 5 time(s) before | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 185",
+      "text": "1: 2007/255/12:42:27 | 2: Video recording started | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 186",
+      "text": "1: 2007/255/12:42:33 | 2: DustTrak serial number is 85200804 | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 187",
+      "text": "1: 2007/255/12:42:34 | 2: Setting DustTrak time constant to 1 second(s) | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 188",
+      "text": "1: 2007/255/12:42:34 | 2: Setting DustTrak date to 09/12/07 | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 189",
+      "text": "1: 2007/255/12:42:34 | 2: Setting DustTrak time to 12:42:34 | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 190",
+      "text": "1: 2007/255/12:42:34 | 2: Setting DustTrak analog output range to 100 | 3: DustTrakA | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 191",
+      "text": "1: 2007/255/12:42:35 | 2: DustTrak serial number is 85200796 | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 192",
+      "text": "1: 2007/255/12:42:35 | 2: Setting DustTrak time constant to 1 second(s) | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 193",
+      "text": "1: 2007/255/12:42:35 | 2: Setting DustTrak date to 09/12/07 | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 194",
+      "text": "1: 2007/255/12:42:35 | 2: Aging chamber is exhausted | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 195",
+      "text": "1: 2007/255/12:42:35 | 2: Setting DustTrak time to 12:42:35 | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 196",
+      "text": "1: 2007/255/12:42:36 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 197",
+      "text": "1: 2007/255/12:42:36 | 2: Setting DustTrak analog output range to 100 | 3: DustTrakB | 4: 1 | 5: 2008"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 198",
+      "text": "1: 2007/255/12:42:37 | 2: Video recording stopped | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 199",
+      "text": "1: 2007/255/12:42:46 | 2: Entering Pause State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 200",
+      "text": "1: 2007/255/12:42:46 | 2: Waiting for P-Trak to warmup | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 201",
+      "text": "1: 2007/255/12:43:14 | 2: P-Trak warmup complete | 3:  initializing | 5: 1 | 6: 2012"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 202",
+      "text": "1: 2007/255/12:43:14 | 2: Setting P-Trak date to 09/12/07 | 4: 1 | 5: 2012"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 203",
+      "text": "1: 2007/255/12:43:14 | 2: Setting P-Trak time to 12:43:14 | 4: 1 | 5: 2012"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 204",
+      "text": "1: 2007/255/12:43:14 | 2: P-Trak warmed up | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 205",
+      "text": "1: 2007/255/12:43:14 | 2: Test paused at 00:01:05 elapsed test time | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 206",
+      "text": "1: 2007/255/12:43:14 | 2: Paused 21 secs into PreConfigure State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 207",
+      "text": "1: 2007/255/12:44:52 | 2: Command Received | 3: ResumeTest() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 208",
+      "text": "1: 2007/255/12:44:52 | 2: Entering SampleHeating State | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 209",
+      "text": "1: 2007/255/12:44:53 | 2: Test Resumed | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 210",
+      "text": "1: 2007/255/12:44:53 | 2: Command Completed | 3: ResumeTest() | 4: 3 | 5: 210"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 211",
+      "text": "1: 2007/255/12:44:53 | 2: Warning: StartOfVideoRecording was less than zero | 3: /config/test_matrices/same_test_2.txt | 4: 2 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 212",
+      "text": "1: 2007/255/12:44:54 | 2: Starting diagnostic flow | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 213",
+      "text": "1: 2007/255/12:44:55 | 2: Dilution control enabled | 4: 1 | 5: 2020"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 214",
+      "text": "1: 2007/255/12:45:04 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 215",
+      "text": "1: 2007/255/12:45:07 | 2: Starting diagnostic flow complete | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 216",
+      "text": "1: 2007/255/12:45:08 | 2: Waiting for diagnostics with flow warmup | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 217",
+      "text": "1: 2007/255/12:45:22 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 218",
+      "text": "1: 2007/255/12:45:31 | 2: Nominal fill rate is 4.70016 LPM | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 219",
+      "text": "1: 2007/255/12:45:31 | 2: Preparing to fill aging chamber... | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 220",
+      "text": "1: 2007/255/12:45:49 | 2: 6 secs before piston moving mark | 4: 1 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 221",
+      "text": "1: 2007/255/12:45:51 | 2: Event occurred. | 3: HighVacuumPressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 222",
+      "text": "1: 2007/255/12:45:56 | 2: Filling aging chamber... | 4: 1 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 223",
+      "text": "1: 2007/255/12:45:57 | 2: Heater will start in 6 seconds | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 224",
+      "text": "1: 2007/255/12:45:57 | 2: Video recording started | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 225",
+      "text": "1: 2007/255/12:46:03 | 2: Turning on heater now | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 226",
+      "text": "1: 2007/255/12:46:03 | 2: Event clear. | 3: HighVacuumPressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 227",
+      "text": "1: 2007/255/12:46:51 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 228",
+      "text": "1: 2007/255/12:46:52 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 229",
+      "text": "1: 2007/255/12:46:56 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 230",
+      "text": "1: 2007/255/12:47:00 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 231",
+      "text": "1: 2007/255/12:47:01 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 232",
+      "text": "1: 2007/255/12:47:03 | 2: Heating sequence finished | 3: Nominal finish | 4: 1 | 5: 2015"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 233",
+      "text": "1: 2007/255/12:47:23 | 2: Aging chamber is filled | 4: 4 | 5: 2009"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 234",
+      "text": "1: 2007/255/12:47:24 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 235",
+      "text": "1: 2007/255/12:47:25 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 236",
+      "text": "1: 2007/255/12:47:26 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5 | 5: 0"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 237",
+      "text": "1: 2007/255/12:47:36 | 2: Video recording stopped | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 238",
+      "text": "1: 2007/255/12:47:36 | 2: Starting to save heater data | 4: 4 | 5: 2014"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 239",
+      "text": "1: 2007/255/12:47:37 | 2: Light and camera turned off | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 240",
+      "text": "1: 2007/255/12:47:38 | 2: Video recorder powered off | 3: /config/test_matrices/same_test_2.txt | 4: 4 | 5: 2002"
+    },
+    {
+      "locator": "sheet Copy of GMT255log, row 241",
+      "text": "1: 2007/255/12:47:39 | 2: Entering PrimaryAging State | 3: /co"
+    }
+  ],
+  "details": {
+    "sheets": [
+      {
+        "name": "sheet Copy of GMT255log",
+        "row_count": 241,
+        "column_count": 7,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 0
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 0
+          },
+          {
+            "numeric_count": 2,
+            "min": 1536.0,
+            "max": 1536.0,
+            "blank_count": 80
+          },
+          {
+            "numeric_count": 221,
+            "min": 1.0,
+            "max": 505.0,
+            "blank_count": 2
+          },
+          {
+            "numeric_count": 236,
+            "min": 0.0,
+            "max": 2020.0,
+            "blank_count": 3
+          },
+          {
+            "numeric_count": 23,
+            "min": 1.0,
+            "max": 2012.0,
+            "blank_count": 218
+          },
+          {
+            "numeric_count": 4,
+            "min": 210.0,
+            "max": 2014.0,
+            "blank_count": 237
+          }
+        ],
+        "rows": [
+          [
+            "2007/255/11:38:10",
+            "Aging chamber is filled",
+            null,
+            4,
+            2009,
+            null,
+            null
+          ],
+          [
+            "2007/255/11:38:22",
+            "Starting to save heater data",
+            null,
+            4,
+            2014,
+            null,
+            null
+          ],
+          [
+            "2007/255/11:38:22",
+            "Video recording stopped",
+            "/config/test_matrices/same_test_2.txt",
+            4,
+            2002,
+            null,
+            null
+          ],
+          [
+            "2007/255/11:38:23",
+            "Heater data saved",
+            null,
+            4,
+            2014,
+            null,
+            null
+          ],
+          [
+            "2007/255/11:38:24",
+            "Light and camera turned off",
+            "/config/test_matrices/same_test_2.txt",
+            4,
+            2002,
+            null,
+            null
+          ],
+          [
+            "2007/255/11:38:25",
+            "Video recorder powered off",
+            "/config/test_matrices/same_test_2.txt",
+            4,
+            2002,
+            null,
+            null
+          ],
+          [
+            "2007/255/11:38:26",
+            "Entering PrimaryAging State",
+            "/config/test_matrices/same_test_2.txt",
+            4,
+            2002,
+            null,
+            null
+          ],
+          [
+            "2007/255/11:38:26",
+            "Primary aging for 8 seconds",
+            "/config/test_matrices/same_test_2.txt",
+            4,
+            2002,
+            null,
+            null
+          ],
+          [
+            "2007/255/11:38:30",
+            "Sending file via FTP",
+            "/data/2007_255/2007_255_11_38.htr",
+            1,
+            314,
+            null,
+            null
+          ],
+          [
+            "2007/255/11:38:30",
+            "File sent via FTP",
+            "2007_255_11_38.htr",
+            1,
+            314,
+            null,
+            null
+          ],
+          [
+            "2007/255/11:38:33",
+            "Entering PrimaryDiagnostic State",
+            "/config/test_matrices/same_test_2.txt",
+            4,
+            2002,
+            null,
+            null
+          ],
+          [
+            "2007/255/11:38:33",
+            "Exhausting at 6.68 LPM",
+            "/config/test_matrices/same_test_2.txt",
+            4,
+            2002,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      }
+    ]
+  },
+  "warnings": [
+    "Values read from saved workbook; formulas not recalculated."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

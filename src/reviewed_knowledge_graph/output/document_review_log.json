@@ -1,0 +1,1107 @@
+[
+  {
+    "study": "PSI-25",
+    "filename": "PSI-25_Reports_BASS-II Summary Report.pdf",
+    "title": "BASS-II: PMMA rod flammability boundaries",
+    "summary": "The report describes a minimum oxygen concentration near 13.5% on the fitted concurrent-flow PMMA-rod flammability boundary at modified stretch rates around 8–12 s⁻¹. Ignition required more oxygen than sustained burning near the limit. It reports pre-quenching oscillations near 1.1 Hz and increased CO production at low oxygen. These findings are specific to the tested rod geometries, imposed flows and boundary construction, not a general safe-oxygen threshold.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {
+      "fuel": "PMMA rods",
+      "flow": "concurrent/stagnation configurations for the boundary"
+    },
+    "topics": [
+      "Solid-fuel flammability",
+      "Flame extinction",
+      "Flame oscillations"
+    ],
+    "variables": [
+      {
+        "name": "Oxygen concentration",
+        "unit": "% by volume"
+      },
+      {
+        "name": "Flame oscillation frequency",
+        "unit": "Hz"
+      }
+    ],
+    "locators": [
+      "page 56",
+      "page 71",
+      "page 83",
+      "page 97"
+    ],
+    "evidence": [
+      {
+        "locator": "page 83",
+        "text": "approximately 13.5 percent O2"
+      },
+      {
+        "locator": "page 97",
+        "text": "Prequenching extinction oscillations at 1.1 Hz"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-25",
+    "filename": "PSI-25_Science Documents_BASS-II_ReadMe.docx",
+    "title": "BASS-II: source calibration and timing caveats",
+    "summary": "The readme describes the investigator-specific sample families and the meaning of the test-matrix fields. It reports a one-day video-date offset, roughly one-minute flow-display response, uncalibrated radiometer gains used for relative intensity, and oxygen readings corrected by a daily offset against ISS atmosphere measurements. These limitations matter when interpreting source records and joining videos to tests.",
+    "finding": false,
+    "study_kind": "flight_experiment",
+    "conditions": {},
+    "topics": [
+      "Solid-fuel flammability"
+    ],
+    "variables": [],
+    "locators": [
+      "word/document.xml"
+    ],
+    "evidence": [
+      {
+        "locator": "word/document.xml",
+        "text": "Video display is one day later than actual date"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-26",
+    "filename": "PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf",
+    "title": "BASS: thin-fabric spread and low-flow quenching",
+    "summary": "For the reported thin-fuel cases, opposed-flow flames quickly reached steady spread and had their greatest spread rate at an intermediate flow speed. Concurrent-flow spread increased with flow speed, and quenching was observed near 1 cm/s. The presentation reports 41 samples and 115 burns. These counts and findings refer to the presentation snapshot and should not be substituted for a count of all deposited source-table records.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {
+      "fuel_class": "thin fabric in the cited results"
+    },
+    "topics": [
+      "Flame spread",
+      "Flame extinction",
+      "Solid-fuel flammability"
+    ],
+    "variables": [
+      {
+        "name": "Flame spread rate",
+        "unit": null
+      },
+      {
+        "name": "Airflow speed",
+        "unit": "cm/s"
+      }
+    ],
+    "locators": [
+      "page 10",
+      "page 26"
+    ],
+    "evidence": [
+      {
+        "locator": "page 26",
+        "text": "Quenching extinction was observed (around 1 cm/s)"
+      },
+      {
+        "locator": "page 10",
+        "text": "41 samples, 115 burns completed"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-117",
+    "filename": "PSI-117_Presentations_Extinction_Characteristics_TFarouk.pdf",
+    "title": "PSI-117: modeled extinction trends in n-alkane droplets",
+    "summary": "The presentation compares n-heptane, n-decane and n-dodecane simulations with droplet observations. It reports stronger cool-flame reactivity and smaller extinction diameters for longer n-alkanes in the investigated cases. For n-dodecane, pressure changes lead from two-stage burning toward multicycle and warm-flame behavior. Numerical cases and measured comparisons are kept distinct; these trends are conditional on the stated model, fuel and ambient conditions.",
+    "finding": true,
+    "study_kind": "simulation_with_experimental_comparison",
+    "conditions": {},
+    "topics": [
+      "Cool flames",
+      "Flame extinction",
+      "Computational combustion"
+    ],
+    "variables": [
+      {
+        "name": "Extinction diameter",
+        "unit": "mm"
+      },
+      {
+        "name": "Peak gas temperature",
+        "unit": "K"
+      }
+    ],
+    "locators": [
+      "page 4",
+      "page 5",
+      "page 6",
+      "page 10",
+      "page 12",
+      "page 13",
+      "page 15",
+      "page 16"
+    ],
+    "evidence": [
+      {
+        "locator": "page 16",
+        "text": "exhibited more robust cool flame"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-117",
+    "filename": "PSI-117_Presentations_Three_Stage_Cool_Flame_TFarouk.pdf",
+    "title": "PSI-117: hot, warm and cool droplet-combustion stages",
+    "summary": "The presentation reports numerical n-heptane cases in which helium exchange at elevated pressure changes the intermediate and cool burning stages. It describes n-dodecane observations as supporting a prior prediction of three-stage behavior. The warm and cool stages involve different low-temperature kinetic balances; model examples are not represented as additional ISS runs.",
+    "finding": true,
+    "study_kind": "simulation_with_experimental_comparison",
+    "conditions": {},
+    "topics": [
+      "Cool flames",
+      "Droplet combustion",
+      "Computational combustion"
+    ],
+    "variables": [
+      {
+        "name": "Flame temperature",
+        "unit": "K"
+      }
+    ],
+    "locators": [
+      "page 7",
+      "page 8",
+      "page 9",
+      "page 10",
+      "page 17",
+      "page 20"
+    ],
+    "evidence": [
+      {
+        "locator": "page 17",
+        "text": "two possible modes of quasi-steady cool flame"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-117",
+    "filename": "PSI-117_Analyzed Data_PROCI_2019_Stable_Cool.csv",
+    "title": "Stable cool-flame numerical history",
+    "summary": "Numerical time history containing droplet diameter, burning rate, peak gas temperature and flame stand-off ratios. Initial diameter in the first data row is 0.5 mm. This is a provided simulation series, not an additional flight run.",
+    "finding": true,
+    "study_kind": "provided_data_series",
+    "conditions": {},
+    "topics": [
+      "Cool flames",
+      "Droplet combustion"
+    ],
+    "variables": [
+      {
+        "name": "Droplet diameter",
+        "unit": "mm"
+      },
+      {
+        "name": "Burning rate",
+        "unit": "mm²/s"
+      },
+      {
+        "name": "Peak gas temperature",
+        "unit": "K"
+      }
+    ],
+    "locators": [
+      "table, row 1",
+      "table, row 2"
+    ],
+    "evidence": [
+      {
+        "locator": "table, row 1",
+        "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-117",
+    "filename": "PSI-117_Analyzed Data_PROCI_2019_Oscillatory_Cool_Flame.csv",
+    "title": "Oscillatory cool-flame numerical history",
+    "summary": "Numerical time history for the oscillatory cool-flame case with diameter, burning rate, peak gas temperature and stand-off ratios. The first data row starts at 0.5 mm. Gas-composition entries in the accompanying index mix fractions and percentages and should not be normalized without the corresponding presentation.",
+    "finding": true,
+    "study_kind": "provided_data_series",
+    "conditions": {},
+    "topics": [
+      "Cool flames",
+      "Droplet combustion"
+    ],
+    "variables": [
+      {
+        "name": "Droplet diameter",
+        "unit": "mm"
+      },
+      {
+        "name": "Burning rate",
+        "unit": "mm²/s"
+      },
+      {
+        "name": "Peak gas temperature",
+        "unit": "K"
+      }
+    ],
+    "locators": [
+      "table, row 1",
+      "table, row 2"
+    ],
+    "evidence": [
+      {
+        "locator": "table, row 1",
+        "text": "1: Time(sec) | 2: Diameter(mm) | 3: K(mm^2/sec) | 4: T_max(K) | 5: D_Tmax/D_drop | 6: D_OHm/D_drop | 7: (D/Do)2"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-117",
+    "filename": "PSI-117_Analyzed Data_PROCI_2023_Alkane_Extinction_Diameter_1atm.csv",
+    "title": "Alkane extinction-diameter comparison",
+    "summary": "Parallel experimental and simulation series for C7, C10 and C12 fuels, with initial diameter and hot/cool extinction diameters. Columns labelled Expt and Sim remain distinct; missing cells and reported zero values are not treated as interchangeable.",
+    "finding": true,
+    "study_kind": "provided_data_series",
+    "conditions": {},
+    "topics": [
+      "Cool flames",
+      "Droplet combustion"
+    ],
+    "variables": [
+      {
+        "name": "Initial droplet diameter",
+        "unit": null
+      },
+      {
+        "name": "Hot-flame extinction diameter",
+        "unit": null
+      },
+      {
+        "name": "Cool-flame extinction diameter",
+        "unit": null
+      }
+    ],
+    "locators": [
+      "table, row 1",
+      "table, row 2"
+    ],
+    "evidence": [
+      {
+        "locator": "table, row 1",
+        "text": "1: C7 | 2: Do | 3: Dext_HF | 4: Dext_CF | 6: C7 | 7: Do | 8: Dext_HF | 9: Dext_CF | 11: C10 | 12: Do | 13: Dext_HF | 14: Dext_CF | 16: C10 | 17: Do | 18: Dext_HF | 19: Dext_CF | 21: C12 | 22: Do | 23: Dext_HF | 24: Dext_CF | 26: C12 | 27: Do | 28: Dext_HF | 29: Dext_CF"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-117",
+    "filename": "PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+    "title": "Dodecane extinction versus pressure",
+    "summary": "Separate experimental and model hot/cool extinction-diameter series indexed by pressure in atm. Additional columns provide upper and lower cool-flame error-bar values. The independent series have unequal lengths and are not joined merely by row number.",
+    "finding": true,
+    "study_kind": "provided_data_series",
+    "conditions": {},
+    "topics": [
+      "Cool flames",
+      "Droplet combustion"
+    ],
+    "variables": [
+      {
+        "name": "Pressure",
+        "unit": "atm"
+      },
+      {
+        "name": "Hot-flame extinction diameter",
+        "unit": null
+      },
+      {
+        "name": "Cool-flame extinction diameter",
+        "unit": null
+      }
+    ],
+    "locators": [
+      "table, row 1",
+      "table, row 2"
+    ],
+    "evidence": [
+      {
+        "locator": "table, row 1",
+        "text": "1: P (atm) | 2: Dext_HF_EXPT | 4: P (atm) | 5: Dext_HF_model | 7: P (atm) | 8: Dext_CF_EXPT | 10: P (atm) | 11: Dext_CF_Model | 13: P (atm) | 14: Dext_CF_ErrorBar+ | 16: P (atm) | 17: Dext_CF_ErrorBar-"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-117",
+    "filename": "PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+    "title": "Three-stage experimental and simulated histories",
+    "summary": "The file places experimental dimensionless-time series, flame dimensions and radiance beside simulation time, droplet diameter, burning rate and peak temperature. Each time axis belongs to its own adjacent series. Experimental and simulation columns are not interchangeable.",
+    "finding": true,
+    "study_kind": "provided_data_series",
+    "conditions": {},
+    "topics": [
+      "Cool flames",
+      "Droplet combustion"
+    ],
+    "variables": [
+      {
+        "name": "Burning rate",
+        "unit": "mm²/s"
+      },
+      {
+        "name": "Peak gas temperature",
+        "unit": "K"
+      },
+      {
+        "name": "Flame diameter",
+        "unit": "mm"
+      }
+    ],
+    "locators": [
+      "table, row 1",
+      "table, row 2"
+    ],
+    "evidence": [
+      {
+        "locator": "table, row 1",
+        "text": "2: t/(Do)2 (s/mm2) | 3: (D/Do)2 | 6: t/(Do)2 (s/mm2) | 7: Dflame/Dodrop | 9: t/(Do)2 (s/mm2) | 10: Dflame (mm) | 12: Flame Radiance I | 13: t/(Do)2 | 14: Flame Radiance (W) | 16: Flame Radiance II | 17: t/(Do)2 | 18: Flame Radiance (W) | 21: t/(Do)2 | 22: Cool Flame Dia (HWFM) | 24: t/(Do)2 | 25: Cool Flame Dia (peak-peak) | 28: Simulations | 29: t (s) | 30: D (mm) | 31: K(mm^2/sec) | 32: T_max(K) | 33: D_Tmax/D_drop | 34: D_OHm/D_drop | 36: t/do^2 (s/mm2) | 37: (d/do)^2 | 38: Dflame(mm) | 40: t/do2(s/mm2) | 41: Radiance (W)"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-117",
+    "filename": "PSI-117_Analyzed Data_MST_2024_Burning_history_Flame_diameter.csv",
+    "title": "Droplet regression, flame size and radiant power",
+    "summary": "Experimental and model histories include squared droplet diameter, flame diameter and radiant power with separate time axes. The source labels model cases as 1 atm with initial diameter 4 mm. Independent column groups must be aligned by their time coordinate, not by file row.",
+    "finding": true,
+    "study_kind": "provided_data_series",
+    "conditions": {},
+    "topics": [
+      "Cool flames",
+      "Droplet combustion"
+    ],
+    "variables": [
+      {
+        "name": "Squared droplet diameter",
+        "unit": "mm²"
+      },
+      {
+        "name": "Flame diameter",
+        "unit": "mm"
+      },
+      {
+        "name": "Radiant power",
+        "unit": "W"
+      }
+    ],
+    "locators": [
+      "table, row 1",
+      "table, row 2"
+    ],
+    "evidence": [
+      {
+        "locator": "table, row 1",
+        "text": "2: t | 3: d^2 (mm^2) | 5: t | 6: dflame (mm) | 8: time  | 9: Q (W) | 10: time  | 11: Q (W) | 13: Model | 14: t | 15: d^2 (mm^2) | 16: dflame (mm) | 18: Model | 19: t | 20: Q (W)"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-117",
+    "filename": "PSI-117_Analyzed Data_MST_2024_Dext.csv",
+    "title": "Hot/cool extinction comparison",
+    "summary": "The source separates model pressure and hot/cool extinction columns from an experimental pressure and cool-extinction series. Unequal counts are retained; no one-to-one experimental/model matching is inferred from row order.",
+    "finding": true,
+    "study_kind": "provided_data_series",
+    "conditions": {},
+    "topics": [
+      "Cool flames",
+      "Droplet combustion"
+    ],
+    "variables": [
+      {
+        "name": "Hot-flame extinction diameter",
+        "unit": null
+      },
+      {
+        "name": "Cool-flame extinction diameter",
+        "unit": null
+      }
+    ],
+    "locators": [
+      "table, row 1",
+      "table, row 2"
+    ],
+    "evidence": [
+      {
+        "locator": "table, row 1",
+        "text": "1: Model | 2: Pressure | 3: Dext_cool | 4: Dext_hot | 6: Expt | 7: Pressure | 8: Dext_cool_Expt"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-117",
+    "filename": "PSI-117_Analyzed Data_MST_2024_Kavg.csv",
+    "title": "Average cool-flame burning rate comparison",
+    "summary": "The source provides separate experimental and model pressure/burning-rate series. The model header specifies mm²/s; the experimental Kavg_CF column does not repeat a unit. Its unit is left unresolved in this graph rather than silently borrowed.",
+    "finding": true,
+    "study_kind": "provided_data_series",
+    "conditions": {},
+    "topics": [
+      "Cool flames",
+      "Droplet combustion"
+    ],
+    "variables": [
+      {
+        "name": "Model burning rate",
+        "unit": "mm²/s"
+      },
+      {
+        "name": "Experimental average cool-flame burning rate",
+        "unit": null
+      }
+    ],
+    "locators": [
+      "table, row 1",
+      "table, row 2"
+    ],
+    "evidence": [
+      {
+        "locator": "table, row 1",
+        "text": "1: Experiment | 2: Pressure | 3: Kavg_CF | 5: Model | 6: Pressure | 7: kb (mm2/s)"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-117",
+    "filename": "PSI-117_Analyzed Data_MST_2024_Radiance_Flame_Diameter.csv",
+    "title": "Radiant power and flame diameter at two pressures",
+    "summary": "Experimental groups are labelled 0.5 atm and 5 atm with distinct initial diameters. Simulation groups provide radiant power, flame diameter and peak temperature. The source uses Radiance for quantities labelled W; this graph preserves that label but does not reinterpret W as spectral radiance.",
+    "finding": true,
+    "study_kind": "provided_data_series",
+    "conditions": {},
+    "topics": [
+      "Cool flames",
+      "Droplet combustion"
+    ],
+    "variables": [
+      {
+        "name": "Flame diameter",
+        "unit": "mm"
+      },
+      {
+        "name": "Source-labelled radiance",
+        "unit": "W"
+      },
+      {
+        "name": "Peak gas temperature",
+        "unit": "K"
+      }
+    ],
+    "locators": [
+      "table, row 1",
+      "table, row 2"
+    ],
+    "evidence": [
+      {
+        "locator": "table, row 1",
+        "text": "2: time  | 3: Radiance (W) | 4: time | 5: df (mm) | 9: time  | 10: Radiance (W) | 11: time | 12: df (mm) | 15: Simulation | 17: time (s) | 18: Q(W) | 20: Simulation | 21: time (s) | 22: Q (W) | 25: Simulation | 26: Time(sec) | 27: Dflame (mm) | 29: Simulation  | 30: Time(sec) | 31: Dflame (mm) | 34: Simulation | 35: Time(sec) | 36: T_max(K) | 38: Simulation | 39: Time(sec) | 40: T_max(K)"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-10",
+    "filename": "PSI-10_Reports_FinalRpt_ACMEFlameDesign.pdf",
+    "title": "Flame Design: radiative extinction and sustained spherical flames",
+    "summary": "The final report describes atmospheric-pressure ethylene experiments and transient simulations. It reports an extinction temperature near 1130 K and critical mass fluxes of 0.2 g/m²/s for normal flames and 0.68 g/m²/s for inverse flames. The reported values apply to that tested system. Flames with steady-state behavior were observed for up to 870 s; the much longer 100,000 s result is numerical. The flight program used ethylene except for one propane calibration day; proposed methane and CO2-diluent tests were not performed.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {
+      "fuel": "ethylene; separate propane calibration day",
+      "pressure": "approximately atmospheric",
+      "evidence_scope": "Flight observations and model results distinguished"
+    },
+    "topics": [
+      "Spherical diffusion flames",
+      "Flame extinction",
+      "Thermal radiation"
+    ],
+    "variables": [
+      {
+        "name": "Flame temperature",
+        "unit": "K"
+      },
+      {
+        "name": "Reactant mass flux",
+        "unit": "g/m²/s"
+      }
+    ],
+    "locators": [
+      "page 3",
+      "page 25",
+      "page 26",
+      "page 27"
+    ],
+    "evidence": [
+      {
+        "locator": "page 25",
+        "text": "critical extinction temperature of 1130 K"
+      },
+      {
+        "locator": "page 27",
+        "text": "Tests with CH4 as fuel and CO2 as diluent,"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-159",
+    "filename": "PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
+    "title": "CFI-G: observed gaseous cool diffusion flames",
+    "summary": "Normal and inverse ethane, propane and n-butane flames were investigated. The report says gaseous cool diffusion flames were obtained only for normal n-butane flames at 2 bar and ambient oxygen mole fraction 0.39 in this campaign. Hot precursor flames were reported as 2.6 times larger. A separate ground pool-flame study in the report is not classified as an ISS experiment. Ethane replaced the originally proposed n-pentane.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {
+      "fuel_for_observed_cool_flames": "n-butane",
+      "configuration": "normal",
+      "pressure_bar": 2,
+      "ambient_oxygen_mole_fraction": 0.39
+    },
+    "topics": [
+      "Cool flames",
+      "Spherical diffusion flames"
+    ],
+    "variables": [],
+    "locators": [
+      "page 23",
+      "page 24"
+    ],
+    "evidence": [
+      {
+        "locator": "page 23",
+        "text": "only obtained for normal n-butane flames at 2 bar"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-101",
+    "filename": "PSI-101_Reports_SAME-R_Final Report.pdf",
+    "title": "SAME-R: particle growth and detector response",
+    "summary": "The report relates smoke size and morphology to material, flow and aging. Zero-flow conditions produced larger particles than nominal-flow cases, but the appendix discussion gives a 30–40% increase in diameter of average mass while its conclusion gives a 2–3-fold size increase. Those differently stated quantities are not merged into a single effect size. The report supports measuring more than one distribution moment to respond across a broad aerosol range and describes promising MPASS results; this is a research finding rather than a certified detector-performance claim.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {
+      "source_caveat": "Inconsistent or differently defined size-increase statements require reconciliation."
+    },
+    "topics": [
+      "Smoke aerosols",
+      "Smoke detection",
+      "Particle-size distribution"
+    ],
+    "variables": [
+      {
+        "name": "Particle-size distribution",
+        "unit": null
+      }
+    ],
+    "locators": [
+      "page 83",
+      "page 84"
+    ],
+    "evidence": [
+      {
+        "locator": "page 83",
+        "text": "diameter of average mass is 30 % to 40 % larger"
+      },
+      {
+        "locator": "page 84",
+        "text": "2 to 3 times larger"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-98",
+    "filename": "PSI-98_Science Documents_SAFFIRE-I and SAFFIRE-III Readme.docx",
+    "title": "Saffire data organization",
+    "summary": "The readme explains the sample/camera organization and distinguishes combustion samples from pre-flow/post-flow and calibration image sets. Image representations include downlinked JPEGs, mapped images and processed raw-camera formats; these are related representations, not independent experiments.",
+    "finding": false,
+    "study_kind": "flight_experiment",
+    "conditions": {},
+    "topics": [
+      "Spacecraft fire safety"
+    ],
+    "variables": [],
+    "locators": [
+      "word/document.xml"
+    ],
+    "evidence": [
+      {
+        "locator": "word/document.xml",
+        "text": "There were 2 cameras capturing images during the experiment"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-39",
+    "filename": "PSI-39_Reports_CFI Science Final Report.pdf",
+    "title": "CFI: pressure and helium effects on droplet cool flames",
+    "summary": "The report describes n-dodecane, n-dodecane/iso-dodecane mixtures and farnesane experiments, with over 200 tests and initial droplets around 4 mm. It reports repeated hot/cool reignition cycles above approximately 2 atm and earlier cool-flame extinction, at a larger remaining droplet diameter, with increased helium dilution. Figure 4 compares free-floating and fiber-supported droplets. The report calls its analysis preliminary; some fuel labels and a gas-composition caption are internally inconsistent and are not used as corrected numerical conditions.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {
+      "initial_droplet_diameter": "approximately 4 mm",
+      "reviewed_figure": "PDF page 9, Figure 4 visually inspected"
+    },
+    "topics": [
+      "Cool flames",
+      "Droplet combustion",
+      "Flame extinction"
+    ],
+    "variables": [
+      {
+        "name": "Cool-flame extinction diameter",
+        "unit": "mm"
+      }
+    ],
+    "locators": [
+      "page 3",
+      "page 6",
+      "page 7",
+      "page 8",
+      "page 9",
+      "page 10",
+      "page 11"
+    ],
+    "evidence": [
+      {
+        "locator": "page 9",
+        "text": "reignitions were commonly observed"
+      },
+      {
+        "locator": "page 9",
+        "text": "giving a larger extinction diameter"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-102",
+    "filename": "PSI-102_Reports_SAME_Final Science Report.pdf",
+    "title": "SAME: material-dependent smoke sizes and diagnostics",
+    "summary": "The report finds material-dependent smoke size distributions and different responses from ISS light-scattering and Shuttle ionization detectors. Silicone and lampwick produced a broader large-particle contribution than Kapton and Teflon under the described conditions. The recovered TEM grids were contaminated, limiting interpretation of microscopy. The closing discussion proposes size-discriminating or multiple-moment detection rather than inferring universal performance from a single detector response.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {},
+    "topics": [
+      "Smoke aerosols",
+      "Smoke detection",
+      "Particle-size distribution"
+    ],
+    "variables": [
+      {
+        "name": "Particle-size distribution",
+        "unit": null
+      },
+      {
+        "name": "Smoke-detector response",
+        "unit": null
+      }
+    ],
+    "locators": [
+      "page 25",
+      "page 28",
+      "page 29"
+    ],
+    "evidence": [
+      {
+        "locator": "page 28",
+        "text": "The TEM grids recovered from the thermal precipitators were unfortunately contaminated"
+      },
+      {
+        "locator": "page 29",
+        "text": "more than one moment"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-106",
+    "filename": "SLICE final report 20171226.pdf",
+    "title": "SLICE: soot and flame-structure comparisons with gravity",
+    "summary": "The final report summarizes measurements and simulations of coflow methane flames. Microgravity flames had lower soot temperatures and higher soot volume fractions than normal-gravity counterparts, with soot shifted toward the flame wings. It reports substantial uncertainty in coflow velocity and incomplete axisymmetry of lifted flames. Approximately 700 test conditions across 13 sessions are distinct from the date/fuel records in the compact experiment table; the report says only part of the dataset had been analyzed.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {},
+    "topics": [
+      "Soot formation",
+      "Flame liftoff",
+      "Laminar diffusion flames"
+    ],
+    "variables": [
+      {
+        "name": "Soot temperature",
+        "unit": null
+      },
+      {
+        "name": "Soot volume fraction",
+        "unit": null
+      },
+      {
+        "name": "Flame lift-off height",
+        "unit": null
+      }
+    ],
+    "locators": [
+      "page 39",
+      "page 42",
+      "page 43",
+      "page 44",
+      "page 45"
+    ],
+    "evidence": [
+      {
+        "locator": "page 43",
+        "text": "lower soot temperatures and higher volume fraction"
+      },
+      {
+        "locator": "page 39",
+        "text": "significant uncertainties in the velocity"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-99",
+    "filename": "PSI-99_Science Documents_SAFFIRE-II Readme.docx",
+    "title": "Saffire data organization",
+    "summary": "The readme explains the sample/camera organization and distinguishes combustion samples from pre-flow/post-flow and calibration image sets. Image representations include downlinked JPEGs, mapped images and processed raw-camera formats; these are related representations, not independent experiments.",
+    "finding": false,
+    "study_kind": "flight_experiment",
+    "conditions": {},
+    "topics": [
+      "Spacecraft fire safety"
+    ],
+    "variables": [],
+    "locators": [
+      "word/document.xml"
+    ],
+    "evidence": [
+      {
+        "locator": "word/document.xml",
+        "text": "There were 2 cameras capturing images during the experiment"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-107",
+    "filename": "PSI-107_Reports_SPICE_FinalReport.pdf",
+    "title": "SPICE: coflow and burner-size effects on smoke points",
+    "summary": "The final report states that smoke-point length increased with coflow velocity and with decreasing burner diameter. Its conclusions rank sooting tendency as ethylene < propane < 50% propylene < 75% propylene < propylene for the studied mixtures. Methane smoke points could not be reached before flames contacted the downstream plate. The campaign-wide count of 526 flames and the concluding count of 55 measured smoke-point flames describe different populations and must not be conflated.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {},
+    "topics": [
+      "Smoke point",
+      "Soot formation",
+      "Laminar diffusion flames"
+    ],
+    "variables": [
+      {
+        "name": "Smoke-point flame length",
+        "unit": "mm"
+      }
+    ],
+    "locators": [
+      "page 20",
+      "page 24"
+    ],
+    "evidence": [
+      {
+        "locator": "page 24",
+        "text": "An increase in coflow velocity increases the smoke point length."
+      },
+      {
+        "locator": "page 24",
+        "text": "A decrease in burner diameter increases the smoke point length."
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-100",
+    "filename": "PSI-100_Science Documents_SAFFIRE-I and SAFFIRE-III Readme.docx",
+    "title": "Saffire data organization",
+    "summary": "The readme explains the sample/camera organization and distinguishes combustion samples from pre-flow/post-flow and calibration image sets. Image representations include downlinked JPEGs, mapped images and processed raw-camera formats; these are related representations, not independent experiments.",
+    "finding": false,
+    "study_kind": "flight_experiment",
+    "conditions": {},
+    "topics": [
+      "Spacecraft fire safety"
+    ],
+    "variables": [],
+    "locators": [
+      "word/document.xml"
+    ],
+    "evidence": [
+      {
+        "locator": "word/document.xml",
+        "text": "There were 2 cameras capturing images during the experiment"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-21",
+    "filename": "CLD_Flame_final_report_20220330.pdf",
+    "title": "CLD Flame: soot, temperature and extinction diagnostics",
+    "summary": "The report describes higher soot levels and lower soot temperatures in its microgravity comparisons, with peak soot shifting from the centerline toward the flame wings. It reports 4–8-fold greater sooting in the studied comparisons but also significant model/measurement discrepancies; residence time alone did not explain the differences. Improved flow controllers supported a third testing round for extinction measurements. CH* diagnostics were emphasized over the originally specified OH* images because the available CH* images were better.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {},
+    "topics": [
+      "Soot formation",
+      "Thermal radiation",
+      "Laminar diffusion flames"
+    ],
+    "variables": [
+      {
+        "name": "Soot volume fraction",
+        "unit": null
+      },
+      {
+        "name": "Soot temperature",
+        "unit": null
+      }
+    ],
+    "locators": [
+      "page 24",
+      "page 32",
+      "page 33",
+      "page 34",
+      "page 35"
+    ],
+    "evidence": [
+      {
+        "locator": "page 32",
+        "text": "4-8 times sootier"
+      },
+      {
+        "locator": "page 34",
+        "text": "the residence-time argument, by itself, is not sufficient"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-20",
+    "filename": "PSI-20_Reports_Final_20220201.pdf",
+    "title": "BRE: quasi-steady burning and extinction boundaries",
+    "summary": "The final report describes quasi-steady flames at nominal oxygen mole fractions of 0.265 and above in the tested configurations. Normal-atmosphere flames self-extinguished within 40 s, while methane/nitrogen flames extinguished within a minute across the tested atmospheres. Both large-flame radiative extinction and a small-flame quenching limit were identified. These are gas-burner emulation results, not direct burns of every condensed material represented by the model. The desired O2/CO2 atmospheric objective was not tested.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {
+      "diagnostic_temperature_evidence": "Four TFP-measured flames supported an extinction range of 1100–1200 K; not a universal threshold."
+    },
+    "topics": [
+      "Burning-rate emulation",
+      "Flame extinction",
+      "Thermal radiation"
+    ],
+    "variables": [
+      {
+        "name": "Heat flux",
+        "unit": null
+      },
+      {
+        "name": "Burner surface temperature",
+        "unit": null
+      }
+    ],
+    "locators": [
+      "page 25",
+      "page 38",
+      "page 39",
+      "page 40"
+    ],
+    "evidence": [
+      {
+        "locator": "page 40",
+        "text": "All flames ignited in normal atmosphere self-extinguished within 40 s."
+      },
+      {
+        "locator": "page 40",
+        "text": "this objective was not investigated"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-20",
+    "filename": "PSI-20_Science Documents_ACME_BRE_Readme.docx",
+    "title": "BRE: run naming and experiment organization",
+    "summary": "The readme identifies four burner/fuel groups: 25-mm burners with 50% ethylene, pure ethylene or pure methane, and a 50-mm burner with pure ethylene. Run names encode year, day of year, a letter and a number; numerical suffixes often identify variants rather than replicates. The first row of each raw CSV describes its configuration.",
+    "finding": false,
+    "study_kind": "flight_experiment",
+    "conditions": {},
+    "topics": [
+      "Burning-rate emulation"
+    ],
+    "variables": [],
+    "locators": [
+      "word/document.xml"
+    ],
+    "evidence": [
+      {
+        "locator": "word/document.xml",
+        "text": "different numbers can be for repeats but are typically variants"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-68",
+    "filename": "PSI-68_Science Documents_FLEX-2 SRD Final _ No Hypertext .pdf",
+    "title": "FLEX-2: measurement plan and parameter envelope",
+    "summary": "The requirements document specifies time-resolved droplet and flame dimensions, extinction sizes, soot behavior and radiative emission as analysis products. It describes cameras and sampled sensor data and distinguishes minimum from complete science success. This document is a research/requirements plan; its proposed ranges and success criteria are not evidence that every combination was executed. The compact deposited experiment table is consequently represented as parameter sets.",
+    "finding": false,
+    "study_kind": "requirements_and_analysis_plan",
+    "conditions": {},
+    "topics": [
+      "Droplet combustion",
+      "Multicomponent fuels",
+      "Flame extinction"
+    ],
+    "variables": [],
+    "locators": [
+      "page 53",
+      "page 54",
+      "page 56"
+    ],
+    "evidence": [
+      {
+        "locator": "page 53",
+        "text": "Droplet diameter as a function time and burning rate constant"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-22",
+    "filename": "PSI-22_Reports_E-FIELD Flames Final Report.pdf",
+    "title": "E-FIELD: electrical stabilization and diagnostic limitations",
+    "summary": "The report describes peak ion currents associated with compact flames, stabilization of weak diluted flames by small electric fields, and unstable behavior at high field strengths. Quantitative soot-volume-fraction measurements were not completed because the mesh support obscured the multispectral camera; qualitative luminous-soot observations were available. Supply-response and polarity constraints also limited the time-response program. The graph therefore does not treat every originally proposed diagnostic as an achieved measurement.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {},
+    "topics": [
+      "Electric-field effects on flames",
+      "Flame stability",
+      "Soot formation"
+    ],
+    "variables": [
+      {
+        "name": "Ion current",
+        "unit": null
+      },
+      {
+        "name": "Flame luminosity",
+        "unit": null
+      }
+    ],
+    "locators": [
+      "page 18",
+      "page 23",
+      "page 37",
+      "page 38"
+    ],
+    "evidence": [
+      {
+        "locator": "page 37",
+        "text": "distinct peak ion current"
+      },
+      {
+        "locator": "page 38",
+        "text": "the key soot volume fraction instrument was unavailable"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-23",
+    "filename": "PSI-23_Reports_s_Flame_final_report_20210729.pdf",
+    "title": "s-Flame: radiative and kinetic extinction modes",
+    "summary": "The report describes nitrogen- and helium-diluted hydrogen, methane and ethylene experiments. In the cited ethylene/nitrogen tests, increasing flow led to radiative extinction and decreasing flow led to kinetic extinction. For the 20–30% ethylene mixtures described on page 26, flames established at 3 cc/s extinguished during ramps before reaching 1 cc/s downward or 8 cc/s upward. These limits describe the reported ramp protocols and are not universal fuel flammability limits. The report states that detailed analysis was ongoing.",
+    "finding": true,
+    "study_kind": "flight_experiment",
+    "conditions": {
+      "fuel": "ethylene/nitrogen",
+      "fuel_mole_fraction": "0.20–0.30 in the cited cases",
+      "ambient": "approximately 21% O2 / 79% N2"
+    },
+    "topics": [
+      "Spherical diffusion flames",
+      "Flame extinction",
+      "Thermal radiation"
+    ],
+    "variables": [
+      {
+        "name": "Fuel flow rate",
+        "unit": "cm³/s"
+      }
+    ],
+    "locators": [
+      "page 24",
+      "page 25",
+      "page 26"
+    ],
+    "evidence": [
+      {
+        "locator": "page 26",
+        "text": "kinetic extinctions are observed during ramp down before reaching 1 cc/s"
+      },
+      {
+        "locator": "page 26",
+        "text": "before reaching 8 cc/s"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  },
+  {
+    "study": "PSI-69",
+    "filename": "PSI-69_Science Documents_FLEX_Test_Plan.pdf",
+    "title": "FLEX: limiting-oxygen and suppressant test protocol",
+    "summary": "The plan describes iterative oxygen/droplet-size tests to determine limiting oxygen behavior and repeats at fixed suppressant levels. It explicitly says the planning matrices do not represent the final test matrix. Therefore, hypothetical combinations in the plan are not expanded into measured runs. The graph uses the deposited named-test table for individual conditions and retains its uncertain burning-rate unit.",
+    "finding": false,
+    "study_kind": "test_plan",
+    "conditions": {},
+    "topics": [
+      "Droplet combustion",
+      "Limiting oxygen index",
+      "Flame suppression"
+    ],
+    "variables": [],
+    "locators": [
+      "page 4",
+      "page 5"
+    ],
+    "evidence": [
+      {
+        "locator": "page 5",
+        "text": "do not represent the final test matrix"
+      }
+    ],
+    "review_method": "Assistant read the specified source sections; not an external extraction-model response."
+  }
+]

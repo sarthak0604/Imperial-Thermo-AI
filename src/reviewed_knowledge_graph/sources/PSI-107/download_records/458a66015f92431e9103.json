@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-107:458a66015f92431e9103",
+  "study": "PSI-107",
+  "filename": "PSI-107_Engineering Documents_SPICE_ScienceVerificationReport.pdf",
+  "key": "psi-data/PSI-107/Engineering Documents/PSI-107_Engineering Documents_SPICE_ScienceVerificationReport.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 237000,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-107/download?file=683da136b8656d2315bf4540&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-107/458a66015f92431e9103/PSI-107_Engineering Documents_SPICE_ScienceVerificationReport.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "786175bc7fbb41785ad2642d15b8eb510983d7e217d7bb9f496955d00950775c",
+  "status": "downloaded"
+}

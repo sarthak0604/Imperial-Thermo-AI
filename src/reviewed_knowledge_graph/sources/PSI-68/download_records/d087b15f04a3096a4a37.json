@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-68:d087b15f04a3096a4a37",
+  "study": "PSI-68",
+  "filename": "PSI-68_Experimental table_Flex2.csv",
+  "key": "psi-data/PSI-68/Experimental table/PSI-68_Experimental table_Flex2.csv",
+  "category": "Experimental table",
+  "size_bytes": 1029,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-68/download?file=67929004b7b6ff8e6502ecd0&version=1&studyVersion=6&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-68/d087b15f04a3096a4a37/PSI-68_Experimental table_Flex2.csv",
+  "sha256": "cc57ad1bd9977aa13e7ac6c3aa618303012686e232b36c052c6a9f1a74e5f528",
+  "status": "downloaded"
+}

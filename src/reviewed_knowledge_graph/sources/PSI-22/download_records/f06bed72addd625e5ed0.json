@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:f06bed72addd625e5ed0",
+  "study": "PSI-22",
+  "filename": "PSI-22_Reports_ACME fact sheet 20180820.pdf",
+  "key": "psi-data/PSI-22/Reports/PSI-22_Reports_ACME fact sheet 20180820.pdf",
+  "category": "Reports",
+  "size_bytes": 1132230,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e63e0eb4c08676004b92&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/f06bed72addd625e5ed0/PSI-22_Reports_ACME fact sheet 20180820.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "1001b38b3f87ce6e60d2ea11acab7065a11e4fe0796f615558d53826edb6fca4",
+  "status": "downloaded"
+}

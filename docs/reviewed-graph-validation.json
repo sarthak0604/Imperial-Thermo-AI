@@ -1,0 +1,151 @@
+{
+  "graph_id": "NASA-PSI-19-reviewed-2026-11-15",
+  "model": "gpt-4.1-mini",
+  "cases": [
+    {
+      "case": "cfi-report",
+      "prompt": "Show me the PSI-39 CFI final science report as a PDF.",
+      "expected": "document",
+      "passed": true,
+      "seconds": 2.32,
+      "status": "completed",
+      "actions": [
+        "retrieve_assets"
+      ],
+      "block_types": [
+        "document"
+      ],
+      "source_file_ids": [
+        "res:PSI-39:005de6340957ec7efe5a"
+      ]
+    },
+    {
+      "case": "bass-video",
+      "prompt": "Show the PSI-25 BASS-II T23 still sequence video.",
+      "expected": "video",
+      "passed": true,
+      "seconds": 1.91,
+      "status": "completed",
+      "actions": [
+        "retrieve_assets"
+      ],
+      "block_types": [
+        "video"
+      ],
+      "source_file_ids": [
+        "res:PSI-25:1e2cbef2e0b7f1c6f239"
+      ]
+    },
+    {
+      "case": "same-report",
+      "prompt": "Show the PSI-102 SAME final science report PDF about smoke detectors.",
+      "expected": "document",
+      "passed": true,
+      "seconds": 2.46,
+      "status": "completed",
+      "actions": [
+        "retrieve_assets"
+      ],
+      "block_types": [
+        "document"
+      ],
+      "source_file_ids": [
+        "res:PSI-102:aea2c6a9cf80227ccbb2"
+      ]
+    },
+    {
+      "case": "bass-inspection",
+      "prompt": "Inspect the PSI-25 BASS-II experimental CSV table and list its columns. Do not calculate.",
+      "expected": "inspection",
+      "passed": true,
+      "seconds": 5.01,
+      "status": "needs_input",
+      "actions": [
+        "inspect_files",
+        "inspect_files"
+      ],
+      "block_types": [
+        "inspection"
+      ],
+      "source_file_ids": [
+        "res:PSI-25:a8a37c3002bb8108a044"
+      ]
+    },
+    {
+      "case": "flex-plot",
+      "prompt": "Plot Ambient pressure; mmHg against O initial ambient composition; mole fraction from the PSI-69 FLEX experimental table.",
+      "expected": "chart",
+      "passed": true,
+      "seconds": 3.99,
+      "status": "completed",
+      "actions": [
+        "calculate"
+      ],
+      "block_types": [
+        "chart"
+      ],
+      "source_file_ids": [
+        "res:PSI-69:362640cdca82cde2c61b"
+      ],
+      "points": 274
+    },
+    {
+      "case": "flex-thm01",
+      "prompt": "Estimate the adiabatic flame temperature for CH4 at 101.325 kPa and 298.15 K, using the oxygen mole fraction from the first test of the PSI-69 FLEX experimental table. State the scenario assumptions.",
+      "expected": "calculation",
+      "passed": true,
+      "seconds": 5.61,
+      "status": "completed",
+      "actions": [
+        "calculate"
+      ],
+      "block_types": [
+        "calculation"
+      ],
+      "source_file_ids": [
+        "res:PSI-69:362640cdca82cde2c61b"
+      ],
+      "inputs": {
+        "fuel_species": "CH4",
+        "o2_mole_frac": 0.21,
+        "pressure_kpa": 101.325,
+        "pressure_psi": 14.696,
+        "diluent_gas": "N2",
+        "equivalence_ratio": 1.0,
+        "t_init_k": 298.15
+      },
+      "temperature_k": 2224.23
+    },
+    {
+      "case": "missing-evidence",
+      "prompt": "Calculate heat release with THM-04 from the PSI-117 Kavg burning-rate table.",
+      "expected": "no_calculation",
+      "passed": true,
+      "seconds": 5.44,
+      "status": "needs_input",
+      "actions": [
+        "inspect_files",
+        "inspect_files"
+      ],
+      "block_types": [
+        "inspection"
+      ],
+      "source_file_ids": [
+        "res:PSI-117:c0fa0f37fbb4a7de83e3"
+      ]
+    },
+    {
+      "case": "unknown-study",
+      "prompt": "Find the experimental table for PSI-99999.",
+      "expected": "empty",
+      "passed": true,
+      "seconds": 0.15,
+      "status": "no_match",
+      "actions": [
+        "no_match"
+      ],
+      "block_types": [],
+      "source_file_ids": []
+    }
+  ]
+}

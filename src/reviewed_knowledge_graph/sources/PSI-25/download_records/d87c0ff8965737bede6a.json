@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-25:d87c0ff8965737bede6a",
+  "study": "PSI-25",
+  "filename": "PSI-25_Reports_BASS-II Summary Report.pdf",
+  "key": "psi-data/PSI-25/Reports/PSI-25_Reports_BASS-II Summary Report.pdf",
+  "category": "Reports",
+  "size_bytes": 48972416,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=6924805f7f6aa6a83021067c&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-25/d87c0ff8965737bede6a/PSI-25_Reports_BASS-II Summary Report.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "5ffa911fd9b6356f204646003fb9342e341810dcdfdf5cb15756e7f01ec5f770",
+  "status": "downloaded"
+}

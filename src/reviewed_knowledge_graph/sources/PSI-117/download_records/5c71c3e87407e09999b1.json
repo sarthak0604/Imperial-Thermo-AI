@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-117:5c71c3e87407e09999b1",
+  "study": "PSI-117",
+  "filename": "PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+  "key": "psi-data/PSI-117/Presentations/PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+  "category": "Presentations",
+  "size_bytes": 8994674,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e1&version=1&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/5c71c3e87407e09999b1/PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "8e4625bb2b2a8b17bd19854765815a3dd877e5192a9b94bd001aea2e8cccb4b2",
+  "status": "downloaded"
+}

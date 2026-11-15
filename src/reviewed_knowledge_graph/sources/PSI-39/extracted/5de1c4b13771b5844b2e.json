@@ -1,0 +1,107 @@
+{
+  "id": "res:PSI-39:5de1c4b13771b5844b2e",
+  "study": "PSI-39",
+  "filename": "PSI-39_Presentations_Aspects of Cool-Flame Supported Droplet Combustion in Microgravity_CFI.pdf",
+  "key": "psi-data/PSI-39/Presentations/PSI-39_Presentations_Aspects of Cool-Flame Supported Droplet Combustion in Microgravity_CFI.pdf",
+  "category": "Presentations",
+  "size_bytes": 1412488,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-39/download?file=683f4b7cda33c6f4c4cec617&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-39/5de1c4b13771b5844b2e/PSI-39_Presentations_Aspects of Cool-Flame Supported Droplet Combustion in Microgravity_CFI.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "302c8a9bcb5a847db044a6bd87f0319431132f5bbd506ae47837b41930b66aab",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Aspects of Cool-Flame Supported Droplet \nCombustion in Microgravity\nVedha Nayagam\nCase Western Reserve University\nDaniel L. Dietrich\nNASA Glenn Research Center, Cleveland, OH44135\nForman A. Williams\nUniversity of California, San Diego, La Jolla, CA\n31st Annual Meeting of the American Society for Gravitational and Space Research\n11-14th November 2015\nAlexandria, VA U.S.A\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Cool Flames\no Accidentally discovered by Sir Humphry Davy in 1810\no Historically cool flames are associated with premixed \ncombustion leading to  ignition of fuel/air mixtures.  \n(commonly encountered in car-engine knock)\no More recently diffusion-controlled, quasi-steady cool flames \nsupporting droplet combustion were discovered the FLEX \nteam\no Cool-flame low-T chemistry is of importance in new engine \ndesigns, fuel reforming, etc.\no Important implications with regard to space craft fire safety\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "Flame Extinguishment Experiments: FLEX\no Droplet combustion experiments being conducted onboard \nthe International Space Station\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "FLEX Cool Flame – Pure Fuels\nFLEX-377:  N-Decane burning in O2/N2 environment\nhot flame\ncool flame\nevaporation\nD0 = 4.05 mm\nFuel – n-decane\nOxygen – 25%\nNitrogen – 75%\nPressure – 0.5 atm\nnarrow-band\nradiation\nwide-band\nradiation\nVisible flame extinction\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "FLEX Cool Flame – Binary Droplet Arrays\no N-decane droplets burning in 17-83% O2-N2 ambient at 1 atm\no Similar size droplets: Single droplets only hot flame – Binary droplets cool flame\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "FLEX Cool Flame – Fuel Mixtures\no Decane/Hexanol droplet compared to pure Decane droplet – 1 atm in air\no Alcohol slows the CF burning rate and increases the extinction diameter\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "Theoretical Models for Cool Flame Combustion\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Liñán’s Diffusion Flame Regimes\no In the limit of large activation energies, Linan \nshowed that structure of diffusion flames \ncan be captured in terms of 4 regimes\no Frozen-flow\no Partial-burning\no Premixed-flame\no Near-equilibrium diffusion flame\no Since both fuel and oxygen leaks through the \nflame partial-burning regime is appropriate \nfor cool-flame combustion of droplets\nFarouk and Dryer (2014)\nflame\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "Liñán’s Partial Burning Regime\nSlopes are equal\no T* is the midpoint of the NTC region obtained using the semi-empirical \ncorrelation (Seshadri et.al. (2015)\no T* = Tb and same for all three alkanes\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "Liñán’s Partial Burning Regime: Flame Standoff Ratio\nFarouk and Dryer (2014): n-heptane burning in air\nD0 varied\nCO2 dilution\nD0 = 3mm\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "Liñán’s Partial Burning Regime: Flame Standoff Ratio\no Farouk and Dryer FSR varies between 2.6 and 3.3. QS theory gives 3.1 in close \nagreement\no As observed by F&D no dependencies on D0 or CO2 concentration – only O2\nconcentration determines FSR\no Expression is very similar to the classical hot-flame FSR equation\no Hot flame FSR QS model predicts FSR orders of magnitude greater than \nexperimental or numerical results\no Hot flames for n-alkanes lie in the outer transient-diffusive zone.  Cool flames lie \nclose to the droplet surface in the convective-diffusive zone where QS theories \nare applicable!\no Applies to all normal alkanes (T* is very close to each other)\no Should be useful in planning CFI experiments\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "Liñán’s Partial Burning Regime: Flame Standoff Ratio\nExperimental confirmation!\no QS cool flame visualized for the first time\no FLEX hardware changed –\nremoved all spectral filters\nturned down the backlight\no N-Decane burning in air at 1 atm\no Image 10 to 20 frame averaged \no Measured FSR 3.2, predicted 3.1!\n"
+    },
+    {
+      "locator": "page 13",
+      "text": "Liñán’s Partial Burning Regime: Burning Rate\nmeasured K\no\nExpression is very similar to the classical \nhot-flame burning rate constant equation\no\nTurn-over or NTC temperature rather than \nadiabatic flame temperature\no\nPredicts K within ± 20%\no\nApplies to all normal alkanes (T* is very \nclose to each other)\no\nShows there is a systematic dependence \non initial droplet diameter and pressure\no\nShould be useful in planning CFI \nexperiments\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "Corrections to the Burning Rate: Oxygen Depletion Effect\no The initial hot flame depletes oxygen in the far field prior to cool flame start\no A correction to the oxygen concentration at the start of the cool flame can be estimated\no Hot flame is a sink for oxygen and convection is small far away from the droplet\nUsing matched asymptotic technique the depleted oxygen concentration:\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "Corrections to the Burning Rate: Oxygen Depletion Effect\no Simple, approximate theory predicts the trend of increasing Kc with D0\no Improves the correlation a little – but still something is missing!\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Cool Flame Extinction\no Ketohydroperoxides decomposition chemical time:\no Crossover temperature variation with Oxygen Concentration:\no The chemical time becomes:\no Residence time correlated against chemical time\n"
+    },
+    {
+      "locator": "page 17",
+      "text": "Concluding Remarks\no Cool flame burning rates and flame standoff ratios are \nreasonably well predicted using Liñán’s partial burning regime\no Cool flame extinction diameters are correlated against Co2\n-3/2\no At higher pressures correlation does not work well\no Experiments indicate the pressure effects are not well captured \nby existing reduced mechanisms and needs further study\no Many aspects of the cool flame combustion still remains to be \nstudied\n"
+    },
+    {
+      "locator": "page 18",
+      "text": "Related Publications\n1.\nNayagam, V., Dietrich, D. L., Ferkul, P. V., Hicks, M. C., and Williams, F. A. (2012). Can cool\nflames support quasi-steady alkane droplet burning? Combustion and Flame, 159(12), 3583-\n3588.\n2.\nNayagam, V., Dietrich, D.L., Hicks, M.C., and Williams, F.A., “Cool-flame extinction during n-\nalkane droplet combustion in microgravity.” Combustion and Flame, Vol. 162, 2015, pp. 2140-\n2147.\n3.\nNayagam, V., Dietrich, D.L., and Williams, F.A., “Applications of the Partial-Burning Regime to\nQuasi-Steady n-Alkane Droplet Combustion Supported by Cool Flames,” AIAA Journal,\naccepted, December 2015).\n4.\nPaczko, G., Peters, N., Seshadri, K., and Williams, F.A., “The Role of Cool-Flame Chemistry in\nQuasi-Steady Combustion and Extinction of n-Heptane Droplets,” Combustion Theory and\nModelling 18.4-5 (2014): 515-531.\n5.\nSeshadri, K., Peters, N., Williams, F.A., and Nayagam, V., “Asymptotic Analysis of Quasi-Steady\nHeptane Droplet Combustion Supported by Cool-Flame Chemistry,” Combustion Theory and\nModelling, (submitted, February 2015)\n"
+    },
+    {
+      "locator": "page 19",
+      "text": "Principal Investigator\nProf. Forman A. Williams, UCSD\nCo- Investigators\nProf. C. Thomas Avedisian, Cornell\nProf. Frederick L. Dryer, Princeton\nProf. Tanvir Farouk, U South Carolina \nMr. Michael C. Hicks, NASA GRC\nDr. Vedha Nayagam, NCSER/CWRU\nProf. Benjamin D. Shaw, UC Davis\nProject Scientist\nDr. Daniel L. Dietrich, NASA GRC\nProject Manager\nMr. J. Mark Hickman, NASA GRC\nFlame Extinguishment Experiment (FLEX) Science Team\n"
+    },
+    {
+      "locator": "page 20",
+      "text": "Questions?\n"
+    }
+  ],
+  "details": {
+    "page_count": 20,
+    "empty_pages": [
+      20
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

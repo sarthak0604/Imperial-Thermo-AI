@@ -1,0 +1,286 @@
+{
+  "id": "res:PSI-26:c246b1917ea8bfefef89",
+  "study": "PSI-26",
+  "filename": "PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf",
+  "key": "psi-data/PSI-26/Presentations/PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf",
+  "category": "Presentations",
+  "size_bytes": 4640227,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafce9c3501a37c2c60d10&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/c246b1917ea8bfefef89/PSI-26_Presentations_BASS_Overview of Recent ISS Results.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "6e654a3468577dd9dce8a14b61a6d0460870d6c88475bbfb18d6c2d94fbad3ea",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Paul V. Ferkul, National Center for Space Exploration Research  \nSandra L. Olson, NASA Glenn Research Center \nFumiaki Takahashi, National Center for Space Exploration Research \nMichael C. Johnston, Case Western Reserve University \nMakoto Endo, Case Western Reserve University \nJames S. T’ien, Case Western Reserve University \n \n \n \n \n \nThis work was supported by the NASA Space Life and Physical Sciences Research and \nApplications Division (SLPSRA). \n \n \nPresented at the 2nd Annual ISS Research and Development Conference \nDenver, Colorado, July 16-18, 2013 \nBurning and Suppression of Solids (BASS): \nAn Overview of Recent ISS Results \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Science Background: \n \n♦Combustion of solid fuels in microgravity \nhas been an active area of research \n \n♦Numerical models predict that 1-g \nbuoyant flows profoundly affect fuel \nflammability \n \n♦Ground-based facilities have verified this \nbehavior but only for thin fuels in \nopposed flow \n \n♦Flow speeds below the buoyant limit are \nof interest  \n  \n \n \n \n300 \nFlow speed (cm/s) \n0.23 \n0.22 \n0.21 \n0.20 \n0.19 \n0.18 \n0.17 \n0.16 \n0.15 \n  1 \n    10 \n 100 \nFlammable \nNot Flammable \n1-g buoyant \nflow limit \nTypical Flammability Boundary for a Solid Fuel \nO2 Mole \nFraction \n"
+    },
+    {
+      "locator": "page 3",
+      "text": "Hypotheses: \n \n♦Materials in microgravity, with \nadequate ventilation, may burn more \nreadily compared to normal gravity \n \n♦Testing at constant O2 mole fraction \npermits studying flame spread and \nextinction at low and high flow speed. \n \n \n \n300 \nFlow speed (cm/s) \nO2 Mole \nFraction \n0.23 \n0.22 \n0.21 \n0.20 \n0.19 \n0.18 \n0.17 \n0.16 \n0.15 \n  1 \n    10 \n 100 \nFlammable \nNot Flammable \n1-g buoyant \nflow limit \nTypical Flammability Boundary for a Solid Fuel \n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Approach: \n \n♦Microgravity combustion tests were performed \naboard the International Space Station using the \nBASS (Burning and Suppression of Solids) \nhardware. \n \n♦The wind tunnel was installed in the Microgravity \nScience Glovebox which supplied power, imaging, \nand a level of containment.  \n \n♦Fuel samples were mounted inside a small wind \ntunnel which could impose airflow speeds up to \n40 cm/s. \n \n♦The effects of airflow speed on flame appearance, \nflame growth, and spread rates were determined \nin both the opposed and concurrent flow.  \n \n♦More recent tests varying oxygen (below 21%) \nhave been completed. \n \n"
+    },
+    {
+      "locator": "page 5",
+      "text": ""
+    },
+    {
+      "locator": "page 6",
+      "text": "Science Applications:  \n \nUnderstanding of long-duration microgravity solid material burning and extinction  \nImproved strategies for NASA spacecraft materials selection; link actual burn \nbehavior in microgravity to Earth-based selection methods \nImproved combustion computational models used in the design of fire detection \nand suppression systems in microgravity and on Earth  \nValidated detailed combustion models in the simpler flow environment of \nmicrogravity build more complex combustion models needed to capture the \nimportant details of flames burning in normal gravity; models have wide \napplicability to the general understanding of many terrestrial combustion \nproblems. \n \n"
+    },
+    {
+      "locator": "page 7",
+      "text": "Microgravity Science \nGlovebox (MSG) \n \nBASS flame visible \nthrough viewport \n \n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Fish-eye view of the inside of the Microgravity Science Glovebox (MSG) \n"
+    },
+    {
+      "locator": "page 9",
+      "text": "Top window \nPermits variety of solid samples to be mounted, ignited, and burned: \nThin, flat (17) \n \n     Spheres (12) \n \nThick, flat (4) \nCandles (8) \n \n(Note: samples are not to scale; samples can be flipped 180 degrees if desired) \nHardware Details \nAir exit \nFan section \nTop window \nFront window \n"
+    },
+    {
+      "locator": "page 10",
+      "text": "Sample Images \n       Digital Still                         Video  \n \nHardware Summary: \n \nBASS utilized the on-orbit SPICE hardware; \nminor modifications were made to burn solid \nsamples \n \nSmall flow tunnel \n \nSolid samples were installed, ignited, \nextinguished, and recorded \n \nVideo and digital still camera provided bulk \nof the data.  Flame appearance, behavior, \nspread rate, and extinction dynamics were \nmeasured \n \nAirflow speed was the main variable \n \n41 samples, 115 burns completed  \n \n \n                               Flow \n"
+    },
+    {
+      "locator": "page 11",
+      "text": "Top Window and \nSample Holder \nExperiment Operation: \nAirflow \nFlow Duct \n2 cm \nIgniter \n        Fuel \n2-pin connector \nFrame \nAlignment tab \n"
+    },
+    {
+      "locator": "page 12",
+      "text": "Fuel Sample Installed \nAirflow \nExperiment Operation: \n"
+    },
+    {
+      "locator": "page 13",
+      "text": "Airflow \nIgniter On \nExperiment Operation: \n"
+    },
+    {
+      "locator": "page 14",
+      "text": "Airflow \nFlame  \nExperiment Operation: \n"
+    },
+    {
+      "locator": "page 15",
+      "text": "Airflow \nFlame Spread \nExperiment Operation: \n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Airflow  \nChanges \nFlame Responds \nto Higher Flow \nExperiment Operation: \n"
+    },
+    {
+      "locator": "page 17",
+      "text": "Airflow \nExperiment Operation: \nFlame Extinction  \n(Flow reduced too far \nor fuel consumed) \n"
+    },
+    {
+      "locator": "page 18",
+      "text": "Air Flow \nExperiment Operation: \nNitrogen \nSuppression \n"
+    },
+    {
+      "locator": "page 19",
+      "text": "2 cm \nIgniter \n        Fuel \n2-pin connector \nFrame \nAlignment tab \n"
+    },
+    {
+      "locator": "page 20",
+      "text": "Video (edge view) of 2-cm-wide sample in concurrent flow.   \nIgnition at airflow speed of 10 cm/s, then flow is reduced to 5 cm/s. \n Flow \n"
+    },
+    {
+      "locator": "page 21",
+      "text": "  10 cm/s Flow \n  5 cm/s Flow \nEffect of flow speed on 2-cm-wide sample in concurrent flow (top view) \n"
+    },
+    {
+      "locator": "page 22",
+      "text": "Effect of flow speed on sample in concurrent flow (edge view) \n  2 cm wide, 20 cm/s flow \n  1 cm wide, 10 cm/s flow \n"
+    },
+    {
+      "locator": "page 23",
+      "text": "Digital still camera images showing a flame burning a 2-cm wide cotton-fiberglass \nfabric in opposed flow.  Images are taken every 1.25 sec (starting at top and moving \nfrom left to right). The flow is decreased in discrete steps from 10 cm/s all the way \ndown to about 1 cm/s.  The flame response to flow changes is very rapid, and the flow \neffects on the flame and its spread rate are dramatic.  Total burn time is 90 sec.  Flow \nchanges are indicated by numbers. \n Flow \n6 cm/s \n4 cm/s \n2 cm/s \n10 cm/s \n1.5 cm/s \n1 cm/s \n"
+    },
+    {
+      "locator": "page 24",
+      "text": "Concurrent and Opposed Spread at ~ 10 cm/s \n2.55 mm/s  versus 1.21 mm/s \n  10 cm/s Flow \n"
+    },
+    {
+      "locator": "page 25",
+      "text": "0\n1\n2\n3\n4\n5\n6\n-50\n-40\n-30\n-20\n-10\n0\n10\n20\n30\n40\n50\nFlame Spread Rate, mm/s \nForced Flow Velocity, cm/s \n2 cm concurrent\n1 cm  concurrent\n2 cm opposed\nVF = - 0.20 U∞ + 0.56 \nVF = - 0.15 U∞ + 0.07 \n \nConcurrent-Flow \nExtinction \n"
+    },
+    {
+      "locator": "page 26",
+      "text": "Summary 1. Thin Fuel: Flame Spread and Extinction \n \n \n♦Opposed flow:  \n•\nflame quickly reached steady spread \n•\nspread rate was fastest at an intermediate value of flow speed \n \n♦Concurrent flow:  \n•\nFlame spread rate increased linearly with increasing flow. \n•\nQuenching extinction was observed (around 1 cm/s) \n \n♦This is the first time that detailed transient flame growth data was obtained in \npurely forced flows in microgravity.  \n \n♦Long-duration experiments validate a number of theoretical predictions and \nalso provide the data for a transient flame growth model under development. \n"
+    },
+    {
+      "locator": "page 27",
+      "text": ""
+    },
+    {
+      "locator": "page 28",
+      "text": "Fuels tested \n•\nUltem® 1000   C37H24O6N2 \n•\nFire retarded polyetherimide (PEI) in 10 mil thick film is \ninherently flame-retarding, with charring characteristics, a very \nlow smoke signature, very low smoke toxicity, and a low heat-\nrelease rate.     \n \nULOI: 23.5% O2 \n \n \n \n \n \n•\nNomex®    (C14H12O2N2)n \nHT90-40 fabric is a 12 mil thick fire retarded aromatic nylon \nfabric which does not melt or drip as it burns.  When \nexposed to a heat source, the Nomex fibers swell and seal \nthe spaces between the fibers, stopping air movement \nthrough the fabric and thus inhibiting heat transfer through the \nfabric.   \n  \n \nULOI: 23.5% O2 \n \n \nNomex-III \n \nULOI: 22% O2 \n \n2 cm \nIgniter \n        Fuel \n"
+    },
+    {
+      "locator": "page 29",
+      "text": ""
+    },
+    {
+      "locator": "page 30",
+      "text": "Results: \n \nUltem and Nomex HT90-40 samples did not burn on ISS atmosphere \n \n21% to 22% O2 \n \nFlow speeds around 15 cm/s \n \nSimilar to 1-g (Note: samples narrower on ISS) \n \n \n \nNomex-III sample did burn \n"
+    },
+    {
+      "locator": "page 31",
+      "text": "NOMEX – III, 22% O2, 1 atm  14 cm/s (0g) \nAt 1g ULOI, but narrower sample \n \nNomex III sample residue after nearly complete \nconcurrent propagation at 15 cm/s on ISS.  \nFlame was shrinking in width until it extinguished \nwithin 1 cm of the end of the sample, as its width \nbecame smaller than ~ 1 cm, which is on the \nscale of a fingering flamelet. \n \n \n2 cm wide sample \nFlow \n"
+    },
+    {
+      "locator": "page 32",
+      "text": "Comparison of 0-g and 1-g Opposed Flow Flames \n0-g with flow (10 cm/s) \nSteady flame size and spread \nConvex base \nExtended blue zone \n \n1-g \nFlame does not propagate downward \n \n"
+    },
+    {
+      "locator": "page 33",
+      "text": ""
+    },
+    {
+      "locator": "page 34",
+      "text": "Flame sequence of a burning 2-cm diameter PMMA sphere at 17% oxygen and 12 cm/s \nflow.  The images are about 1.5 sec. apart. The high resolution images allow model  \ncomparison of flame growth rate, flame-to-fuel distance, and the solid regression rate. \nFlow \n"
+    },
+    {
+      "locator": "page 35",
+      "text": ""
+    },
+    {
+      "locator": "page 36",
+      "text": "Flame sequence of a burning \nPMMA sphere (1-cm \ndiameter) at 17% oxygen and \nless than 1 cm/s.  \n \n(Images are 1.3 sec. apart) \n \nThe fuel itself is clearly visible \nin this contrast-enhanced \nmontage.  This enables us to \nget an accurate measure of \nthe fuel burning rate which is \nan important parameter to \ncharacterize the system for \ncomparison to the model. \nFlow \n"
+    },
+    {
+      "locator": "page 37",
+      "text": "Mesh \nHaving 33930 points total, Using quad-core CPU (4 processors) with 16GB \nmemory, it takes 2.7 hours to compute one second in the computation (with \ncapability of shape change due to solid surface regression). \n"
+    },
+    {
+      "locator": "page 38",
+      "text": "Flame spread (10sec.) \nIgniter:  ON \nSolid \nTemperature [K] \nGas phase Reaction rate [kg mol/m3/s] \nJET velocity:  20 cm/s \nFlow \n"
+    },
+    {
+      "locator": "page 39",
+      "text": "Flame spread (20sec.) \nIgniter:  ON \nGas phase Reaction rate [kg mol/m3/s] \nJET velocity:  20 cm/s \nSolid \nTemperature [K] \n"
+    },
+    {
+      "locator": "page 40",
+      "text": "Flame spread (30sec.) \nIgniter:  ON \nGas phase Reaction rate [kg mol/m3/s] \nJET velocity:  20 cm/s \nSolid \nTemperature [K] \n"
+    },
+    {
+      "locator": "page 41",
+      "text": "Flame spread (40sec.) \nIgniter:  ON \nGas phase Reaction rate [kg mol/m3/s] \nJET velocity:  20 cm/s \nSolid \nTemperature [K] \n"
+    },
+    {
+      "locator": "page 42",
+      "text": "Flame spread (50sec.) \nIgniter:  ON \nGas phase Reaction rate [kg mol/m3/s] \nJET velocity:  20 cm/s \nSolid \nTemperature [K] \n"
+    },
+    {
+      "locator": "page 43",
+      "text": "Flame spread (60sec.) \nIgniter:  ON \nGas phase Reaction rate [kg mol/m3/s] \nJET velocity:  20 cm/s \nSolid \nTemperature [K] \n"
+    },
+    {
+      "locator": "page 44",
+      "text": "Flame spread (70sec.) \nIgniter:  OFF \nGas phase Reaction rate [kg mol/m3/s] \nJET velocity:  20 cm/s \nSolid \nTemperature [K] \n"
+    },
+    {
+      "locator": "page 45",
+      "text": "Flame spread (80sec.) \nIgniter:  OFF \nGas phase Reaction rate [kg mol/m3/s] \nJET velocity:  20 cm/s \nSolid \nTemperature [K] \n"
+    },
+    {
+      "locator": "page 46",
+      "text": "Flame spread (90sec.) \nIgniter:  OFF \nJET velocity:  20 cm/s \nGas phase Reaction rate [kg mol/m3/s] \nSolid \nTemperature [K] \n"
+    },
+    {
+      "locator": "page 47",
+      "text": "Flame spread (100sec.) \nIgniter:  OFF \nJET velocity:  20 cm/s \nGas phase Reaction rate [kg mol/m3/s] \nSolid \nTemperature [K] \n"
+    },
+    {
+      "locator": "page 48",
+      "text": "Flame spread (110sec.) \nIgniter:  OFF \nJET velocity:  20 cm/s \nGas phase Reaction rate [kg mol/m3/s] \nSolid \nTemperature [K] \n"
+    },
+    {
+      "locator": "page 49",
+      "text": "Flame spread (120sec.) \nIgniter:  OFF \nJET velocity:  20 cm/s \nGas phase Reaction rate [kg mol/m3/s] \nSolid \nTemperature [K] \n"
+    },
+    {
+      "locator": "page 50",
+      "text": "Flame spread graph \n90 [s] \nq \nq=51.68 [deg.] \n(c) \nBurning angle q is defined by the solid surface temperature (570K). \n"
+    },
+    {
+      "locator": "page 51",
+      "text": "Flame burning an acrylic sphere (top) from is compared to model computation (bottom).   \nThe comprehensive model even includes solid phase shape change effects.   Adjusted \nsolid phase chemical kinetic parameters will improve the prediction of the flame standoff \ndistance. \n \nFuel: Acrylic sphere; Atmosphere: 17% O2/N2; 1 atm; Flow speed: 12 cm/s (left to right) \n"
+    },
+    {
+      "locator": "page 52",
+      "text": "Dynamic flow change effects \nFlow \n"
+    },
+    {
+      "locator": "page 53",
+      "text": ""
+    },
+    {
+      "locator": "page 54",
+      "text": "Top view image montage for a 1-cm wide flat acrylic sample burning in air at low flow speed \n(around 9 cm/s).  Images progress from left to right then top to bottom (1.3 seconds between \nimages).  The air flow direction is from right to left.  The flame is about 1 cm in size and can \npersist for a very long time at this low air flow speed.  The flame goes out only in the last two \nframes when the air flow is completely shut off. \nFlow \n"
+    },
+    {
+      "locator": "page 55",
+      "text": ""
+    },
+    {
+      "locator": "page 56",
+      "text": "Flow of less than 1 cm/s.  Near the end of the burn, a jet of nitrogen is imposed but it \nfails to extinguish the flame.  Finally after a series of flow reductions, the flame goes out \nwhen the flow speed is zero. \n \nFuel: PMMA; 15-mm initial diameter; 17% O2/N2; 1 atm; Time between images: 1.3 sec \nFlow \n"
+    },
+    {
+      "locator": "page 57",
+      "text": "PMMA sphere burning in wake \nconfiguration in air. \n \nFlow is from right to left \n \nNitrogen flow of 500 cc/min \nweakens but does not \nextinguish the flame \nNitrogen on  \nFlame Minimum \nNitrogen off \nFlame extinguishes \nFlow \n"
+    },
+    {
+      "locator": "page 58",
+      "text": ""
+    },
+    {
+      "locator": "page 59",
+      "text": "Image sequence of a \nburning paraffin wax candle \nwithin a ceramic tube at \n17% oxygen and less than \n1 cm/s flow.  Images are \nabout 9 sec. apart and the \nflow direction is up.  The \ntest is concluded when the \nflow is turned off and the \nflame rapidly goes out. \nFlow \n"
+    },
+    {
+      "locator": "page 60",
+      "text": "Image sequence of a burning candle in microgravity.  Flow is from bottom to top.   \n \nAtmosphere: 17% O2/N2; 1 atm; Flow speed: Varied --> 5, 4, 3, 2, 1, <1 cm/s;  \nRelative time (mm:ss) is indicated on the images \nFlow \n"
+    },
+    {
+      "locator": "page 61",
+      "text": "Flow direction comparison on candle flame burning in 17% O2 flowing at around 1 cm/s.  \nFlow is from bottom to top. \n \n \nFlow \n"
+    },
+    {
+      "locator": "page 62",
+      "text": "Fumiaki Takahashi, National Center for Space Exploration Research  \nBob Hawersaat, NASA Glenn Research Center \nJay Owens, National Center for Space Exploration Research  \nTibor Lorik, ZIN Technologies \nChuck Bunnell, ZIN Technologies \nDennis Siedlak, Georgia Institute of Technology \nCarol Reynolds, NASA Marshall Space Flight Center \nDon Pettit, NASA Johnson Space Center \nJoe Acaba, NASA Johnson Space Center \nSuni Williams,NASA Johnson Space Center   \n \nChris Cassidy, NASA Johnson Space Center \nAcknowledgments: \n"
+    },
+    {
+      "locator": "page 63",
+      "text": "PMMA sphere burning in 17% O2 with occasional vapor jetting \nQuestions? \n"
+    }
+  ],
+  "details": {
+    "page_count": 63,
+    "empty_pages": [
+      5,
+      27,
+      29,
+      33,
+      35,
+      53,
+      55,
+      58
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

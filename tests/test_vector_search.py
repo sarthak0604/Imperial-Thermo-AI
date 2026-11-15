@@ -1,7 +1,7 @@
 """Synthetic vector retrieval and contract tests. SI: OpenAI Codex."""
 import copy
 import unittest
-from imperial_thermo_ai.vector_search import VectorGraphSearch, fingerprint, MODEL_ID
+from imperial_thermo_ai.vector_search import VectorGraphSearch, documents, fingerprint, MODEL_ID
 from imperial_thermo_ai.file_contract import SearchResults
 
 
@@ -26,6 +26,19 @@ def fixture():
 
 
 class VectorTests(unittest.TestCase):
+    def test_large_table_context_is_bounded_and_deduplicated(self):
+        graph, _ = fixture()
+        for i in range(30):
+            key = f'exp:row:{i}'
+            graph['nodes'].append({'id': key, 'type': 'Experiment', 'properties': {'summary': 'Source row ' * 300}})
+            graph['edges'].extend([
+                dict(id=f'contains:{i}', source='inv:PSI-test', target=key, type='CONTAINS', properties={}),
+                dict(id=f'resource:{i}', source=key, target='file:0', type='HAS_RESOURCE', properties={}),
+            ])
+        text = documents(graph)['file:0']
+        self.assertLessEqual(len(text), 24000)
+        self.assertEqual(text.count('"title": "Synthetic"'), 1)
+
     def test_both_modes_emit_all_media_and_exact_contract(self):
         service = VectorGraphSearch(*fixture())
         for search in (service.local_search, service.global_search):

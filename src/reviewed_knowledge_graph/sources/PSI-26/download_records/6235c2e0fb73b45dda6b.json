@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:6235c2e0fb73b45dda6b",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_Drawing_SPICE_FanHousing.pdf",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_Drawing_SPICE_FanHousing.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 133889,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcf8c3501a37c2c60dcb&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/6235c2e0fb73b45dda6b/PSI-26_Engineering Documents_Drawing_SPICE_FanHousing.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "6bde62edd1925e041e8643cc986b8063ca49de5bd58793a304f979b816f8bc11",
+  "status": "downloaded"
+}

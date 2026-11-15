@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-23:14cc1854f202bb7b7727",
+  "study": "PSI-23",
+  "filename": "PSI-23_Experimental table_ACME s-Flame.csv",
+  "key": "psi-data/PSI-23/Experimental table/PSI-23_Experimental table_ACME s-Flame.csv",
+  "category": "Experimental table",
+  "size_bytes": 2456,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=679166d7b7b6ff8e6502c1ca&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/14cc1854f202bb7b7727/PSI-23_Experimental table_ACME s-Flame.csv",
+  "sha256": "16cd10f50bd2e962887c8eb4077e5a9b3e790c78de8e0361c0b77e19300be7cf",
+  "status": "downloaded"
+}

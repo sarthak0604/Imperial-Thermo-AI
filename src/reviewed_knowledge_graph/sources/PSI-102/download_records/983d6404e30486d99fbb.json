@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:983d6404e30486d99fbb",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_DBP  GMT257hkp.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_DBP  GMT257hkp.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 1202176,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d4ef91ab4427dbf4406&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/983d6404e30486d99fbb/PSI-102_Analyzed Data_DBP  GMT257hkp.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "e415fa37ebabe8f458f41fb3b3c7057d0a81039cc9ca39faa3a5691ded2fbc0a",
+  "status": "downloaded"
+}

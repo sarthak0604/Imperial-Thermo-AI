@@ -1,0 +1,217 @@
+{
+  "id": "res:PSI-23:142064ebcc6e59e55ba2",
+  "study": "PSI-23",
+  "filename": "PSI-23_Engineering Documents_s-Flame_RDR_201005.pdf",
+  "key": "psi-data/PSI-23/Engineering Documents/PSI-23_Engineering Documents_s-Flame_RDR_201005.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 1045448,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdf16daf91e274ceca0a&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/142064ebcc6e59e55ba2/PSI-23_Engineering Documents_s-Flame_RDR_201005.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "1c752c0871ede997458a2afb259a1095d2f8b566c5514d9cba4d78fc45f2c97e",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "s-Flame\nPrincipal Investigator: Chung K. Law\nPrinceton University\nCo-Investigator:  Stephen D. Tse\nRutgers University\nCo-Investigator:  Kurt R. Sacksteder\nNASA Glenn Research Center\nNASA ACME RDR\nNASA ACME RDR\nMiddleburg Heights, OH\n0\n0\ng\ng\n,\nMay 10, 2010\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Outline\nOutline\ns-Flame\n• Summary Introduction\n• Experimental Objectives\n• Experimental Objectives\n• Experimental Approach to Achieve \nObjectives\nObjectives\n• Justification for Extended Microgravity \nDuration\nDuration\n• Other Requirements – Burner\n• Operation Sequence (Experiment Plan)\nOperation Sequence (Experiment Plan)\n• Summary of Test Matrix Parameters\n• Success Criteria\n1\n1\nSuccess Criteria\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "Goals\ns-Flame\nGoals\n• Use spherical diffusion flames in long-duration µg \nenvironment to:\nenvironment to: \n– obtain experimental data of exceptional quality in \nsimple, well-defined flow fields.\n– understand various key elemental diffusion flame \nprocesses.\n• Compare these data with those obtained through\nCompare these data with those obtained through \nindependent computational simulation with detailed \nchemistry and transport in order to:\ni i\nd i\nh\nd\n– scrutinize and improve the accuracy and \ncomprehensiveness of these descriptions.\n2\n2\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Merits of One-Dimensional Flames \ns-Flame\nfor Fundamental Studies\n• Flame structure fundamentally affected by \naerodynamics.\n• Simple flow and flame configuration facilitate \nexperimentation, computation, analysis, and \ncomparison, with enhanced accuracy and reliability.\np\ny\ny\n• Reduced effort in describing flows allows more \ndetailed study of other aspects of flames such as \nchemistry\nchemistry.\n• A one-dimensional flame is the simplest possible \nconfiguration.\n3\n3\ng\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "Merits of Burner-Generated\nS h\ni\nl Diff\ni\nFl\ns-Flame\n•\nOnly spherical (vs planar and cylindrical) configuration admits\nSpherical Diffusion Flames\n•\nOnly spherical (vs. planar and cylindrical) configuration admits \nsteady-state 1D behavior in semi-infinite domain.\n•\nSpherically symmetric droplet combustion complicated by \ntransient effects due to droplet heating and surface regression\ntransient effects due to droplet heating and surface regression. \nKinetics of large HC fuels also less well established.\n•\nBurner generation assures\nd\nf\nb\nd\nF\nO\nF\nO\nsteady-state surface boundary\nconditions.\nSpherical Burner Flame\nBurner\nSurface \nregressing\nDroplet\nDroplet Flame\nO\nFlame\n•\nPlanar flame in counterflow is not 1D\nin terms of diffusion-convection as \nDiffusion\nStagnation \nsurface\nFlame\n•\n4\n4\nwell as radiation misalignment.\nCounterflow Flame\nF\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "s-Flame\nFocus A:\nExperimentation on \nFocus B:\nDevelopment of \np\nElemental (Diffusion) \nFlame Processes\np\nFundamental Physical & \nChemical Database\n• Spreading of diffusion \nflame sheets\n• Detailed fuel oxidation \nmechanisms\nflame sheets\n• Dual extinction states\n• Flamefront instabilities\nmechanisms\n• Reduced fuel oxidation \nmechanisms\n• Diffusion coefficients\n• Radiation models\n5\n5\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "The Role of µg Spherical Diffusion Flame in \ns-Flame\nComprehensive Mechanism Development\n• Substantial research on homogeneous systems (shock\n• Substantial research on homogeneous systems (shock \ntubes, flow reactors, etc.) and premixed flames\n• Diffusion flame experiments mostly involve counter-\nd\ni\nfl\nd d\nl\nfl\nand stagnation flows, and droplet flames\n• Burner-supported spherical flame is 1D and steady state\n• Experiments of interest to chemistry are those involving\n• Experiments of interest to chemistry are those involving \nignition and extinction.\n• Experiments for situations away from extinction would \np\ny\nyield information on the diffusion and radiation \nparameters. \n6\n6\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Article Published Since SCR\ns-Flame\nYang, F., Law, C.K., Sung, C.J., Zhang, H.Q. \"A \nmechanistic study of Soret diffusion in hydrogen-air \nflames\" Combustion and Flame 157, 192-200, 2010.\n,\n,\n7\n7\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "Experimental Objectives\ns-Flame\np\nj\nObjective A. Flame Structure Evolution: Measure and \nh\nt i\nth t\ni\nt t\nt\n(\nh\nt\nt\nd\ncharacterize the transient structure (such as temperature and \nspecies distribution) of\ndiffusion flames established\nat initially non-steady,\nspherical flame structures\nfor mixtures of different\nfor mixtures of different\nH2/CH4/diluent ratios\n(soot-free) and different\nC H /dil ent ratios (soot )\nC2H4/diluent ratios (sooty),\nfor different flow rates.\n8\n8\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "Experimental Objectives\ns-Flame\np\nj\nObjective B. Dual Extinction Limits at Low and High \nSystem Damköhler numbers Da: Determine the quasi\nSystem Damköhler numbers, Da: Determine the quasi-\nsteady convective/chemical-kinetic extinction limits (low \nsystem Da) and radiative/chemical-kinetic extinction limits \n(high system Da) for mixtures of different\nH2/CH4/diluent ratios (soot-free)\nand different C2H4/diluent\ne\nPurely Kinetic\nExtinction\nRadiative\nExtinction\n2\n4\nratios (sooty).\nTemperature\nMax \n9\n9\nSystem Damkohler Number\nSystem \nNumber\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "Experimental Objectives\ns-Flame\np\nj\nObjective C. Flame Front Instabilities in Non-\nP\ni\nd Fl\nD\ni\nh\ni\n(f\ndiff\nPremixed Flames:  Determine the existence (for different \nZel’dovich number, Ze), onset\n(as a function Da), and\n(as a function Da), and\nnature (i.e. mode, frequency,\namplitude) of pulsating\ninstabilities theoretically\npredicted to occur in transient\nspherical diffusion flames\nspherical diffusion flames\nusing fuel/diluent mixtures\nthat are above a critical\n10\n10\nLewis number.\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "Oscillatory Response Prior to \ns-Flame\nExtinction\n•\n50%CH4 / 50%He vs. air (LeF = 2.3, Leo = 1.9)\n4\n(\nF\n,\no\n)\n•\nOscillation observed at both kinetic and radiation extinction \nlimits\nKi\ni E i\ni\nR di ti\nE ti\nti\nKinetic Extinction\nRadiation Extinction\n11\n11\nComputation\n"
+    },
+    {
+      "locator": "page 13",
+      "text": "Experiment Setup and Approach\ns-Flame\n• A series of experiments is proposed in which mixtures of various \ngaseous fuels, diluents and oxygen will be issued into an oxidizing \nenvironment through a spherical porous burner and ignited to\np\np\npp\nenvironment through a spherical porous burner and ignited to \nnominally obtain a spherical, one-dimensional stabilized flame\n• All experimental sets will address transient phenomenon, as flame \nevolves from localized ignition towards “steady” behavior\nDiffusion Flame\nOxidizing (Fuel) Environment\nT\nDiffusion Flame\nOxidizing (Fuel) Environment\nT\nSteady\nrned\nTransient\nPorous Burner\nr-r0\nPorous Burner\nr-r0\nFuel Bur\n• Various mixtures to assess both chemical and transport effects on \nFuel (Oxidizer)\nFuel (Oxidizer)\nFuel Ejected\nFlame spread behavior\n12\n12\np\nflame behavior\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "Achieving Objective A\ns-Flame\ng\nj\n• Objective A – Flame Structure Evolution\n–Fuel/diluent mixtures will be issued from the spherical \nburner and ignited at flow rates expected to form flames \nthat evolve toward idealized steady-state conditions\nthat evolve toward idealized steady state conditions.\n–As the flame spreads outward, transient measurements of \nflame front velocity and flame structure will be obtained \nusing imaging and radiometric systems.  \n–The flame characteristics will be compared with the \ndi i\nf h\ni\ni\nl i\nl i\nf\npredictions of the transient numerical simulation of \nspherical diffusion flames for evaluations of detailed \nchemical kinetic and transport models.\n13\n13\np\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "Flame Structure Evolution SDEP A1 -\ns-Flame\nDirect Color (Visible) Imaging\n• Sequence of color and OH* images of the flame as a \n• Visible Chemiluminescence (CH*)\nq\ng\nfunction of time, flow rate, and fuel composition. \nVisible Chemiluminescence (CH )\n• Soot incandescence\n• Assess flame symmetry and influence of feed tube\n14\n14\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Flame Structure Evolution SDEP A1 \ns-Flame\n- UV Imaging \n• Chemiluminescence from OH* (310nm)\nCh\ni\n(\ni\ni h\ni\n)\n• Chemistry (comparisons with computations)\n• Indirect assessment of flame structure\nr - ←→r +\n    r ←→r \nProjection Image (310nm)\nAbel deconvoluted image\n• 9%O2/91%N2, m = 0.078 g/s, into 100%H2 at 0.079 atm \nX bi\nIMC 201 i t\nifi d\nlti\nt l id\nith filt\n15\n15\n• Xybion IMC-201 intensified multispectral video camera with filter\n• OH* chemiluminescence \n"
+    },
+    {
+      "locator": "page 17",
+      "text": "Flame Structure Evolution SDEP A2\ns-Flame\n• Visible flame radius as a function of time, flow rate, \nand fuel composition. \np\n• Requirements\n• Color images\n2.0\n2.0\n• UV images\n1 0\n1.5\nus (cm)\n1 0\n1.5\nus (cm)\n0.5\n1.0\nmax T (no radiation)\nmax CH* (no radiation)\nmax T (SNB reabsorption)\nRadiu\n0.5\n1.0\nmax T (no radiation)\nmax CH* (no radiation)\nmax T (SNB reabsorption)\nRadiu\n0\n0\n0.5\n1.0\n1.5\n2.0\n2.5\n3.0\n(\np\n)\nmax CH* (SNB reabsorption)\nexperimental data\ni\n( )\n0\n0\n0.5\n1.0\n1.5\n2.0\n2.5\n3.0\n(\np\n)\nmax CH* (SNB reabsorption)\nexperimental data\ni\n( )\n16\n16\nTime (s)\nTime (s)\n"
+    },
+    {
+      "locator": "page 18",
+      "text": "Flame Structure Evolution SDEP A3\ns-Flame• Temperature (and desired major species) radial \ndistribution as a function of time, flow rate, and fuel \ni i\ncomposition.\n• Requirements\n• Temperature profiles\nTemperature profiles\nTemperature Profiles -- Constant Pressure Chamber (100L)\nAdiabatic\n2500\nTemperature Profiles -- Constant Volume Chamber (100L)\nAdiabatic\n2500\n1500\n2000\nrature (K)\nt=0.1s\nt=0.2s\nt=0.5s\nt=1.0s\nt=2.0s\n1500\n2000\nrature (K)\nt=0.1s\nt=0.2s\nt=0.5s\nt=1.0s\nt=2.0s\n0\n500\n1000\nTemper\nt\n0s\nt=5.0s\nt=10s\nt=20s\nt=50s\n0\n500\n1000\nTemper\nt=5.0s\nt=10s\nt=20s\nt=25s\nt=50s\n17\n17\n0\n5\n10\n15\n20\n25\n30\nRadius (cm)\n0\n5\n10\n15\n20\n25\n30\nRadius (cm)\n20%H2-25%CH4-55%N2 into air, m=15.72mg/s\n"
+    },
+    {
+      "locator": "page 19",
+      "text": "Flame Structure Evolution SDEP A4\ns-Flame• Soot onset (determined from visible luminescence \nversus soot extinction measurements) as a function of \ndii f\ndiff\nfl\nd f\nl\ni i\nradii for different flow rates and fuel compositions.\n• Requirements\n• Color images\nColor images\n• Soot volume fraction measurements\n• Temperature profiles\ne.g. 25%C3H8 / 2%O2 / 49% Ar / 24% N2\nHigh flow rate\n18\n18\nLow flow rate\n"
+    },
+    {
+      "locator": "page 20",
+      "text": "Achieving Objective B\ns-Flame\ng\nj\n• Objective B – Quasi-Steady Extinction Limits, Low Da\nF\nl/i\ni\nill b i\nd f\nh\nh i\nl b\nd\n–Fuel/inert mixtures will be issued from the spherical burner and \nignited at initial flow rates expected (or known/observed) to \nform flames that evolve toward idealized steady-state conditions.  \n–Following ignition and initial flame front movement, the \nfuel/inert flow rate will be abruptly reduced to a second flow \nrate below the expected extinction limit\nrate below the expected extinction limit.  \n–Quasi-steady extinction is expected to occur as the flame adjusts \nto the reduced flow rate.  \n–To refine the determination of the extinction flow rate for each \nfuel/diluent mixture, repeated tests are to be conducted at \nsuccessively lower initial flow rates and higher secondary flow\n19\n19\nsuccessively lower initial flow rates and higher secondary flow \nrates. \n"
+    },
+    {
+      "locator": "page 21",
+      "text": "Achieving Objective B  (cont.)\ns-Flame\ng\nj\n(\n)\n• Objective B – Quasi-Steady Extinction Limits, Low Da\n–At the low Da extinction limit, chemical kinetic rates are \nretarded with respect to flow rates by inert gas in the fuel \nstream that reduces the flame temperature\nstream that reduces the flame temperature.\n–Based on theoretical predictions, fuel/inert mixtures are to \nbe chosen for which the extinction flame radius is large \ng\nenough to minimize the effects of heat loss to the burner.\n–The surface temperature of the burner will be directly \nmeasured to quantify this loss.\n20\n20\n"
+    },
+    {
+      "locator": "page 22",
+      "text": "Achieving Objective B  (cont.)\ns-Flame\ng\nj\n(\n)\n• Objective B – Quasi-Steady Extinction Limits, High Da\n–Fuel/inert mixtures will be issued from the spherical burner \nand ignited at flow rates above and beyond those expected \n(or known/observed) to form steady flames when radiative\n(or known/observed) to form steady flames when radiative \nloss is considered.  \n–The quasi-steady extinction is expected to occur as the \nq\ny\np\nflame moves outward before reaching the adiabatic steady-\nstate radius.\n–Rates of radiative emissions from the flame and radiative \nreabsorption elsewhere are to be accentuated in some cases \nby using a radiatively active diluent such as CO2\n21\n21\nby using a radiatively active diluent such as CO2.\n"
+    },
+    {
+      "locator": "page 23",
+      "text": "Extinction Limits SDEP B1, B2, B4\ns-Flame• B1) Extinction limits as a function of system \nDamköhler number.\n,\n,\n• B2) Total radiation loss as a function of radius for \ndifferent flow rates and fuel compositions.\n• B4) Radiation loss versus time for sooty flames for\nB4) Radiation loss versus time for sooty flames, for \ndifferent flow rates and fuel compositions. \n• Requirements\nAdiabatic\nAdiabatic\n• Temperature profiles\n• Color images\n• UV images\nRadiative\nm Temperature\nRadiative\nm Temperature\n• UV images\n• Mass flow rate\n• Radiometer data\nKinetic \nExtinction\nRadiation \nExtinction\nMaximum\nKinetic \nExtinction\nRadiation \nExtinction\nMaximum\n22\n22\nMass Flow Rate\nMass Flow Rate\n"
+    },
+    {
+      "locator": "page 24",
+      "text": "Extinction Limits SDEP B3\ns-Flame\n• Peak CH* or OH* chemiluminescence along with \npeak temperature as a function of radius, for different \ntimes, flow rates, and fuel compositions.\n• Requirements\n• Requirements\n• UV images (OH* filter)\n• Temperature profiles\n• Assess evolving flame structure\n• Assess moment of LOCAL flame extinction (based on \nprecipitous drop in local peak temperature)\n• T\nk fl\nf\nt\nti\nb\nd\nk t\nt\n• Track flamefront motion based on peak temperature\n• Radial temperature profile to be provided by thin filament \npyrometry\n23\n23\n"
+    },
+    {
+      "locator": "page 25",
+      "text": "Extinction – Quasi-steady\ns-Flame\ny\n2.5\n3.0\nm)\nSNB reabsorption\nVisible Luminosity Consideration\n0.5\n1.0\n1.5\n2.0\nmax T (no radiation)\nmax CH* (no radiation)\nmax T (T&H thin)\nmax CH* (T&H thin)\nmax T (SNB reabsorption)\nStandoff Distance (cm\nT&H thin\n1.5 10\n-9\n2.0 10\n-9\n2.5 10\n-9\nk[CH*] profiles (non-radiative)\nPeak k[CH*] (non-radiative)\nPeak k[CH*] (T&H-thin)\nSteady-state peak k[CH*] (non-radiative)\ntons / (cm3⋅s)\n0\n0\n0.5\n1.0\n1.5\n2.0\n2.5\n3.0\nmax T (SNB reabsorption)\nmax CH* (SNB reabsorption)\nexperimental data\nTime (s)\n2000\nno radiation\n0\n5.0 10\n-10\n1.0 10\n-9\nMoles-of-phot\n•\n1400\n1600\n1800\nmum Temperature (K)\n1000\n1500\n2000\nerature (K)\n1000\n1200\n0\n0.5\n1.0\n1.5\n2.0\n2.5\n3.0\nTime (s)\nMaxim\nSNB reabsorption\nSNB thin\nT&H thin\n0\n500\n0.5\n1.0\n1.5\n2.0\n2.5\n3.0\n3.5\n4.0\nT profiles (non-radiative)\nT at peak k[CH*] (non-radiative)\nT at peak k[CH*] (T&H-thin)\nSteady-state T at peak k[CH*] (non-radiative)\nTempe\n24\n24\n20%H2-25%CH4-55%N2 (15.72mg/s) into STP air\nRadius (cm)\n•\n"
+    },
+    {
+      "locator": "page 26",
+      "text": "Achieving Objective C\ns-Flame\ng\nj\n• Objective C – Flame Front Instabilities\n–Pulsating flame front instabilities are predicted to occur \nnear the extinction conditions at both low and high Da.\n–The approach taken to observe the instabilities is similar to\nThe approach taken to observe the instabilities is similar to \nthe approach for observing extinction except fuel/diluent \nmixtures with large system Lewis numbers (Le) are used.\n• Low Da: moderate initial flow rate, abrupt change to flow rate\nLow Da: moderate initial flow rate, abrupt change to flow rate \nbelow predicted extinction rate.\n• High Da: initial flow rate above predicted extinction flow rate \nwith radiation.\n• Instabilities are expected to appear before extinction.\n–Radiating diluents are used to further encourage the \ninstabilities\n25\n25\ninstabilities.\n"
+    },
+    {
+      "locator": "page 27",
+      "text": "Instabilities SDEP C1, C2, C3, C4\ns-Flame•\nC1) Total chemiluminescence as a function of time.\n•\nC2) Total radiation loss (based on radiation flux) as a function of \nradius for different flow rates and fuel compositions\n,\n,\n,\nradius, for different flow rates and fuel compositions.\n•\nC3) Oscillation mode, frequency, and amplitude near extinction as \na function of flow rate for flames of different Le and mass flow \nrates.\n•\nC4) Comparison of extinction times and extinction radii as a \nfunction of flow rate, for different fuel compositions.\n•\nRequirements\n• PMT (chemiluminescence)\n• Radiometer data\n• Color images\ng\n• UV images\n• Temperature profiles\n• Mass flow rate\n26\n26\n"
+    },
+    {
+      "locator": "page 28",
+      "text": "Radiation Flux Measurement\ns-Flame\n• Global/local flame radiation measured at faster rate than cameras to \ncapture “high” frequency oscillation\n• Assess radiation heat transfer\n• Flame movement often small\n27\n27\n• Help to assess extinction moment\n"
+    },
+    {
+      "locator": "page 29",
+      "text": "Extinction - Oscillatory\ns-Flame\ny\nMicro-buoyancy Experimentation\n(F\nl H d\n)\n(Fuel: Hydrogen)\nKinetic Extinction\nRadiation Extinction\n28\n28\n"
+    },
+    {
+      "locator": "page 30",
+      "text": "Instabilities SDEP C5\ns-Flame\n• Soot radial distribution as a function of time for \ndifferent flow rates and fuel compositions during fully \ntransient flame front movement\nR\ni\n• Requirements\n• Color images\n• Temperature profiles\n• Soot volume fraction measurements\n29\n29\n"
+    },
+    {
+      "locator": "page 31",
+      "text": "Justification for Space-Flight\ns-Flame\n• High-quality and sufficient duration microgravity\nFacility\n• Transient evolution to “steady-state”\n• Radiative extinction\n• Flame instability\n• Multi-staged flow for kinetic extinction\n• Computation comparison (need 1-D flames)\n• Diagnostics afforded, KEY Æ Flame structure\nUV i\ni\n• UV imaging\n• Radiometer\n• Temperature profile\n30\n30\n• Temperature profile\n"
+    },
+    {
+      "locator": "page 32",
+      "text": "Limitations of Ground-Based Testing\ns-Flame\ng\n• Inverse-flame configuration in n-g is limited and \nconstrained\n9%O /91%N\n0 078 /\ni\n100%H\n0 079\nAi i\nCH\n0 079\n9%O2/91%N2, m = 0.078 g/s, into 100%H2 at 0.079 atm\nAir into CH4 at 0.079 atm\nOH* chemiluminesence\nH2O infrared emission\n• Durations in 2.2-s and 5.0-s drop towers insufficient \nto observe radiative extinction\nComparistion of Extinction Times for Different Mixtures\n2100\n700\n900\n1100\n1300\n1500\n1700\n1900\nMax Temp (K)\n25%H2-20%CH4-55%N2, 0.01055g/s\n`\n• Radiative extinction never \nobserved in parabolic aircraft (up \nto 10s lo\n) Æ\njitter G\nl3\n300\n500\n0\n5\n10\n15\n20\n25\n30\n35\nTime (s)\n50%H2-10%CH4-40%N2, 0.0081g/s\n45%H2-55%N2, 0.001g/s\nto 10s low-g)  Æ g-jitter, Gr~l3\n• Need extended duration and high-quality microgravity \nto study diffusion flame oscillations with “low”\n31\n31\nto study diffusion flame oscillations with low \ncharacteristic frequency\n"
+    },
+    {
+      "locator": "page 33",
+      "text": "Other Requirements - Burner\ns-Flame\nq\n• PI provided spherical porous bronze burner can presently provide 0.99 \nsphericity and 0 94 concentricity diffusion flames\nsphericity and 0.94 concentricity diffusion flames.\n50%H2/10%CH4/40%N2 8 1mg/s into STP\n50%H2/10%CH4/40%N2, 8.1mg/s into STP \nair (2.2-s drop tower), ½” burner diameter\n• Burner purpose is only to provide uniform, spherical flow\nΛO\nIndependent of burner size and porosity\n⎟⎟\n⎠\n⎞\n⎜⎜\n⎝\n⎛\n+\n=\n∞\n1\nln\nFR\nO\nO\nf\nY\nfY\nr\nIndependent of burner size and porosity\n(rf >Rb)\n• ¼” (0.635cm) diameter burner preferred to minimize burner effect (i.e.\n32\n32\n¼ (0.635cm) diameter burner preferred to minimize burner effect (i.e. \nachieve small flame dimensions, reduce heat loss to burner)\n"
+    },
+    {
+      "locator": "page 34",
+      "text": "Operation Sequence\ns-Flame\nI.\nEstablish\nchamber\nat\nconstant\npressure\nand\nspecies\nt ti\np\nq\nconcentration\nII.\nDischarge fuel mixture through porous burner at initial flow rate\nIII.\nIgnite fuel mixture and retract upon successful ignition\ng\np\ng\nIV.\nAllow for spherical diffusion flame to evolve\nV.\nApply one of the following:\n\nMaintain flow rate with same initial mixture for duration of \nexperiment (25s) or until extinction\n\nSingle step decrease in flow rate with same initial mixture at \ng\np\nspecified time, maintaining new flow rate for duration of \nexperiment (25s) or until extinction\nVI\nTerminate fuel supply to burner after 25s\n33\n33\nVI.\nTerminate fuel supply to burner after 25s.\n"
+    },
+    {
+      "locator": "page 35",
+      "text": "Experiment Plan\ns-Flame\nPrioritization and Logic\np\nPrioritization and Logic\na)\nTransient phenomenon leading toward steady \nflame\na e\nb)\nExtinction phenomenon at “quasi-steady”-\nstates\nc)\nInstability phenomenon, e.g. Le > 1 \noscillations\nÆ Non-sooty and sooty flames\n34\n34\ny\ny\n"
+    },
+    {
+      "locator": "page 36",
+      "text": "Flow Supply and Flow Rate\ns-Flame\n• Deliver fuel and inert(s) to burner\n• Different flow rates\npp y\n• Small versus large characteristic flame sizes (residence time)\n• Radiative extinction\n• Characteristic time to steady state\n• Ignite at moderate flow rate, establish quasi-steady flame, step \nflow rate down to examine kinetic extinction at small flame radii\nm1\nTemperature\nPurely Kinetic \nExtinction\nRadiation-affected \nExtinction\nTemperature\nPurely Kinetic \nExtinction\nRadiation-affected \nExtinction\nm2\ntime\nMax T\nSystem Damkohler Number\nMax T\nSystem Damkohler Number\n35\n35\n• Provide gas (different compositions) at max flow rate for > 25s\nSystem Damkohler Number\nSystem Damkohler Number\n"
+    },
+    {
+      "locator": "page 37",
+      "text": "Test Matrix - Fuel Mixtures\ns-Flame\n• H2/Inert (Required)\n• Addresses pure hydrogen chemistry\n• Only H2O in radiation considerations\n• Only OH* chemiluminescence\n• CH4/Inert (Required)\ndd\nh\nh\ni\nh\n• Addresses methane chemistry, e.g. GRI-Mech\n• H2O, CO2, CO in radiation considerations\n• H2/CH4/Inert (Required)\n• Addresses chemical kinetics of blended mixture including kinetic\n• Addresses chemical kinetics of blended mixture including kinetic \nextinction\n• Different characteristic radiative extinction times\n• OH* and CH* chemiluminescence\nOH and CH chemiluminescence\n• C2H4 (Highly Desired)\n• Nominally sooty C2 fuel\n• Sooting tendencies depend on characteristic residence time, so different \n36\n36\ng\np\n,\nflow rates must be examined\n"
+    },
+    {
+      "locator": "page 38",
+      "text": "Fuel Mixtures\ns-Flame\n– 20%H2/25%CH4/Inert, 25%H2/20%CH4/Inert, 30%H2/15%CH4/Inert\n• Addresses chemical kinetics of blended mixture including kinetic\nAddresses chemical kinetics of blended mixture including kinetic \nextinction\n• Different characteristic radiative extinction times\nC\ni\nf E ti\nti\nR di\nf\nDiff\nt Mi t\nComparistion of Extinction Times for Different Mixtures\nComparison of Extinction Radius for Different Mixtures\n3.5\n4\n4.5\nComparistion of Extinction Times for Different Mixtures\n1700\n1900\n2100\n1 5\n2\n2.5\n3\nRadius (cm)\n900\n1100\n1300\n1500\nMax Temp (K)\n`\n0\n0.5\n1\n1.5\n25%H2-20%CH4-55%N2, 0.01055g/s\n50%H2-10%CH4-40%N2, 0.0081g/s\n45%H2-55%N2, 0.001g/s\n300\n500\n700\n900\nM\n25%H2-20%CH4-55%N2, 0.01055g/s\n50%H2-10%CH4-40%N2, 0.0081g/s\n45%H2-55%N2, 0.001g/s\n37\n37\n0\n5\n10\n15\n20\n25\n30\n35\nTime (s)\n0\n5\n10\n15\n20\n25\n30\n35\nTime (s)\n"
+    },
+    {
+      "locator": "page 39",
+      "text": "Test Matrix - Inerts\ns-Flame\n• Different inerts to affect diffusive properties, radiative \nproperties, and flame temperature \n– N2 (Required)\n• Moderate flame temperature\n• Radiatively transparent\n• Normal “air”\n– He (Required)\n• Higher flame temperature\nR di i\nl\n• Radiatively transparent\n• High-Lewis number promoting pulsating instability\n– CO2 (Desired)\n• Lower flame temperature\n• Lower flame temperature\n• Optically participating medium (highly reabsorptive species)\n• All inerts fixed at 0.55 mole fraction for non C2H2 fuel \nmixtures\n38\n38\nmixtures\n"
+    },
+    {
+      "locator": "page 40",
+      "text": "Test- Matrix Ambient Environment\ns-Flame\n• STP\n• Different sets of ambient gas mixtures to alter characteristic flame \ntemperatures, diffusive transport, and radiative properties\n• “Air”:  0.21 O2, 0.79 N2 (Required)\n• “He-Air”:   0.21 O2, 0.79 He (Required)\n• “CO2-Air”:  0.21 O2, 0.79 CO2 (Desired)\n• Specified to within 1% mole fraction\n• Ambient gas may be scrubbed and recycled for subsequent tests\n39\n39\n"
+    },
+    {
+      "locator": "page 41",
+      "text": "Minimal Success\ns-Flame\n• Observations of transient flame phenomena leading toward \np\ng\nsteady state flames for 1 CH4 case and 1 C2H4 case; or\n• Observations of flame extinction at both low and high \nsystem Damköhler number for 1 case; or\n• Observations of spherical soot formation in 1 C2H4 case.\n2\n4\n40\n40\n"
+    },
+    {
+      "locator": "page 42",
+      "text": "Significant Success\ns-Flame\ng\n•\nObservations of at least two instances of flame front\n•\nObservations of at least two instances of flame front \ninstabilities including at least one hydrocarbon fuel; or\n•\nCombinations or extensions (in terms of number of \nmixture ratios for a single hydrocarbon fuel or number of\nmixture ratios for a single hydrocarbon fuel or number of \nhydrocarbon fuels) of at least two of items\n41\n41\n"
+    },
+    {
+      "locator": "page 43",
+      "text": "Complete Success\ns-Flame\np\n•\nObservations of transient flame phenomena leading toward \nsteady state flames for at least three different mixture\nsteady state flames for at least three different mixture \nratios of each of two hydrocarbon fuels and two diluents; \nand\n•\nObservations of flame extinction at both low and high \nsystem Damköhler number for at least three different \nmixture ratios of each of two hydrocarbon fuels and two \ny\ndiluents; and\n•\nObservations of at least two instances of flame front \ni\nbili i\nh i\nl di\nl\nh d\nb\nf\nl\ninstabilities each including at least one hydrocarbon fuel; \nand\n•\nObservations of soot formation.\n42\n42\nObservations of soot formation.\n"
+    },
+    {
+      "locator": "page 44",
+      "text": "Other Team Members\ns-Flame\n•\nSean Yoo, Princeton doctoral student, graduated with \nPh D in 2006\nPh.D. in 2006.\n•\nHeyang Wang, Princeton doctoral student, graduated with \nPh.D. in 2007.\n•\nGrunde Jomaas, Princeton doctoral student, graduated \nwith Ph.D. in 2008.\n•\nYuxuan Xin 3rd year Princeton doctoral student\n•\nYuxuan Xin, 3rd year Princeton doctoral student.\n•\nXiaofei Liu, Rutgers doctoral student, graduated with \nPh.D. in 2009.\n43\n43\n"
+    },
+    {
+      "locator": "page 45",
+      "text": "Test Matrix (1/4)\ns-Flame\n(\n)\nExp\nSub\nFuel Mixture\nAmbient\nFlow rate (cc/s)\nNo of runs\nREQUIRED\nExp \nSet \nSub \nSet \nFuel Mixture\nAmbient\nFlow rate (cc/s)\nNo. of runs\n1 \n \n(a) \n \n \n25%H2/20%CH4/55%N2 \n \n \n21%O2/79%N2 \n(i) 5 (entire duration, 25s) \n(ii) 10 (entire duration, 25s) \n(iii) 15 (entire duration, 25s) \n(iv) 10 (5s)Æ2 (rest of duration)\n5 \n \n \n \n \n \n(b) \n \n \n \n \n \n20%H2/25%CH4/55%N2 \n \n \n(iv) 10 (5s)Æ2 (rest of duration)\n(v) 5 (5s)Æ2 (rest of duration) \n \n(i) through (v) as shown above \n \n \n \n \n5 \n \n(c) \n \n(d) \n \n \n30%H2/15%CH4/55%N2 \n \n45%H2/55%N2 \n \n \n(i) through (v) as shown above \n \n(x) 1 (entire duration, 25s) \n(y) 2 (entire duration, 25s) \n(z) 2 (5s)Æ0.5 (rest of duration) \n5 \n \n3 \n \n \n \n(e) \n \n45%CH4/55%N2 \n \n(i) through (v) as shown in (a) \n5 \n \n44\n44\n"
+    },
+    {
+      "locator": "page 46",
+      "text": "Test Matrix (2/4)\ns-Flame\n(\n)\nREQUIRED Continued…\n2 \n \n(a) \n \n \n \n \n25%H2/20%CH4/55%He \n \n \n \n \n21%O2/79%He \n(i) 5 (entire duration, 25s) \n(ii) 10 (entire duration, 25s) \n(iii) 15 (entire duration, 25s) \n(iv) 10 (5s)Æ2 (rest of duration) \n(v) 5 (5s)Æ2 (rest of duration)\n5 \n \n \n \n \n(b) \n \n \n(c) \n \n20%H2/25%CH4/55%He  \n \n \n30%H2/15%CH4/55%He  \n( )\n(\n)\n(\n)\n \n(i) through (v) as shown above \n \n \n(i) through (v) as shown above \n \n5 \n \n \n5 \n \n(d) \n \n \n \n( )\n \n45%H2/55%He \n \n \n \n4 %C\n/\n%\n \n(x) 1 (entire duration, 25s) \n(y) 2 (entire duration, 25s) \n(z) 2 (5s)Æ0.5 (rest of duration) \n \n(i) h\nh ( )\nh\ni ( )\n3 \n \n \n \n(e) \n45%CH4/55%He\n(i) through (v) as shown in (a)\n5\n \n \n \n \n \nTotal:  46\n \n45\n45\n"
+    },
+    {
+      "locator": "page 47",
+      "text": "Test Matrix (3/4)\ns-Flame\n(\n)\nHIGHLY DESIRED\nExp \nSet \nSub \nSet \nFuel Mixture \nAmbient \nFlow rate (cc/s) \nNo. of runs\n3 \n \n(a) \n \n20%C2H4/80%N2 \n \n21%O2/79%N2 \n(i) 5 (entire duration, 25s) \n(ii) 10 (entire duration, 25s) \n2 \n \n \n(b) \n \n(c) \n \n25%C2H4/75%N2 \n \n30%C2H4/70%N2 \n \n(i) and (ii) as shown above \n \n(i) and (ii) as shown above \n2 \n \n2 \n4 \n(a) \n20%C2H4/80%He  \n21%O2/79%He \n(i) 5 (entire duration, 25s) \n(ii) 10 (entire duration, 25s)\n2 \n \n \n \n(b) \n \n(c) \n \n \n25%C2H4/75%He \n \n30%C2H4/70%He \n(ii) 10 (entire duration, 25s)\n \n(i) and (ii) as shown above \n \n(i) and (ii) as shown above \n \n2 \n \n2 \n \n \nTotal:  12\n \n46\n46\n"
+    },
+    {
+      "locator": "page 48",
+      "text": "Test Matrix (4/4)\ns-Flame\n(\n)\nExp \nSet \nSub \nSet \nFuel Mixture \nAmbient \nFlow rate (cc/s) \nNo. of runs\n( )\n2 %\n/20%C\n/\n%CO\n21%O / 9%CO\n(i)\n(\ni\nd\ni\n2\n)\nDESIRED\n5 \n \n(a) \n \n \n \n \n25%H2/20%CH4/55%CO2\n \n \n \n \n21%O2/79%CO2\n(i) 5 (entire duration, 25s)\n(ii) 10 (entire duration, 25s) \n(iii) 15 (entire duration, 25s) \n(iv) 10 (5s)Æ2 (rest of duration) \n(v) 5 (5s)Æ2 (rest of duration) \n5\n \n \n \n \n \n(b) \n \n(c) \n \n(d)\n \n20%H2/25%CH4/55%CO2 \n \n30%H2/15%CH4/55%CO2 \n \n45%H2/55%CO2\n \n(i) through (v) as shown above \n \n(i) through (v) as shown above \n \n(x) 1 (entire duration 25s)\n5 \n \n5 \n \n3\n(d) \n \n \n \n(e) \n45%H2/55%CO2\n \n \n \n45%CH4/55%CO2 \n(x) 1 (entire duration, 25s)\n(y) 2 (entire duration, 25s) \n(z) 2 (5s)Æ0.5 (rest of duration) \n \n(i) through (v) as shown in (a) \n3\n \n \n \n5 \n6\n(a)\n20%C2H4/80%CO2\n(i) 5 (entire duration, 25s)\n2\n6 \n \n(a) \n \n \n(b) \n \n(c) \n20%C2H4/80%CO2\n \n \n25%C2H4/75%CO2 \n \n30%C2H4/70%CO2\n(i) 5 (entire duration, 25s)\n(ii) 10 (entire duration, 25s) \n \n(i) and (ii) as shown above \n \n(i) and (ii) as shown above \n2\n \n \n2 \n \n2\n47\n47\n( )\n2\n4\n2\n( )\n( )\n \n \n \n \n \nTotal:  29\n \n"
+    }
+  ],
+  "details": {
+    "page_count": 48,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

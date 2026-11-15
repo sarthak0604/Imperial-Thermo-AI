@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:b8bea68be2634b12d2db",
+  "study": "PSI-102",
+  "filename": "PSI-102_Presentations_SAME2_FlightVSGroundTestResults.pptx",
+  "key": "psi-data/PSI-102/Presentations/PSI-102_Presentations_SAME2_FlightVSGroundTestResults.pptx",
+  "category": "Presentations",
+  "size_bytes": 5634955,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d53f91ab4427dbf443b&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/b8bea68be2634b12d2db/PSI-102_Presentations_SAME2_FlightVSGroundTestResults.pptx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "0e8480e701f437c2fd7f7434df7acb56df8f493f1ceb62b0994829f396771f34",
+  "status": "downloaded"
+}

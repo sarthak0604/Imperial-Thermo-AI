@@ -19,7 +19,13 @@ docker run --rm --env OPENAI_API_KEY --env OPENAI_MODEL \
   --prompt "Calculate heat release and show the test video"
 ```
 
-Place real graph-search results in `runtime/search-results.json`. Configure
+Alternatively omit `--search-results` and supply a prompt to search the bundled
+reviewed NASA PSI graph before planning. `--graph /data/knowledge_graph.json`
+or `THERMO_GRAPH` selects another reviewed-schema snapshot. The wheel includes
+the canonical combined graph and source-quality issues; source inventories,
+extracted documents and duplicate ZIP exports are excluded from the image.
+
+Place precomputed graph-search results in `runtime/search-results.json`. Configure
 credentials through your runtime secret mechanism. Standard output contains the
 frontend response JSON. Selected datasets are fetched into temporary storage and
 removed after execution. The image requires job arguments; launching it without

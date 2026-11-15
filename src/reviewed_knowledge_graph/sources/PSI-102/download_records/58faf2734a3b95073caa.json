@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:58faf2734a3b95073caa",
+  "study": "PSI-102",
+  "filename": "PSI-102_Engineering Documents_Fluids Control Unit, Schematic, left side.pdf",
+  "key": "psi-data/PSI-102/Engineering Documents/PSI-102_Engineering Documents_Fluids Control Unit, Schematic, left side.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 1163952,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d55f91ab4427dbf4453&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/58faf2734a3b95073caa/PSI-102_Engineering Documents_Fluids Control Unit, Schematic, left side.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "eaa26a8b724d924535c6a95e4498c451fa060dd694271c56c1737bee49459e70",
+  "status": "downloaded"
+}

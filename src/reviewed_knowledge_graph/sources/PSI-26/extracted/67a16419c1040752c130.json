@@ -1,0 +1,78 @@
+{
+  "id": "res:PSI-26:67a16419c1040752c130",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_BASS ERD.pptx",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_BASS ERD.pptx",
+  "category": "Engineering Documents",
+  "size_bytes": 2856973,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcf8c3501a37c2c60dc8&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/67a16419c1040752c130/PSI-26_Engineering Documents_BASS ERD.pptx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "bcc58d965f3e0f0b05d0c700e0d3311ef7a5bd49f96958cb0a11be473ac302be",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "ppt/slides/slide1.xml",
+      "text": "BASS Engineering\n \nRequirements\nGeneral Requirements\nEach Burning And Suppression of Solids (BASS) \ns\nolid \nf\nuel \na\nssembly is mounted inside the Experiment Assembly via a magnetic interface such that it can be installed and removed by the crew.\nSolid fuel ignition will be done with a hot-wire \nKanthol\n material igniter.\nNitrogen gas to be \nused \nfrom 0 to 500 SCCM N\n2.\n  \nInstead of connecting the Experiment Assembly to the gas bottle it is connected via the GN2 hose to the Microgravity Science \nGlovebox\n (MSG) gaseous nitrogen (GN2) \nsupply interface\n.\n3.2 mm normal length and 3.2 mm short length burner tubes will be manifested and used for BASS.\nThe Control Box will be modified to allow the fan flow adjustment to stop the fan when set to its minimum \nas a safety mechanism to extinguish flame.\nParameter Measurement\nMeasurement of the GN2 Flow rate, Fan Voltage, Co-Flow velocity, and flame radiation will be measured and overlaid on the video.\nThe data acquisition rate as measured by SPICE hardware is 4 Hz.\nThe measurement accuracy of ±10% was met by the SPICE hardware prior to its launch.  The measurement accuracy will meet the requirements for BASS.\nImaging Requirements\nThe Field of view of the video is fixed for BASS can not be changed from SPICE.\nThe Still Image requirements are the same as for SPICE.  The BASS still image requirements will be met with the Nikon model D300s digital still camera.\n4/14/2010\n1"
+    },
+    {
+      "locator": "ppt/slides/slide2.xml",
+      "text": "BASS Engineering Requirements\nAcceleration\nBASS testing will be scheduled around planned thruster firing or spacecraft dock or undock\n.\nThe acceleration environment will be measured by the Space Acceleration Measurement System (SAMS) during BASS testing which will be installed into the Microgravity Science \nGlovebox\n (MSG) Work Volume.\nOxygen Concentration\nThe BASS experiment will include steps in crew procedures to install a Compound Specific Analyzer (CSA-O2) into the MSG to measure the Oxygen concentration.  There is also a \nMajor Constituent Analyzer \navailable to measure the Columbus Module concentration. \nCrew inserts fuel sample and adjusts igniter and fuel base to desired position\nSample Frame Assembly is designed to allow for adjustment of the position of the BASS solid fuel sample.\nThe Igniter has a wire extension that the crew will be able to position as required to ignite the solid fuel sample.\n4/14/2010\n2"
+    },
+    {
+      "locator": "ppt/slides/slide3.xml",
+      "text": "BASS Hardware Description\nBASS will utilize the Smoke Point In \nCo-flow \nExperiment (SPICE) hardware currently on ISS\nExperiment Assembly, Cables, Video Camera\nBASS will utilize the SLICE Digital Still Camera\nBASS will design, fabrication, assemble, test new hardware\nModified 3.2 mm burner tube\nGN2 Hose Assembly\nSample Frame Assembly Insert for Experiment Assembly\n4 different fuel holder designs for a total of 41 fuel samples\nBASS Control Box\nFan Flow Block Assembly\nIgniter Wire Extension Assembly\n4/14/2010\n3"
+    },
+    {
+      "locator": "ppt/slides/slide4.xml",
+      "text": "BASS Hardware Description\nExperiment Assembly\nVideo Camera\nBASS Control Box\n4/14/2010\n4"
+    },
+    {
+      "locator": "ppt/slides/slide5.xml",
+      "text": "BASS Hardware Overview\nBurner Tube (3.2 mm Modified)\nSample Frame Assembly\nIgniter Assembly\n4/14/2010\n5\nGN2 Hose\nAssembly"
+    },
+    {
+      "locator": "ppt/slides/slide6.xml",
+      "text": "BASS Hardware Overview\nSPHERE & HEMISPHERE \nSAMPLE ASSEMBLY \n                   (1 CM & 2 \nCM DIAMETER PMMA)\nFLAT SAMPLE \nASSEMBLY                     (1 CM & 2 \nCM WIDE)\n4/14/2010\n6"
+    },
+    {
+      "locator": "ppt/slides/slide7.xml",
+      "text": "BASS Hardware Overview\nTHICK FLAT SAMPLE ASSEMBLY (PMMA & WAX)\nWAX-IMPREGNATED WICK SAMPLE \nASSEMBLY\n(JAPAN WAX & PARAFFIN)\n4/14/2010\n7"
+    },
+    {
+      "locator": "ppt/slides/slide8.xml",
+      "text": "8\nBASS Science Objectives\nObjective:\nBridge the gap between normal gravity NASA-STD-6001 Test # 1 method, ground based microgravity tests, and actual material flammability in microgravity.\nTest effectiveness of an inert, gaseous extinguishing agent \n(nitrogen, similar \nto that used on \nthe International Space Station \n(\nISS\n) in putting out flames over different materials, geometries, and flow.\nRelevance/Impact:\nRelationship between ground test and microgravity test can be investigated by observing flames burning for longer times.\nPractical, realistic fuels in typical geometries will be examined, including wake flames which \nhave characteristics of a fire burning behind another object.\nDevelopment Approach:\nBASS will utilize the on orbit hardware SPICE which was launched on STS-126 and operates on \nthe International Space Station (ISS) in the Microgravity Science \nGlovebox\n (MSG\n) facility.\nCrew required to set up and operate the experiment.  \nBASS experiment data is captured on video and still camera \ndata \nthen down-linked \nto the ground for \nevaluation by the science team."
+    },
+    {
+      "locator": "ppt/slides/slide9.xml",
+      "text": "BASS Sample Types\n9\nBASS Sample Types"
+    },
+    {
+      "locator": "ppt/slides/slide10.xml",
+      "text": "BASS Test Matrix\n10\nBASS Test Matrix\nSample #\nTest ID\nDescription\nEstimated Fuel Burned (mg)\nFlow speed (cm/s)\nSuppression\n1\n1\nThin Flat, 2-cm Width\nSIBAL fuel\n216\n5\nOptional based on results; when flame covers entire sample\n2\n2\n216\n10\n3\n3\n216\n20\n4\n4\n216\n50\n5\n5\n216\n1\n6\n6\n216\n2\n7\n7\n216\n5\n8\n8\n216\n10\n9\n9\n216\n20\n10\n10\nThin Flat, 1-cm Width\nSIBAL fuel\n108\n5\n11\n11\n108\n20\n12\n12\nThin Flat, 2-cm Width\nNomex III (Blend)\n132\n30\n13\n13\n132\n50\n14\n14\nThin Flat, 2-cm Width\nWSTF \nNomex\n Natural (HT90-40)\n252\n30\n15\n15\n252\n50\n16\n16\nThin Flat, 2-cm Width\nUltem\n384\n30\n17\n17\n384\n50"
+    },
+    {
+      "locator": "ppt/slides/slide11.xml",
+      "text": "BASS Test Matrix\n11\nBASS Test Matrix (Continued)\nSample #\nTest ID\nDescription\nEstimated Fuel Burned (mg)\nFlow speed (cm/s)\nSuppression\n18\n18-21\nSphere, 1-cm Diameter \nPMMA\n300\n5, 10, 20, 50\n(Re-ignition at multiple speeds)\nAfter 1 minute;\n Extinguishment will be initiated by gradually increasing the mass flow rate of nitrogen in a series of step increments\n19\n22-25\n300\n20\n26-29\n300\n21\n30-33\nWake Flame Sphere, 1-cm Diameter PMMA\n300\n22\n34-37\n300\n23\n38-41\n300\n24\n42-45\nSphere, 2-cm Diameter \nPMMA\n1200\n25\n46-49\n1200\n26\n50-53\n1200\n27\n54-57\nWake Flame Sphere, 2-cm Diameter  PMMA\n1200\n28\n58-61\n1200\n29\n62-65\n1200\n30\n66-69\nThick Flat, 1-cm Width, 2-mm Thick\n PMMA, One-Sided\n119\n31\n70-73\n119\n32\n74-77\nFlat fiberglass fabric saturated with wax (paraffin), 1-cm Width \n2-mm Thick, One-Sided\n100\n33\n78-81\n100"
+    },
+    {
+      "locator": "ppt/slides/slide12.xml",
+      "text": "BASS Test Matrix\n12\nBASS Test Matrix (Continued)\nSample #\nTest ID\nDescription\nEstimated Fuel Burned (mg)\nFlow speed (cm/s)\nSuppression\n34\n82\nCandle (Japan wax) within tube \n(front ignition)\n200\n5\n(temporarily 0)\nAfter 1 minute;\n Extinguishment will be initiated by gradually increasing the mass flow rate of nitrogen in a series of step increments\n35\n83\nCandle (Japan wax) within tube \n(front ignition)\n200\n10\n46\n84\nCandle (Japan wax) within tube \n(front ignition)\n200\n30\n37\n85\nCandle (paraffin) within tube \n(front ignition)\n200\n5\n(temporarily 0)\n38\n86\nCandle (Japan wax) within tube \n(wake ignition)\n200\n5\n(temporarily 0)\n39\n87\nCandle (Japan wax) within tube \n(wake ignition)\n200\n10\n40\n88\nCandle (Japan wax) within tube \n(wake ignition)\n200\n30\n41\n89\nCandle (paraffin) within tube \n(wake ignition)\n200\n5\n(temporarily 0)"
+    },
+    {
+      "locator": "ppt/slides/slide13.xml",
+      "text": "BASS Success Criteria\nMinimal Success:\n 20 total tests including: eight tests with flat samples (four materials at two different flow speeds); four tests with spherical PMMA samples (four different flow speeds with nitrogen extinguishment); four tests with candles (four different flow speeds with nitrogen extinguishment); and four tests of PMMA wake flames (four different flow speeds with nitrogen extinguishment). \nComplete Success:\n 60 flames as indicated in test matrix.\n4/14/2010\n13"
+    },
+    {
+      "locator": "ppt/slides/slide14.xml",
+      "text": "BASS Verification Testing\nSample Frame Assembly\nFit Check with Engineering Assembly\nSoft Stow Vibration per 60054-TST-007\nMaterials Bake-out for 72 hours at 120 ˚F\nEMI Test for Magnet Strength\nFuel Samples Assembly (41 flight units)\nFit Check with Engineering Assembly\nSoft Stow Vibration per 60054-TST-007\nGN2 Hose Assembly\nSoft Stow Vibration per 60054-TST-007\nPre and Post Vibe Helium Leak Test\nBASS Control Box\nFunctional Test with Engineering Assembly\nSoft Stow Vibration per 60054-TST-007\nMaterials Bake-out for 72 hours at 120 ˚\nF\nIgniter Wire Extension Assembly\nFunctional Test with Engineering Assembly\n4/14/2010\n14"
+    }
+  ],
+  "details": {},
+  "warnings": [
+    "Document text extracted; embedded images not interpreted automatically."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

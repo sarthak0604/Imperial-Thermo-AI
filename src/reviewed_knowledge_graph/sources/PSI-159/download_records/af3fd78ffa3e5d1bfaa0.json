@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-159:af3fd78ffa3e5d1bfaa0",
+  "study": "PSI-159",
+  "filename": "PSI-159_metadata_PSI-159-ISA.zip",
+  "key": "psi-data/PSI-159/metadata/PSI-159_metadata_PSI-159-ISA.zip",
+  "category": "metadata",
+  "size_bytes": 8404,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-159/download?file=691f7ea117f78b371b26f6f7&version=1&studyVersion=1&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-159/af3fd78ffa3e5d1bfaa0/PSI-159_metadata_PSI-159-ISA.zip",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "0ef60d1ee8d4d53bbe58139d56fa99e9500ca48dd7913b25ac85dc853d6710ab",
+  "status": "downloaded"
+}

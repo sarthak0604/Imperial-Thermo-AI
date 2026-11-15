@@ -1,0 +1,50 @@
+{
+  "id": "res:PSI-25:4a3bbe93ad41e6bd18a8",
+  "study": "PSI-25",
+  "filename": "PSI-25_Engineering Documents_BASS-II_Engineering Requirements.pptx",
+  "key": "psi-data/PSI-25/Engineering Documents/PSI-25_Engineering Documents_BASS-II_Engineering Requirements.pptx",
+  "category": "Engineering Documents",
+  "size_bytes": 1123356,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=6924803a7f6aa6a8302103cb&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-25/4a3bbe93ad41e6bd18a8/PSI-25_Engineering Documents_BASS-II_Engineering Requirements.pptx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "08ab1b85ba606db728aafbb731d4a626cd3a655c59f020487c94eb1689ced4f4",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "ppt/slides/slide1.xml",
+      "text": "BASS-2 \nEngineering\n \nRequirements\nGeneral Requirements\nEach Burning And Suppression of \nSolids-2 \n(\nBASS-2) \ns\nolid \nf\nuel \na\nssembly is mounted inside the Experiment Assembly via a magnetic interface such that it can be installed and removed by the crew.\nSolid fuel ignition will be done with a hot-wire \nKanthol\n material igniter.\nNitrogen gas to be used from 0 to 500 SCCM N\n2.\n  \nInstead of connecting the Experiment Assembly to the gas bottle it is connected via the GN2 hose to the Microgravity Science \nGlovebox\n (MSG) gaseous nitrogen (GN2) supply interface.\n3.2 mm normal length and 3.2 mm short length burner tubes will be manifested and used for BASS.\nThe Control Box will be modified to allow the fan flow adjustment to stop the fan when set to its minimum \nas a safety mechanism to extinguish flame.\nParameter Measurement\nMeasurement of the GN2 Flow rate, Fan Voltage, Co-Flow velocity, and flame radiation will be measured and overlaid on the video.\nThe data acquisition rate as measured by SPICE hardware is 4 Hz.\nThe measurement accuracy of ±10% was met by the SPICE hardware prior to its launch.  The measurement accuracy will meet the requirements for \nBASS-2.\nImaging Requirements\nThe Field of view of the video is fixed for \nBASS-2 \ncan not be changed from SPICE.\nThe Still Image requirements are the same as for SPICE.  The \nBASS-2 \nstill image requirements will be met with the Nikon model D300s digital still camera.\n4/14/2010\n1"
+    },
+    {
+      "locator": "ppt/slides/slide2.xml",
+      "text": "BASS-2 \nEngineering Requirements\nAcceleration\nBASS-2 \ntesting will be scheduled around planned thruster firing or spacecraft dock or undock\n.\nThe acceleration environment will be measured by the Space Acceleration Measurement System (SAMS) during \nBASS-2 \ntesting which will be installed into the Microgravity Science \nGlovebox\n (MSG) Work Volume.\nOxygen Concentration\nThe \nBASS-2 \nexperiment will include steps in crew procedures to install a Compound Specific Analyzer (CSA-O2) into the MSG to measure the Oxygen concentration.  There is also a \nMajor Constituent Analyzer \navailable to measure the Columbus Module concentration. \nCrew inserts fuel sample and adjusts igniter and fuel base to desired position\nSample Frame Assembly is designed to allow for adjustment of the position of the \nBASS-2 \nsolid fuel sample.\nThe Igniter has a wire extension that the crew will be able to position as required to ignite the solid fuel sample.\n4/14/2010\n2"
+    },
+    {
+      "locator": "ppt/slides/slide3.xml",
+      "text": "BASS-2 \nHardware Description\nBASS-2 \nwill utilize the Smoke Point In Co-flow Experiment (SPICE) hardware currently on ISS\nExperiment Assembly, Cables, Video Camera\nBASS-2 \nwill utilize the \nBASS\n \nDigital Still Camera\nBASS-2 \nwill design, fabrication, assemble, test new hardware\nModified 3.2 mm burner tube\nGN2 Hose Assembly\nSample Frame Assembly Insert for Experiment Assembly\n4 different fuel holder designs for a total of \n100\n \nfuel samples\nBASS Control Box\nFan Flow Block Assembly\nIgniter Wire Extension Assembly\n4/14/2010\n3"
+    },
+    {
+      "locator": "ppt/slides/slide4.xml",
+      "text": "BASS-2 \nHardware Description\nExperiment Assembly\nVideo Camera\nBASS Control Box\n4/14/2010\n4"
+    },
+    {
+      "locator": "ppt/slides/slide5.xml",
+      "text": "BASS-2 SAMPLE PHOTOS\n10/28/2013\n5\nSphere Sample\n2 cm SIBAL Sample\nFlat PMMA Sample (0.1 mm)\nFlat PMMA Sample (5 mm)"
+    },
+    {
+      "locator": "ppt/slides/slide6.xml",
+      "text": "BASS Sample Types\n6\nBASS Sample Types"
+    },
+    {
+      "locator": "ppt/slides/slide7.xml",
+      "text": "ROD \nSAMPLE \nASSEMBLY\nBASS-2 HARDWARE OVERVIEW\n(Sample Mounting)\n6/16/2010\n7\nFLAT SAMPLE \nASSEMBLY (1 CM & 2 \nCM WIDE)\nROD SAMPLE\nSPHERE SAMPLE"
+    }
+  ],
+  "details": {},
+  "warnings": [
+    "Document text extracted; embedded images not interpreted automatically."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

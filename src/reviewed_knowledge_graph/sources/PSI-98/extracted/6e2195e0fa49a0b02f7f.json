@@ -1,0 +1,200 @@
+{
+  "id": "res:PSI-98:6e2195e0fa49a0b02f7f",
+  "study": "PSI-98",
+  "filename": "PSI-98_Experimental table_SAFFIRE-1.csv",
+  "key": "psi-data/PSI-98/Experimental table/PSI-98_Experimental table_SAFFIRE-1.csv",
+  "category": "Experimental table",
+  "size_bytes": 469,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-98/download?file=6792c46eb7b6ff8e65037f3e&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-98/6e2195e0fa49a0b02f7f/PSI-98_Experimental table_SAFFIRE-1.csv",
+  "sha256": "c01f29c62455f0a3b512290ab85e5687ecded326733189f002f580368402308d",
+  "status": "downloaded",
+  "sections": [
+    {
+      "locator": "table, row 1",
+      "text": "1: Sample Number  | 2: Material | 3: Sample Thickness (cm) | 4: Sample Length (cm) | 5: Sample Width (cm) | 6: Air Flow (cm/s) | 7: Percent O2 | 8: Ignition Power (W) | 9: Ignition Time (s) | 10: Burn Time (s) | 11: Flow Direction  | 12: Camera 1 | 13: Camera 2"
+    },
+    {
+      "locator": "table, row 2",
+      "text": "1: S1 | 2: SIBAL Fabric | 3: 0.37 | 4: 40.6 | 5: 94 | 6: 20 | 7: 21.5 - 21.7 | 8: 182 | 9: 8 | 10: 420 | 11: Concurrent | 12: S1C1 | 13: S1C2"
+    },
+    {
+      "locator": "table, row 3",
+      "text": "1: S2 | 2: SIBAL Fabric | 3: 0.37 | 4: 40.6 | 5: 94 | 6: 20 | 7: ~ 21.5 | 8: 182 | 9: 8 | 10: 70 | 11: Opposed | 12: S2C1 | 13: S2C2"
+    },
+    {
+      "locator": "table, row 4",
+      "text": "1: F1C1/F1C2 | 2: Pre-test flow visulation data for sample 1"
+    },
+    {
+      "locator": "table, row 5",
+      "text": "1: F2C1/F2C2 | 2: Pre-test flow visulation data for sample 2"
+    }
+  ],
+  "details": {
+    "name": "table",
+    "row_count": 5,
+    "column_count": 13,
+    "column_statistics": [
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 2,
+        "min": 0.37,
+        "max": 0.37,
+        "blank_count": 2
+      },
+      {
+        "numeric_count": 2,
+        "min": 40.6,
+        "max": 40.6,
+        "blank_count": 2
+      },
+      {
+        "numeric_count": 2,
+        "min": 94.0,
+        "max": 94.0,
+        "blank_count": 2
+      },
+      {
+        "numeric_count": 2,
+        "min": 20.0,
+        "max": 20.0,
+        "blank_count": 2
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 2
+      },
+      {
+        "numeric_count": 2,
+        "min": 182.0,
+        "max": 182.0,
+        "blank_count": 2
+      },
+      {
+        "numeric_count": 2,
+        "min": 8.0,
+        "max": 8.0,
+        "blank_count": 2
+      },
+      {
+        "numeric_count": 2,
+        "min": 70.0,
+        "max": 420.0,
+        "blank_count": 2
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 2
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 2
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 2
+      }
+    ],
+    "rows": [
+      [
+        "Sample Number ",
+        "Material",
+        "Sample Thickness (cm)",
+        "Sample Length (cm)",
+        "Sample Width (cm)",
+        "Air Flow (cm/s)",
+        "Percent O2",
+        "Ignition Power (W)",
+        "Ignition Time (s)",
+        "Burn Time (s)",
+        "Flow Direction ",
+        "Camera 1",
+        "Camera 2"
+      ],
+      [
+        "S1",
+        "SIBAL Fabric",
+        "0.37",
+        "40.6",
+        "94",
+        "20",
+        "21.5 - 21.7",
+        "182",
+        "8",
+        "420",
+        "Concurrent",
+        "S1C1",
+        "S1C2"
+      ],
+      [
+        "S2",
+        "SIBAL Fabric",
+        "0.37",
+        "40.6",
+        "94",
+        "20",
+        "~ 21.5",
+        "182",
+        "8",
+        "70",
+        "Opposed",
+        "S2C1",
+        "S2C2"
+      ],
+      [
+        "F1C1/F1C2",
+        "Pre-test flow visulation data for sample 1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "F2C1/F2C2",
+        "Pre-test flow visulation data for sample 2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "all_rows_retained": true
+  },
+  "warnings": [],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

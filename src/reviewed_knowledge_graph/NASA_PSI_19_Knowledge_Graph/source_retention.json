@@ -1,0 +1,7 @@
+{
+  "completed_at": "2026-11-15T15:10:00.049229+00:00",
+  "temporary_originals_removed": true,
+  "originals_in_graph_package": false,
+  "extracted_sources_retained_in_working_folder": true,
+  "note": "Download-record local_path values describe paths at retrieval time. Temporary originals have been removed; resource storage_uri is null. Extracted source text and public NASA URLs remain available."
+}

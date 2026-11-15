@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:f72131d7f2ebc7685a3e",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT267silicon test 23 and 24 log.xlsx",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT267silicon test 23 and 24 log.xlsx",
+  "category": "Analyzed Data",
+  "size_bytes": 32397,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d52f91ab4427dbf442c&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/f72131d7f2ebc7685a3e/PSI-102_Analyzed Data_GMT267silicon test 23 and 24 log.xlsx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "fad0fc69001efd1c2af31ac9fda77df6b6a69bfda3608c3489bd9e9e16aa5bda",
+  "status": "downloaded"
+}

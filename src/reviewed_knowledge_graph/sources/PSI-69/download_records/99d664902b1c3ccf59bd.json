@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-69:99d664902b1c3ccf59bd",
+  "study": "PSI-69",
+  "filename": "PSI-69_Presentations_Cool Flames in Space, a Hot Prospect on Earth!.pdf",
+  "key": "psi-data/PSI-69/Presentations/PSI-69_Presentations_Cool Flames in Space, a Hot Prospect on Earth!.pdf",
+  "category": "Presentations",
+  "size_bytes": 4524480,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-69/download?file=684344b89e44646b7402706a&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-69/99d664902b1c3ccf59bd/PSI-69_Presentations_Cool Flames in Space, a Hot Prospect on Earth!.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "50e9a5f9b5d6139990c6e59a3571d6c944ed64a6cb6de92426f7b453a5cf258a",
+  "status": "downloaded"
+}

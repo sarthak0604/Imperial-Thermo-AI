@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-99:62c6f9e697b3a04c74eb",
+  "study": "PSI-99",
+  "filename": "PSI-99_Science Documents_SAFFIRE-II Readme.docx",
+  "key": "psi-data/PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE-II Readme.docx",
+  "category": "Science Documents",
+  "size_bytes": 134425,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-99/download?file=6840cdd84a0e24d624cebd95&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-99/62c6f9e697b3a04c74eb/PSI-99_Science Documents_SAFFIRE-II Readme.docx",
+  "sha256": "9f71bb8461dd1306d73a84264729851a10d7195616390096f929fa3f5ecbad72",
+  "status": "downloaded"
+}

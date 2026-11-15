@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:b8472dbac98cf0c8122e",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT254HKPandLOGmultiple runs.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT254HKPandLOGmultiple runs.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 10293248,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d4ef91ab4427dbf43ff&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/b8472dbac98cf0c8122e/PSI-102_Analyzed Data_GMT254HKPandLOGmultiple runs.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "d541b1175ff20e48f9c28c2b1906c88b13c424b536fd05d1f73544967b6f4f86",
+  "status": "downloaded"
+}

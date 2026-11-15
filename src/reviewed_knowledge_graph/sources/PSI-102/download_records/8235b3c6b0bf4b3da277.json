@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:8235b3c6b0bf4b3da277",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT255hkp.xlsx",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT255hkp.xlsx",
+  "category": "Analyzed Data",
+  "size_bytes": 1563904,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d4ef91ab4427dbf4405&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/8235b3c6b0bf4b3da277/PSI-102_Analyzed Data_GMT255hkp.xlsx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "4eb5041dd773c817954d3c1067ba3afddb6b958951cb300664d37f85ef941287",
+  "status": "downloaded"
+}

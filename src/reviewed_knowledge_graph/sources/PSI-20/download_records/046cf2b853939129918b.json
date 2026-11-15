@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:046cf2b853939129918b",
+  "study": "PSI-20",
+  "filename": "PSI-20_Science Documents_ISS_Researchers_Guide_-_Combustion_In_Reduced_Gravity.pdf",
+  "key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_ISS_Researchers_Guide_-_Combustion_In_Reduced_Gravity.pdf",
+  "category": "Science Documents",
+  "size_bytes": 1532064,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8181b4820d736cecc2f&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/046cf2b853939129918b/PSI-20_Science Documents_ISS_Researchers_Guide_-_Combustion_In_Reduced_Gravity.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "d85c92823f8917979df00e09e8e0ca40f42092a330ef30dcb8a8af34e7ee6bc0",
+  "status": "downloaded"
+}

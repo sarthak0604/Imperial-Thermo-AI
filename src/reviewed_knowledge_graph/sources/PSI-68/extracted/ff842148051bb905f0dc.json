@@ -1,0 +1,31 @@
+{
+  "id": "res:PSI-68:ff842148051bb905f0dc",
+  "study": "PSI-68",
+  "filename": "PSI-68_Engineering Documents_67212MFAN11000-4 FLEX-2 Package Assembly.pdf",
+  "key": "psi-data/PSI-68/Engineering Documents/PSI-68_Engineering Documents_67212MFAN11000-4 FLEX-2 Package Assembly.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 794087,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-68/download?file=685da234ee20136af5401372&version=1&studyVersion=6&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-68/ff842148051bb905f0dc/PSI-68_Engineering Documents_67212MFAN11000-4 FLEX-2 Package Assembly.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "4cfbb098eac09fd6c38ac9a56de94c7829e1afdfc06b9e7a2e5d832e8e6a0886",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": ""
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": [
+      1
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "no_text",
+  "review_status": "not_yet_reviewed"
+}

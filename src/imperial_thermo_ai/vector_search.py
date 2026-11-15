@@ -11,6 +11,7 @@ from .graph_search import GraphIndex, evaluate
 from .semantic_plan import route
 from .query_plan import validate_plan
 from .file_contract import SearchResults
+from .graph_files import GraphFileRecords
 
 MODEL_ID = 'Qwen/Qwen3-Embedding-0.6B'
 INSTRUCTION = 'Given a space fire-safety research question, retrieve relevant NASA PSI combustion investigations, experiments, and files.'
@@ -46,11 +47,15 @@ def documents(graph):
                                 if e['type'] in {'STUDIES', 'MEASURES'})
                 selected.extend(index.nodes[e['source']] for e in index.incoming[exp['id']]
                                 if e['type'] == 'CONTAINS')
+        # A table can link hundreds of source-row experiments. Deduplicate their
+        # common investigation and bound ranking text; constraint evaluation
+        # still uses the complete original graph.
+        unique = {n['id']: n for n in selected}
         result[key] = '\n'.join(json.dumps({'type': n['type'], 'properties': {
             k: v for k, v in n['properties'].items()
             if k in {'name', 'title', 'summary', 'description', 'keywords', 'synonyms',
                      'conditions', 'methods', 'variables', 'filename', 'resource_type', 'file_format', 'material'}
-        }}, ensure_ascii=False) for n in selected)
+        }}, ensure_ascii=False) for n in unique.values())[:24000]
     return result
 
 
@@ -70,9 +75,7 @@ class QwenEmbedder:
             batch = texts[offset:offset + batch_size]
             if query:
                 batch = [f'Instruct: {INSTRUCTION}\nQuery: {text}' for text in batch]
-            inputs = self.tokenizer(batch, padding=True, truncation=False, return_tensors='pt')
-            if inputs.input_ids.shape[1] > 8192:
-                raise ValueError('Embedding document exceeds 8192 tokens; chunk it before indexing.')
+            inputs = self.tokenizer(batch, padding=True, truncation=True, max_length=8192, return_tensors='pt')
             inputs = inputs.to(self.model.device)
             with torch.inference_mode():
                 hidden = self.model(**inputs).last_hidden_state[:, -1, :]
@@ -89,7 +92,7 @@ def build_index(graph, embedder):
             'vectors': dict(zip(docs, vectors))}
 
 
-class VectorGraphSearch:
+class VectorGraphSearch(GraphFileRecords):
     def __init__(self, graph, index):
         self.graph = GraphIndex(graph)
         if index.get('graph_fingerprint') != fingerprint(graph):
@@ -110,56 +113,6 @@ class VectorGraphSearch:
         if self.dimension is not None and len(vector) != self.dimension:
             raise ValueError('Query and index vector dimensions differ.')
         return {key: sum(a * b for a, b in zip(vector, value)) for key, value in self.vectors.items()}
-
-    def _provenance(self, file_id):
-        experiments = [e['source'] for e in self.graph.incoming[file_id] if e['type'] == 'HAS_RESOURCE']
-        investigations = {e['source'] for exp in experiments for e in self.graph.incoming[exp] if e['type'] == 'CONTAINS'}
-        if len(investigations) != 1:
-            return None
-        return next(iter(investigations)), experiments
-
-    def _record(self, file_id, reason):
-        node = self.graph.nodes[file_id]
-        props = node['properties']
-        inv_id, experiments = self._provenance(file_id)
-        inv = self.graph.nodes[inv_id]['properties']
-        fmt = str(props.get('file_format', '')).lower().lstrip('.')
-        mime = props.get('media_type') or {
-            'csv': 'text/csv', 'tsv': 'text/tab-separated-values', 'pdf': 'application/pdf',
-            'png': 'image/png', 'jpg': 'image/jpeg', 'jpeg': 'image/jpeg', 'gif': 'image/gif',
-            'mp4': 'video/mp4', 'webm': 'video/webm', 'txt': 'text/plain', 'json': 'application/json',
-            'xlsx': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-        }.get(fmt, 'application/octet-stream')
-        role = ('video' if mime.startswith('video/') else 'image' if mime.startswith('image/') else
-                'documentation' if props.get('resource_type') == 'paper' else
-                'measurement' if props.get('resource_type') == 'dataset' else
-                'documentation' if mime == 'application/pdf' else 'other')
-        notes = list(props.get('data_notes') or [])
-        url = props.get('retrieval_url') or props.get('download_url')
-        if not url:
-            notes.append('Download URL unknown; a landing page is not a file download. Planner cannot select this file yet.')
-        if not props.get('columns_verified'):
-            variables = None
-        else:
-            variables = props.get('column_metadata')
-        # Never promote graph Variable names or Resource.variables tags to inspected column headers.
-        if variables is None:
-            notes.append('Column headers, units and numeric suitability have not been verified.')
-        # Only explicitly file-level facts are exported, never inherited run conditions.
-        conditions = props.get('file_conditions') or {}
-        run_ids = props.get('run_ids', []) if props.get('run_ids_verified') else []
-        path_edges = [e for exp in experiments for e in self.graph.incoming[exp] + self.graph.outgoing[exp]
-                      if e['type'] == 'CONTAINS' or e['target'] == file_id]
-        if any(e.get('properties', {}).get('origin') == 'illustrative' or
-               e.get('properties', {}).get('verification_status') == 'needs_review' for e in path_edges):
-            notes.append('Graph provenance is illustrative or needs review; this is not verified experimental evidence.')
-        return {'file_id': file_id, 'investigation_id': inv.get('investigation_id') or inv_id.removeprefix('inv:'),
-                'title': props.get('title') or props.get('filename') or file_id,
-                'role': role, 'media_type': mime, 'retrieval_url': url,
-                'source_page_url': props.get('source_page_url') or props.get('source_url') or inv.get('source_url'),
-                'size_bytes': props.get('size_bytes'), 'run_ids': run_ids, 'variables': variables,
-                'encoding': props.get('encoding'), 'conditions': conditions, 'data_notes': notes,
-                'related_file_ids': props.get('related_file_ids') or [], 'match_reason': reason}
 
     def _finish(self, ranked, query_id, plan, top_k, include_unknown):
         if type(top_k) is not int or not 1 <= top_k <= 1000:

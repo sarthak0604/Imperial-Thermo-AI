@@ -1,0 +1,121 @@
+{
+  "id": "res:PSI-107:458a66015f92431e9103",
+  "study": "PSI-107",
+  "filename": "PSI-107_Engineering Documents_SPICE_ScienceVerificationReport.pdf",
+  "key": "psi-data/PSI-107/Engineering Documents/PSI-107_Engineering Documents_SPICE_ScienceVerificationReport.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 237000,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-107/download?file=683da136b8656d2315bf4540&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-107/458a66015f92431e9103/PSI-107_Engineering Documents_SPICE_ScienceVerificationReport.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "786175bc7fbb41785ad2642d15b8eb510983d7e217d7bb9f496955d00950775c",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "SPICE-RPT-002 \nSmoke Point in Coflow Experiment (SPICE) \nScience Verification Report \nMay, 2007 \nPrepared For: \nNational Aeronautics and Space Administration \nJohn H. Glenn Research Center at Lewis Field \nExploration Systems Division \nCleveland, Ohio 44135 \nPrepared By: \nZIN Technologies, Incorporated \n6745 Engle Road \nMiddleburg Heights, Ohio 44130 \nUnder Contract NAS3-99155, 60107-DO-086 \n \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "SPICE-RPT-002 \n \nii\nAPPROVALS \n \nPrepared by: \n \n \nDate: \n \n \nTibor Lorik \nZIN Technologies, Inc. \nSPICE Project Lead \n \n \n \n \n \n \n \n \n \n \n \n \n \nReviewed by: \n \n \nDate: \n \n \nDr. David L. Urban \nNASA GRC \nGlovebox Investigator \n \n \n \n \n \n \n \n \n \n \n \n \n \nAccepted by: \n \n \nDate: \n \n \nRobert W. Hawersaat \nNASA GRC \nSPICE Project Manager \n \n \n \n \n \n \n \n \n \n \n \n \n \nAccepted by: \n \n \nDate: \n \n \nProfessor Peter Sunderland \nUniversity of Maryland  \nCo-Investigator \n \n \n \n \n \n \n \n \n \n \n \n \n \nAccepted by: \n \n \nDate: \n \n \nDr. Zeng-Guang Yuan \nNational Center for Space Exploration \nResearch Project Scientist \n \n \n \n \n"
+    },
+    {
+      "locator": "page 3",
+      "text": "SPICE-RPT-002 \n \niii \nREVISIONS \n \nRevision Letter \nPublication Date \nChange Description \nApproval \n-- \n5/08 \nBaseline Release \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n"
+    },
+    {
+      "locator": "page 4",
+      "text": "SPICE-RPT-002 \n \niv \nTABLE OF CONTENTS \n \n1.0 \nINTRODUCTION ....................................................................................................................... 1 \n2.0 \nVERIFICATION CLOSURE RECORD ................................................................................... 1 \n3.0 \nCURRENT VERIFICATION STATUS .................................................................................... 1 \nAPPENDIX A – SCIENCE REQUIREMENT VERIFICATION SHEETS .................................. A-1 \n \n \n"
+    },
+    {
+      "locator": "page 5",
+      "text": "SPICE-RPT-002 \n 1\n1.0 \nINTRODUCTION \n \nThe purpose of this document is to identify the science requirements for the SPICE Experiment \nmanifested to fly on the ISS.  The science requirements are traced to the Science Requirements \nDocument. \n \n2.0 \nVERIFICATION CLOSURE RECORD \n \nAppendix A contains each Science Verification Sheet, which identifies the science requirement, \nverification method, and verification closure summary.  The verification summary identifies the \nSPICE project document that addresses the verification closure.  All SPICE project documents \nare under configuration control and available upon request.  This document will be updated \nperiodically to reflect the closure status of the verifications. \n \n3.0 \nCURRENT VERIFICATION STATUS \n \nThere are 18 verification requirements.  All requirements have been closed.  One verification, \nRadiometer accuracy is not compliant. \n \n"
+    },
+    {
+      "locator": "page 6",
+      "text": "SPICE-RPT-002 \n A-1\nAPPENDIX A – SCIENCE REQUIREMENT VERIFICATION SHEETS \n"
+    },
+    {
+      "locator": "page 7",
+      "text": "SPICE-RPT-002 \n A-2\nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION :  1 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):  \nREQUIREMENT \nRound gas jet diffusion flame in a co-flowing oxidizer stream \nIMPLEMENTATION \nConfiguration is that the gas flow nozzle is in the flow duct and the gas and air \nflow are in the same direction. \nVERIFICATION \nVERIFICATION METHOD: INS \nVerify via design drawings that the experiment assembly is configured such that \nthe gas flow is in the same direction as the air flow. \nVERIFICATION STATUS: CLOSED - COMPLIANT \nDrawing 60054MAFH000 shows that the gas nozzle is inside the flow duct and \nthe gas exit is in the same direction as the airflow. \n \nThis has also been verified via functional testing. \n"
+    },
+    {
+      "locator": "page 8",
+      "text": "SPICE-RPT-002 \n A-3\nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION :  2 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):  \nREQUIREMENT \nExperiment is to operate at ambient pressure. \nIMPLEMENTATION \nExperiment will operate in the MSG on the ISS \nVERIFICATION \nVERIFICATION METHOD: ANALYSIS  \nVerify that the MSG facility maintains ambient pressure. \nVERIFICATION STATUS: CLOSED - COMPLIANT \nMSFC-ICD-3270 is the Interface Control Document for SPICE in the MSG. \nThe ICD states that the MSG will nominally operate at a negative pressure of \n1.3 mBar relative to ISS cabin Pressure. \n"
+    },
+    {
+      "locator": "page 9",
+      "text": "SPICE-RPT-002 \n A-4\nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION:  3 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):  \nREQUIREMENT \nThe ignition of the gases will be via Hot wire. \nIMPLEMENTATION \nThe SPICE flight hardware will contain a Hot Wire Ignitor. \nVERIFICATION \nVERIFICATION METHOD: INS \nVerify that the design drawings include a hot wire ignitor. \nVERIFICATION STATUS: CLOSED - COMPLIANT \nDrawing 60054MAFH060, Ignitor Assembly includes an ignitor wire, item \nH063 with part number 60054MDFH063. \n"
+    },
+    {
+      "locator": "page 10",
+      "text": "SPICE-RPT-002 \n A-5\nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION: 4 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):  \nREQUIREMENT \nThe Fuel Flow shall be controlled from 0 to 500 SCCM N2 equivalent flow. \nIMPLEMENTATION \nThe design will include a mass flow controller with the setpoint input controlled \nwith a potentiometer. \nVERIFICATION \nVERIFICATION METHOD: INS \nVerify that the design drawings include a mass flow controller with the correct \nflow range capability and that the setpoint potentiometer allows the MFC to be \nset in this range. \n \nVERIFICATION STATUS: CLOSED - COMPLIANT \nThe Flow Controller is from MKS and is Model 179A.  The specification sheet \nstates an accuracy of ±1% of Full Scale and a resolution of 0.1% of Full Scale. \n \nThe mass flow controller was calibrated on 2/27/08 from 0 – 500 SCCM N2. \n"
+    },
+    {
+      "locator": "page 11",
+      "text": "SPICE-RPT-002 \n A-6\nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION:  5 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):  \nREQUIREMENT \nThe Oxidizer Velocity range is from 5 to 50 cm/s \n \nIMPLEMENTATION \nThe Oxidizer Velocity and Co-Flow Velocity are the same measurement and \nthey will be measured by an Air Velocity Transducer made by TSI with Model \nnumber 8475.  The output is routed to an amplifier for scaling with the output \nmonitored by the A/D Converter on the Tattletale board.   \n \n \nVERIFICATION \nVERIFICATION METHOD:  INS \nVerify that the Velocity Probe is capable of supporting the required range and \naccuracy.   \n \nVERIFICATION STATUS: CLOSED - COMPLIANT \nThe specification sheet for the Velocity Probe states that the velocity range is \nfrom 0.05 to 2.54 m/s (5 -254 cm/s) which is within the range of 5 – 50 cm/s \nrequired. \n \nThe accuracy is stated to be ±3% of the reading ±1% of the selected range.  This \nis within the required accuracy. \n \nInspection of the data acquired and stored in the Experiment Assembly shows \nthat 4 samples per second are acquired. \n \n"
+    },
+    {
+      "locator": "page 12",
+      "text": "SPICE-RPT-002 \n A-7\nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION:  6 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):  \nREQUIREMENT \nThe burner tube nozzle diameters are manually selectable to be 0.4, 0.8, or 1.6 \nmm. \nIMPLEMENTATION \nThe design will include the ability for the crew to replace the burner tubes on-\norbit and that hardware includes the correct nozzle diameters. \n \n \nVERIFICATION \nVERIFICATION METHOD:  INS \nVerify that the design drawings include the burner tubes with the correct \ndiameters. \nVERIFICATION STATUS: CLOSED - COMPLIANT \nDrawing 60054MAFH201, Component Stowage Case Assembly includes the \n0.4 mm Diameter Burner Tube, 60054MDFH034, the 0.8 mm Diameter Burner \nTube, 60054MDFH033, and the 1.6 mm Diameter Burner Tube, \n60054MDFH032. \n \nThe design of the Burner Tube is such that the tube slides on to the burner tube \nholder located in the Experiment Assembly. \n \nThis operation has been demonstrated.  \n"
+    },
+    {
+      "locator": "page 13",
+      "text": "SPICE-RPT-002 \n A-8\nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION: 7 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):   \nREQUIREMENT \nThe Flame Length shall be from 5 to 100 mm. \nIMPLEMENTATION \nA still camera and video camera as well as the scale bar in the flow duct will be \nused to measure the flame length. \nVERIFICATION \nVERIFICATION METHOD:  DEMO \nVerify that the design includes the ability to image the flame. \nVERIFICATION STATUS: CLOSED - COMPLIANT \nTesting has been performed that verifies images and video of the flame can be \nacquired. \n"
+    },
+    {
+      "locator": "page 14",
+      "text": "SPICE-RPT-002 \n A-9\nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION: 8 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):   \nREQUIREMENT \nThe fuel mass flow shall be measured with an accuracy of 10% of the reading at \na sampling rate of 4 Hz, and over a range of 25 – 500 SCCM. \nIMPLEMENTATION \nThe mass flow controller provides an output signal of 0 – 5 VDC which is \nproportional to the mass flow rate.  This signal will be monitored by the A/D \nConverter on the Tattletale board. \nVERIFICATION \nVERIFICATION METHOD: TEST \nVerify that the MFC is capable of supporting the required range and accuracy.   \nVERIFICATION STATUS: CLOSED - COMPLIANT \nInspection of the data acquired and stored in the Experiment Assembly shows \nthat 4 samples per second are acquired. \n \nThe MFC has been calibrated with a maximum error of 0.32 % of FS. \n \n \n"
+    },
+    {
+      "locator": "page 15",
+      "text": "SPICE-RPT-002 \n A-10 \nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION: 9 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):   \nREQUIREMENT \nThe Co-Flow Fan Voltage shall be measured with an accuracy of 10% of the \nreading, at a sampling rate of 4 Hz, and over a range of 0.5 – 12 volts. \n \nIMPLEMENTATION \nThe Co-Flow Fan Voltage signal will be monitored via a voltage divider \nproportional to the voltage in the range of 0.5 to 12 VDC. This signal will be \nmonitored by the A/D Converter on the Tattletale board.   \n \nVERIFICATION \nVERIFICATION METHOD: TEST \nPerform a functional test per SPICE-TST-006.  The functional test will verify \nthat when the Fan Speed potentiometer is set at its lowest and highest setting \nthat the measurement is not out of range and that the change is as expected. \nVERIFICATION STATUS: CLOSED - COMPLIANT \nThe fan voltage minimum is 5.5 volts due to the safety requirement that the fan \nprovide airflow at all times even when the Fan Flow Potentiometer is set to zero. \n The measurement displayed on the video monitor and in the data ranges from \n55 to 139.  This represents 5.5 volts – 13.9 volts going to the fan. \n \nInspection of the data acquired and stored in the Experiment Assembly shows \nthat 4 samples per second are acquired. \n \n"
+    },
+    {
+      "locator": "page 16",
+      "text": "SPICE-RPT-002 \n A-11 \nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION:  10 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):   \nREQUIREMENT \nThe Co-Flow Velocity shall be measured with an accuracy of 10% of the \nreading, at a sampling rate of 4 Hz, and over a range of 5 – 50 cm/s. \n \nIMPLEMENTATION \nThe Oxidizer Velocity and Co-Flow Velocity are the same measurement and \nthey will be measured by an Air Velocity Transducer made by TSI with Model \nnumber 8475.  The output is routed to an amplifier for scaling with the output \nmonitored by the A/D Converter on the Tattletale board.   \n \nVERIFICATION \nVERIFICATION METHOD:  INS \nVerify that the Velocity Probe is capable of supporting the required range and \naccuracy. \n \nIf time permits the probe will be calibrated. \n \nVERIFICATION STATUS: CLOSED - COMPLIANT \nThe specification sheet for the Velocity Probe states that the velocity range is \nfrom 0.05 to 2.54 m/s (5 -254 cm/s) which is within the range of 5 – 50 cm/s \nrequired. \nThe fact that the fan is always on limits the lower range that the Velocity Probe \nreaches.  The measurement displayed on the video monitor and in the data \nranges from 15 to 53 CFM for minimum fan velocity to maximum fan velocity. \nThe accuracy is stated to be ±3% of the reading ±1% of the selected range.  This \nis within the required accuracy. \nInspection of the data acquired and stored in the Experiment Assembly shows \nthat 4 samples per second are acquired. \n \n"
+    },
+    {
+      "locator": "page 17",
+      "text": "SPICE-RPT-002 \n A-12 \nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION:  11 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):   \nREQUIREMENT \nThe Flame Radiation shall be measured with an accuracy of 10% of the reading, \nat a sampling rate of 4 Hz, and at a wavelength from visible to near infra-red. \n \nIMPLEMENTATION \nThe Flame Radiation measurement will be made by a Thermopile Detector \nmade by ORIEL with Model number 71768.  The output is routed to an \namplifier for scaling and amplification with the output monitored by the A/D \nConverter on the Tattletale board.   \nVERIFICATION \nVERIFICATION METHOD:  INS \nVerify that the Radiometer is capable of measuring from visible to near infra-\nred. \n \nVERIFICATION STATUS: CLOSED – NOT COMPLIANT \nThe specification sheet for the Thermopile Detector states that the CAF2 coated \nversion present in the SPICE system has a spectral range of 0.13 to 11 µm.  This \nrange encompasses the visible and near infrared as required. \n \nThe Radiometer is highly susceptible to EMI.  Accurate readings can only be \ndone by comparing the value prior to flame initiation and during flame activity. \n \nInspection of the data acquired and stored in the Experiment Assembly shows \nthat 4 samples per second are acquired. \n"
+    },
+    {
+      "locator": "page 18",
+      "text": "SPICE-RPT-002 \n A-13 \nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION: 12 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):  \nREQUIREMENT \nA color video of the flame shall be recorded. \nIMPLEMENTATION \nThe SPICE hardware consists of a Color CCTV Camera made by Panasonic \nwith Model number WV-CP654. \nVERIFICATION \nVERIFICATION METHOD: TEST \nPerform a functional test per SPICE-TST-006.  The functional test will verify \nthat the system records the region of the flame. \n \nVERIFICATION STATUS: CLOSED - COMPLIANT \nTesting has shown that the flame will be in the field of view. \n \n"
+    },
+    {
+      "locator": "page 19",
+      "text": "SPICE-RPT-002 \n A-14 \nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION :  13 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):  \nREQUIREMENT \nThe field of view of the video image shall include the last 10 mm of the Burner \nTube to the end of the duct. \n \nIMPLEMENTATION \nThis camera is mounted such that its field of view is of the interior of the \nExperiment Assembly. \nVERIFICATION \nVERIFICATION METHOD: TEST \nPerform an interface and functional test in the MSG engineering unit or similar \nmechanical interface with the SPICE flight hardware.  The functional test will \nverify that the system records the region of interest. \n \nVERIFICATION STATUS: CLOSED - COMPLIANT \nTesting in the MSG Engineering Unit has shown that the region of interest will \nbe in the field of view. \n \n"
+    },
+    {
+      "locator": "page 20",
+      "text": "SPICE-RPT-002 \n A-15 \nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION :  14 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):  \nREQUIREMENT \nAcquire High Resolution Still images of the Flame.  A maximum of 3 images \nare required per test run. \nIMPLEMENTATION \nThe SPICE hardware consists of a Nikon D100 Digital SLR Camera.   \nVERIFICATION \nVERIFICATION METHOD:  INS \nPerform an inspection of the camera specifications to verify that the camera is of \nsufficient resolution. \nVERIFICATION STATUS: CLOSED - COMPLIANT \nThe Nikon D100 camera is capable of storing the digital images on removable \ndisk.  The camera image is a 12-bit RGB CCD with 6 Mpixels.  The camera is \ncapable of 3000 x 200, 2240 x 1488, or 1504 x 1000 pixels image size.  These \nspecifications clearly shows that the camera is high resolution. \n"
+    },
+    {
+      "locator": "page 21",
+      "text": "SPICE-RPT-002 \n A-16 \nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION: 15 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):   \nREQUIREMENT \nThe High resolution color images shall be stored in raw (uncompressed) mode. \nIMPLEMENTATION \nSelect a camera that can store files in raw uncompressed format. \nVERIFICATION \nVERIFICATION METHOD:  INS \nVerify that the NIKON D100 camera can store the images in raw pixel count \nformat rather than being compressed into a format such as JPEG. \nVERIFICATION STATUS: CLOSED - COMPLIANT \nThe NIKON D100 camera manual states that the camera is capable of storing \nimages in raw format. \n"
+    },
+    {
+      "locator": "page 22",
+      "text": "SPICE-RPT-002 \n A-17 \nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION: 16 \nERD PARA:  \nVERIFICATION LEAD(S):   \nREQUIREMENT \nFuel flow is adjustable by the crew. \nIMPLEMENTATION \nA potentiometer that will control the set point flow rate of the Mass Flow \nController will be available to the crew external to the MSG. \nVERIFICATION \nVERIFICATION METHOD: TEST \nPerform a functional test per SPICE-TST-006.  The functional test will verify \nthat when the Fuel Flow potentiometer is adjusted that the fuel flow rate can be \nadjusted. \n \nVERIFICATION STATUS: CLOSED - COMPLIANT \nTesting has shown that the fuel flow potentiometer located on the Control Box \noutside the WV allows the crew to change the flow rate. \n \n"
+    },
+    {
+      "locator": "page 23",
+      "text": "SPICE-RPT-002 \n A-18 \nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET\nVERIFICATION: 17 \nERD PARAGRAPH:  \nVERIFICATION LEAD(S):   \nREQUIREMENT \nThe video science data will be downlinked real-time for the initial runs and prior \nto performing the next series of runs after the initial runs. \nIMPLEMENTATION \nThe Color Video signal is routed to the MSG facility Monitor and Video \nRecorder.  The MSG facility is capable of downlinking this data as ISS \nbandwidth permits.  The project will submit a resource request for this downlink \ndata. \nVERIFICATION \nVERIFICATION METHOD: INS \nVerify that the ICD includes the resource request. \nVERIFICATION STATUS: CLOSED - COMPLIANT \nThe ICD states:  SPICE experiment video is required to be downlinked as soon \nas possible either during or immediately after each flame test.  The digital \nphotos from the SPICE still camera are required to be downlinked as soon as \npossible after selected flame tests for ground confirmation prior to proceeding \nwith the following test. \n \n"
+    },
+    {
+      "locator": "page 24",
+      "text": "SPICE-RPT-002 \n A-19 \nSPICE SCIENCE REQUIREMENT VERIFICATION SHEET \n \nVERIFICATION: 18 \nERD PARAGRAPH: 4.6.1.a.2 \nVERIFICATION LEAD(S):   \nREQUIREMENT \nAvailable fuels are methane, propane, ethylene, mixture of 50% propylene and \n50% nitrogen, mixture of 75% propylene and 25% nitrogen, and pure propylene. \nIMPLEMENTATION \nThe project will assemble, test, and launch 12 gas bottles with two bottles of \neach type of gas or gas mixture. \nVERIFICATION \nVERIFICATION METHOD:  INS \nVerify that the ICD includes the upmass resource. \n \nVERIFICATION STATUS: CLOSED - COMPLIANT \nThe ICD includes Table I which shows 12 bottles in 2 stowage cases. \n"
+    }
+  ],
+  "details": {
+    "page_count": 24,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

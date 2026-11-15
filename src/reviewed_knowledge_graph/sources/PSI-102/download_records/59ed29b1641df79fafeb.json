@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:59ed29b1641df79fafeb",
+  "study": "PSI-102",
+  "filename": "PSI-102_Reference Data_SAME_Software Req Document.pdf",
+  "key": "psi-data/PSI-102/Reference Data/PSI-102_Reference Data_SAME_Software Req Document.pdf",
+  "category": "Reference Data",
+  "size_bytes": 400833,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d56f91ab4427dbf445d&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/59ed29b1641df79fafeb/PSI-102_Reference Data_SAME_Software Req Document.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "ea41d0a9db34f756f433b6954f1a0a9d6060e05ab45b6ef534ab60a8ff23d300",
+  "status": "downloaded"
+}

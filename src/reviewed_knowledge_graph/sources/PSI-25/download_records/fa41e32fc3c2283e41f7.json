@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-25:fa41e32fc3c2283e41f7",
+  "study": "PSI-25",
+  "filename": "PSI-25_Reference Data_Fan calibration data.xlsx",
+  "key": "psi-data/PSI-25/Reference Data/PSI-25_Reference Data_Fan calibration data.xlsx",
+  "category": "Reference Data",
+  "size_bytes": 23973,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=692480587f6aa6a830210600&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-25/fa41e32fc3c2283e41f7/PSI-25_Reference Data_Fan calibration data.xlsx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "bc0dca3efdef44a7774d8dd37aebc0cedae8d67d7bae8c9cbde9590014a3c983",
+  "status": "downloaded"
+}

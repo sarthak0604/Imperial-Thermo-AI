@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:a7392a73be1ed7362989",
+  "study": "PSI-22",
+  "filename": "PSI-22_Engineering Documents_ACME CLD burner hot wire anemometry measurements.pdf",
+  "key": "psi-data/PSI-22/Engineering Documents/PSI-22_Engineering Documents_ACME CLD burner hot wire anemometry measurements.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 2431305,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75e0eb4c08676005584&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/a7392a73be1ed7362989/PSI-22_Engineering Documents_ACME CLD burner hot wire anemometry measurements.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "3c0dc8819f83b51e41cc110c6043d1996a139a61c6bb90b6490fa6bce3c43eaa",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:f45646f5a90cb4c68a07",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_Drawing_Flat.Sample.Frame_1cm.pdf",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_Drawing_Flat.Sample.Frame_1cm.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 586727,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcfac3501a37c2c60ddb&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/f45646f5a90cb4c68a07/PSI-26_Engineering Documents_Drawing_Flat.Sample.Frame_1cm.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "bae2ceac0f5b7e1617329884dfcfa4b027d4660e9f84fb8d15fa4d820b99b80b",
+  "status": "downloaded"
+}

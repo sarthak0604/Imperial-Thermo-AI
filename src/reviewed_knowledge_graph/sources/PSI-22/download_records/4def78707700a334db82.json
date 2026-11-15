@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:4def78707700a334db82",
+  "study": "PSI-22",
+  "filename": "CIR Integrated Pneumatic Schematic.pdf",
+  "key": "psi-data/PSI-22/Engineering Documents/PSI-22_Engineering Documents_S1101MFS0004_rev_A - ACME/CIR Integrated Pneumatic Schematic.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 308670,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75a0eb4c08676005565&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/4def78707700a334db82/CIR Integrated Pneumatic Schematic.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "415f24ed91686fa32d96b164d17646be5a1fae1884c25fc2d0b75bb81618d14e",
+  "status": "downloaded"
+}

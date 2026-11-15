@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-69:8894ea0cda1d6fea6bdc",
+  "study": "PSI-69",
+  "filename": "PSI-69_Engineering Documents_FLEX Engineering Requirements Document.pdf",
+  "key": "psi-data/PSI-69/Engineering Documents/PSI-69_Engineering Documents_FLEX Engineering Requirements Document.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 237373,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-69/download?file=684347449e44646b740289fe&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-69/8894ea0cda1d6fea6bdc/PSI-69_Engineering Documents_FLEX Engineering Requirements Document.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "a96a47878d2d9e4451f3d889f742571aa2d89c48ba9e9d84b6c698a4cb39486c",
+  "status": "downloaded"
+}

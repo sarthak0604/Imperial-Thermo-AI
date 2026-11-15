@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:16e7cd3804c103deacd6",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Tinajero et al 2014 Ground-Based Schlieren Experiments.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Tinajero et al 2014 Ground-Based Schlieren Experiments.pdf",
+  "category": "Presentations",
+  "size_bytes": 1827407,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75c0eb4c08676005578&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/16e7cd3804c103deacd6/PSI-22_Presentations_Tinajero et al 2014 Ground-Based Schlieren Experiments.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "eb5f3d6d0cbc5bc023dca013d3b76c743182b9a6e9e7aca1aa8575e495a45216",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:bc7787aff49bf47b3f0d",
+  "study": "PSI-23",
+  "filename": "PSI-23_Science Documents_ACME non-imaging data file description.pdf",
+  "key": "psi-data/PSI-23/Science Documents/PSI-23_Science Documents_ACME non-imaging data file description.pdf",
+  "category": "Science Documents",
+  "size_bytes": 377001,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdc66daf91e274cec83d&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/bc7787aff49bf47b3f0d/PSI-23_Science Documents_ACME non-imaging data file description.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "684d321a26e81472f3c9ca7d320f531217b06cf863075a60ebb004a931bba06b",
+  "status": "downloaded"
+}

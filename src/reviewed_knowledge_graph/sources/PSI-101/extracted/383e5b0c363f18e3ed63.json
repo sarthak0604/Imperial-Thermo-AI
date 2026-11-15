@@ -1,0 +1,168 @@
+{
+  "id": "res:PSI-101:383e5b0c363f18e3ed63",
+  "study": "PSI-101",
+  "filename": "PSI-101_Engineering Documents_SAME_Wire_Report.pdf",
+  "key": "psi-data/PSI-101/Engineering Documents/PSI-101_Engineering Documents_SAME_Wire_Report.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 1852991,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc54db8656d2315bf51da&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/383e5b0c363f18e3ed63/PSI-101_Engineering Documents_SAME_Wire_Report.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "78784625aaffb7420474a29b873454beaf5b38377edc11f6378cb087ca942cfa",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": " \n \n \n \n \n \n \n \n \n \n \n \nSmoke Experiment \naka \nCharacterization of Smoke Particulate  \nfor Spacecraft Fire Detection \n \nEngineering Report \n \nCharacterization of Ignitor Wire Candidates \n \n \n \n \n \nSubmitted by: \nZIN Technologies, Inc \nLen Miller \nApril 2002 \n \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "SMOKE Experiment \nIgnitor WIre Characterization Study \nApril 2002 \nPurpose: \nThe purpose of this report is to document the results of a study conducted in search of the \nideal type of wire to be used for the hot wire ignitors for the Smoke Experiment. \n \nObjective: \nThe objective of this study was to find a wire with a consistent, linear resistance versus \ntemperature characteristic and with a “significant” slope. \n \nScope: \nThis study was conducted in the Phase A Laboratory (Bldg 77, Room 154A) on \ncommercially available wire.  The ignitor manufacturing technique and the pyrolization \nof samples is beyond the scope of this study. \n \nProcedure: \nEach type of wire was mounted on a test fixture.  The test fixture was then placed into a \nThermCraft laboratory oven.  The oven was programmed to ramp up to a set point, hold \nthe set point for fifteen minutes, and then ramp to the next set point until the final \ntemperature of approximately 800 oC was attained.  (See oven cycle graph in Appendix \nC.)  Resistance readings were taken near the end of  each “dwell” period.  Several of the \nwire types were subjected to additional tests to examine the effects of the previous \nthermal cycle(s). \n \nThe test fixture held approximately thirty-four inches (0.86 meters) of wire. \n \nA stainless steel sheathed type-k thermocouple (Omega Part No. KQSS-116U-24) was \nplaced inside the oven in close proximity to the wire under test.   \n \nLeads of high temperature furnace wire (#18 AWG) were brought out of the oven to \nenable the test conductor to measure the resistance of the wire under test.   \nThe resistance of the leads and the terminations was characterized by subjection the \nfixture and leads to a thermal cycle with a copper bus bar shorting the terminals of the \nfixture. \n \nThe fixture resistance was subtracted from the total resistance reading for each test point \nto determine the net resistance of the wire under test. \n \nThe results were recorded in an Excel Workbook.  Several different data plots were \nprepared and studied. \n"
+    },
+    {
+      "locator": "page 3",
+      "text": "SMOKE Experiment \nIgnitor WIre Characterization Study \nApril 2002 \n \nSummary and Conclusions: \nThis study examined the characteristics of eight types of wire: anodized mild steel, pure \niron, Alomega (similar to Alumel), -Stainless steel, pure platinum, platinum-rhodium, \ntungster-5%rhenium, and tungsten-26%rhenium.  Traditional heating wires, Nichrome \nand Kanthal were also included for comparison. \n \nPure platinum has close-to-ideal characteristics.  However the cost of the material may be \nprohibitive. \n \nAlomega and stainless steel ran a close second. \n \nMild steel, iron and tungsten-composites oxidized in the oven and their characteristics \nchanged significantly from one thermal cycle to the next. \n \nNichrome and Kanthal have too flat a slope to meet the objectives. \n \nFurther testing will be conducted to determine the optimum wire type and wire diameter.  \nRepresentative test samples will by pyrolized using various ignitor configurations.  The \nquality and quantity of the smoke will be visually evaluated. \n \nTest Results: \nThe tests were conducted in the Phase A Lab from February 6, 2002 through March 20 \n2002, by Len Miller and Nathan Funk of Zin Technologies, Inc. \n \nThe individual results for each test were tabulated and plotted.  For those wires subjected \nto more than one thermal cycle, the comparative results were plotted.  Finally, an overall \nplot of the combined results was prepared.   \n \nThe entire Excel Workbook, with tabulated test results and plots thereof, is included in  \nAppendix A of this report.  \n \nPhotographs of the laboratory apparatus are in Appendix B and a graph of the thermal \ncycle is in Appendix C. \n \n"
+    },
+    {
+      "locator": "page 4",
+      "text": " \n \n \n \n \n \n \n \n \n \n \nAppendix A \nTest Results \n \n \n \n \n \n \n \n"
+    },
+    {
+      "locator": "page 5",
+      "text": " \n"
+    },
+    {
+      "locator": "page 6",
+      "text": " \n SMOKE Experiment\nIgnitor Wire\nComparison\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n100\n200\n300\n400\n500\n600\n700\n800\n900\nDeg C\nOhms\n10.0\n12.0\n14.0\n16.0\n18.0\n20.0\n22.0\n24.0\n26.0\nStl Test 1\nStl Test 2\nStl Test 3\nFe Test 4\nFe Test 5\nFe Test 6\nAl Test 7\nAl Test 8\nAl Test 9\nSW Test 10\nSW Test 11\nSW Test 12\nKanthal\nPlatinum\nPtRh\nW5Re Test 15\nW26Re Test 15\nW5Re Test 16\nNichrome\nW5Re Test 16\nNichrome use right axis\n"
+    },
+    {
+      "locator": "page 7",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR5/R1\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n54.7\n327.7\n1.485\n0.198\n1.287\n1.282\n0.015\nm\nb\n2\n248\n521\n2.647\n0.268\n2.379\n2.400\n0.027\n3.6205E-04\n1.7777E-01\n3\n446\n719\n4.41\n0.339\n4.071\n4.038\n0.046\n4\n608\n881\n6.38\n0.398\n5.982\n6.002\n0.068\nWire Polynomial\n5\n797\n1070\n9.75\n0.466\n9.284\n7.211\n9.287\n0.106\na3\na2\na1\na0\n6\n849\n1122\n10.91\n0.485\n10.425\n10.419\n0.119\n7.8300E-09\n4.9887E-07 5.0209E-03 1.0048E+00\n0.014 Mild Steel\nTest 1\ny = 0.0116x - 0.2254\ny = 7.8300E-09x3 + 4.9887E-07x2 + \n5.0209E-03x + 1.0048E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.014 Mild Steel\nLinear (0.014 Mild\nSteel)\nPoly. (0.014 Mild\nSteel)\n0.014 Mild Steel Wire\nComparison\n0.0\n5.0\n10.0\n15.0\n20.0\n0\n200\n400\n600\n800\n1000\nDeg C\nOhms\nTest 1\nTest 2\nTest 3\n"
+    },
+    {
+      "locator": "page 8",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResistance\nR5/R1\nPolynomial \nRes Calc\nOhms/cm\nFixture\n1\n23.8\n297\n2.17\n0.186\n1.98\n1.98\n0.023\nm\nb\n2\n286\n559\n4.68\n0.281\n4.40\n4.41\n0.050 3.6205E-04 1.7777E-01\n3\n477\n750\n7.37\n0.350\n7.02\n7.00\n0.080\n4\n646\n919\n10.59\n0.412\n10.18\n10.19\n0.116\n5\n807\n1080\n14.7\n0.470\n14.2\n7.185\n14.23\n0.162 Polynomial\na3\na1\na0\n8.0858E-09 3.2148E-06 7.5409E-03 1.7979E+00\nReadings After Test\nTemp\nRes\nFixture\nNet\n772\n14.2\n0.457\n13.74\n438\n8.26\n0.336\n7.92\n124\n3.45\n0.223\n3.23\n72\n3.56\n0.204\n3.36\n40\n2.92\n0.192\n2.73\nReading at fixture ignoring wire leads\n??\n2.08\n0.014 Mild Steel Wire\nTest 2\ny = 0.0154x + 0.6635\ny = 8.0858E-09x3 + 3.2148E-06x2 + 7.5409E-\n03x + 1.7979E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\n1000\nDeg C\nOhms\n0.014 Mild Steel #2\nLinear (0.014 Mild Steel\n#2)\nPoly. (0.014 Mild Steel\n#2)\n"
+    },
+    {
+      "locator": "page 9",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResistance\nR5/R1\nPolynomial \nRes Calc\nOhms/cm\n1\n25.4\n299\n2.10\n0.187\n1.91\n1.91\n0.0218\nm\nb\n2\n181\n454\n3.49\n0.243\n3.24\n3.26\n0.0370\n3.6205E-04 1.7777E-01\n3\n443\n716\n6.98\n0.338\n6.64\n6.66\n0.0758\n4\n623\n896\n10.52\n0.403\n10.12\n10.21\n0.1154\n5\n803\n1076\n15.46\n0.468\n14.99\n7.837\n15.11\n0.1711 a4\na3\na2\na1\na0\n8.7634E-09 4.4236E-06 7.4749E-03 1.7151E+00\nFixture\n0.014 Mild Steel\n Test 3\ny = 0.0165x + 0.5527\ny = 8.7643E-09x3 + 4.2355E-06x2 + 7.4749E-03x + \n1.7151E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.014 Mild Steel #3\nLinear (0.014 Mild Steel\n#3)\nPoly. (0.014 Mild Steel\n#3)\n"
+    },
+    {
+      "locator": "page 10",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR5/R1\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n60.6\n333.6\n1.184\n0.200\n0.984\n0.984\n0.011\nm\nb\n2\n177\n450\n1.733\n0.242\n1.491\n1.491\n0.017\n3.6205E-04\n1.7777E-01\n3\n450\n723\n3.71\n0.341\n3.369\n3.369\n0.038\n4\n624\n897\n5.51\n0.404\n5.106\n5.106\n0.058\nWire Polynomial\n5\n801\n1074\n9.26\n0.468\n8.792\n8.933\n8.792\n0.100 a4\na3\na2\na1\na0\n5.0734E-11 -6.5732E-08\n3.3664E-05 -1.0603E-03 9.3886E-01\n0.015 Iron\nTest 4\ny = 0.0099x - 0.2407\ny = 5.0734E-11x4 - 6.5732E-08x3 + \n3.3664E-05x2 - 1.0603E-03x + \n9.3886E-01\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.015 Iron\nLinear (0.015 Iron)\nPoly. (0.015 Iron)\n0.015 Iron Wire\nComparison\n0.0\n5.0\n10.0\n15.0\n0\n200\n400\n600\n800\n1000\nDeg C\nOhms\nIron Test 5\nIron Test 4\nIron Test 6\n"
+    },
+    {
+      "locator": "page 11",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR5/R1\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n44.7\n317.7\n1.427\n0.194\n1.233\n1.233\n0.014\nm\nb\n2\n176\n449\n2.194\n0.241\n1.953\n1.953\n0.022\n3.6205E-04\n1.7777E-01\n3\n441\n714\n4.72\n0.337\n4.381\n4.380\n0.050\n4\n617\n890\n6.97\n0.401\n6.570\n6.570\n0.075\nWire Polynomial\n5\n801\n1074\n11.07\n0.468\n10.602\n5.328\n10.602\n0.121 a4\na3\na2\na1\na0\n4.4273E-11 -5.9868E-08\n3.4180E-05\n5.8800E-05\n1.1673E+00\n0.015 Iron\nTest 5\ny = 0.0119x - 0.0116\ny = 4.4273E-11x4 - 5.9868E-08x3 + \n3.4180E-05x2 + 5.8800E-05x + \n1.1673E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.015 Iron\nLinear (0.015 Iron)\nPoly. (0.015 Iron)\n"
+    },
+    {
+      "locator": "page 12",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR5/R1\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n31.8\n304.8\n1.692\n0.189\n1.503\n1.503\n0.017\nm\nb\n2\n182\n455\n2.670\n0.244\n2.426\n2.426\n0.028\n3.6205E-04\n1.7777E-01\n3\n442\n715\n6.00\n0.338\n5.662\n5.662\n0.065\n4\n620\n893\n9.12\n0.402\n8.718\n8.718\n0.099\nWire Polynomial\n5\n805\n1078\n14.22\n0.469\n13.751\n9.151\n13.751\n0.157 a4\na3\na2\na1\na0\n4.5096E-11 -6.5306E-08\n4.3306E-05 -8.3135E-04 1.4874E+00\n0.015 Iron\nTest 6\ny = 0.0155x - 0.0246\ny = 4.5096E-11x4 - 6.5306E-08x3 + \n4.3306E-05x2 - 8.3135E-04x + \n1.4874E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.015 Iron\nLinear (0.015 Iron)\nPoly. (0.015 Iron)\n"
+    },
+    {
+      "locator": "page 13",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR5/R1\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n82.1\n355.1\n2.280\n0.207\n2.073\n2.268\n0.024\nm\nb\n2\n162\n435\n2.730\n0.236\n2.494\n2.494\n0.029\n3.6205E-04\n1.7777E-01\n3\n440\n713\n3.41\n0.337\n3.073\n3.073\n0.036\n4\n618\n891\n3.76\n0.402\n3.358\n3.358\n0.039\nWire Polynomial\n5\n799\n1072\n4.12\n0.467\n3.653\n1.763\n3.653\n0.042 a4\na3\na2\na1\na0\n-1.7747E-11\n3.7664E-08 -2.8477E-05\n1.0652E-02 1.3739E+00\n1.8372E-09 -3.3172E-06\n3.5501E-03 1.9974E+00\nFixture 1\n0.015 Alumel\nTest 7\ny = 0.0021x + 2.048\ny = -1.7747E-11x4 + 3.7664E-08x3 - 2.8477E-\n05x2 + 1.0615E-02x + 1.3729E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.015 Alumel\nLinear (0.015\nAlumel)\nPoly. (0.015\nAlumel)\n0.015 Alumel\nTest 7\nignnore point #1\ny = 0.0018x + 2.2276\ny = 1.8372E-09x3 - 3.3172E-06x2 + 3.5501E-\n03x + 1.9974E+00\n0.0\n1.0\n2.0\n3.0\n4.0\n0\n200\n400\n600\n800\n1000\nDeg C\nOhms\n0.015 Alumel\nLinear (0.015\nAlumel)\nPoly. (0.015\nAlumel)\n0.015 Alumel\nCompare\n0.0\n1.0\n2.0\n3.0\n4.0\n5.0\n0\n200\n400\n600\n800\n1000\nDeg C\nOhms\nTest 7\nTest 8\nTest 9\n"
+    },
+    {
+      "locator": "page 14",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR5/R1\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n86.8\n359.8\n2.290\n0.209\n2.081\n2.081\n0.024\nm\nb\n2\n165\n438\n2.730\n0.238\n2.492\n2.492\n0.029\n3.6205E-04\n1.7777E-01\n3\n435\n708\n3.42\n0.335\n3.085\n3.085\n0.036\n4\n618\n891\n3.80\n0.402\n3.398\n3.399\n0.039\nWire Polynomial\n5\n796\n1069\n4.17\n0.466\n3.704\n1.780\n3.704\n0.043 a4\na3\na2\na1\na0\n-1.8228E-11\n3.8397E-08 -2.8850E-05\n1.0804E-02 1.3363E+00\nFixture 1\n0.015 Alumel\nTest 8\ny = 0.0022x + 2.033\ny = -1.8228E-11x4 + 3.8397E-08x3 - 2.8850E-\n05x2 + 1.0804E-02x + 1.3363E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.015 Alumel\nLinear (0.015\nAlumel)\nPoly. (0.015\nAlumel)\n"
+    },
+    {
+      "locator": "page 15",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR5/R1\nPolynomial \nRes Calc\nFixture \n1\n33.9\n306.9\n2.100\n0.190\n1.910\n1.910\n0.022\nm\nb\n2\n172\n445\n2.800\n0.240\n2.560\n2.560\n0.030\n3.6205E-04\n1.7777E-01\n3\n440\n713\n3.49\n0.337\n3.153\n3.153\n0.037\n4\n619\n892\n3.95\n0.402\n3.548\n3.548\n0.041\nWire Polynomial\n5\n799\n1072\n4.31\n0.467\n3.843\n2.012\n3.843\n0.045 a4\na3\na2\na1\na0\n-1.6982E-11\n3.1959E-08 -2.1337E-05\n8.0389E-03 1.6607E+00\nFixture 1\n0.015 Alumel\nTest 9\ny = 0.0024x + 1.9951\ny = -1.6982E-11x4 + 3.1959E-08x3 - 2.1337E-\n05x2 + 8.0389E-03x + 1.6607E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.015 Alumel\nLinear (0.015\nAlumel)\nPoly. (0.015\nAlumel)\n0.015 Alumel\nTest 9\ny = 398.03x - 782.41\n-200.0\n0.0\n200.0\n400.0\n600.0\n800.0\n1000.0\n0\n1\n2\n3\n4\n5\nDeg C\nOhms\n0.015 Alumel\nLinear (0.015\nAlumel)\nPoly. (0.015\nAlumel)\n"
+    },
+    {
+      "locator": "page 16",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR5/R1\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n82.2\n355.2\n3.430\n0.208\n3.222\n3.228\n0.037\nm\nb\n2\n171\n444\n3.760\n0.240\n3.520\n3.574\n0.040\n3.6205E-04\n1.7777E-01\n3\n440\n713\n4.60\n0.337\n4.263\n5.177\n0.049\n4\n620\n893\n4.99\n0.402\n4.588\n7.145\n0.052\nWire Polynomial\n5\n802\n1075\n5.31\n0.468\n4.842\n1.503\n10.376\n0.055 a4\na3\na2\na1\na0\n3.4188E-12\n5.3641E-09\n8.4567E-07\n3.3774E-03 2.9420E+00\nFixture 2\n0.020 Safety Wire\nTest 10\ny = 0.0023x + 3.1238\ny = 3.4188E-12x4 - 5.3641E-\n09x3 + 8.4567E-07x2 + \n3.3774E-03x + 2.9420E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.020 Safety Wirel\nLinear (0.020\nSafety Wirel)\nPoly. (0.020 Safety\nWirel)\n0.020 Safety Wire\nComparison\n0.0\n1.0\n2.0\n3.0\n4.0\n5.0\n6.0\n0\n200\n400\n600\n800\n1000\nDeg C\nOhms\nTest 10\nTest 11\n"
+    },
+    {
+      "locator": "page 17",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR5/R1\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n31.9\n304.9\n3.220\n0.189\n3.031\n3.031\n0.035\nm\nb\n2\n186\n459\n3.780\n0.245\n3.535\n3.535\n0.040\n3.6205E-04\n1.7777E-01\n3\n445\n718\n4.56\n0.339\n4.221\n4.221\n0.048\n4\n622\n895\n4.98\n0.403\n4.577\n4.577\n0.052\nWire Polynomial\n5\n801\n1074\n5.31\n0.468\n4.842\n1.598\n4.842\n0.055 a4\na3\na2\na1\na0\n-1.3840E-13\n2.4865E-10 -1.6250E-06\n3.6168E-03 2.9170E+00\n0.020 Safety Wire\nTest 11\ny = 0.0024x + 3.0528\ny = -1.3840E-13x4 + 2.4865E-10x3 - \n1.6250E-06x2 + 3.6168E-03x + 2.9170E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.020 Safety Wire\nLinear (0.020\nSafety Wire)\nPoly. (0.020 Safety\nWire)\n"
+    },
+    {
+      "locator": "page 18",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR/R1\nalpha\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n81.8\n354.8\n3.420\n0.207\n3.213\n1.000\n3.202\n0.037\nm\nb\n2\n172\n445\n3.740\n0.240\n3.500\n1.089\n0.00099\n3.492\n0.040\n3.6205E-04\n1.7777E-01\n3\n443\n716\n4.57\n0.338\n4.232\n1.317\n0.00088\n4.217\n0.048\n4\n619\n892\n4.99\n0.402\n4.588\n1.428\n0.00080\n4.572\n0.052\nWire Polynomial\n5\n797\n1070\n5.32\n0.466\n4.854\n1.511\n0.00071\n4.837\n0.055 a4\na3\na2\na1\na0\n-1.3840E-13\n2.4865E-10 -1.6250E-06\n3.6168E-03 2.9170E+00\nFixture 2\n0.020 Safety Wire\nTest 12\ny = 0.0023x + 3.0937\ny = 4.6420E-13x4 - 9.2826E-10x3 - \n8.6243E-07x2 + 3.4470E-03x + \n2.9369E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.020 Safety\nWire\nLinear (0.020\nSafety Wire)\nPoly. (0.020\nSafety Wire)\n0.020 Safety Wire\nTest 12\ny = 423.41x - 1303.8\n0.0\n200.0\n400.0\n600.0\n800.0\n1000.0\n0\n2\n4\n6\nOhms\nDeg C\n0.020 Safety\nWire\nLinear (0.020\nSafety Wire)\nPoly. (0.020\nSafety Wire)\n"
+    },
+    {
+      "locator": "page 19",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR5/R1\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n47.0\n320.0\n24.480\n0.195\n24.285\n3.083\n0.282\nm\nb\n2\n177\n450\n24.560\n0.242\n24.318\n3.508\n0.282\n3.6205E-04\n1.7777E-01\n3\n458\n731\n24.78\n0.344\n24.436\n4.250\n0.284\n4\n627\n900\n25.14\n0.405\n24.735\n4.586\n0.287\nWire Polynomial\n5\n802\n1075\n25.39\n0.468\n24.922\n1.026\n4.843\n0.289 a4\na3\na2\na1\na0\n-1.3840E-13\n2.4865E-10 -1.6250E-06\n3.6168E-03 2.9170E+00\nFixture 1\n0.020 Nichrome Wire\nTest 13a\ny = 0.0009x + 24.179\ny = -1.6573E-11x4 + 2.6153E-08x3 - \n1.1558E-05x2 + 1.8722E-03x + 2.4220E+01\n0.0\n5.0\n10.0\n15.0\n20.0\n25.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.020 Safety Wire\nLinear (0.020\nSafety Wire)\nPoly. (0.020 Safety\nWire)\n"
+    },
+    {
+      "locator": "page 20",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR5/R1\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n47.0\n320.0\n4.924\n0.195\n4.729\n3.083\n0.054\nm\nb\n2\n177\n450\n5.060\n0.242\n4.818\n3.508\n0.055\n3.6205E-04\n1.7777E-01\n3\n458\n731\n5.43\n0.344\n5.086\n4.250\n0.058\n4\n627\n900\n5.47\n0.405\n5.065\n4.586\n0.058\nWire Polynomial\n5\n802\n1075\n5.47\n0.468\n5.002\n1.058\n4.843\n0.057 a4\na3\na2\na1\na0\n-1.3840E-13\n2.4865E-10 -1.6250E-06\n3.6168E-03 2.9170E+00\nFixture 2\n0.010 Kanthal Wire\nTest 13b\ny = 0.0004x + 4.7626\ny = 1.0612E-11x4 - 1.9165E-08x3 + 9.9697E-\n06x2 - 8.2665E-04x + 4.7480E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.020 Safety Wire\nLinear (0.020\nSafety Wire)\nPoly. (0.020 Safety\nWire)\n"
+    },
+    {
+      "locator": "page 21",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR/R1\nalpha\nalpha 20\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n22.7\n295.7\n2.090\n0.186\n1.904\n1.000\n1.904\n0.022\nm\nb\n2\n199\n472\n3.310\n0.250\n3.060\n1.607\n0.00344\n0.003477\n3.060\n0.035\n3.6205E-04\n1.7777E-01\n3\n519\n792\n5.35\n0.366\n4.984\n2.618\n0.00326\n0.003289\n4.984\n0.057\n4\n628\n901\n6.00\n0.405\n5.595\n2.938\n0.00320\n0.003230\n5.595\n0.064\nWire Polynomial\n5\n801\n1074\n7.11\n0.468\n6.642\n3.489\n0.00320\n0.003225\n6.642\n0.076 a4\na3\na2\na1\na0\n20\n293\n0.185\n1.886\n1\n1.887\n0.022\n5.1818E-12 -6.8636E-09\n1.7624E-06\n6.4275E-03 1.7573E+00\nFixture 2\n0.00320378\n0.010 Platinum Wire\nTest 14a\ny = 0.0061x + 1.8097\ny = 5.1818E-12x4 - 6.8636E-09x3 + 1.7624E-\n06x2 + 6.4275E-03x + 1.7573E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.010 Platinum\nLinear (0.010\nPlatinum)\nPoly. (0.010\nPlatinum)\n0.010  Platinum Wire\ny = 165.09x - 298.6\n0.0\n200.0\n400.0\n600.0\n800.0\n1000.0\n0.0\n2.0\n4.0\n6.0\n8.0\nOhms\nTemperature C\nInverse\nLinear (Inverse)\n"
+    },
+    {
+      "locator": "page 22",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR/R1\nalpha\nalpha 20\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n22.7\n295.7\n3.620\n0.186\n3.434\n1.000\n3.434\n0.040\nm\nb\n2\n199\n472\n4.580\n0.250\n4.330\n1.261\n0.00148\n0.001486\n4.330\n0.050\n3.6205E-04\n1.7777E-01\n3\n519\n792\n6.26\n0.366\n5.894\n1.716\n0.00144\n0.001449\n5.894\n0.068\n4\n628\n901\n6.80\n0.405\n6.395\n1.862\n0.00142\n0.001430\n6.395\n0.074\nWire Polynomial\n5\n801\n1074\n7.63\n0.468\n7.162\n2.086\n0.00139\n0.001400\n7.162\n0.083 a4\na3\na2\na1\na0\n20\n293\n0.185\n3.420\n0.996\n3.420\n9.1678E-13 -1.7442E-09\n5.0514E-07\n5.0409E-03 3.3193E+00\nFixture 1\n0.010 Platinum/Rhodium Wire\nTest 14b\ny = 0.0048x + 3.3571\ny = 9.1678E-13x4 - 1.7442E-09x3 + 5.0514E-\n07x2 + 5.0409E-03x + 3.3193E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.010 PtRh\nLinear (0.010\nPtRh)\nPoly. (0.010 PtRh)\n0.010 Platinum/Rhodium Wire\nTest 14b\ny = 207.9x - 697.7\n0.0\n200.0\n400.0\n600.0\n800.0\n1000.0\n0\n2\n4\n6\n8\nOhms\nDeg C\n0.010 PtRh\nLinear (0.010\nPtRh)\nPoly. (0.010 PtRh)\n"
+    },
+    {
+      "locator": "page 23",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR/R1\nalpha\nalpha 20\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n24.3\n297.3\n2.380\n0.187\n2.193\n1.000\n2.193\n0.025\nm\nb\n2\n195\n468\n3.380\n0.248\n3.132\n1.428\n0.00251\n0.002533\n3.132\n0.036\n3.6205E-04\n1.7777E-01\n3\n441\n714\n4.72\n0.337\n4.383\n1.998\n0.00240\n0.002420\n4.383\n0.051\n4\n625\n898\n5.85\n0.404\n5.446\n2.483\n0.00247\n0.002495\n5.447\n0.063\nWire Polynomial\n5\n801\n1074\n7.25\n0.468\n6.782\n3.092\n0.00269\n0.002725\n6.783\n0.079 a4\na3\na2\na1\na0\n20\n293\n0.185\n2.170\n0.989\n2.168\n0.025\n1.6970E-12\n2.1485E-09 -2.9729E-06\n6.0416E-03 2.0484E+00\nFixture 1\n0.010 Tungsten 5% Rhenium\nTest 15a\ny = 0.0058x + 1.9774\ny = 1.6970E-12x4 + 2.1485E-09x3 - 2.9729E-\n06x2 + 6.0406E-03x + 2.0484E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.010 W5Rh\nLinear (0.010\nW5Rh)\nPoly. (0.010\nW5Rh)\n0.010  W5Rh\ny = 172.13x - 337.89\n0.0\n100.0\n200.0\n300.0\n400.0\n500.0\n600.0\n700.0\n800.0\n900.0\n0.0\n2.0\n4.0\n6.0\n8.0\nOhms\nTemperature C\nInverse\nLinear (Inverse)\n0.010 Tungsten 5% Rhenium\nComparison\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.000\n1.000\n2.000\n3.000\n4.000\n5.000\n6.000\n7.000\n8.000\n0.010 W5Rh\n#1\n0.010 W5Rh\n#2\n"
+    },
+    {
+      "locator": "page 24",
+      "text": " \n \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR/R1\nalpha\nalpha 20\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n24.3\n297.3\n5.150\n0.187\n4.963\n1.000\n4.963\n0.057\nm\nb\n2\n195\n468\n6.190\n0.248\n5.942\n1.197\n0.00115\n0.001160\n5.942\n0.068\n3.6205E-04\n1.7777E-01\n3\n441\n714\n7.59\n0.337\n7.253\n1.461\n0.00111\n0.001112\n7.253\n0.083\n4\n625\n898\n8.72\n0.404\n8.316\n1.675\n0.00112\n0.001130\n8.316\n0.095\nWire Polynomial\n5\n801\n1074\n11.28\n0.468\n10.812\n2.178\n0.00152\n0.001527\n10.812\n0.123 a4\na3\na2\na1\na0\n20\n293\n0.185\n4.939\n1\n4.945\n0.056\n4.3064E-11\n-5.2003E-08\n1.8967E-05\n3.4609E-03 4.8689E+00\nFixture 2\n0.010 Tungsten 26% Rhenium\nTest 15b\ny = 0.007x + 4.5213\ny = 4.3064E-11x4 - 5.2003E-08x3 + 1.8967E-\n05x2 + 3.4609E-03x + 4.8689E+00\n0.0\n5.0\n10.0\n15.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.010 W26Rh\nLinear (0.010\nW26Rh)\nPoly. (0.010\nW26Rh)\n0.010 Tungsten 26% Rhenium\ny = 135.16x - 590.68\n0.0\n200.0\n400.0\n600.0\n800.0\n1000.0\n0.0\n5.0\n10.0\n15.0\nOhms\nTemperature C\nInverse\nLinear (Inverse)\n0.010 Tungsten 26% Rhenium\nComparison\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.010 W26Rh #1\n0.010W26Rh #2\n"
+    },
+    {
+      "locator": "page 25",
+      "text": " \n \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR/R1\nalpha\nalpha 20\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n24.8\n297.8\n4.02\n0.187\n3.833\n1.000\n3.833\n0.045\nm\nb\n2\n195\n468\n4.28\n0.248\n4.032\n1.052\n0.00030\n0.000305\n4.032\n0.047\n3.6205E-04\n1.7777E-01\n3\n454\n727\n5.86\n0.342\n5.518\n1.439\n0.00102\n0.001029\n5.518\n0.064\n4\n628\n901\n7.05\n0.405\n6.645\n1.733\n0.00122\n0.001223\n6.645\n0.077\nWire Polynomial\n5\n806\n1079\n8\n0.470\n7.530\n1.964\n0.00123\n0.001242\n7.530\n0.087 a4\na3\na2\na1\na0\n3.897\n0.000\n6.4755E-12 -2.3264E-08\n2.4067E-05 -3.1680E-03 3.8974E+00\nFixture 1\n0.010 Tungsten 5% Rhenium\nTest 16a\ny = 0.005x + 3.3928\ny = 6.4755E-12x4 - 2.3264E-08x3 + 2.4067E-\n05x2 - 3.1680E-03x + 3.8974E+00\n0.0\n2.0\n4.0\n6.0\n8.0\n10.0\n12.0\n14.0\n16.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.010 W5Rh\nLinear (0.010\nW5Rh)\nPoly. (0.010\nW5Rh)\n0.010  W5Rh\ny = 194.02x - 647.83\n0.0\n200.0\n400.0\n600.0\n800.0\n1000.0\n0.0\n2.0\n4.0\n6.0\n8.0\nOhms\nTemperature C\nInverse\nLinear (Inverse)\n"
+    },
+    {
+      "locator": "page 26",
+      "text": " \n \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance\nResistance \nof Holder\nNet \nResisance\nR/R1\nalpha\nalpha 20\nPolynomial \nRes Calc\nOhms/cm\nFixture \n1\n24.8\n297.8\n5.150\n0.187\n9.290\n1.000\n9.290\n0.106\nm\nb\n2\n195\n468\n6.190\n0.248\n11.100\n1.195\n0.00114\n0.001151\n11.100\n0.127\n3.6205E-04\n1.7777E-01\n3\n454\n727\n7.59\n0.342\n13.690\n1.474\n0.00110\n0.001109\n13.690\n0.156\n4\n628\n901\n8.72\n0.405\n15.170\n1.633\n0.00105\n0.001055\n15.171\n0.173\nWire Polynomial\n5\n806\n1079\n11.28\n0.470\n20.910\n2.251\n0.00160\n0.001614\n20.911\n0.239 a4\na3\na2\na1\na0\n0\n9.237\n0.000\n1.5272E-10\n-2.0208E-07\n8.1327E-05\n2.4753E-04 9.2369E+00\nFixture 2\n0.010 Tungsten 26% Rhenium\nTest 16b\ny = 0.0135x + 8.3295\ny = 1.5272E-10x4 - 2.0208E-07x3 + 8.1327E-\n05x2 + 2.4753E-04x + 9.2369E+00\n0.0\n5.0\n10.0\n15.0\n0\n200\n400\n600\n800\nDeg C\nOhms\n0.010 W26Rh\nLinear (0.010\nW26Rh)\nPoly. (0.010\nW26Rh)\n0.010  Platinum Wire\ny = 67.839x - 530.36\n0.0\n200.0\n400.0\n600.0\n800.0\n1000.0\n0.0\n5.0\n10.0\n15.0\n20.0\n25.0\nOhms\nTemperature C\nInverse\nLinear (Inverse)\n"
+    },
+    {
+      "locator": "page 27",
+      "text": " \nTest Point\nTemp Deg \nCelsius\nTemp Deg \nKelvin\nResistance Delta T\nDelta R\nAlpha\nCalc Res\n1\n21\n294\n0.178\n0\n0.000\n0.18537\n2\n275\n548\n0.267\n254\n0.089 0.0019685 0.0003504\n0.27733\n3\n423\n696\n0.353\n402\n0.175 0.0024456 0.0004353\n0.33092\n4\n598\n871\n0.406\n577\n0.228 0.0022199 0.0003951\n0.39428\n5\n796\n1069\n0.460\n775\n0.282 0.0020442 0.0003639\n0.46596\n6\n849\n1122\n0.475\n828\n0.297 0.0020151 0.0003587\n0.48515\n0.0021387\nm\nb\n3.6205E-04\n1.7777E-01\nTemp\nRes w/Bar\nRes w/o bar\n-273\n0.07893\n-240\n0.09088\n0\n0.17777\n100\n0.21398\n200\n0.25018\n300\n0.28639\n400\n0.32259\n500\n0.35880\n600\n0.39500\n700\n0.43121\n800\n0.46741\n900\n0.50362\n21\n0.18537\n0.18536\n275\n0.27733\n0.27731\n423\n0.33092\n0.33089\n598\n0.39428\n0.39424\n796\n0.46596\n0.46592\n849\n0.48515\n0.48510\nAlpha for copper at 20 C =\n0.00393\nAlpha for copper at 21.4 C=\n0.00391\nCalcualted Res of bar at 20C\n1.08E-05\nTemp\nRes of Bar\n21.4\n0.00001075\n275\n0.00002141\n423\n0.00002762\n598\n0.00003498\n796\n0.00004330\n849\n0.00004552\nTest Fixture with Copper Bar\ny = 3.6205E-04x + 1.7777E-\n01\nR2 = 9.8621E-01\n0.000\n0.100\n0.200\n0.300\n0.400\n0.500\n0.600\n0\n500\n1000\nTemp Celsius\nResistance\nSeries1\nLinear (Series1)\n"
+    },
+    {
+      "locator": "page 28",
+      "text": " \n \n \n \n \n \n \n \n \n \n \nAppendix B \nPhotographs \n \n \n \n \n \n \n"
+    },
+    {
+      "locator": "page 29",
+      "text": " \n \n \n \nPhoto 1 \nTest fixture. \n \n"
+    },
+    {
+      "locator": "page 30",
+      "text": " \n \n \n \n \n \nPhoto 2 \nTest fixture with wire. \n \n"
+    },
+    {
+      "locator": "page 31",
+      "text": " \n \n \n \nPhoto 3 \nOverall Test Setup \n \nFrom left to right: \nResistance measurement equipment \nOven \nControl Unit and sample temperature indicator \n"
+    },
+    {
+      "locator": "page 32",
+      "text": " \n \n \nPhoto 4 \nTest Fixture in Oven \n \n"
+    },
+    {
+      "locator": "page 33",
+      "text": " \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nAppendix C \nOven Cycle \n \n"
+    },
+    {
+      "locator": "page 34",
+      "text": " \n \nOven Cycle\n0\n100\n200\n300\n400\n500\n600\n700\n800\n0\n25\n50\n75\n100\n125\n150\n175\nMinutes\nTemperature Celsius\nOven Cycle\n"
+    }
+  ],
+  "details": {
+    "page_count": 34,
+    "empty_pages": [
+      4,
+      5,
+      28,
+      29,
+      32,
+      33
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

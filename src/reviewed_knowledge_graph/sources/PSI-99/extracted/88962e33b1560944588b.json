@@ -1,0 +1,33 @@
+{
+  "id": "res:PSI-99:88962e33b1560944588b",
+  "study": "PSI-99",
+  "filename": "PSI-99_Science Documents_SAFFIRE-II_Image_Directory_Nomenclature_v3.0.pdf",
+  "key": "psi-data/PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE-II_Image_Directory_Nomenclature_v3.0.pdf",
+  "category": "Science Documents",
+  "size_bytes": 755236,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-99/download?file=6840cdd64a0e24d624cebd81&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-99/88962e33b1560944588b/PSI-99_Science Documents_SAFFIRE-II_Image_Directory_Nomenclature_v3.0.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "edb5b6f4ebc7c32bd26f45f728902d766affa395677d818e9ef932c704321dbe",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "SAFFIRE-II \nImage Directory Nomenclature\nVersion 3.0\nXnCn_Raw_CamOriginal\nCamera original RAW files recorded on-board and downlinked on command.  \nContains 8-byte offset that must be processed prior to color interpolation and \ndistribution.  This data set is archived at NASA-GRC.  \nXnCn_Raw_DistroMaster\nRAW Camara Orginal files processed for 8-byte offset using ImageJ, and resaved \nusing originial file name. This is the RAW Distribution Master set for Science Team \ndistribution and color interpolation (demosaicing).\nXn_Raw2TIFF\nTIFF images of the RAW Distribution Master files, color interpolated (demosaiced) \nusing IrfanView Batch Conversion process.    \nXn_Raw2TIFF_icmad\nRaw2TIFF files annotated with ICMAD 'Exposure' and 'Gain' information. Data is \nappended to the bottom of each frame using ImageMagick script and resaved as \nTIFF.   \nXn_jpeg\nJpeg images created on-board SAFFIRE payload and downlinked by command\nXn_jpeg_corrupt\nJpeg images received corrupted after downlink. \nXn_jpeg2png_icmad\nJpeg images annotated with ICMAD 'Exposure' and 'Gain' information.  Data is \nappended to the bottom of each frame using ImageMagick script and re-saved as \n.png format to minimize additional compression artifacts.  \n\"Xn\" Denotes run type and number\n\"Cn\" Denotes camera number (if sorted separately) \nPage 1 of 2\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Bit\nF1 \nF2\nS1\nS2 \nS3\nS4\nS5\nS6\nS7\nS8\nS9\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nX\nSAFFIRE-II_Image_Data_Package  Contents\nPage 2 of 2\n"
+    }
+  ],
+  "details": {
+    "page_count": 2,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

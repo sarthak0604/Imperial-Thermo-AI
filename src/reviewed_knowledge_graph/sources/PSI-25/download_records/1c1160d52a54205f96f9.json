@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-25:1c1160d52a54205f96f9",
+  "study": "PSI-25",
+  "filename": "PSI-25_Engineering Documents_BASS-II_Ops.docx",
+  "key": "psi-data/PSI-25/Engineering Documents/PSI-25_Engineering Documents_BASS-II_Ops.docx",
+  "category": "Engineering Documents",
+  "size_bytes": 1111856,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=6924805f7f6aa6a83021067e&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-25/1c1160d52a54205f96f9/PSI-25_Engineering Documents_BASS-II_Ops.docx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "76fb21a7c94b6f64dd8419a1993980b694ea8e8403e75268e8890a866e1c8d4a",
+  "status": "downloaded"
+}

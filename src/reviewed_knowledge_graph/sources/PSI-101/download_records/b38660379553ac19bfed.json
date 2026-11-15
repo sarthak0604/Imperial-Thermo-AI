@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-101:b38660379553ac19bfed",
+  "study": "PSI-101",
+  "filename": "PSI-101_Experimental table_SAME-R.csv",
+  "key": "psi-data/PSI-101/Experimental table/PSI-101_Experimental table_SAME-R.csv",
+  "category": "Experimental table",
+  "size_bytes": 5674,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=679a9e2209ed061032c0cd23&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/b38660379553ac19bfed/PSI-101_Experimental table_SAME-R.csv",
+  "sha256": "87164b7dc9168a4273c159f7a9f23699afbd06ad97b77974377e79b9bf8a3bef",
+  "status": "downloaded"
+}

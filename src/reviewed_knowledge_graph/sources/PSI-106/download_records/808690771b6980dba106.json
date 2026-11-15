@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-106:808690771b6980dba106",
+  "study": "PSI-106",
+  "filename": "SLICE IP-H completion summary.pdf",
+  "key": "psi-data/PSI-106/Raw Data/SLICE IP-H completion summary.pdf",
+  "category": "Raw Data",
+  "size_bytes": 227175,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-106/download?file=66eb982ec6ad4bdc12fc2b26&version=1&studyVersion=3&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-106/808690771b6980dba106/SLICE IP-H completion summary.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "12b193980a0db76770e8fd42af9c08f8d8d57bb7bcaf6d2b775d6f8ec57f345c",
+  "status": "downloaded"
+}

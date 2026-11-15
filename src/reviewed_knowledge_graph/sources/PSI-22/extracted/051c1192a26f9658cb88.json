@@ -1,0 +1,97 @@
+{
+  "id": "res:PSI-22:051c1192a26f9658cb88",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Lopez-Camara et al 2015 Numerical simulation of a co-flow methane-air flame.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Lopez-Camara et al 2015 Numerical simulation of a co-flow methane-air flame.pdf",
+  "category": "Presentations",
+  "size_bytes": 1168222,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75c0eb4c08676005571&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/051c1192a26f9658cb88/PSI-22_Presentations_Lopez-Camara et al 2015 Numerical simulation of a co-flow methane-air flame.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "87ef8f359b83779115a201d49bda2a13ae77d9296f7967de3203aeeba73bb253",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Drop-Tower experiment at NASA Glenn Research Center (Cleveland, OH). March 5th 2010. \nCo-flow methane/air flame with external electric field applied (-5kV ). Simulating zero-gravity \nPic by S. Karnani, LFA laboratory (UC, Irvine) \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Numerical simulation of a co-flow \nmethane/air flame with an applied \nelectrical field \n \nC-F. López-Cámara     J. Tinajero     D. Dunn-Rankin \n \nMechanical and Aerospace Engineering Dept., UC Irvine (California, USA) \n \n \n \n \n \n \n \n \n \n31st Annual Meeting of the American Society for Gravitational and Space Research \nThe Westin-Alexandria, Alexandria, Virginia, VA, USA \nNovember 11-14th 2015 \nASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                        2    \n"
+    },
+    {
+      "locator": "page 3",
+      "text": " Experiments \nASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                        3    \nFlames and External E-field \n0kV \n-2kV \nCamera images (left) and the Abel inverted images (right)  \nFlame geometry: 2cm gap between electrodes -  Fuel flow rate: 33.75 sccm \n"
+    },
+    {
+      "locator": "page 4",
+      "text": " Experiments \n0kV \n-1kV \n-2kV \n-3kV \n-4kV \n-5kV \n-6kV \n-7kV \nASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                        4    \nFlames and External E-field \n"
+    },
+    {
+      "locator": "page 5",
+      "text": " Experiments \nASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                        5    \nFlames and External E-field \nDrop-Tower experiment at NASA Glenn Research Center (Cleveland, OH)  \nElectric field applied: first -3 kV and after -5kV  \nExperiment of  S. Karnani, LFA lab. \n"
+    },
+    {
+      "locator": "page 6",
+      "text": "1. Create a chemical kinetic mechanism for methane/air \nflames including ions and excited species suitable for \ninclusion in CFD models. \n \n2. Examine this new mechanism for non-premixed \nmethane/air flames using OpenFOAM® and CHEMKIN® \nsoftware.  \n \nGoals \nSimulate a co-flow methane/air flame in a microgravity \nenvironment and with the application of an electric field.  \nGoals \nASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                        6    \n"
+    },
+    {
+      "locator": "page 7",
+      "text": " Mechanism \nChemi-ions \n(HCO+, H3O+) \nExcited Species \n(OH*, CH*) \nNon-Premixed \nT. Pedersen and \nR.C. Brown \n(1993) \nYes \nYes \nNo \nPrager et al. \n(1997) \nYes \nNo \nYes \nGRI-Mech 3.0 \n(2000) \nNo \nNo \nYes \nJ. Hu et al. \n(2000) \nYes \nNo \nYes \nK. T. Walsh \n(2000) \nNo \nYes \nYes \nMain published chemical kinetic mechanisms for methane/air flames \nChemical-Kinetic Mechanisms \nASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                        7    \nSimulations \n"
+    },
+    {
+      "locator": "page 8",
+      "text": "CHEMKIN® Simulation \nTemperature profiles \nProcedure \nASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                       8     \nCase 1: GRI-Mech 3.0 + K. T. Walsh + Prager et al.  \nCase 2: J. Hu et al. + K. T. Walsh  \n"
+    },
+    {
+      "locator": "page 9",
+      "text": "CHEMKIN® Simulation \n[CH*] and [H3O+] profiles \nProcedure \nASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                       9     \n"
+    },
+    {
+      "locator": "page 10",
+      "text": "2D Simulations \nExperimental setup at LFA laboratory \n(UC, Irvine) \nExperimental Setup \nGeometry \nASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                       10   \n"
+    },
+    {
+      "locator": "page 11",
+      "text": "2D Simulations \nNumerical Setup \nMesh # of grid points 2310; #of square cells 1099 \nInternal \ndomain \nCo-flow \nWall \nFuel \nASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                       11   \nBoundary Conditions Velocity slip everywhere except for the top wall  \n(43mm higher than the bottom part of the mesh) which is zeroGradient  \n \n"
+    },
+    {
+      "locator": "page 12",
+      "text": "ASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                       12   \n2D Simulations \nOpenFoam® Simulation \n(Case 2: J.Hu et al.+ K. T. Walsh) \ng=0 m·s-2 \ng=9.81 m·s-2 \nTemperature profiles [K] \n"
+    },
+    {
+      "locator": "page 13",
+      "text": "ASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                       13   \n2D Simulations \nOpenFoam® Simulation \n(Case 2: J.Hu et al.+ K. T. Walsh) \ng=0 m·s-2 \ng=9.81 m·s-2 \nH3O+ Mole Fraction \n"
+    },
+    {
+      "locator": "page 14",
+      "text": "ASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                       14   \nFuture research \nFuture research \n• Find the error in the prediction of ion precursors. \n \n• Create a reduced chemical kinetic mechanism for \nmethane/air flames including ions and excited species. \n \n• Simulate a co-flow methane/air flame in a microgravity \nenvironment with the application of an electric field as a \nboundary condition. \n"
+    },
+    {
+      "locator": "page 15",
+      "text": "ASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                       15   \nFuture research \nSimulations with electric field \n(Neutrals and Ionic Species; J.Hu et al.) \nGeometry \naxial-symmetric  mesh  \n# grid points 14379 \n# square cells 6962 \nSoftware used \nOpenFoam® \nFuture research-2D Simulations \n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Summary \n• No \npublished \nmodel \nfor \nnon-premixed \nco-flow \nmethane/air flames that contains both chemi-ions and \nexcited species. \n \n• 2D OpenFOAM® simulation showed promising results \nexplaining certain hypotheses from past studies  for \ngravity and microgravity environments. However, 1D \nCHEMKIN® simulation showed that errors exist in the \nreduced mechanisms as regards the prediction of ion \nprecursors.  \n \n• Inconsistencies in the reduced mechanism are more than \nlikely propagating into even larger errors in the \nprediction of the chemi-ions. \nSummary \nASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                       16   \n"
+    },
+    {
+      "locator": "page 17",
+      "text": "Drop-Tower experiment at NASA Glenn Research Center (Cleveland, OH). March 5th 2010. \nCo-flow methane/air flame with external electric field applied (-5kV ). Simulating zero-gravity \nPic by S. Karnani, LFA laboratory (UC, Irvine) \n"
+    },
+    {
+      "locator": "page 18",
+      "text": "THANK YOU FOR YOUR ATTENTION \nASGSR. 31st Annual Meeting. Nov. 11-14, 2015                                                                                                       18   \n"
+    }
+  ],
+  "details": {
+    "page_count": 18,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

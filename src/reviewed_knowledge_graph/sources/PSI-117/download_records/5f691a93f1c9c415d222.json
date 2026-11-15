@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-117:5f691a93f1c9c415d222",
+  "study": "PSI-117",
+  "filename": "PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+  "key": "psi-data/PSI-117/Presentations/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+  "category": "Presentations",
+  "size_bytes": 10786102,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43df&version=1&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/5f691a93f1c9c415d222/PSI-117_Presentations_PSI_Users_Group_Cool_Flames_in_Space_03302026.pdf",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "9b69c81ba20b7a9af49ca899fb7520ae8e2034f9ceadf94fc6ef22910fc417aa",
+  "status": "downloaded"
+}

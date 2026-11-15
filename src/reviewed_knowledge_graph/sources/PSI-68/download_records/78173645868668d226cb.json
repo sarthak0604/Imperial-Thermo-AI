@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-68:78173645868668d226cb",
+  "study": "PSI-68",
+  "filename": "PSI-68_Science Documents_FLEX-2 SRD Final _ No Hypertext .pdf",
+  "key": "psi-data/PSI-68/Science Documents/PSI-68_Science Documents_FLEX-2 SRD Final _ No Hypertext .pdf",
+  "category": "Science Documents",
+  "size_bytes": 673636,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-68/download?file=685da233ee20136af540136a&version=1&studyVersion=6&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-68/78173645868668d226cb/PSI-68_Science Documents_FLEX-2 SRD Final _ No Hypertext .pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "daf8b22244760add9ad51f5a2fec0d8e02fa1d3d118d03de791bd68fd56c8265",
+  "status": "downloaded"
+}

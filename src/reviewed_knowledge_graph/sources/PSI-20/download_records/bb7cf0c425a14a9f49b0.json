@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:bb7cf0c425a14a9f49b0",
+  "study": "PSI-20",
+  "filename": "PSI-20_Science Documents_BRE_science_concept_SCR_201208.pdf",
+  "key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_BRE_science_concept_SCR_201208.pdf",
+  "category": "Science Documents",
+  "size_bytes": 2780782,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8271b4820d736ceccb1&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/bb7cf0c425a14a9f49b0/PSI-20_Science Documents_BRE_science_concept_SCR_201208.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "7de4c32c80fbef51f7bacc2ad6ebd08c540b539486f56e08b63e6aece6d87835",
+  "status": "downloaded"
+}

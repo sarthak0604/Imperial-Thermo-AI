@@ -1,0 +1,31 @@
+{
+  "id": "res:PSI-102:8b5205f8217578e7e6fe",
+  "study": "PSI-102",
+  "filename": "PSI-102_Engineering Documents_60089MFHD126-B Smoke Generation Tube.pdf",
+  "key": "psi-data/PSI-102/Engineering Documents/PSI-102_Engineering Documents_60089MFHD126-B Smoke Generation Tube.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 243826,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d54f91ab4427dbf4444&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/8b5205f8217578e7e6fe/PSI-102_Engineering Documents_60089MFHD126-B Smoke Generation Tube.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "30420506799102afea0f2459a7fb0661ffdc39d1c0ba3f340a7d7f4a5b0849cc",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": ""
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": [
+      1
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "no_text",
+  "review_status": "not_yet_reviewed"
+}

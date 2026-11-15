@@ -13,11 +13,19 @@ The local Qwen instruction model extracts a semantic plan from the original ques
 From the WSL repository:
 
 ```bash
-.venv/bin/python -m imperial_thermo_ai.search_files "Find data on flame spread in microgravity" --graph examples/synthetic_graph.json --query-id demo-001 --mode local --output local-results.json
-.venv/bin/python -m imperial_thermo_ai.search_files "Find data on flame spread in microgravity" --graph examples/synthetic_graph.json --query-id demo-002 --mode global --output global-results.json
+.venv/bin/python -m imperial_thermo_ai.search_files "Find data on flame spread in microgravity" --query-id demo-001 --mode local --output local-results.json
+.venv/bin/python -m imperial_thermo_ai.search_files "Find data on flame spread in microgravity" --query-id demo-002 --mode global --output global-results.json
 ```
 
-Replace the synthetic example with your real graph export. A model cache is required; no models are downloaded automatically. Node vectors are cached in graph-embeddings.json and regenerated when the graph changes. The cache includes model identity and graph fingerprint. `--min-score` is an uncalibrated cosine threshold, default 0.3, not a confidence value; tune it using labeled retrieval examples. Local defaults to 5 seeds and 2 hops. The Python API exposes both settings.
+The default is `src/reviewed_knowledge_graph/output/knowledge_graph.json`; use
+`--graph` or `THERMO_GRAPH` to override it. A model cache is required; no models
+are downloaded automatically. The reviewed graph has over 63,000 nodes, so its
+first embedding build is a substantial optional workload. The frontend and
+`thermo-search` use indexed lexical retrieval and do not need embeddings.
+Embedding descriptions deduplicate shared context and are bounded to 24,000
+characters and 8,192 tokens. Long tables therefore contribute a sample of their
+linked context for ranking; graph constraint checks still use the complete graph.
+Node vectors are cached in graph-embeddings.json and regenerated when the graph changes. The cache includes model identity and graph fingerprint. `--min-score` is an uncalibrated cosine threshold, default 0.3, not a confidence value; tune it using labeled retrieval examples. Local defaults to 5 seeds and 2 hops. The Python API exposes both settings.
 
 Existing query embeddings: save `{"model_id":"Qwen/Qwen3-Embedding-0.6B","vector":[...]}` then use `--query-vector query-vector.json`. Include `--plan saved-parser-output.json` to enforce conditions, or explicitly use `--semantic-only` for vector-only relevance. Embedding dimensions, finite values, model identity and graph coverage are checked. Matching dimension/model labels cannot prove the supplied vector was encoded correctly; use the same encoder and query instruction.
 
@@ -31,7 +39,13 @@ No-match searches return an empty files list. Failures raise in Python; CLI fail
 
 Stable Resource IDs become file_id. HAS_RESOURCE then CONTAINS identifies the investigation. Missing or ambiguous investigation provenance raises an error. Each Resource must represent one file, not an archive member or abstract collection.
 
-The minimal graph schema lacks verified download URLs and column metadata. `source_url` remains a landing URL, never guessed to be a download. Enrich Resource.properties with `retrieval_url` (or `download_url`) for a known file download URL. URL availability is not checked by this metadata search service.
+The shared file adapter recognizes recorded, versioned NASA PSI download resolver
+URLs in Resource.source_url when their study matches the Resource ID. Other
+`source_url` values remain provenance pages and are never guessed to be downloads.
+Explicit `retrieval_url`/`download_url` values remain supported. Citation-only and
+failed downloads are not promoted. URL availability is not checked by retrieval.
+Both CLI paths attach the separately profiled BASS-II/FLEX encoding and column
+metadata and retain source-quality cautions; see [the integration guide](reviewed-graph.md).
 
 Resource.variables strings are concept tags, NOT verified CSV headers. To publish inspected columns supply `columns_verified: true` and `column_metadata: [{name,unit,numeric}]`. Preserve exact headers. Numeric suitability must be established by upstream inspection; this service does not inspect file bytes. Supply verified `encoding`, `size_bytes`, `data_notes` when known. Null size is not zero. The planner enforces its selected-file budget; retrieval does not select or download files.
 

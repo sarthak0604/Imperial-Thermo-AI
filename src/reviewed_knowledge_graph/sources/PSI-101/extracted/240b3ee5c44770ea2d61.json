@@ -1,0 +1,3937 @@
+{
+  "id": "res:PSI-101:240b3ee5c44770ea2d61",
+  "study": "PSI-101",
+  "filename": "PSI-101_Analyzed Data_63 Pyrell unaged.xlsx",
+  "key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_63 Pyrell unaged.xlsx",
+  "category": "Analyzed Data",
+  "size_bytes": 853799,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc531b8656d2315bf509c&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/240b3ee5c44770ea2d61/PSI-101_Analyzed Data_63 Pyrell unaged.xlsx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "3daf14343b343ab7bc0aa6ff6e4900529ed82156862fdfd81de58afdf2cbcb14",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "sheet Results 64-pre-2 new, row 1",
+      "text": "2: Area | 3: Diameter | 4: Volume | 5: LN(D) | 7: Perim. | 8: Width | 9: Height | 10: Area rect. | 11: diameter equiv sphere | 12: volume | 13: LN(D) | 14: AR | 15: Round | 16: Solidity"
+    },
+    {
+      "locator": "sheet Results 64-pre-2 new, row 2",
+      "text": "1: 1 | 2: 0.0141 | 3: 0.13398760233979035 | 4: 0.0012594834619940292 | 5: -2.010008003163762 | 7: 0.4893 | 8: 0.1333 | 9: 0.1667 | 10: 0.02222111 | 11: 0.16820462532258135 | 12: 0.007475386963603731 | 13: -1.782574032876186 | 14: 2.0397 | 15: 0.4903 | 16: 0.8261"
+    },
+    {
+      "locator": "sheet Results 64-pre-2 new, row 3",
+      "text": "14: 1.9107 | 15: 0.5234 | 16: 0.9391"
+    },
+    {
+      "locator": "sheet Results 64-pre-2 new, row 4",
+      "text": "14: 1.5836 | 15: 0.6315 | 16: 0.7613"
+    },
+    {
+      "locator": "sheet Results 64-pre-2 new, row 5",
+      "text": "14: 2.1637 | 15: 0.4622 | 16: 0.6931"
+    },
+    {
+      "locator": "sheet Results 64-pre-2 new, row 6",
+      "text": "14: 3.72 | 15: 0.2688 | 16: 0.6466"
+    },
+    {
+      "locator": "sheet Results 64-pre-2 new, row 7",
+      "text": "14: 1.9065 | 15: 0.5245 | 16: 0.7883"
+    },
+    {
+      "locator": "sheet Results 64-pre-2 new, row 8",
+      "text": "14: 1.7051 | 15: 0.5865 | 16: 0.8536"
+    },
+    {
+      "locator": "sheet Results 64-pre-2 new, row 9",
+      "text": "14: 1.9964 | 15: 0.5009 | 16: 0.8995"
+    },
+    {
+      "locator": "sheet Results 64-pre-2 new, row 10",
+      "text": "14: 2.8638 | 15: 0.3492 | 16: 0.7455"
+    },
+    {
+      "locator": "sheet Results 64-pre-2 new, row 11",
+      "text": "14: 1.9294 | 15: 0.5183 | 16: 0.8411"
+    },
+    {
+      "locator": "sheet Results 64-pre-2 new, row 12",
+      "text": "14: 1.7275 | 15: 0.5789 | 16: 0.9049"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 1",
+      "text": "3: Area | 4: Diameter | 5: Volume | 6: LN(D) | 7: Width | 8: Height | 10: Perim. | 12: Circ. | 13: AR | 14: Round | 15: Solidity"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 2",
+      "text": "2: 1"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 3",
+      "text": "2: 2"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 4",
+      "text": "2: 3"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 5",
+      "text": "2: 4"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 6",
+      "text": "2: 5"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 7",
+      "text": "2: 6"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 8",
+      "text": "2: 7"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 9",
+      "text": "2: 8"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 10",
+      "text": "2: 9"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 11",
+      "text": "2: 10"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 12",
+      "text": "2: 11"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 134",
+      "text": "4: Davg | 5: Vave | 6: LN(D) avg"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 135",
+      "text": "2: Ave  | 3: #DIV/0! | 4: #DIV/0! | 5: #DIV/0! | 6: #DIV/0! | 10: #DIV/0!"
+    },
+    {
+      "locator": "sheet Results 64-pre-9, row 136",
+      "text": "2: Std dev | 3: #DIV/0! | 4: #DIV/0! | 5: #DIV/0! | 6: #DIV/0! | 10: #DIV/0!"
+    },
+    {
+      "locator": "sheet Results 64-pre-10, row 1",
+      "text": "3: Area | 4: Diameter | 5: Volume | 6: LN(D) | 7: Width | 8: Height | 10: Perim. | 12: Circ. | 13: AR | 14: Round | 15: Solidity"
+    },
+    {
+      "locator": "sheet Results 64-pre-10, row 2",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-10, row 3",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-10, row 4",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-10, row 5",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-10, row 6",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-10, row 7",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-10, row 8",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-10, row 9",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-10, row 10",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-10, row 11",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-10, row 12",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-11, row 1",
+      "text": "2: Area | 3: Diameter | 4: Volume | 5: LN(D) | 6: Perim. | 7: Width | 8: Height | 12: Circ. | 13: AR | 14: Round | 15: Solidity"
+    },
+    {
+      "locator": "sheet Results 64-pre-11, row 2",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-11, row 3",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-11, row 4",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-11, row 5",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-11, row 6",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-11, row 7",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-11, row 8",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-11, row 9",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-11, row 10",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-11, row 11",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-11, row 12",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-12, row 1",
+      "text": "2: Area | 3: Diameter | 4: Volume | 5: LN(D) | 6: Perim. | 7: Width | 8: Height | 12: Circ. | 13: AR | 14: Round | 15: Solidity"
+    },
+    {
+      "locator": "sheet Results 64-pre-12, row 2",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-12, row 3",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-12, row 4",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-12, row 5",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-12, row 6",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-12, row 7",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-12, row 8",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-12, row 9",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-12, row 10",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-12, row 11",
+      "text": ""
+    },
+    {
+      "locator": "sheet Results 64-pre-12, row 12",
+      "text": ""
+    },
+    {
+      "locator": "sheet ANOVA results, row 1",
+      "text": "1: Anova: Single Factor"
+    },
+    {
+      "locator": "sheet ANOVA results, row 2",
+      "text": ""
+    },
+    {
+      "locator": "sheet ANOVA results, row 3",
+      "text": ""
+    },
+    {
+      "locator": "sheet ANOVA results, row 4",
+      "text": ""
+    },
+    {
+      "locator": "sheet ANOVA results, row 5",
+      "text": ""
+    },
+    {
+      "locator": "sheet ANOVA results, row 6",
+      "text": ""
+    },
+    {
+      "locator": "sheet ANOVA results, row 7",
+      "text": ""
+    },
+    {
+      "locator": "sheet ANOVA results, row 8",
+      "text": ""
+    },
+    {
+      "locator": "sheet ANOVA results, row 9",
+      "text": ""
+    },
+    {
+      "locator": "sheet ANOVA results, row 10",
+      "text": ""
+    },
+    {
+      "locator": "sheet ANOVA results, row 11",
+      "text": ""
+    },
+    {
+      "locator": "sheet ANOVA results, row 12",
+      "text": ""
+    },
+    {
+      "locator": "sheet all data big only, row 1",
+      "text": "1: Summary Calculations"
+    },
+    {
+      "locator": "sheet all data big only, row 2",
+      "text": "2: area | 3: diam | 4: vol | 5: LN(D) | 7: vol*lnD | 8: vol*(lnDi-LnDgv)^2"
+    },
+    {
+      "locator": "sheet all data big only, row 3",
+      "text": "1: Totals | 3: 996.3411653641251 | 4: 24.39425990620838 | 5: -4474.734095071458 | 7: -29.441052321279006 | 8: 1.641894519486636"
+    },
+    {
+      "locator": "sheet all data big only, row 4",
+      "text": ""
+    },
+    {
+      "locator": "sheet all data big only, row 5",
+      "text": "3: Davg | 4: Vave | 5: LN(D) avg | 7: LN(D) vol. avg | 8: Sigmagv"
+    },
+    {
+      "locator": "sheet all data big only, row 6",
+      "text": "1: Ave | 2: 0.045484480591746555 | 3: 0.28997123555416915 | 4: 0.03196829464722421 | 5: -1.4094934116453903 | 7: -1.206884424224168 | 8: 1.2961977120683281"
+    },
+    {
+      "locator": "sheet all data big only, row 7",
+      "text": "1: Std dev | 2: 0.0331728134783068 | 3: 0.09097777769759884 | 4: 0.008726187060456773 | 5: 0.5949220385479582 | 6: a.k.a.LnSigmagn | 7: Dgv"
+    },
+    {
+      "locator": "sheet all data big only, row 8",
+      "text": "2: number of particles | 5: 1.8128896039447377 | 6: a.k.a Sigmagn | 7: 0.29912778442682564"
+    },
+    {
+      "locator": "sheet all data big only, row 9",
+      "text": "2: 3436 | 3: D12 | 4: 0.21624221191359264"
+    },
+    {
+      "locator": "sheet all data big only, row 10",
+      "text": "3: Dm | 4: 0.3937678753812711"
+    },
+    {
+      "locator": "sheet all data big only, row 11",
+      "text": "3: Dg | 4: 0.24426699463028984"
+    },
+    {
+      "locator": "sheet all data big only, row 12",
+      "text": "5: Hatch Choate Relations"
+    },
+    {
+      "locator": "sheet all data big only, row 13",
+      "text": "3: sigma 1 | 4: 1.7387291276762755 | 5: Dm and Davg"
+    },
+    {
+      "locator": "sheet all data big only, row 14",
+      "text": "3: sigma 2 | 4: 1.7962406139219433 | 5: Davg and Dg?"
+    },
+    {
+      "locator": "sheet all data big only, row 15",
+      "text": "3: sigma 3 | 4: 1.7580611939543638 | 5: Dm and Dg?"
+    },
+    {
+      "locator": "sheet all data big only, row 17",
+      "text": "2: Paste data in column a and b below the blue line and drag formulas to match"
+    },
+    {
+      "locator": "sheet all data big only, row 18",
+      "text": "2: area | 3: diam | 4: vol | 5: LN(D) | 7: vol*lnD | 8: vol*(lnDi-LnDgv)^2"
+    },
+    {
+      "locator": "sheet all data, row 1",
+      "text": "1: Summary Calculations"
+    },
+    {
+      "locator": "sheet all data, row 2",
+      "text": "2: area | 3: diam | 4: vol | 5: LN(D) | 7: vol*lnD | 8: vol*(lnDi-LnDgv)^2"
+    },
+    {
+      "locator": "sheet all data, row 3",
+      "text": "1: Totals | 3: 826.8647300496802 | 4: 90.32154278516458 | 5: -4495.47981807771 | 7: -46.67141314411784 | 8: 20.963034246630816"
+    },
+    {
+      "locator": "sheet all data, row 4",
+      "text": ""
+    },
+    {
+      "locator": "sheet all data, row 5",
+      "text": "3: Davg | 4: Vave | 5: LN(D) avg | 7: LN(D) vol. avg | 8: Sigmagv"
+    },
+    {
+      "locator": "sheet all data, row 6",
+      "text": "1: Ave | 2: 0.08642179846624232 | 3: 0.27709410510836835 | 4: 0.030378102803239913 | 5: -1.5167512198019737 | 7: -0.516725154431083 | 8: 1.6189223831332686"
+    },
+    {
+      "locator": "sheet all data, row 7",
+      "text": "1: Std dev | 2: 0.1274802543148259 | 3: 0.18143841918411818 | 4: 0.08099290300923462 | 5: 0.7521887151519849 | 6: a.k.a.LnSigmagn | 7: Dgv"
+    },
+    {
+      "locator": "sheet all data, row 8",
+      "text": "2: number of particles | 5: 2.12163860104405 | 6: a.k.a Sigmagn | 7: 0.596470702436814"
+    },
+    {
+      "locator": "sheet all data, row 9",
+      "text": "2: 3616 | 3: D12 | 4: 0.4567506022825551"
+    },
+    {
+      "locator": "sheet all data, row 10",
+      "text": "3: Dm | 4: 0.38712748700318944"
+    },
+    {
+      "locator": "sheet all data, row 11",
+      "text": "3: Dg | 4: 0.21942358925581745"
+    },
+    {
+      "locator": "sheet all data, row 12",
+      "text": "5: Hatch Choate Relations"
+    },
+    {
+      "locator": "sheet all data, row 13",
+      "text": "3: sigma 1 | 4: 1.782952321532363 | 5: Dm and Davg"
+    },
+    {
+      "locator": "sheet all data, row 14",
+      "text": "3: sigma 2 | 4: 1.9801230982755438 | 5: Davg and Dg?"
+    },
+    {
+      "locator": "sheet all data, row 15",
+      "text": "3: sigma 3 | 4: 1.8500729606474902 | 5: Dm and Dg?"
+    },
+    {
+      "locator": "sheet all data, row 17",
+      "text": "2: Paste data in column a and b below the blue line and drag formulas to match"
+    },
+    {
+      "locator": "sheet all data, row 18",
+      "text": "2: area | 3: diam | 4: vol | 5: LN(D) | 7: vol*lnD | 8: vol*(lnDi-LnDgv)^2"
+    },
+    {
+      "locator": "sheet SizeDist, row 1",
+      "text": "5: Lognormal Dist. With following parameters"
+    },
+    {
+      "locator": "sheet SizeDist, row 2",
+      "text": "2: Paste values from SAME data in yellow cells | 5: Dgn | 6: 0.192 | 7: LnDgn | 8: -1.6502599069543555 | 9: LnDgv | 10: 0.02236876581705949 | 11: Const. factor | 12: sqrt(2Pi)*ln(sigmag)"
+    },
+    {
+      "locator": "sheet SizeDist, row 3",
+      "text": "5: Sigmag | 6: 2.11 | 7: Ln(Sigmag) | 8: 0.7466879474879751 | 9: Dgv | 10: 1.0226208225499576 | 12: 1.8716691214995458"
+    },
+    {
+      "locator": "sheet SizeDist, row 4",
+      "text": ""
+    },
+    {
+      "locator": "sheet SizeDist, row 5",
+      "text": "1: Paste columns from \"Binned data\"  below the blue line and drag down formulas"
+    },
+    {
+      "locator": "sheet SizeDist, row 6",
+      "text": "1: Col H | 2: Col F | 3: Col N"
+    },
+    {
+      "locator": "sheet SizeDist, row 7",
+      "text": "1: Dmid | 2: dN/NdLnD | 3: dV/VdLnD | 4: LnDmid | 5: dfn/dLnD | 6: dfv/dlnD"
+    },
+    {
+      "locator": "sheet SizeDist, row 8",
+      "text": "4: #NUM! | 5: #NUM! | 6: #NUM!"
+    },
+    {
+      "locator": "sheet SizeDist, row 9",
+      "text": ""
+    },
+    {
+      "locator": "sheet SizeDist, row 10",
+      "text": ""
+    },
+    {
+      "locator": "sheet SizeDist, row 11",
+      "text": ""
+    },
+    {
+      "locator": "sheet SizeDist, row 12",
+      "text": ""
+    },
+    {
+      "locator": "sheet Binned data big only, row 1",
+      "text": "1: Binned Data Calculations"
+    },
+    {
+      "locator": "sheet Binned data big only, row 2",
+      "text": "1: Diameter | 2: # of particles | 3: LN(D) | 4: dN | 5: dN/dLnD | 6: dN/NdLnD | 7: D | 8: Dmid | 9: LnDmid*dN/NLnD | 10: (LnD-LnDg)^2dN/NLnD | 11: V | 12: Vmid | 13: dV/dlnD | 14: dV/VdLnD | 15: LnDmid*dV/VlnD | 16: (LnD-LnDg)^2dV/VdLnD"
+    },
+    {
+      "locator": "sheet Binned data big only, row 3",
+      "text": ""
+    },
+    {
+      "locator": "sheet Binned data big only, row 4",
+      "text": "7: 1 | 11: 0.5235987755982988"
+    },
+    {
+      "locator": "sheet Binned data big only, row 5",
+      "text": "1: Sums | 2: 3617 | 4: 3406 | 6: 5.173305742369379 | 9: -7.2377585247907135 | 10: 1.7388358961717014 | 13: 568.9017473043427 | 14: 5.173305742369379 | 15: -2.6489756091248715 | 16: 1.1841415399260473"
+    },
+    {
+      "locator": "sheet Binned data big only, row 6",
+      "text": "9: lnDg=I53*dLnD | 10: Lnsigmagn^2=J53*dLnD | 13: Vtotal | 15: lnDgv=o53*.132 | 16: lnsigmagn^2=p53*dLnD"
+    },
+    {
+      "locator": "sheet Binned data big only, row 7",
+      "text": "3: dLnD | 9: -1.3990587228420435 | 10: 0.3361169787299895 | 13: 109.96870775392934 | 15: -0.5120469852438372 | 16: 0.22889455966770472"
+    },
+    {
+      "locator": "sheet Binned data big only, row 8",
+      "text": "3: 0.1932999999999998 | 9: Dg | 10: Sigmagn | 13: V avg | 15: Dgv | 16: Sigmagv"
+    },
+    {
+      "locator": "sheet Binned data big only, row 9",
+      "text": "9: 0.24682918930805658 | 10: 1.7856026276957928 | 13: 0.03228676093773615 | 15: 0.5992676304483122 | 16: 1.6135379668469367"
+    },
+    {
+      "locator": "sheet Binned data big only, row 10",
+      "text": "13: Dm"
+    },
+    {
+      "locator": "sheet Binned data big only, row 11",
+      "text": "13: 0.39507112151171353"
+    },
+    {
+      "locator": "sheet Binned data big only, row 12",
+      "text": ""
+    },
+    {
+      "locator": "sheet Binned data big only, row 13",
+      "text": "2: Paste data in column a through d between the blue lines and delete unused lines (no more than 200 bins ;-)  )"
+    },
+    {
+      "locator": "sheet Binned data big only, row 14",
+      "text": "1: Diameter | 2: # of particles | 3: LN(D) | 4: dN | 5: dN/dLnD | 6: dN/NdLnD | 7: D | 8: Dmid | 9: LnDmid*dN/NLnD | 10: (LnD-LnDg)^2dN/NLnD | 11: V | 12: Vmid | 13: dV/dlnD | 14: dV/VdLnD | 15: LnDmid*dV/VlnD | 16: (LnD-LnDg)^2dV/VdLnD"
+    },
+    {
+      "locator": "sheet Binned data big only, row 3663",
+      "text": "1: H‚è¯YÞÖÑd"
+    },
+    {
+      "locator": "sheet Binned data, row 1",
+      "text": "1: Binned Data Calculations"
+    },
+    {
+      "locator": "sheet Binned data, row 2",
+      "text": "1: Diameter | 2: # of particles | 3: LN(D) | 4: dN | 5: dN/dLnD | 6: dN/NdLnD | 7: D | 8: Dmid | 9: LnDmid*dN/NLnD | 10: (LnD-LnDg)^2dN/NLnD | 11: V | 12: Vmid | 13: dV/dlnD | 14: dV/VdLnD | 15: LnDmid*dV/VlnD | 16: (LnD-LnDg)^2dV/VdLnD"
+    },
+    {
+      "locator": "sheet Binned data, row 3",
+      "text": ""
+    },
+    {
+      "locator": "sheet Binned data, row 4",
+      "text": "7: 1 | 11: 0.5235987755982988"
+    },
+    {
+      "locator": "sheet Binned data, row 5",
+      "text": "1: Sums | 2: 3617 | 4: 3616 | 6: 5.173305742369379 | 9: -7.85924260572086 | 10: 2.923975983622102 | 13: 568.9361377984036 | 14: 5.173305742369379 | 15: -2.6497873360759194 | 16: 1.1861915939691718"
+    },
+    {
+      "locator": "sheet Binned data, row 6",
+      "text": "9: lnDg=I53*dLnD | 10: Lnsigmagn^2=J53*dLnD | 13: Vtotal | 15: lnDgv=o53*.132 | 16: lnsigmagn^2=p53*dLnD"
+    },
+    {
+      "locator": "sheet Binned data, row 7",
+      "text": "3: dLnD | 9: -1.5191915956858408 | 10: 0.5652045576341518 | 13: 109.9753554364313 | 15: -0.5122038920634747 | 16: 0.2292908351142407"
+    },
+    {
+      "locator": "sheet Binned data, row 8",
+      "text": "3: 0.1932999999999998 | 9: Dg | 10: Sigmagn | 15: Dgv | 16: Sigmagv"
+    },
+    {
+      "locator": "sheet Binned data, row 9",
+      "text": "9: 0.21888876607047317 | 10: 2.120815906751906 | 15: 0.5991736086468307 | 16: 1.6142060502286806"
+    },
+    {
+      "locator": "sheet Binned data, row 10",
+      "text": ""
+    },
+    {
+      "locator": "sheet Binned data, row 11",
+      "text": ""
+    },
+    {
+      "locator": "sheet Binned data, row 12",
+      "text": ""
+    },
+    {
+      "locator": "sheet Binned data, row 13",
+      "text": "2: Paste data in column a through d between the blue lines and delete unused lines (no more than 200 bins ;-)  )"
+    },
+    {
+      "locator": "sheet Binned data, row 14",
+      "text": "1: Diameter | 2: # of particles | 3: LN(D) | 4: dN | 5: dN/dLnD | 6: dN/NdLnD | 7: D | 8: Dmid | 9: LnDmid*dN/NLnD | 10: (LnD-LnDg)^2dN/NLnD | 11: V | 12: Vmid | 13: dV/dlnD | 14: dV/VdLnD | 15: LnDmid*dV/VlnD | 16: (LnD-LnDg)^2dV/VdLnD"
+    },
+    {
+      "locator": "sheet Binned data, row 3663",
+      "text": "1: H‚è¯YÞÖÑd"
+    },
+    {
+      "locator": "sheet Comments on binned data, row 1",
+      "text": "1: comments"
+    },
+    {
+      "locator": "sheet Comments on binned data, row 2",
+      "text": "1: 1) Minimum particle size 0.010 um, width of bins = 0.132 in Ln space.  This width"
+    },
+    {
+      "locator": "sheet Comments on binned data, row 3",
+      "text": "1: corresponds to each bin diameter being about a factor of 1.14greater than the preceding one. "
+    },
+    {
+      "locator": "sheet Comments on binned data, row 4",
+      "text": "1: 2) Row 53 contains the sums of the various columns"
+    },
+    {
+      "locator": "sheet Comments on binned data, row 5",
+      "text": "1: 3) Columns A - D contain the results of sizing the particles with the TEM and binning them"
+    },
+    {
+      "locator": "sheet Comments on binned data, row 6",
+      "text": "1: 4)  The main purpose of this sheet is to express the binned results in a reduced form"
+    },
+    {
+      "locator": "sheet Comments on binned data, row 7",
+      "text": "1: so that they can be compared with the lognormal distribution obtained by the moment "
+    },
+    {
+      "locator": "sheet Comments on binned data, row 8",
+      "text": "1: method"
+    },
+    {
+      "locator": "sheet Comments on binned data, row 9",
+      "text": "1: 5) Column F contains the normalized distribution function.  This function has the desired "
+    },
+    {
+      "locator": "sheet Comments on binned data, row 10",
+      "text": "1: property that when integrated over dLnD gives a value of 1.0.  "
+    },
+    {
+      "locator": "sheet Comments on binned data, row 11",
+      "text": "1: 6)  Dmid in Channel is the geometric mean of the two channel boundaries.  Using this"
+    },
+    {
+      "locator": "sheet Comments on binned data, row 12",
+      "text": "1: value minimizes the effect of the finite channel width.  This is especially important"
+    },
+    {
+      "locator": "sheet Comments on binned data, row 13",
+      "text": "1: when the volume distribution is obtained from the number distribution."
+    },
+    {
+      "locator": "sheet Comments on binned data, row 14",
+      "text": "1: 7)  Column H and F are all that's needed for the number distribution.  "
+    },
+    {
+      "locator": "sheet Comments on binned data, row 15",
+      "text": "1: 8)  Column I and J are to determine Dg and Sigmag for comparison with the more detailed"
+    },
+    {
+      "locator": "sheet Comments on binned data, row 16",
+      "text": "1: analysis given in all data.  As mentioned above, the numbers agree within a few percent."
+    },
+    {
+      "locator": "sheet Comments on binned data, row 17",
+      "text": "1: 9) See note 6 regarding column L.  In this case we compute the square root of the product"
+    },
+    {
+      "locator": "sheet Comments on binned data, row 18",
+      "text": "1: of the particle volumes corresponding to the channel boundaries for the diameter."
+    },
+    {
+      "locator": "sheet Comments on binned data, row 19",
+      "text": "1: 10) Column N is the volume distribution function.  It also has the property that the  | 8:  inte-"
+    },
+    {
+      "locator": "sheet Comments on binned data, row 20",
+      "text": "1: gration over dLnD is equal to 1.  In this case the normalization factor is the total volume."
+    },
+    {
+      "locator": "sheet Comments on binned data, row 21",
+      "text": "1: 11)  In terms of plotting the distribution functions, all one needs are H, J, and N."
+    }
+  ],
+  "details": {
+    "sheets": [
+      {
+        "name": "sheet Results 64-pre-2 new",
+        "row_count": 257,
+        "column_count": 16,
+        "column_statistics": [
+          {
+            "numeric_count": 1,
+            "min": 1.0,
+            "max": 1.0,
+            "blank_count": 256
+          },
+          {
+            "numeric_count": 1,
+            "min": 0.0141,
+            "max": 0.0141,
+            "blank_count": 255
+          },
+          {
+            "numeric_count": 1,
+            "min": 0.13398760233979035,
+            "max": 0.13398760233979035,
+            "blank_count": 255
+          },
+          {
+            "numeric_count": 1,
+            "min": 0.0012594834619940292,
+            "max": 0.0012594834619940292,
+            "blank_count": 255
+          },
+          {
+            "numeric_count": 1,
+            "min": -2.010008003163762,
+            "max": -2.010008003163762,
+            "blank_count": 255
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 257
+          },
+          {
+            "numeric_count": 1,
+            "min": 0.4893,
+            "max": 0.4893,
+            "blank_count": 255
+          },
+          {
+            "numeric_count": 1,
+            "min": 0.1333,
+            "max": 0.1333,
+            "blank_count": 255
+          },
+          {
+            "numeric_count": 1,
+            "min": 0.1667,
+            "max": 0.1667,
+            "blank_count": 255
+          },
+          {
+            "numeric_count": 1,
+            "min": 0.02222111,
+            "max": 0.02222111,
+            "blank_count": 255
+          },
+          {
+            "numeric_count": 1,
+            "min": 0.16820462532258135,
+            "max": 0.16820462532258135,
+            "blank_count": 255
+          },
+          {
+            "numeric_count": 1,
+            "min": 0.007475386963603731,
+            "max": 0.007475386963603731,
+            "blank_count": 255
+          },
+          {
+            "numeric_count": 1,
+            "min": -1.782574032876186,
+            "max": -1.782574032876186,
+            "blank_count": 255
+          },
+          {
+            "numeric_count": 244,
+            "min": 1.0,
+            "max": 5.5506,
+            "blank_count": 12
+          },
+          {
+            "numeric_count": 244,
+            "min": 0.1802,
+            "max": 1.0,
+            "blank_count": 12
+          },
+          {
+            "numeric_count": 244,
+            "min": 0.4161,
+            "max": 1.0,
+            "blank_count": 12
+          }
+        ],
+        "rows": [
+          [
+            " ",
+            "Area",
+            "Diameter",
+            "Volume",
+            "LN(D)",
+            null,
+            "Perim.",
+            "Width",
+            "Height",
+            "Area rect.",
+            "diameter equiv sphere",
+            "volume",
+            "LN(D)",
+            "AR",
+            "Round",
+            "Solidity"
+          ],
+          [
+            1,
+            0.0141,
+            0.13398760233979035,
+            0.0012594834619940292,
+            -2.010008003163762,
+            null,
+            0.4893,
+            0.1333,
+            0.1667,
+            0.02222111,
+            0.16820462532258135,
+            0.007475386963603731,
+            -1.782574032876186,
+            2.0397,
+            0.4903,
+            0.8261
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1.9107,
+            0.5234,
+            0.9391
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1.5836,
+            0.6315,
+            0.7613
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            2.1637,
+            0.4622,
+            0.6931
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            3.72,
+            0.2688,
+            0.6466
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1.9065,
+            0.5245,
+            0.7883
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1.7051,
+            0.5865,
+            0.8536
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1.9964,
+            0.5009,
+            0.8995
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            2.8638,
+            0.3492,
+            0.7455
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1.9294,
+            0.5183,
+            0.8411
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1.7275,
+            0.5789,
+            0.9049
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Results 64-pre-9",
+        "row_count": 143,
+        "column_count": 15,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 143
+          },
+          {
+            "numeric_count": 131,
+            "min": 1.0,
+            "max": 131.0,
+            "blank_count": 10
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 140
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 139
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 139
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 139
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 142
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 142
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 143
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 140
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 143
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 142
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 142
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 142
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 142
+          }
+        ],
+        "rows": [
+          [
+            null,
+            " ",
+            "Area",
+            "Diameter",
+            "Volume",
+            "LN(D)",
+            "Width",
+            "Height",
+            null,
+            "Perim.",
+            null,
+            "Circ.",
+            "AR",
+            "Round",
+            "Solidity"
+          ],
+          [
+            null,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            2,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            3,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            4,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            5,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            6,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            7,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            9,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            10,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            11,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Results 64-pre-10",
+        "row_count": 113,
+        "column_count": 15,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 113
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 113
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 112
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 112
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 112
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 112
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 112
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 112
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 113
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 112
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 113
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 112
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 112
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 112
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 112
+          }
+        ],
+        "rows": [
+          [
+            null,
+            " ",
+            "Area",
+            "Diameter",
+            "Volume",
+            "LN(D)",
+            "Width",
+            "Height",
+            null,
+            "Perim.",
+            null,
+            "Circ.",
+            "AR",
+            "Round",
+            "Solidity"
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Results 64-pre-11",
+        "row_count": 87,
+        "column_count": 15,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 87
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 86
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 86
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 86
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 86
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 86
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 86
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 86
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 87
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 87
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 87
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 86
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 86
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 86
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 86
+          }
+        ],
+        "rows": [
+          [
+            " ",
+            "Area",
+            "Diameter",
+            "Volume",
+            "LN(D)",
+            "Perim.",
+            "Width",
+            "Height",
+            null,
+            null,
+            null,
+            "Circ.",
+            "AR",
+            "Round",
+            "Solidity"
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Results 64-pre-12",
+        "row_count": 99,
+        "column_count": 15,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 99
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 98
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 98
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 98
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 98
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 98
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 98
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 98
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 99
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 99
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 99
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 98
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 98
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 98
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 98
+          }
+        ],
+        "rows": [
+          [
+            " ",
+            "Area",
+            "Diameter",
+            "Volume",
+            "LN(D)",
+            "Perim.",
+            "Width",
+            "Height",
+            null,
+            null,
+            null,
+            "Circ.",
+            "AR",
+            "Round",
+            "Solidity"
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet ANOVA results",
+        "row_count": 24,
+        "column_count": 7,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 23
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 24
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 24
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 24
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 24
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 24
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 24
+          }
+        ],
+        "rows": [
+          [
+            "Anova: Single Factor",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Diam data",
+        "row_count": 0,
+        "column_count": 0,
+        "column_statistics": [],
+        "rows": [],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet all data big only",
+        "row_count": 3454,
+        "column_count": 10,
+        "column_statistics": [
+          {
+            "numeric_count": 3436,
+            "min": 1.0,
+            "max": 242.0,
+            "blank_count": 14
+          },
+          {
+            "numeric_count": 3439,
+            "min": 0.0021,
+            "max": 3436.0,
+            "blank_count": 11
+          },
+          {
+            "numeric_count": 3439,
+            "min": 0.051708829458264105,
+            "max": 996.3411653641251,
+            "blank_count": 6
+          },
+          {
+            "numeric_count": 3445,
+            "min": 7.239236124156975e-05,
+            "max": 24.39425990620838,
+            "blank_count": 6
+          },
+          {
+            "numeric_count": 3440,
+            "min": -4474.734095071458,
+            "max": 1.8128896039447377,
+            "blank_count": 7
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 3452
+          },
+          {
+            "numeric_count": 3439,
+            "min": -29.441052321279006,
+            "max": 0.43078474176412895,
+            "blank_count": 11
+          },
+          {
+            "numeric_count": 3438,
+            "min": 1.1021759166539936e-08,
+            "max": 3.153186637095025,
+            "blank_count": 13
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 3454
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 3454
+          }
+        ],
+        "rows": [
+          [
+            "Summary Calculations",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            "area",
+            "diam",
+            "vol",
+            "LN(D)",
+            null,
+            "vol*lnD",
+            "vol*(lnDi-LnDgv)^2",
+            null,
+            null
+          ],
+          [
+            "Totals",
+            null,
+            996.3411653641251,
+            24.39425990620838,
+            -4474.734095071458,
+            null,
+            -29.441052321279006,
+            1.641894519486636,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "Davg",
+            "Vave",
+            "LN(D) avg",
+            null,
+            "LN(D) vol. avg",
+            "Sigmagv",
+            null,
+            null
+          ],
+          [
+            "Ave",
+            0.045484480591746555,
+            0.28997123555416915,
+            0.03196829464722421,
+            -1.4094934116453903,
+            null,
+            -1.206884424224168,
+            1.2961977120683281,
+            null,
+            null
+          ],
+          [
+            "Std dev",
+            0.0331728134783068,
+            0.09097777769759884,
+            0.008726187060456773,
+            0.5949220385479582,
+            "a.k.a.LnSigmagn",
+            "Dgv",
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            "number of particles",
+            null,
+            null,
+            1.8128896039447377,
+            "a.k.a Sigmagn",
+            0.29912778442682564,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            3436,
+            "D12",
+            0.21624221191359264,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "Dm",
+            0.3937678753812711,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "Dg",
+            0.24426699463028984,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            "Hatch Choate Relations",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet all data",
+        "row_count": 3634,
+        "column_count": 10,
+        "column_statistics": [
+          {
+            "numeric_count": 3616,
+            "min": 1.0,
+            "max": 242.0,
+            "blank_count": 14
+          },
+          {
+            "numeric_count": 3619,
+            "min": 0.0001,
+            "max": 3616.0,
+            "blank_count": 11
+          },
+          {
+            "numeric_count": 3619,
+            "min": 0.011283791670955126,
+            "max": 826.8647300496802,
+            "blank_count": 6
+          },
+          {
+            "numeric_count": 3625,
+            "min": 7.522527780636752e-07,
+            "max": 90.32154278516458,
+            "blank_count": 6
+          },
+          {
+            "numeric_count": 3620,
+            "min": -4495.47981807771,
+            "max": 2.12163860104405,
+            "blank_count": 7
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 3632
+          },
+          {
+            "numeric_count": 3619,
+            "min": -46.67141314411784,
+            "max": 0.596470702436814,
+            "blank_count": 11
+          },
+          {
+            "numeric_count": 3618,
+            "min": 6.476823278296255e-08,
+            "max": 20.963034246630816,
+            "blank_count": 13
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 3634
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 3634
+          }
+        ],
+        "rows": [
+          [
+            "Summary Calculations",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            "area",
+            "diam",
+            "vol",
+            "LN(D)",
+            null,
+            "vol*lnD",
+            "vol*(lnDi-LnDgv)^2",
+            null,
+            null
+          ],
+          [
+            "Totals",
+            null,
+            826.8647300496802,
+            90.32154278516458,
+            -4495.47981807771,
+            null,
+            -46.67141314411784,
+            20.963034246630816,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "Davg",
+            "Vave",
+            "LN(D) avg",
+            null,
+            "LN(D) vol. avg",
+            "Sigmagv",
+            null,
+            null
+          ],
+          [
+            "Ave",
+            0.08642179846624232,
+            0.27709410510836835,
+            0.030378102803239913,
+            -1.5167512198019737,
+            null,
+            -0.516725154431083,
+            1.6189223831332686,
+            null,
+            null
+          ],
+          [
+            "Std dev",
+            0.1274802543148259,
+            0.18143841918411818,
+            0.08099290300923462,
+            0.7521887151519849,
+            "a.k.a.LnSigmagn",
+            "Dgv",
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            "number of particles",
+            null,
+            null,
+            2.12163860104405,
+            "a.k.a Sigmagn",
+            0.596470702436814,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            3616,
+            "D12",
+            0.4567506022825551,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "Dm",
+            0.38712748700318944,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "Dg",
+            0.21942358925581745,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            "Hatch Choate Relations",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet SizeDist",
+        "row_count": 57,
+        "column_count": 12,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 54
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 54
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 55
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 55
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 52
+          },
+          {
+            "numeric_count": 2,
+            "min": 0.192,
+            "max": 2.11,
+            "blank_count": 53
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 55
+          },
+          {
+            "numeric_count": 2,
+            "min": -1.6502599069543555,
+            "max": 0.7466879474879751,
+            "blank_count": 55
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 55
+          },
+          {
+            "numeric_count": 2,
+            "min": 0.02236876581705949,
+            "max": 1.0226208225499576,
+            "blank_count": 55
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 56
+          },
+          {
+            "numeric_count": 1,
+            "min": 1.8716691214995458,
+            "max": 1.8716691214995458,
+            "blank_count": 55
+          }
+        ],
+        "rows": [
+          [
+            null,
+            null,
+            null,
+            null,
+            "Lognormal Dist. With following parameters",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            "Paste values from SAME data in yellow cells",
+            null,
+            null,
+            "Dgn",
+            0.192,
+            "LnDgn",
+            -1.6502599069543555,
+            "LnDgv",
+            0.02236876581705949,
+            "Const. factor",
+            "sqrt(2Pi)*ln(sigmag)"
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            "Sigmag",
+            2.11,
+            "Ln(Sigmag)",
+            0.7466879474879751,
+            "Dgv",
+            1.0226208225499576,
+            null,
+            1.8716691214995458
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "Paste columns from \"Binned data\"  below the blue line and drag down formulas",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "Col H",
+            "Col F",
+            "Col N",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "Dmid",
+            "dN/NdLnD",
+            "dV/VdLnD",
+            "LnDmid",
+            "dfn/dLnD",
+            "dfv/dlnD",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            "#NUM!",
+            "#NUM!",
+            "#NUM!",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Binned data big only",
+        "row_count": 3663,
+        "column_count": 16,
+        "column_statistics": [
+          {
+            "numeric_count": 30,
+            "min": 0.0,
+            "max": 1.45,
+            "blank_count": 3628
+          },
+          {
+            "numeric_count": 31,
+            "min": 0.0,
+            "max": 3617.0,
+            "blank_count": 3629
+          },
+          {
+            "numeric_count": 31,
+            "min": -4.6,
+            "max": 1.0067,
+            "blank_count": 3629
+          },
+          {
+            "numeric_count": 22,
+            "min": 0.0,
+            "max": 3406.0,
+            "blank_count": 3639
+          },
+          {
+            "numeric_count": 21,
+            "min": 0.0,
+            "max": 2798.758406621834,
+            "blank_count": 3640
+          },
+          {
+            "numeric_count": 22,
+            "min": 0.0,
+            "max": 5.173305742369379,
+            "blank_count": 3639
+          },
+          {
+            "numeric_count": 31,
+            "min": 0.010051835744633586,
+            "max": 2.736555465033668,
+            "blank_count": 3630
+          },
+          {
+            "numeric_count": 21,
+            "min": 0.06308009568532343,
+            "max": 3.014246856092822,
+            "blank_count": 3640
+          },
+          {
+            "numeric_count": 24,
+            "min": -7.2377585247907135,
+            "max": 0.24682918930805658,
+            "blank_count": 3635
+          },
+          {
+            "numeric_count": 24,
+            "min": 0.0,
+            "max": 1.7856026276957928,
+            "blank_count": 3635
+          },
+          {
+            "numeric_count": 22,
+            "min": 9.834492819674495e-05,
+            "max": 10.730288211442518,
+            "blank_count": 3639
+          },
+          {
+            "numeric_count": 21,
+            "min": 0.00013142429397103962,
+            "max": 14.339535125526464,
+            "blank_count": 3640
+          },
+          {
+            "numeric_count": 25,
+            "min": 0.0,
+            "max": 568.9017473043427,
+            "blank_count": 3633
+          },
+          {
+            "numeric_count": 22,
+            "min": 0.0,
+            "max": 5.173305742369379,
+            "blank_count": 3639
+          },
+          {
+            "numeric_count": 24,
+            "min": -2.6489756091248715,
+            "max": 0.5992676304483122,
+            "blank_count": 3635
+          },
+          {
+            "numeric_count": 24,
+            "min": 0.0,
+            "max": 1.6135379668469367,
+            "blank_count": 3635
+          }
+        ],
+        "rows": [
+          [
+            "Binned Data Calculations",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "Diameter",
+            "# of particles",
+            "LN(D)",
+            "dN",
+            "dN/dLnD",
+            "dN/NdLnD",
+            "D",
+            "Dmid",
+            "LnDmid*dN/NLnD",
+            "(LnD-LnDg)^2dN/NLnD",
+            "V",
+            "Vmid",
+            "dV/dlnD",
+            "dV/VdLnD",
+            "LnDmid*dV/VlnD",
+            "(LnD-LnDg)^2dV/VdLnD"
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            0.5235987755982988,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "Sums",
+            3617,
+            null,
+            3406,
+            null,
+            5.173305742369379,
+            null,
+            null,
+            -7.2377585247907135,
+            1.7388358961717014,
+            null,
+            null,
+            568.9017473043427,
+            5.173305742369379,
+            -2.6489756091248715,
+            1.1841415399260473
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "lnDg=I53*dLnD",
+            "Lnsigmagn^2=J53*dLnD",
+            null,
+            null,
+            "Vtotal",
+            null,
+            "lnDgv=o53*.132",
+            "lnsigmagn^2=p53*dLnD"
+          ],
+          [
+            null,
+            null,
+            "dLnD",
+            null,
+            null,
+            null,
+            null,
+            null,
+            -1.3990587228420435,
+            0.3361169787299895,
+            null,
+            null,
+            109.96870775392934,
+            null,
+            -0.5120469852438372,
+            0.22889455966770472
+          ],
+          [
+            null,
+            null,
+            0.1932999999999998,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "Dg",
+            "Sigmagn",
+            null,
+            null,
+            "V avg",
+            null,
+            "Dgv",
+            "Sigmagv"
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            0.24682918930805658,
+            1.7856026276957928,
+            null,
+            null,
+            0.03228676093773615,
+            null,
+            0.5992676304483122,
+            1.6135379668469367
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "Dm",
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            0.39507112151171353,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Binned data",
+        "row_count": 3663,
+        "column_count": 16,
+        "column_statistics": [
+          {
+            "numeric_count": 30,
+            "min": 0.0,
+            "max": 1.45,
+            "blank_count": 3628
+          },
+          {
+            "numeric_count": 31,
+            "min": 0.0,
+            "max": 3617.0,
+            "blank_count": 3629
+          },
+          {
+            "numeric_count": 31,
+            "min": -4.6,
+            "max": 1.0067,
+            "blank_count": 3629
+          },
+          {
+            "numeric_count": 31,
+            "min": 0.0,
+            "max": 3616.0,
+            "blank_count": 3630
+          },
+          {
+            "numeric_count": 30,
+            "min": 0.0,
+            "max": 2798.758406621834,
+            "blank_count": 3631
+          },
+          {
+            "numeric_count": 31,
+            "min": 0.0,
+            "max": 5.173305742369379,
+            "blank_count": 3630
+          },
+          {
+            "numeric_count": 31,
+            "min": 0.010051835744633586,
+            "max": 2.736555465033668,
+            "blank_count": 3630
+          },
+          {
+            "numeric_count": 30,
+            "min": 0.01107184366564647,
+            "max": 3.014246856092822,
+            "blank_count": 3631
+          },
+          {
+            "numeric_count": 33,
+            "min": -7.85924260572086,
+            "max": 0.21888876607047317,
+            "blank_count": 3626
+          },
+          {
+            "numeric_count": 33,
+            "min": 0.0,
+            "max": 2.923975983622102,
+            "blank_count": 3626
+          },
+          {
+            "numeric_count": 31,
+            "min": 5.31783394676004e-07,
+            "max": 10.730288211442518,
+            "blank_count": 3630
+          },
+          {
+            "numeric_count": 30,
+            "min": 7.106544127115409e-07,
+            "max": 14.339535125526464,
+            "blank_count": 3631
+          },
+          {
+            "numeric_count": 32,
+            "min": 0.0,
+            "max": 568.9361377984036,
+            "blank_count": 3628
+          },
+          {
+            "numeric_count": 31,
+            "min": 0.0,
+            "max": 5.173305742369379,
+            "blank_count": 3630
+          },
+          {
+            "numeric_count": 33,
+            "min": -2.6497873360759194,
+            "max": 0.5991736086468307,
+            "blank_count": 3626
+          },
+          {
+            "numeric_count": 33,
+            "min": 0.0,
+            "max": 1.6142060502286806,
+            "blank_count": 3626
+          }
+        ],
+        "rows": [
+          [
+            "Binned Data Calculations",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "Diameter",
+            "# of particles",
+            "LN(D)",
+            "dN",
+            "dN/dLnD",
+            "dN/NdLnD",
+            "D",
+            "Dmid",
+            "LnDmid*dN/NLnD",
+            "(LnD-LnDg)^2dN/NLnD",
+            "V",
+            "Vmid",
+            "dV/dlnD",
+            "dV/VdLnD",
+            "LnDmid*dV/VlnD",
+            "(LnD-LnDg)^2dV/VdLnD"
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            0.5235987755982988,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "Sums",
+            3617,
+            null,
+            3616,
+            null,
+            5.173305742369379,
+            null,
+            null,
+            -7.85924260572086,
+            2.923975983622102,
+            null,
+            null,
+            568.9361377984036,
+            5.173305742369379,
+            -2.6497873360759194,
+            1.1861915939691718
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "lnDg=I53*dLnD",
+            "Lnsigmagn^2=J53*dLnD",
+            null,
+            null,
+            "Vtotal",
+            null,
+            "lnDgv=o53*.132",
+            "lnsigmagn^2=p53*dLnD"
+          ],
+          [
+            null,
+            null,
+            "dLnD",
+            null,
+            null,
+            null,
+            null,
+            null,
+            -1.5191915956858408,
+            0.5652045576341518,
+            null,
+            null,
+            109.9753554364313,
+            null,
+            -0.5122038920634747,
+            0.2292908351142407
+          ],
+          [
+            null,
+            null,
+            0.1932999999999998,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "Dg",
+            "Sigmagn",
+            null,
+            null,
+            null,
+            null,
+            "Dgv",
+            "Sigmagv"
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            0.21888876607047317,
+            2.120815906751906,
+            null,
+            null,
+            null,
+            null,
+            0.5991736086468307,
+            1.6142060502286806
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Comments on binned data",
+        "row_count": 21,
+        "column_count": 9,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 0
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 21
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 21
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 21
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 21
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 21
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 21
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 20
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 21
+          }
+        ],
+        "rows": [
+          [
+            "comments",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "1) Minimum particle size 0.010 um, width of bins = 0.132 in Ln space.  This width",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "corresponds to each bin diameter being about a factor of 1.14greater than the preceding one. ",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "2) Row 53 contains the sums of the various columns",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "3) Columns A - D contain the results of sizing the particles with the TEM and binning them",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "4)  The main purpose of this sheet is to express the binned results in a reduced form",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "so that they can be compared with the lognormal distribution obtained by the moment ",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "method",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "5) Column F contains the normalized distribution function.  This function has the desired ",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "property that when integrated over dLnD gives a value of 1.0.  ",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "6)  Dmid in Channel is the geometric mean of the two channel boundaries.  Using this",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "value minimizes the effect of the finite channel width.  This is especially important",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      }
+    ]
+  },
+  "warnings": [
+    "Values read from saved workbook; formulas not recalculated."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

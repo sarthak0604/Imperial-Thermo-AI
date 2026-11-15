@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-107:337763b50c035d8dd7f7",
+  "study": "PSI-107",
+  "filename": "PSI-107_Presentations_IP-D Crew training 2011.pdf",
+  "key": "psi-data/PSI-107/Presentations/PSI-107_Presentations_IP-D Crew training 2011.pdf",
+  "category": "Presentations",
+  "size_bytes": 1339967,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-107/download?file=683da126b8656d2315bf4490&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-107/337763b50c035d8dd7f7/PSI-107_Presentations_IP-D Crew training 2011.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "11ad76194acf095886b0baf33ac3cb960f266d55dce0ab5b15c69de0db7afb62",
+  "status": "downloaded"
+}

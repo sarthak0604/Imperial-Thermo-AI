@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-117:ac1824d10db2a04fa867",
+  "study": "PSI-117",
+  "filename": "PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+  "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+  "category": "Analyzed Data",
+  "size_bytes": 89130,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e8&version=1&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/ac1824d10db2a04fa867/PSI-117_Analyzed Data_PROCI_C12_2019_Three_Stage.csv",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "0e7c8c7e9ea35bd139ba52c9f2118724b8cc9f251d82b9222adf03cb67317809",
+  "status": "downloaded"
+}

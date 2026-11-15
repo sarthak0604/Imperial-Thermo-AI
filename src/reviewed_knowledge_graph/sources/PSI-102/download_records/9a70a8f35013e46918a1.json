@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:9a70a8f35013e46918a1",
+  "study": "PSI-102",
+  "filename": "PSI-102_Engineering Documents_S1171MFHA401 Pyrell Sample Assembly.pdf",
+  "key": "psi-data/PSI-102/Engineering Documents/PSI-102_Engineering Documents_S1171MFHA401 Pyrell Sample Assembly.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 154568,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d54f91ab4427dbf444b&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/9a70a8f35013e46918a1/PSI-102_Engineering Documents_S1171MFHA401 Pyrell Sample Assembly.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "5b3673b64b2c8f5affcf72e749e56077a7d86c1e743ff6d5ac5e9a07640fc0c7",
+  "status": "downloaded"
+}

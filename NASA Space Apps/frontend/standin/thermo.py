@@ -97,13 +97,12 @@ def ask(question, env):
     if comparison:
         return compare_acrylic_thickness(tuple(map(float, comparison.groups())))
 
-    from request_planner.mini_graph import MiniGraph, search_graph
+    from imperial_thermo_ai.reviewed_graph import load_graph
     from request_planner.planner import LocalPlanner
     from request_planner.service import run_workflow
 
-    graph_path = Path(env.get("THERMO_GRAPH") or REPO / "examples" / "psi_graph.json")
-    graph = MiniGraph.model_validate_json(graph_path.read_text(encoding="utf-8"))
-    results = search_graph(graph, question)
+    graph = load_graph(env.get("THERMO_GRAPH"))
+    results = graph.search(question)
     response = None
     message = "No files in the configured PSI graph matched this question."
     name = model_id(env)

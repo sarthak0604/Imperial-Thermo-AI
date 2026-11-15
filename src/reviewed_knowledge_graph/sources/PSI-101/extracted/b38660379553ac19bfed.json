@@ -1,0 +1,1847 @@
+{
+  "id": "res:PSI-101:b38660379553ac19bfed",
+  "study": "PSI-101",
+  "filename": "PSI-101_Experimental table_SAME-R.csv",
+  "key": "psi-data/PSI-101/Experimental table/PSI-101_Experimental table_SAME-R.csv",
+  "category": "Experimental table",
+  "size_bytes": 5674,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=679a9e2209ed061032c0cd23&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/b38660379553ac19bfed/PSI-101_Experimental table_SAME-R.csv",
+  "sha256": "87164b7dc9168a4273c159f7a9f23699afbd06ad97b77974377e79b9bf8a3bef",
+  "status": "downloaded",
+  "sections": [
+    {
+      "locator": "table, row 1",
+      "text": "1: Sample Type | 2: SAME Test # | 3: Description | 4: Date | 5: Inlet velocity (cm/s) | 6: Rt/R0 | 7: Duration (sec) | 8: Primary aging time (sec) | 9: Primary mixing time (sec) | 10: Net aging time (sec)"
+    },
+    {
+      "locator": "table, row 2",
+      "text": "1: Kapton | 2: 51 | 3: B.L. new formula | 4: 21-Jul | 5: 8.1 | 6: 1.38 | 7: 60 | 8: 11 | 9: 8 | 10: 38"
+    },
+    {
+      "locator": "table, row 3",
+      "text": "1: Kapton | 2: 51a | 3: B.L. new formula | 4: 22-Jul | 5: 8.1 | 6: 1.38 | 7: 60 | 10: 261"
+    },
+    {
+      "locator": "table, row 4",
+      "text": "1: Kapton | 2: 61 | 3: Baseline Aging | 4: 2-Aug | 5: 8.1 | 6: 1.38 | 7: 60 | 8: 11 | 9: 8 | 10: 38"
+    },
+    {
+      "locator": "table, row 5",
+      "text": "1: Kapton | 2: 61a | 3: aged | 4: 2-Aug | 5: 8.1 | 6: 1.38 | 10: 807"
+    },
+    {
+      "locator": "table, row 6",
+      "text": "1: Kapton | 2: 62 | 3: High Temp aging | 4: 2-Aug | 5: 8.1 | 6: 1.48 | 7: 60 | 8: 11 | 9: 8 | 10: 39"
+    },
+    {
+      "locator": "table, row 7",
+      "text": "1: Kapton | 2: 62a | 3: aged | 4: 2-Aug | 5: 8.1 | 6: 1.48 | 10: 808"
+    },
+    {
+      "locator": "table, row 8",
+      "text": "1: Kapton | 2: 70 | 3: High temp aged STS det | 4: 24-Aug | 5: 8.1 | 6: 1.48 | 7: 60 | 8: 720 | 9: 8 | 10: 747"
+    },
+    {
+      "locator": "table, row 9",
+      "text": "1: Kapton | 2: 73 | 3: Baseline Aging | 4: 26-Aug | 5: 8.1 | 6: 1.38 | 7: 60 | 8: 11 | 9: 8 | 10: 33"
+    },
+    {
+      "locator": "table, row 10",
+      "text": "1: Kapton | 2: 73a | 3: aged | 4: 26-Aug | 5: 8.1 | 6: 1.38 | 10: 560"
+    },
+    {
+      "locator": "table, row 11",
+      "text": "1: Kapton | 2: 75 | 3: Mid Temp aging (no Ptrak) | 4: 26-Aug | 5: 8.1 | 6: 1.43 | 7: 60 | 8: 11 | 9: 8 | 10: 32"
+    },
+    {
+      "locator": "table, row 12",
+      "text": "1: Kapton | 2: 75a | 3: aged | 4: 26-Aug | 5: 8.1 | 6: 1.43 | 10: 563"
+    },
+    {
+      "locator": "table, row 13",
+      "text": "1: Kapton | 2: 77 | 3: High Temp aging | 4: 26-Aug | 5: 8.1 | 6: 1.48 | 7: 60 | 8: 11 | 9: 8 | 10: 31"
+    },
+    {
+      "locator": "table, row 14",
+      "text": "1: Kapton | 2: 77a | 3: aged | 4: 26-Aug | 5: 8.1 | 6: 1.48 | 10: 559"
+    },
+    {
+      "locator": "table, row 15",
+      "text": "1: Kapton | 2: 85 | 3: Mid Temp aging run. Repeat 75 | 4: 30-Aug | 5: 8.1 | 6: 1.43 | 7: 60 | 8: 11 | 9: 8 | 10: 33"
+    },
+    {
+      "locator": "table, row 16",
+      "text": "1: Kapton | 2: 85a | 3: aged | 4: 30-Aug | 5: 8.1 | 6: 1.43 | 10: 563"
+    },
+    {
+      "locator": "table, row 17",
+      "text": "1: Kapton | 2: 90 | 3: Mid Temp aging reburn 85 | 4: 30-Aug | 5: 8.1 | 6: 1.43 | 7: 60 | 8: 11 | 9: 8 | 10: 38"
+    },
+    {
+      "locator": "table, row 18",
+      "text": "1: Kapton | 2: 90a | 3: aged | 4: 30-Aug | 5: 8.1 | 6: 1.43 | 10: 569"
+    },
+    {
+      "locator": "table, row 19",
+      "text": "1: Kapton | 2: 92 | 3: Baseline STS det | 4: 7-Sep | 5: 8.1 | 6: 1.38 | 7: 60 | 8: 11 | 9: 8 | 10: 35"
+    },
+    {
+      "locator": "table, row 20",
+      "text": "1: Kapton | 2: 93 | 3: Mid Temp aging run 75 repeat | 4: 7-Sep | 5: 8.1 | 6: 1.43 | 7: 60 | 8: 11 | 9: 8 | 10: 36"
+    },
+    {
+      "locator": "table, row 21",
+      "text": "1: Kapton | 2: 93a | 3: aged | 4: 7-Sep | 5: 8.1 | 6: 1.43 | 10: 568"
+    },
+    {
+      "locator": "table, row 22",
+      "text": "1: Kapton | 2: 94 | 3: Mid Temp aging run mid high | 4: 7-Sep | 5: 8.1 | 6: 1.45 | 7: 60 | 8: 11 | 9: 8 | 10: 42"
+    },
+    {
+      "locator": "table, row 23",
+      "text": "1: Kapton | 2: 94a | 3: aged | 4: 7-Sep | 5: 8.1 | 6: 1.45 | 10: 567"
+    },
+    {
+      "locator": "table, row 24",
+      "text": "1: Kapton | 2: 101 | 3: No flow run w/ aging | 4: 8-Sep | 5: 0 | 6: 1.48 | 7: 60 | 8: 11 | 9: 8 | 10: 29"
+    },
+    {
+      "locator": "table, row 25",
+      "text": "1: Kapton | 2: 101a | 3: aged | 4: 8-Sep | 5: 0 | 6: 1.48 | 10: 561"
+    },
+    {
+      "locator": "table, row 26",
+      "text": "1: Kapton | 2: 102 | 3: No flow run w/ aging | 4: 8-Sep | 5: 0 | 6: 1.48 | 7: 120 | 8: 11 | 9: 8 | 10: 28"
+    },
+    {
+      "locator": "table, row 27",
+      "text": "1: Kapton | 2: 102a | 3: aged | 4: 8-Sep | 5: 0 | 6: 1.48 | 10: 563"
+    },
+    {
+      "locator": "table, row 28",
+      "text": "1: Kapton | 2: 108 | 3: Low flow run w/aging | 4: 9-Sep | 5: 1 | 6: 1.48 | 7: 60 | 8: 11 | 9: 8 | 10: 30"
+    },
+    {
+      "locator": "table, row 29",
+      "text": "1: Kapton | 2: 108a | 3: aged | 4: 9-Sep | 5: 1 | 6: 1.48 | 10: 560"
+    },
+    {
+      "locator": "table, row 30",
+      "text": "1: Kapton | 2: 114 | 3: low flow run w STS no Ptrak | 4: 9-Sep | 5: 2 | 6: 1.43 | 7: 60 | 8: 11 | 9: 8 | 10: 28"
+    },
+    {
+      "locator": "table, row 31",
+      "text": "1: Silicone | 2: 48 | 3: Low Temp | 4: 16-Jul | 5: 8 | 6: 1.304 | 7: 60 | 8: 11 | 9: 8 | 10: 62"
+    },
+    {
+      "locator": "table, row 32",
+      "text": "1: Silicone | 2: 53 | 3: HighTemp | 4: 22-Jul | 5: 8.1 | 6: 1.35 | 7: 60 | 8: 1 | 9: 8 | 10: 52"
+    },
+    {
+      "locator": "table, row 33",
+      "text": "1: Silicone | 2: 59 | 3: baseline aged | 4: 30-Jul | 5: 8.1 | 6: 1.327 | 7: 60 | 8: 11 | 9: 8 | 10: 24"
+    },
+    {
+      "locator": "table, row 34",
+      "text": "1: Silicone | 2: 59a | 3: aged | 4: 30-Jul | 5: 8.1 | 6: 1.327 | 10: 856"
+    },
+    {
+      "locator": "table, row 35",
+      "text": "1: Silicone | 2: 60 | 3: Htemp ageing | 4: 30-Jul | 5: 8.1 | 6: 1.35 | 7: 60 | 8: 11 | 9: 8 | 10: 49"
+    },
+    {
+      "locator": "table, row 36",
+      "text": "1: Silicone | 2: 60a | 3: aged | 4: 30-Jul | 5: 8.1 | 6: 1.35 | 10: 856"
+    },
+    {
+      "locator": "table, row 37",
+      "text": "1: Silicone | 2: 65 | 3: Baseline long aging | 4: 23-Aug | 5: 8.1 | 6: 1.327 | 7: 60 | 8: 11 | 9: 8 | 10: 50"
+    },
+    {
+      "locator": "table, row 38",
+      "text": "1: Silicone | 2: 65a | 3: aged | 4: 23-Aug | 5: 8.1 | 6: 1.327 | 10: 1923"
+    },
+    {
+      "locator": "table, row 39",
+      "text": "1: Silicone | 2: 66 | 3: High T aging | 4: 23-Aug | 5: 8.1 | 6: 1.36 | 7: 60 | 8: 11 | 9: 8 | 10: 42"
+    },
+    {
+      "locator": "table, row 40",
+      "text": "1: Silicone | 2: 66a | 3: aged | 4: 23-Aug | 5: 8.1 | 6: 1.36 | 10: 837"
+    },
+    {
+      "locator": "table, row 41",
+      "text": "1: Silicone | 2: 67 | 3: High temp aged | 4: 24-Aug | 5: 8.1 | 6: 1.35 | 7: 60 | 8: 720 | 9: 8 | 10: 751"
+    },
+    {
+      "locator": "table, row 42",
+      "text": "1: Silicone | 2: 72 | 3: Baseline STS det | 4: 25-Aug | 5: 8.1 | 6: 1.327 | 7: 60 | 8: 11 | 9: 8 | 10: 42"
+    },
+    {
+      "locator": "table, row 43",
+      "text": "1: Silicone | 2: 86 | 3: Mid temp aging | 4: 30-Aug | 5: 8.1 | 6: 1.345 | 7: 60 | 8: 11 | 9: 8 | 10: 50"
+    },
+    {
+      "locator": "table, row 44",
+      "text": "1: Silicone | 2: 86a | 3: aged | 4: 30-Aug | 5: 8.1 | 6: 1.345 | 10: 628"
+    },
+    {
+      "locator": "table, row 45",
+      "text": "1: Silicone | 2: 91 | 3: Baseline STS det | 4: 7-Sep | 5: 8.1 | 6: 1.327 | 7: 60 | 8: 11 | 9: 8 | 10: 46"
+    },
+    {
+      "locator": "table, row 46",
+      "text": "1: Silicone | 2: 99 | 3: No flow run w/aging | 4: 8-Sep | 5: 0 | 6: 1.35 | 7: 60 | 8: 11 | 9: 8 | 10: 48"
+    },
+    {
+      "locator": "table, row 47",
+      "text": "1: Silicone | 2: 99a | 3: aged | 4: 8-Sep | 5: 0 | 6: 1.35 | 10: 627"
+    },
+    {
+      "locator": "table, row 48",
+      "text": "1: Silicone | 2: 103 | 3: low flow run w/ aging | 4: 9-Sep | 5: 1 | 6: 1.35 | 7: 60 | 8: 11 | 9: 8 | 10: 48"
+    },
+    {
+      "locator": "table, row 49",
+      "text": "1: Silicone | 2: 103a | 3: aged | 4: 9-Sep | 5: 1 | 6: 1.35 | 10: 619"
+    },
+    {
+      "locator": "table, row 50",
+      "text": "1: Silicone | 2: 104 | 3: No flow run w/ aging | 4: 9-Sep | 5: 0 | 6: 1.35 | 7: 60 | 8: 11 | 9: 8 | 10: 51"
+    },
+    {
+      "locator": "table, row 51",
+      "text": "1: Silicone | 2: 104a | 3: aged | 4: 9-Sep | 5: 0 | 6: 1.35 | 10: 636"
+    },
+    {
+      "locator": "table, row 52",
+      "text": "1: Silicone | 2: 109 | 3: low flow run w STS | 4: 9-Sep | 5: 2 | 6: 1.35 | 7: 60 | 8: 11 | 9: 8 | 10: 28"
+    },
+    {
+      "locator": "table, row 53",
+      "text": "1: Lampwick | 2: 49 | 3: B.L. High RT/R0 | 4: 19-Jul | 5: 8 | 6: 1.251 | 7: 60 | 8: 11 | 9: 8 | 10: 51"
+    },
+    {
+      "locator": "table, row 54",
+      "text": "1: Lampwick | 2: 54 | 3: Baseline | 4: 29-Jul | 5: 8.1 | 6: 1.245 | 7: 60 | 8: 11 | 9: 8 | 10: 57"
+    },
+    {
+      "locator": "table, row 55",
+      "text": "1: Lampwick | 2: 55 | 3: High RT/R0 test aging | 4: 29-Jul | 5: 8.1 | 6: 1.245 | 7: 60 | 8: 11 | 9: 8 | 10: 47"
+    },
+    {
+      "locator": "table, row 56",
+      "text": "1: Lampwick | 2: 55a | 3: aged | 4: 29-Jul | 5: 8.1 | 6: 1.245 | 10: 218"
+    },
+    {
+      "locator": "table, row 57",
+      "text": "1: Lampwick | 2: 57 | 3: High RT/R0 reburn sample | 4: 29-Jul | 5: 8.1 | 6: 1.253 | 7: 60 | 8: 11 | 9: 8 | 10: n/a"
+    },
+    {
+      "locator": "table, row 58",
+      "text": "1: Lampwick | 2: 68 | 3: High temp aged STS det | 4: 24-Aug | 5: 8.1 | 6: 1.28 | 7: 60 | 8: 720 | 9: 8 | 10: 747"
+    },
+    {
+      "locator": "table, row 59",
+      "text": "1: Lampwick | 2: 78 | 3: Baseline aging | 4: 26-Aug | 5: 8.1 | 6: 1.245 | 7: 60 | 8: 11 | 9: 8 | 10: 37"
+    },
+    {
+      "locator": "table, row 60",
+      "text": "1: Lampwick | 2: 78a | 3: aged | 4: 26-Aug | 5: 8.1 | 6: 1.245 | 10: 581"
+    },
+    {
+      "locator": "table, row 61",
+      "text": "1: Lampwick | 2: 80 | 3: High temp aging | 4: 26-Aug | 5: 8.1 | 6: 1.28 | 7: 60 | 8: 11 | 9: 8 | 10: 40"
+    },
+    {
+      "locator": "table, row 62",
+      "text": "1: Lampwick | 2: 80a | 3: aged | 4: 26-Aug | 5: 8.1 | 6: 1.28 | 10: 580"
+    },
+    {
+      "locator": "table, row 63",
+      "text": "1: Lampwick | 2: 82 | 3: Mid temp aging | 4: 26-Aug | 5: 8.1 | 6: 1.265 | 7: 60 | 8: 11 | 9: 8 | 10: 39"
+    },
+    {
+      "locator": "table, row 64",
+      "text": "1: Lampwick | 2: 82a | 3: aged | 4: 27-Aug | 5: 8.1 | 6: 1.265 | 10: 579"
+    },
+    {
+      "locator": "table, row 65",
+      "text": "1: Lampwick | 2: 88 | 3: Baseline STS det | 4: 30-Aug | 5: 8.1 | 6: 1.245 | 7: 60 | 8: 11 | 9: 8 | 10: n/a"
+    },
+    {
+      "locator": "table, row 66",
+      "text": "1: Lampwick | 2: 96 | 3: No flow run w/aging | 4: 7-Sep | 5: 0 | 6: 1.245 | 7: 60 | 8: 11 | 9: 8 | 10: 34"
+    },
+    {
+      "locator": "table, row 67",
+      "text": "1: Lampwick | 2: 96a | 3: aged | 4: 7-Sep | 5: 0 | 6: 1.245 | 10: 582"
+    },
+    {
+      "locator": "table, row 68",
+      "text": "1: Lampwick | 2: 98 | 3: No flow run w/aging | 4: 8-Sep | 5: 0 | 6: 1.28 | 7: 60 | 8: 11 | 9: 8 | 10: 37"
+    },
+    {
+      "locator": "table, row 69",
+      "text": "1: Lampwick | 2: 98a | 3: aged | 4: 8-Sep | 5: 0 | 6: 1.28 | 10: 585"
+    },
+    {
+      "locator": "table, row 70",
+      "text": "1: Lampwick | 2: 106 | 3: No flow run w/aging | 4: 9-Sep | 5: 0 | 6: 1.28 | 7: 60 | 8: 11 | 9: 8 | 10: 30"
+    },
+    {
+      "locator": "table, row 71",
+      "text": "1: Lampwick | 2: 106a | 3: aged | 4: 9-Sep | 5: 0 | 6: 1.28 | 10: 558"
+    },
+    {
+      "locator": "table, row 72",
+      "text": "1: Lampwick | 2: 110 | 3: low flow run w/STS | 4: 9-Sep | 5: 2 | 6: 1.28 | 7: 60 | 8: 11 | 9: 8 | 10: 21"
+    },
+    {
+      "locator": "table, row 73",
+      "text": "1: Teflon | 2: 50 | 3: B.L. High RT/R0 | 4: 20-Jul | 5: 8.1 | 6: 1.452 | 7: 60 | 8: 11 | 9: 8 | 10: 33"
+    },
+    {
+      "locator": "table, row 74",
+      "text": "1: Teflon | 2: 56 | 3: Baseline | 4: 29-Jul | 5: 8.1 | 6: 1.445 | 7: 60 | 8: 11 | 9: 8 | 10: 41"
+    },
+    {
+      "locator": "table, row 75",
+      "text": "1: Teflon | 2: 57 | 3: High RT/R0 reburn sample | 4: 29-Jul | 5: 8.1 | 6: 1.253 | 7: 60 | 8: 11 | 9: 8 | 10: n/a"
+    },
+    {
+      "locator": "table, row 76",
+      "text": "1: Teflon | 2: 58 | 3: Baseline aging | 4: 30-Jul | 5: 8.1 | 6: 1.445 | 7: 60 | 8: 11 | 9: 8 | 10: 34"
+    },
+    {
+      "locator": "table, row 77",
+      "text": "1: Teflon | 2: 58a | 3: aged | 4: 30-Jul | 5: 8.1 | 6: 1.445 | 10: 805"
+    },
+    {
+      "locator": "table, row 78",
+      "text": "1: Teflon | 2: 69 | 3: High temp aged STS det | 4: 24-Aug | 5: 8.1 | 6: 1.45 | 7: 60 | 8: 720 | 9: 8 | 10: 745"
+    },
+    {
+      "locator": "table, row 79",
+      "text": "1: Teflon | 2: 79 | 3: Baseline aging | 4: 26-Aug | 5: 8.1 | 6: 1.445 | 7: 60 | 8: 11 | 9: 8 | 10: 33"
+    },
+    {
+      "locator": "table, row 80",
+      "text": "1: Teflon | 2: 79a | 3: aged | 4: 26-Aug | 5: 8.1 | 6: 1.445 | 10: 560"
+    },
+    {
+      "locator": "table, row 81",
+      "text": "1: Teflon | 2: 81 | 3: High temp aging | 4: 26-Aug | 5: 8.1 | 6: 1.45 | 7: 60 | 8: 11 | 9: 8 | 10: 30"
+    },
+    {
+      "locator": "table, row 82",
+      "text": "1: Teflon | 2: 81a | 3: aged | 4: 27-Aug | 5: 8.1 | 6: 1.45 | 10: 559"
+    },
+    {
+      "locator": "table, row 83",
+      "text": "1: Teflon | 2: 83 | 3: Mid temp aging | 4: 26-Aug | 5: 8.1 | 6: 1.448 | 7: 60 | 8: 11 | 9: 8 | 10: 30"
+    },
+    {
+      "locator": "table, row 84",
+      "text": "1: Teflon | 2: 83a | 3: aged | 4: 27-Aug | 5: 8.1 | 6: 1.448 | 10: 557"
+    },
+    {
+      "locator": "table, row 85",
+      "text": "1: Teflon | 2: 89 | 3: Baseline STS det | 4: 30-Aug | 5: 8.1 | 6: 1.445 | 7: 60 | 8: 11 | 9: 8 | 10: 31"
+    },
+    {
+      "locator": "table, row 86",
+      "text": "1: Teflon | 2: 100 | 3: No flow run w/ aging | 4: 8-Sep | 5: 0 | 6: 1.45 | 7: 60 | 8: 11 | 9: 8 | 10: 29"
+    },
+    {
+      "locator": "table, row 87",
+      "text": "1: Teflon | 2: 100a | 3: aged | 4: 8-Sep | 5: 0 | 6: 1.45 | 10: 560"
+    },
+    {
+      "locator": "table, row 88",
+      "text": "1: Teflon | 2: 105 | 3: No flow run w/ aging | 4: 9-Sep | 5: 0 | 6: 1.45 | 7: 60 | 8: 11 | 9: 8 | 10: 24"
+    },
+    {
+      "locator": "table, row 89",
+      "text": "1: Teflon | 2: 105a | 3: aged | 4: 9-Sep | 5: 0 | 6: 1.45 | 10: 559"
+    },
+    {
+      "locator": "table, row 90",
+      "text": "1: Teflon | 2: 111 | 3: low flow run w/ STS | 4: 9-Sep | 5: 2 | 6: 1.45 | 7: 60 | 8: 11 | 9: 8 | 10: 43"
+    },
+    {
+      "locator": "table, row 91",
+      "text": "1: Pyrell | 2: 52 | 3: Baseline | 4: 22-Jul | 5: 8.1 | 6: 1.22 | 7: 60 | 8: 11 | 9: 8 | 10: n/a"
+    },
+    {
+      "locator": "table, row 92",
+      "text": "1: Pyrell | 2: 63 | 3: Baseline Aging | 4: 23-Aug | 5: 8.1 | 6: 1.22 | 7: 60 | 8: 11 | 9: 8 | 10: 56"
+    },
+    {
+      "locator": "table, row 93",
+      "text": "1: Pyrell | 2: 63a | 3: aged | 4: 23-Aug | 5: 8.1 | 6: 1.22 | 10: 840"
+    },
+    {
+      "locator": "table, row 94",
+      "text": "1: Pyrell | 2: 64 | 3: High Temp aging | 4: 23-Aug | 5: 8.1 | 6: 1.23 | 7: 60 | 8: 11 | 9: 8 | 10: 47"
+    },
+    {
+      "locator": "table, row 95",
+      "text": "1: Pyrell | 2: 64a | 3: aged | 4: 23-Aug | 5: 8.1 | 6: 1.23 | 10: 842"
+    },
+    {
+      "locator": "table, row 96",
+      "text": "1: Pyrell | 2: 71 | 3: High temp aged STS det | 4: 24-Aug | 5: 8.1 | 6: 1.23 | 7: 60 | 8: 720 | 9: 8 | 10: 750"
+    },
+    {
+      "locator": "table, row 97",
+      "text": "1: Pyrell | 2: 74 | 3: Baseline Aging | 4: 26-Aug | 5: 8.1 | 6: 1.22 | 7: 60 | 8: 11 | 9: 8 | 10: 48"
+    },
+    {
+      "locator": "table, row 98",
+      "text": "1: Pyrell | 2: 74a | 3: aged | 4: 26-Aug | 5: 8.1 | 6: 1.22 | 10: 623"
+    },
+    {
+      "locator": "table, row 99",
+      "text": "1: Pyrell | 2: 76 | 3: High Temp aging | 4: 26-Aug | 5: 8.1 | 6: 1.23 | 7: 60 | 8: 11 | 9: 8 | 10: 51"
+    },
+    {
+      "locator": "table, row 100",
+      "text": "1: Pyrell | 2: 76a | 3: aged | 4: 26-Aug | 5: 8.1 | 6: 1.23 | 10: 625"
+    },
+    {
+      "locator": "table, row 101",
+      "text": "1: Pyrell | 2: 84 | 3: Mid Temp aging retry | 4: 30-Aug | 5: 8.1 | 6: 1.225 | 7: 60 | 8: 11 | 9: 8 | 10: 53"
+    },
+    {
+      "locator": "table, row 102",
+      "text": "1: Pyrell | 2: 84a | 3: aged | 4: 30-Aug | 5: 8.1 | 6: 1.225 | 10: 632"
+    },
+    {
+      "locator": "table, row 103",
+      "text": "1: Pyrell | 2: 87 | 3: Baseline STS det | 4: 30-Aug | 5: 8.1 | 6: 1.22 | 7: 60 | 8: 11 | 9: 8 | 10: 45"
+    },
+    {
+      "locator": "table, row 104",
+      "text": "1: Pyrell | 2: 95 | 3: No flow run w/ aging | 4: 7-Sep | 5: 0 | 6: 1.22 | 7: 60 | 8: 11 | 9: 8 | 10: 38"
+    },
+    {
+      "locator": "table, row 105",
+      "text": "1: Pyrell | 2: 95a | 3: aged | 4: 7-Sep | 5: 0 | 6: 1.22 | 10: n/a"
+    },
+    {
+      "locator": "table, row 106",
+      "text": "1: Pyrell | 2: 97 | 3: No flow run w/aging | 4: 8-Sep | 5: 0 | 6: 1.23 | 7: 60 | 8: 11 | 9: 8 | 10: 48"
+    },
+    {
+      "locator": "table, row 107",
+      "text": "1: Pyrell | 2: 97a | 3: aged | 4: 8-Sep | 5: 0 | 6: 1.23 | 10: 624"
+    },
+    {
+      "locator": "table, row 108",
+      "text": "1: Pyrell | 2: 107 | 3: Low flow run w/aging | 4: 9-Sep | 5: 1 | 6: 1.23 | 7: 60 | 8: 11 | 9: 8 | 10: 32"
+    },
+    {
+      "locator": "table, row 109",
+      "text": "1: Pyrell | 2: 107a | 3: aged | 4: 9-Sep | 5: 1 | 6: 1.23 | 10: 559"
+    },
+    {
+      "locator": "table, row 110",
+      "text": "1: Pyrell | 2: 113 | 3: low flow run w STS | 4: 9-Sep | 5: 2 | 6: 1.23 | 7: 60 | 8: 11 | 9: 8 | 10: 31"
+    }
+  ],
+  "details": {
+    "name": "table",
+    "row_count": 110,
+    "column_count": 10,
+    "column_statistics": [
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 67,
+        "min": 48.0,
+        "max": 114.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 109,
+        "min": 0.0,
+        "max": 8.1,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 109,
+        "min": 1.22,
+        "max": 1.48,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 68,
+        "min": 60.0,
+        "max": 120.0,
+        "blank_count": 41
+      },
+      {
+        "numeric_count": 67,
+        "min": 1.0,
+        "max": 720.0,
+        "blank_count": 42
+      },
+      {
+        "numeric_count": 67,
+        "min": 8.0,
+        "max": 8.0,
+        "blank_count": 42
+      },
+      {
+        "numeric_count": 104,
+        "min": 21.0,
+        "max": 1923.0,
+        "blank_count": 0
+      }
+    ],
+    "rows": [
+      [
+        "Sample Type",
+        "SAME Test #",
+        "Description",
+        "Date",
+        "Inlet velocity (cm/s)",
+        "Rt/R0",
+        "Duration (sec)",
+        "Primary aging time (sec)",
+        "Primary mixing time (sec)",
+        "Net aging time (sec)"
+      ],
+      [
+        "Kapton",
+        "51",
+        "B.L. new formula",
+        "21-Jul",
+        "8.1",
+        "1.38",
+        "60",
+        "11",
+        "8",
+        "38"
+      ],
+      [
+        "Kapton",
+        "51a",
+        "B.L. new formula",
+        "22-Jul",
+        "8.1",
+        "1.38",
+        "60",
+        "",
+        "",
+        "261"
+      ],
+      [
+        "Kapton",
+        "61",
+        "Baseline Aging",
+        "2-Aug",
+        "8.1",
+        "1.38",
+        "60",
+        "11",
+        "8",
+        "38"
+      ],
+      [
+        "Kapton",
+        "61a",
+        "aged",
+        "2-Aug",
+        "8.1",
+        "1.38",
+        "",
+        "",
+        "",
+        "807"
+      ],
+      [
+        "Kapton",
+        "62",
+        "High Temp aging",
+        "2-Aug",
+        "8.1",
+        "1.48",
+        "60",
+        "11",
+        "8",
+        "39"
+      ],
+      [
+        "Kapton",
+        "62a",
+        "aged",
+        "2-Aug",
+        "8.1",
+        "1.48",
+        "",
+        "",
+        "",
+        "808"
+      ],
+      [
+        "Kapton",
+        "70",
+        "High temp aged STS det",
+        "24-Aug",
+        "8.1",
+        "1.48",
+        "60",
+        "720",
+        "8",
+        "747"
+      ],
+      [
+        "Kapton",
+        "73",
+        "Baseline Aging",
+        "26-Aug",
+        "8.1",
+        "1.38",
+        "60",
+        "11",
+        "8",
+        "33"
+      ],
+      [
+        "Kapton",
+        "73a",
+        "aged",
+        "26-Aug",
+        "8.1",
+        "1.38",
+        "",
+        "",
+        "",
+        "560"
+      ],
+      [
+        "Kapton",
+        "75",
+        "Mid Temp aging (no Ptrak)",
+        "26-Aug",
+        "8.1",
+        "1.43",
+        "60",
+        "11",
+        "8",
+        "32"
+      ],
+      [
+        "Kapton",
+        "75a",
+        "aged",
+        "26-Aug",
+        "8.1",
+        "1.43",
+        "",
+        "",
+        "",
+        "563"
+      ],
+      [
+        "Kapton",
+        "77",
+        "High Temp aging",
+        "26-Aug",
+        "8.1",
+        "1.48",
+        "60",
+        "11",
+        "8",
+        "31"
+      ],
+      [
+        "Kapton",
+        "77a",
+        "aged",
+        "26-Aug",
+        "8.1",
+        "1.48",
+        "",
+        "",
+        "",
+        "559"
+      ],
+      [
+        "Kapton",
+        "85",
+        "Mid Temp aging run. Repeat 75",
+        "30-Aug",
+        "8.1",
+        "1.43",
+        "60",
+        "11",
+        "8",
+        "33"
+      ],
+      [
+        "Kapton",
+        "85a",
+        "aged",
+        "30-Aug",
+        "8.1",
+        "1.43",
+        "",
+        "",
+        "",
+        "563"
+      ],
+      [
+        "Kapton",
+        "90",
+        "Mid Temp aging reburn 85",
+        "30-Aug",
+        "8.1",
+        "1.43",
+        "60",
+        "11",
+        "8",
+        "38"
+      ],
+      [
+        "Kapton",
+        "90a",
+        "aged",
+        "30-Aug",
+        "8.1",
+        "1.43",
+        "",
+        "",
+        "",
+        "569"
+      ],
+      [
+        "Kapton",
+        "92",
+        "Baseline STS det",
+        "7-Sep",
+        "8.1",
+        "1.38",
+        "60",
+        "11",
+        "8",
+        "35"
+      ],
+      [
+        "Kapton",
+        "93",
+        "Mid Temp aging run 75 repeat",
+        "7-Sep",
+        "8.1",
+        "1.43",
+        "60",
+        "11",
+        "8",
+        "36"
+      ],
+      [
+        "Kapton",
+        "93a",
+        "aged",
+        "7-Sep",
+        "8.1",
+        "1.43",
+        "",
+        "",
+        "",
+        "568"
+      ],
+      [
+        "Kapton",
+        "94",
+        "Mid Temp aging run mid high",
+        "7-Sep",
+        "8.1",
+        "1.45",
+        "60",
+        "11",
+        "8",
+        "42"
+      ],
+      [
+        "Kapton",
+        "94a",
+        "aged",
+        "7-Sep",
+        "8.1",
+        "1.45",
+        "",
+        "",
+        "",
+        "567"
+      ],
+      [
+        "Kapton",
+        "101",
+        "No flow run w/ aging",
+        "8-Sep",
+        "0",
+        "1.48",
+        "60",
+        "11",
+        "8",
+        "29"
+      ],
+      [
+        "Kapton",
+        "101a",
+        "aged",
+        "8-Sep",
+        "0",
+        "1.48",
+        "",
+        "",
+        "",
+        "561"
+      ],
+      [
+        "Kapton",
+        "102",
+        "No flow run w/ aging",
+        "8-Sep",
+        "0",
+        "1.48",
+        "120",
+        "11",
+        "8",
+        "28"
+      ],
+      [
+        "Kapton",
+        "102a",
+        "aged",
+        "8-Sep",
+        "0",
+        "1.48",
+        "",
+        "",
+        "",
+        "563"
+      ],
+      [
+        "Kapton",
+        "108",
+        "Low flow run w/aging",
+        "9-Sep",
+        "1",
+        "1.48",
+        "60",
+        "11",
+        "8",
+        "30"
+      ],
+      [
+        "Kapton",
+        "108a",
+        "aged",
+        "9-Sep",
+        "1",
+        "1.48",
+        "",
+        "",
+        "",
+        "560"
+      ],
+      [
+        "Kapton",
+        "114",
+        "low flow run w STS no Ptrak",
+        "9-Sep",
+        "2",
+        "1.43",
+        "60",
+        "11",
+        "8",
+        "28"
+      ],
+      [
+        "Silicone",
+        "48",
+        "Low Temp",
+        "16-Jul",
+        "8",
+        "1.304",
+        "60",
+        "11",
+        "8",
+        "62"
+      ],
+      [
+        "Silicone",
+        "53",
+        "HighTemp",
+        "22-Jul",
+        "8.1",
+        "1.35",
+        "60",
+        "1",
+        "8",
+        "52"
+      ],
+      [
+        "Silicone",
+        "59",
+        "baseline aged",
+        "30-Jul",
+        "8.1",
+        "1.327",
+        "60",
+        "11",
+        "8",
+        "24"
+      ],
+      [
+        "Silicone",
+        "59a",
+        "aged",
+        "30-Jul",
+        "8.1",
+        "1.327",
+        "",
+        "",
+        "",
+        "856"
+      ],
+      [
+        "Silicone",
+        "60",
+        "Htemp ageing",
+        "30-Jul",
+        "8.1",
+        "1.35",
+        "60",
+        "11",
+        "8",
+        "49"
+      ],
+      [
+        "Silicone",
+        "60a",
+        "aged",
+        "30-Jul",
+        "8.1",
+        "1.35",
+        "",
+        "",
+        "",
+        "856"
+      ],
+      [
+        "Silicone",
+        "65",
+        "Baseline long aging",
+        "23-Aug",
+        "8.1",
+        "1.327",
+        "60",
+        "11",
+        "8",
+        "50"
+      ],
+      [
+        "Silicone",
+        "65a",
+        "aged",
+        "23-Aug",
+        "8.1",
+        "1.327",
+        "",
+        "",
+        "",
+        "1923"
+      ],
+      [
+        "Silicone",
+        "66",
+        "High T aging",
+        "23-Aug",
+        "8.1",
+        "1.36",
+        "60",
+        "11",
+        "8",
+        "42"
+      ],
+      [
+        "Silicone",
+        "66a",
+        "aged",
+        "23-Aug",
+        "8.1",
+        "1.36",
+        "",
+        "",
+        "",
+        "837"
+      ],
+      [
+        "Silicone",
+        "67",
+        "High temp aged",
+        "24-Aug",
+        "8.1",
+        "1.35",
+        "60",
+        "720",
+        "8",
+        "751"
+      ],
+      [
+        "Silicone",
+        "72",
+        "Baseline STS det",
+        "25-Aug",
+        "8.1",
+        "1.327",
+        "60",
+        "11",
+        "8",
+        "42"
+      ],
+      [
+        "Silicone",
+        "86",
+        "Mid temp aging",
+        "30-Aug",
+        "8.1",
+        "1.345",
+        "60",
+        "11",
+        "8",
+        "50"
+      ],
+      [
+        "Silicone",
+        "86a",
+        "aged",
+        "30-Aug",
+        "8.1",
+        "1.345",
+        "",
+        "",
+        "",
+        "628"
+      ],
+      [
+        "Silicone",
+        "91",
+        "Baseline STS det",
+        "7-Sep",
+        "8.1",
+        "1.327",
+        "60",
+        "11",
+        "8",
+        "46"
+      ],
+      [
+        "Silicone",
+        "99",
+        "No flow run w/aging",
+        "8-Sep",
+        "0",
+        "1.35",
+        "60",
+        "11",
+        "8",
+        "48"
+      ],
+      [
+        "Silicone",
+        "99a",
+        "aged",
+        "8-Sep",
+        "0",
+        "1.35",
+        "",
+        "",
+        "",
+        "627"
+      ],
+      [
+        "Silicone",
+        "103",
+        "low flow run w/ aging",
+        "9-Sep",
+        "1",
+        "1.35",
+        "60",
+        "11",
+        "8",
+        "48"
+      ],
+      [
+        "Silicone",
+        "103a",
+        "aged",
+        "9-Sep",
+        "1",
+        "1.35",
+        "",
+        "",
+        "",
+        "619"
+      ],
+      [
+        "Silicone",
+        "104",
+        "No flow run w/ aging",
+        "9-Sep",
+        "0",
+        "1.35",
+        "60",
+        "11",
+        "8",
+        "51"
+      ],
+      [
+        "Silicone",
+        "104a",
+        "aged",
+        "9-Sep",
+        "0",
+        "1.35",
+        "",
+        "",
+        "",
+        "636"
+      ],
+      [
+        "Silicone",
+        "109",
+        "low flow run w STS",
+        "9-Sep",
+        "2",
+        "1.35",
+        "60",
+        "11",
+        "8",
+        "28"
+      ],
+      [
+        "Lampwick",
+        "49",
+        "B.L. High RT/R0",
+        "19-Jul",
+        "8",
+        "1.251",
+        "60",
+        "11",
+        "8",
+        "51"
+      ],
+      [
+        "Lampwick",
+        "54",
+        "Baseline",
+        "29-Jul",
+        "8.1",
+        "1.245",
+        "60",
+        "11",
+        "8",
+        "57"
+      ],
+      [
+        "Lampwick",
+        "55",
+        "High RT/R0 test aging",
+        "29-Jul",
+        "8.1",
+        "1.245",
+        "60",
+        "11",
+        "8",
+        "47"
+      ],
+      [
+        "Lampwick",
+        "55a",
+        "aged",
+        "29-Jul",
+        "8.1",
+        "1.245",
+        "",
+        "",
+        "",
+        "218"
+      ],
+      [
+        "Lampwick",
+        "57",
+        "High RT/R0 reburn sample",
+        "29-Jul",
+        "8.1",
+        "1.253",
+        "60",
+        "11",
+        "8",
+        "n/a"
+      ],
+      [
+        "Lampwick",
+        "68",
+        "High temp aged STS det",
+        "24-Aug",
+        "8.1",
+        "1.28",
+        "60",
+        "720",
+        "8",
+        "747"
+      ],
+      [
+        "Lampwick",
+        "78",
+        "Baseline aging",
+        "26-Aug",
+        "8.1",
+        "1.245",
+        "60",
+        "11",
+        "8",
+        "37"
+      ],
+      [
+        "Lampwick",
+        "78a",
+        "aged",
+        "26-Aug",
+        "8.1",
+        "1.245",
+        "",
+        "",
+        "",
+        "581"
+      ],
+      [
+        "Lampwick",
+        "80",
+        "High temp aging",
+        "26-Aug",
+        "8.1",
+        "1.28",
+        "60",
+        "11",
+        "8",
+        "40"
+      ],
+      [
+        "Lampwick",
+        "80a",
+        "aged",
+        "26-Aug",
+        "8.1",
+        "1.28",
+        "",
+        "",
+        "",
+        "580"
+      ],
+      [
+        "Lampwick",
+        "82",
+        "Mid temp aging",
+        "26-Aug",
+        "8.1",
+        "1.265",
+        "60",
+        "11",
+        "8",
+        "39"
+      ],
+      [
+        "Lampwick",
+        "82a",
+        "aged",
+        "27-Aug",
+        "8.1",
+        "1.265",
+        "",
+        "",
+        "",
+        "579"
+      ],
+      [
+        "Lampwick",
+        "88",
+        "Baseline STS det",
+        "30-Aug",
+        "8.1",
+        "1.245",
+        "60",
+        "11",
+        "8",
+        "n/a"
+      ],
+      [
+        "Lampwick",
+        "96",
+        "No flow run w/aging",
+        "7-Sep",
+        "0",
+        "1.245",
+        "60",
+        "11",
+        "8",
+        "34"
+      ],
+      [
+        "Lampwick",
+        "96a",
+        "aged",
+        "7-Sep",
+        "0",
+        "1.245",
+        "",
+        "",
+        "",
+        "582"
+      ],
+      [
+        "Lampwick",
+        "98",
+        "No flow run w/aging",
+        "8-Sep",
+        "0",
+        "1.28",
+        "60",
+        "11",
+        "8",
+        "37"
+      ],
+      [
+        "Lampwick",
+        "98a",
+        "aged",
+        "8-Sep",
+        "0",
+        "1.28",
+        "",
+        "",
+        "",
+        "585"
+      ],
+      [
+        "Lampwick",
+        "106",
+        "No flow run w/aging",
+        "9-Sep",
+        "0",
+        "1.28",
+        "60",
+        "11",
+        "8",
+        "30"
+      ],
+      [
+        "Lampwick",
+        "106a",
+        "aged",
+        "9-Sep",
+        "0",
+        "1.28",
+        "",
+        "",
+        "",
+        "558"
+      ],
+      [
+        "Lampwick",
+        "110",
+        "low flow run w/STS",
+        "9-Sep",
+        "2",
+        "1.28",
+        "60",
+        "11",
+        "8",
+        "21"
+      ],
+      [
+        "Teflon",
+        "50",
+        "B.L. High RT/R0",
+        "20-Jul",
+        "8.1",
+        "1.452",
+        "60",
+        "11",
+        "8",
+        "33"
+      ],
+      [
+        "Teflon",
+        "56",
+        "Baseline",
+        "29-Jul",
+        "8.1",
+        "1.445",
+        "60",
+        "11",
+        "8",
+        "41"
+      ],
+      [
+        "Teflon",
+        "57",
+        "High RT/R0 reburn sample",
+        "29-Jul",
+        "8.1",
+        "1.253",
+        "60",
+        "11",
+        "8",
+        "n/a"
+      ],
+      [
+        "Teflon",
+        "58",
+        "Baseline aging",
+        "30-Jul",
+        "8.1",
+        "1.445",
+        "60",
+        "11",
+        "8",
+        "34"
+      ],
+      [
+        "Teflon",
+        "58a",
+        "aged",
+        "30-Jul",
+        "8.1",
+        "1.445",
+        "",
+        "",
+        "",
+        "805"
+      ],
+      [
+        "Teflon",
+        "69",
+        "High temp aged STS det",
+        "24-Aug",
+        "8.1",
+        "1.45",
+        "60",
+        "720",
+        "8",
+        "745"
+      ],
+      [
+        "Teflon",
+        "79",
+        "Baseline aging",
+        "26-Aug",
+        "8.1",
+        "1.445",
+        "60",
+        "11",
+        "8",
+        "33"
+      ],
+      [
+        "Teflon",
+        "79a",
+        "aged",
+        "26-Aug",
+        "8.1",
+        "1.445",
+        "",
+        "",
+        "",
+        "560"
+      ],
+      [
+        "Teflon",
+        "81",
+        "High temp aging",
+        "26-Aug",
+        "8.1",
+        "1.45",
+        "60",
+        "11",
+        "8",
+        "30"
+      ],
+      [
+        "Teflon",
+        "81a",
+        "aged",
+        "27-Aug",
+        "8.1",
+        "1.45",
+        "",
+        "",
+        "",
+        "559"
+      ],
+      [
+        "Teflon",
+        "83",
+        "Mid temp aging",
+        "26-Aug",
+        "8.1",
+        "1.448",
+        "60",
+        "11",
+        "8",
+        "30"
+      ],
+      [
+        "Teflon",
+        "83a",
+        "aged",
+        "27-Aug",
+        "8.1",
+        "1.448",
+        "",
+        "",
+        "",
+        "557"
+      ],
+      [
+        "Teflon",
+        "89",
+        "Baseline STS det",
+        "30-Aug",
+        "8.1",
+        "1.445",
+        "60",
+        "11",
+        "8",
+        "31"
+      ],
+      [
+        "Teflon",
+        "100",
+        "No flow run w/ aging",
+        "8-Sep",
+        "0",
+        "1.45",
+        "60",
+        "11",
+        "8",
+        "29"
+      ],
+      [
+        "Teflon",
+        "100a",
+        "aged",
+        "8-Sep",
+        "0",
+        "1.45",
+        "",
+        "",
+        "",
+        "560"
+      ],
+      [
+        "Teflon",
+        "105",
+        "No flow run w/ aging",
+        "9-Sep",
+        "0",
+        "1.45",
+        "60",
+        "11",
+        "8",
+        "24"
+      ],
+      [
+        "Teflon",
+        "105a",
+        "aged",
+        "9-Sep",
+        "0",
+        "1.45",
+        "",
+        "",
+        "",
+        "559"
+      ],
+      [
+        "Teflon",
+        "111",
+        "low flow run w/ STS",
+        "9-Sep",
+        "2",
+        "1.45",
+        "60",
+        "11",
+        "8",
+        "43"
+      ],
+      [
+        "Pyrell",
+        "52",
+        "Baseline",
+        "22-Jul",
+        "8.1",
+        "1.22",
+        "60",
+        "11",
+        "8",
+        "n/a"
+      ],
+      [
+        "Pyrell",
+        "63",
+        "Baseline Aging",
+        "23-Aug",
+        "8.1",
+        "1.22",
+        "60",
+        "11",
+        "8",
+        "56"
+      ],
+      [
+        "Pyrell",
+        "63a",
+        "aged",
+        "23-Aug",
+        "8.1",
+        "1.22",
+        "",
+        "",
+        "",
+        "840"
+      ],
+      [
+        "Pyrell",
+        "64",
+        "High Temp aging",
+        "23-Aug",
+        "8.1",
+        "1.23",
+        "60",
+        "11",
+        "8",
+        "47"
+      ],
+      [
+        "Pyrell",
+        "64a",
+        "aged",
+        "23-Aug",
+        "8.1",
+        "1.23",
+        "",
+        "",
+        "",
+        "842"
+      ],
+      [
+        "Pyrell",
+        "71",
+        "High temp aged STS det",
+        "24-Aug",
+        "8.1",
+        "1.23",
+        "60",
+        "720",
+        "8",
+        "750"
+      ],
+      [
+        "Pyrell",
+        "74",
+        "Baseline Aging",
+        "26-Aug",
+        "8.1",
+        "1.22",
+        "60",
+        "11",
+        "8",
+        "48"
+      ],
+      [
+        "Pyrell",
+        "74a",
+        "aged",
+        "26-Aug",
+        "8.1",
+        "1.22",
+        "",
+        "",
+        "",
+        "623"
+      ],
+      [
+        "Pyrell",
+        "76",
+        "High Temp aging",
+        "26-Aug",
+        "8.1",
+        "1.23",
+        "60",
+        "11",
+        "8",
+        "51"
+      ],
+      [
+        "Pyrell",
+        "76a",
+        "aged",
+        "26-Aug",
+        "8.1",
+        "1.23",
+        "",
+        "",
+        "",
+        "625"
+      ],
+      [
+        "Pyrell",
+        "84",
+        "Mid Temp aging retry",
+        "30-Aug",
+        "8.1",
+        "1.225",
+        "60",
+        "11",
+        "8",
+        "53"
+      ],
+      [
+        "Pyrell",
+        "84a",
+        "aged",
+        "30-Aug",
+        "8.1",
+        "1.225",
+        "",
+        "",
+        "",
+        "632"
+      ],
+      [
+        "Pyrell",
+        "87",
+        "Baseline STS det",
+        "30-Aug",
+        "8.1",
+        "1.22",
+        "60",
+        "11",
+        "8",
+        "45"
+      ],
+      [
+        "Pyrell",
+        "95",
+        "No flow run w/ aging",
+        "7-Sep",
+        "0",
+        "1.22",
+        "60",
+        "11",
+        "8",
+        "38"
+      ],
+      [
+        "Pyrell",
+        "95a",
+        "aged",
+        "7-Sep",
+        "0",
+        "1.22",
+        "",
+        "",
+        "",
+        "n/a"
+      ],
+      [
+        "Pyrell",
+        "97",
+        "No flow run w/aging",
+        "8-Sep",
+        "0",
+        "1.23",
+        "60",
+        "11",
+        "8",
+        "48"
+      ],
+      [
+        "Pyrell",
+        "97a",
+        "aged",
+        "8-Sep",
+        "0",
+        "1.23",
+        "",
+        "",
+        "",
+        "624"
+      ],
+      [
+        "Pyrell",
+        "107",
+        "Low flow run w/aging",
+        "9-Sep",
+        "1",
+        "1.23",
+        "60",
+        "11",
+        "8",
+        "32"
+      ],
+      [
+        "Pyrell",
+        "107a",
+        "aged",
+        "9-Sep",
+        "1",
+        "1.23",
+        "",
+        "",
+        "",
+        "559"
+      ],
+      [
+        "Pyrell",
+        "113",
+        "low flow run w STS",
+        "9-Sep",
+        "2",
+        "1.23",
+        "60",
+        "11",
+        "8",
+        "31"
+      ]
+    ],
+    "all_rows_retained": true
+  },
+  "warnings": [],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

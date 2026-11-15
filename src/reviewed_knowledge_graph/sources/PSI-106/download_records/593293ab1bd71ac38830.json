@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-106:593293ab1bd71ac38830",
+  "study": "PSI-106",
+  "filename": "SLICE-RPT-002_Post Flight Report-.pdf",
+  "key": "psi-data/PSI-106/Raw Data/SLICE-RPT-002_Post Flight Report-.pdf",
+  "category": "Raw Data",
+  "size_bytes": 1723539,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-106/download?file=66eb9832c6ad4bdc12fc419c&version=1&studyVersion=3&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-106/593293ab1bd71ac38830/SLICE-RPT-002_Post Flight Report-.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "ee7f366462f88c46ecb074c84036f21365b5caf7cafaaeea9fe9598ea83254a3",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:f57358f125e62b64c2ca",
+  "study": "PSI-20",
+  "filename": "PSI-20_Engineering Documents_BRE_procedure_20210520.pdf",
+  "key": "psi-data/PSI-20/Engineering Documents/PSI-20_Engineering Documents_BRE_procedure_20210520.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 776857,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8151b4820d736cecc0f&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/f57358f125e62b64c2ca/PSI-20_Engineering Documents_BRE_procedure_20210520.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "2db6091c56c862848916d58d0e236ca9bb772f122bad3d283e3a65fb4f669a14",
+  "status": "downloaded"
+}

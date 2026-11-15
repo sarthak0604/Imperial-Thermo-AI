@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:9abfca0bf23ec83a9b98",
+  "study": "PSI-23",
+  "filename": "PSI-23_Science Documents_s-Flame SCR 200802.pdf",
+  "key": "psi-data/PSI-23/Science Documents/PSI-23_Science Documents_s-Flame SCR 200802.pdf",
+  "category": "Science Documents",
+  "size_bytes": 2382728,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdf16daf91e274ceca0b&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/9abfca0bf23ec83a9b98/PSI-23_Science Documents_s-Flame SCR 200802.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "2b93ce4409df9559af37cb4a319cc0536e77fb36abadaa4a68f18bff3b0a4c47",
+  "status": "downloaded"
+}

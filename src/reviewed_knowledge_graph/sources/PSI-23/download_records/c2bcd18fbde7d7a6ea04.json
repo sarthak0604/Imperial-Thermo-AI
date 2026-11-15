@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:c2bcd18fbde7d7a6ea04",
+  "study": "PSI-23",
+  "filename": "PSI-23_Reports_s_Flame_final_report_20210729.pdf",
+  "key": "psi-data/PSI-23/Reports/PSI-23_Reports_s_Flame_final_report_20210729.pdf",
+  "category": "Reports",
+  "size_bytes": 3182281,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841ce426daf91e274cecd4e&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/c2bcd18fbde7d7a6ea04/PSI-23_Reports_s_Flame_final_report_20210729.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "2056f8f85291f49c1446981541e4689dc6df8ad02ef7ac0fddbd84e956968a3b",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-39:8e0dfd17c753ebe33b13",
+  "study": "PSI-39",
+  "filename": "PSI-39_Engineering Documents_CFI Operational Requirements and Protocols.pdf",
+  "key": "psi-data/PSI-39/Engineering Documents/PSI-39_Engineering Documents_CFI Operational Requirements and Protocols.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 115496,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-39/download?file=683f4b7bda33c6f4c4cec614&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-39/8e0dfd17c753ebe33b13/PSI-39_Engineering Documents_CFI Operational Requirements and Protocols.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "4e6dc66cb2a4bac018296ddc956281f71637242d72a764fc8d5e349bf1418a7b",
+  "status": "downloaded"
+}

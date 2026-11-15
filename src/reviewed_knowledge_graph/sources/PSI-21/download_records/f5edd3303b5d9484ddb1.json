@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-21:f5edd3303b5d9484ddb1",
+  "study": "PSI-21",
+  "filename": "CLD_Flame_data_interpretation_20230825.pdf",
+  "key": "psi-data/PSI-21/Raw Data/CLD_Flame_data_interpretation_20230825.pdf",
+  "category": "Raw Data",
+  "size_bytes": 666439,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-21/download?file=66eb9297c6ad4bdc12fa0981&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-21/f5edd3303b5d9484ddb1/CLD_Flame_data_interpretation_20230825.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "70f397b1dc1b4205cdc82b7b42a0e3c5ed052bdb148530843bab9779baa1844b",
+  "status": "downloaded"
+}

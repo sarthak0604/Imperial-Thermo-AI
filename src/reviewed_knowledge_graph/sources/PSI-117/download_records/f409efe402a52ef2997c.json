@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-117:f409efe402a52ef2997c",
+  "study": "PSI-117",
+  "filename": "PSI-117_Analyzed Data_MST_2024_Dext.csv",
+  "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_MST_2024_Dext.csv",
+  "category": "Analyzed Data",
+  "size_bytes": 372,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43eb&version=1&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/f409efe402a52ef2997c/PSI-117_Analyzed Data_MST_2024_Dext.csv",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "2ed485fec6fad15c1409cd9b5c558ecf7bee262df29c832e9a54f3befc9c2e46",
+  "status": "downloaded"
+}

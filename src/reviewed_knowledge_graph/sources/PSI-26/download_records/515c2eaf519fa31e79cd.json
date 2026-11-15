@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-26:515c2eaf519fa31e79cd",
+  "study": "PSI-26",
+  "filename": "PSI-26_Science Documents_As Run_Test Matrix.xlsx",
+  "key": "psi-data/PSI-26/Science Documents/PSI-26_Science Documents_As Run_Test Matrix.xlsx",
+  "category": "Science Documents",
+  "size_bytes": 111886,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcfac3501a37c2c60de0&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/515c2eaf519fa31e79cd/PSI-26_Science Documents_As Run_Test Matrix.xlsx",
+  "sha256": "850910541fc9c802d00aa9de14758205103642184249b419c09868df2fbea6e8",
+  "status": "downloaded"
+}

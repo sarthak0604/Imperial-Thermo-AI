@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-100:bba2168ea22d22235942",
+  "study": "PSI-100",
+  "filename": "PSI-100_Engineering Documents_SAFFIRE-III Operations.pdf",
+  "key": "psi-data/PSI-100/Engineering Documents/PSI-100_Engineering Documents_SAFFIRE-III Operations.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 40256,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-100/download?file=6841ac428970fb41b9cebba2&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-100/bba2168ea22d22235942/PSI-100_Engineering Documents_SAFFIRE-III Operations.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "38d91c1cc9eeb170217ab016ad81b5b8fa1e247323108b00883e5af17be52797",
+  "status": "downloaded"
+}

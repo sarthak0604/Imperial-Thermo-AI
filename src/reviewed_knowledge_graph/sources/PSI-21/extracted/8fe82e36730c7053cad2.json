@@ -1,0 +1,537 @@
+{
+  "id": "res:PSI-21:8fe82e36730c7053cad2",
+  "study": "PSI-21",
+  "filename": "PSI-21_Experimental table_CLD Flame.csv",
+  "key": "psi-data/PSI-21/Experimental table/PSI-21_Experimental table_CLD Flame.csv",
+  "category": "Experimental table",
+  "size_bytes": 2454,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-21/download?file=67903877b7b6ff8e6502a3e2&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-21/8fe82e36730c7053cad2/PSI-21_Experimental table_CLD Flame.csv",
+  "sha256": "9fafbc5b3dddaf715ce8025ed9154ce297803f7b69a935f077ec26c8249e44c0",
+  "status": "downloaded",
+  "sections": [
+    {
+      "locator": "table, row 1",
+      "text": "1: Test Type | 2: Test Day | 3: Fuel MFC | 4: N2 MFC | 5: Fuel Bottle | 6: Fuel conc. Range | 7: Flames ignited | 8: Notes"
+    },
+    {
+      "locator": "table, row 2",
+      "text": "1: Methane based test | 2: 17319 | 3: 0.1 | 4: 0.1 | 5: 40% CH4 | 6: 30%-40% | 7: 10 | 8: Test Day - includes the year as the first two digits followed by the 3-digit day of the year (where any late-hour transition to the next day is neglected). MFC - identifies the maximum flow rate of the specified ACME Mass Flow Controller (MFC) in slpm on a nitrogen basis. Fuel conc. - (as diluted with nitrogen on a volume basis) was varied between tests and sometimes during tests where the listing here accounts for both. However, it does not account for extinction that sometimes occurred before the flame fully reached the lowest concentration. Flames ignited is the number ignited on that test day."
+    },
+    {
+      "locator": "table, row 3",
+      "text": "1: Methane based test | 2: 17324 | 3: 0.1 | 4: 0.1 | 5: 40% CH5 | 6: 30%-40% | 7: 5"
+    },
+    {
+      "locator": "table, row 4",
+      "text": "1: Methane based test | 2: 17342 | 3: 0.1 | 4: 0.1 | 5: 40% CH6 | 6: 40% | 7: 8"
+    },
+    {
+      "locator": "table, row 5",
+      "text": "1: Methane based test | 2: 17356 | 3: 0.1 | 4: 0.1 | 5: 40% CH7 | 6: 30%-40% | 7: 3"
+    },
+    {
+      "locator": "table, row 6",
+      "text": "1: Methane based test | 2: 18003 | 3: 0.1 | 4: 0.1 | 5: 40% CH8 | 6: 25%-40% | 7: 9"
+    },
+    {
+      "locator": "table, row 7",
+      "text": "1: Methane based test | 2: 18005 | 3: 0.1 | 4: 0.1 | 5: 40% CH9 | 6: 30%-40% | 7: 7"
+    },
+    {
+      "locator": "table, row 8",
+      "text": "1: Methane based test | 2: 18008 | 3: 0.1 | 4: 0.1 | 5: 40% CH10 | 6: 25%-40% | 7: 8"
+    },
+    {
+      "locator": "table, row 9",
+      "text": "1: Methane based test | 2: 18011 | 3: 0.1 | 4: 0.1 | 5: 40% CH11 | 6: 25%-40% | 7: 14"
+    },
+    {
+      "locator": "table, row 10",
+      "text": "1: Methane based test | 2: 18022 | 3: 0.1 | 4: 0.1 | 5: 40% CH12 | 6: 30%-40% | 7: 3"
+    },
+    {
+      "locator": "table, row 11",
+      "text": "1: Methane based test | 2: 18026 | 3: 0.1 | 4: 0.1 | 5: 40% CH13 | 6: 25%-40% | 7: 16"
+    },
+    {
+      "locator": "table, row 12",
+      "text": "1: Methane based test | 2: 18032 | 3: 0.1 | 4: 0.1 | 5: 40% CH14 | 6: 30%-40% | 7: 13"
+    },
+    {
+      "locator": "table, row 13",
+      "text": "1: Methane based test | 2: 18039 | 3: 0.1 | 4: 0.05 | 5: 100% CH4 | 6: 50%-80% | 7: 8"
+    },
+    {
+      "locator": "table, row 14",
+      "text": "1: Methane based test | 2: 18043 | 3: 0.1 | 4: 0.05 | 5: 100% CH5 | 6: 50%-100% | 7: 10"
+    },
+    {
+      "locator": "table, row 15",
+      "text": "1: Methane based test | 2: 18053 | 3: 0.1 | 4: 0.02 | 5: 100% CH6 | 6: 30%-40% | 7: 16"
+    },
+    {
+      "locator": "table, row 16",
+      "text": "1: Ethylene based test | 2: 18145 | 3: 0.2 | 4: 0.1 | 5: 100% C2H4 | 6: 80%-100% | 7: 3"
+    },
+    {
+      "locator": "table, row 17",
+      "text": "1: Ethylene based test | 2: 18151 | 3: 0.2 | 4: 0.1 | 5: 100% C2H5 | 6: 100% | 7: 2"
+    },
+    {
+      "locator": "table, row 18",
+      "text": "1: Ethylene based test | 2: 18177 | 3: 0.2 | 4: 0.1 | 5: 100% C2H6 | 6: 80%-100% | 7: 9"
+    },
+    {
+      "locator": "table, row 19",
+      "text": "1: Ethylene based test | 2: 18186 | 3: 0.2 | 4: 0.1 | 5: 100% C2H7 | 6: 60%-100% | 7: 14"
+    },
+    {
+      "locator": "table, row 20",
+      "text": "1: Ethylene based test | 2: 18192 | 3: 0.2 | 4: 0.1 | 5: 100% C2H8 | 6: 50%-60% | 7: 10"
+    },
+    {
+      "locator": "table, row 21",
+      "text": "1: Ethylene based test | 2: 18199 | 3: 0.2 | 4: 0.1 | 5: 100% C2H9 | 6: 40%-100% | 7: 16"
+    },
+    {
+      "locator": "table, row 22",
+      "text": "1: Ethylene based test | 2: 18214 | 3: 0.2 | 4: 0.05 | 5: 100% C2H10 | 6: 100% | 7: 13"
+    },
+    {
+      "locator": "table, row 23",
+      "text": "1: Ethylene based test | 2: 18218 | 3: 0.2 | 4: 0.05 | 5: 100% C2H11 | 6: 80% | 7: 18"
+    },
+    {
+      "locator": "table, row 24",
+      "text": "1: Ethylene based test | 2: 18235 | 3: 0.2 | 4: 0.1 | 5: 50% C2H4 | 6: 50% | 7: 16"
+    },
+    {
+      "locator": "table, row 25",
+      "text": "1: Ethylene based test | 2: 18239 | 3: 0.2 | 4: 0.1 | 5: 50% C2H5 | 6: 40% | 7: 14"
+    },
+    {
+      "locator": "table, row 26",
+      "text": "1: Ethylene based test | 2: 18241 | 3: 0.1 | 4: 0.2 | 5: 50% C2H6 | 6: 10%-20% | 7: 6"
+    },
+    {
+      "locator": "table, row 27",
+      "text": "1: Ethylene based test | 2: 18249 | 3: 0.1 | 4: 0.2 | 5: 50% C2H7 | 6: 10%-30% | 7: 12"
+    },
+    {
+      "locator": "table, row 28",
+      "text": "1: Ethylene based test | 2: 18253 | 3: 0.1 | 4: 0.2 | 5: 50% C2H8 | 6: 15%-30% | 7: 14"
+    },
+    {
+      "locator": "table, row 29",
+      "text": "1: Ethylene based test | 2: 18257 | 3: 0.1 | 4: 0.2 | 5: 50% C2H9 | 6: 15%-20% | 7: 15"
+    },
+    {
+      "locator": "table, row 30",
+      "text": "1: Improved coflow tests | 2: 21041 | 3: 0.2 | 4: 0.2 | 5: 30% C2H4 | 6: 0%-30% | 7: 9"
+    },
+    {
+      "locator": "table, row 31",
+      "text": "1: Improved coflow tests | 2: 21046 | 3: 0.2 | 4: 0.2 | 5: 30% C2H5 | 6: 15%-20% | 7: 16"
+    },
+    {
+      "locator": "table, row 32",
+      "text": "1: Improved coflow tests | 2: 21050 | 3: 0.2 | 4: 0.2 | 5: 40% CH4 | 6: 20%-40% | 7: 16"
+    },
+    {
+      "locator": "table, row 33",
+      "text": "1: Improved coflow tests | 2: 21062 | 3: 0.2 | 4: 0.2 | 5: 40% CH5 | 6: 30%-40% | 7: 11"
+    }
+  ],
+  "details": {
+    "name": "table",
+    "row_count": 33,
+    "column_count": 8,
+    "column_statistics": [
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 32,
+        "min": 17319.0,
+        "max": 21062.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 32,
+        "min": 0.1,
+        "max": 0.2,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 32,
+        "min": 0.02,
+        "max": 0.2,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 32,
+        "min": 2.0,
+        "max": 18.0,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 31
+      }
+    ],
+    "rows": [
+      [
+        "Test Type",
+        "Test Day",
+        "Fuel MFC",
+        "N2 MFC",
+        "Fuel Bottle",
+        "Fuel conc. Range",
+        "Flames ignited",
+        "Notes"
+      ],
+      [
+        "Methane based test",
+        "17319",
+        "0.1",
+        "0.1",
+        "40% CH4",
+        "30%-40%",
+        "10",
+        "Test Day - includes the year as the first two digits followed by the 3-digit day of the year (where any late-hour transition to the next day is neglected). MFC - identifies the maximum flow rate of the specified ACME Mass Flow Controller (MFC) in slpm on a nitrogen basis. Fuel conc. - (as diluted with nitrogen on a volume basis) was varied between tests and sometimes during tests where the listing here accounts for both. However, it does not account for extinction that sometimes occurred before the flame fully reached the lowest concentration. Flames ignited is the number ignited on that test day."
+      ],
+      [
+        "Methane based test",
+        "17324",
+        "0.1",
+        "0.1",
+        "40% CH5",
+        "30%-40%",
+        "5",
+        ""
+      ],
+      [
+        "Methane based test",
+        "17342",
+        "0.1",
+        "0.1",
+        "40% CH6",
+        "40%",
+        "8",
+        ""
+      ],
+      [
+        "Methane based test",
+        "17356",
+        "0.1",
+        "0.1",
+        "40% CH7",
+        "30%-40%",
+        "3",
+        ""
+      ],
+      [
+        "Methane based test",
+        "18003",
+        "0.1",
+        "0.1",
+        "40% CH8",
+        "25%-40%",
+        "9",
+        ""
+      ],
+      [
+        "Methane based test",
+        "18005",
+        "0.1",
+        "0.1",
+        "40% CH9",
+        "30%-40%",
+        "7",
+        ""
+      ],
+      [
+        "Methane based test",
+        "18008",
+        "0.1",
+        "0.1",
+        "40% CH10",
+        "25%-40%",
+        "8",
+        ""
+      ],
+      [
+        "Methane based test",
+        "18011",
+        "0.1",
+        "0.1",
+        "40% CH11",
+        "25%-40%",
+        "14",
+        ""
+      ],
+      [
+        "Methane based test",
+        "18022",
+        "0.1",
+        "0.1",
+        "40% CH12",
+        "30%-40%",
+        "3",
+        ""
+      ],
+      [
+        "Methane based test",
+        "18026",
+        "0.1",
+        "0.1",
+        "40% CH13",
+        "25%-40%",
+        "16",
+        ""
+      ],
+      [
+        "Methane based test",
+        "18032",
+        "0.1",
+        "0.1",
+        "40% CH14",
+        "30%-40%",
+        "13",
+        ""
+      ],
+      [
+        "Methane based test",
+        "18039",
+        "0.1",
+        "0.05",
+        "100% CH4",
+        "50%-80%",
+        "8",
+        ""
+      ],
+      [
+        "Methane based test",
+        "18043",
+        "0.1",
+        "0.05",
+        "100% CH5",
+        "50%-100%",
+        "10",
+        ""
+      ],
+      [
+        "Methane based test",
+        "18053",
+        "0.1",
+        "0.02",
+        "100% CH6",
+        "30%-40%",
+        "16",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18145",
+        "0.2",
+        "0.1",
+        "100% C2H4",
+        "80%-100%",
+        "3",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18151",
+        "0.2",
+        "0.1",
+        "100% C2H5",
+        "100%",
+        "2",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18177",
+        "0.2",
+        "0.1",
+        "100% C2H6",
+        "80%-100%",
+        "9",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18186",
+        "0.2",
+        "0.1",
+        "100% C2H7",
+        "60%-100%",
+        "14",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18192",
+        "0.2",
+        "0.1",
+        "100% C2H8",
+        "50%-60%",
+        "10",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18199",
+        "0.2",
+        "0.1",
+        "100% C2H9",
+        "40%-100%",
+        "16",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18214",
+        "0.2",
+        "0.05",
+        "100% C2H10",
+        "100%",
+        "13",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18218",
+        "0.2",
+        "0.05",
+        "100% C2H11",
+        "80%",
+        "18",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18235",
+        "0.2",
+        "0.1",
+        "50% C2H4",
+        "50%",
+        "16",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18239",
+        "0.2",
+        "0.1",
+        "50% C2H5",
+        "40%",
+        "14",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18241",
+        "0.1",
+        "0.2",
+        "50% C2H6",
+        "10%-20%",
+        "6",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18249",
+        "0.1",
+        "0.2",
+        "50% C2H7",
+        "10%-30%",
+        "12",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18253",
+        "0.1",
+        "0.2",
+        "50% C2H8",
+        "15%-30%",
+        "14",
+        ""
+      ],
+      [
+        "Ethylene based test",
+        "18257",
+        "0.1",
+        "0.2",
+        "50% C2H9",
+        "15%-20%",
+        "15",
+        ""
+      ],
+      [
+        "Improved coflow tests",
+        "21041",
+        "0.2",
+        "0.2",
+        "30% C2H4",
+        "0%-30%",
+        "9",
+        ""
+      ],
+      [
+        "Improved coflow tests",
+        "21046",
+        "0.2",
+        "0.2",
+        "30% C2H5",
+        "15%-20%",
+        "16",
+        ""
+      ],
+      [
+        "Improved coflow tests",
+        "21050",
+        "0.2",
+        "0.2",
+        "40% CH4",
+        "20%-40%",
+        "16",
+        ""
+      ],
+      [
+        "Improved coflow tests",
+        "21062",
+        "0.2",
+        "0.2",
+        "40% CH5",
+        "30%-40%",
+        "11",
+        ""
+      ]
+    ],
+    "all_rows_retained": true
+  },
+  "warnings": [],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

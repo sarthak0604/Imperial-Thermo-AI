@@ -1,0 +1,29 @@
+{
+  "id": "res:PSI-100:73c27304a780db757838",
+  "study": "PSI-100",
+  "filename": "PSI-100_Science Documents_SAFFIRE-III Image Directory Nomenclature_v3.0.pdf",
+  "key": "psi-data/PSI-100/Science Documents/PSI-100_Science Documents_SAFFIRE-III Image Directory Nomenclature_v3.0.pdf",
+  "category": "Science Documents",
+  "size_bytes": 273485,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-100/download?file=6841ac428970fb41b9cebb9d&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-100/73c27304a780db757838/PSI-100_Science Documents_SAFFIRE-III Image Directory Nomenclature_v3.0.pdf",
+  "status": "downloaded",
+  "error": "FileExistsError: [Errno 17] File exists: '/private/tmp/nasa-psi-review-01a1dfae/PSI-100/73c27304a780db757838/tmpqzk0zosx' -> '/private/tmp/nasa-psi-review-01a1dfae/PSI-100/73c27304a780db757838/PSI-100_Science Documents_SAFFIRE-III Image Directory Nomenclature_v3.0.pdf'",
+  "sha256": "5dfe4822358df39475a542b79c0424bf4c44bb6c3382fd3f92e3288c0c917ff2",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "SAFFIRE-III \nImage Directory Nomenclature\nSAFFIRE-III_Image_Data_Package  Contents\nVersion 3.0\nBit\nF1 \nF2\nS1\nS2 \nXnCn_Raw_CamOriginal\nCamera original RAW files recorded on-board and downlinked on command.  \nContains 8-byte offset that must be processed prior to color interpolation and \ndistribution.  This data set is archived at NASA-GRC.  \nXnCn_Raw_DistroMaster\nRAW Camara Orginal files processed for 8-byte offset using ImageJ, and resaved \nusing originial file name. This is the RAW Distribution Master set for Science Team \ndistribution and color interpolation (demosaicing).\nX\nX\nX\nX\nXn_Raw2TIFF\nTIFF images of the RAW Distribution Master files, color interpolated (demosaiced) \nusing IrfanView Batch Conversion process.    \nX\nX\nX\nX\nXn_Raw2TIFF_icmad\nRaw2TIFF files annotated with ICMAD 'Exposure' and 'Gain' information. Data is \nappended to the bottom of each frame using ImageMagick script and resaved as \nTIFF.   \nX\nX\nXn_jpeg\nJpeg images created on-board SAFFIRE payload and downlinked by command\nX\nX\nX\nX\nXn_jpeg_corrupt\nJpeg images received corrupted after downlink. \nX\nX\nX\nX\nXn_jpeg2png_icmad\nJpeg images annotated with ICMAD 'Exposure' and 'Gain' information.  Data is \nappended to the bottom of each frame using ImageMagick script and re-saved as \n.png format to minimize additional compression artifacts.  \nX\nX\n\"Xn\" Denotes run type and number\n\"Cn\" Denotes camera number (if sorted separately) \n"
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

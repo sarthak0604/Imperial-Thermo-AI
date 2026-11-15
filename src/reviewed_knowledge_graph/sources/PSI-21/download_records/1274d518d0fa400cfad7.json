@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-21:1274d518d0fa400cfad7",
+  "study": "PSI-21",
+  "filename": "PSI-21_metadata_PSI-97_ACME CLD Flame.zip",
+  "key": "psi-data/PSI-21/metadata/PSI-21_metadata_PSI-97_ACME CLD Flame.zip",
+  "category": "metadata",
+  "size_bytes": 15476,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-21/download?file=67903877b7b6ff8e6502a3e1&version=4&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-21/1274d518d0fa400cfad7/PSI-21_metadata_PSI-97_ACME CLD Flame.zip",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "97d964b416eabcc6186e0780fb0077f5482d61457edbb0bbb2a68cf27fa1a5ca",
+  "status": "downloaded"
+}

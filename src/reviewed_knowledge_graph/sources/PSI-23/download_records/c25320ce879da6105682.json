@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:c25320ce879da6105682",
+  "study": "PSI-23",
+  "filename": "PSI-23_Engineering Documents_s-Flame_data_interpretation_20210920.pdf",
+  "key": "psi-data/PSI-23/Engineering Documents/PSI-23_Engineering Documents_s-Flame_data_interpretation_20210920.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 721288,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841ce426daf91e274cecd50&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/c25320ce879da6105682/PSI-23_Engineering Documents_s-Flame_data_interpretation_20210920.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "640ff79a162b9881bf63752b3aa61acbd9fc7fd4db5d628a87ca8f7bb41b4026",
+  "status": "downloaded"
+}

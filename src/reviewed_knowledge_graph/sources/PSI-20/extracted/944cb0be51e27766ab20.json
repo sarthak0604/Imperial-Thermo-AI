@@ -1,0 +1,985 @@
+{
+  "id": "res:PSI-20:944cb0be51e27766ab20",
+  "study": "PSI-20",
+  "filename": "PSI-20_Science Documents_ACME CDR Presentation Package.pdf",
+  "key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_ACME CDR Presentation Package.pdf",
+  "category": "Science Documents",
+  "size_bytes": 13232481,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d82b1b4820d736ceccd4&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/944cb0be51e27766ab20/PSI-20_Science Documents_ACME CDR Presentation Package.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "60fb892329b10125450fafe6e97168b45eda61c809cf7acb562167b4531e4495",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "ACME Critical Design Review– 1 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nScience Overview \n \nDennis Stocker – Project Scientist \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "ACME Critical Design Review– 2 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n2 \nAdvanced Combustion \nvia Microgravity Experiments \n•\nConduct 5+ distinct experiments using a single modular insert for \nthe Combustion Integrated Rack (CIR) on the ISS \n•\nThe only existing insert (MDCA) is for the FLEX droplet combustion experiments \nKoichi Wakata with MDCA in CIR (left), ISS (right) \n"
+    },
+    {
+      "locator": "page 3",
+      "text": "ACME Critical Design Review– 3 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n3 \nBRE \n \n \n \n \n•\nBurning Rate Emulator \n•\nJim Quintiere & Peter Sunderland (both U. Maryland) \n•\nConcept \n•\nFlat-plate burner with gaseous fuel flow simulating the \ncombustion of condensed fuels \n•\nHeat flux to the burner is measured, where the flux \nvaporizes condensed-phase fuels \n•\nFuels to be simulated include paper, plastic, alcohols \n•\nGoals  \n•\nQuantify the ignition and extinction behavior of \ncondensed fuels in microgravity. \n•\nQuantify the effects of burning at enhanced oxygen \nconditions in microgravity. \n•\nWhy? \n•\nSpacecraft fire prevention through improved \nassessment for materials selection \nprototype burner \n75 C \nambient \n200 C \n0g C2H4 flames as a \nfunction of the heated \nburner  temperature. \n"
+    },
+    {
+      "locator": "page 4",
+      "text": "ACME Critical Design Review– 4 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n4 \nCLD Flame \n \n \n \n \n•\nCoflow Laminar Diffusion Flame \n•\nMarshall Long & Mitchell Smooke (both Yale U.) \n•\nConcept \n•\nLifted coflow (2D) flame, so little/no heat loss to burner \n•\nenabling improved modeling of the flame \n•\nGoals  \n•\nGeneration of modified kinetic mechanisms for \nhydrocarbon fuels that are able to model effectively \ndiffusion flame structure under a larger parameter \nrange than existing mechanisms. \n•\nDevelopment of submodels for soot formation that are \ncapable of predicting both high and low soot loading \nlevels in hydrocarbon flames of various fuels. \n•\nWhy? \n•\nImproved design capability through validation of  \ncombustion models over wider parameter range \nAttached \n100% CH4  \nflame on a \n1.6-mm ID \nburner tube, \nwith soot \ntemperature, \nsoot volume \nfraction \nbelow. \n"
+    },
+    {
+      "locator": "page 5",
+      "text": "ACME Critical Design Review– 5 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n5 \nE-FIELD Flames \n \n \n \n \n•\nElectric-Field Effects on Laminar Diffusion Flames \n•\nDerek Dunn-Rankin (UC Irvine), Felix Weinberg (Imperial \nCollege, London), Zeng-Guang Yuan (NCSER at NASA \nGlenn) \n•\nConcept \n•\nGas-jet or coflow (2D) flame with high-voltage mesh (up \nto ±10 kV) electrode above (downstream of) burner \n•\nGoal \n•\nUnderstand chemi-ionization behavior and the resulting \nion driven winds sufficiently well so that electrical \nproperties of flames can be used to characterize (by \nmonitoring ion current) and control them (via direct \nchemical or local convective influences). \n•\nWhy? \n•\nAdvanced control capability enabling improved \ncombustion performance \n \n \n1g, 0 kV, gas-jet \n0g, -0.6 kV, gas-jet \n0g, 0kv, 24 cm/s coflow \n"
+    },
+    {
+      "locator": "page 6",
+      "text": "ACME Critical Design Review– 6 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n6 \nFlame Design \n•\nA novel approach to clean, efficient diffusion flames \n•\nRich Axelbaum (Washington U., St. Louis), Beei-Huan \nChao (U. Hawaii), Peter Sunderland (U. Maryland), \nDavid L. Urban (NASA Glenn) \n•\nConcept \n•\nSpherical (1D) flame with nitrogen exchange \n•\nGoals  \n•\nEvaluate the effects of flame structure on soot \ninception and flame extinction \n•\nObtain a correlation of sooting limits with \nstoichiometric mixture fraction, Zst, and adiabatic \ntemperature, Tad \n•\nDetermine the importance of gas-phase oxidation on \nsoot inception for high Zst flames \n•\nDemonstrate the existence of steady spherical flames \n•\nIdentify pseudo-flammability limits for diffusion flames \nin terms of  Zst and Tad \n•\nWhy? \n•\nTo reduce soot and NOx through nitrogen exchange \n \n18%  \nC2H4  \ninto \n27% \nO2 \n \n \n \n18% \nC2H4  \nInto \n28% \nO2 \n \n \n \n100%  \nO2 \ninto  \n12% \nC2H4  \n \n \n \n100% \nO2  \ninto \n13%  \nC2H4  \n"
+    },
+    {
+      "locator": "page 7",
+      "text": "ACME Critical Design Review– 7 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n7 \ns-Flame \n \n \n \n \n•\nStructure and Response of Spherical Diffusion Flames \n•\nC.K. Law (Princeton U.), Stephen D. Tse (Rutgers U.), Kurt R. \nSacksteder (NASA Glenn) \n•\nConcept \n•\nSpherical (1D) flame stabilized on a porous burner \n•\nGoals  \n•\nUse spherical diffusion flames in ISS environment to: \n•\nobtain experimental data in simple, well-defined flow fields \n•\nunderstand various key elemental diffusion flame processes \n•\nCompare data with independent computational simulation \nincluding detailed chemistry and transport to improve the \naccuracy and comprehensiveness of these descriptions \n•\nWhy? \n•\nImprovements in the design of practical, high-efficiency, low-\nemission combustion systems on Earth \n \n \n \nflame \nevolution \nwith time \n"
+    },
+    {
+      "locator": "page 8",
+      "text": "ACME Critical Design Review– 13 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nProject Overview \n \nBrian Borowski – Project Manager \n"
+    },
+    {
+      "locator": "page 9",
+      "text": "ACME Critical Design Review– 14 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Project Organization \n"
+    },
+    {
+      "locator": "page 10",
+      "text": "ACME Critical Design Review– 15 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPayload Specific Hardware \n•\nUnique hardware components \n•\nSpecific Diagnostics \n•\nUnique PI fuels \nACME Chamber Insert \n•\nPlatform for exchangeable burner: \n–\nGas Delivery \n–\nRetracting ignitor \n–\nElectric field generator \n•\nInfrastructure that uniquely meets the \nneeds of PI experiments \n•\nUnique science requirements \nFCF Combustion Integrated Rack \n•\nPower Supply \n•\nAvionics/Control \n•\nStructural Support & Power \n•\nCommon Diagnostics and Illumination \n•\nEnvironmental Control \n•\nData Processing/Distribution \n•\nFluids Control/Distribution \n•\nCombustion Containment \nThe Combustion Integrated Rack (CIR) includes support subsystems and \ncombustion diagnostics commonly needed for combustion investigations and \nsupplements the laboratory with unique science hardware developed for each \nPrincipal Investigator (PI).  \nPayload specific and multi-user hardware \ncustomizes the CIR in a unique laboratory \nconfiguration to perform research effectively. \nAdvanced Combustion via \nMicrogravity Experiments \nInsert Assembly \nCIR Sub-rack Payload \n Relationship \n"
+    },
+    {
+      "locator": "page 11",
+      "text": "ACME Critical Design Review– 16 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Product Breakdown \nStructure \n_ \nChamber Insert \nAssembly (CIA) \nACME \nSystem \nS 1101 \n_ \nAvionics Package  \n( AVP ) \n_ \nGround S / W  \n( AGS ) \n_ \nColor Camera  \nData Store  ( CDS ) \n_ \nFlow System  \n( FLOW ) \n_ \nBurner System  \n( BURNER ) \n_ \nIgnition System  \n( IGN ) \n_ \nImaging  ( IMAG ) \n_ \nExperiment  \nMounting  \nStructure  ( EMS ) \n_ \nDiagnostics  \nSystem  ( DIAG ) \n_ \nMeasurement  \nSystem  ( MEAS ) \n_ \nE - FIELD System  \n( E - FIELD ) \n_ \nEngineering  \nAnalog Camera  \n( OpsCam ) \n_ \nData Color  \nCamera Package \n_ \nMain Computer  \nSystem  ( MCS ) \n_ \nPower Distribution  \nSystem  ( PDS ) \nACME Subsystems \n_ \nHiBMS - 1  Camera  \nPackage \n_ \nHiBMS - 2  Camera  \nPackage \nCooling System \n  \n  \n  \n  Chamber Oxygen  \n  \n  Pressure Differential \n  Burner Temp \n  \nFar Field Temp \n  \nPost Gas Comp \n. \n  \n  \n  \n  \n  \n_ \nUV Imaging  ( UVI ) \n  \n  \n  \nFlight S W  \nData Sync/Record  \nRadiometers \nRadiant Emissions \nPMT Package \nChemilluminescence \nGround Commanding \nACME \nCIR \n  \n  \nCo-Flow \nSpherical \nBRE \nGas Jet \nThin Fiber Pyrometry \n"
+    },
+    {
+      "locator": "page 12",
+      "text": "ACME Critical Design Review– 17 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Hardware Development \nZIN Tech. P02001 Quality Planning Procedure \n(Explanation of ZIN Qual Level Builds) \nQuality Level 1 - Flight Model \nQuality Level 2 - GIU Qual. Unit \nQuality Level 3 - Engineering Model \nQuality Level 4 - Breadboard Model \n"
+    },
+    {
+      "locator": "page 13",
+      "text": "ACME Critical Design Review– 18 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nHardware Development Plan \nACME \nRequirements\nBreadboard \nTesting, ACME \nConcepts, Trade \nStudies\nACME Final \nDesign H/W & S/W\nACME Design \nConcepts\nEngineering Model\n Qual Level 2\n(Build to flight \ndrawings)\nFlight Unit\n Qual Level 1\nDesign Modifications\nACME EM Testing \n(H/W Validation;  \nS/W Verification)\nCIR/ACME \nIntegrated Testing \n(CIR GIU)\n(H/W Validation;  \nS/W Verification)\nQualification Unit\nQual Level 2\nUpgrade EM to Qualification Unit\nQualification \nTesting\nACME Ground \nIntegration Unit \n(GIU)\nQual Level 2\nHardware \nVerification \nTesting\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "ACME Critical Design Review– 19 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nHardware Development \nSchedule \n"
+    },
+    {
+      "locator": "page 15",
+      "text": "ACME Critical Design Review– 20 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSpaceDOC ACME Contract Status \n•ACME SpaceDOC involvement began in 2007 \n•ACME Science Concept Review was held in February 2008 \n•ACME Requirements Definition Review was held in May 2010 \n•ACME Preliminary Design Review was held in January 2011 \n•ACME Phase 0/1 Flight Safety Review (Integrated with CIR) was held in \nFebruary 2012 \n•ACME Interim Design Review was held in June 2012 \n•BRE Requirements Definition Review and Preliminary Design Review \n(combined) was held in June 2013 \n•The ACME SpaceDOC work is assigned as incremental Delivery Orders \n(DOs) to ZIN Technologies under the SpaceDOC contract \n•Current Delivery Order contract began in October 2010 and continues \nthrough December 2013  \n"
+    },
+    {
+      "locator": "page 16",
+      "text": "ACME Critical Design Review– 21 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR RFA-001 Disposition  \nRFA # 01 \nOriginator: Anita Tenteris \nOriginator Concurrence:  23 September 2013 \nStatement of Concern \nRecommended Action \nClosure Rationale \nOne of the criteria for PDR is a preliminary limited \nlife items list. Just because other experiments may \nnot have such a list does not mean ACME should not \nhave such a list. ACME presents a unique situation \nwhere experiments will occur in the same chamber \nas the Cube is located as well as tubing, wiring, \ncooling lines, etc. The project should to start \nidentifying their materials lists from the Computer-\nAided Design (CAD) drawings so that compatibility \nissues/soft goods shelf life/limited life items can be \nidentified early in the design cycle. Maybe testing \nwould also be needed as well for materials with \nunknown compatibility? \n \nIdentify the material \ncompatibility and shelf life limits \nfor the soft goods used in \nACME and CIR \n \nIt has been determined by the \nproject that a materials analysis \nwould not be done for PDR due to \nfunding and resource limitations.  \nThe plan is to have this analysis \nand MIUL completed at CDR. \n  \nAlthough the analysis was not \ncomplete at PDR, the ACME \nproject is aware of potential issues \nwith the Data Cube and other \nelectronics and their compatibility \nwith the gaseous fuels.  These \nissues are currently being tracked \nin the Risk Management \nImplementation Tool database. \n"
+    },
+    {
+      "locator": "page 17",
+      "text": "ACME Critical Design Review– 22 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR RFA-002 Disposition  \nRFA # 02 \nOriginator: Anita Tenteris \nOriginator Concurrence:  23 September 2013 \nStatement of Concern \nRecommended Action \nClosure Rationale \nIn many of the presentations, the presenters \nindicated CIR heritage for a choice of hardware. It \nseemed as though CIR was treated as a ‘black box’ \nthat ACME hooks into. ACME fuels need to be \ncompatible with CIR and also cause no issues to \nCIR. \nThe following items need to be investigated further to \nassess compatibility: \n• ACME Venting compatibility with CIR hardware \n• Are the gases/liquids compatible with CIR \nhardware, particularly with the soft goods in the \nsolenoid valves? The board was told the solenoid \nvalves contained FKM o-ring. For the ACME \ngases, NBr is the recommended rubber for most of \nthe gases, if not all. \n• What are the limited life items for CIR? Do any of \nthe items need be replaced prior to ACME use? \nAn assessment of the venting \ncompatibility has been addressed \nand was deemed acceptable. \n \nAs the project matures, CIR will \nassess compatibility of materials in \ntheir system with ACME gasses, \nproducts of combustion and any \nother applicable interactions. \n \nACME anticipates this will be \ncompleted by CDR. \n"
+    },
+    {
+      "locator": "page 18",
+      "text": "ACME Critical Design Review– 23 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR RFA-003 Disposition  \nRFA # 03 \nOriginator: Al Linne \nOriginator Concurrence:  7 November 2013 \nStatement of \nConcern \nRecommended Action \nClosure Rationale \nThere are no warnings to \neliminate damage to the \ntest hardware \nTo minimize the likelihood of \nhardware damage, the flight & \nground software designs \nshould incorporate software \nrequirements to identify invalid \ncommands and command \nparameters that are outside of \nallowable limits and to alert \noperations personnel that \ninvalid commands were \nentered. \n \nA complete software command list for the ACME hardware has \nbeen derived from operational requirements for the ACME \nsystem.  Operational limits have been defined for each \ncommand and incorporated into the software requirement set.  \nThe software requirements are documented in the Software \nsection of the ACME Engineering Requirements Document \n(ERD) ACME-REQ-001.   \nThis list of signals is also documented in the ACME Data \nDictionary Document (ACME-DOC-008).   \nThese documents will be available for NASA review and \ncomment during the CDR.   \nThe approved operational limitations will be built into the \nACME ground command station software at the TSC.  Every \ncommand sent by an operator will be checked against these \nestablished limits.  Commands that violate safe ranges will be \nrejected (on the ground) and the operator will receive an error \nmessage.  This ground software will be verified, as part of the \noverall ACME test and verification  campaign, to ensure no \ncommand can ever reach the ACME hardware that is outside \nof these safely established limits. \n"
+    },
+    {
+      "locator": "page 19",
+      "text": "ACME Critical Design Review– 24 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR RFA-004 Disposition  \nRFA # 04 \nOriginator: Al Linne \nOriginator Concurrence:  7 November 2013 \nStatement of \nConcern \nRecommended Action \nClosure Rationale \nA detonation analysis has \nnot been completed. \nPerform a detonation analysis on the \nexpected ACME gas mixtures. This \nshould be done prior to the ACME Phase \n0/1 Flight Safety Review, since it may \ninform some of the hazard analysis. Also, \nthe results of this analysis could drive the \nconsumables usage and could limit the \namount of science performed. \nAn ACME detonation analysis has been performed \nfor the Inverse Flame Experiment, which is the the \nworst case hazard.  It was chosen because of the \npossible oxygen interaction with ACME CIA \nhardware (i.e. materials compatibility).  The \nanalysis validated that the present configuration \ncould safely meet requirements.  The analysis has \nnot impacted the design. \n \nA full detonation analysis of all experiments will be \ncompleted prior to the Phase 2 Flight Safety \nReview. \n"
+    },
+    {
+      "locator": "page 20",
+      "text": "ACME Critical Design Review– 25 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR RFA-005 Disposition  \nRFA # 05 \nOriginator: Al Linne \nOriginator Concurrence:  7 November 2013 \nStatement of Concern \nRecommended Action \nClosure Rationale \nA number of different oxygen \npercentages were discussed & \nidentified in the PDR presentation \nand documentation. What oxygen \npercentage was used in the \ndesign and does this cover the \nranges requested by the PI. \nDetermine the worst case oxygen \npercentage (and pressure) that could \npotentially be in the CIR chamber with \nACME installed, based on credible failures \nto CIR & ACME equipment and use this \noxygen percentage as the design point for \nACME. This will drive integrated \nsafety/hazard analyses as well as ACME \nmaterial compatibility. \nAlso, based on the resulting worst case \noxygen percentage determine if an \noxygen compatibility assessment needs to \nperformed for the ACME Chamber Insert \nAssembly. \nOxygen compatibility with the ACME CIA has \nbeen assessed and is documented in the \nDraft Materials Identification/ Usage List \n(MIUL), which is a review item for the CDR.  \nAn Integrated Hazard Analysis has been \ncompleted and the worst-case oxygen \npercentages and pressures have been \nidentified and addressed in the Hazard \nReport (see ACME Hazard Report 5, \ndocumented in ACME-SDP-001). \n"
+    },
+    {
+      "locator": "page 21",
+      "text": "ACME Critical Design Review– 26 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR RFA-006 Disposition  \nRFA # 06 \nOriginator: Alan Linne, Nechelle Grant, Terry O’Malley \nOriginator Concurrence:  25 October 2013 \nStatement of Concern \nRecommended Action \nClosure Rationale \nCIR hazards mitigations are being \nused by ACME. It was not clear \nthat the ACME team had reviewed \nthe CIR hazards and confirmed \nthe mitigation steps are applicable \nto ACME.  There were no \nintegrated hazards included in the \nACME Phase 0/1 Flight Safety \nData Package safety hazard \nanalysis (ACME-SDP-001. \nThe ACME and CIR teams should provide \nan integrated CIR/ACME Safety story. \nThere are likely integrated safety hazards \nthat exist in the integrated system and \nthese should be identified and \ndocumented. Perform an integrated \nhazard analysis and prepare integrated \nhazard reports. The integrated CIR/ACME \nhazard analysis should be part of the \nPhase 0/1 Flight Safety Review. \nAlso, a pressure switch, a solenoid valve, \nand a pressure regulator in the ACME \nsystem were included in the design on the \nN2 input to the chamber. Perform a \nintegrated hazard analysis of this system \n(CIR & ACME hardware) to ensure system \nmeets the intent of CIR hazard analyses. \nThe Integrated Hazard Analysis has been \ncompleted with the participation of the CIR \nTeam.  An Integrated Safety Data Package \nhas been prepared and was included as input \nto the ACME Phase 0/1 Flight Safety Review. \n"
+    },
+    {
+      "locator": "page 22",
+      "text": "ACME Critical Design Review– 27 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR RFA-007 Disposition  \nRFA # 07 \nOriginator: Terry O’Malley \nOriginator Concurrence:  25 October 2013 \nStatement of Concern \nRecommended Action \nClosure Rationale \nThe ACME project plan did not provide \nsufficient detail of the end-to-end project \nplanning. There was no evidence of a \nbottoms up cost estimate or a bottoms \nup schedule. Both of these are vital in \nensuring the project has been thought \nthrough and that sufficient resources are \navailable to successfully complete the \nproject. The only budget shown was the \nprogram budget, and it may not be \nadequate complete the current scope of \nthe ACME project. \nThe ACME Systems Engineering \nManagement Plan also did not provide \nsufficient detail of the end-to-end project \ntechnical management. It provided \ndetails through PDR/CDR, but not the \nproject lifecycle. \nUpdate the Project Plan. Complete a \nbottoms up cost estimate and a \nbottoms up end-to-end schedule. \nConsider performing a parametric cost \nestimate. To be of value, these should \nbe performed within 6 months of the \nPDR. \n \nUpdate the SEMP to include technical \ndetails through launch. Include things \nas spare required, environmental \ntesting required, Ground/Flight Support \nEquipment etc. \nAn updated Project Plan has been \nbaselined, which includes a bottoms-up \ncost estimate and schedule.  An \nindependent cost estimate by the GRC \nCost & Economic Analysis Office has \nbeen performed and is in-line with the \nproject plan.    \n \nUpdates to the SEMP will be made \nregularly as more information becomes \navailable to the project team.  The SEMP \nis a living document that will be revisited \nas necessary. \n"
+    },
+    {
+      "locator": "page 23",
+      "text": "ACME Critical Design Review– 28 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR RFA-008 Disposition  \nRFA # 08 \nOriginator: Terry O’Malley \nOriginator Concurrence:  25 October 2013 \nStatement of Concern \nRecommended Action \nClosure Rationale \nThe ACME Engineering requirements \ndocument is incomplete. While it appears \nthat the Science requirements have been \nthoroughly addressed, carrier \nrequirements (both CIR & ISS) and \nsafety and mission assurance have not \nbeen addressed in the ACME ERD. It is \nimportant to thoroughly identify all \nrequirements which are imposed on the \nsystem and subsequently must be \nverified. A related concern is the number \nof requirements that must be verified. \nThere are a large number of \nrequirements on the system and the \nverification program could be extensive. \nComplete the ERD. This should be \ndone within 6 months of the PDR to \nensure the CDR design meets all \nrequirements that are levied on the \nsystem. Environmental testing \nrequirements should be included as \npart of this, waivers for fragile \nequipment should be identified early. \nWhen developing the verification \nprogram look for ways to combine & \nstreamline the verification process. \nThe document FCF-ICD-CIR-ACME \naddresses carrier requirements (both CIR \nand ISS).  ACME-REQ-001 points there. \n \nSafety and Mission Assurance \nrequirements will be detailed in the ACME \nHazards and Integrated CIR-ACME \nhazard reports.  Following the Phase 0/1 \nFlight Safety Review, where these Hazard \nReports are approved, the requirements \nwill be incorporated into ACME-REQ-001. \n \nThe verification process will group \nrequirements by discipline identified to \nfacilitate verification and validation. \n"
+    },
+    {
+      "locator": "page 24",
+      "text": "ACME Critical Design Review– 29 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR RFA-009 Disposition  \nRFA # 09 \nOriginator: Lisa Van Der Aar \nOriginator Concurrence:  9 September 2013 \nStatement of Concern \nRecommended Action \nClosure Rationale \nThe project has done a good job of \nwriting operational requirements, but they \nhave not yet been vetted with the PIs. \nThis concern stems from RDR when the \nPIs were assuming operational \nrequirements that the GRC science and \nengineering teams were not aware of. \nThis concern follows on from the ACME \nRDR-004 RFA which has not been \nclosed out as of the PDR. \nIt is imperative that: 1) the currently \ndocumented operational requirements \nare vetted with each of the PIs; 2) the \nengineering team talks with each of the \nPIs. This will ensure that both parties \nfullly understand what is meant by \neach of the requirements, and also \ngive the engineering team a chance to \nuncover additional operational \nrequirements. \n \nClose out the RFA ACME RDR-004. \nThe Project Scientist, Dennis Stocker, has \nvetted the operations requirements \ndocumented in ACME-SRD-001 with the \nrespective Pis.  Dennis has also \ndiscussed the Ops requirements with the \nACME engineering team to be sure they \nare well understood. \n \nThe ERD revision including the updates \nwith the operations requirements has \nbeen completed and released. \n \nThis information should be sufficient to \nclose RFA ACME-RDR-004. \n"
+    },
+    {
+      "locator": "page 25",
+      "text": "ACME Critical Design Review– 30 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR BRE RFA1 Disposition  \nBRE RFA #1 \nOriginator: Roger Schwarz \nOriginator Concurrence:  \nStatement of Concern \nRecommended Action \nClosure Rationale \nThe BRE Science Requirements, which \nwill be incorporated in the ACME \nIntegrated Science Document Revision \nB, were presented in a draft version \n(non-signed) at the review. While a draft \n(ready for signature) ISRD is applicable \nat RDR, by PDR the ISRD should be \nsigned as it baselines the science \nrequirements. Additional changes and \nadditions were discussed at the review, \nand these changes could affect the BRE \nburner and radiometer design \nrequirements. \nExpedite approval of the ACME \nRevision B Integrated Science \nRequirements Document, including \nany changes from RDR. Any delay \ncould impact the engineering effort to \ndesign the burner and radiometer \ncomponents of the BRE. \n \nThe BRE Science Requirements \ndocumented in the Integrated Science \nRequirements Document have been \nbaselined. \n"
+    },
+    {
+      "locator": "page 26",
+      "text": "ACME Critical Design Review– 31 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR BRE RFA2 Disposition  \nBRE RFA 2 \nOriginator: Scott Darpel \nOriginator Concurrence:   \nStatement of Concern \nRecommended Action \nClosure Rationale \nAlthough this is specifically targeted at \nBRE, the ACME project in general is \nlacking a completed SAR matrix which is \nrequired at PDR. The project SEMP \nstates that the project will not have its \nown SMAP, but will follow ZIN’s P30012. \nP30012 is being replace with the newer \nP30020, but in either case, following \neach document requires the individual \nprojects to complete an applicability \nmatrix which details what S&MA \nrequirements they plan to fully meet, or \nthose they intend to partially meet or feel \nare not applicable, along with a rationale \nThe project is reported to be working \non complying with P30020. BRE and \nall of ACME has to get approved and \nsigned their SMAP applicability matrix. \nThe ACME SAR Checklist has been \ncompleted \n"
+    },
+    {
+      "locator": "page 27",
+      "text": "ACME Critical Design Review– 32 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR BRE RFA3 Disposition  \nBRE RFA 3 \nOriginator: Scott Darpel, Roger Schwarz \nOriginator Concurrence:   \nStatement of Concern \nRecommended Action \nClosure Rationale \nThe charge for the engineering board, as \ncommunicated via the convening memo, \nincluded an action to evaluate the \nproject’s performance vs. plan on budget \nand schedule. The presentation package \ndid not include sufficient information that \nwould allow the board to make this \nevaluation. Specifically, as BRE is a late \naddition to the ACME project, the board \nis \ninterested to learn what additional risks \nto budget and schedule were incurred. \nProvide the members of the \nengineering board with information that \ncommunicates the overall performance \nagainst plan with respect to budget \nand schedule. Specifically, the board \nwould like to see what the addition of \nBRE did to the overall \ncost and schedule to ACME. The \ninformation should make it clear what \nrisks may or may not have been levied \nupon the \nACME project with the late inclusion of \nthe BRE. \nData to be provided by the ACME CDR \n"
+    },
+    {
+      "locator": "page 28",
+      "text": "ACME Critical Design Review– 33 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPDR BRE RFA4 Disposition  \nBRE RFA 4 \nOriginator: Nancy Hall \nOriginator Concurrence:   \nStatement of Concern \nRecommended Action \nClosure Rationale \nACME project risk due to addition of the \nBRE experiment was not presented at \nPDR. The engineering chair was later \ngiven \naccess to RMIT and the engineering \npanel reviewed the ACME risk status. . \nThere is a risk covering the BRE science \nrequirements, but the risk mitigation does \nnot include details of the project’s \nforward plan to meet the BRE \nrequirements at \nan acceptable level of risk and does not \nindicate that BRE requirements are not \nfinalized \nUpdate the BRE risk to include \nmitigation steps to address changes to \nthe BRE science requirements \nThe risk regarding BRE science \nrequirements was updated to reflect the \ndesired information and has since been \nclosed with the delivery of the BRE \nscience requirements. (Risk ACME-022) \n"
+    },
+    {
+      "locator": "page 29",
+      "text": "ACME Critical Design Review– 34 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nProject Requirements Overview \n \nChris Mroczka – Systems Engineering Lead \n"
+    },
+    {
+      "locator": "page 30",
+      "text": "ACME Critical Design Review– 35 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Requirements Flow \n"
+    },
+    {
+      "locator": "page 31",
+      "text": "ACME Critical Design Review– 36 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Requirements \n•\nACME ERD – 735 Total Requirements. \n \n• 407 Engineering build-to requirements \n55.37%  \n• 107 Operations requirements \n \n14.56% \n• 202 Software requirements \n \n27.48% \n• 19 Derived requirements  \n \n2.59% \n \n•\nIntegration requirements are generated by the Mission \nIntegration and Planning Team (MIP) and are documented in \nFCF-ICD-CIR-ACME. This document encompasses \nrequirements flowed down to ACME form the ISS Program and \nCIR. All carrier interface requirements are documented here \n \n•\nSafety requirements are documented in the ACME Safety \nVerification Tracking Log (SVTL) \n"
+    },
+    {
+      "locator": "page 32",
+      "text": "ACME Critical Design Review– 37 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Integration Requirements \n•\nOperations \n• Use of chamber fan \n• Use of gas \nchromatograph (GCIP) \n• Rack acceleration \nmeasurement \n•\nAtmosphere and Flow \n• Venting to specific \npressures \n• Atmosphere scrubbing \n• Vary gas composition \n• Provide source gases \n \n•\nDiagnostics \n• LLL-UV \n• OH* 310 nm Filter \n• LLL-UV FOV  \n• 30, 50, 80mm lenses \n• HiBMS-2 \n• 90mm lens \n• Adjust gain setting \n• HiBMS-1 \n• 30, 50mm lenses \n• Illumination Package \n \n"
+    },
+    {
+      "locator": "page 33",
+      "text": "ACME Critical Design Review– 38 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSample Requirements from \nACME Requirements Matrix \nSystem \nSSC_ID \nISRD \nTrace \nISRD Description \nTrace \nERD REQ Title/Description \nComply? \n(Y/W/N) \nCompliance Approach \nV-type V-area \nVerification \nActivities \n  \nSPACE110 1.1 \n  \nGeneral Experiment Configuration \nY \n  \n  \n  \n  \nBURNER \n530_0010 1.1.1 \n1.1.1. The experimental hardware shall \naccommodate all of the burners \ndescribed in sections 1.2-1.4, and 1.13, \nbut only a single burner shall be installed \nat a time within the CIR chamber.* \nBurners – Installation \nACME shall install a single burner one \nat a time within the CIR chamber. \nY \nACME design includes replaceable \nburners that will be installed on orbit \none at a time in the CIA to support \neach experiment within the CIR. \nD \nME The verification shall be considered successful \nwhen a demonstration of the flight hardware \nshows that a single burner can be installed in \nthe CIA one at a time. \nBURNER \n530_0020 1.1.2 \n1.1.2. All burners shall be Orbital \nReplacement Units (ORUs) and \nexchangeable during spaceflight. \nBurners – Exchangeable \nACME shall provide that all burners \nare exchangeable during spaceflight. \nY \nACME design includes \nexchangeable burners that can be \nchanged out during spacefilght. \nI \nME The verification shall be considered successful \nwhen the inspection of each flight burner \nmounting plate shows that it is compatible with \nthe flight switching manifold.  \n \nBURNER \n530_0030 1.1.2 \n  \nBurners – ORU \nACME shall provide all burners as \nORUs. \nY \nACME design includes burners that \nare orbital replaceable units. \nI \nPS The verification shall be considered successful \nwhen each burner is approved by HFIT for \nORU classification. \nFLOW \n520_0010 1.1.4.1 \n1.1.4. The gas delivery system and all \nburners shall be compatible with at least \nthe following gases:  1.1.4.1. gaseous \nfuels: hydrogen, methane, ethane, \npropane, ethylene, propylene, or \nmixtures of any of these fuels; \nFlow System H/W Compatibility - \nHydrogen \nACME shall provide a gas delivery \nsystem that is compatible with the \ngaseous fuel hydrogen.  \nY \nACME design includes a flow system \nthat is compatible with the gaseous \nfuel hydrogen. \nA \nMP The verification shall be considered successful \nwhen the material analysis of the flow system \nhardware shows compatibility with the gaseous \nfuel hydrogen. \n"
+    },
+    {
+      "locator": "page 34",
+      "text": "ACME Critical Design Review– 39 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Compliance Summary \n \n•\nACME-DOC-002 Requirements Compliance Matrix \n \n• Engineering build-to requirements:  \n100% Compliance \n• Operational requirements:  \n \n100% Compliance \n• Software requirements: \n \n \n100% Compliance \n• Derived requirements: \n \n \n100% Compliance \n"
+    },
+    {
+      "locator": "page 35",
+      "text": "ACME Critical Design Review– 40 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nVerification Planning \n•\nACME and CIR will verify system performance \n•\nEngineering, operational, software, and derived requirements in \nthe ACME ERD are verified in the Science & Engineering \nVerification Plan; ACME-PLN-003 (Baselined) \n• ACME requirements called out in the ERD are ACME’s \nresponsibility to verify or obtain verification from carrier (i.e. \nCIR cameras, GCIP, etc.) \n• CIR component performance is verified and reported to \nACME via the MIP Team. \n•\nACME will also verify payload requirements passed down from the \nISS Program and CIR (FCF-ICD-CIR-ACME) \n•\nPayload requirements are verified in the Payload Verification \nPlan (FCF-PVP-CIR-ACME) \n• PVP is generated by the MIP Team \n• ACME verifies payload requirements \n• ACME delivers Payload Verification Report to CIR to be \nrolled up and reported in the integrated rack verifications \n"
+    },
+    {
+      "locator": "page 36",
+      "text": "ACME Critical Design Review– 41 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSub-rack Payload Requirement & \nVerification Flow \n \n"
+    },
+    {
+      "locator": "page 37",
+      "text": "ACME Critical Design Review– 42 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nProject Testing Overview \n \nChris Mroczka – Systems Engineering Lead \n"
+    },
+    {
+      "locator": "page 38",
+      "text": "ACME Critical Design Review– 43 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Testing Plan \n•\nAs Engineering Model sub-systems are built, they will be \nfunctionally tested to validate performance at that level \n•\nWhen the system level Engineering Model is complete we will \nconduct ACME functional testing between the AVP, Data \nCamera and CIA to validate performance at the system level \n•\nThese 3 units comprising the Engineering Model will then be \ninstalled on the CIR GIU for integrated testing with the rack, \nvalidating carrier interfaces \n•\nSince the EM is built to flight drawings, it will then undergo Qual \ntesting: Vibration, EMI and thermal \n•\nWhen the Flight Unit is complete the Flight AVP, CIA and Data \nCamera will undergo flight level environmental testing: Vibe, EMI \nand offgas \n•\nThe remainder of flight verification testing will then occur after \nthe flight environmental testing \n"
+    },
+    {
+      "locator": "page 39",
+      "text": "ACME Critical Design Review– 44 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nEnvironmental and Other Significant \nTesting \nRadiation Testing \n• May 1-3 at Indiana University Cyclotron facility \n• Tested boards with complex electronics \n• CPUs, DSPs, FPGAs, etc \n• Lippert SBC, RTD Dual GigE, RTD Power, Connecttech \nSerial, PMD Motion Conroller, Crucial SSD \n• Added a power cycle capability to camera \n• Changed version of PMD board to not include ARM processor \nE-Field EMI Testing \n•\nGRC-EMI-RPT-331: June 2012 - Most tests over the limit \n•\nGRC-EMI-RPT-343: April 2013 - Better results, still over the \nlimit \n•\nGRC-EMI-RPT-345: July 2013 - Acceptable results \n•\nIterated the design and subsystem capabilities with PS \nEM Avionics Package Functional Testing \n•\nCompleted EM Avionics Package assembly successfully \nfunctionally tested \n"
+    },
+    {
+      "locator": "page 40",
+      "text": "ACME Critical Design Review– 45 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nEngineering Testing \nDocument ID  \nDocument Title \nStatus \nACME-TST-002 \nFlow System Model Breadboard Test Report \nBreadboard Level, Validated all test points. \nACME-TST-003 \nBreadboard System Level Test \nBreadboard Level, Validated all test points. \nACME-TST-004 \nE-Field Mesh Assembly Test Plan \nEM level functional test (Passed) \nACME-TST-005 \nE-Field Power Supply Assembly Test Procedure \nEM level functional test (Passed) \nACME-TST-006 \nHard Drive Tray Assembly/ SATA Cable Test Plan \nEM level functional test (Passed) \nACME-TST-007 \nACME EMI E-Field HV Assembly Test Plan \nEMI test, results in project repository. \nACME-TST-008 \nACME Hall Effect Sensor Board \nEM level functional test (Passed) \nACME-TST-009 \nACME Avionics Package Test Plan \nEM level functional test (Passed) \nACME-TST-010 \nACME  STEPPER MOTOR ASSEMBLY/SUBASSEMBLY  TEST \nPROCEDURE \nEM level functional test (Passed) \nACME-TST-011 \nACME  Power Distribution Board Assembly Test Procedure \nEM level functional test (Passed) \nACME-TST-013 \nACME Battery Vacuum Test Procedure \nEM level functional test (Passed) \nACME-TST-014 \nACME TC Cold Junction Compensation Board Test Procedure \nDraft, hardware to be built \nACME-TST-015 \nACME Analog Camera LED Board Test Procedure \nEM level functional test (Passed) \n"
+    },
+    {
+      "locator": "page 41",
+      "text": "ACME Critical Design Review– 46 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nEngineering Testing Cont. \nDocument ID  \nDocument Title \nStatus \nACME-TST-016 \nACME Filter Board Test Procedure \nEM level functional test (Passed) \nACME-TST-017 \nACME Camera Stepper Driver Board Test Procedure \nDraft, hardware to be built \nACME-TST-018 \nACME Cube Assembly Test \nEM level functional test (Passed) \nACME-TST-019 \nACME Camera Enclosure Test Procedure \nDraft \nACME-TST-020 \nE-Field HV assembly EMI Retest \nEMI test, results in project repository. \nACME-TST-021 \nACME Camera Control Power Distribution Board Test Procedure \nDraft \nACME-TST-022 \nACME Radiometer Board Test Procedure \nDraft \nACME-TST-023 \nMotion Control Board Interface Assembly Test Procedure \nEM level functional test (Passed) \nACME-TST-024 \nVGA Interface Board Test Procedure \nEM level functional test (Passed) \nACME-TST-025 \nE-Field HV Assembly Test 3 \nEMI test, results in project repository. \nACME-TST-026 \nDown Stream Relay Board Test Procedure \nDraft \nACME-TST-027 \nACME Camera Control Test Procedure \nDraft \nACME-TST-028 \nUpstream Relay Board Test Procedure \nDraft \nACME-TST-029 \nACME Flight Cube Board Test \nHardware to be built. \n"
+    },
+    {
+      "locator": "page 42",
+      "text": "ACME Critical Design Review– 47 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nChamber Insert Assembly Designs \n \nAdrian Drake – Mechanical Engineering Lead \n"
+    },
+    {
+      "locator": "page 43",
+      "text": "ACME Critical Design Review– 48 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Chamber Insert Assembly\n \nACME Chamber Insert Assembly \nThe ACME Chamber Insert Assembly \nfunctions as the major platform used to \nmount Sub-System Hardware to \nperform combustion science. \n"
+    },
+    {
+      "locator": "page 44",
+      "text": "ACME Critical Design Review– 49 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Chamber Insert Assembly \n• Component placement \nmaximizes open volume at \nand downstream of the \nchamber window interface to \nsatisfy open volume \nrequirements \n \n• Creates mass symmetry \nwhere possible per \nrequirements \n"
+    },
+    {
+      "locator": "page 45",
+      "text": "ACME Critical Design Review– 50 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nExperiment Mounting Structure\n \nExperiment Mounting Structure \n \n \n• The Experiment Mounting \nStructure is the framework to \nwhich all other subsystems \nare attached. \n• Aligns the insert within the \nCIR Chamber  \nIt consists of: \n• 2 End Plates \n• Frame Rails \n• Locking Mechanism and Rail \nLock \n• Insertion Handles \n• Component mounting brackets \n"
+    },
+    {
+      "locator": "page 46",
+      "text": "ACME Critical Design Review– 51 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nExperiment Mounting Structure\n \nExperiment Mounting Structure \n \n \nSubsystem Status: \nDesign Completion: 100% \nDrawing Count: 32 \nDrawing Completion: 50% \nEM Build: 28% \nFlight Build: 25% \nRequirement Compliance: 100% \n"
+    },
+    {
+      "locator": "page 47",
+      "text": "ACME Critical Design Review– 52 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCooling System\n \nCooling System \n•The Cooling system is made up of 2 \ncold plates, one on each end cap \n• Lytron CP-10 \n• Attaches to IRR with flexible hoses \n• Internal tubing is rigid \n"
+    },
+    {
+      "locator": "page 48",
+      "text": "ACME Critical Design Review– 53 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCooling System\n \nCooling System \nSubsystem Status: \nDesign Completion: 100% \nDrawing Count: 13 \nDrawing Completion: 100% \nEM Build: 15% \nFlight Build: 8% \nRequirement Compliance: 100% \n"
+    },
+    {
+      "locator": "page 49",
+      "text": "ACME Critical Design Review– 54 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nGas Flow System\n \nGas Flow System \n• Receives CIR supplied and \nregulated gases from FOMA \n• Provides pressure regulation of \ngas from nitrogen bypass line to \nreplace those features bypassed \non CIR \n• Routes gases to the chamber for \nchamber fills, bypassing the \nburner \n• Meters gas flow for science \ncompliance via ACME Mass Flow \nControllers \n• Mixes gases as required \n• Delivers gases to the burner \n \n \n \n"
+    },
+    {
+      "locator": "page 50",
+      "text": "ACME Critical Design Review– 55 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Gas Flow System\n \nACME Gas Flow System \nIRR QD hookup \n• Interface with FOMA \nMass Flow Controllers \n• Hastings HFC-D-302 \nSeries \n• ORU configuration based \non experiment \n• Sufficient flexibility to \nmeet all experiment \nrequirements \nChamber Vent Valves \n• Skinner 7000 Series Low Pressure \nSolenoid Operated Valves and Lisk \nL-7040 Solenoid Coil  \n•Used to bypass the burner for faster \nchamber filling \n"
+    },
+    {
+      "locator": "page 51",
+      "text": "ACME Critical Design Review– 56 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Gas Flow System\n \nACME Gas Flow System \nFlow Switching Valves \n• Skinner 7000 Series Valves \nwith Lisk L-7040 Solenoid Coils  \n• Controls gas flow to burners \n• Requires no crew interface to \nmodify gas flow paths to the \nburners for each experiment \nEntran EPRB-2 Series pressure \ntransducers for pressure drop \ncalculation \nReplaceable burner \n"
+    },
+    {
+      "locator": "page 52",
+      "text": "ACME Critical Design Review– 57 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Gas Flow System\n \nACME Gas Flow System \nSubsystem Status: \nDesign Completion: 100% \nDrawing Count: 54 \nDrawing Completion: 63% \nEM Build: 54% \nFlight Build: 20% \nRequirement Compliance: 100% \n"
+    },
+    {
+      "locator": "page 53",
+      "text": "ACME Critical Design Review– 58 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Gas Flow System Hardware\n \nACME Gas Flow System Hardware \n"
+    },
+    {
+      "locator": "page 54",
+      "text": "ACME Critical Design Review– 59 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nBurner Assembly\n \nBurner Assembly \nBurner temperature \nthermocouple connection \nFour Burner types:  \nGas Jet, Spherical, Co-flow, BRE \n \nBurners are ORU per requirements and \nexperiment setup \n \nConstruction is a burner fixed to a steel \nmounting plate, which is in turn fixed to a \nceramic insulator to isolate the burner \nelectrically \nE-field measurement \nattachment \n"
+    },
+    {
+      "locator": "page 55",
+      "text": "ACME Critical Design Review– 60 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nGas Jet Burner Status\n \nGas Jet Burner Status \nGas Jet Design Completion: 100% \nGas Jet Drawing Count: 16 \nGas Jet Drawing Completion: 100% \n \n \nEM Build: 0% \nFlight Build: 0% \nRequirement Compliance: 100% \n"
+    },
+    {
+      "locator": "page 56",
+      "text": "ACME Critical Design Review– 61 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSpherical Burner Status\n \nSpherical Burner Status \nSpherical Design Completion: 100% \nSpherical Drawing Count: 14 \nSpherical Drawing Completion: 100% \n \nEM Build: 0% \nFlight Build: 0% \nRequirement Compliance: 100% \n"
+    },
+    {
+      "locator": "page 57",
+      "text": "ACME Critical Design Review– 62 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSpherical Burner\n \nSpherical Burner \nThe upper part of the spherical burner will be supplied by Princeton \nUniversity under the following conditions: \n \n1) Princeton University: Fabricate a 1/4”, 3/8”, and 1/2” spherical burner head with supply tube per ACME \nISRD 1.2.1, 1.2.2, 1.2.5, and 1.2.6.  \n2) Princeton University: Perform preliminary tests on the above spherical burner heads following ACME \nISRD 1.2.3 as a guide and conferring with NASA ACME Project Scientist.  \n3) Princeton University: Deliver accepted spherical burner heads to NASA Glenn Research Center (GRC).  \n4) NASA GRC performs additional acceptance tests as necessary (microgravity).  \n5) NASA GRC deliver acceptable spherical burner heads to ZIN Technologies Inc. as government furnished \nequipment (GFE.) via C727.  \n6) Zin Technologies Inc.: Accept and serialize spherical burner heads from NASA GRC.  \n7) Zin Technologies Inc.: Perform additional fabrication on S1101MFA1218, S1101MFA1223, and \nS1101MFA1228 per ACME ISRD 1.2.4, 1.2.6, and 1.2.7. This fabrication will produce the following top level \nassemblies: S1101MFA1216: 1/4” spherical burner assembly, S1101MFA1220: 3/8” spherical burner \nassembly, S1101MFA1225: 1/2” spherical burner assembly  \n8) Zin Technologies Inc.: Deliver S1101MFA1216, S1101MFA1220, and S1101MFA1225 to NASA GRC via \na DD1149.  \n9) NASA GRC: Test and verify S1101MFA1216, S1101MFA1220, and S1101MFA1225 per ACME ISRD \n1.2.3.  \n10) NASA GRC: Deliver verified spherical burner assemblies along with verification certification documents \nto Zin Technologies Inc. as GFE via C727.  \n \n \n"
+    },
+    {
+      "locator": "page 58",
+      "text": "ACME Critical Design Review– 63 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCo -Flow Burner Status\n \nCo-Flow Burner Status \nCo-Flow Design Completion: 0% \nCo-Flow Drawing Count: 6 \nCo-Flow Drawing Completion: 0% \n \nEM Build: 0% \nFlight Build: 0% \nRequirement Compliance: 100% \n"
+    },
+    {
+      "locator": "page 59",
+      "text": "ACME Critical Design Review– 64 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nBRE Burner Status\n \nBRE Burner Status \nBRE Design Completion: 50% \nBRE Drawing Count: 20 \nBRE Drawing Completion: 0% \n \nEM Build: 0% \nFlight Build: 0% \nRequirement Compliance: 100% \n"
+    },
+    {
+      "locator": "page 60",
+      "text": "ACME Critical Design Review– 65 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nIgniter System\n \nIgniter System \n• ACME will use the same hot wire \nigniter design as MDCA.  The \nconcept has been tested and can \nignite gaseous flow \n• Haydon-Kerk G4 25000 Series \nStepper Motor moves the arm \n• Pivoting arm design clears the \nburner tip while minimizing rotation \neffects \n• Igniter tips will be swapped by the \ncrew depending on burner type and \nsize to relocate the igniter tip into \nthe ignition zone \n \n"
+    },
+    {
+      "locator": "page 61",
+      "text": "ACME Critical Design Review– 66 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nIgniter System\n \nIgniter System \nSubsystem Status: \nDesign Completion: 100% \nDrawing Count: 22 \nDrawing Completion: 100% \nEM Build: 100% \nFlight Build: 95% \nRequirement Compliance: 100% \nTest Status:  \n•\nStepper Motor Test: \n \nACME-TST-010 – EM Passed \n"
+    },
+    {
+      "locator": "page 62",
+      "text": "ACME Critical Design Review– 67 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nIgniter System Hardware\n \nIgniter System Hardware \n"
+    },
+    {
+      "locator": "page 63",
+      "text": "ACME Critical Design Review– 68 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAnalog Camera\n \nAnalog Camera \nThe Analog Camera System \nsatisfies requirements for near \nreal-time visual information \nregarding experiment setup \nand progress. \n• Hitachi KP-D20B Analog \nCamera \n• 45 degree turning mirror \n• Two banks of LEDs for \nillumination with adjustable \nintensity to minimize saturation \nof diagnostic sensors \n"
+    },
+    {
+      "locator": "page 64",
+      "text": "ACME Critical Design Review– 69 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAnalog Camera\n \nAnalog Camera \nSubsystem Status: \nDesign Completion: 100% \nDrawing Count: 18 \nDrawing Completion: 100% \nEM Build: 100% \nFlight Build: 39% \nRequirement Compliance: 100% \nTest status: \n•\nLED Board Test: \n \nACME-TST-015 – EM Passed \n"
+    },
+    {
+      "locator": "page 65",
+      "text": "ACME Critical Design Review– 70 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAnalog Camera Hardware\n \nAnalog Camera Hardware \n"
+    },
+    {
+      "locator": "page 66",
+      "text": "ACME Critical Design Review– 71 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nDiagnostics \n- Radiometers\n \nDiagnostics - Radiometers \nRadiometer Array Assembly \n• ORU (to accommodate BRE design) \n• Consists of 5: Dexter 2M thermopiles \n• High S/N ratio model \n• Center: 120° Wide Angle \n• Outers: 2mm spot FOV, spaced \n30mm/60mm either side of center \n• BRE has its own Array design \nOffset Single Radiometer \n• Offset at 60° to the chamber axis \n• Dexter S60M thermopile \n• Faster Response time \n"
+    },
+    {
+      "locator": "page 67",
+      "text": "ACME Critical Design Review– 72 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nDiagnostics \n- Radiometers\n \nDiagnostics - Radiometers \n"
+    },
+    {
+      "locator": "page 68",
+      "text": "ACME Critical Design Review– 73 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nDiagnostics \n- Radiometers\n \nDiagnostics - Radiometers \n"
+    },
+    {
+      "locator": "page 69",
+      "text": "ACME Critical Design Review– 74 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nDiagnostics \n- Radiometers\n \nDiagnostics - Radiometers \nSubsystem Status: \nStandard Design Completion: 100% \nDrawing Count: 15 \nDrawing Completion: 100% \nEM Build: 73% \nFlight Build: 20% \nRequirement Compliance: 100% \nBRE Subsystem Status \nBRE Design Completion: 25% \nDrawing Count: 8 \nDrawing Completion: 0% \nEM Build: 0% \nFlight Build: 0% \nRequirement Compliance: 100% \nTest Status:  \n•\nRadiometer Board Test: \n \nACME-TST-022 - Draft \n"
+    },
+    {
+      "locator": "page 70",
+      "text": "ACME Critical Design Review– 75 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nDiagnostics \n- Photomultipliers\n \nDiagnostics - Photomultipliers \nPhotomultiplier Array System \n• Sensors used for Radiative & Chemiluminescent \nemissions measurement requirements \n• Flame extinction detection \n• PMT Array is an ORU \n• 3 individual PMT modules \n• Hamamatsu H10722-110, \nSuper Bi-Alkali high sensitivity \n• Filters: 310 nm (OH*), \n431 nm (CH*), Neutral Density \n"
+    },
+    {
+      "locator": "page 71",
+      "text": "ACME Critical Design Review– 76 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nDiagnostics \n- Photomultipliers\n \nDiagnostics - Photomultipliers \nSubsystem Status: \nDesign Completion: 100% \nDrawing Count: 15 \nDrawing Completion: 100% \nEM Build: 73% \nFlight Build: 53% \nRequirement Compliance: 100% \n"
+    },
+    {
+      "locator": "page 72",
+      "text": "ACME Critical Design Review– 77 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nDiagnostics \n– Thin Fiber Pyrometry\n \nDiagnostics – Thin Fiber Pyrometry \nThe Fiber Array itself is an \nORU in case of damage or \nwear, and can be rotated to \nposition it to face either the \nColor Camera or the \nHiBMS-2 \nThe TFP Motor is an \nUltramotion Digit HT17 \nSeries stepper motor \nThe Array translates out of \nthe field of view when not \nneeded and can be \nadjusted to any position \nwithin the flame \n"
+    },
+    {
+      "locator": "page 73",
+      "text": "ACME Critical Design Review– 78 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nDiagnostics \n– Thin Fiber Pyrometry\n \nDiagnostics – Thin Fiber Pyrometry \nSubsystem Status: \nDesign Completion: 100% \nDrawing Count: 19 \nDrawing Completion: 89% \nEM Build: 79% \nFlight Build: 47% \nRequirement Compliance: 100% \nTest Status: \n•\nStepper Motor Test: \n \nACME-TST-010 – EM Passed \n"
+    },
+    {
+      "locator": "page 74",
+      "text": "ACME Critical Design Review– 79 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nFar Field Thermocouples\n \nFar Field Thermocouples \nA rake of four measurement \npositions, swappable for near \nand far measurements and \nremovable if experiments \nrequire \nCold Junction compensation \nboard, mounted to the \nupstream end cap, necessary \nto meet the required \nmeasurement accuracy \n Two 200mm measurement \npositions \n"
+    },
+    {
+      "locator": "page 75",
+      "text": "ACME Critical Design Review– 80 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nFar Field Thermocouples\n \nFar Field Thermocouples \nSubsystem Status: \nDesign Completion: 100% \nDrawing Count: 34 \nDrawing Completion: 100% \nEM Build: 58% \nFlight Build: 47% \nRequirement Compliance: 100% \nTest Status: \n•\nTC Cold Junction Compensation Board Test: \n \nACME-TST-014 – EM Passed \n"
+    },
+    {
+      "locator": "page 76",
+      "text": "ACME Critical Design Review– 81 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nE -Field System\n \nE-Field System \nORU Copper Mesh positionable in \ntwo locations to meet requirements \nand removed when E-Field \nexperiments are not performed \nORU High Voltage Module consists \nof 2 20A series Ultravolt power \nsources and passive electronics.  \nUnless requested, this module is not \nremoved. \n"
+    },
+    {
+      "locator": "page 77",
+      "text": "ACME Critical Design Review– 82 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nE -Field System\n \nE-Field System \nSubsystem Status: \nDesign Completion: 100% \nDrawing Count: 35 \nDrawing Completion: 83% \nEM Build: 83% \nFlight Build: 48% \nRequirement Compliance: 100% \nTest Status: \n•\nE-Field Mesh Test: \n \nACME-TST-004 – EM Passed \n \n•\nE-Field Power Supply Test: \n \nACME-TST-005 – EM Passed \n"
+    },
+    {
+      "locator": "page 78",
+      "text": "ACME Critical Design Review– 83 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nE -Field System Hardware\n \nE-Field System Hardware \n"
+    },
+    {
+      "locator": "page 79",
+      "text": "ACME Critical Design Review– 84 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nControl and Data Handling\n \nControl and Data Handling \nDriver boards controlled by the \nMotion Control Board inside \nthe AVP control Igniter and \nTFP Motors \nRelay Boards handle  \ncomponent switching, \npower distribution and data \nrouting to the Data \nAcquisition Unit \nUEI PowerDNA Cube Data \nAcquisition Unit handles all \ninputs and outputs inside \nthe CIA except for motor \ncontrol \n"
+    },
+    {
+      "locator": "page 80",
+      "text": "ACME Critical Design Review– 85 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nDesign makes it into an ORU. Contained in a single housing. \nExtending connections out to circular connectors . \n \n \n \n Cube Design Details \n"
+    },
+    {
+      "locator": "page 81",
+      "text": "ACME Critical Design Review– 86 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nControl and Data Handling\n \nControl and Data Handling \nSubsystem Status: \nDesign Completion: 100% \nDrawing Count: 54 \nDrawing Completion: 91% \nEM Build: 52% \nFlight Build: 18% \nRequirement Compliance: 100% \nTest Status: \n•\nCube Test: \n \nACME-TST-018 – EM Passed \n \n•\nBattery Vacuum Test: \n \nACME-TST-013 – EM Passed \n \n•\nDownstream Relay Board Test: \n \nACME-TST-026 – Draft \n \n•\nUpstream Relay Board Test: \n \nACME-TST-028 - Draft \n \n"
+    },
+    {
+      "locator": "page 82",
+      "text": "ACME Critical Design Review– 87 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n Cube Hardware \n"
+    },
+    {
+      "locator": "page 83",
+      "text": "ACME Critical Design Review– 88 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nChamber Connections\n \nChamber Connections \nConsists of the following \nremovable hoses and \ncables: \n \n• Three gas hoses – \nParker Stratoflex 101 \n \n• Two water cooling \nhoses –  Parker Stratoflex \n101 \n \n• Two Electrical \nConnections to provide \npower, communication \nand control for the insert \n"
+    },
+    {
+      "locator": "page 84",
+      "text": "ACME Critical Design Review– 89 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nAvionics Package Design \n \nTim Gobeli – Electrical Engineering Lead \n"
+    },
+    {
+      "locator": "page 85",
+      "text": "ACME Critical Design Review– 90 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAvionics Package Hardware\n \nAvionics Package Hardware \nAvionics Package contains the \nhardware that operates the \nexperiment and provides control \nfor the ACME Color Camera \n"
+    },
+    {
+      "locator": "page 86",
+      "text": "ACME Critical Design Review– 91 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAvionics Package Hardware\n \nAvionics Package Hardware \nORU Hard Drive contains the \nOperating System of the AVP \nand stores image data for the \nACME Data Camera \nHard Drive is a 512Gb Solid \nState drive \n \n"
+    },
+    {
+      "locator": "page 87",
+      "text": "ACME Critical Design Review– 92 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAvionics Package Hardware\n \nAvionics Package Hardware \nInternal Hardware: \n \n•\nPower Distribution / Filtering \n•\nMain Computer System \n"
+    },
+    {
+      "locator": "page 88",
+      "text": "ACME Critical Design Review– 93 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAvionics Package Hardware\n \nAvionics Package Hardware \nMain Computer System Hardware \n"
+    },
+    {
+      "locator": "page 89",
+      "text": "ACME Critical Design Review– 94 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAVP Command and Control \n94 \nACME Single Board Computer will coordinate CIR diagnostic hardware and \ncontrol ACME hardware: \n•Intel Core 2 Duo Processor 1066 MHz \n•1GB DDR3 RAM onboard \n• Ethernet Ports \n•1 port receives commands and transmits telemetry from and to the \nCIR Input Output Processor (IOP) \n•1 port sends control signals  and receives data acquisition packets \nfrom data acquisition “Cube” located in ACME Chamber Insert \nAssembly. \n• 1 port receives video from digital camera package.  \n•RS 232 Ports \n•Transmits commands to ACME Chamber insert Color camera.  \n•Controls Motion Control Boards/Stepper Motors. \n•RS 422 Port  \n• Communicates to Mass Flow Controllers – monitoring \noperation/functionality. \n \n"
+    },
+    {
+      "locator": "page 90",
+      "text": "ACME Critical Design Review– 95 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAVP Control and Data \n Management \n95 \n \n \n \n \n \n•\nTwo 4 Axis Motor Control Boards coordinate actuation of ACME motors to \nperform input/output functions: \n• Insert and retract position of igniter and Thin Film Pyrometry (TFM) \n• Digital camera zoom, iris, focus control and filter insertion \n•\nCube Analog input (differential inputs) and outputs (single ended) \ncollect experiment telemetry and provide hardware control. \n•\n Analog Outputs \n• D/A Cube +5 – 0 outputs to relay boards provide the discrete I/O \nchannels to chamber – on/off, enable/disable to MFCs, valves, \nigniters, both stepper drives, illumination, High Voltage and a \nvariable output to control MFC, High Voltage, Photomultiplier gains. \n•\n Analog Inputs \n• Collects Radiometer, Photomultiplier, Gas flow rates, Multiple \nTemperature points data, Ion Current and High Voltage Grid \nmeasurements.  \n \n \n \n"
+    },
+    {
+      "locator": "page 91",
+      "text": "ACME Critical Design Review– 96 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nData and Control Diagram \n96 \n"
+    },
+    {
+      "locator": "page 92",
+      "text": "ACME Critical Design Review– 97 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n AVP Power Distribution \nPrimary power provided by CIR from three 8 amp 28 VDC circuits from \nPIL connector. \n•Power Board \n•   DC/DC converters provide secondary power for: \n•\n+5 volt \n \n     Relay Boards  \n \n     Photo Multiplier, Hard Drive, T/C Board, \n \n     Radiometer, E-Field Interface Boards, Pressure Transducers,  \n \n        TFP Encoder, Igniter Home Switch, HV Interface Boards \n•\n+12  volt levels \n \n     Analog Camera  \n \n \n     Ultravolt High Voltage supply,  Illumination \n•\nPasses through +28 V EPCU power for Chamber Insert Motors, \nValves, Cube – provides filters for this power (isolated from ACME \nsecondary power system) \n•\n Also provides power and circuit wire protection to CIA through CIR \ninterconnection cabling. \n \n"
+    },
+    {
+      "locator": "page 93",
+      "text": "ACME Critical Design Review– 98 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n98\n Power System Block Diagram \n"
+    },
+    {
+      "locator": "page 94",
+      "text": "ACME Critical Design Review– 99 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n99 \nBus D \n \nCube  +28 V cube  \n \n \nppc5  \n \n \n \n4.0 watts  \n \n \n AI-207   \n \n \n2.2 watts max    \n \n \nAI-225   \n \n \n3.9 watts  \n                 \n AO-333  \n \n \n \n3.0 watts      \n \n \n \n         \nSubtotal =  \n \n \n13.1 watts @ 28V = .467A \n \n \nTFP Stepper  \n \n1.4A \n \n \nIgniter Stepper   \n.4 A \n \n \nIgniter  \n \n2.0 A \n \nBus D Total Current \n \n4.267 A \nBus C \n \n+28 V Solenoid valves (10) .35A  ea =  3.5 A \n \nMFC (3)  \n \n \n.28A ea    = . \n.84 A \n \nBus C Total Current \n \n \n \n4.34 A         \n \n  AVP Load Calculations \n"
+    },
+    {
+      "locator": "page 95",
+      "text": "ACME Critical Design Review– 100 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n100 \nBus B \n \n+12 V \n \n \nHV supplies (2) - .6a ea @ 12V = 1.2 A \n \n \nIllumination  \n \n \n.03 amps \n \n \nAnalog Camera  \n \n \n.220 amps \n \n \nhard drive     \n \n \n.3 amps \n \n \nCPU - 40 watts  \n \n3.33 amps \n \n \nSerial Board \n \n \n.51 \n \n \nGigE Board \n \n \n.23 \n \n \n12 volt Current total 5.81 amps ( Total available 7.5 amps) \n \n \nReflected to 28 Volt side (.79 efficiency) = 3.06 Amp \n \n \n \n \n \n \n \n \nAVP Load Calculations \n"
+    },
+    {
+      "locator": "page 96",
+      "text": "ACME Critical Design Review– 101 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nBus B (cont.) \n \n+/-5v \n \n \n \nVGA Converter Board   = .8A \n \n \nMotion Controller Board  \n= .8A \n \n \nPMT.062  a @ +/-5V (3)  = .186 A \n \n \nRadiometer  +5v .0012 (3) = .0036 \n \n \nHard drive .95 amps \n \n \nPressure Transducer \n= .01A \n \n \nTFP Encoder \n \n= .005A \n \n \nIgniter Home Switch  \n= .025A \n \n \n+/- 5 Volt Current  1.196 A \n(~Total available 7.5 amps) \n \n \nReflected to 28 Volt side (.79 efficiency) = 1.51 amps \n \n \nBus B Total Current = 4.57 Amp \n \n \n \n \n \n \n \nAVP Load Calculations \n"
+    },
+    {
+      "locator": "page 97",
+      "text": "ACME Critical Design Review– 102 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n AVP Interconnect/Bonding \n"
+    },
+    {
+      "locator": "page 98",
+      "text": "ACME Critical Design Review– 103 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAvionics Package Hardware\n \nAvionics Package Hardware \nStatus: \nDesign Completion: 100% \nDrawing Count: 92 \nDrawing Completion: 100% \nEM Build: 100% \nFlight Build: 37% \nRequirement Compliance: 100% \nTest Status: \n•\nHD Tray/SATA Cable Test: \n \nACME-TST-006 – EM Passed \n•\nPower Distribution Test: \n \nACME-TST-011 – EM Passed \n•\nMotion Control Board Interface Test: \n \nACME-TST-023 – EM Passed \n•\nVGA Interface Board Test: \n \nACME-TST-024 – EM Passed \n•\nAVP Assembly Test: \n \nACME-TST-009 – EM Passed \n•  Filter Board Test: \n \nACME-TST-016- EM Passed \n"
+    },
+    {
+      "locator": "page 99",
+      "text": "ACME Critical Design Review– 104 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nData Camera Package Design \n \nSteve Lawn – Diagnostic Engineering Lead \n"
+    },
+    {
+      "locator": "page 100",
+      "text": "ACME Critical Design Review– 105 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Data Camera Package\n \n Hardware\n \nACME Data Camera Package \n Hardware \nORU ACME Provided \nDiagnostic Package for \nColor Flame Imaging \n \nLocated outside chamber \nat CIR UML-6, providing \nforced air cooling and \npower \n \nCamera Control includes \npower distribution and \nmotion control \nColor Camera \nFilter Barrel \nCamera Control \n"
+    },
+    {
+      "locator": "page 101",
+      "text": "ACME Critical Design Review– 106 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Data Camera Package \n \nHardware\n \nACME Data Camera Package  \nHardware \nColor Camera \nsubassembly is ORU in \nthe event of pixel loss. \n \n•  Allied Vision GC-\n1380CH Camera \n \n•  Zoom Lens – Navitar \nZoom 7000 with \nmotorized Zoom, Iris and \nFocus \n"
+    },
+    {
+      "locator": "page 102",
+      "text": "ACME Critical Design Review– 107 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Data Camera Package\n \n Hardware\n \nACME Data Camera Package \n Hardware \nStatus: \nDesign Completion: 100% \nDrawing Count: 28 \nDrawing Completion: 100% \nEM Build: 93% \nFlight Build: 39% \nRequirement Compliance: 100% \nTest Status: \n•\nHall Effect Sensor Board Test: \n \nACME-TST-008 – EM Passed  \n \n•\nCamera Enclosure Test: \n \nACME-TST-019 – Draft \n \n \n \n"
+    },
+    {
+      "locator": "page 103",
+      "text": "ACME Critical Design Review– 108 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Data Camera Package\n \n Hardware\n \nACME Data Camera Package \n Hardware \nFilter Barrel Assembly includes: \n \n•\n45° Turning Mirror \n•\nFront Window: Fused Silica \n•\nMotor to rotate Filters (Note: \nDoes not have Continuous \nrotation capability) \n•\n4 Configurable filter \nlocations \n• Clear – Fused Silica \n• Schott BG-7 (Blue-\nGreen) \n• 430 nm \n• 450 nm   \n"
+    },
+    {
+      "locator": "page 104",
+      "text": "ACME Critical Design Review– 109 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Data Camera Package\n \n Hardware\n \nACME Data Camera Package \n Hardware \nFilter Barrel Status: \nDesign Completion: 100% \nDrawing Count: 38 \nDrawing Completion: 95% \nEM Build: 89% \nFlight Build: 47% \nRequirement Compliance: 100% \nTest Status: \n•\nHall Effect Sensor Board Test: \n \nACME-TST-008 – EM Passed  \n \n"
+    },
+    {
+      "locator": "page 105",
+      "text": "ACME Critical Design Review– 110 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nData Camera Package \nBonding/Grounding \n \n•\nPayload components shall use the chassis ground by tying each \npin to the payload hardware chassis at separate points to ensure \ncrew safety. (ICD Paragraph 6.1.1.2.6) \n•\nPinout Configurations for UMLs 1,2,4,6 and 8 Bay B \n \n \n \n \n \n•\nPins 25 and 26 attach directly to mounting structure along with \nsingle point ground \nPin # \nSignal \n21 \n+28V 8A \n22 \n+28V 8A Return \n25 \nStructure Ground 1  \n26 \nStructure Ground 2 \n"
+    },
+    {
+      "locator": "page 106",
+      "text": "ACME Critical Design Review– 111 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nData Camera Package \nBonding/Grounding \n"
+    },
+    {
+      "locator": "page 107",
+      "text": "ACME Critical Design Review– 112 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nData Camera Package \nInterconnect Diagram  \nCamera Control \nPower Dist. Board \nCamera Stepper Driver  \nBoard \nPower Supply Board \nMotion Control Board \nHall \nSwitch \nCamera \nMotor \nEncoder \nHall \nSwitch \nMotor \nEncoder \nHall \nSwitch \nMotor \nEncoder \nCAMERA ENCLOSURE \nFILTER ENCLOSURE \nHall \nSwitch \nMotor \nEncoder \nUML 6 \nJ76 \nJ36 \nJ34 \nJ75 \nJ33 \nCAMERA ELECTRONICS \nENCLOSURE \nGigE and RS232 \nconnection to AVP \n"
+    },
+    {
+      "locator": "page 108",
+      "text": "ACME Critical Design Review– 113 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Data Camera Package\n \n Hardware\n \nACME Data Camera Package \n Hardware \nCamera Control \nCamera Package Assembly Status: \nDesign Completion: 100% \nDrawing Count: 43 \nDrawing Completion: 79% \nEM Build: 0% \nFlight Build: 0% \nRequirement Compliance: 100% \nTest Status: \n•\nCamera Stepper Driver Board Test: \n \nACME-TST-017 – Draft \n \n•\nCamera Power Distribution Board Test: \n \nACME-TST-021 – Draft \n \n•\nCamera Control Test: \n \nACME-TST-027 - Draft \n \n \n \n"
+    },
+    {
+      "locator": "page 109",
+      "text": "ACME Critical Design Review– 114 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nSoftware \n \nMike Medved – Software Engineering Lead \n"
+    },
+    {
+      "locator": "page 110",
+      "text": "ACME Critical Design Review– 115 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Software \n•\nACME has two CSCIs: \n•\nACME Main Processor (AMP) CSCI \n•\nFlight code in AVP \n•\nAcme Ground Software (AGS) CSCI \n•\nTSC Workstation \n \n•\nBoth are Class C software \n•\n7150.2A – “Flight or ground software that is necessary for \nthe science return from a single (non-primary) instrument \n \n•\nSoftware recently reclassified as safety-critical \n"
+    },
+    {
+      "locator": "page 111",
+      "text": "ACME Critical Design Review– 116 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Software Safety \n•\nACME Software Litmus Test \n•\nACME MP – Class C, Safety Critical \n•\nSoftware Control Risk Level – 2 (Medium) \n•\nLikelihood of Occurrence – Improbable \n•\nSoftware Prioritization Risk Level - 5 \nSoftware Control \nRisk Levels \nLikelihood of Occurrence \n  \nImprobable  \nUnlikely Possible \nProbable \nLikely \nSW 1 (High) \n4 \n3 \n2 \n1 \n1 \nSW 2 (Moderate) \n5 \n4 \n3 \n2 \n1 \nSW 3 (Medium) \n6 \n5 \n4 \n3 \n2 \nSW 4 (Marginal) \n7 \n6 \n5 \n4 \n3 \nSW 5 (Low) \n7 \n7 \n6 \n5 \n4 \n"
+    },
+    {
+      "locator": "page 112",
+      "text": "ACME Critical Design Review– 117 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Software Safety \n•\nFrom 8719.13C: \n•\n“In general, it is expected that for Low Software \nPrioritization Risks (7-5s and Green in chart above) the \nmain requirements for both acquirer and provider would \nbe to perform the Software Safety Criticality Assessment,  \nkeep a record of it, and revisit the SSCA upon any \nchanges to the software functionality or design to assure \nthe software maintains its low risk status.” \n"
+    },
+    {
+      "locator": "page 113",
+      "text": "ACME Critical Design Review– 118 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSoftware Safety \nThis is applicable to Class C software with a safety risk index of 5, 6 or 7. \n•\nZIN writing waivers to the following requirements: \n•\n for detailed design (SWE-058) \n•\n Coding standards (SEW-061) \n•\n traceability (SSS-011) \n•\n software maintenance plan (SWE-105) \n•\n software user manual (SWE-115) \n•\nVerifying S/W hazards controlled (SSS-055) \n•\nVerification of S/W safety requirements (SSS-059) \n•\nZIN writing deviations to: \n•\n change traceability from detailed design to architectural \ndesign(SWE-049, SWE-064) \n•\nCreate software safety plan \n•\nAddition of acquirer SMA to document workflow for software related \ndocuments \n•\nUpdates to current documentation \n•\nAdditional work with PSRP software panel \n \n \n"
+    },
+    {
+      "locator": "page 114",
+      "text": "ACME Critical Design Review– 119 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSoftware Documentation \n•\n7150.2A Software Documentation \n•\nSoftware Management Plan (SMP) (ACME-PLN-004) \n•\nSoftware Requirement Specification (SRS)  \n•\nAll requirements in Section 4 of ERD \n•\nSoftware Design Document (SDD) (ACME-DOC-005) \n•\nSoftware Assurance Plan (SQAP)  (ACME-PLN-005) \n•\nInterface Design Description (IDD) (ACME-DOC-010) \n•\nSoftware Test Plan (STP) (ACME-PLN-009) \n•\nSoftware Test Procedures \n \n•\nSome documents are covered at the contract level \n•\nSpaceDOC CM Plan (P30016) \n•\nSpaceDOC Risk Management Plan (P30015) \n \n"
+    },
+    {
+      "locator": "page 115",
+      "text": "ACME Critical Design Review– 120 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSoftware Development \n• Development occurs according to a basic waterfall \n• In step with the hardware development & NASA review \ncycle \n• Software development tracked at the project level by ZIN \nPM \n \n• Requirements documented in “shall” statements in ERD \n \n• Design captured in Doxygen  \n \n• Requirements will be verified and validated \n \n"
+    },
+    {
+      "locator": "page 116",
+      "text": "ACME Critical Design Review– 121 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSystem Context \n"
+    },
+    {
+      "locator": "page 117",
+      "text": "ACME Critical Design Review– 122 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAMP Capabilities \n• Communication with CIR IOP \n• Send/Recv commands and telemetry \n• Send imagery and data files \n• Activate IPSUs \n \n• Color Camera \n• Send commands and change parameters \n• Capture and store images \n \n• Ops Camera \n• Send configuration commands (gain) \n \n"
+    },
+    {
+      "locator": "page 118",
+      "text": "ACME Critical Design Review– 123 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAMP Capabilities \n• Communicate with PowerDNA Cube \n• Handle Analog Input and Output to Devices \n \n• Communicate with PMD motion control boards \n• Configure different axis for movement \n• Command motion \n \n• Handle experiment execution \n• Sequences of commands \n• Implemented via a scripting engine \n \n"
+    },
+    {
+      "locator": "page 119",
+      "text": "ACME Critical Design Review– 124 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nAGS Capabilities \n•\nRuns on a TSC workstation (Windows) \n•\nUses the TReK network to communicate \n•\nDevelopment is delayed in comparison to AMP CSCI \n \n•\nCapabilities: \n•\nSend single commands \n•\nSend sequences of commands \n•\nRequest and display telemetry \n•\nDisplay health and status \n \n \n"
+    },
+    {
+      "locator": "page 120",
+      "text": "ACME Critical Design Review– 125 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCommon Platform \n•\nProjects all have similar needs: \n•\nOperating system, libraries \n•\nCommand and Telemetry Handling, Communications \n•\nLogging, Serial Port Communication \n•\nHardware control, experiment sequencing \n•\nDevelopment environment \n•\nThe Common Software Platform provides a standard, easy to \nuse, free platform for NASA projects \n•\nRelies heavily on free and open source software (FOSS) \n•\nProvides a directly reusable common software architecture \n"
+    },
+    {
+      "locator": "page 121",
+      "text": "ACME Critical Design Review– 126 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCommon Platform \n"
+    },
+    {
+      "locator": "page 122",
+      "text": "ACME Critical Design Review– 127 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nDevelopment Environment \n•\nSource control – Subversion \n•\nOperating System – Linux (Ubuntu) \n•\nGNU build tools (compiler, linker, make, etc) \n•\nNetbeans IDE \n•\nQt Designer for GUIs \n•\nAll free, stable, and open source \n•\nNot subject to budget fluctuations \n•\nUpgradeable \n•\nMaintained \n"
+    },
+    {
+      "locator": "page 123",
+      "text": "ACME Critical Design Review– 128 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nDevelopment Environment \n"
+    },
+    {
+      "locator": "page 124",
+      "text": "ACME Critical Design Review– 129 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nLinux OS \n•\nLinux – Operating System \n•\nHighly successful, stable OS \n•\nHighly configurable \n•\nMany distributions \n•\nLots of free libraries and tools \n•\nEasy to upgrade \n•\nLubuntu – A lighter Ubuntu distribution with LXDE desktop \n"
+    },
+    {
+      "locator": "page 125",
+      "text": "ACME Critical Design Review– 130 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nQt Framework \n•\nQt is a cross-platform application and UI framework  \n•\nCross-platform means programs built on Qt can be compiled on \nother OSes with little to no work \n•\nLinux, Windows, QNX, VXWorks, Android, Mac, iOS \n•\n“Write once, build everywhere” \n•\nProvides many capabilities: \n•\nThreading and Concurrency \n•\nNetworking and Sockets \n•\nTimers \n•\nString manipulation, File Systems, etc \n•\nEvent driven architecture \n•\nSignals and slots \n•\nHundreds of 3rd party Qt libraries \n"
+    },
+    {
+      "locator": "page 126",
+      "text": "ACME Critical Design Review– 131 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCommon Classes \n•\nCommon C++ Software – developed to share between projects \n•\nAll directly useable without modification  \n•\nVery low coupling due to Qt signals/slots \n•\nHardware interface classes \n•\nAVT GigE Camera \n•\nPowerDNA Cube \n•\nPMD Motion Control \n•\nSoftware Architecture \n•\nAvionics controller, System Controller, hardware interface \n•\nCommand and Telemetry message \nserialization/deserialization \n•\nLogging \n•\nGUI elements \n \n \n"
+    },
+    {
+      "locator": "page 127",
+      "text": "ACME Critical Design Review– 132 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCommon Classes \n•\nUsed on multiple projects \n•\nACME, PBRE, OASIS, IPSU-G, ACE \n•\nMore testers and maintainers means fewer bugs \n•\nCode review benefits all \n•\nAround 5200 SLOC \n \n \n"
+    },
+    {
+      "locator": "page 128",
+      "text": "ACME Critical Design Review– 133 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSoftware Status \n•\nAMP CSCI \n•\nMDCA was 10 kSLOC \n•\nEstimated ACME size 4-5 kSLOC \n•\nCurrent 2.5 kSLOC \n \n•\nAGS CSCI \n•\nMDCA was 20 kSLOC \n•\nEstimated ACME size 3 kSLOC \n•\nCurrently 1 kSLOC \n \n \n"
+    },
+    {
+      "locator": "page 129",
+      "text": "ACME Critical Design Review– 134 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSoftware Testing \n•\nUnit Level  \n•\nInformal, use Qt unit test framework as needed \n•\nEngineering Model \n•\nBlack box, send commands and ensure proper operation \n•\nIntegrated \n•\nWith IOP and IPSU simulators \n•\nGIU \n•\nVerify software requirements as part of system verifications as \nmuch as possible \n"
+    },
+    {
+      "locator": "page 130",
+      "text": "ACME Critical Design Review– 135 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nStructural Analysis \n \nChris Werner – Structural Analyst \n"
+    },
+    {
+      "locator": "page 131",
+      "text": "ACME Critical Design Review– 136 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Requirements \nReq. # \nRequirement \nSSP-57000  \n3.1.1.3 B \nLoad Requirements \nDesigned to withstand the on-orbit loads of 0.2 \nGs acting in any direction. \nSSP 50835 \n3.1.1.2.1.5.B \nPressure Loading \nMaintain positive margins of safety when \nexposed to a depressurization rate of 13.3 \nkPa/second (116 pounds per square inch \n(psi)/minute) as shown in Table E.2.7-1.  \nSSP-57000  \n3.9.1.1 \nPressure \nBe safe when exposed to the pressure \ntransitions between 0 to 104.8 kPa (0 to 15.2 \npsia). \nSSP 50835 \n3.9.1.1.A \nPressure \nOperate properly after exposure to launch and \nground handling pressures ranging from 60.0 \nto 129.3 kPa (8.7 to 18.8 psia). \n GLPR \n7120.5.30  \nSection 3.4.4 \nMargins of Safety \nAll structural elements critical for safety and \nmission assurance shall be shown by analysis \nto have positive margins of safety or, in the \ncase of containment devices, be structurally \nadequate against penetration.  \nReq. # \nRequirement \nGLPR \n7120.5.30  \nSection 3.4.6 \nPressurized Systems \nPressurized systems to be flown on unmanned \nvehicles shall meet the requirements of \nANSI/AIAA S-080, Space Systems-Metallic \nPressure Vessels, Pressurized Structures, and \nPressure Components, and ANSI/AIAA S-081, \nSpace Systems-Composite Overwrapped \nPressure Vessels (COPV). \nHazard Report  \nSTD-ACME-\n17.c.1 \nVented Container Analysis to demonstrate the \nvented containers provide an internal effective \nvent area ratio that results in a differential \npressure loading of no greater than 0.01 psid. \nHazard Report  \nACME-2  \n1.1.1 \nPressure system hardware shall be designed \nto the following factors of safety (FS): \nLines/Fittings     FS = 4 x MDP.  Other system \ncomponents FS=2.5xMDP. Hardware shall be \ndesigned to withstand thermal and vibratory \nloads associated with both launch/landing and \nduring on-orbit operation.  \nNote: requirements are paraphrased \n"
+    },
+    {
+      "locator": "page 132",
+      "text": "ACME Critical Design Review– 137 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis – Load \nRequirements \n• On-Orbit Operation Pressures \n• Fuel system pressure \n• Water system pressure \n \n• Crew-induced loading \n• CIA Handles \n• Color Camera Package \n• Avionics Package \n \n• Launch loads \n• Quasi-static inertial loads \n \nAll pressurized systems will be \nproof tested to 1.5 x MDP and \nleak tested to 1.0 x MDP \n \nDetails of all structural analysis \ncan be found in ACME-ANA-002 \n"
+    },
+    {
+      "locator": "page 133",
+      "text": "ACME Critical Design Review– 138 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis – Safety \nFactors \n• Safety Factors for Safety Critical Components are Defined in Section \n5.1.2 and 5.1.3 of SSP-52005 \n• Non pressurized metallic structures and fasteners will use 1.25 for \nyield and 2 for ultimate for margins of safety calculations \n• Pressurized components will have a safety factor greater than 2.5 to \nthe ultimate \n• Pressurized Lines and Fittings will have a safety factor greater than \n4.0 \n \n• Calculated using NSTS-08307 Pre-loaded Bolt Criteria and NASA TM \n106943 \n• Torque based on MSFC-STD-486B \n• Fitting Factor of 1.15 is applied to all Margins of Safety Calculations \n• Joint separation of 1.2 is used for structural joints (1.4 for pressurized \napplications) \n \nAll Safety Critical Fasteners: \n"
+    },
+    {
+      "locator": "page 134",
+      "text": "ACME Critical Design Review– 139 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis – Analysis \nMethods \n• Structures are analyzed for stress using a combination of \nhand calculations  and Finite Element Analysis (FEA) \n• FEA pre and post processing is performed using Femap \nVersion 10.1 / 10.3 \n• Analysis models are run using NX NASTRAN 6.0 \n• The maximum von Mises stress is used for safety factor \nand margin calculations unless maximum principle stress \nis larger \n• Metallic Material Properties are obtained from MMPDS-06 \n• Margins of Safety are calculated below: \n \n1\n*\n\n\ny\ny\ny\nFS\nMS\n\n\n1\n*\n\n\nu\nu\nu\nFS\nMS\n\n\n = component stress \nMSu = margin of safety to \nultimate \nu = material ultimate strength \nFSu = ultimate safety factor  \n = component stress \nMSy = margin of safety to \nyield \ny = material yield strength \nFSy = yield safety factor \n"
+    },
+    {
+      "locator": "page 135",
+      "text": "ACME Critical Design Review– 140 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis - Pressure \nACME has two  custom pressurized components \nexposed to an MDP of 135psia \nInput Manifold \nSwitching Manifold \nBoth are made of 300 Series Stainless Steel  \nFtu = 75,000 psi \n"
+    },
+    {
+      "locator": "page 136",
+      "text": "ACME Critical Design Review– 141 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis - Pressure \nBoth components are analyzed for stress using a \nfinite element model  \nInput Manifold \nSwitching Manifold \nMax principle stress = 3,472 psi \nSafety Factor = 21 \nMax principle stress = 496 psi \nSafety Factor = 151 \n"
+    },
+    {
+      "locator": "page 137",
+      "text": "ACME Critical Design Review– 142 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis – Crew \nLoading \nACME CIA Insert Handles can be loaded up to 50 lbf \nMade of 7075 T7351 \nAluminum  \nMax von Mises stress = 28,992 psi \nMsu = 0.13 \nX Direction \nZ Direction \n"
+    },
+    {
+      "locator": "page 138",
+      "text": "ACME Critical Design Review– 143 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis – Crew \nLoading \nACME Color Camera Package can be loaded up to 125 lbf \nZ Direction \nX Direction \n• Structural components created and \nassembled in FEA for X and Z direction kick \nloads \n• Equivalent pressure load of 125 lbf applied at \nthe top to generate the largest worst case \nmoment \n• Model constrained at the bottom to represent \nit’s connection to the CIR optics bench \n• Crew Loading will envelope loads due to \nlaunch \n"
+    },
+    {
+      "locator": "page 139",
+      "text": "ACME Critical Design Review– 144 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis – Crew \nLoading \nX Direction Kick Load \nName \nPart Number \nMax Stress \nMargin of Safety \nLoad Case \nCamera Enclosure Cover \nS1101MFD2212 \n19823 \n0.06 \nZ Direction \nCamera Mounting Plate \nS1101MFD2202 \n8876 \n1.37 \nX Direction \nCamera Enclosure End Panel \nS1101MFD2204 \n16050 \n0.31 \nZ Direction \nFilter Enclosure Upper Housing \nS1101MFD2304 \n4140 \n4.07 \nZ Direction \nFilter Enclosure Lower Housing \nS1101MFD2302 \n5725 \n2.67 \nZ Direction \nCamera Control Side \nS1101MFD2108 \n10161 \n1.07 \nZ Direction \nCamera Control Cover \nS1101MFD2118 \n14043 \n1.60 \nZ Direction \nCamera Control Board Mount \nS1101MFD2104 \n2591 \n7.10 \nZ Direction \nCamera Control Base \nS1101MFD2102 \n17875 \n0.17 \nX Direction \nZ Direction Kick Load \n"
+    },
+    {
+      "locator": "page 140",
+      "text": "ACME Critical Design Review– 145 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis – Launch  \nThe components below are explicitly modeled in a finite element model of the \nCIA Structure and analyzed for launch loading. \n1)\nE Field Power Supply \n2)\nData Acquisition Cube \n3)\nCamera Assembly \n4)\nTFP Motor Assembly \n5)\nComponent Mount Bracket \n(2x) \n6)\nFrame Rail (2x) \n7)\nSwitching Manifold \n8)\nBulkhead (2x) \n9)\nInput Manifold \n \n2 \n3 \n4 \n5 \n6 \n7 \n8 \n1 \n9 \n"
+    },
+    {
+      "locator": "page 141",
+      "text": "ACME Critical Design Review– 146 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis – Launch  \nCIA Structure modeled using Solid and Plate elements with Rigid elements \nconnecting the various components.  Mass elements were used to adjust \nweights and CG of components.  If the CG was relatively close to the \ncomponent, then the material of that component was adjusted for the weight.   \n \nBallast Weight for Correct Mass and CG \nfrom Pro-E Model \n"
+    },
+    {
+      "locator": "page 142",
+      "text": "ACME Critical Design Review– 147 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis – Launch  \nInertial Loads applied to CIA in the + and – directions for each axis \n+X Direction Loading \n-X Direction Loading \nMax Stress = 9,380 psi \nMSu =  1.23 \nMSy = 1.98 \nMax Stress = 9,376 psi \nMSu =  1.23 \nMSy = 1.98 \n"
+    },
+    {
+      "locator": "page 143",
+      "text": "ACME Critical Design Review– 148 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis – Launch  \nInertial Loads applied to CIA in the + and – directions for each axis \n+Y Direction Loading \n-Y Direction Loading \nMax Stress = 9,833 psi \nMSu =  1.13 \nMSy = 1.84 \nMax Stress = 9,839 psi \nMSu =  1.13 \nMSy = 1.84 \n"
+    },
+    {
+      "locator": "page 144",
+      "text": "ACME Critical Design Review– 149 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis – Launch  \nInertial Loads applied to CIA in the + and – directions for each axis \n+Z Direction Loading \n-Z Direction Loading \nMax Stress = 16,580 psi \nMSu =  0.26 \nMSy = 0.68 \nMax Stress = 10,184 psi \nMSu =  1.06 \nMSy = 1.74 \n"
+    },
+    {
+      "locator": "page 145",
+      "text": "ACME Critical Design Review– 150 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nStructural Analysis – Open \nWork  \n• Avionics Package – Crew Loading \n• Similar overall dimensions to MDCA \n• Stiffer Structure should produce positive margins of safety \n \n \n \n \n"
+    },
+    {
+      "locator": "page 146",
+      "text": "ACME Critical Design Review– 151 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nDepress / Repress \n• Unless part of a pressurized system, all volumes are designed to \nadequately vent due to station / vehicle depressurization \n• Vented Containers will be verified by the stored energy method (SDP \nSTD-ACME-1 17.a) where the volume has a stored energy < 3,063 ft-\nlbs.  Volumes with a stored energy > 3,063 ft-lbs will have a depress \nrate calculated. \n \n• Depress rates are calculated* for each volume to show that the \nvolume’s depress rate is greater than maximum station / vehicle \ndepress rate so no pressure load is generated \n• Maximum depress rate is defined in section 3.1.1.2.1.5 part B of SSP-\n50835 Rev C as 13.3kPa/s (1.93psi/sec) \n \n \n \n*AIAA Journal, October 1986, Vol. 24, No. 10, pg 1709-1711, “Formulas for Venting or Charging \nGas from a Single Volume”, H.T. Yang \n"
+    },
+    {
+      "locator": "page 147",
+      "text": "ACME Critical Design Review– 152 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nRotating Equipment / Fracture \nControl \n• Rotating Machinery consists of linear and rotating \nmotors \n• All Rotating Machinery is shown to have low kinetic \nenergy significantly less than the fracture critical limit of \n14,240 ft-lbs \n \n \n• Fracture Control is implemented on all safety critical \nhardware using the requirements defined in NASA-\nSTD-5019 \n• All pressurized components will be non-fracture critical \nusing the disposition of Non Hazardous Leak Before \nBurst NHLBB \n• All safety critical fasteners will be non-fracture critical \nusing the failsafe disposition. \n \n \n"
+    },
+    {
+      "locator": "page 148",
+      "text": "ACME Critical Design Review– 153 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nThermal Analysis \n \nBill Dial – Thermal Analyst \n"
+    },
+    {
+      "locator": "page 149",
+      "text": "ACME Critical Design Review– 154 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Thermal Analysis \n•   Safety Requirements  - Touch Temperature less than 45oC \n•   SSP 51700, 220, 2d.  \n•   FCF-IDD-CIR-ACME, 14.2.0 \n•   Facility Requirements  \n• FCF-IDD-CIR-ACME, 5.1.1.3.1   The UML/PIL cooling is limited \nto a flow rate of 1.4m3/min.  \n• FCF-IDD-CIR-ACME, 5.1.1.3.2   The UML/PIL air inlet has a \ntemperature range of 20-30oC.  \n• FCF-IDD-CIR-ACME, 5.1.1.3.3   The UML/PIL mounted \ncomponent shall have a flow impedance that  yields 100±12Pa. \n• FCF-IDD-CIR-ACME, 5.6.4   The cooling water return shall be \nless than 49oC \n• Mission Success \n•  GLPR 7120.5.30, 3.7.4.   \nThermal Analysis Requirements \nThermal Analysis Report:  ACME-ANA-003 (DRAFT) \n"
+    },
+    {
+      "locator": "page 150",
+      "text": "ACME Critical Design Review– 155 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Thermal Analysis \n• There are three primary packages analyzed \n•   Insert Assembly, S1101MFA1000 \n•   Camera Package, S1101MFA2000 \n•    Avionics Package, S1101MFA3000 \n \n•   COTS Parts - PC104 Stack & Other COTS PCBs   \n• Operational temperatures are based on ambient environment in \n1g.  Verify the forced air is equal to or greater than free \nconvection.   \n• Custom Electronic Components \n• Calculate the specific temperatures on these components to \nverify operating conditions are acceptable. \n• Thermal Uncertainty Margin \n• Use SMC-TR-06-11 (MIL-STD-1540) as a guideline; thermal \nmargin on components is 11oC \nThermal Analysis Approach \n"
+    },
+    {
+      "locator": "page 151",
+      "text": "ACME Critical Design Review– 156 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Thermal Analysis \nInsert Assembly, S1101MFA1000 \nPro-E Model \nThermal Model \nPrimary Heat Dissipaters:   \nSolenoid Valves (Qty. 10), Mass Flow Controllers (MFC), DNC Cube, \nIgniter Converter, Upstream and Downstream PCBs. \n \n \n"
+    },
+    {
+      "locator": "page 152",
+      "text": "ACME Critical Design Review– 157 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Thermal Analysis \nInsert Assembly, Heat Loads Summary \n"
+    },
+    {
+      "locator": "page 153",
+      "text": "ACME Critical Design Review– 158 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Thermal Analysis \nInsert Assembly, Heat Flow Diagram \nCooling Water: FCF-ICD-CIR-ACME, 5.6.2 & 5.6.3 \nMass flow rate = 25lbs/hr,  Inlet water temperature = 16.0-18.3oC \n"
+    },
+    {
+      "locator": "page 154",
+      "text": "ACME Critical Design Review– 159 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Thermal Analysis \nCamera Package, S1101MFA2000 \nPro-E Model \nThermal Model \n• Heat Dissipation Path: Air \ncooling from CIR (UML) \n• Total Heat Load: 14.61W \n• Cooling Air inlet \ntemperature = 30oC \n• Pressure Drop Set to \n100Pa \n \n"
+    },
+    {
+      "locator": "page 155",
+      "text": "ACME Critical Design Review– 160 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Thermal Analysis \nCamera Package, Heat Load \n"
+    },
+    {
+      "locator": "page 156",
+      "text": "ACME Critical Design Review– 161 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Thermal Analysis \nAvionic Package, S1101MFA3000 \nPro-E Model \nThermal Model \nHeat Dissipation Path: Air cooling from CIR (PIL), Tinlet=30oC, DP=100Pa \nTotal Heat Load: 92.25W \nPrimary Heat Dissipaters: PC104 Stack & DC-DC Converters/Filter \nSide and Front \nFrame/Covers \nRemoved  \n \nDC-DC Converter \nBehind PCB \n"
+    },
+    {
+      "locator": "page 157",
+      "text": "ACME Critical Design Review– 162 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Thermal Analysis \nAvionic Package, Heat Loads \n"
+    },
+    {
+      "locator": "page 158",
+      "text": "ACME Critical Design Review– 163 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Thermal Analysis \nTouch Temperature \n• Insert Assembly is not applicable to crew loading. \nAvionic Package: 42.0oC \nAir Flow Rate: 1.05 m3/min \nCamera Package: 35.5oC \nAir Flow Rate: 0.14m3/min \n"
+    },
+    {
+      "locator": "page 159",
+      "text": "ACME Critical Design Review– 164 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n•   Compare Air Velocities:  Forced versus Free Convection \n• Using Grashof number and Reynolds number ratio to estimate    \nequivalent air velocities. Velocity = 0.33m/sec for PCBs \n•   Assess Air Flow in Camera Package \n• Velocity assessed at 0.66m/sec  \n• All COTS components have case temperature with more than \n11oC margin on the PCBs maximum ambient temperature. \n•   Assess Air Flow in Avionic Package \n• Velocity assessed at 0.66m/sec  \n• All COTS components have velocities greater than 0.66m/sec \n \n•  DNA CUBE PCBs \n• No air flow  \n• CUBE PCBs sub-modeled and tuned to test data. \n• Minimum thermal margin: 21.0oC on the Al-225 board. \nACME Thermal Analysis \nCOTS PCBs – Thermal Results \n"
+    },
+    {
+      "locator": "page 160",
+      "text": "ACME Critical Design Review– 165 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n• Two COTS components \nfail to meet the 11oC \nmargin guideline from \nSMC-TR-06-11 \n• Camera: -1.1oC \n• MFCs: 7.1oC \n \n• All other COTS \ncomponents have margins \ngreater than 11oC. \n \nACME Thermal Analysis \nOther COTS Components – Thermal Results \nMFCs \nCamera \nInsert Assembly \n• Possible Mitigation \n• Increase water flow rate \n• Refine thermal loads \n• Revise thermal allowable \nbased on ambient \nconditions in 1g.  \n \n"
+    },
+    {
+      "locator": "page 161",
+      "text": "ACME Critical Design Review– 166 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n•   All Custom Components have large thermal margins \n•  Insert Assembly \n•  Upstream Relay PCBs: 28.2oC \n•  Downstream Relay PCBs: 44.8oC \n• Camera Package \n• Camera Stepper Driver PCB: 64.4oC \n• Camera Control Power Distribution PCB: 61.2oC \n• Avionic Package \n• Power Distribution Assembly: 56.3oC \nACME Thermal Analysis \nCustom Components – Thermal Results \n"
+    },
+    {
+      "locator": "page 162",
+      "text": "ACME Critical Design Review– 167 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n• All other components with the exception of two have more than \n11oC thermal margin. \n• Exceptions: \n• Insert Assembly, Camera \n• Insert Assembly, Mass Flow Controller (MFCs) \n• The ACME hardware meets the touch temperature requirement of \nSSP 51700. \n• The air flow rates through the camera package and the avionic \npackage were less than 1.4m3/min with a 100Pa pressure drop \nacross the package. \nACME Thermal Analysis \nConclusion \nActions \n• Addition work is needed to resolve the thermal margins on the mass \nflow controllers (MFCs) and the Camera in the Insert Assembly. \n• Follow the mitigation approached defined earlier. \n \n"
+    },
+    {
+      "locator": "page 163",
+      "text": "ACME Critical Design Review– 168 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nCIR Capabilities Used by ACME \n \nChris Rogers – CIR/ACME Integration Lead \n"
+    },
+    {
+      "locator": "page 164",
+      "text": "ACME Critical Design Review– 169 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCombustion \nIntegrated Rack \nGoal \n Use the space environment as a laboratory for strategic \nresearch & technology experiments in physics, chemistry \nand biology to support Agency goals & the Nation’s vision \nnew for space exploration. \n \nObjectives \n• Develop the Combustion Integrated Rack (CIR) and the \nFluids Integrated Rack (FIR) to support physical and \nbiological research on board the ISS. \n• Develop the Ground Infrastructure, Integration, \nOperations, Logistics & Maintenance plans required for \nFCF sustaining engineering and operations. \n• CIR provides the only large environmental chamber (100 \nliters) on ISS in which the space environment, Lunar, Mars \nor other desired environment may be simulated (i.e., \npressure, temperature, gaseous atmospheres, \nparticulates, etc.) for long duration, on-orbit investigations \nand technology validations. \n• CIR provides easily reconfigurable diagnostics, \ncustomizable software, passive rack-level vibration \nisolation, and other subsystems that will support a wide \nrange of investigations \nCombustion Integrated Rack (CIR) \nOverview \n"
+    },
+    {
+      "locator": "page 165",
+      "text": "ACME Critical Design Review– 170 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCombustion Integrated Rack (CIR) \nOverview \nFuel/Oxidizer \nManagement \nAssembly (FOMA) \n• Gas Distribution \n• Exhaust Vent \nOptics \nBench \nCombustion \nChamber \nRack Door \n \nInternational \nStandard \nPayload Rack \n(ISPR) \nSAMS \nRTS \nPassive Rack \nIsolation \nSubsystem \n(PaRIS) \nEnvironmental Control (ECS) \n• Air Thermal Control \n• Fire Detection & Suppression \n• Water Thermal Control \n• Gas Interfaces (GN2, VES) \nInput/Output \nProcessor \n(IOP) \nElectrical Power \nControl Unit (EPCU) \nFOMA \nControl \nUnit \n(FCU) \nPI \nAvionics \nScience Diagnostics \n• Illumination Package \n• Low Light Level (2 Units) \n• High Bit Depth Multi-Spectral \n• High Frame Rate/High Resolution \nOR \nExperiment Specific Diagnostics \nLaptop \nComputer \nOptics \nBench Slides \nFCF Common Element \nCIR Element \nPI Hardware Element \n \nImage \nProcessing \nand \nStorage \nACME CIA \n"
+    },
+    {
+      "locator": "page 166",
+      "text": "ACME Critical Design Review– 171 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPayload Specific Hardware \n•\nUnique hardware components \n•\nSpecific Diagnostics \n•\nUnique PI fuels \nACME Chamber Insert \n•\nPlatform for exchangeable burner: \n–\nGas Delivery \n–\nRetracting ignitor \n–\nElectric field generator \n•\nInfrastructure that uniquely meets the \nneeds of PI experiments \n•\nUnique science requirements \nFCF Combustion Integrated Rack \n•\nPower Supply \n•\nAvionics/Control \n•\nStructural Support & Power \n•\nCommon Diagnostics and Illumination \n•\nEnvironmental Control \n•\nData Processing/Distribution \n•\nFluids Control/Distribution \n•\nCombustion Containment \nThe Combustion Integrated Rack (CIR) includes support subsystems and \ncombustion diagnostics commonly needed for combustion investigations and \nsupplements the laboratory with unique science hardware developed for each \nPrincipal Investigator (PI).  \nPayload specific and multi-user hardware \ncustomizes the CIR in a unique laboratory \nconfiguration to perform research effectively. \nAdvanced Combustion via \nMicrogravity Experiments \nInsert Assembly \nCIR Sub-rack Payload \n Relationship \n"
+    },
+    {
+      "locator": "page 167",
+      "text": "ACME Critical Design Review– 172 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCIR Combustion Chamber \nCombustion Chamber Power and Data Interface \nincludes: \n•\nJCTC1– Provides 40 pairs of #22 gauge wire \nbetween IRR and PI Avionics connector through \nthe Optics Bench \n•\nJCTC2 – Provides 27 pairs of #20 wire pairs \nbetween IRR and PI Avionics connector through \nthe Optics Bench \n•\nJCTC3– Provides 2 Fiber Optic, single-mode 9.0 \ncore/125 Cladding, 2 RG-179 coaxial cables and 5 \npairs of #16 gauge wires to the PI Avionics \nlocation through the Optics Bench. \n•\nJCTC4 – Provides 49 pairs of #22 gauge wire \npairs between IRR and PI Avionics connector \nthrough the Optics Bench \nCombustion Chamber General Info: \n•\nPIs may operate from .02 to 3.0 ATM \n•\nCIR Combustion Chamber rated 0 to 9 \nATM \n•\nCIA useable: 396 mm (W) x 600 mm (L) \n•\nInternal free volume: 105 liters \n•\nMaximum Oxygen concentration of 30% \n•\n6 Fluid Connections include (High Pressure \nGas (1) GC sample port (1), SS Coolant inlet \nand outlet (2), Fuel (1) and Static Mixer (1). \n"
+    },
+    {
+      "locator": "page 168",
+      "text": "ACME Critical Design Review– 173 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCombustion Chamber Atmosphere \nMixing \nThe oxidant MFC can provide up to 30 slpm (based on nitrogen (N2)) \nflow. The oxygen gas concentration is a function of the gas bottle size, \nas listed below.  \n•\n2.25 liter bottle provides a maximum of 50% O2, balance diluent at \n2000 psia. \n•\n3.8 liter bottle provides a maximum of 30% O2, balance diluent at \n2000 psia. \n  \nA Nitrogen manifold can supply inert gas types such as N2, He, and \nCO2, as well as oxidant blends below 30% oxygen, to the chamber. In \naddition, this manifold provides the interface for the utilization of the ISS \nsupplied N2. This manifold also can directly route the pressurized gas to \nthe chamber, by-passing the regulator. The N2 MFC can provide up to \n30 slpm (based on nitrogen (N2)) flow. \n"
+    },
+    {
+      "locator": "page 169",
+      "text": "ACME Critical Design Review– 174 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCIR Provided Equipment \nFCF/CIR diagnostics, equipment and resources to be provided to \nACME are documented in the CIR to ACME Integration Agreement \n(FCF-IA-MV-ACME) \n*The CIR N2 Bypass Hose and the CIR N2 Bypass Pressure Regulator \nwill be funded by ACME but procured, tested and verified by CIR per \nline item F in Section 3.2.3 \n0 \n"
+    },
+    {
+      "locator": "page 170",
+      "text": "ACME Critical Design Review– 175 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n•\nDesign based on re-packaged \ncommercial Agilent Micro GC \ninstrument \n•\nUn-modified vendor supplied \nsoftware for analysis \n•\n2 PCB controllers \n•\n3 detector columns  \n•\nColumn A – Molecular \nSieve with Backflush \n•\nColumn B – PoraPlot Q \n•\nColumn C – OV1701 \n•\nStructural mounting, air-cooling, \npower and data interfaces \nthrough Optics Bench \n•\nSample inlet and vent I/F’s \nthrough FOMA \n \n \nCIR GCIP \n"
+    },
+    {
+      "locator": "page 171",
+      "text": "ACME Critical Design Review– 176 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSmall FOMA Gas Bottle \n•\nNecessary as a control to hazard FCF-ACME-05, hazard control \n1.1 \n•\nBased on analysis driven by hazard control the bottle properties \nare: \n•\n150cc  \n•\n1815 psia \n•\n1.5 x MDP \n•\nDOT 3E \n•\noxygen mixtures only \n•\nBased on current FOMA \n \nbottle design \n \n"
+    },
+    {
+      "locator": "page 172",
+      "text": "ACME Critical Design Review– 177 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCIR Diagnostics –  \nOptics Bench/UML \nUML  - Universal Mounting Location \n• 8 locations on rear of CIR Optics Bench \n• Correspond to Chamber Windows \n \n \n \n \n \nUML provides interfaces for: \n• Mechanical w/ Air Cooling \n• 28 VDC power \n• Ethernet (cmd, control, h&s) \n• Sync Bus (± 1 Hz accuracy) \n• Analog Video (RS170/NTSC) \n \n•PI Mounting Location – Additional \nunique UML for PI Avionics Package \nIPSU \nIPSU \nIPSU \nFCU \nPI \nAvionics \nChamber \nCamera  \nPackages \n"
+    },
+    {
+      "locator": "page 173",
+      "text": "ACME Critical Design Review– 178 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCIR Diagnostics Packages are mounted \non the Optics Bench at one of the 8 UML \nlocations around the Chamber. \n \nDiagnostics Packages are designed to \nalign with the centerline of the Chamber \nWindows. \n \n \n \n \n \n \n \nModular build format allows for on-orbit \nreconfiguration of components. \n \nChanges require Crew Time! \nCIR Diagnostics – Package Form \nCamera \nDiagnostic \nControl \nModule \nRelay \nFilter \nUML \nObjective \nLens \nFolding \nPrism \n"
+    },
+    {
+      "locator": "page 174",
+      "text": "ACME Critical Design Review– 179 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCIR Diagnostics –  \nHiBMs/Illumination \nHiBMs Package \n• Used by ACME for Soot Volume Fraction \nView \n• Based on 1024 x 1024 CCD, 12 bit output \n• Frame Rate: 30 fps (60 fps via Binning) \n• Modular Relay Lens determines FOV \n• 30 mm, 50 mm, 90 mm (not on orbit) \n• Narrow Band Filter @ 653 nm to isolate \nbackground illumination \n \nIllumination Package \n• Used as backlight for HiBMs Package \n• Laser Diode @ 653 nm provides \nmonochromatic, uniform background \nFLEX Heptane Burn \n"
+    },
+    {
+      "locator": "page 175",
+      "text": "ACME Critical Design Review– 180 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCIR Diagnostics – HiBMs-2 \nFiber \nFLEX Heptane Burn @ 700nm \nHiBMs-2 Package \n•Used by ACME for Soot Temperature \nImaging & Thin Filament Pyrometry View \n• Based on 1024 x 1024 CCD, 12 bit output \n• Frame Rate: 30 fps (60 fps via Binning) \n• Modular Relay Lens determines FOV \n• 30 mm, 50 mm, 90 mm (not on orbit) \n• Liquid Crystal Tunable Filter (LCTF) is \nswitchable - Wavelengths: 650 – 1050 nm \n• Allows for 2 Wavelength Pyrometry \n• Broadband Filter (BK7) also available (in \nstowage) for higher light throughput. \n"
+    },
+    {
+      "locator": "page 176",
+      "text": "ACME Critical Design Review– 181 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCIR Diagnostics – LLL-UV \nFLEX Heptane Burn \nLLL-UV Package \n•Used by ACME for Ultraviolet Imaging \nView \n• Based on 1024 x 1024 CCD, 12 bit \noutput \n• Frame Rate: 30 fps (60 fps via \nBinning) \n• Modular Relay Lens determines FOV \n• 50 mm, 80 mm (not on orbit) \n• Used w/ integrated Gen-II UV \nIntensifier \n• Flame Imaging Filter Options (on \norbit): \n• OH* @ 310 nm \n• CH* @ 431 nm \n"
+    },
+    {
+      "locator": "page 177",
+      "text": "ACME Critical Design Review– 182 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCIR Diagnostics \n– IPSU\n \nCIR Diagnostics – IPSU \nIPSU (Image Processing & Storage Unit) \n• Currently 1 IPSU is required for each \nCamera Package \n• Mounted on the Optics Bench at one of \nthe 8 UML locations around the Chamber. \n• Camera data interface based on custom \nfiber-optic link: Serial Data Link (SDL) \n• SDL interface is not compatible w/ \nany off-the-shelf Cameras \n• Requires Fiber-optic cable from \nCamera to IPSU \n• Images to the ground is 2 step process: \n• Transfer: IPSU to IOP (CIR main \ncomputer) ~ 10 mbps \n• Downlink: IOP to Ground via HRDL \n(high-rate data link) ~ 20 mbps \n"
+    },
+    {
+      "locator": "page 178",
+      "text": "ACME Critical Design Review– 183 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCIR Diagnostics \n– IPSU\n- G \nCIR Diagnostics – IPSU-G \nIPSU-G (GigE upgrade to IPSU) \n• Currently in development by CIR & scheduled \nto fly in early 2016. \n• Supports both GigE (GigE Vision Std) & USB-3 \nCamera interfaces. \n• Supports up to 4 cameras \n• Not compatible w/ current CIR Cameras \n• Mounts on Optics Bench at UML 1, 3 or 7. \n• Includes a direct HRDL interface to ISS. \n• ACME Color Camera compatible w/ IPSU-G \n(Images can be Downlinked via HRDL directly) \n• Images from existing IPSUs to the ground is \nstill a 2 step process, but faster: \n• Transfer: IPSU to IPSU-G ~ 32 mbps \n• Downlink: IPSU-G to Ground via HRDL \n(high-rate data link) ≥ 20 mbps \nIPSU-G \n"
+    },
+    {
+      "locator": "page 179",
+      "text": "ACME Critical Design Review– 184 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nImage Transfer/Downlink \n– Current\n \nImage Transfer/Downlink – Current \nCurrent \nIPSU \nCIR \nPackage \nSerial \nData Link \n(SDL) \nEthernet \nGRC TSC \nISS \nHigh Rate \nData Link \n(HRDL) \nCIR - IOP \n(10 mbit/sec) \n(20 mbit/sec) \nStorage \nTransfer \nDownlink \nACME \nAvionics \nACME \nData \nCamera \nGigabit \nEthernet \n(GigE) \nCIR - IOP \nGRC TSC \nISS \nHigh Rate \nData Link \n(HRDL) \nEthernet \n(20 mbit/sec) \n(10 mbit/sec) \nStorage \nTransfer \nDownlink \nData Transfer & Downlink - 1 Test Point (60 sec. duration) \nCamera \nPackage \nImage Data \n(GB) \nTransfer \n(min) \nDownlink \n(min) \nTotal Time \n(hrs) \nHiBMs \n3.8 \n50.3 \n25.2 \n1.3 \nHiBMs-2 \n0.9 \n12.6 \n6.3 \n0.3 \nLLL-UV \n0.9 \n12.6 \n6.3 \n0.3 \nACME Color \n2.8 \n37.6 \n18.8 \n0.9 \nTotal \n8.5 \n113.1 \n56.6 \n2.8 \n"
+    },
+    {
+      "locator": "page 180",
+      "text": "ACME Critical Design Review– 185 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nImage Transfer/Downlink \n– IPSU\n- G \nImage Transfer/Downlink – IPSU-G \nStorage \nTransfer \nDownlink \nCurrent \nIPSU \nCIR \nPackage \nSerial \nData Link \n(SDL) \nEthernet \nGRC TSC \nISS \nHigh Rate \nData Link \n(HRDL) \nIPSU-G \n(20 mbit/sec) \n(24 mbit/sec) \nIPSU-G \nACME \nData \nCamera \nGigabit \nEthernet \n(GigE) \nGRC TSC \nISS \nHigh Rate \nData Link \n(HRDL) \n(No Transfer Required) \n(20 mbit/sec) \nStorage \nTransfer \nDownlink \nData Transfer & Downlink - 1 Test Point (60 sec. duration) \nCamera \nPackage \nImage Data \n(GB) \nTransfer \n(min) \nDownlink \n(min) \nTotal Time \n(hrs) \nHiBMs \n3.8 \n21.0 \n25.2 \n0.8 \nHiBMs-2 \n0.9 \n5.2 \n6.3 \n0.2 \nLLL-UV \n0.9 \n5.2 \n6.3 \n0.2 \nACME Color \n2.8 \n0.0 \n18.8 \n0.3 \nTotal \n8.5 \n31.4 \n56.6 \n1.5 \n"
+    },
+    {
+      "locator": "page 181",
+      "text": "ACME Critical Design Review– 186 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCIR Diagnostics – ACME Layout \n"
+    },
+    {
+      "locator": "page 182",
+      "text": "ACME Critical Design Review– 187 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nACME to CIR Integration \n \nChris Rogers – CIR/ACME Integration Lead \n"
+    },
+    {
+      "locator": "page 183",
+      "text": "ACME Critical Design Review– 188 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nFCF Utilization Process \n•\nThe FCF Utilization Process is defined in FCF-PLN-0875 \n•\nPrimary functions of the Integration process are: \n• Payload Planning \n• Mission Integration \n• Engineering Integration \n• Operations Planning  \n \n•\nFCF/CIR provides the following resources \n• An integration liaison to assist with the Utilization Process \n•\nIntegrating Sub-rack Payload into CIR \n•\nIntegrating CIR/Sub-rack Payload to ISS \n• Services in support of Sub-rack Payload \n•\nCIR Provided Hardware (IPSUs, HiBMs, UV Imaging, IOP hard drives, etc) \n•\nGas filling services \n•\nLaunch Site Processing Support \n•\nTADs updates \n•\nFurther resources provided by CIR and agreements between CIR and \npayload provider are documented in the CIR/Payload Unique \nIntegration Agreement  \n \n"
+    },
+    {
+      "locator": "page 184",
+      "text": "ACME Critical Design Review– 189 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nFCF Utilization Process \n•\nPayload Planning \n• Payload Kick-Off Meeting \n• Documents and Templates \n• Develop payload to CIR Integration Agreement (IA) \n• Develop payload to CIR Interface Control Document (ICD) \n• Collect payload Integration Agreement (IA) Addenda data \ninputs and combine inputs for FCF submittal per increment \n• Preliminary Payload Data Collection and Analysis \n• Utilization Tools \n• Payload Data Inputs \n• Payload-Unique Integration Documentation \n• IA Main Volume (MV) \n• Utilization Schedule \n• External Preliminary Interface Revision Notices (PIRNs)/ \nChange Requests (CRs)/Exceptions \n \n"
+    },
+    {
+      "locator": "page 185",
+      "text": "ACME Critical Design Review– 190 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nFCF Utilization Process \n•\nEngineering \n• Engineering Integration \n• FCF to Payload Compatibility Assessment \n• Ground Processing \n• Payload Testing, Reviews and Certification \n• Ground Operations \n• Sustaining Engineering \n• Logistics and Maintenance \n• Develop and maintain ACME to CIR integration schedule \n \n \n"
+    },
+    {
+      "locator": "page 186",
+      "text": "ACME Critical Design Review– 191 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n•\nPayload Engineering Integration \n• Assist in requirement identification, verification and verification \nsubmittal \n• Includes: \n• identification of unique requirements for multiple launch \nvehicles \n• on-orbit requirements from ISS \n• Requirements unique to the payload  \n• Assistance with Safety Reviews and Safety Data Packages \n• Issue Resolution \n• Identification of problems or issues at the ISS Program Level \n• Work directly with ISS Program Offices to mitigate and resolve \nissues. \n• Manifesting \n• Submit required manifest requests and associated data \n• Identify launch restrictions or packaging constraints unique to \npayload hardware \nISS Payload Integration \n"
+    },
+    {
+      "locator": "page 187",
+      "text": "ACME Critical Design Review– 192 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nFCF Utilization Process \n•\nMission Integration \n•\nIntegration Documentation \n• FCF IA with ISS \n• Payload Data Library Data Set \n• Interface Control Document (ICD) \n• Payload Verification Plan (PVPs) \n• Payload Tactical Plan (PTP) \n• Payload Increment 2-Pagers \n• Experiment Science Summary \n• Internal PIRNs/CRs/Exceptions \n• Collect payload Integration Agreement (IA) Data Set inputs from \npayload and combine inputs for FCF submittal per increment \n•\nPayload Launch Processing \n• Manifesting \n• Launch Vehicle Identification and Requirement Definition \n• Hardware Processing and Turnover \n \n"
+    },
+    {
+      "locator": "page 188",
+      "text": "ACME Critical Design Review– 193 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n•\nOperations Integration Products \n• Training \n• Crew Training products and services to properly familiarize \nAstronauts with payload hardware, use and operation \n• Train ground support personnel for on-orbit operations \n• ISS Resource planning \n• Submit request for ISS Resource requirements necessary for \npayload operations \n•\nGround & On-orbit Operations \n• Launch/Landing Site Processing \n• Provides real time support in preparation for launch \n• Retrieval of time sensitive samples from landing site \n• Bench Reviews \n• Act on behalf of payload during final crew review and \ninspections prior to final packing \n• Verify required packing requirements met \n• Continued on-orbit support of operations \n• Perform real time operations \n• Resolve on orbit issues or problems as they arise \nISS Payload Integration \n"
+    },
+    {
+      "locator": "page 189",
+      "text": "ACME Critical Design Review– 194 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nISS Payload Integration \n•\nISS Payload Integration facilitates support from concept through on-\norbit operations. Also known as the End-to-end Integration Process \n \n• Payload Planning \n• Perform initial planning and evaluate mission criteria \n• Define roles and responsibilities \n• Mission Integration \n• Planning and ISS Data Set Submittals \n• ISS Program Level schedules \n• Based on projected launch or hardware completion date \n• Identifies major milestones leading up to launch and \noperations \n• ISS Documentation \n• Provide access to ISS Documentation \n• Write and maintain payload unique documentation for the \nISS Program \n"
+    },
+    {
+      "locator": "page 190",
+      "text": "ACME Critical Design Review– 195 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nISS Requirement Flow Down \n to ACME \nSSP 57217 \nSection \nRequirements \nTable 4.2-1 \nApplicability \nVerification Matrix \n293/366* \nTable 4.2-8 \nCommon Transport \nRequirements \n32 \nISS requirements applicable to CIR and CIR Sub-rack payloads from \nSSP 57000 and SSP 57008 (Common Transport) are documented in \nthe CIR to Station ICD SSP 57217 Rev. C \n*103 of which are HFIT \n"
+    },
+    {
+      "locator": "page 191",
+      "text": "ACME Critical Design Review– 196 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nFCF Top-Level Documents \nISS Documents \n• SSP 57000: Pressurized Payloads Interface \nRequirements Document \n \n• SSP 51700: Payload Safety Policy and \nRequirements for the International Space Station \n \n• SSP 30599: Safety Review Process \n \n• SSP 57008, Appendix P: Common Carrier \nTransport Requirements \n \n• SSP 57057: Payload Integration Template (PIT) \n \n• SSP 57217:  Combustion Integrated Rack (CIR) \nHardware Interface Control Document \n \n• SSP 57218:  Fluids Integrated Rack (FIR) \nHardware Interface Control Document \n \n• SSP 57117:  Payload Integration Agreement for \nFluids & Combustion Facility \nIntegration Documents \n•\nFCF-PLN-0875: FCF Utilization Process \n \n•\nFCF-IDD-CIR: Combustion Integrated Rack Payload Interface \nDefinition Document \nFCF-ICD-CIR-MDCA \nFCF-ICD-CIR-ACME \n \n•\nFCF-IDD-FIR : Fluids Integrated Rack Payload Interface \nDefinition Document \nFCF-ICD-FIR-LMM \n \n•\nFCF-IA-MV-BB: Integration Agreement Main Volume Blank Book  \nFCF-IA-MV-MDCA \n–\nFLEX \n–\nFLEX-2 \n–\nFLEX-2J \nFCF-IA-MV-LMM \n–\nCVB \n–\nPACE \n–\nPACE-2 \n–\nLMM-Bio \n–\nACE \nFCF-IA-MV-ACME \n–\nCLD Flame \n–\nE-Field Flame \n–\nFlame Design \n–\nS-Flame \n \n•\nFCF-ICD-0076: Software Interface Control Document \n \n•\nCIR-DOC-4064: CIR Payload Accommodations Handbook \n \n•\nFIR-DOC-1863: FIR Payload Accommodations Handbook \n \n \n \n"
+    },
+    {
+      "locator": "page 192",
+      "text": "ACME Critical Design Review– 197 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCIR/Sub-rack Payload to ISS \nIntegration \nISS Crew  \nRotation \nLaunch \nRequirements Definition  \n(Design, Development, Test, \nSafety, and Verification) \nPDR \nCDR \nMission Integration \n(Increment Planning) \nReal Time Operations \n(Research) \nCrew Return \nPost Flight Ops \n(H/W, Data Return) \nStrategic \nTactical \nOperations \nI-36M \nI-16M \n~L-1M \nLaunch \nLaunch \nLaunch \nISS Crew  \nRotation \n~6M  \nPost-flight \nIncrement \nStage \nStage \nStage \nManifest \nApproved \n• NASA PIMs provide integration leadership during all phases of the payload’s life cycle  \n• Strategic – ISS integration requirements, products, and schedule development to ensure that an ISS \ncompatible payload is built; support manifest process (payload data collection and feasibility \nassessments)  \n• Tactical – represent PD interests to Increment and Flight-specific teams to ensure that integration and \noperations requirements are addressed; provide oversight for payload CoFR and verification submittals \n• Operations – assist with operations issue resolution between the PD and the Increment Payload \nManager; maintains payload insight; and coordinates payload resupply or return requirements; assure \npayload CoFR and verification submittals during payload lifetime on-orbit \n• Post-flight – coordinate vehicle deintegration requirements; return of payload material from the landing \nsite to the PD; and Lessons Learned submittals \n"
+    },
+    {
+      "locator": "page 193",
+      "text": "ACME Critical Design Review– 198 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nNew Sub-rack Payload \nand/or Principle \nInvestigator (PI) Science \nInvestigation \nISS, Carrier & Facility \nRequirements \nSafety Requirements \nScience Requirements \nQuality Assurance** \nSub-rack Payload Requirement \n Categories \n** In addition to any quality assurance requirements imposed in the other \nrequirement categories, the Payload Organization for each sub-rack payload \n(eg GRC/Zin) imposes additional Quality Assurance (QA) requirements (eg. \nGLPR 7120.5.30 /Zin Quality Management System (QMS), Procedure No. \nP30012). \n"
+    },
+    {
+      "locator": "page 194",
+      "text": "ACME Critical Design Review– 199 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nPayload Hardware \nEngineering \nIntegration \nPayload Software \nIntegration \nPayload Mission  \nIntegration and \nPlanning \nPayload Safety \nPayload Operations \n& Integration \nFunction (POIF) \nPD \nPIM \nPayload Ground \nProcessing \nResearch Planning \n•\nNASA Payload Integration Manager (PIM) \n•\nFunctions as the Payload Developer’s primary interface to the ISS Program \n•\nServes as payload advocate – but also protects ISS Program Requirements \n \n \n \n \n \n \n \n \n \n \n•\nEnsures payload requirements are accurately defined and documented \n•\nFacilitates payload integration product development, delivery schedules, and \ncommunications with the ISS Program \nPayload Integration Manager (PIM) \n"
+    },
+    {
+      "locator": "page 195",
+      "text": "ACME Critical Design Review– 200 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nACME Operations \n \nAngie Adams – ACME Operations Lead \n"
+    },
+    {
+      "locator": "page 196",
+      "text": "ACME Critical Design Review– 201 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nConcept of Operations \nACME Concept of Operations \n•\nDesigned for autonomous, ground \ntended operations \n•\nExperiment is \nconfigured/reconfigured by the \ncrew, then operated from the \nground \n•\nExperiment progress monitored by \nthe operations team and PI’s  \n•\nOps team will uplink commands to \nperform experiment operations and \ncollect data \n•\nACME’s primary ground operations \nsite is the GRC TSC (Telescience \nSupport Center) \n \nISS \nPOIC \nGRC TSC \nCIR Ops \nTeam \nACME Ops \nTeam \nPayload \nInvestigator \nCrew \nFCF \n"
+    },
+    {
+      "locator": "page 197",
+      "text": "ACME Critical Design Review– 202 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nOperations Flow \nHardware configure, power up for checkout, chamber fill, test point \noperations, reconfigurations, power down \n \nNo \nNo \nNo \nYes \nYes \nYes \nYes \nYes \nYes \nNo \nNo \nUplink setup & test \npoint parameters \nPreform pre-test \nsetup procedures \nPerform test point \noperations & save \ndata \nTransfer data to \nIOP, acquire \ndownlink and \ndownlink data \nCommand FOMA \nto reconfigure \nchamber \natmosphere \nCrew \nreconfigures CIA \nhardware \nCrew \nreconfigures gas \nbottles/ adsorber \ncartridge \nInstall diagnostics \npackage and \navionics package \nInstall gas bottles \nand adsorber \ncartridge \nConfigure and \ninstall ACME CIA \nPower up* / \nexperiment self-\ntest / fill for N2 \nleak test \nCommand FOMA \nto fill chamber with \nscience gas \nPower Down*/ \nUninstall ACME \n*Power up/Power down is done on a daily \nbasis and after/before crew operations. \nSame test \nconditions? \nFinished daily \ntest points? \nChange  \natmosphere? \nChange CIA \nhardware? \nChange gas \nbottles? \nAdditional \ntests? \n"
+    },
+    {
+      "locator": "page 198",
+      "text": "ACME Critical Design Review– 203 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Configure \nACME Configure – Crew Activities  \n•\nOptics Bench Back (4 hr. 25 min. Crew time) \n•\nInstall ACME Camera Package \n•\nInstall ACME Avionics Package \n•\nOptics Bench Front (2 hr. 50 min. Crew time) \n•\nInstall gas bottles  \n•\nInstall adsorber cartridge \n•\nInstall N2 pressure relief \n•\nInstall GC bottles \n•\nACME CIA (7 hr. 50 min. Crew time) \n•\nInstall hardware components \n•\nInsert into CIR Combustion Chamber \n \n"
+    },
+    {
+      "locator": "page 199",
+      "text": "ACME Critical Design Review– 204 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nExperiment Hardware \nExperiment \nBurner \nType \nMass Flow \nControllers \n(SLPM) \nE-Field \nMesh \nLong or Short \nThermocouple \nArray \nFiber Radiometer \nCLD Flame \nCoflow \nFuel: 0.1, 0.2, 0.5 \nInert: 0.05, 0.1, 0.2 \nOxygen: 20 \nNo \nNo \nYes \nYes \nE-Field \nGas Jet: \n1.3mm & \n2.1mm \nFuel: 0.05, 0.1 \nInert: 0.01 \nOxygen: n/a \nYes \nNo \nNo \nYes \nFlame \nDesign \nSpherical \nFuel: 0.2 \nInert: 0.5, 2.0, 5.0 \nOxygen: 0.5 \nNo \nYes: Short and \nLong \nYes \nYes \ns-Flame \nSpherical \nFuel: 0.05, 0.5, 1.0 \nInert: 0.1, 0.5 \nOxygen: n/a \nNo \nYes: Short \nYes \nYes \nBRE \nHeat \nFlux: \n25mm & \n50mm \nFuel: 0.5, 1.0, 2.0 \nInert: 0.1, 0.2, 0.5 \nOxygen: n/a \nNo \nNo \nYes \nYes – 2nd \ntype \n"
+    },
+    {
+      "locator": "page 200",
+      "text": "ACME Critical Design Review– 205 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nExperiment Resources \nCLD Flame – 82 required tests \n•\n5 – 3.8L 21/79 O2/N2 bottles \n•\n1 – 1L 100% CH4 bottle* \n•\n1 – 1L 40/60 CH4/N2 bottle \n•\n1 – 1L 50/50 C2H4/N2 bottle \n•\nStation N2 – 90L \n \nFlame Design – 76 required tests \n•\n4 – 2.25L 40/60 O2/N2 bottles \n•\n7 – 150cc 85/15 O2/N2 bottles \n•\n3 – 1L 100% C2H4 bottle* \n•\nStation N2 – 1244.623L \nE-Field – 58 required tests \n•\n1 – 3.8L 30/70 O2/N2 bottle \n•\n1 – 2.25L 30/70 O2/N2 bottle \n•\n1 – 1L 100% CH4 bottle* \n•\n1 – 1L 30/70 CH4/N2 bottle \n•\n1 – 1L 100% C2H4 bottle* \n•\n1 – 1L 30/70 C2H4/N2 bottle \n•\nStation N2 – 264.093L \n \n"
+    },
+    {
+      "locator": "page 201",
+      "text": "ACME Critical Design Review– 206 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nExperiment Resources (cont.) \ns-Flame – 46 required tests \n•\n2 – 3.8L 30/70 O2/N2 bottles \n•\n2 – 3.8L 30/70 O2/He bottles \n•\n2 – 2.25L 100% He bottle \n•\n1 – 1L 100% H2 bottle \n•\n1 – 1L 66.7/33.3 H2/CH4 bottle \n•\n1 – 1L 55.6/44.4 H2/CH4 bottle \n•\n1 – 1L 44.4/55.6 H2/CH4 bottle \n•\n1 – 1L 45/55 CH4/N2 bottle \n•\n1 – 1L 45/55 CH4/He bottle \n•\nStation N2 – 346.375L \n \nBRE – 73 required tests \n•\n15 – 2.25L 40/60 O2/N2 bottles \n•\n1 – 1L CH4 bottle* \n•\n1 – 1L C2H4 bottle* \n•\nStation N2 – 1229.952L \n \nAll 5 Experiments \n•\n3 – CIR GC Argon bottles \n•\n3 – CIR GC Helium bottles \n•\n3 – CIR GC Check Gas bottles \n*Fuel Bottles with same contents can be combined into 1 bottle  \n(makes total 1L fuel bottles = 14) \n"
+    },
+    {
+      "locator": "page 202",
+      "text": "ACME Critical Design Review– 207 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSummary of Operations \nExperiment # Test Points # OPS Days \nRequired \n# Weeks \nCrew time \nCLD Flame \n82 \n54 \n22 \n53.08* \nE-Field \n58 \n38 \n18 \n36.58 \nFlame \nDesign \n76 \n64 \n27 \n56.75 \ns-Flame \n46 \n37 \n19 \n37.92 \nBRE \n73 \n60 \n23 \n41.33 \nTOTAL \n335 \n253 \n109 \n225.66 \nAssumptions: \n•\nOPS Day = test point, transfer/downlink or crew ops \n•\n3 powered ops days per week \n•\n1 powered ops day with 1 crew ops day per week \n•\n2 – 5 test points per day \n•\n30 – 70 second test point durations \n•\nTransfer/downlink after every test point day   \n*Includes initial configure \n"
+    },
+    {
+      "locator": "page 203",
+      "text": "ACME Critical Design Review– 208 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSparing \n \n \n \n \n \nFlight Spares \n•\nHard Drives (2) \n•\nIgniter Tips (20) \n•\nE-Field Mesh (1) \n•\nBurners (1-3 each) \n•\nFiber 1 (10) \n•\nFiber 2 (3) \n•\nThermocouples (5 each) \n \n \n \n \n \n \nGround Spares \n•\nHard Drives (5+) \n•\nCameras (1each + parts) \n•\nMass Flow Controllers (1 each) \n•\nData Acquisition Unit (1) \n•\nGas and Water Hoses (1 each) \n•\nRadiometers (parts) \n•\nPhotomultiplier Tubes (parts) \nSparing Philosophy \n•Consumables \n•Fragile hardware \n•Flight vs. Ground \n \n"
+    },
+    {
+      "locator": "page 204",
+      "text": "ACME Critical Design Review– 209 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCrew Procedures & Training \nCrew Procedures \n•\nCrew procedures will be written and baselined for all initial \nconfigure activities as well as nominal replacement activities \n(Initial July 2014, Baselined May 2015) \n \nCrew Training \n•\nTraining Strategy Team (TST) meeting to be held Fall 2013 to \ndevelop training plan \n•\nCrew training will consist of an ACME class and the CIR class \n(Start Fall 2014)  \n•\nACME will provide a CIA trainer with working interfaces for crew \ntraining (Summer 2014) \n \n \n"
+    },
+    {
+      "locator": "page 205",
+      "text": "ACME Critical Design Review– 210 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nHFIT \n•\nInitial meeting with Crew Office and HFIT held September 2013 \n• Developed Operations Nomenclature acceptable by crew office \n(Final due June 2014) \n• HFIT looked at drawings and found no concerns \n• Developed initial packing strategy for shipping hardware to orbit \n• Developed initial labeling strategy \n•\nIPLAT review of crew interface label drawings:                           \nInitial ~ May 2014, Final ~ May  2015 \n•\nFinal HFIT Hardware evaluation, COC Issued ~August 2015 \n"
+    },
+    {
+      "locator": "page 206",
+      "text": "ACME Critical Design Review– 211 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nQuality Assurance \n \nWayne Borrelli – ACME Safety/Quality \nEngineer \n"
+    },
+    {
+      "locator": "page 207",
+      "text": "ACME Critical Design Review– 212 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME SAR Checklist  \n• The ACME SAR Checklist is ACME-PLN-011 and customizes the \nrequirements from GLPR 7120.5.30, Space Assurance \nRequirements, to the scale and needs of the ACME project.  \n \n• This document was created with consultation from ZIN Quality, \nthe NASA Safety and Mission Assurance Office and with help \nfrom the Chief Engineer’s Office and either accepts requirements \nas applicable or provides justification as to why they are not. \n \n• Requirements deemed Not Applicable include those that require \nlong term trend analysis, requirements for payloads exposed \ndirectly to space and those relating to reflight hardware. \n \n• Refer to ACME-PLN-011 for more information. These \nrequirements are also included in the ACME Verification Tracking \nLog. \n"
+    },
+    {
+      "locator": "page 208",
+      "text": "ACME Critical Design Review– 213 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nRisk Management  \n          \n•SpaceDOC Risk Management Plan P30015 \n•GRC RMIT Risk Management Database \n•Utilized to assist in the continuous risk management process. \n•Online input/processing/reporting of risk information. \n•Risk Mgmt Working Group meets monthly to perform risk management \nactivities. \n•ACME Systems Lead supports this meeting. \n•\n26 ACME Risks have been identified to this point in time (24 closed) \n•\n2  Active Technical Risks \n•\n14 Closed Technical Risks \n•\n5 Closed Schedule Risks \n•\n1 Closed Cost Risk \n•\n3 Closed Management Risks \n•\n1 Closed Safety Risk \n \n"
+    },
+    {
+      "locator": "page 209",
+      "text": "ACME Critical Design Review– 214 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Risk Summary \n•\nRisk ID: ACME-014 \n•\nRisk Title: IPSU to IOP image transfer rates take too long \n•\nRisk Statement: Given that the current data transfer rates from the IPSU \nto the IOP is severely limited, transfer of ACME data may take an \nunacceptable amount of time and may reduce obtainable science for the \nallotted operational time on board ISS. \n•\nLikelihood: 4 \n•\nConsequence: 3 \n•\nApproach: Watch. Need to keep an eye on this and follow up  \nwith the CIR team to keep updated on transfer improvements. \n•\nLatest Status: 09/17/13 - The IPSU-G is going to have their  \nPDR September 26th 2013. The IPSU-G will eliminate  \nthe need to transfer image data from an IPSU to the IOP for downlink  \nbecause the IPSU-G will be able to directly downlink image data to  \nthe ground. A trigger for this risk would be the cancellation of the  \nIPSU-G project that would require ACME to mitigate, accept, etc... \n"
+    },
+    {
+      "locator": "page 210",
+      "text": "ACME Critical Design Review– 215 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Risk Summary \n•\nRisk ID: ACME-026 \n•\nRisk Title: ACME E-Filed EMI exceedences impact science \n•\nRisk Statement: Given that the current ACME design exceeds \nthe carrier EMI requirement; then there is the possibility that \ndesign changes made to meet this EMI requirement causes a \nloss of science. \n•\nLikelihood: 2 \n•\nConsequence: 3 \n•\nApproach & Latest Status: Watch. 10/22/13  \nReport received and the team is waiting to  \nperform EMI testing on the flight system. \n"
+    },
+    {
+      "locator": "page 211",
+      "text": "ACME Critical Design Review– 216 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nProduct Assurance  \nZIN Product Assurance will be involved extensively with the ACME \nInvestigation verification process. \n \nProduct Assurance overview will consist of: \nInspections \nClosing MWO’s \nWitnessing tests \nPerforming Mandatory Inspection Points (MIPs) \nSigning drawings and documents \n \nProblem reports, failures, non-conformances, and corrective \nactions are captured through conformance with the ZIN QMS \nusing the non-conformance and corrective action processes. \n \nZIN Technologies, Inc maintains compliance to the AS9100 \nAerospace Standard. \n \n"
+    },
+    {
+      "locator": "page 212",
+      "text": "ACME Critical Design Review– 217 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nSoftware Product Assurance  \nACME Software Product Assurance Plan, ACME-PLN-005 \n \n•Review of software documentation. \n \n•Peer reviews as needed for ACME S/W life cycle activities. \n \n•S/W audits. \n \n•Oversight on ACME S/W verifications. \n \n•Nonconformance Reporting & Corrective Action Process – S/W \nissues recorded in SpaceDOC NCR system. \n \n•Support of software development lifecycle milestone activities \n(PDR, CDR, SAR, etc.). \n"
+    },
+    {
+      "locator": "page 213",
+      "text": "ACME Critical Design Review– 218 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nReliability Analysis  \nResults documented in ACME-ANA-001 \n \nFailures are mitigated using ORU’s and components that are known to \nhave a high reliability. \n \nThere are no critical components based on a redundancy screen \nassessment. \nFailures would be immediately apparent. \nMitigations outlined. \n \n Reliability assessed to be sufficient to obtain required success criteria. \nApproximately 61 hours of required test point operation (not \nincluding startup/warm up times) \nRisk of non-ORU component failure within this period of time is \nminimal \n"
+    },
+    {
+      "locator": "page 214",
+      "text": "ACME Critical Design Review– 219 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME  \nACME Safety \n \nWayne Borrelli – ACME Safety/Quality \nEngineer \n"
+    },
+    {
+      "locator": "page 215",
+      "text": "ACME Critical Design Review– 220 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Flight Safety  \n•ACME Flight Phase 0/1 Flight Safety Data Package reviewed \nand approved by PSRP. All hazard reports signed. \n \n•  Phase II FSDP Submittal to PSRP planned for 12/29/2013. \n \n• ACME Phase II Flight Safety Review is scheduled for \nFebruary 12 & 13, 2014. \n \n• ACME PSE is currently David Cho \n \n \n"
+    },
+    {
+      "locator": "page 216",
+      "text": "ACME Critical Design Review– 221 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \nSTD-ACME-1: JSC Form ISS_OE_1298 Payload Standard \nHazard Control Report \n \nACME-2: Leakage of Water Cooling System \n \nACME-3: Rupture of Pressurized Systems \n \nACME-4: Crew Exposure to Broken Materials \n \nACME-5: High Oxygen Concentration Results in Fire \n \nACME-6: Electrical Shock \n \n \n"
+    },
+    {
+      "locator": "page 217",
+      "text": "ACME Critical Design Review– 222 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \n•Flammable Materials – Review & approval of MIUL/MUAs utilizing \nMAPTIS, and flammability assessment. \n•Materials Offgassing – Review & approval of MIUL/MUAs utilizing \nMAPTIS, and offgas assessment. \n•Mechanical Hazards (Sharp Edges, Corners, and/or Protrusions) – \nVerify ACME hardware conforms to the approved drawings, including \nrequirements to remove sharp corners and protrusions. \n•Touch Temperature – Perform Thermal analysis and testing of the \nACME hardware to prove the maximum temperature ACME hardware \nreaches (worst case experiment), and cool down time needed to reach \nbelow 45 degrees C. \n•Shatterable Material Release – All optical glass components, \nradiometer lenses and photomultiplier tube optics will be vibration \ntested. All optical glass components will be packaged in clear plastic \nbags prior to flight, and inspected before removal. \n \nJSC Form ISS_OE_1298 \n"
+    },
+    {
+      "locator": "page 218",
+      "text": "ACME Critical Design Review– 223 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \n•Nonionizing Radiation - Perform EMI/EMC testing using the test \nmethods/procedures defined in SSP 30237 and SSP 30243, and \nprepare a report confirming requirements have been met. \n•Lasers – N/A: ACME hardware contains no lasers. \n•Noise Exposure – Perform acoustic testing per SSP 50021 to prove \nACME hardware will not create noise exposure hazard causing \ndamage to hardware, injury to crew, or interfere with communications \nor caution/alarm detection. \n•Battery Failure – Perform battery loaded / open circuit voltage \nmeasurements and leakage check under vacuum to DNA battery. \nPerform functional check of Lippert Board Assembly (with soldered \nbutton battery) and visual inspection of Lippert Board battery. \n•Capacitors used as energy storage devices - ACME does not utilize \nasymmetric, lithium-based or free electrolyte capacitors as energy \nstorage devices. \n \nJSC Form ISS_OE_1298 \n"
+    },
+    {
+      "locator": "page 219",
+      "text": "ACME Critical Design Review– 224 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \n•Electrical Power Distribution - Perform analysis of the ACME \nelectrical design to verify that proper circuit protective devices and wire \nsizing are implemented, proper bonding  and proper grounding and \nprepare a report confirming that ISS requirements from SSP 30240 and \n30245 have been met. Perform inspection to verify that the as-built \nelectrical circuitry is in accordance with approved drawings and parts \nlists.  \n•Mating/demating Powered Connectors – Inspect hardware for \ndesign features that completely enclose or shroud pins. Inspect \nconnectors for powered side terminating in sockets rather than pins. \nInspect crew procedure inputs to ensure that a step is place to remove \npower from the CIR experiment power connector prior to mate/demate \nof ACME connectors. \n \n \nJSC Form ISS_OE_1298 \n"
+    },
+    {
+      "locator": "page 220",
+      "text": "ACME Critical Design Review– 225 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \n•Rotating Equipment – Inspect drawings and hardware to ensure \nrotating equipment is contained. Certify that rotating parts do not \nexceed 8 inches in diameter and 8000 revolutions per minute. \n•Interference with Translation Paths – Perform analysis to verify that \nACME hardware does not impede emergency IVA egress. \n•Structural Failure – Perform a structural analysis, and generate a \nFracture Control Plan and a Structural Verification Plan, including \nanalysis of kick loads and 0.2 g reboost. Inspect final flight stowage \nconfiguration. \n•Structural Failure of Sealed Containers – Perform an analysis of all \nsealed containers to insure that they do not contain hazardous \nsubstances. Analyze all sealed containers to ensure they contain less \nthan 14,240 foot pounds of stored pressurized energy and can \nwithstand a maximum delta pressure of 1.5 atm. \n \n \nJSC Form ISS_OE_1298 \n"
+    },
+    {
+      "locator": "page 221",
+      "text": "ACME Critical Design Review– 226 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \n•Structural Failure of Vented Containers – Perform an analysis that \ndemonstrates that the vented containers provide an internal to effective \nvent area ratio that results in a differential pressure loading of no \ngreater than 0.01 psid. Perform inspection to insure that the volume \nand vent area are in accordance with the above analysis. \n \n \nJSC Form ISS_OE_1298 \n"
+    },
+    {
+      "locator": "page 222",
+      "text": "ACME Critical Design Review– 227 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \n \nTitle: Leakage of Water Cooling System \nDescription: Leaks in the ACME Chamber Insert Assembly \nwater lines results in damage to hardware or inadvertently \ncontaminates the vacuum exhaust system. Excessive cooling \nwater leakage can cause an automatic shut down of the ISS \nITCS, a must work system. \nControls:  \n1.Design to appropriate factors of safety. \n2.Build in accordance with approved drawings and assemble per \napproved procedures. \n3.Install accumulators, where necessary. \n4.Utilize crew procedures to ensure proper assembly. \n5.Utilize redundant seals in all quick disconnects. \n \n \nUnique Hazard Report ACME-2 \n"
+    },
+    {
+      "locator": "page 223",
+      "text": "ACME Critical Design Review– 228 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \n \nTitle: Rupture of Pressurized Systems \n \nDescription: Rupture of pressurized system hardware results in \ninjury to crewmembers or damage to lab module. \n \nControls:  \n1.Design to appropriate factors of safety. \n2.Build in accordance with approved drawings and assemble per \napproved procedures. \n3.Install accumulators, where necessary. \n4.Materials selected to avoid susceptibility to stress corrosion \ncracking in accordance with MAPTIS database. \n \n \nUnique Hazard Report ACME-3 \n"
+    },
+    {
+      "locator": "page 224",
+      "text": "ACME Critical Design Review– 229 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \n \nTitle: Crew Exposure to Broken Materials \n \nDescription: Crew exposed to fragments of ceramic and silicon-\ncarbide materials.  \n \nControls:  \n1.Igniter tips, fiber arrays, burner insulators, E-Field Mesh \nInsulator, and E-Field Power Supply Insulator will be designed to \na Factor of Safety of 2.0. \n2.Igniter tips, fiber arrays, burner insulators, E-Field Mesh \nInsulator, and E-Field Power Supply Insulator will be bagged for \nstowage. Crew procedures will include steps for inspection of \nhardware prior to removal from clear plastic bags for installation. \n \n \nUnique Hazard Report ACME-4 \n"
+    },
+    {
+      "locator": "page 225",
+      "text": "ACME Critical Design Review– 230 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \n \nTitle: High Oxygen Concentration Results in Fire \n \nDescription: Fire resulting from material incompatibility with high \noxygen concentrations. Note: Current Science Requirements specify \nan 85% oxygen bottle for Inverse Flame experiments. \n \nControls:  \n1.All CIA materials will be analyzed and selected for compatibility with \nup to 40% oxygen. \n2.To compensate for the lack of flammability test data of some \nmaterials over 30% oxygen levels, non-metallics used inside the \nchamber will be assessed in the final configuration per JSC 29353 (to \nminimize ignition sources and flame propagation paths). \n \n \nUnique Hazard Report ACME-5 \n"
+    },
+    {
+      "locator": "page 226",
+      "text": "ACME Critical Design Review– 231 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \n3. CIR solenoid valve SV5 is nominally closed and prevents flow of \noxygen to ACME. CIR Ground Procedure will verify that, when 85% \noxygen bottle is in use, the CIR chamber pressure is above 14.0 psia \nbefore a command is issued to open solenoid valve SV5. \n4. ACME solenoid valves (SV A1, SV A4 and SV A5) are nominally \nclosed and prevent flow of oxygen into CIR chamber. ACME Ground \nProcedure will verify that, when 85% oxygen bottle is in use, the CIR \nchamber pressure is above 14.0 psia before a command is issued to \nopen any of solenoid valves SV A1, SV A4, or SV A5. \n5.ACME Pressure Switch (PSA1) inhibits ignition in the chamber until \na chamber pressure of 14.0 psia is reached. \n6.Materials in high O2 areas of the gas system shall be selected for \nhigh O2 environment per the MAPTIS database, or if required, an MUA \nwill be written and approved by GRC PPAD per M&P Intercenter \nagreement. \n \nUnique Hazard Report ACME-5 \n"
+    },
+    {
+      "locator": "page 227",
+      "text": "ACME Critical Design Review– 232 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \n \nTitle: Electrical Shock \n \nDescription: Incidental contact by the crew with high voltage of  +/- \n10KVDC can lead to crew injury. \n \nControls:  \n1.Proper design of the ACME power distribution system, including \ncompliance with bonding/grounding requirements. \n2.Provide two bond paths to ground as required by letter MA2-99-142. \n3.Provide electrical isolation as required by SSP 57000. \n \n \nUnique Hazard Report ACME-6 \n"
+    },
+    {
+      "locator": "page 228",
+      "text": "ACME Critical Design Review– 233 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Phase II Hazard Reports  \n \n4. Utilize connectors of scoop-proof design that completely encloses \nthe pin/socket contacts. Powered side of all ACME cable connectors \nabove 32 VDC are terminated in sockets to provide protection against \ndebris/inadvertent shorting. To prevent mis-mating, all connectors are \nof different sizes and/or keying. All connectors will be labeled. \n5. At least one verifiable upstream inhibit exists. ACME will utilize the \nCIR Rack Power Switch (RPS) as its upstream inhibit. \n6. Manufacturing, assembly processes, and fabrication shall be \nperformed In accordance with approved drawings and procedures. \n7. High Voltage circuitry will be designed with resistor divider networks \nthat will discharge the high voltage signals within one second (both \npositive and negative voltages) to chassis ground. \n8. Wire size derating analysis will be performed per Interpretation \nLetter TA-92-038. \n \nUnique Hazard Report ACME-6 \n"
+    },
+    {
+      "locator": "page 229",
+      "text": "ACME Critical Design Review– 234 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \n  \nCIR/ACME Integrated Safety \n \nClarise Shinn – FCF Safety Engineer \nACME  \n"
+    },
+    {
+      "locator": "page 230",
+      "text": "ACME Critical Design Review– 235 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nCIR/ACME Integrated Flight \nSafety  \n• CIR/ACME Integrated Phase 0/1 Flight Safety Data Package \nsubmitted to the PSRP, December 2011 \n \n• CIR/ACME Integrated Phase 0/I Flight Safety Review, February \n2012 \n• All Phase 0/I integrated hazard reports are approved by the \nPSRP \n• Safety Data Package was approved by the PSRP \n• No Action Items or Agreements from Phase 0/I Review \n \n•  Phase II Safety Data Submittal to PSRP planned for 12/29/2013. \n \n• CIR/ACME Integrated Phase II Flight Safety Review is scheduled \nwith ACME Phase II Review on February 12 & 13, 2014. \n"
+    },
+    {
+      "locator": "page 231",
+      "text": "ACME Critical Design Review– 236 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nIntegrated Phase II Hazard \nReports  \nFCF-ACME-\n01 \nRelease of Adsorber Cartridge Contents into Habitable \nVolume \n \nFCF-ACME-\n02 \nExposure of Crew to Toxic Byproducts During \nChamber Operations \n \nFCF-ACME-\n03 \nOverpressurization of CIR Pressurized System by ISS \nNitrogen Supply \n \nFCF-ACME-\n04 \nAdiabatic Combustion Ruptures CIR Combustion \nChamber or CIR Exhaust Vent Package during ACME \nexperiments (except for the Inverse Flame \nExperiment) \n \nFCF-ACME-\n05 \nAdiabatic Combustion Ruptures CIR Combustion \nChamber or CIR Exhaust Vent Package during ACME \nInverse Flame Experiment \n"
+    },
+    {
+      "locator": "page 232",
+      "text": "ACME Critical Design Review– 237 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nIntegrated Phase II Hazard \nReports  \nTitle: Release of Adsorber Cartridge Contents into Habitable Volume \nDescription: Generation of (toxicity hazard level = 0, see HMST) \nparticles due to launch loads and subsequent release into habitable \nvolume during Adsorber Cartridge replacement results in injury to \ncrew  \nControls:  \n1.\nThe Adsorber Cartridge is designed with a 40 micron sintered \nmetal filter, which is smaller than the grain size (1680 microns) \nof chemicals, located at both the inlet and outlet ports, to keep \nparticles from escaping. \n2.\nThe Adsorber Cartridge is designed so that each end of the \nAdsorber Cartridge has redundant seals QDs and a manual \nvalve which seals the Adsorber Cartridge for removal. \n3.\nConstituents of Adsorber Cartridge are limited to Silica Gel or \nMolecular Sieve for ACME. \nFCF-ACME-01 \n"
+    },
+    {
+      "locator": "page 233",
+      "text": "ACME Critical Design Review– 238 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nIntegrated Phase II Hazard \nReports  \nTitle: Exposure of Crew to Toxic Byproducts During Chamber Operations \nDescription: Carcinogenic soot particles from the combustion chamber \ncontaminate the habitable atmosphere causing crew illness if inhaled or \nfloating particles could cause injury to the eyes.  \nControls:  \n1.\nThe soot production for ACME experiments will be below the SMAC limit \nand does not exceed Tox 0. \n2.\nThe chamber air will be circulated through a tested Adsorber Cartridge \nfor 15 minutes until free floating soot is removed, prior to venting.  \n3.\nThe chemicals selected for the Adsorber Cartridge will remove the soot \nand combustion by-products. \n4.\nEach Adsorber Cartridge shall have a content label and serial number. \n5.\nApproved crew procedures shall be used for installation and removal of \nan Adsorber Cartridge. (TBR) (This control is also covered in CIR Hazard \nReport, FCF-C05 Inadvertent Release of Toxic Fuels and Combustion By-products \nand CIR Hazard Report, FCF-C28 Inadvertent Venting of High Oxygen, Pre-mixed \nGases or Fuel through ISS Vent) \n \nFCF-ACME-02 \n"
+    },
+    {
+      "locator": "page 234",
+      "text": "ACME Critical Design Review– 239 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nIntegrated Phase II Hazard \nReports  \nFCF-ACME-03 \nTitle: Overpressurization of CIR pressurized system by ISS Nitrogen \nSupply \nDescription: Overpressurization of the CIR pressurized system by \nthe ISS nitrogen supply via the CIR nitrogen bypass line results in \nrupture of CIR hardware, damage to ISS hardware or injury to the \ncrew. \nControls:  \n1.\nThe ACME nitrogen pressure system design will include a \npressure relief valve for the CIR nitrogen bypass line, and will be \nset at 135 psia.  \nNote:  CIR provides the additional hazard controls for \noverpressurization due to the ISS nitrogen gas supply.  See CIR \nHazard Report FCF-C10, hazard controls, 3.4, 3.5, 3.6 and 3.8. \n"
+    },
+    {
+      "locator": "page 235",
+      "text": "ACME Critical Design Review– 240 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nIntegrated Phase II Hazard \nReports  \nFCF-ACME-04 \nTitle: Adiabatic Combustion Ruptures CIR Combustion Chamber or CIR Exhaust \nVent Package during ACME experiments (except for the Inverse Flame Experiment) \nDescription: Rapid overpressurization during the combustion of ACME gaseous \nfuel and oxidizer/diluent exceeds the MDP of the CIR Combustion chamber and/or \nexhaust vent package resulting in damage to CIR or ISS hardware or injury to the \ncrew. \nNote (on hazard report):   \n1.\nThis hazard report works in conjunction with CIR hazard report FCF-C07, “Adiabatic Combustion \nruptures the chamber walls, causing damage to station and/or injury to crew.“  Overpressurization due \nto combustion will be controlled by limiting the fuel volume in each gas bottle.  The CIR Valve Timers \nwill be placed in the fuel mode.  The chamber will be pre-filled with gaseous oxidizer and gaseous fuel \nwill flow through the ACME burner. \n2.\nCIR is responsible for filling the experiment gas bottles.  The ACME detonation analyses determine the \nlimits on fuel volumes in each bottle.  The fuel gas volumes will be chosen such that even if the entire \ncontents of a bottle were to be released into the CIR Combustion Chamber, any adiabatic combustion \nwould result in a pressure less than the MDP of the CIR Combustion chamber.  The MDP of the CIR \nchamber is 135 psia. \n3.\nThe CIR bottle leakage hazard controls and verifications are covered in CIR hazard report FCF-C08 \nLeakage of Pressurized System. \n4.\nThe CIR system rupture hazard controls and verifications are covered in CIR hazard report FCF-C10 \nRupture of Pressurized Systems. \n \n"
+    },
+    {
+      "locator": "page 236",
+      "text": "ACME Critical Design Review– 241 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nIntegrated Phase II Hazard \nReports  \nFCF-ACME-04 \nControls:  \n1.\nFuel volume in each gas bottle will be limited so that adiabatic \ncombustion of the total fuel bottle volume at the worst-case \nchamber environment cannot exceed the MDP of the chamber. \n2.\nThe chamber atmosphere will be vented between fuel gas bottle \nchangeouts. \n3.\nProcedures for gas bottle ground handling and filling will prevent \nfilling a bottle with the incorrect constituent, or the incorrect \nvolume or pressure.  \n4.\nThe crew procedure steps will require the crew to confirm the fuel \nbottle serial number and contents with POIC after installation. \n5.\nAn ACME pressure sensitive switch will inhibit the ACME igniter if \nthe ACME maximum operating pressure is exceeded.  \n"
+    },
+    {
+      "locator": "page 237",
+      "text": "ACME Critical Design Review– 242 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nIntegrated Phase II Hazard \nReports  \nFCF-ACME-05 \nTitle: Adiabatic Combustion Ruptures CIR Combustion Chamber or CIR \nExhaust Vent Package during ACME Inverse Flame Experiment \nDescription: Rapid overpressurization during the combustion of ACME \ngaseous fuel and oxidizer/diluent exceeds the MDP of the CIR Combustion \nchamber and/or exhaust vent package resulting in damage to CIR or ISS \nhardware or injury to the crew. \nNote (on hazard report) :   \n1.\nThis hazard report works in conjunction with CIR hazard report FCF-C07, “Adiabatic Combustion \nruptures the chamber walls, causing damage to station and/or injury to crew.“  Overpressurizaton \ndue to combustion will be controlled by limiting the oxygen volume in each gas bottle.  The CIR \nValve Timers will be placed in the oxygen mode.  The chamber will be pre-filled with gaseous fuel \nand gaseous oxygen will flow through the ACME burner. \n2.\nCIR is responsible for filling the experiment gas bottles.  The ACME detonation analyses determine \nthe limits on oxygen volumes in each bottle.  The oxygen gas volumes will be chosen such that \neven if the entire contents of a bottle were to be released into the CIR Combustion Chamber, any \nadiabatic combustion would result in a pressure less than the MDP of the CIR Combustion \nchamber.  The MDP of the CIR chamber is 135 psia. \n3.\nThe CIR bottle leakage hazard controls and verifications are covered in CIR hazard report FCF-\nC08 Leakage of Pressurized System. \n4.\nThe CIR system rupture hazard controls and verifications are covered in CIR hazard report FCF-\nC10 Rupture of Pressurized Systems. \n \n"
+    },
+    {
+      "locator": "page 238",
+      "text": "ACME Critical Design Review– 243 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nIntegrated Phase II Hazard \nReports  \nFCF-ACME-05 \nControls:  \n1.\nOxygen volume in each gas bottle will be limited so that adiabatic \ncombustion of the total fuel bottle volume at the worst-case \nchamber environment cannot exceed the MDP of the chamber. \n2.\nThe chamber atmosphere will be vented between oxygen gas \nbottle changeouts. \n3.\nProcedures for gas bottle ground handling and filling will prevent \nfilling a bottle with the incorrect constituent, or the incorrect \nvolume or pressure.  \n4.\nThe crew procedure steps will require the crew to confirm the \noxygen bottle serial number and contents with POIC after \ninstallation. \n5.\nAn ACME pressure sensitive switch will inhibit the ACME igniter if \nthe ACME maximum operating pressure is exceeded. \n"
+    },
+    {
+      "locator": "page 239",
+      "text": "ACME Critical Design Review– 244 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Readiness  \n• All project requirements are documented and agreed to \n• ACME design reflects complete compliance with the project \nrequirements (detailed in ACME-DOC-002D) \n• Drawing status (complete/total): \n•CIA – 295/375 \n•AVP – 92/92 \n•Data Camera – 93/109 \n•Total – 480/576 83% \n•222 Flight drawing ECOs have been processed as a result of EM \nbuild and testing \n• Engineering Model Build: AVP complete, CIA and Data Camera \nunderway \n \n"
+    },
+    {
+      "locator": "page 240",
+      "text": "ACME Critical Design Review– 245 \nGlenn Research Center\n \nGlenn Research Center \nZIN Technologies \nACME Readiness  \n• Flight Model Build: Build on all 3 major packages has started for low \nrisk items \n• Build documents and test plans have been generated \n• Functional, validation and verification test planning is complete \nspanning all levels of the build \n• All analyses (structural, thermal, reliability, materials, etc.) show no \nmajor issues with ACME design  \n• Risks are identified and managed \n• Carrier integration has already begun and will continue per the \nintegration schedule \n• All hazards have sufficient controls \n• Project planning shows adequate technical margins and resources \nexist to complete the project within budget and schedule \n \n"
+    }
+  ],
+  "details": {
+    "page_count": 240,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

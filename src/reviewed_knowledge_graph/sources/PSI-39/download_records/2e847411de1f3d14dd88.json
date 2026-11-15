@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-39:2e847411de1f3d14dd88",
+  "study": "PSI-39",
+  "filename": "PSI-39_Science Documents_CFI_DataSummary_Spreadsheet_Jan2021.xlsx",
+  "key": "psi-data/PSI-39/Science Documents/PSI-39_Science Documents_CFI_DataSummary_Spreadsheet_Jan2021.xlsx",
+  "category": "Science Documents",
+  "size_bytes": 208743,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-39/download?file=683f4b7cda33c6f4c4cec615&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-39/2e847411de1f3d14dd88/PSI-39_Science Documents_CFI_DataSummary_Spreadsheet_Jan2021.xlsx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "a5b04b6a32bda764a9b367e491cc46b78ad0af0ac6b5e723e63b57abdb1d7dd8",
+  "status": "downloaded"
+}

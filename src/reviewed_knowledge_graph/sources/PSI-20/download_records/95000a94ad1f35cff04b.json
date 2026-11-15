@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:95000a94ad1f35cff04b",
+  "study": "PSI-20",
+  "filename": "PSI-20_Science Documents_ACME_fact_sheet_20180820.pdf",
+  "key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_ACME_fact_sheet_20180820.pdf",
+  "category": "Science Documents",
+  "size_bytes": 1132230,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8181b4820d736cecc2b&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/95000a94ad1f35cff04b/PSI-20_Science Documents_ACME_fact_sheet_20180820.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "1001b38b3f87ce6e60d2ea11acab7065a11e4fe0796f615558d53826edb6fca4",
+  "status": "downloaded"
+}

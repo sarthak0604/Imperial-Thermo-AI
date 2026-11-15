@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-117:19d0a5a2326d4ff5c080",
+  "study": "PSI-117",
+  "filename": "PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+  "key": "psi-data/PSI-117/Analyzed Data/PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+  "category": "Analyzed Data",
+  "size_bytes": 449,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273ad9d7246402cb43e6&version=1&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/19d0a5a2326d4ff5c080/PSI-117_Analyzed Data_PROCI_2023_C12_Extinction_Diameter_vs_pressure.csv",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "4ab6f8c19f40a3349096eab8bdceb0a62611020af15e63f816922b149cfa7001",
+  "status": "downloaded"
+}

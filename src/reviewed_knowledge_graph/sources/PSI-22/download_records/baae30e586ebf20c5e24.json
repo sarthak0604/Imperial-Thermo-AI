@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:baae30e586ebf20c5e24",
+  "study": "PSI-22",
+  "filename": "PSI-22_Science Documents_E-FIELD Flames SCR 200802.pdf",
+  "key": "psi-data/PSI-22/Science Documents/PSI-22_Science Documents_E-FIELD Flames SCR 200802.pdf",
+  "category": "Science Documents",
+  "size_bytes": 2965401,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e63f0eb4c08676004b9c&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/baae30e586ebf20c5e24/PSI-22_Science Documents_E-FIELD Flames SCR 200802.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "ffdb51438f8e427adc7c4d9076554852e1689c5160332c0a308bf74bf98200e7",
+  "status": "downloaded"
+}

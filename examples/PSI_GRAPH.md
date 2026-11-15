@@ -1,5 +1,9 @@
 # Tiny PSI knowledge graph
 
+This is a legacy test fixture. The application and `thermo-search` now default to
+the [reviewed 19-investigation graph](../docs/reviewed-graph.md). Use the explicit
+legacy module below when reproducing this fixture's saved IDs and plans.
+
 This real-source testing fixture has **11 nodes, 10 edges, 6 files, 2 investigations**.
 The graph is [psi_graph.json](psi_graph.json); it is distinct from the generated
 [psi_search_results.json](psi_search_results.json).
@@ -22,7 +26,7 @@ A shared investigation does not establish a shared run or scientific comparabili
 
 ```bash
 uv sync
-uv run thermo-search \
+uv run python -m request_planner.mini_graph \
   --graph examples/psi_graph.json \
   --query "BASS-II airflow calibration video" \
   --investigation PSI-25 \
@@ -46,9 +50,9 @@ For live planning, set `OPENAI_API_KEY` and replace
 Other searches:
 
 ```bash
-uv run thermo-search --graph examples/psi_graph.json --query "FLEX methanol droplets"
-uv run thermo-search --graph examples/psi_graph.json --query "BASS-II" --role documentation
-uv run thermo-search --graph examples/psi_graph.json --query "BASS-II" --role video
+uv run python -m request_planner.mini_graph --graph examples/psi_graph.json --query "FLEX methanol droplets"
+uv run python -m request_planner.mini_graph --graph examples/psi_graph.json --query "BASS-II" --role documentation
+uv run python -m request_planner.mini_graph --graph examples/psi_graph.json --query "BASS-II" --role video
 ```
 
 ## Sources and verification

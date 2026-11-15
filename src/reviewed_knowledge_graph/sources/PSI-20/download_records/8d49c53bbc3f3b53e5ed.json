@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:8d49c53bbc3f3b53e5ed",
+  "study": "PSI-20",
+  "filename": "PSI-20_Presentations_ACME CSSCI paper 20220402.pdf",
+  "key": "psi-data/PSI-20/Presentations/PSI-20_Presentations_ACME CSSCI paper 20220402.pdf",
+  "category": "Presentations",
+  "size_bytes": 731659,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8171b4820d736cecc26&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/8d49c53bbc3f3b53e5ed/PSI-20_Presentations_ACME CSSCI paper 20220402.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "1858d5f0952b9e0fb81850dcdb3db04e7634ecfc9877adbd95fb9191461cb22b",
+  "status": "downloaded"
+}

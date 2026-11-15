@@ -1,0 +1,661 @@
+{
+  "id": "res:PSI-102:2fb6258fb33e9fb80b67",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_Run 1 GMT252 testlog.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_Run 1 GMT252 testlog.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 26112,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d4ef91ab4427dbf43fd&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/2fb6258fb33e9fb80b67/PSI-102_Analyzed Data_Run 1 GMT252 testlog.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "12c59e279ae624cc0b8b57599072796f6c9fa56d6b08f493ff7e65486f91bb5a",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 1",
+      "text": "1: 2007/252/15:01:25 | 2: File sent via FTP | 3: 2007_252_14.hkp | 4: 1.0 | 5: 314.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 2",
+      "text": "1: 2007/252/15:04:08 | 2: Command Received | 3: SetDigitalOutput(12VDC_HTR_ENABLE | 4: on) | 5: 3.0 | 6: 210.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 3",
+      "text": "1: 2007/252/15:04:08 | 2: Command Completed | 3: SetDigitalOutput(12VDC_HTR_ENABLE | 4: on) | 5: 3.0 | 6: 210.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 4",
+      "text": "1: 2007/252/15:05:19 | 2: Command Received | 3: SetHeaterSetpoint(1 | 4: 9280) | 5: 3.0 | 6: 210.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 5",
+      "text": "1: 2007/252/15:05:19 | 2: Command Completed | 3: SetHeaterSetpoint(1 | 4: 9280) | 5: 3.0 | 6: 210.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 6",
+      "text": "1: 2007/252/15:05:51 | 2: Command Received | 3: SetTestSetup(1 | 4: 509.0 | 5: 496) | 6: 3.0 | 7: 210.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 7",
+      "text": "1: 2007/252/15:05:51 | 2: Command Completed | 3: SetTestSetup(1 | 4: 509.0 | 5: 496) | 6: 3.0 | 7: 210.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 8",
+      "text": "1: 2007/252/15:11:51 | 2: Command Received | 3: StartTest(SAMETest | 4: 1) | 5: 3.0 | 6: 210.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 9",
+      "text": "1: 2007/252/15:11:51 | 2: Entering Start State | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 10",
+      "text": "1: 2007/252/15:11:51 | 2: Manual positioning option in effect | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 11",
+      "text": "1: 2007/252/15:11:51 | 2: Zeroing the LFE | 4: 1.0 | 5: 2020.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 12",
+      "text": "1: 2007/252/15:11:53 | 2: Test Started | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 13",
+      "text": "1: 2007/252/15:11:54 | 2: Command Complete | 3: StartTest(SAMETest | 4: 1) | 5: 3.0 | 6: 210.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 14",
+      "text": "1: 2007/252/15:11:58 | 2: P-Trak turning on and warming up | 4: 1.0 | 5: 2012.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 15",
+      "text": "1: 2007/252/15:12:00 | 2: DustTrak turning on | 3: DustTrakA | 4: 1.0 | 5: 2008.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 16",
+      "text": "1: 2007/252/15:12:02 | 2: DustTrak turning on | 3: DustTrakB | 4: 1.0 | 5: 2008.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 17",
+      "text": "1: 2007/252/15:12:03 | 2: Entering PreConfigure State | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 18",
+      "text": "1: 2007/252/15:12:03 | 2: Video recorder powered on | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 19",
+      "text": "1: 2007/252/15:12:03 | 2: Preparing to exhaust aging chamber... | 4: 4.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 20",
+      "text": "1: 2007/252/15:12:04 | 2: Lights! Cameras! | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 21",
+      "text": "1: 2007/252/15:12:06 | 2: Exhausting aging chamber... | 4: 4.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 22",
+      "text": "1: 2007/252/15:12:08 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 23",
+      "text": "1: 2007/252/15:12:09 | 2: Sample Heater offset corrected | 3: Offset(uV)=26.2264 | 4: 1.0 | 5: 2014.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 24",
+      "text": "1: 2007/252/15:12:09 | 2: Sample type should be Silicone | 4: 1.0 | 5: 2014.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 25",
+      "text": "1: 2007/252/15:12:09 | 2: Sample type is confirmed | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 26",
+      "text": "1: 2007/252/15:12:09 | 2: Setting heating parameters | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 27",
+      "text": "1: 2007/252/15:12:09 | 2: Setting heater setpoint to 9280 or 0.885023 Ohms | 4: 1.0 | 5: 2014.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 28",
+      "text": "1: 2007/252/15:12:09 | 2: Setting heater duration to 1500 cycles or 40 secs | 4: 1.0 | 5: 2014.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 29",
+      "text": "1: 2007/252/15:12:09 | 2: Setting heater PIDs to 15360 | 3: 1536.0 | 4: 384.0 | 6: 1.0 | 7: 2014.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 30",
+      "text": "1: 2007/252/15:12:09 | 2: Setting MaxRt to 1.103 Ohms | 4: 1.0 | 5: 2014.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 31",
+      "text": "1: 2007/252/15:12:09 | 2: Warning:  Sample was heated 2 time(s) before | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 32",
+      "text": "1: 2007/252/15:12:11 | 2: Video recording started | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 33",
+      "text": "1: 2007/252/15:12:18 | 2: DustTrak serial number is 85200804 | 3: DustTrakA | 4: 1.0 | 5: 2008.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 34",
+      "text": "1: 2007/252/15:12:18 | 2: Setting DustTrak time constant to 1 second(s) | 3: DustTrakA | 4: 1.0 | 5: 2008.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 35",
+      "text": "1: 2007/252/15:12:18 | 2: Setting DustTrak date to 09/09/07 | 3: DustTrakA | 4: 1.0 | 5: 2008.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 36",
+      "text": "1: 2007/252/15:12:19 | 2: Setting DustTrak time to 15:12:19 | 3: DustTrakA | 4: 1.0 | 5: 2008.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 37",
+      "text": "1: 2007/252/15:12:19 | 2: Aging chamber is exhausted | 4: 4.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 38",
+      "text": "1: 2007/252/15:12:19 | 2: Setting DustTrak analog output range to 100 | 3: DustTrakA | 4: 1.0 | 5: 2008.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 39",
+      "text": "1: 2007/252/15:12:19 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 40",
+      "text": "1: 2007/252/15:12:19 | 2: DustTrak serial number is 85200796 | 3: DustTrakB | 4: 1.0 | 5: 2008.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 41",
+      "text": "1: 2007/252/15:12:19 | 2: Setting DustTrak time constant to 1 second(s) | 3: DustTrakB | 4: 1.0 | 5: 2008.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 42",
+      "text": "1: 2007/252/15:12:20 | 2: Setting DustTrak date to 09/09/07 | 3: DustTrakB | 4: 1.0 | 5: 2008.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 43",
+      "text": "1: 2007/252/15:12:20 | 2: Setting DustTrak time to 15:12:20 | 3: DustTrakB | 4: 1.0 | 5: 2008.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 44",
+      "text": "1: 2007/252/15:12:20 | 2: Setting DustTrak analog output range to 100 | 3: DustTrakB | 4: 1.0 | 5: 2008.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 45",
+      "text": "1: 2007/252/15:12:21 | 2: Video recording stopped | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 46",
+      "text": "1: 2007/252/15:12:30 | 2: Entering Pause State | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 47",
+      "text": "1: 2007/252/15:12:30 | 2: Waiting for P-Trak to warmup | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 48",
+      "text": "1: 2007/252/15:12:58 | 2: P-Trak warmup complete | 3:  initializing | 5: 1.0 | 6: 2012.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 49",
+      "text": "1: 2007/252/15:12:58 | 2: Setting P-Trak date to 09/09/07 | 4: 1.0 | 5: 2012.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 50",
+      "text": "1: 2007/252/15:12:58 | 2: Setting P-Trak time to 15:12:58 | 4: 1.0 | 5: 2012.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 51",
+      "text": "1: 2007/252/15:12:59 | 2: P-Trak warmed up | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 52",
+      "text": "1: 2007/252/15:12:59 | 2: Test paused at 00:01:05 elapsed test time | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 53",
+      "text": "1: 2007/252/15:12:59 | 2: Paused 21 secs into PreConfigure State | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 54",
+      "text": "1: 2007/252/15:13:26 | 2: Command Received | 3: ResumeTest() | 4: 3.0 | 5: 210.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 55",
+      "text": "1: 2007/252/15:13:26 | 2: Entering SampleHeating State | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 56",
+      "text": "1: 2007/252/15:13:26 | 2: Test Resumed | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 57",
+      "text": "1: 2007/252/15:13:26 | 2: Command Completed | 3: ResumeTest() | 4: 3.0 | 5: 210.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 58",
+      "text": "1: 2007/252/15:13:27 | 2: Starting diagnostic flow | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 59",
+      "text": "1: 2007/252/15:13:28 | 2: Dilution control enabled | 4: 1.0 | 5: 2020.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 60",
+      "text": "1: 2007/252/15:13:37 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 61",
+      "text": "1: 2007/252/15:13:40 | 2: Starting diagnostic flow complete | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 62",
+      "text": "1: 2007/252/15:13:41 | 2: Waiting for diagnostics with flow warmup | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 63",
+      "text": "1: 2007/252/15:14:04 | 2: Nominal fill rate is 4.70016 LPM | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 64",
+      "text": "1: 2007/252/15:14:04 | 2: Preparing to fill aging chamber... | 4: 4.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 65",
+      "text": "1: 2007/252/15:14:23 | 2: 6 secs before piston moving mark | 4: 1.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 66",
+      "text": "1: 2007/252/15:14:25 | 2: Event occurred. | 3: HighVacuumPressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 67",
+      "text": "1: 2007/252/15:14:27 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 68",
+      "text": "1: 2007/252/15:14:30 | 2: Filling aging chamber... | 4: 1.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 69",
+      "text": "1: 2007/252/15:14:31 | 2: Heater will start in 26 seconds | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 70",
+      "text": "1: 2007/252/15:14:46 | 2: Video recording started | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 71",
+      "text": "1: 2007/252/15:14:52 | 2: Event clear. | 3: HighVacuumPressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 72",
+      "text": "1: 2007/252/15:14:53 | 2: Event occurred. | 3: HighVacuumPressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 73",
+      "text": "1: 2007/252/15:14:56 | 2: Turning on heater now | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 74",
+      "text": "1: 2007/252/15:15:09 | 2: Event clear. | 3: HighVacuumPressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 75",
+      "text": "1: 2007/252/15:15:10 | 2: Event occurred. | 3: HighVacuumPressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 76",
+      "text": "1: 2007/252/15:15:36 | 2: Heating sequence finished | 3: Nominal finish | 4: 1.0 | 5: 2015.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 77",
+      "text": "1: 2007/252/15:15:38 | 2: Event clear. | 3: HighVacuumPressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 78",
+      "text": "1: 2007/252/15:15:39 | 2: Event occurred. | 3: HighVacuumPressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 79",
+      "text": "1: 2007/252/15:15:42 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 80",
+      "text": "1: 2007/252/15:15:44 | 2: Event clear. | 3: HighVacuumPressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 81",
+      "text": "1: 2007/252/15:15:45 | 2: Event occurred. | 3: HighVacuumPressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 82",
+      "text": "1: 2007/252/15:15:50 | 2: Event clear. | 3: HighVacuumPressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 83",
+      "text": "1: 2007/252/15:15:51 | 2: Event occurred. | 3: HighVacuumPressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 84",
+      "text": "1: 2007/252/15:15:53 | 2: Event clear. | 3: HighVacuumPressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 85",
+      "text": "1: 2007/252/15:15:57 | 2: Aging chamber is filled | 4: 4.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 86",
+      "text": "1: 2007/252/15:15:59 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 87",
+      "text": "1: 2007/252/15:16:11 | 2: Video recording stopped | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 88",
+      "text": "1: 2007/252/15:16:11 | 2: Starting to save heater data | 4: 4.0 | 5: 2014.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 89",
+      "text": "1: 2007/252/15:16:12 | 2: Light and camera turned off | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 90",
+      "text": "1: 2007/252/15:16:13 | 2: Video recorder powered off | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 91",
+      "text": "1: 2007/252/15:16:14 | 2: Entering PrimaryAging State | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 92",
+      "text": "1: 2007/252/15:16:14 | 2: Primary aging for 8 seconds | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 93",
+      "text": "1: 2007/252/15:16:20 | 2: Heater data saved | 4: 4.0 | 5: 2014.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 94",
+      "text": "1: 2007/252/15:16:21 | 2: Entering PrimaryDiagnostic State | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 95",
+      "text": "1: 2007/252/15:16:22 | 2: Exhausting at 6.7099 LPM | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 96",
+      "text": "1: 2007/252/15:16:22 | 2: Preparing to exhaust aging chamber... | 4: 4.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 97",
+      "text": "1: 2007/252/15:16:28 | 2: Sending file via FTP | 3: /data/2007_252/2007_252_15_16.htr | 4: 1.0 | 5: 314.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 98",
+      "text": "1: 2007/252/15:16:30 | 2: File sent via FTP | 3: 2007_252_15_16.htr | 4: 1.0 | 5: 314.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 99",
+      "text": "1: 2007/252/15:16:33 | 2: Exhausting aging chamber... | 4: 4.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 100",
+      "text": "1: 2007/252/15:16:35 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 101",
+      "text": "1: 2007/252/15:17:26 | 2: Aging chamber is exhausted | 4: 4.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 102",
+      "text": "1: 2007/252/15:17:26 | 2: Entering SecondaryAging State | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 103",
+      "text": "1: 2007/252/15:17:27 | 2: Secondary aging period is categorized as medium | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 104",
+      "text": "1: 2007/252/15:17:27 | 2: Dilution control disabled | 4: 1.0 | 5: 2020.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 105",
+      "text": "1: 2007/252/15:17:27 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 106",
+      "text": "1: 2007/252/15:17:27 | 2: Secondary aging for 150 seconds | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 107",
+      "text": "1: 2007/252/15:17:48 | 2: Starting diagnostic flow | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 108",
+      "text": "1: 2007/252/15:17:49 | 2: Dilution control enabled | 4: 1.0 | 5: 2020.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 109",
+      "text": "1: 2007/252/15:17:52 | 2: Starting diagnostic flow complete | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 110",
+      "text": "1: 2007/252/15:17:53 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 111",
+      "text": "1: 2007/252/15:19:58 | 2: Entering SecondaryDiagnostic State | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 112",
+      "text": "1: 2007/252/15:19:58 | 2: Exhausting at 2.1099 LPM | 3: /config/test_matrices/same_test_1.txt | 4: 4.0 | 5: 2002.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 113",
+      "text": "1: 2007/252/15:19:58 | 2: Preparing to exhaust aging chamber... | 4: 4.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 114",
+      "text": "1: 2007/252/15:20:00 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 115",
+      "text": "1: 2007/252/15:20:01 | 2: Exhausting aging chamber... | 4: 4.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 116",
+      "text": "1: 2007/252/15:20:03 | 2: Event occurred. | 3: LowRegulatedGN2Pressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 117",
+      "text": "1: 2007/252/15:20:41 | 2: Aging chamber is exhausted | 4: 4.0 | 5: 2009.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 118",
+      "text": "1: 2007/252/15:20:41 | 2: Event clear. | 3: LowRegulatedGN2Pressure | 4: 5.0 | 5: 0.0"
+    },
+    {
+      "locator": "sheet Copy of GMT252run1testlog, row 119",
+      "text": "1: 2007/252/15:20:53"
+    }
+  ],
+  "details": {
+    "sheets": [
+      {
+        "name": "sheet Copy of GMT252run1testlog",
+        "row_count": 119,
+        "column_count": 7,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 0
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 1,
+            "min": 1536.0,
+            "max": 1536.0,
+            "blank_count": 33
+          },
+          {
+            "numeric_count": 111,
+            "min": 1.0,
+            "max": 509.0,
+            "blank_count": 2
+          },
+          {
+            "numeric_count": 115,
+            "min": 0.0,
+            "max": 2020.0,
+            "blank_count": 2
+          },
+          {
+            "numeric_count": 10,
+            "min": 1.0,
+            "max": 2012.0,
+            "blank_count": 109
+          },
+          {
+            "numeric_count": 3,
+            "min": 210.0,
+            "max": 2014.0,
+            "blank_count": 116
+          }
+        ],
+        "rows": [
+          [
+            "2007/252/15:01:25",
+            "File sent via FTP",
+            "2007_252_14.hkp",
+            1.0,
+            314.0,
+            "",
+            ""
+          ],
+          [
+            "2007/252/15:04:08",
+            "Command Received",
+            "SetDigitalOutput(12VDC_HTR_ENABLE",
+            "on)",
+            3.0,
+            210.0,
+            ""
+          ],
+          [
+            "2007/252/15:04:08",
+            "Command Completed",
+            "SetDigitalOutput(12VDC_HTR_ENABLE",
+            "on)",
+            3.0,
+            210.0,
+            ""
+          ],
+          [
+            "2007/252/15:05:19",
+            "Command Received",
+            "SetHeaterSetpoint(1",
+            "9280)",
+            3.0,
+            210.0,
+            ""
+          ],
+          [
+            "2007/252/15:05:19",
+            "Command Completed",
+            "SetHeaterSetpoint(1",
+            "9280)",
+            3.0,
+            210.0,
+            ""
+          ],
+          [
+            "2007/252/15:05:51",
+            "Command Received",
+            "SetTestSetup(1",
+            509.0,
+            "496)",
+            3.0,
+            210.0
+          ],
+          [
+            "2007/252/15:05:51",
+            "Command Completed",
+            "SetTestSetup(1",
+            509.0,
+            "496)",
+            3.0,
+            210.0
+          ],
+          [
+            "2007/252/15:11:51",
+            "Command Received",
+            "StartTest(SAMETest",
+            "1)",
+            3.0,
+            210.0,
+            ""
+          ],
+          [
+            "2007/252/15:11:51",
+            "Entering Start State",
+            "/config/test_matrices/same_test_1.txt",
+            4.0,
+            2002.0,
+            "",
+            ""
+          ],
+          [
+            "2007/252/15:11:51",
+            "Manual positioning option in effect",
+            "/config/test_matrices/same_test_1.txt",
+            4.0,
+            2002.0,
+            "",
+            ""
+          ],
+          [
+            "2007/252/15:11:51",
+            "Zeroing the LFE",
+            "",
+            1.0,
+            2020.0,
+            "",
+            ""
+          ],
+          [
+            "2007/252/15:11:53",
+            "Test Started",
+            "/config/test_matrices/same_test_1.txt",
+            4.0,
+            2002.0,
+            "",
+            ""
+          ]
+        ],
+        "all_rows_retained": false
+      }
+    ]
+  },
+  "warnings": [
+    "Saved cell values inspected; formulas not recalculated."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

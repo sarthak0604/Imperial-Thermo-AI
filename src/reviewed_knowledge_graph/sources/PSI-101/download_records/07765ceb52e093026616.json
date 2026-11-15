@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-101:07765ceb52e093026616",
+  "study": "PSI-101",
+  "filename": "PSI-101_Engineering Documents_60089MFHP000-C SAME Fluids System Schematic.pdf",
+  "key": "psi-data/PSI-101/Engineering Documents/PSI-101_Engineering Documents_60089MFHP000-C SAME Fluids System Schematic.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 258861,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc545b8656d2315bf5180&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/07765ceb52e093026616/PSI-101_Engineering Documents_60089MFHP000-C SAME Fluids System Schematic.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "bf9cb13668218b415a3f9def9714c3891e4675405e2797ebdf30dccab286920c",
+  "status": "downloaded"
+}

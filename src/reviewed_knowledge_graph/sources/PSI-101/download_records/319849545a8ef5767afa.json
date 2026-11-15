@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-101:319849545a8ef5767afa",
+  "study": "PSI-101",
+  "filename": "PSI-101_Analyzed Data_2010_253_14_kapton_run112.xls",
+  "key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_2010_253_14_kapton_run112.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 5930496,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc538b8656d2315bf50e8&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/319849545a8ef5767afa/PSI-101_Analyzed Data_2010_253_14_kapton_run112.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "64346eb57e283007f99fb4bb8ed86e4cd95048781e9281fc5cf28e426c0effed",
+  "status": "downloaded"
+}

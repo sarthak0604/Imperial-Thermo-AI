@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-159:091037dd063b76bf393c",
+  "study": "PSI-159",
+  "filename": "PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+  "key": "psi-data/PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+  "category": "Experimental table",
+  "size_bytes": 39422,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-159/download?file=691f7ea117f78b371b26f6fb&version=1&studyVersion=1&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-159/091037dd063b76bf393c/PSI-159_Experimental table_CFI-G_Inverse Flames.csv",
+  "sha256": "d4d44f8b9896936728748e34d1b6ad0812032a92fa5289599b708c138e3a9b39",
+  "status": "downloaded"
+}

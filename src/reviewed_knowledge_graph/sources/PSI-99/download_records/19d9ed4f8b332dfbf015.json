@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-99:19d9ed4f8b332dfbf015",
+  "study": "PSI-99",
+  "filename": "PSI-99_Science Documents_SAFFIRE-II_MergeResult-jpeg_v5_Final.xlsx",
+  "key": "psi-data/PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE-II_MergeResult-jpeg_v5_Final.xlsx",
+  "category": "Science Documents",
+  "size_bytes": 20820425,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-99/download?file=6840cdd64a0e24d624cebd82&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-99/19d9ed4f8b332dfbf015/PSI-99_Science Documents_SAFFIRE-II_MergeResult-jpeg_v5_Final.xlsx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "1889a35b7f6b9a6de3cc15d099929ca747052f2d5e54283a521680d9593f9277",
+  "status": "downloaded"
+}

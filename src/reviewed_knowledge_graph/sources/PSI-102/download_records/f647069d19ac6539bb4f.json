@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:f647069d19ac6539bb4f",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT263 Run 15 DBP.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT263 Run 15 DBP.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 645120,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d4ff91ab4427dbf440a&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/f647069d19ac6539bb4f/PSI-102_Analyzed Data_GMT263 Run 15 DBP.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f99238398f167f5bb64cf8dbc93135d4df7bd353626e7366388ace60d7332373",
+  "status": "downloaded"
+}

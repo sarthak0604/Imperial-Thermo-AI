@@ -1,0 +1,73 @@
+{
+  "id": "res:PSI-22:a49ab600bda70c0610a3",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_ACME pictorial overview slides 20170601.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_ACME pictorial overview slides 20170601.pdf",
+  "category": "Presentations",
+  "size_bytes": 1954184,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e63e0eb4c08676004b93&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/a49ab600bda70c0610a3/PSI-22_Presentations_ACME pictorial overview slides 20170601.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "618813b751574793ed27006c4ffe64ca25bbbc4efb3ada770b12e2acb4c94cdf",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "National Aeronautics and Space Administration\nwww.nasa.gov\n1\nWhat's a fire and why does it \n- what's the word?  … burn?\nAriel, The Little Mermaid\nfrom the song ‘Part of Your World’\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "National Aeronautics and Space Administration\nwww.nasa.gov\n2\nnormal gravity          microgravity   \n"
+    },
+    {
+      "locator": "page 3",
+      "text": "National Aeronautics and Space Administration\nwww.nasa.gov\nACME\nAdvanced Combustion via\nMicrogravity Experiments\nFive unique experiments studying \nsymmetric, laminar, non-premixed, \ngas-fueled flames that will be carried \nout on the space station using a \nsingle modular set of hardware.\n3\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "National Aeronautics and Space Administration\nwww.nasa.gov\n4\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "National Aeronautics and Space Administration\nwww.nasa.gov\n5\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "National Aeronautics and Space Administration\nwww.nasa.gov\n6\nCLD Flame \n"
+    },
+    {
+      "locator": "page 7",
+      "text": "National Aeronautics and Space Administration\nwww.nasa.gov\n7\nE-FIELD Flames\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "National Aeronautics and Space Administration\nwww.nasa.gov\n8\nBRE\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "National Aeronautics and Space Administration\nwww.nasa.gov\n9\ns-Flame\nFlame \nDesign\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "National Aeronautics and Space Administration\nwww.nasa.gov\n10\nWhy ACME?\nenergy & environment\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "National Aeronautics and Space Administration\nwww.nasa.gov\n11\nspacecraft fire safety\nWhy ACME?\n“Apollo 13 ... Houston, We Have a Problem” painting by astronaut Alan Bean\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "National Aeronautics and Space Administration\nwww.nasa.gov\n12\nTo follow ACME’s progress, like \nwww.facebook.com/space.flames/\nNumerical prediction of flame structure [CLD Flame, Yale University]\n"
+    }
+  ],
+  "details": {
+    "page_count": 12,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

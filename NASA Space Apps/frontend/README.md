@@ -8,7 +8,33 @@ From the repository root, run the frontend with the project's local inference de
 AI_PROVIDER=thermo uv run --extra search python 'NASA Space Apps/frontend/standin/server.py'
 ```
 
-Open http://localhost:8000. Planning uses the cached local `Qwen/Qwen3-4B-Instruct-2507` model and requires no API key. Set `PSI_PARSER_MODEL` to use a different cached model. Questions are ranked against the bundled PSI example graph and passed to the Thermo planner and validated executor. The dashboard displays returned charts, calculation outputs, source links and limitations. Set `THERMO_GRAPH` to use another graph in the same format. This mode uses lexical graph search and processes each question independently. The model library continues to show its precomputed examples.
+Open http://localhost:8000. Planning uses the cached local `Qwen/Qwen3-4B-Instruct-2507` model and requires no API key. Set `PSI_PARSER_MODEL` to use a different cached model. Questions are ranked against the reviewed NASA PSI graph (19 investigations, 63,244 nodes) and passed to the Thermo planner and validated executor. The dashboard displays returned charts, calculation outputs, source links and limitations. Set `THERMO_GRAPH` to another graph using the reviewed 1.0.0 node/edge schema. Lexical indexes are cached between questions and refreshed when the graph file changes. Each question has its own execution session. Source-review status, summaries and quality issues accompany selected records; listed recordings are not assumed to have been analyzed. The model library continues to show its precomputed examples. See [reviewed graph integration](../../docs/reviewed-graph.md).
+
+For the installed Python 3.12 environment on the ARM CPU machine, start directly
+from the repository root (this preserves that environment):
+
+```bash
+AI_PROVIDER=thermo OMP_NUM_THREADS=4 TOKENIZERS_PARALLELISM=false \
+  .venv/bin/python 'NASA Space Apps/frontend/standin/server.py'
+```
+
+Both `Qwen/Qwen3-4B-Instruct-2507` and `Qwen/Qwen3-Embedding-0.6B` are cached under
+`~/.cache/huggingface/hub`. The frontend uses the instruction model; the optional
+vector-search command uses the embedding model. CPU loading preserves the
+checkpoint's BF16 precision to keep the 4B weights near 8 GB. Allow additional RAM
+for inference and the graph. Model loading is offline; NASA file downloads still
+require network access. To resync this particular environment, use
+`uv sync --python 3.12 --extra search --extra plotting`.
+This machine uses the official CPU-only `torch==2.15.0+cpu` wheel. A project sync
+can restore the lockfile's CUDA build; restore the CPU build afterward with
+`uv pip install --index-url https://download.pytorch.org/whl/cpu --reinstall-package torch torch==2.15.0`.
+
+Local verification on this CPU passed a 1,024-dimensional embedding request and
+a short instruction-model generation (`READY`, about 8 seconds after loading).
+The full frontend planning request remained in prompt processing for several
+minutes and was interrupted. Its end-to-end CPU completion is therefore not
+verified; the application's bounded planner budget may be insufficient on this
+hardware. A CUDA GPU is recommended for interactive use of the 4B planner.
 
 ## Preview and stand-in modes
 - **Mock answers:** double-click `index.html`.

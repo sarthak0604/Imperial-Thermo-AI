@@ -1,0 +1,33 @@
+{
+  "id": "res:PSI-23:a329d70bf59eb10d36e9",
+  "study": "PSI-23",
+  "filename": "PSI-23_Science Documents_ACME s-Flame  DoD.pdf",
+  "key": "psi-data/PSI-23/Science Documents/PSI-23_Science Documents_ACME s-Flame  DoD.pdf",
+  "category": "Science Documents",
+  "size_bytes": 801605,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841ce426daf91e274cecd4f&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/a329d70bf59eb10d36e9/PSI-23_Science Documents_ACME s-Flame  DoD.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f4ae0b6ffb4c60f69146ddb6df981963e1fccf39ee2be4706a64d7c00337a25b",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "PSI Data Organization Document \nAdvanced Combustion via Microgravity Experiments (ACME) Structure and Response of Spherical \nDiffusion Flames (s-Flame) \n \n1 \n \nTo gain an initial understanding of this experiment, refer to the documents “ACME non-imaging data file \ndescription.pdf” and “s-Flame_final_report_20210729.pdf” located in “Final Report” of the “Resulting Products” \nsection on the “Pubs & Docs” tab.  \n \nThe s-Flame data is organized in PSI by diluent and fuel composition. Raw data, and video & image data are \navailable on the “Scientific Data and Information Tab” of each of the eight “Experiment Data” records:  \n \n \n1 Nitrogen-diluted Hydrogen and Oxygen \n \n2 Nitrogen-diluted Methane and Oxygen \n \n3 Nitrogen-diluted Hydrogen-Methane mixtures and Oxygen \n \n4 Nitrogen-diluted Ethylene and Oxygen \n \n5 Helium-diluted Hydrogen and Oxygen \n \n6 Helium-diluted Methane and Oxygen \n \n7 Helium-diluted Hydrogen-Methane mixtures and Oxygen \n \n8 Helium-diluted Ethylene and Oxygen \n \nWithin each “Experiment Data” record, “Raw Data”, “Images” and “Audio/Video Files” are available on the \n“Scientific Data and Information” tab. Test names are formatted YYDDDX# where YY identifies year, DDD identifies \nday of year (GMT), X identifies a letter and # identifies a number  – where the different numbers can be for repeats \nbut are typically variants, e.g., with different flow rate(s) or instrumentation setting(s), e.g. 19308F1. Record \nnaming and listings are based on the detailed information in the test conditions table below (page 2). \n \nTest specific raw data files are located on the “Raw Data and Information” tab of the “Raw & Analyzed Data” \nrecord. The first row of the .csv files provides information about the test configuration. The headers of the basic \ndata in .csv files is explained in Section 10.1, beginning on page 126 of the “ACME-DOC-010 Rev D.pdf” located in \nthe “Data Organization Document(s)” section of the “Scientific Data and Information” section on the “Data” tab of \nthe ACME s-Flames “Investigations” record. Associated videos are located on the “General” tab and associated \nimages are located on the “Image Data and Information” tab of the “Videos & Images” record. \n \nThere are various other supporting engineering documents, videos, reports and publications available on the other \ntabs of the “Investigations” record. \n \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "PSI Data Organization Document \nAdvanced Combustion via Microgravity Experiments (ACME) Structure and Response of Spherical \nDiffusion Flames (s-Flame) \n \n2 \n \n \n"
+    }
+  ],
+  "details": {
+    "page_count": 2,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

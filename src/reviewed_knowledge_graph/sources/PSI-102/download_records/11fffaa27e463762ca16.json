@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:11fffaa27e463762ca16",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_kaptonGMT257 zgy average.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_kaptonGMT257 zgy average.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 2234368,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d50f91ab4427dbf441b&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/11fffaa27e463762ca16/PSI-102_Analyzed Data_kaptonGMT257 zgy average.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "a89f0b6625b4daf658956ba17450edc07c10929304675305cf8cc7cd4c3e1106",
+  "status": "downloaded"
+}

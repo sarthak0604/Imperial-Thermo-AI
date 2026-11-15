@@ -15,16 +15,19 @@ uv run python examples/run_workflow_demo.py
 The demo uses synthetic fixture data and mocked downloads, then runs the real
 THM-04 calculation. It needs no API key or network after dependencies are installed.
 
-For real graph-search results, set `OPENAI_API_KEY` and `OPENAI_MODEL`, then run:
+The application searches the reviewed NASA PSI graph by default: 19 investigations,
+63,244 nodes and 69,463 edges. Set `OPENAI_API_KEY` and `OPENAI_MODEL`, then run:
 
 ```bash
-uv run thermo-execute --search-results search-results.json \
-  --prompt "Calculate heat release and show the test video" \
+uv run thermo-execute \
+  --prompt "Show the PSI-39 CFI final science report PDF" \
   --output frontend-response.json
 ```
 
 `main` and `imperial-thermo-ai` invoke the same workflow. `thermo-plan` produces
-only a validated request. `thermo-search` searches the small example graph;
+only a validated request. `thermo-search --query "BASS-II video"` searches the
+reviewed graph without an API key. Supply `--graph` or `THERMO_GRAPH` to override
+the snapshot, or `--search-results` to execute an existing retrieval result;
 `python -m imperial_thermo_ai.search_files` runs the vector-search integration.
 `thermo-plot` is the optional Matplotlib PNG exporter. `thermo-evaluate` evaluates
 parser cases supplied with `--cases examples/parser_cases.json`.
@@ -39,6 +42,7 @@ src/
   imperial_thermo_ai/   Graph search, parser, evaluation and cloud launcher
   request_planner/      LLM contracts, planning, downloads, workers and frontend output
   Functions/            Canonical THM-01 through THM-20 implementations and input contracts
+  reviewed_knowledge_graph/output/  Canonical reviewed NASA PSI graph and source cautions
 psi_kg/
   src/psi_graph/        Independent graph-building package and NASA adapter
   tests/               Graph-building checks
@@ -66,7 +70,8 @@ builder has its own [cloud guide](psi_kg/CLOUD_RUN.md).
 - [Execution and frontend contract](docs/frontend-workflow.md)
 - [Graph-search result contract](docs/search-results-contract.md)
 - [Parser and vector-search handoff](docs/parser.md)
-- [Real PSI example graph and provenance](examples/PSI_GRAPH.md)
+- [Reviewed graph integration and validation](docs/reviewed-graph.md)
+- [Small PSI test fixture and provenance](examples/PSI_GRAPH.md)
 - [Model input/output documentation](docs/models/)
 - [Structured THM request](examples/thermo_request.json)
 - [Computed synthetic frontend response](examples/thermo_frontend_response.json)

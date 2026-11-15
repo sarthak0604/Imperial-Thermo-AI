@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:616099b692fb05db0e3f",
+  "study": "PSI-22",
+  "filename": "PSI-22_Reports_2018 - E-FIELD Flames 30-day Operation Accomplishments Report for ISS Increments 55 and 56 20181115.pdf",
+  "key": "psi-data/PSI-22/Reports/PSI-22_Reports_2018 - E-FIELD Flames 30-day Operation Accomplishments Report for ISS Increments 55 and 56 20181115.pdf",
+  "category": "Reports",
+  "size_bytes": 793069,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e63e0eb4c08676004b90&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/616099b692fb05db0e3f/PSI-22_Reports_2018 - E-FIELD Flames 30-day Operation Accomplishments Report for ISS Increments 55 and 56 20181115.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "198d97c22854a82780852dec511b275213811a749af1208f954d365503403d3a",
+  "status": "downloaded"
+}

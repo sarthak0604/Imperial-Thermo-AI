@@ -1,0 +1,31 @@
+{
+  "id": "res:PSI-102:86ec9ad319919fd6b829",
+  "study": "PSI-102",
+  "filename": "PSI-102_Engineering Documents_60089MFHA151-B Same Aging Chamber.pdf",
+  "key": "psi-data/PSI-102/Engineering Documents/PSI-102_Engineering Documents_60089MFHA151-B Same Aging Chamber.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 212992,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d53f91ab4427dbf4442&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/86ec9ad319919fd6b829/PSI-102_Engineering Documents_60089MFHA151-B Same Aging Chamber.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "04177ecfaedeb18208d27b45f6f96ac4f2c16496fa5bee906ccd1b970b7694c8",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": ""
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": [
+      1
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "no_text",
+  "review_status": "not_yet_reviewed"
+}

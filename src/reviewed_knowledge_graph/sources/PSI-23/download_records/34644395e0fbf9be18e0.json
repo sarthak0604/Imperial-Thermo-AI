@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:34644395e0fbf9be18e0",
+  "study": "PSI-23",
+  "filename": "PSI-23_Science Documents_s-Flame_SRD_20100125.pdf",
+  "key": "psi-data/PSI-23/Science Documents/PSI-23_Science Documents_s-Flame_SRD_20100125.pdf",
+  "category": "Science Documents",
+  "size_bytes": 946359,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdf26daf91e274ceca0c&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/34644395e0fbf9be18e0/PSI-23_Science Documents_s-Flame_SRD_20100125.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "2df7bb27a8b8734d5d099d7d2378ca9b401ca8d8c96b9eef6365906abbf11f7c",
+  "status": "downloaded"
+}

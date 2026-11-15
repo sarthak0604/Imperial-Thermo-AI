@@ -1,0 +1,31 @@
+{
+  "id": "res:PSI-102:dd3c766119ae709adb00",
+  "study": "PSI-102",
+  "filename": "PSI-102_Engineering Documents_60089MFHA417-B Kapton Sample Assembly.pdf",
+  "key": "psi-data/PSI-102/Engineering Documents/PSI-102_Engineering Documents_60089MFHA417-B Kapton Sample Assembly.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 149738,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d54f91ab4427dbf4446&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/dd3c766119ae709adb00/PSI-102_Engineering Documents_60089MFHA417-B Kapton Sample Assembly.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "02604f468029563e4f43213129302af8e01a239caf1c98a616962d7af29cf6cb",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": ""
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": [
+      1
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "no_text",
+  "review_status": "not_yet_reviewed"
+}

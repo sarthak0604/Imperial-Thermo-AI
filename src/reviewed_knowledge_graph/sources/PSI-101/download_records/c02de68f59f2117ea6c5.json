@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-101:c02de68f59f2117ea6c5",
+  "study": "PSI-101",
+  "filename": "PSI-101_Analyzed Data_Sample descriptions tables.docx",
+  "key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_Sample descriptions tables.docx",
+  "category": "Analyzed Data",
+  "size_bytes": 28571083,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc531b8656d2315bf5096&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/c02de68f59f2117ea6c5/PSI-101_Analyzed Data_Sample descriptions tables.docx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "715cd2c4560799a0fcb9d9c824d1f56761414e3264da191c4e379021235b24bd",
+  "status": "downloaded"
+}

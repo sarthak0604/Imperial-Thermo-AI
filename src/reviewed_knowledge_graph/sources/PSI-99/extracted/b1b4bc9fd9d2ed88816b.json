@@ -1,0 +1,497 @@
+{
+  "id": "res:PSI-99:b1b4bc9fd9d2ed88816b",
+  "study": "PSI-99",
+  "filename": "PSI-99_Experimental table_SAFFIRE-2.csv",
+  "key": "psi-data/PSI-99/Experimental table/PSI-99_Experimental table_SAFFIRE-2.csv",
+  "category": "Experimental table",
+  "size_bytes": 1973,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-99/download?file=6792d000b7b6ff8e650380fc&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-99/b1b4bc9fd9d2ed88816b/PSI-99_Experimental table_SAFFIRE-2.csv",
+  "sha256": "3c24390b9ef86f3d1ebaab911a1a3cc95a8759aebf42062371370e6d4b31b8ac",
+  "status": "downloaded",
+  "sections": [
+    {
+      "locator": "table, row 1",
+      "text": "1: Sample Number | 2: Material | 3: Samle Thickness  | 4: Sample Length  | 5: Sample Width (cm) | 6: Air Flow (cm/s) | 7: Percent O2 (Note 1) | 8: Ignition Power (W) | 9: Ignition Time (s) | 10: Burn Time (s) | 11: Flow Direction | 12: ?-g Burn Length | 13: ?-g Spread Length | 14: 1-g Burn Length | 15: 1-g Spread Rate | 16: Camera 1 | 17: Camera 2"
+    },
+    {
+      "locator": "table, row 2",
+      "text": "1: 2-1 | 2: Silicone | 3: 0.27 mm | 4: 29 cm | 5: 5 cm | 6: 20 cm/s | 7: ~ 21.5 | 8: 80 W | 9: 9.2 s | 10: Insignificant | 11: Concurrent | 12: ~ 0 | 13: n/a | 14: Complete | 15: Acceleratory | 16: S1C1 | 17: S1C2"
+    },
+    {
+      "locator": "table, row 3",
+      "text": "1: 2-2 | 2: Silicone | 3: 0.61 mm | 4: 29 cm | 5: 5 cm | 6: 20 cm/s | 7: ~ 22.1 | 8: 80 W | 9: 9.2 s | 10: Insignificant | 11: Concurrent | 12: ~ 0 | 13: n/a | 14: 7.6 cm | 15: 1.2 mm/s | 16: n/a | 17: S2C2"
+    },
+    {
+      "locator": "table, row 4",
+      "text": "1: 2-3 | 2: Silicone | 3: 1.03 mm | 4: 29 cm | 5: 5 cm | 6: 20 cm/s | 7: ~ 22.1 | 8: 80 W | 9: 9.2 s | 10: Insignificant | 11: Concurrent | 12: ~ 0 | 13: n/a | 14: ~ 0 | 15: n/a | 17: S3C2"
+    },
+    {
+      "locator": "table, row 5",
+      "text": "1: 2-4 | 2: Silicone | 3: 037 mm | 4: 29 cm | 5: 5 cm | 6: 20 cm/s | 7: ~ 22.1 | 8: 80 W | 9: 9.2 s | 10: Insignificant | 11: Opposed | 12: ~ 0 | 13: n/a | 14: Complete | 15: 0.6 mm/s | 16: S4C1 | 17: S4C1"
+    },
+    {
+      "locator": "table, row 6",
+      "text": "1: 2-5 | 2: Cotton-Fiberglass (SIBAL) | 3: 037 mm | 4: 29 cm | 5: 5 cm | 6: 20 cm/s | 7: ~ 22.1 | 8: 80 W | 9: 9.2 s | 10: 145 s | 11: Concurrent | 12: 29 cm | 13: 2.1 mm/s | 14: Complete | 15: Acceleratory | 16: S5C1 | 17: S5C2"
+    },
+    {
+      "locator": "table, row 7",
+      "text": "1: 2-6 | 3: 037 mm | 4: 29 cm | 5: 5 cm | 6: 20 cm/s | 7: ~ 22.1 | 8: 80 W | 9: 9.2 s | 10: 115 s | 11: Concurrent | 12: 29 cm | 13: 2.6 mm/s | 14: Complete | 15: Acceleratory | 16: S6C1 | 17: S56C2"
+    },
+    {
+      "locator": "table, row 8",
+      "text": "1: 2-7 | 2: PMMA & Nomex | 3: 0.85 and 0.37 mm | 4: 5 and 24 cm | 5: 5 cm | 6: 20 cm/s | 7: ~ 22.1 | 8: 80 W | 9: 9.2 s | 10: 140 s | 11: Concurrent | 12: 5 cm & 0 (note 2) | 13: n/a (Nomex) | 14: ~ 0 (Nomex) | 15: n/a (Nomex) | 16: S7C1 | 17: n/a"
+    },
+    {
+      "locator": "table, row 9",
+      "text": "1: 2-8 | 2: PMMA | 3: See Fig. 5 | 4: 29 cm | 5: 5 cm | 6: 20 cm/s | 7: 22.1 to 22.0 | 8: 97 W | 9: 30 s | 10: 600 s | 11: Concurrent | 12: ~ 10 cm (note 3) | 13: Note 4 | 14: Complete | 15: Acceleratory | 16: S8C1 | 17: n/a"
+    },
+    {
+      "locator": "table, row 10",
+      "text": "1: 2-9 | 3: 1 cm | 4: 29 cm | 5: 5 cm | 6: 20 cm/s | 7: 22.0 to 21.9 | 8: 97 W | 9: 30 s | 10: 900 s | 11: Concurrent | 12: ~ 10 cm (note 4) | 13: Note 4 | 14: Complete | 15: Acceleratory | 16: S9C1 | 17: n/a"
+    },
+    {
+      "locator": "table, row 11",
+      "text": "1: F1C1/F1C2 | 2: Pre-test flow visulation data for sample 2-1"
+    },
+    {
+      "locator": "table, row 12",
+      "text": "1: F2C1/F2C2 | 2: Pre-test flow visulation data for sample 2-2"
+    },
+    {
+      "locator": "table, row 13",
+      "text": "1: Note 1 Derived from measured CO2 production and referenced to initial O2 concentration reported by ISS."
+    },
+    {
+      "locator": "table, row 14",
+      "text": "1: Note 2 The PMMA portion was completely consumed but the Nomex was not ignited."
+    },
+    {
+      "locator": "table, row 15",
+      "text": "1: Note 3 This is the length of fuel with significant visible damage."
+    },
+    {
+      "locator": "table, row 16",
+      "text": "1: Note 4 The flames remain anchored at the base of the sample which has a very slow regression rate (0.01 to 0.04 mm/s)"
+    }
+  ],
+  "details": {
+    "name": "table",
+    "row_count": 16,
+    "column_count": 17,
+    "column_statistics": [
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 7
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 6
+      }
+    ],
+    "rows": [
+      [
+        "Sample Number",
+        "Material",
+        "Samle Thickness ",
+        "Sample Length ",
+        "Sample Width (cm)",
+        "Air Flow (cm/s)",
+        "Percent O2 (Note 1)",
+        "Ignition Power (W)",
+        "Ignition Time (s)",
+        "Burn Time (s)",
+        "Flow Direction",
+        "?-g Burn Length",
+        "?-g Spread Length",
+        "1-g Burn Length",
+        "1-g Spread Rate",
+        "Camera 1",
+        "Camera 2"
+      ],
+      [
+        "2-1",
+        "Silicone",
+        "0.27 mm",
+        "29 cm",
+        "5 cm",
+        "20 cm/s",
+        "~ 21.5",
+        "80 W",
+        "9.2 s",
+        "Insignificant",
+        "Concurrent",
+        "~ 0",
+        "n/a",
+        "Complete",
+        "Acceleratory",
+        "S1C1",
+        "S1C2"
+      ],
+      [
+        "2-2",
+        "Silicone",
+        "0.61 mm",
+        "29 cm",
+        "5 cm",
+        "20 cm/s",
+        "~ 22.1",
+        "80 W",
+        "9.2 s",
+        "Insignificant",
+        "Concurrent",
+        "~ 0",
+        "n/a",
+        "7.6 cm",
+        "1.2 mm/s",
+        "n/a",
+        "S2C2"
+      ],
+      [
+        "2-3",
+        "Silicone",
+        "1.03 mm",
+        "29 cm",
+        "5 cm",
+        "20 cm/s",
+        "~ 22.1",
+        "80 W",
+        "9.2 s",
+        "Insignificant",
+        "Concurrent",
+        "~ 0",
+        "n/a",
+        "~ 0",
+        "n/a",
+        "",
+        "S3C2"
+      ],
+      [
+        "2-4",
+        "Silicone",
+        "037 mm",
+        "29 cm",
+        "5 cm",
+        "20 cm/s",
+        "~ 22.1",
+        "80 W",
+        "9.2 s",
+        "Insignificant",
+        "Opposed",
+        "~ 0",
+        "n/a",
+        "Complete",
+        "0.6 mm/s",
+        "S4C1",
+        "S4C1"
+      ],
+      [
+        "2-5",
+        "Cotton-Fiberglass (SIBAL)",
+        "037 mm",
+        "29 cm",
+        "5 cm",
+        "20 cm/s",
+        "~ 22.1",
+        "80 W",
+        "9.2 s",
+        "145 s",
+        "Concurrent",
+        "29 cm",
+        "2.1 mm/s",
+        "Complete",
+        "Acceleratory",
+        "S5C1",
+        "S5C2"
+      ],
+      [
+        "2-6",
+        "",
+        "037 mm",
+        "29 cm",
+        "5 cm",
+        "20 cm/s",
+        "~ 22.1",
+        "80 W",
+        "9.2 s",
+        "115 s",
+        "Concurrent",
+        "29 cm",
+        "2.6 mm/s",
+        "Complete",
+        "Acceleratory",
+        "S6C1",
+        "S56C2"
+      ],
+      [
+        "2-7",
+        "PMMA & Nomex",
+        "0.85 and 0.37 mm",
+        "5 and 24 cm",
+        "5 cm",
+        "20 cm/s",
+        "~ 22.1",
+        "80 W",
+        "9.2 s",
+        "140 s",
+        "Concurrent",
+        "5 cm & 0 (note 2)",
+        "n/a (Nomex)",
+        "~ 0 (Nomex)",
+        "n/a (Nomex)",
+        "S7C1",
+        "n/a"
+      ],
+      [
+        "2-8",
+        "PMMA",
+        "See Fig. 5",
+        "29 cm",
+        "5 cm",
+        "20 cm/s",
+        "22.1 to 22.0",
+        "97 W",
+        "30 s",
+        "600 s",
+        "Concurrent",
+        "~ 10 cm (note 3)",
+        "Note 4",
+        "Complete",
+        "Acceleratory",
+        "S8C1",
+        "n/a"
+      ],
+      [
+        "2-9",
+        "",
+        "1 cm",
+        "29 cm",
+        "5 cm",
+        "20 cm/s",
+        "22.0 to 21.9",
+        "97 W",
+        "30 s",
+        "900 s",
+        "Concurrent",
+        "~ 10 cm (note 4)",
+        "Note 4",
+        "Complete",
+        "Acceleratory",
+        "S9C1",
+        "n/a"
+      ],
+      [
+        "F1C1/F1C2",
+        "Pre-test flow visulation data for sample 2-1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "F2C1/F2C2",
+        "Pre-test flow visulation data for sample 2-2",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Note 1 Derived from measured CO2 production and referenced to initial O2 concentration reported by ISS.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Note 2 The PMMA portion was completely consumed but the Nomex was not ignited.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Note 3 This is the length of fuel with significant visible damage.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Note 4 The flames remain anchored at the base of the sample which has a very slow regression rate (0.01 to 0.04 mm/s)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "all_rows_retained": true
+  },
+  "warnings": [],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

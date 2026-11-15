@@ -125,7 +125,9 @@ class QuestionParser:
                 load_in_4bit=True, bnb_4bit_quant_type='nf4', bnb_4bit_use_double_quant=True,
                 bnb_4bit_compute_dtype=dtype))
         else:
-            kwargs.update(device_map='cpu', dtype=torch.float32)
+            # Preserve checkpoint precision: the 4B model needs about 8 GB in
+            # BF16, whereas expanding to FP32 can exhaust a 16 GB CPU machine.
+            kwargs.update(device_map='cpu', dtype='auto')
         self.model = AutoModelForCausalLM.from_pretrained(self.model_id, **kwargs).eval()
 
     def generate(self, messages, *, max_time=None):

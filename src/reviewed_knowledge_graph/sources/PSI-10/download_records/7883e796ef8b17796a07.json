@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-10:7883e796ef8b17796a07",
+  "study": "PSI-10",
+  "filename": "PSI-10_Reports_TaskbookRpts.pdf",
+  "key": "psi-data/PSI-10/Reports/PSI-10_Reports_TaskbookRpts.pdf",
+  "category": "Reports",
+  "size_bytes": 284417,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-10/download?file=691f7eef17f78b371b2705e2&version=1&studyVersion=1&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-10/7883e796ef8b17796a07/PSI-10_Reports_TaskbookRpts.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "81cea0977ef21d3d99d5e3a0f07a0af41eee326a82d92e8ff0cff38bc36c9e34",
+  "status": "downloaded"
+}

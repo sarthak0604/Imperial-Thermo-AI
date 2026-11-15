@@ -32,6 +32,9 @@ selected_file_ids contains measurement files; requested_asset_ids contains PDFs,
 images or videos. Do not invent IDs, columns, units, observations or scientific results.
 Only choose files with a retrieval_url. Do not select known downloads exceeding
 the total byte limit. If size is unknown, warn that the executor must cap streamed bytes.
+For a named document, prefer the exact title and document type requested. A final
+science report is different from a science requirements document (SRD) or science
+change request (SCR). Use the supplied ranked source summaries to distinguish them.
 
 Choose exactly one next action:
 - calculate: one measurement CSV and plot_relationship, only when both requested
@@ -234,18 +237,37 @@ class OpenAIPlanner:
         return OpenAIPlanner(self.model, self.client, self.inspection, timeout)
 
     def propose(self, prompt: str, results: SearchResults, limits: ExecutionLimits) -> Plan:
-        response = self.client.responses.parse(
-            model=self.model,
-            instructions=SYSTEM_PROMPT,
-            input=[_planner_message(prompt, results, limits, self.inspection)],
-            text_format=Plan,
-            max_output_tokens=4000,
-            store=False,
-            timeout=self.timeout,
-        )
-        if response.status != "completed" or response.output_parsed is None:
-            raise PlanningError("Model returned a refusal, incomplete response, or no structured plan")
-        return response.output_parsed
+        messages = [_planner_message(prompt, results, limits, self.inspection)]
+        deadline = time.monotonic() + self.timeout
+        for attempt in range(2):
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                raise PlanningError("Planning time ran out. Review any inspected data or narrow the question.")
+            response = self.client.responses.parse(
+                model=self.model,
+                instructions=SYSTEM_PROMPT,
+                input=messages,
+                text_format=Plan,
+                max_output_tokens=4000,
+                store=False,
+                timeout=remaining,
+            )
+            if response.status != "completed" or response.output_parsed is None:
+                raise PlanningError("Model returned a refusal, incomplete response, or no structured plan")
+            plan = response.output_parsed
+            try:
+                validate_plan(plan, results, limits)
+                return plan
+            except PlanningError as exc:
+                if attempt:
+                    raise
+                messages = [*messages,
+                    {"role": "assistant", "content": plan.model_dump_json()},
+                    {"role": "user", "content": "Return a corrected complete plan using the original question "
+                     "and verified metadata. Fix this validation error: " + str(exc)[:1200]
+                     + ". For run_thermo_model, selected_file_ids must contain exactly operation.file_id "
+                     "and the optional template_file_id. Do not invent missing inputs or evidence. "
+                     "If unsupported, return no_match and explain the missing inputs."}]
 
 
 # The local model writes an object. Python encodes it for the service contract.
@@ -357,8 +379,8 @@ def _local_catalog(prompt, catalog):
     names = {"lewis number": "THM-02", "adiabatic flame temperature": "THM-01"}
     matches = set(re.findall(r"\bTHM-(?:0[1-9]|1[0-9]|20)\b", prompt.upper()))
     matches.update(model_id for name, model_id in names.items() if name in prompt.casefold())
-    if not matches:
-        return catalog
+    # Keep model discovery available without sending every detailed input
+    # contract on ordinary retrieval requests (costly CPU prompt processing).
     return [entry if entry["model_id"] in matches else
             {key: value for key, value in entry.items() if key != "input_shape"}
             for entry in catalog]

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:060a4fb0a87fe849022a",
+  "study": "PSI-102",
+  "filename": "PSI-102_Engineering Documents_60089MFHA419 Silicone Ignitor Wire Coil Assembly.pdf",
+  "key": "psi-data/PSI-102/Engineering Documents/PSI-102_Engineering Documents_60089MFHA419 Silicone Ignitor Wire Coil Assembly.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 161925,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d54f91ab4427dbf444e&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/060a4fb0a87fe849022a/PSI-102_Engineering Documents_60089MFHA419 Silicone Ignitor Wire Coil Assembly.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "729bbf0a1b81d41536394ba1f77110bbc35ee8baa238b6af6180a19bdb942bbb",
+  "status": "downloaded"
+}

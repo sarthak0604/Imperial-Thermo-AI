@@ -1,0 +1,24 @@
+{
+  "id": "res:PSI-69:492bae6eee9da96f64d0",
+  "study": "PSI-69",
+  "filename": "PSI-69_Science Documents_FLEX DoD.docx",
+  "key": "psi-data/PSI-69/Science Documents/PSI-69_Science Documents_FLEX DoD.docx",
+  "category": "Science Documents",
+  "size_bytes": 18758,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-69/download?file=684347459e44646b74028a00&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-69/492bae6eee9da96f64d0/PSI-69_Science Documents_FLEX DoD.docx",
+  "sha256": "1120819bb8f57f418cc5185700bbbd8304f1a019d9a99ca67baee130898fac98",
+  "status": "downloaded",
+  "sections": [
+    {
+      "locator": "word/document.xml",
+      "text": "FLEX (\nFlame Extinguishment Experiment\n) \ninvestigates\n \nthe effectiveness of fire suppressants in microgravity and quantify the effect of different possible crew exploration atmospheres on fire suppression. \nThere are five f\nuel samples\n. \nExperiment data records representing the \nfuel samples\n \nare\n:\nFLEX \n– Calibration\nF\nLEX - LCTF Calibration\nFLEX - Radiometer Calibration\nFLEX \n–\n \nHEP\nFLEX \n–\n \nMeOH\nThese Experiment Data records are located on the “Data” tab within the \nFLEX\n investigation in PSI. \nWhen a\nn experiment data\n record is selected, the “Scientific Data\n a\nnd Information” tab is opened. In the Experiment Data record\ns\n \n“Raw Data”, “Analyzed Data”, “Raw Videos”\n, \n“Images” are organized by GMT data and/or gas mixture. \nThe \n“Raw Data”, “Analyzed Data”\n link\ns\n disp\nlay records for the raw/analyzed data\n \nwithin the specific \nGMT\n/gas mixture\n.  \nWhen a raw/analyzed data record is selected, there will be the following tabs: “General”, “Analyzed Data and Information”, “Raw Data and Information”, and “Comments”. The “\nAnalyzed Data and Information”\n tab will contain .txt files of the experiment’s\n analyzed data and the \n“Raw Data and Information”\n will contain .txt files of the experiment’s raw data. \nThe \n“Raw Videos”\n and \n“Images”\n link\ns\n displays records for each\n video/image\n \nwithin the specific \nGMT\n/gas mixture\n.  \nThe “General” tab will contain the Video. An “Image Data”\n tab within this link provides an Image Gallery with thumbnail images, and a .zip file provides the original images.  \n "
+    }
+  ],
+  "details": {},
+  "warnings": [
+    "Document text extracted; embedded images not interpreted automatically."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

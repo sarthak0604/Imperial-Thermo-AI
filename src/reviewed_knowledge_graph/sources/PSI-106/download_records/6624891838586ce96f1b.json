@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-106:6624891838586ce96f1b",
+  "study": "PSI-106",
+  "filename": "PSI-106_Experimental table_Slice.csv",
+  "key": "psi-data/PSI-106/Experimental table/PSI-106_Experimental table_Slice.csv",
+  "category": "Experimental table",
+  "size_bytes": 734,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-106/download?file=67a4e6f009ed061032c19847&version=1&studyVersion=3&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-106/6624891838586ce96f1b/PSI-106_Experimental table_Slice.csv",
+  "sha256": "89ef980810ca6d9aa8be817b42e36cd2adff23f5e9058361b5a33d18b4363f4d",
+  "status": "downloaded"
+}

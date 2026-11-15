@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-101:1e42774688adc57298dd",
+  "study": "PSI-101",
+  "filename": "PSI-101_Analyzed Data_2010_236_10_teflon_run69.xls",
+  "key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_2010_236_10_teflon_run69.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 6508032,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc535b8656d2315bf50c8&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/1e42774688adc57298dd/PSI-101_Analyzed Data_2010_236_10_teflon_run69.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "2e1de8a52a9c1ee5c28dfd50ab0d3b4c713104f89c85054023ff26ea7d9ba75b",
+  "status": "downloaded"
+}

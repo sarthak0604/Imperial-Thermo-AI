@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:dfcc7bdd8e273a1257e3",
+  "study": "PSI-102",
+  "filename": "PSI-102_Engineering Documents_SAME VPRED Matrix PLN-005 Baseline.xls",
+  "key": "psi-data/PSI-102/Engineering Documents/PSI-102_Engineering Documents_SAME VPRED Matrix PLN-005 Baseline.xls",
+  "category": "Engineering Documents",
+  "size_bytes": 537600,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d53f91ab4427dbf4440&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/dfcc7bdd8e273a1257e3/PSI-102_Engineering Documents_SAME VPRED Matrix PLN-005 Baseline.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "7016d0b7bdbe0bc899dd487f3ef12eb19aad612ec63c9afe59fbb3d9e9c08e51",
+  "status": "downloaded"
+}

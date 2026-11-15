@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-39:615c47d7a54354cb9a6b",
+  "study": "PSI-39",
+  "filename": "PSI-39_metadata_PSI-118_CFI.zip",
+  "key": "psi-data/PSI-39/metadata/PSI-39_metadata_PSI-118_CFI.zip",
+  "category": "metadata",
+  "size_bytes": 10237,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-39/download?file=683f4a81da33c6f4c4cebb1e&version=5&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-39/615c47d7a54354cb9a6b/PSI-39_metadata_PSI-118_CFI.zip",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "9fbb9b18160e36dcdd930eb0f19db1f764e7c9d44d804da4fe5c8a8fd936650f",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:c1403498633548ea1c8a",
+  "study": "PSI-22",
+  "filename": "PSI-22_Engineering Documents_s1101mfa1800_B - Altered Cold Plate Drawing.pdf",
+  "key": "psi-data/PSI-22/Engineering Documents/PSI-22_Engineering Documents_s1101mfa1800_B - Altered Cold Plate Drawing.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 167484,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75a0eb4c08676005563&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/c1403498633548ea1c8a/PSI-22_Engineering Documents_s1101mfa1800_B - Altered Cold Plate Drawing.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "34a0028c26dc926ad7f68fc9cf471ed005133815677c05e66ad0f20639b424f3",
+  "status": "downloaded"
+}
