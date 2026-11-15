@@ -1,9 +1,10 @@
-# Deploy the integrated website
+# Deploy IC Dynamics
 
 The `final` branch merges `codex/thm-model-integration`, `omri` and `temp`.
 The Omri interface calls the shared Thermo backend at `/api/ask`. Claude is not
 used. The root `google` command still deploys a batch job; use `google-website`
-for the website service.
+for the website service. Its default Cloud Run service ID is `ic-dynamics`,
+separate from the older `imperial-thermo-website` service.
 
 ## Qwen on Google Cloud (default)
 
@@ -15,10 +16,10 @@ uv sync --locked
 gcloud auth login
 gcloud config set project nasa26
 gcloud services enable run.googleapis.com cloudbuild.googleapis.com artifactregistry.googleapis.com
-uv run google-website --project nasa26 --region europe-west1 --public
+uv run google-website --service ic-dynamics --project nasa26 --region europe-west1 --public
 ```
 
-This builds the current checkout and deploys `imperial-thermo-website`. The launcher
+This builds the current checkout and deploys `ic-dynamics`. The launcher
 stages only upload-allowed files, installs the locked GPU search dependencies,
 and downloads `Qwen/Qwen3-4B-Instruct-2507` in **Cloud Build**, not on your Mac.
 It requires a billing-enabled project, deployment/build permissions and available
@@ -29,7 +30,7 @@ Omit that flag for an IAM-protected service.
 Review the exact deployment command without building or changing Cloud Run:
 
 ```bash
-uv run google-website --project nasa26 --region europe-west1 --public --dry-run
+uv run google-website --service ic-dynamics --project nasa26 --region europe-west1 --public --dry-run
 ```
 
 The Docker image includes the frontend, the shared backend, the reviewed graph
@@ -42,20 +43,35 @@ model access enabled.
 ## URL and verification
 
 ```bash
-gcloud run services describe imperial-thermo-website \
+gcloud run services describe ic-dynamics \
   --project nasa26 --region europe-west1 --format='value(status.url)'
-gcloud run services logs read imperial-thermo-website \
+gcloud run services logs read ic-dynamics \
   --project nasa26 --region europe-west1 --limit 50
 ```
 
-The existing service URL recorded on 15 November 2026 is
-<https://imperial-thermo-website-bwyvnsywwq-ew.a.run.app>.
-That URL refers to the currently deployed revision until you run the deployment
-command; creating/pushing `final` does not update the service.
-At validation time the existing service returned HTTP 503 because its scaling
-mode was `manual` with `manualInstanceCount: 0`. Billing was enabled. The launcher
-explicitly sets `--scaling=auto` when deploying the new revision. The old service
-was not activated or redeployed during this integration.
+Use the URL printed by the describe command above after deployment. A URL for
+`ic-dynamics` has not been verified yet. The older service's URL is
+<https://imperial-thermo-website-bwyvnsywwq-ew.a.run.app>; deploying `ic-dynamics`
+does not replace or stop that separate service. To disable the old website:
+
+```bash
+gcloud run services update imperial-thermo-website \
+  --project nasa26 --region europe-west1 --scaling=0
+```
+
+To stop IC Dynamics after using it:
+
+```bash
+gcloud run services update ic-dynamics \
+  --project nasa26 --region europe-west1 --scaling=0
+```
+
+To resume IC Dynamics without rebuilding:
+
+```bash
+gcloud run services update ic-dynamics \
+  --project nasa26 --region europe-west1 --scaling=auto --min=0 --max=1 --max-instances=1
+```
 
 After deploying, open the returned URL and check `/api/health`. It should report
 `provider: thermo`, `planner: local`, the Qwen model ID, and the reviewed graph ID.
@@ -75,13 +91,13 @@ durable storage. This is a demo deployment configuration.
 CPU-only source retrieval and explicitly supported calculations, without an LLM:
 
 ```bash
-uv run google-website --project nasa26 --region europe-west1 --planner retrieval --public
+uv run google-website --service ic-dynamics --project nasa26 --region europe-west1 --planner retrieval --public
 ```
 
 API planning (key stays server-side in Secret Manager):
 
 ```bash
-uv run google-website --project nasa26 --region europe-west1 \
+uv run google-website --service ic-dynamics --project nasa26 --region europe-west1 \
   --planner api --model YOUR_MODEL --api-key-secret YOUR_SECRET:latest \
   --service-account YOUR_RUNTIME_SERVICE_ACCOUNT --public
 ```

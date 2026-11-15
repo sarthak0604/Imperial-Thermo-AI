@@ -81,7 +81,7 @@ stand-in and mock-preview behavior; use `final_e2e.py` for this integrated site.
 ## Google Cloud hosting
 
 See [the website deployment guide](../../docs/cloud-website.md).
-Run `uv run google-website --project nasa26 --region europe-west1 --public` from
+Run `uv run google-website --service ic-dynamics --project nasa26 --region europe-west1 --public` from
 the repository root. The default uses Qwen on an L4 GPU and downloads its weights
 in Cloud Build. `uv run google` remains the separate batch-job launcher.
 

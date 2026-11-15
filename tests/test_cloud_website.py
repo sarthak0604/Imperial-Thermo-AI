@@ -41,7 +41,7 @@ def test_public_service_command(monkeypatch):
             == 0
         )
     command = run.call_args.args[0]
-    assert command[1:4] == ["run", "deploy", "imperial-thermo-website"]
+    assert command[1:4] == ["run", "deploy", "ic-dynamics"]
     assert "--set-secrets=OPENAI_API_KEY=key:1" in command
     assert "--args=/app/frontend/standin/server.py" in command
     assert "--allow-unauthenticated" in command

@@ -100,7 +100,7 @@ def main(argv=None):
     parser.add_argument(
         "--region", default=os.environ.get("GOOGLE_CLOUD_REGION", "europe-west1")
     )
-    parser.add_argument("--service", default="imperial-thermo-website")
+    parser.add_argument("--service", default="ic-dynamics")
     parser.add_argument(
         "--planner", choices=("local", "api", "retrieval"), default="local"
     )
