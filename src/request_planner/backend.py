@@ -179,7 +179,7 @@ def _answer(
     started = time.monotonic()
     import inspect
 
-    def budgeted(generate):
+    def budgeted(generate, *, stage_limit=None):
         if generate is None:
             return None
 
@@ -187,6 +187,8 @@ def _answer(
             remaining = deadline_seconds - (time.monotonic() - started)
             if remaining <= 0:
                 raise ValueError("Request deadline exceeded during model inference.")
+            if stage_limit is not None:
+                remaining = min(remaining, stage_limit)
             if "max_time" in inspect.signature(generate).parameters:
                 return generate(messages, max_time=remaining)
             return generate(messages)
@@ -194,7 +196,7 @@ def _answer(
         return call
 
     semantic_generator = budgeted(semantic_generator)
-    answer_generator = budgeted(answer_generator)
+    answer_generator = budgeted(answer_generator, stage_limit=12)
     program_generator = budgeted(program_generator)
     graph = load_graph(graph_path)
     spec = interpret(prompt, aliases=graph.aliases, context=context)
@@ -274,6 +276,22 @@ def _answer(
     if (context or {}).get('explain_previous'):
         response.blocks = (context or {}).get('previous_results', [])
     package_ran = False
+    from .flame_temperature import calculate_flame_temperature, flame_temperature_inputs
+
+    temperature_inputs = flame_temperature_inputs(prompt)
+    if temperature_inputs is not None and not spec.clarifications:
+        from .execution import ExecutionError, present_result
+
+        try:
+            computed = calculate_flame_temperature(temperature_inputs)
+        except ExecutionError as exc:
+            spec.clarifications.append(str(exc))
+        else:
+            response.blocks = present_result("THM-01", computed)
+            for block in response.blocks:
+                block["source_file_ids"] = []
+            response.status = "completed"
+            package_ran = True
     package_match = re.search(r'using evidence package ([A-Za-z0-9_.-]+) unchanged', prompt, re.I)
     if package_match and os.getenv('THERMO_EVIDENCE_PACKAGES'):
         from .evidence_packages import EvidencePackageRegistry
@@ -571,7 +589,9 @@ def _answer(
             }
             for f in bundle.files
         ]
-    if answer_generator and needs_explanation and any(b['type'] == 'calculation' for b in response.blocks):
+    if answer_generator and needs_explanation and temperature_inputs is None and re.search(
+        r"\b(?:explain|why|interpret)\b", prompt, re.I
+    ) and any(b['type'] == 'calculation' for b in response.blocks):
         from .composition import compose_results
         try:
             claims = compose_results(prompt, response.blocks, answer_generator)
@@ -651,8 +671,13 @@ def _answer(
         message += ("\n\n" if message else "") + " ".join(missing)
     if spec.clarifications:
         message += "\n\n" + " ".join(spec.clarifications)
+    anchors = spec.investigations or list(dict.fromkeys(
+        psi for claim in claims for psi in claim.get("psi_ids", [])
+    ))
+    links = graph.crosslinks(anchors, spec.excluded_investigations)
     return AnswerResult(
         trace_id=uuid.uuid4().hex,
+        crosslinks=links,
         status=status,
         message=message,
         request=spec,

@@ -39,7 +39,7 @@ def propose(prompt, files, generate):
             "Use only exact supplied file IDs, column headers and verified quantity meanings. "
             "Do not invent evidence or calibration. For parameter-only legacy scenarios, copy only explicit user inputs. "
             "Every parameter needs an input_source_spans entry keyed by the parameter name quoting the prompt, "
-            "including its exact value. input_origins values are the literal string user, NOT a source quote. "
+            "including its exact value. Copy the shortest exact phrase containing the value directly from the question. input_origins values are the literal string user, NOT a source quote. "
             "For example scenario={model_id:THM-03, params:{fuel_formula:CH4,y_fuel_stream:1,y_ox_stream:0.232}, "
             "input_origins:{fuel_formula:user,y_fuel_stream:user,y_ox_stream:user}}; "
             "input_source_spans={fuel_formula:CH4,y_fuel_stream:fuel mass fraction 1,y_ox_stream:oxygen mass fraction 0.232}. "
@@ -56,19 +56,13 @@ def propose(prompt, files, generate):
             "content": json.dumps(
                 {
                     "question": prompt,
-                    "exact_source_span_choices": list(
-                        dict.fromkeys(
-                            prompt[a.start() : b.end()]
-                            for size in range(1, 6)
-                            for a, b in zip(
-                                list(re.finditer(r"\S+", prompt)),
-                                list(re.finditer(r"\S+", prompt))[size - 1 :],
-                            )
-                        )
-                    ),
-                    "files": [f.model_dump(mode="json") for f in files],
+                    "files": [
+                        f.model_dump(mode="json", exclude_none=True,
+                                     exclude={"retrieval_url", "source_page_url"})
+                        for f in files
+                    ],
                     "models": _local_catalog(prompt, operation_catalog()),
-                }
+                }, separators=(",", ":")
             ),
         },
     ]
@@ -83,6 +77,15 @@ def propose(prompt, files, generate):
         except (ValueError, TypeError) as exc:
             if attempt:
                 raise
+            words = list(re.finditer(r"\S+", prompt))
+            choices = list(dict.fromkeys(
+                prompt[first.start():last.end()]
+                for size in range(1, 6)
+                for first, last in zip(words, words[size - 1:])
+            ))
+            context = json.loads(messages[1]["content"])
+            context["exact_source_span_choices"] = choices
+            messages[1]["content"] = json.dumps(context, separators=(",", ":"))
             messages.extend(
                 [
                     {"role": "assistant", "content": raw},
@@ -123,7 +126,7 @@ def validate_origins(step, prompt):
         ):
             raise ValueError(
                 f"input_source_spans[{key!r}]={span!r} is not an exact user quote or its origin is not user. "
-                "Copy a literal substring from exact_source_span_choices, without adding labels. "
+                "Copy a literal substring from the question, without adding labels. "
                 f"The actual user question is: {prompt}"
             )
         for scalar in _scalars(value):

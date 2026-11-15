@@ -48,6 +48,11 @@ def interpret(prompt, *, aliases=None, context=None):
     )
     if asks_flame_temperature and not any(k == "calculation" for k, _ in kinds):
         kinds.append(("calculation", asks_flame_temperature.group()))
+    from .flame_temperature import flame_temperature_inputs
+
+    explicit_temperature = flame_temperature_inputs(prompt)
+    if explicit_temperature and not any(k == "calculation" for k, _ in kinds):
+        kinds.append(("calculation", "adiabatic flame temperature"))
     if not any(k in {"calculation", "inspection", "explanation"} for k, _ in kinds):
         for kind, pattern in [
             ("video", r"\bvideos?\b"),
@@ -122,7 +127,7 @@ def interpret(prompt, *, aliases=None, context=None):
               and re.search(r"\b(?:thickness|thick|sheet)\b", prompt, re.IGNORECASE)
               and re.search(r"\b(?:against (?:the )?airflow|opposed[ -]flow|opposite.*airflow|airflow opposing)\b", prompt, re.IGNORECASE)):
             models = ["THM-05"]
-        elif asks_flame_temperature or re.search(r"\badiabatic flame temperature\b", prompt, re.IGNORECASE):
+        elif explicit_temperature or asks_flame_temperature or re.search(r"\badiabatic flame temperature\b", prompt, re.IGNORECASE):
             models = ["THM-01"]
     if models and any(k in {"calculation", "chart"} for k, _ in kinds):
         requirements = [r for r in requirements if r.kind != "calculation"] + [

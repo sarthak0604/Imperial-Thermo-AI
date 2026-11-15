@@ -105,6 +105,7 @@ class ConversationStore:
 def ask_conversation(question, env, owner, request):
     from .backend import answer
     from .context_resolution import resolve
+    from .flame_temperature import flame_temperature_inputs
     from .providers import configure
     from .task_router import route
 
@@ -149,9 +150,12 @@ def ask_conversation(question, env, owner, request):
         for key in ("program_generator", "answer_generator", "semantic_generator"):
             if options.get(key):
                 options[key] = generator
-    resolved = resolve(
-        question, state, generator, request.get("clarification_answers", [])
-    )
+    clarification_answers = request.get("clarification_answers", [])
+    # A complete standalone scenario has no inputs to recover from past turns.
+    context_generator = generator
+    if not clarification_answers and flame_temperature_inputs(question) is not None:
+        context_generator = None
+    resolved = resolve(question, state, context_generator, clarification_answers)
     decision = route(
         question,
         generator,

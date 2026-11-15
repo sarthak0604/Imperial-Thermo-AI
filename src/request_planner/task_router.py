@@ -60,9 +60,13 @@ def capabilities():
         mid = f"THM-{i + 1:02}"
         contract = input_contract(mid)
         contract.pop("documentation", None)
-        result.append(
-            dict(model_spec(mid), cues=CUES[i].split("|"), input_contract=contract)
-        )
+        spec = model_spec(mid)
+        result.append({
+            "model_id": mid, "description": spec["description"],
+            "cues": CUES[i].split("|"), "requires_evidence": spec["requires_evidence"],
+            "input_contract": {key: contract[key] for key in ("required_inputs", "defaults")
+                               if key in contract},
+        })
     return result
 
 
@@ -90,9 +94,10 @@ def _route_once(prompt, generate=None, context=None):
                     "content": json.dumps(
                         {
                             "question": prompt,
-                            "context": context or {},
+                            "context": {k: v for k, v in (context or {}).items()
+                                        if v and not (k == "resolved_task" and v == prompt)},
                             "capabilities": capabilities(),
-                        }
+                        }, separators=(",", ":")
                     ),
                 },
             ]
@@ -141,6 +146,11 @@ def route(prompt, generate=None, context=None):
     from .intent import interpret
 
     spec = interpret(prompt)
+    from .flame_temperature import flame_temperature_inputs
+
+    if flame_temperature_inputs(prompt) is not None:
+        return Route(intent="calculation", model_ids=["THM-01"],
+                     reason="All flame-temperature inputs are specified.")
     if any(r.model_id == "THM-05" for r in spec.requirements):
         from .calibrated_spread import pmma_comparison_inputs
 

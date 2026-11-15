@@ -69,6 +69,7 @@ class AnswerResult(Contract):
     retrieval: RetrievalBundle
     result: FrontendResponse
     fulfilment: list[dict]
+    crosslinks: list[dict] = Field(default_factory=list)
     claims: list[dict] = Field(default_factory=list)
     timings: dict = Field(default_factory=dict)
 
@@ -107,6 +108,7 @@ class AnswerResult(Contract):
             "summary": self.message,
             "answer": self.message,
             "blocks": self.result.blocks,
+            "crosslinks": self.crosslinks,
             "evidence": evidence,
             "points": [],
             "widgets": [],

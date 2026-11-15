@@ -386,6 +386,24 @@ def present_result(model_id, result):
     blocks = [{"type": "calculation", "model_id": model_id, "evidence_type": evidence_type,
                "illustrative": illustrative, "data": result}]
 
+    if model_id == "THM-01":
+        fractions = [
+            (species, value)
+            for species, value in result.get("outputs", {}).get("equilibrium_mole_fractions", {}).items()
+            if type(value) in (int, float) and math.isfinite(value) and 0 <= value <= 1
+        ]
+        if fractions:
+            fractions.sort(key=lambda item: (-item[1], item[0]))
+            blocks.append({
+                "type": "chart", "chart_type": "bar",
+                "title": "THM-01 equilibrium gas composition",
+                "categories": [species for species, _ in fractions],
+                "x": {"label": "Gas species", "unit": None, "values": list(range(len(fractions)))},
+                "series": [{"label": "Mole fraction", "unit": "%",
+                            "values": [100 * value for _, value in fractions]}],
+                "evidence_type": evidence_type, "illustrative": illustrative,
+            })
+
     units = ({"sample_thickness_m": "m", "air_speed_m_s": "m/s",
               "spread_rate_mm_s": "mm/s", "spread_rate_m_s": "m/s"}
              if model_id == "THM-05" else {})

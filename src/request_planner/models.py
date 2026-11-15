@@ -138,7 +138,8 @@ class CalculationBlock(TypedDict):
 
 class ChartBlock(TypedDict):
     type: Literal["chart"]
-    chart_type: Literal["line", "scatter"]
+    chart_type: Literal["line", "scatter", "bar"]
+    categories: NotRequired[list[str]]
     title: str
     x: ChartAxis
     series: list[ChartAxis]

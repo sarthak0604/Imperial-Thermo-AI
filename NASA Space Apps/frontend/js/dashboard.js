@@ -59,7 +59,7 @@
     document.body.classList.add("thinking"); BG.thinking(true);
     tflame = FLAME.mount(ansEl.querySelector(".tflame"), { R: 7, n: 48, lean: false, dotScale: .75, seed: 3 }); tflame.think(true);
     const lis = [...ansEl.querySelectorAll(".steps li")], mark = i => lis.forEach((d, j) => d.className = j < i ? "done" : j === i ? "on" : "");
-    mark(0); for (let i = 1; i <= lis.length - 2; i++) timers.push(setTimeout(() => mark(i), i * 950));
+    mark(0);
     ctrl = new AbortController(); const t0 = performance.now();
     const a = await API.ask({ question: q, persona: p || "general", scenario: s, history: hist, signal: ctrl.signal });
     if (my !== seq) return;

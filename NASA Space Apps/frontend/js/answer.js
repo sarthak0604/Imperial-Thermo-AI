@@ -148,6 +148,18 @@ window.ANS = (() => {
         <div class="grid">${M.finds.map((f, k) => findingHTML(f, add({ kind: "finding", f }), wide[k])).join("")}</div>`;
     }
     if (M.blocks.length) html += `<div class="sec-h"><h2>Results</h2></div><div class="grid">${M.blocks.map(b => `<article class="box s12 rv workflow-result">${WORKFLOW.render(b)}</article>`).join("")}</div>`;
+    if (M.raw.crosslinks?.length) {
+      const investigation = id => {
+        const study = U.inv(id);
+        const href = UI.href("Everything about " + id, UI.persona(), UI.env());
+        return '<a href="' + esc(href) + '">' + esc(study?.acronym || id) + '</a>';
+      };
+      const rows = M.raw.crosslinks.map(link => '<li>' + investigation(link.from) +
+        ' and ' + investigation(link.to) + ' share ' +
+        link.shared.map(item => esc(item.label)).join(', ') + '</li>');
+      html += '<section class="box s12"><h2>Connections between investigations</h2><ul>' +
+        rows.join('') + '</ul></section>';
+    }
     const more = [];
     if (M.limitations) more.push(`<article ${boxAttrs(add({ kind: "lim", text: M.limitations }), "s12 lim", "What the data can't say")}>${head("What the data can't say")}<p class="bt">${esc(M.limitations)}</p></article>`);
     M.exps.forEach(e => more.push(expHTML(e, add({ kind: "exp", e }), M.exps.length === 2 ? "s6" : "s4")));

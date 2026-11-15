@@ -70,6 +70,45 @@ class ReviewedGraphSearch(GraphFileRecords):
                     self.direct[term].add(key)
                 self.statuses[key] = props.get('access_status')
 
+    def crosslinks(self, investigations, excluded=(), limit=3):
+        """Rank shared graph concepts and measurements, favoring specific links."""
+        relations = {}
+        for psi_id, key in self.investigations.items():
+            relations[psi_id] = {
+                (edge["type"], edge["target"])
+                for member in self.graph.outgoing[key] if member["type"] == "CONTAINS"
+                for edge in self.graph.outgoing[member["target"]]
+                if edge["type"] in {"STUDIES", "MEASURES"}
+            }
+        frequency = defaultdict(int)
+        for terms in relations.values():
+            for term in terms:
+                frequency[term] += 1
+        anchors = set(investigations) & relations.keys() - set(excluded)
+        if not anchors:
+            return []
+        targets = anchors if len(anchors) > 1 else relations.keys() - set(excluded)
+        ranked = []
+        for left in sorted(anchors):
+            for right in sorted(targets - {left}):
+                if right in anchors and right < left:
+                    continue
+                shared = sorted(relations[left] & relations[right],
+                                key=lambda item: (frequency[item], item))
+                reasons = []
+                for relation, key in shared:
+                    properties = self.graph.nodes[key]["properties"]
+                    label = properties.get("name") or properties.get("title")
+                    if label:
+                        reasons.append({"kind": "measurement" if relation == "MEASURES" else "topic",
+                                        "label": label, "node_id": key})
+                if reasons:
+                    score = sum(1 / frequency[term] for term in shared[:3])
+                    ranked.append((score, left, right, reasons[:3]))
+        ranked.sort(key=lambda row: (-row[0], row[1], row[2]))
+        return [{"from": left, "to": right, "shared": reasons}
+                for _, left, right, reasons in ranked[:limit]]
+
     def search(self, query, *, investigation_id=None, role=None, limit=6, query_id=None):
         if not isinstance(query, str) or not query.strip():
             raise ValueError('Search query must not be empty')

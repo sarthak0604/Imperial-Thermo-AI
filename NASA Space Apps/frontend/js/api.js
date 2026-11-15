@@ -84,7 +84,7 @@ window.API = {
       clarifications: a.clarifications || [], model_decisions: a.model_decisions || [],
       title: a.title || "", summary: a.summary || a.answer || "", key_facts: Array.isArray(a.key_facts) ? a.key_facts : [],
       answer: String(a.answer || a.summary || ""), evidence: Array.isArray(a.evidence) ? a.evidence : [],
-      blocks: Array.isArray(a.blocks) ? a.blocks : [], fulfilment: a.fulfilment || [],
+      blocks: Array.isArray(a.blocks) ? a.blocks : [], crosslinks: Array.isArray(a.crosslinks) ? a.crosslinks : [], fulfilment: a.fulfilment || [],
       widgets: Array.isArray(a.widgets) ? a.widgets : [], points: Array.isArray(a.points) ? a.points : [], limitations: a.limitations || "",
       follow_ups: Array.isArray(a.follow_ups) ? a.follow_ups : [], dropped: a.dropped || [], meta: a.meta || { source: "live" }
     };
