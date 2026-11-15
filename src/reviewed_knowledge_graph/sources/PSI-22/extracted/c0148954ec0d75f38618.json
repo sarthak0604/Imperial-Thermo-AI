@@ -1,0 +1,231 @@
+{
+  "id": "res:PSI-22:c0148954ec0d75f38618",
+  "study": "PSI-22",
+  "filename": "PSI-22_Engineering Documents_E-FIELD_Flames_RDR_201005.pdf",
+  "key": "psi-data/PSI-22/Engineering Documents/PSI-22_Engineering Documents_E-FIELD_Flames_RDR_201005.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 6951302,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e63f0eb4c08676004b9d&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/c0148954ec0d75f38618/PSI-22_Engineering Documents_E-FIELD_Flames_RDR_201005.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "2345220d702b41c6e65a94f199e4b209cbd16ec5fecfffad12a7dff3f5e27044",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "E‐FIELD Flames\nEl\nt i Fi ld Eff\nt\nL\ni\nDiff\ni\nElectric Field Effects on Laminar Diffusion \nFlames\nDerek Dunn-Rankin\nMechanical and Aerospace Engineering\nUniversity of California, Irvine\nCo-Investigators: \nFelix Weinberg; Imperial College, London \nZeng-Guang Yuan, NCSER\nProject Scientists: Dennis Stocker and Fumi Takahashi, \nj\n,\nNASA GRC\nNASA Glenn Research Center\nRequirements Definition Review – May 10, 2010\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Primary Project Goal\nDescribe the interdependence between chemi-ionization in \np\nflames and the physical changes to the flame produced by \nthe convective flows driven by those ions in an electric field. \n"
+    },
+    {
+      "locator": "page 3",
+      "text": "Outline\n• Fundamentals Overview\n• Recent updates\nCoflow Burner\nDrop testing\n• Recent updates – Coflow Burner -- Drop testing\n• Experiment objectives\n• Accomplishing objectives\n Accomplishing objectives\n• Experiment concept\n• Microgravity justification\n• Requirements summary\n• Hardware requirements\nO\nti\n• Operations \n• Test matrices \n• Success criteria\n Success criteria\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Electric Body Force – Ion Wind\n+ positive electrode\n+\nPositive ion \naccelerates \nbetween each\n+ positive electrode\n+\n+\nbetween each \ncollision with \nneutral bath \ngas molecules\n+\nEach collision \ntransfers \nNet neutral \ndrift velocity\nnewly \nacquired \nkinetic energy \nto the neutral\ndrift velocity \nafter many \ncollisions\nground electrode\nto the neutral \ngas producing \nan ion driven \nwind\nground electrode\nground electrode\nwind\nground electrode\nIon drift velocity ~ 100 m/s\nInduced drift velocity ~ 1 m/s\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "What is observed when \nelectric fields act on\nNo Field\nelectric fields act on \nflame ions?\n+\n+\n+\n+ +\n+\n+\n+\n+\n+ +\n+\n+\nreaction zone\n•\nObserved Effects \n–\nReshaping of the reaction zone\n–\nEnhanced flammability limits\n–\nControlled heat transfer\nApplied E-Field\nControlled heat transfer\n–\nReduced and enhanced soot formation\n–\nForced extinguishment\n–\nNOX and SO2 pollutant reduction\n•\nFundamental Interaction\nApplied E Field\nAnode\n•\nFundamental Interaction\n–\nRadical ions are generated at the flame \n–\nMajority of ions are short lived (flame \nzone)\n+ + + + + + + + + + + + + + +\nV\n–\nH3O+ is predominant outside the flame \nzone\n•\nElectric Field Influences\n–\nIon driven wind – electric body force\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\nIon driven wind \nelectric body force \napplied to the fluid\n–\nChemical effect (removal of ions from \nthe flame zone)\nCathode\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "Research Update Since SCR\n• Coflow burner studies in 1g\n– Ion current\n– Soot control\n– Oscillation \n• Drop Tower tests on the coflow and jet \nburners\n• Changes to proposed experiment since SCR\n• Additional activities (not addressed here)\n• Additional activities (not addressed here)\n– Effects of air dilution in the fuel stream (Imperial \nCollege)\nCollege)\n– Numerical simulation (Chemkin and PHOENICS)\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "Recent Publications and Presentations\n•\nRefereed Journals\n–\nF. Weinberg and F. Carleton. Ionization and chemiluminescence during the progressive aeration of methane \nflames. Combustion and Flame, 156(12):2276–2284, 2009.\n–\nYamashita, K., Karnani, S., and Dunn‐Rankin, D. (2009) Numerical Prediction of Ion Current from a Small \nMethane Jet Flame, Combustion and Flame, 156, 1227‐1233.\n•\nConference Papers\n–\nKarnani S., Schoen M., Coffin P., Dunn‐Rankin D., Takahashi F., Yuan Z‐G., Stocker D. (2009) \" Exploring the \neffects of gravity on a coflow diffusion flame in an electric field,\" Fall Technical Meeting of the Western \nStates Section of the Combustion Institute Hosted by the University of California, Irvine, CA Oct 26‐27, \n2009.\n–\nKarnani, S. and Dunn‐Rankin, D. (2009) ``Electric Field Effects on a Small Co‐Flow Diffusion Flame,'' Paper \n13A1, U.S. Combustion Meeting, Ann Arbor, Michigan, May 18—20.\n–\nDunn‐Rankin, D. (2008) “Electrical Manipulation of Flames,” invited lecture, Japanese Combustion \nSymposium, Kyoto, Japan, December 4\n–\nKarnani S., Bennett M., Dunn‐Rankin D. Electrical Properties of Small Diffusion Flames. Paper WSS/CI 08S‐4. \n/\nWestern States Section/The Combustion Institute Spring Meeting, March 17‐18 2008. (Based on Abstract)\n•\nInvited Technical Lectures\n–\nUCI Departmental Seminar – Electric Field Driven Oscillations in Small Diffusion Flames: 1g and low‐g\nstudies, January, 2010\n–\nNASA Glenn Research Center, Cleveland, Ohio ‐‐ Electric Field Effects in a Small Co‐ Flow Diffusion Flame, \n(with S. Karnani), May 21, 2009\n–\nJapanese Combustion Symposium, Kyoto, Japan ‐‐ Electrical Manipulation of Flames, Invited Plenary, \nDecember 4, 2008.\n–\nIn addition, the research was presented as part of a broader portfolio of work in the following \npresentations:\nUCLA D\nl S\ni\nU i\nOld F\nl i N\nW\nd N\nF\nl i Old W\nD\nb\n11 2009\n•\nUCLA Departmental Seminar ‐‐ Using Old Fuels in New Ways and New Fuels in Old Ways, December 11, 2009\n•\nUCI Departmental Seminar ‐‐ Recent Research in the Lasers, Flames, and Aerosols Laboratory, October, 2009\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Burners Used in Studies\n+\n+\n+\n+\n+\n+\n+\n++\n+\n+ ++\n+\n+\n++\nSimple jet flame\nYale mesh coflow\nNASA nozzle coflow\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "Experimental Approach\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "Ion Current Measurement\n• Potential applied \nshould range from -\ng\n10/+10kV. \n• The mesh should be\n• The mesh should be \nadjustable and 5 cm \nabove the burner \ni\nexit.\n• Current leakage \ng\nshould be minimized.\n• Insulated mount\n• Insulated mount.\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "C f\nNormal Gravity Studies ‐ UCI\n• Coflow burner show distinct \ndifferences when compared to jet \nflame\n• Both burners exhibit three distinct\nC fl\n• Both burners exhibit three distinct \nregions, regardless of polarity: \nsubsaturation, saturation, and \nsupersaturation\nCoflow\nsupersaturation.\n• Subsaturation results scale \naccording to Carbon introduced; \nbut shifted in jet case –\nj\ncontribution of entrainment is \nsignificant in jet flame up to \nsaturation \n• Transient coflow data show \nperiodic fluctuations at certain \napplied voltages\nTh\ni ti\nf\nd\nt\n• These variations are found at \nsaturation and beyond\nJet\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "Normal‐Gravity DC Field Natural Oscillation \n4kV\n-3 8kV\n-3 6kV\n-4kV\n-3.8kV\n-3.6kV\nOscillation transients \ncan be long lived\nRelatively small voltage \nchanges can have \n-3.6kV\n-4kV\ng\ndramatic effects\nSlideshow shows the following voltages:\n100V increments: 0, -2000, -2800: -100: -4100\nDiluted CH4/N2 flame \n"
+    },
+    {
+      "locator": "page 13",
+      "text": "Effects of Soot – 1g UCI\nhigh \ndilution\nNo \ndilution\nDiluted C2H4/N2 flames\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "NASA Coflow Burner and Drop Rig\nSpecifications:\nA 10’’ ID\nli d i\nl h\ni\nExperiments performed at \nNASA Glenn\n• A 10’’ ID cylindrical housing \nsurrounds the burner\n• 2.4 mm OD, 2.1 mm ID gas \njet\njet\n• Burner, converging nozzle, \nand housing are concentric\n• Converging nozzle\nConverging nozzle \ncontraction area  ratio: 0.1\n• Converging nozzle exit: 27.3 \nmm i.d.\nInitial drop tests with high coflow velocities \np\ng\nshowed small electric field effects on total ion \ncurrent; later studies conducted at lower coflow\nconditions\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "Flow Forcing Effects ‐ NASA\nnatural only\nnatural + forced + electric\nPrevious \nwork was \nnatural + \nelectric\nforced + electric\nnone\nelectric only \nMinor to no coflow tests show the dramatic effect of an \nelectric field in a 0g environment; note similarity between \nzero-g flames in an electric field and 1g flames with no field.\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Recent Drop Results ‐ NASA\nD\ni\nf\nlt\nh\nDynamics of voltage changes\n100 Hz data rate\nat transition\nat transition\n"
+    },
+    {
+      "locator": "page 17",
+      "text": "Changes to proposed experiment since SCR\nThe SCR panel recommended caution in pursuing two burners for our \nstudy. They further recommended we limit our study to the Yale co-\nflow burner to help ensure success\nflow burner to help ensure success.\nExperimental updates since SCR:\nHigh coflow testing in the 2.2 sec. Drop Tower have shown small changes \nin flame behavior in the presence of an electric field. \nActive venting will not be possible during spaceflight. \nUnexpected and interesting behaviors found during drop test\nUnexpected and interesting behaviors found during drop test.\nThese findings have led us to reconsider the jet flame as\nThese findings have led us to reconsider the jet flame as \nour primary burner for the spaceflight.\n"
+    },
+    {
+      "locator": "page 18",
+      "text": "Extended Microgravity – Experience \nof other investigators\nof other investigators\n•\nCLD Flame discussion showed the necessity for high quality microgravity for near limit \nlifted co‐flow flames (i.e., buoyant mixing has substantial effect)\n•\nCo‐flow flame experiments showed problems with g‐jitter on parabolic flights\n•\nZ.‐G. Yuan et. al and recent tests at NASA Glenn show difficulties in achieving steady \nflames in a 2.2 sec. drop tower.\nNote: if not carried out \nsequentially, a single EFIELD \nq\ny,\ng\nFlame measurement requires \nboth time to reach a stable \ninitial condition and time to \nreach the final condition\nreach the final condition \nfollowing the electric field \nimpulse.\nGraph reproduced from: 1100 AIAA-\n2003-0812, Z. Yuan and U. Hegde\n"
+    },
+    {
+      "locator": "page 19",
+      "text": "Experimental Approach\n"
+    },
+    {
+      "locator": "page 20",
+      "text": "U d\nt\nd fl\ni\nd\nti\nd\ni\nt\nt\nl\nExperimental Objectives\nUnderstand flame ion production and use ions to control \ndiffusion flames by modifying local convection (via the ion \nwind) and local species transport (via direct ion drift)\nA) Determine the relationship between electric field voltage and \nchemi-ion current as functions of total fuel flow rate and the \namount of inert in the fuel.\nB) Obtain the time response of flame chemiluminescence, luminosity, \nand ion current to large step changes in voltage, as functions of \ntotal fuel flow rate and amount of inert added to the fuel stream.\nC) Evaluate and control sooting behavior (i.e., soot volume fraction \nand location of luminous soot) in relation to the electric field \nvoltage and chemi-ion current as functions of total fuel flow rate \nand amount of inert added to the fuel stream\nand amount of inert added to the fuel stream.\nD) Use the variation of the chemi-ion current as a function of applied \nvoltage to characterize and control combustion behavior.\n"
+    },
+    {
+      "locator": "page 21",
+      "text": "ll d\nbl\nExperimental Parameters\n• Controlled Variables\n– Voltage (small step, large step)\nD t\nli\nt\n– Data sampling rate\n– Fuel/air flow rates\n– Ignition\nIgnition\n• Measurements\n– Ion Current\nIon Current\n– Flame shape (reaction zone) – chemiluminescence\n– Luminosity – spatially integrated\n– Chemiluminescence – spatially integrated\n– Soot volume fraction\n– Burner temperature\n– Soot temperature\n"
+    },
+    {
+      "locator": "page 22",
+      "text": "A. Steady State Chemi‐ionization\nObjective A -- Characterize the influence of electric field strength on flame \nbehavior at steady state as a function of fuel and dilution and burner type.\nIon current\nCH* emission\nFlame shape\n•  Flame shape images \n•  Ion current\n•  Steady state combustion intensity measured by CH* and ion current.\np\n"
+    },
+    {
+      "locator": "page 23",
+      "text": "Voltage Sweep\nCollection of VI or VCC curves\nCollection of VI or VCC curves   \n• Voltage will be swept from 0kV to \n±5kV (or until flame blowout)\n±5kV (or until flame blowout) \n• Ion current is recorded. \n• The sweep will consist of a series \nof discrete steps, where a settling \ntime is allowed after each voltage \nchange. \n• 5 ms transition time for voltage \nsteps \n• Sensors will be monitored at 100Hz \ndata sampling\nColor and OH* video at 30 fps will\n• Color and OH* video at 30 fps will \nrecord the flame shape and \nluminosity (both broadband flame \nand soot luminosity and OH*\nand soot luminosity and OH \nchemiluminescence) throughout \nthe sweep. \n"
+    },
+    {
+      "locator": "page 24",
+      "text": "Voltage Sweep\nA typical step sweep might comprise: \n1) 15 second ignition & stabilization; \n2) 100 V/step\n2) 100 V/step, \n3) 0.3 sec settle between steps, \n4) 0.25 sec. ion current measurement \nat each point, to ±5kV or blowout. \nExpected run time is 50 seconds per \nsweep.\nTest conditions will include a background\nTest conditions will include a background \nion current sweep \nHowever, the time between voltage steps \nfor flame adjustment and data collection\nfor flame adjustment and data collection \nshall be adjustable via uplink between \nthe values of 0-10 seconds.\n"
+    },
+    {
+      "locator": "page 25",
+      "text": "A. Data End Products – VI Curves\n• Measured data products\n– A.1)  Plots of voltage versus ion current for gas‐jet and co‐flow flames, \nusing CH4 and C2H4\ng\n– A.2)  Flame images (color and OH*) at transition points in the VI curves\n– A.7)  Flame luminosity (CH* and broadband visible) as a function of \nvoltage and current for both burners\n• Extracted data products\n• Extracted data products\n– A.4)  Voltage and current at the onset of enhanced ion production \n(secondary saturation) as a function of fuel and diluent for both \nburners \n– A.5)  Voltage and current at flame blowoff as a function of fuel and \ndiluent for both burners\n• Derived data products\nA 3) M d l\ni\nf\ni\nf i\ni\nf\n– A.3)  Model saturation current as a function of inert concentration for \nboth fuels and burners \n– A.6)  Saturation ion current per carbon influx as a function of fuels and \ndiluent for both burners\nd ue t o bot bu\ne s\n– A.8)  Saturation current as a function of flame area\n"
+    },
+    {
+      "locator": "page 26",
+      "text": "B. Time response of flames\nObjective B ‐‐ Obtain the time response of flame \nchemiluminescence, luminosity, and ion current to large step \nchanges in voltage as functions of total fuel flow rate and\nchanges in voltage, as functions of total fuel flow rate and \namount of inert added to the fuel stream.\nVoltage 1\nStep change \nto voltage 2\n1g flames reach steady \nstate much more quickly \nthan micro‐g flames\n"
+    },
+    {
+      "locator": "page 27",
+      "text": "Step Response\n• This test involves rapid voltage changes from a base level to a much higher (or\n• This test involves rapid voltage changes from a base level to a much higher (or \nlower) level.\n• Ion current (and flame luminosity and shape) as the flame settles to its new \nsteady value will be monitored. \n• Video, luminosity, and chemiluminescence will record flame behaviors in \nresponse to an instantaneous change in the electric field. \np\ng\n• Measurement requires relatively high data rates (100 Hz, minimum; 1 kHz \ndesired) from current measurement and PMTs.\n• Data will be recorded for two seconds after a voltage step.\n"
+    },
+    {
+      "locator": "page 28",
+      "text": "Step Response Procedure\nA typical experiment sequence might \ncomprise:\n• 15 second ignition and \nt bili\nti\nstabilization,\n• Step changes on the order of \nhundreds of volts, \n• Recording ion current for 2 \ng\nseconds between step changes\nSteps will not be limited to a single \npolarity\npolarity \nSettling time for these step changes \nin zero gravity (particularly, for soot \nrelated phenomena) may need to be \nadjusted via uplink. \nThe range of times between voltage\nThe range of times between voltage \nsteps may vary between 0-100 \nseconds.\n"
+    },
+    {
+      "locator": "page 29",
+      "text": "Relevant Time Scales\nParameters –\nVion wind ~ 1 m/s\nTime scales –\nIon drift time – 1-10 ms\nion_wind\nLflame ~ 1 cm\nD ~ 0.1 cm2/s\nVion ~ 100 m/s\nAcoustic time ~ 0.1 ms\nElectronic RC time – 50 ms\nConvective transport time (ion wind or \nion\n00\n/s\nVbuoyancy ~ 1 m/s\nLsystem ~ 10 cm\nC ~ 300 m/s\nCo\nec\ne\na spo\ne ( o\nd o\nbuoyancy) – L/V ~ 0.1-1 sec\nDiffusion transport time – Lflame\n2/D ~ 10 sec\nFlowfield time – Lsystem/Vconvection ~ 10 sec\nC \n 300 m/s\ntimescales (seconds)\nsystem\nconvection\nBurner thermal response time ~ 10 sec\n10-6\n10-5\n10-4\n10-3\n10-2\n10-1\n100\n101\n102\nacoustic \ntime\nRC\nburner\nion drift\ndiffusion\n29\nconvection\nmicroseconds\nmilliseconds\nseconds\nflowfield\n"
+    },
+    {
+      "locator": "page 30",
+      "text": "B. Data End Products – Step Response\n• Measured data products\n– B.1) Time resolved ion current after step changes in voltage\n– B.2) Time resolved luminosity after step changes in voltage\n• Derived data products\n• Derived data products\n– B.3)  Electrical time constant of the flame as a function of fuel, flow \nrate, diluent, and burner type\n– B.4)  Luminosity time constant (broadband and CH*) of the flame as a \n)\ny\n(\n)\nfunction of inert concentration in fuel, flow rate, and burner type\n– B.5)  Equivalent RC circuit for gas‐jet and coflowing flames for possible \nuse in control algorithms\nk τ\nk τ\nT\nTime constant extracted \nfrom time response \ndata\nT\n"
+    },
+    {
+      "locator": "page 31",
+      "text": "C. Effects of Electric Fields on Soot\nObjective C -- Evaluate and control sooting behavior in relation to the \nelectric field voltage and chemi-ion current as functions of fuel flow rate and \namount of inert added to the fuel.\n \nEthylene 50 mg/min\n"
+    },
+    {
+      "locator": "page 32",
+      "text": "Soot Procedure\nDemonstrate effects of the electric field \non soot (measured by broadband \nemission from the flame and soot volume \nfraction)\nConvective driven flame behavior will be \nsimilar to ion-driven wind behavior.\nConditions will be derived from \nexperiments (A) and (B)\nA typical experiment sequence might \ncomprise:\n• 15 second ignition and stabilization, \n• Nominally increasing the velocity of \nthe coflowing air\n• Record video and optical data\n• Settling time for these velocity \nchanges in zero gravity (particularly, \nfor soot related phenomena) may \nneed to be adjusted via uplink. \n• The range of times between voltage \nsteps may vary between 0-100 \nseconds.\n"
+    },
+    {
+      "locator": "page 33",
+      "text": "C. Data End Products ‐‐ Soot\n• Measured data products\n– C.1) Average soot volume fraction as a function of ion wind for various \ninert concentration \nC 2) Images showing location and temperature of soot for different ion\n– C.2) Images showing location and temperature of soot for different ion \nwind conditions\n– Soot volume fraction measurement and color imaging measurements \nalready described in other proposed ACME experiments (issues of young \nsoot versus old soot).\n• Extracted data products\n– C.5) Voltage at which soot is suppressed for different inert levels\nProvides electric field strength for evaluating mobility of ions and soot\n– Provides electric field strength for evaluating mobility of ions and soot\n• Derived data products\n– C.3) Soot mean size based on soot volume fraction, temperature, and total \nion current\nion current\n– C.4) Spatially resolved soot volume fraction at transition conditions\n– Using classical Dushman equation can relate temperature, and soot \nsurface area to ion current; identifies the role of soot size versus soot \nb\ni\nl\nf\nti\nnumber in volume fraction.\nkT\ne\ne\nBT\nj\n/\n2\nφ\n−\n=\n"
+    },
+    {
+      "locator": "page 34",
+      "text": "D. Open Loop Control of Coflow Flame\nObjective D -- Use the variation of the chemi-ion current as a \nfunction of applied voltage to characterize the combustion \nb h\ni\nf\nli\nit lift d fl\ni\nfl\nb\nd\nth\nbehavior of near-limit lifted flames in a coflow burner and use the \nion-driven wind to stabilize or reattach these flames.\n"
+    },
+    {
+      "locator": "page 35",
+      "text": "Open Loop Procedure\nDetermine the strength of jet diffusion flames\nDetermine the strength of jet diffusion flames \nand control soot formation.  The experiments \nwill be defined based on the results of \nmapping experiments \n(A) and (B)\n(A) and (B). \nIon current and luminosity (broadband and \nCH*) fluctuations will be used to determine \nthe flame’s approach to blowoff; flame \nima es\nill be sed to determine the liftoff\nimages will be used to determine the liftoff \nheight. \nA typical experiment sequence might comprise:\n15\nd i\niti\nd t bili\nti\n• 15 second ignition and stabilization\n• A series of ramps around a region of interest\n• Record ion current, video and optical data\n• Settling time for these changes in zero gravity \n(\nti\nl\nl\nf\nt\nl t d h\n)\n(particularly, for soot related phenomena) \nmay need to be adjusted via uplink. \n• The range of times between voltage steps \nmay vary between 0‐100 seconds.\nProvides detailed information in developing an \nopen‐loop model for controlling a flame \n"
+    },
+    {
+      "locator": "page 36",
+      "text": "D. Data End Products ‐‐ Control\n• Measured data products\n– D.1) Time resolved ion current and luminosity of near limit flames\n– D.2) Images from the flame at near limit conditions with an active field\nMeasurement D 1 uses the same sensors as those for the step response\n– Measurement D.1 uses the same sensors as those for the step‐response \nobjective (B); measurement D.2 uses imaging sensors (e.g., color camera)\n• Extracted data products\n– D.3)  Mean and RMS ion current and luminosity of near limit flames with \n)\ny\nvarying electric field\n– D.4)  Liftoff height as a function of voltage and inert concentration in the \nfuel and flow rate (coflowing flame)\nThe data D 3 uses the same sensors as in D 1 and will indicate whether the\n– The data D.3 uses the same sensors as in D.1 and will indicate whether the \nelectrical properties of the flame can act as a stability sensor; the data of \nD.4 show the steady state influence of the electric field on liftoff height\n• Derived data products\np\n– D.5) Ion driven wind velocity near the lifted flame base\n– Using the ion current it will be possible to assess the relative importance \nof the steady ion wind versus a mixing process near the flame edge as the \nf h\nt th lift ff h i ht\nsource of changes to the liftoff height\n"
+    },
+    {
+      "locator": "page 37",
+      "text": "Required Measurements\n"
+    },
+    {
+      "locator": "page 38",
+      "text": "Test Matrix\nFuel\nBurner\nTest type\nTests (req/des)\nCH4\n18/38\nJet\nSweep\n12/6\nStep\n4/6\np\nSoot\n0/0\nTotal 18/14\nControl\n2/2\nCo-flow\nSweep\n0/12\nStep\n0/4\nSoot\n0/6\nTotal 0/24\nControl\n0/2\nC2H4\n16/36\nJet\nSweep\n12/6\nStep\n2/6\nS\nt\n0/0\nSoot\n0/0\nTotal 16/14\nControl\n2/2\nCo-flow\nSweep\n0/12\nStep\n0/2\nTotal (CH4+C2H4): 34/74\np\nSoot\n0/6\nTotal 0/22\nControl\n0/2\n"
+    },
+    {
+      "locator": "page 39",
+      "text": "Success Criteria\nOBJECTIVE\nMinimum Criteria\nComplete Criteria (additional to \nMinimum)\nSuperior Criteria\n(additional to Complete)\nVI curve for undiluted \nCH4 on a single \nObtain VI curve for both fuels with \nvarying dilution for one jet\nObtain thermal field \ninformation for the gas jet or\nA\ng\nburner. \nSimultaneously \ncapture color images.\nvarying dilution for one jet \ndiffusion and the coflow flame \n(desired). \ninformation for the gas jet or \ncoflow flame to visualize ion \ndriven wind (desired).\nObtain step-response VI \nB\nObtain step-response VI curve for \nundiluted CH4 on a single burner.  \nCapture transient color images.\np\np\ncurves for both fuels with \nvarying dilution for one jet \ndiffusion and the coflow \nflame. \nC\nMeasure soot luminosity \n(radiometer measurement) as a \nfunction of applied voltage during \nVI sweeps and step changes. \nCapture color images and soot\nObtain spatially resolved soot \nvolume fraction for relevant \nconditions\nCapture color images and soot \nluminosity as a function of coflow \nvelocity.\nconditions.\nCapture flame images from co-\nf\nDemonstrate control of flame \nnear sooting and stability\nD\nflow burner during voltage sweep \nto allow measurement of liftoff \nheight in relation to electric field \nstrength.\nnear sooting and stability \nlimits. Evaluate the extent to \nwhich stability limits can be \nextended using an electric \nfield.\n"
+    },
+    {
+      "locator": "page 40",
+      "text": "Acknowledgements\nPh D\n•\nPh.D\n–\nSunny Karnani (In progress)\n–\nMike Papac – (2005)\n–\nBen Strayer – (2001)\n•\nMaster’s\n–\nRuby Tsai (In progress)\n•\nVisiting Scholars\n–\nKiyotaka Yamashita – (2008)\nKiyotaka Yamashita  (2008)\n–\nFrancesco Borgatelli – ( 2005)\n•\nBachelors\n–\nLaiTaras Stokes – (2009)\nMartin Tajiboy\n(2008)\n–\nMartin Tajiboy – (2008)\n•\nUSRP\n–\nClinton Proctor – (2010)  \n–\nLin Wang – (2009)\n–\nPeter Coffin – (2009)\n–\nMiles Schoen – (2009)\n–\nRichard Vesel Jr. – (2008)\n•\nImperial College\n–\nRaphael Houdament – (2009)\n–\nAdam Kelloway – (2009)\n–\nJimmy Bai – (2008)\n"
+    },
+    {
+      "locator": "page 41",
+      "text": "Additional Details\nAdditional Details\n• Supporting Slides\nSupporting Slides\n"
+    },
+    {
+      "locator": "page 42",
+      "text": "Effects of Surrounding Coflow\nCylinder with no Coflow\n"
+    },
+    {
+      "locator": "page 43",
+      "text": "Hydrocarbon Flame Ion Chemistry\nStarik and Titova\nPederson and Brown\nCHO+ is the \ndominant ion in the \nflame\nH3O+ is the dominant \n3\nion that survives the \nflame zone\nIon production \np\nincreases with \nTemperature, \nOxygen, and Carbon\n"
+    },
+    {
+      "locator": "page 44",
+      "text": "Air Diluted Flames – Imperial/UCI\n"
+    },
+    {
+      "locator": "page 45",
+      "text": "Air Diluted Flames – CO Concentration\n4 mm \nburner\n"
+    },
+    {
+      "locator": "page 46",
+      "text": "Numerical Studies\n"
+    },
+    {
+      "locator": "page 47",
+      "text": "Numerical Studies – 0 kV; 1g\n"
+    },
+    {
+      "locator": "page 48",
+      "text": "Numerical Studies – 400 V; 0 g\n"
+    },
+    {
+      "locator": "page 49",
+      "text": "Initial Drop Results‐ NASA\n•Both normal and low-gravity \nshow similar behaviors\n•The high velocities of the \nfl\nd\ni\nt d\nit\ncoflow dominated gravity \neffects and produced \nnegligible global ion current \nresponse\np\n"
+    },
+    {
+      "locator": "page 50",
+      "text": "B. Time response of flames\nObjective B ‐‐ Obtain the time response of flame \nchemiluminescence, luminosity, and ion current to large step \nchanges in voltage as functions of total fuel flow rate and\nchanges in voltage, as functions of total fuel flow rate and \namount of inert added to the fuel stream.\nVoltage 1\nStep change to \nlt\n2\nvoltage 2\n1g flames reach steady \nstate much more quickly \nthan micro-g flames\n"
+    }
+  ],
+  "details": {
+    "page_count": 50,
+    "empty_pages": [
+      9,
+      19,
+      37,
+      46,
+      47
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

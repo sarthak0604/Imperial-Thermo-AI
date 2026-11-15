@@ -1,0 +1,95 @@
+{
+  "id": "res:PSI-39:a03e9a7f36d7776a0d01",
+  "study": "PSI-39",
+  "filename": "PSI-39_Science Documents_CFI_SCR.pdf",
+  "key": "psi-data/PSI-39/Science Documents/PSI-39_Science Documents_CFI_SCR.pdf",
+  "category": "Science Documents",
+  "size_bytes": 3630234,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-39/download?file=683f4b7cda33c6f4c4cec619&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-39/a03e9a7f36d7776a0d01/PSI-39_Science Documents_CFI_SCR.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "5c050f1ed28349fd3f101db152ce293f5b36b7b975ca6f24ac26b43779aedc11",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Cool Flame Investigation  \nScience Concept Review – Objectives and Requirements Definition \nScience Definition Team \nNASA Glenn Research Center \nCleveland, Ohio 44135 \nMay 4, 2014 \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "FLEX Hardware \n"
+    },
+    {
+      "locator": "page 3",
+      "text": "FLEX Experiment Summary \n•  Original of FLEX experiments was to observe \nand systematically study hot flame ignition and \nextinction in microgravity \n•  A new phenomenon where a hot flame extinction \nleads to a low-temperature, “cool-flame” burning \nin microgravity observed for the first time \n•  Cool flames are prevalent in FLEX experiments \no  Strong function of ambient pressure \no  Strong function of ambient environment – \nambient oxygen mole fraction and diluent \no  Function of fuel composition \n• \nNo systematic study of cool flames and their \npresence inferred and not observed \n1.0\n0.8\n0.6\n0.4\n0.2\n0.0\n( D / D0 )\n2\n2.5\n2.0\n1.5\n1.0\n0.5\n0.0\nt / D0\n2  ( s / mm\n2 )\n30\n25\n20\n15\n10\n5\nDf  ( mm ) ,  Df / Dd\n20Watts\n15\n10\n5\n0\nFlame Radiance  ( W )\nThu, Mar 14, 2013\nFLEX-500\nP = 767.836 mmHg\nYO2 = 0.210\nYN2 = 0.790\nHeptane\nD0 = 3.610 mm\nDext = 2.838 mm\nkavg = 0.485 mm\n2/sec\nkavg, cool = 0.366 mm\n2/sec\nDext, cool = 1.146 mm\n Droplet history\n LLUV flame history\n LLUV flame standoff\n Wideband Radiometer\n Narrowband Power*10 \nUse the unique observation of quasi-steady burning and extinction of cool flames during \nmicrogravity droplet combustion to further our understanding of low temperature chemistry.   \nEnhance the diagnostic capability of the CIR and MDCA to better study cool flame behavior. \n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Experiment Objectives – Cool Combustion, CFI \n1.  Further understanding of the combustion characteristics of normal alkanes, \nparticularly in the low temperature region by conducting droplet combustion \nexperiments in low gravity with fuels that supports cool flame burning and \nextinction. \n2.  Investigate the low temperature burning behavior of droplets consisting of pure \nfuels and bio-fuel constituents (and mixtures of them), as well as surrogate \nreference fuels to determine the relationship between the cool flame burning \ncharacteristics in microgravity droplet combustion and the octane/cetane \nbehavior of the fuel. \n3.  Explore the low temperature chemistry of alkanes further by mixing additives to \nthe fuel that disrupt the low temperature chemical pathways.  [Ground-based \nonly] \n"
+    },
+    {
+      "locator": "page 5",
+      "text": "Justification for Long-Duration Microgravity \n• \nRequires spherical symmetry to simplify mathematics \n⌧k\n⌧b\n=\np\ng D3\n↵g\n⌧m\n⌧b\n=\np\ng D3\nDg\n• \nSpherical symmetry requires g-levels less than 10-4g0 \no \nPrecludes experimentation using aircraft flying parabolic trajectories \n• \nDrop towers have appropriate g-levels \no \nCurrently limited to 5 seconds microgravity time \n• \nProposed experiments involve: \n1.  Droplet growth and deployment (~ 10 seconds) \n2.  Droplet ignition and hot-flame burning (5 - 10 seconds) \n3.  Hot-flame extinction \n4.  Cool-flame burning (5 – 60 seconds) \n5.  Cool-flame extinction \n• \nLong-duration microgravity facilities are required for detailed parametric study \n"
+    },
+    {
+      "locator": "page 6",
+      "text": "Requirements – Test Fuels \n• \nObjective 1: Study the ignition, hot-flame burning and extinction, cool flame \nburning and cool flame extinction of a model normal alkane fuel. \no \nNormal dodecane \n• \nObjective 2: Investigate the low temperature burning of pure fuels, mixtures of \npure fuels that are surrogates for real fuels and bio-fuel constituents to \ndetermine the relationship between a fuels octane/cetane behavior and the cool \nflame burning characteristics. \no \n2,6,10 trimethyldodecane (farnesane) \no \nn-dodecane/2,6,10 trimethyldodecane mixtures (3 mixtures ea., ratios \nTBD) \no \nn-dodecane/2,2,4,6,6 pentamethylheptane mixtures (3 mixtures ea., ratios \nTBD) \no \nn-dodecane/iso-octane/n-propyl benzene/1,3,5 trimethyl benzene (2 \nmixtures ea.) \no \nn-heptane/2,2,4 trimethylpentane mixtures \n"
+    },
+    {
+      "locator": "page 7",
+      "text": "Requirements – Droplet Deployment and Ignition \n• \nNo changes to MDCA deployment and ignition hardware \n• \nReduce the size of the support fiber to 40 µm \no \nRequired in some cases to keep the droplet in the FOV \no \nAllows an estimate of the hot-flame temperature in FLEX \no \n80 µm fiber in FLEX experiments created disturbances to droplet near cool flame \nextinction in almost all tests \n1.0\n0.8\n0.6\n0.4\n0.2\n0.0\n( D / D0 )\n2\n2.0\n1.5\n1.0\n0.5\n0.0\nt / D0\n2  ( s / mm\n2 )\n35\n30\n25\n20\n15\n10\n5\nDf  ( mm ) ,  Df / Dd\nkavg  =  0.41 mm^2/sec\nkavg  =  0.09 mm^2/sec\nTue, Jun 15, 2010\nFLEX-095\nC08H201\nFiber-Supported\nP = 534.358 mmHg\nYO2 = 0.240\nYN2 = 0.560\nYCO2 = 0.200\nHeptane\nD0 = 3.647 mm\nDext, hot = 3.045 mm\nkavg, hot = 0.583 mm\n2/sec\nkavg, cool = 0.41 mm\n2/sec\nDext, cool ~ 1.89 mm\n1.0\n0.8\n0.6\n0.4\n0.2\n0.0\n( D / D0 )\n2\n2.0\n1.5\n1.0\n0.5\n0.0\nt / D0\n2  ( s / mm\n2 )\n30\n25\n20\n15\n10\n5\nDf  ( mm ) ,  Df / Dd\nFLEX-064\nThu, Mar 11, 2010\n302F001\nP = 764.593 mmHg\nYO2 = 0.175\nYN2 = 0.815\nYCO2 = 0.002\nHeptane\nD0 = 2.715 mm\nDext = 2.084 mm\nkavg = 0.600 mm\n2/sec\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Requirements – Ambient Environment \n• \nPressure \no \nStrongly influences cool flame burning and extinction – both hypo- and \nhyper-baric pressures \no \n0.5 – 3.0 atm required, up to 5 atm desired (hardware limit) \n• \nOxygen Mole Fraction \no \n0.10 – 0.40, similar to the range in FLEX experiments \n• \nAmbient Diluent \no \nPrimarily nitrogen (Objective 1 and 2) \no \nHelium and xenon (Objective 1) \nØ  Strongly influence cool flame burning and extinction \n• \nMisc. Ambient Requirements \no \nSimilar to FLEX requirements \no \nAmbient humidity less than 10% (FLEX had lower requirement for \nmethanol) \no \ng-levels ≤ 10-5g0 \n"
+    },
+    {
+      "locator": "page 9",
+      "text": "Requirements – Droplet Imaging \n• \nMeasure droplet size and shape, droplet dynamics, soot volume fraction, etc. as \nfunctions of time \n• \nNo change to camera or backlight for new experiment necessary \n• \nIncrease FOV from 30 mm (FLEX) to 50 mm (CFI) \no \nIncreases success rate by allowing for greater free deployment droplet drift \no \nFLEX requires drift less than 1 mm/sec to stay in FOV \no \nReduces spatial resolution (30 µm to 50 µm) \n"
+    },
+    {
+      "locator": "page 10",
+      "text": "Requirements – Hot Flame Imaging \n• \nCurrently measure either OH* or CH chemiluminescence using intensified \nblack and white camera \no \nOH* (310 nm) images very dim, required pixel binning (2x2) to get good \nimages, but reduced spatial resolution \no \nCH (430 nm) images have improved contrast and reduced noise – possible \nto eliminate binning (increases data storage/downlink requirements) \n• \nIncrease FOV from 50 mm (FLEX) to 80 mm (CFI) \no \nIncreases success rate by allowing for greater droplet drift \n• \nCurrent camera configuration acceptable for hot-flame imaging \no \nUnlikely to be able to perform chemiluminescence of both the hot-flame \nand cool flame with current camera configuration \n• \nRequire the capability to image the hot-flame \no \nEither OH* or CH (preferred) chemiluminescence \no \n100 µm spatial resolution \no \n30 fps \no \nAdjustable gain required (almost impossible to know appropriate gain \nbased on ground-based testing) \n"
+    },
+    {
+      "locator": "page 11",
+      "text": "Requirements – Cool Flame Imaging \n• \nCurrently have no way to image cool flames on CIR/MDCA \no \nRemoving/changing filter and/or increasing gain on LLUV possible, no \nway to shield the camera from ignition or hot flame \n• \nCool flame expected to be approximately ½ size of hot flame \no \nFOV, spatial resolution and framing rate requirements similar to hot flame \no \nCan use the same camera for both hot and cool flame imaging, but spectral \nranges are different and required gain is much different \n• \nBased on literature search and FLEX radiometer data, cool flames are expected \nto be very dim \n10\n8\n6\n4\n2\n0\nRelative Chemiluminescence Intensity ( a.u. )\n5000\n4800\n4600\n4400\n4200\n4000\n3800\n3600\nWavelength ( angstroms )\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "Requirements – Color Camera Imaging \n• \nNecessary for droplet deployment, hardware diagnostics, etc. \n• \nClosest thing to being able to look into the chamber. \n• \nFLEX color camera with internal chamber light is acceptable for CFI \no \nZoom capability is critical.  Zoom-in for droplet dispense, hardware \ndiagnostics, igniter positioning.  Zoom-out to view droplet burn. \no \nWill not be able to image the cool flame \no \nMust be able to image the vapor cloud and hot flame. \no \nMust monitor radiation damage to image array over time \n• \nRequire downlink of this view (recorded at TSC) during experiment.  Also \nrecord on CIR because of image quality loss during ISS video compression). \n"
+    },
+    {
+      "locator": "page 13",
+      "text": "Requirements – Flame Radiation \n1.0\n0.8\n0.6\n0.4\n0.2\n0.0\n( D / D0 )\n2\n2.5\n2.0\n1.5\n1.0\n0.5\n0.0\nt / D0\n2  ( s / mm\n2 )\n30\n25\n20\n15\n10\n5\nDf  ( mm ) ,  Df / Dd\n20Watts\n15\n10\n5\n0\nFlame Radiance  ( W )\nThu, Mar 14, 2013\nFLEX-500\nP = 767.836 mmHg\nYO2 = 0.210\nYN2 = 0.790\nHeptane\nD0 = 3.610 mm\nDext = 2.838 mm\nkavg = 0.485 mm\n2/sec\nkavg, cool = 0.366 mm\n2/sec\nDext, cool = 1.146 mm\n Droplet history\n LLUV flame history\n LLUV flame standoff\n Wideband Radiometer\n Narrowband Power*10 \n"
+    },
+    {
+      "locator": "page 14",
+      "text": "Requirements – Flame Radiometer \n• \nOriginal FLEX radiometers not sensitive enough to adequately \ndetect dim (hot) flames and had unacceptably low SNR \n• \nStarting in 2011, FLEX testing used replacement radiometers \no \nBroadband: 0.6 – 10.0 µm sensitivity, images hot flame \no \nNarrowband: 5.0 – 6.5 µm ( H2O ), sensitive to cool flame \no \n10 Hz frequency response, sampled at 100 Hz \no \nFixed gain, not sensitive to both hot and cool flames \n• \nRequire flame radiometric measurements for CFI \no \nSame wavelength bands as current radiometer package \no \nRequire auto-gain so each radiometer can capture both hot \nand cool flame \nØ  ~ 0.1 – 100 W flame radiance range \nØ  May not be able to capture flame radiance during re-\nignition \n• \nRequire at least 10 Hz sampling (same as FLEX) \n• \nSame FOV as FLEX radiometers \n1.0\n0.8\n0.6\n0.4\n0.2\n0.0\nFractional Transmission\n5\n6 7 8 9\n1\n2\n3\n4\n5\n6 7 8 9\n10\n2\n3\n4\n5\n6 7 8 9\n100\nWavelength  ( µm )\n0.6\n0.5\n0.4\n0.3\n0.2\n0.1\n0.0\nFractional Transmission\n4\n5\n6\n7\n8\n9\n10\nWavelength  ( µm )\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "Desire – Flame (Hot and Cool) Pyrometry \n• \nOriginal intent of HiBMS-2/LCTF was SiC fiber \npyrometry \no \nTwo-color pyrometry \no \nCycling time of LCTF too slow \no \nDetector QE * LCTF transmission too small  \n• \nRequest capability to perform SiC pyrometry for fiber-\nsupported CFI tests \no \nHot and cool flame, but not necessarily \nsimultaneously \n• \nRequires changes to current HiBMS-2 configuration \no \nRemove LCTF \no \nReplace with wideband bandpass IR filter \no \nCalibration insert to igniter circuit ??? \n60\n55\n50\n45\n40\n35\n30\n25\n20\n15\n10\n5\n0\nmm\n60\n55\n50\n45\n40\n35\n30\n25\n20\n15\n10\n5\n0\nmm\n1.0\n0.8\n0.6\n0.4\n0.2\n0.0\nTransmission, Reflectance  ( fractional )\n1200\n1100\n1000\n900\n800\n700\n600\n500\nWavelength  ( nm )\n0.5\n0.4\n0.3\n0.2\n0.1\n0.0\nQuantum Efficiency, Transmission  (fractional)\n Sapphire Transmission\n BK7 Transmission\n SF11 Transmission\n LAH58 Transmission\n SF5 Transmission\n SK2 Transmission\n Detector Quantum Efficiency\n LCTF Transmission @ 700 nm\n LCTF Transmission @ 900 nm  \n SF53 Transmission\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Requirements – Misc. \n• \nRequire chamber pressure measurement \no \nCIR/FOMA capability sufficient for CFI \n• \nRequire chamber temperature measurement \no \nCIR capability sufficient for CFI \n• \nCIR/FOMA gas mixing capability sufficient for the CFI \nexperiments \n• \nAll measurements time referenced to GMT within 0.03 \nsec \no \nCurrent MDCA/CIR capability sufficient for CFI \n• \nRequire measurement of g-level during experiment \no \nCurrent SAMS capability sufficient for CFI \n• \nRequire experiment isolation from ISS structure \no \nPARIS sufficient for CFI \n"
+    },
+    {
+      "locator": "page 17",
+      "text": "Experiment Procedures and Test Matrix \n• \nExperiment procedures similar to FLEX experiments \no \nFLEX looked for flammability limits and did a few tests in gradually \ndecreasing oxygen ambients \no \nCFI will examine fewer ambients, but more tests in each ambient \n• \nExact test matrix will be determined based on further analysis of FLEX data and \ncompanion theoretical/numerical analysis \no \nTest matrix in SRD used for resource estimation \no \nRequire interactive experimentation, i.e., future experiments guided by the \nresults of the current experiments \nØ  Requires timely downlink of experimental data. \no  Requires detailed interaction with engineering team \nØ  Tests planned to optimize resource utilization \n• \nPressure range: 0.5 – 3.0 atm required (5.0 atm desired) \n• \nAmbient oxygen mole fraction:  0.10 – 0.40 \n• \nAmbient gas mixture: O2/N2, O2/He, O2/Xe, tertiary mixtures possible \n"
+    }
+  ],
+  "details": {
+    "page_count": 17,
+    "empty_pages": [
+      2
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

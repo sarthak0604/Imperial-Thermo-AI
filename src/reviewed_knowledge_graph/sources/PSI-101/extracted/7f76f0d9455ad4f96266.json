@@ -1,0 +1,885 @@
+{
+  "id": "res:PSI-101:7f76f0d9455ad4f96266",
+  "study": "PSI-101",
+  "filename": "PSI-101_Analyzed Data_thermal precipitator map updated.xlsx",
+  "key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_thermal precipitator map updated.xlsx",
+  "category": "Analyzed Data",
+  "size_bytes": 17138,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc531b8656d2315bf5095&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/7f76f0d9455ad4f96266/PSI-101_Analyzed Data_thermal precipitator map updated.xlsx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "fe3765a3980ef9c6c53f48c99abdaecdc205e727386c78cae2bb79c0ea1ff849",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "sheet Sheet1, row 1",
+      "text": "4: SAME-R Thermal Precipitator Usage | 5: could measure | 6: ubiquitous - tiny or some particles, possible measure | 7: measured"
+    },
+    {
+      "locator": "sheet Sheet1, row 2",
+      "text": "6: Not measureable"
+    },
+    {
+      "locator": "sheet Sheet1, row 3",
+      "text": "4: Thermal Precipitator 1 | 10: Thermal Precipitator 4"
+    },
+    {
+      "locator": "sheet Sheet1, row 4",
+      "text": "3: Date viewed - comments | 4: A | 5: Date viewed - comments | 6: B | 9: Date viewed - comments | 10: A | 11: Date viewed - comments | 12: B"
+    },
+    {
+      "locator": "sheet Sheet1, row 5",
+      "text": "2: 1 | 3: 8/24 - no particles - No images | 4: 48 (SAMERFLT 1S) | 5: 2/22 - few particles, mostly debris | 6: 67 (SAMERFLT 20S) | 8: 1 | 9: 12/9 & 4/23 - no particles | 10: 78 preage (SAMERFLT 31L) | 11: 12/9 - no particles | 12: 78 postage (SAMERFLT 31L)"
+    },
+    {
+      "locator": "sheet Sheet1, row 6",
+      "text": "2: 2 | 3: 8/24 - no particles Ubiquitous particles | 4: 49 (SAMERFLT 2L) | 5: 9/12 - no particles | 6: 68 (SAMERFLT 21L) | 8: 2 | 9: 10/5 - no particles | 10: 79 preage (SAMERFLT 32T) | 11: 12/9 - no particles | 12: 79 postage (SAMERFLT 32T)"
+    },
+    {
+      "locator": "sheet Sheet1, row 7",
+      "text": "2: 3 | 3: 9/1 no particles | 4: 50 (SAMERFLT 3T) | 5: 2/22 - few particles, some background particles | 6: 69 (SAMERFLT 22T) | 8: 3 | 9: 12/9 - No particles | 10: 80 preage (SAMERFLT 33L) | 11: 12/9 - no particles | 12: 80 postage (SAMERFLT 33L)"
+    },
+    {
+      "locator": "sheet Sheet1, row 8",
+      "text": "2: 4 | 3: 8/31 - no particles - tinies/ chains | 4: 51 (SAMERFLT 4K) | 5: 9/13 - no particles | 6: 70 (SAMERFLT 23K) | 8: 4 | 9: 10/5 - no particles | 10: 81 preage (SAMERFLT 34T) | 11: 10/6 - no particles | 12: 81 postage (SAMERFLT 34T)"
+    },
+    {
+      "locator": "sheet Sheet1, row 9",
+      "text": "2: 5 | 3: 9/12 no particles | 4: 52 (SAMERFLT 5P) | 5: 2/22 - few particles, mostly debris | 6: 71 (SAMERFLT 24P) | 8: 5 | 9: 12/9 - No particles | 10: 82 preage (SAMERFLT 35L) | 11: 12/9 & 4/23 -  no particles | 12: 82 postage (SAMERFLT 35L)"
+    },
+    {
+      "locator": "sheet Sheet1, row 10",
+      "text": "2: 6 | 3: 2/22 - few particles, mostly debris | 4: 53 (SAMERFLT 6S) | 5: 2/22 -  few particles, mostly debris | 6: 72 (SAMERFLT 25S) | 8: 6 | 9: 10/5 - no measurable particles | 10: 83 preage (SAMERFLT 36T) | 11: 10/6 - no particles | 12: 83 postage (SAMERFLT 36T)"
+    },
+    {
+      "locator": "sheet Sheet1, row 11",
+      "text": ""
+    },
+    {
+      "locator": "sheet Sheet1, row 12",
+      "text": "4: Thermal Precipitator 2 | 10: Thermal Precipitator 3"
+    },
+    {
+      "locator": "sheet Sheet1, row 13",
+      "text": "3: Date viewed - comments | 4: A | 5: Date viewed - comments | 6: B | 9: Date viewed - comments | 10: A | 11: Date viewed - comments | 12: B"
+    },
+    {
+      "locator": "sheet Sheet1, row 14",
+      "text": "2: 1 | 3: 9/16 & 4/23 - particles present | 4: 54 (SAMERFLT 7L) | 5: 9/16 -  particles present | 6: 62 preage (SAMERFLT 15K) | 8: 1 | 9: 10/5 - particles noted | 10: 84 preage (SAMERFLT 37P) | 11: 10/5 -  particles noted | 12: 84 postage (SAMERFLT 37P)"
+    },
+    {
+      "locator": "sheet Sheet1, row 15",
+      "text": "2: 2 | 3: 9/28 - particles present | 4: 55 (SAMERFLT 8L) | 5: 2/17 - particles present | 6: 62 postage (SAMERFLT 15K) | 8: 2 | 9: 2/6/12 - no measureable particles | 10: 85 (SAMERFLT 38K) | 11: 2/6/12 - particles present | 12: 87 (SAMERFLT 40P)"
+    },
+    {
+      "locator": "sheet Sheet1, row 16",
+      "text": "2: 3 | 3: 9/21 - particles present | 4: 56 (SAMERFLT 9T) | 5: 2/17 - particles present | 6: 63 preage (SAMERFLT 16P) | 8: 3 | 9: 3/19 - particles mixed in with extraneous bkg. | 10: 106 (SAMERFLT 59L) | 11: 3/19 - particles present | 12: 89 (SAMERFLT 42T)"
+    },
+    {
+      "locator": "sheet Sheet1, row 17",
+      "text": "2: 4 | 3: 9/21 - no measureable particles | 4: #58 Preage (SAMERFLT 11T) | 5: 2/17 - particles present | 6: 63 postage (SAMERFLT 16P) | 8: 4 | 9: 2/6/12 - Particles but not enough to measure - no images | 10: 105 preage (SAMERFLT 58T) | 11: 2/6/12 - very small particles - not measureable. | 12: 105 postage (SAMERFLT 58T)"
+    },
+    {
+      "locator": "sheet Sheet1, row 18",
+      "text": "2: 5 | 3: 2/17 - particles present | 4: #58 Postage (SAMERFLT 11T) | 5: 9/21 - particles present | 6: 64 preage (SAMERFLT 17P) | 8: 5 | 9: 3/29/12 - particles present | 10: 107 preage (SAMERFLT 60P) | 11: 2/22 - particles present | 12: 107 postage (SAMERFLT 60P)"
+    },
+    {
+      "locator": "sheet Sheet1, row 19",
+      "text": "2: 6 | 3: 9/28 & 4/23 particles present | 4: 60 (SAMERFLT 13S) | 5: 2/22 - Particles present | 6: 64 postage (SAMERFLT 17P) | 8: 6 | 9: 3/29/12 - very small particles present | 10: 108 preage (SAMERFLT 61K) | 11: 3/29/12 - very small particles | 12: 108 postage (SAMERFLT 61K)"
+    },
+    {
+      "locator": "sheet Sheet1, row 21",
+      "text": "4: Thermal Precipitator 5 | 10: Thermal Precipitator 6"
+    },
+    {
+      "locator": "sheet Sheet1, row 22",
+      "text": "3: Date viewed/comments | 4: A | 5: Date viewed - comments | 6: B | 9: Date viewed - comments | 10: A | 11: Date viewed - comments | 12: B"
+    },
+    {
+      "locator": "sheet Sheet1, row 23",
+      "text": "2: 1 | 3: 10/28 - no particles | 4: 73 preage (SAMERFLT 26K) | 5: 11/9 - no particles extremely clean | 6: 73 postage (SAMERFLT 26K) | 8: 1 | 9: 3/19 - no particles | 10: 93 preage (SAMERFLT 46K) | 11: 2/13 - no particles | 12: 93 postage (SAMERFLT 46K)"
+    },
+    {
+      "locator": "sheet Sheet1, row 24",
+      "text": "2: 2 | 3: 11/3 - no particles | 4: 74 preage (SAMERFLT 27P) | 5: 11/9 -  particles found upstream at -3y. | 6: 74 postage (SAMERFLT 27P) | 8: 2 | 9: 3/8 - very tiny | 10: 94 preage (SAMERFLT 47K) | 11: 2/13 - Yes, few | 12: 94 postage (SAMERFLT 47K)"
+    },
+    {
+      "locator": "sheet Sheet1, row 25",
+      "text": "2: 3 | 3: 10/28 - no particles | 4: 75 preage (SAMERFLT 28K) | 5: 11/9 - possible population of very tiny particles | 6: 75 postage (SAMERFLT 28K) | 8: 3 | 9: 2/13 - yes, few | 10: 95 (SAMERFLT 48P) | 11: 2/13 -  yes, various | 12: 96 (SAMERFLT 49L)"
+    },
+    {
+      "locator": "sheet Sheet1, row 26",
+      "text": "2: 4 | 3: 11/3 - many agglomerated particles | 4: 76 preage (SAMERFLT 29P) | 5: 11/3 - particles found not as far upstream | 6: 76 postage (SAMERFLT 29P) | 8: 4 | 9: 3/8 - yes, few | 10: 97 (SAMERFLT 50P) | 11: 2/13 - yes, few  | 12: 100 (SAMERFLT 53T)"
+    },
+    {
+      "locator": "sheet Sheet1, row 27",
+      "text": "2: 5 | 3: 11/3 - very tiny particles | 4: 77 preage (SAMERFLT 30K) | 5: 11/3 -  more very tiny particles | 6: 77 postage (SAMERFLT 30K) | 8: 5 | 9: 3/8 - yes, tiny | 10: 98 preage (SAMERFLT 51L) | 11: 2/13 - yes, few large & tiny spots | 12: 98 postage (SAMERFLT 51L)"
+    },
+    {
+      "locator": "sheet Sheet1, row 28",
+      "text": "2: 6 | 4: empty | 6: empty | 8: 6 | 9: 3/8 - yes, small & large | 10: 101 preage (SAMERFLT 54K) | 11: 2/13 - yes, few | 12: 101 postage (SAMERFLT 54K)"
+    }
+  ],
+  "details": {
+    "sheets": [
+      {
+        "name": "sheet Sheet1",
+        "row_count": 28,
+        "column_count": 39,
+        "column_statistics": [
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 18,
+            "min": 1.0,
+            "max": 6.0,
+            "blank_count": 10
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 8
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 3
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 7
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 5
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 27
+          },
+          {
+            "numeric_count": 18,
+            "min": 1.0,
+            "max": 6.0,
+            "blank_count": 10
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 7
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 4
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 7
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 7
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 28
+          }
+        ],
+        "rows": [
+          [
+            null,
+            null,
+            null,
+            "SAME-R Thermal Precipitator Usage",
+            "could measure",
+            "ubiquitous - tiny or some particles, possible measure",
+            "measured",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            "Not measureable",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            "Thermal Precipitator 1",
+            null,
+            null,
+            null,
+            null,
+            null,
+            "Thermal Precipitator 4",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            "Date viewed - comments",
+            "A",
+            "Date viewed - comments",
+            "B",
+            null,
+            null,
+            "Date viewed - comments",
+            "A",
+            "Date viewed - comments",
+            "B",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            1,
+            "8/24 - no particles - No images",
+            "48 (SAMERFLT 1S)",
+            "2/22 - few particles, mostly debris",
+            "67 (SAMERFLT 20S)",
+            null,
+            1,
+            "12/9 & 4/23 - no particles",
+            "78 preage (SAMERFLT 31L)",
+            "12/9 - no particles",
+            "78 postage (SAMERFLT 31L)",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            2,
+            "8/24 - no particles Ubiquitous particles",
+            "49 (SAMERFLT 2L)",
+            "9/12 - no particles",
+            "68 (SAMERFLT 21L)",
+            null,
+            2,
+            "10/5 - no particles",
+            "79 preage (SAMERFLT 32T)",
+            "12/9 - no particles",
+            "79 postage (SAMERFLT 32T)",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            3,
+            "9/1 no particles",
+            "50 (SAMERFLT 3T)",
+            "2/22 - few particles, some background particles",
+            "69 (SAMERFLT 22T)",
+            null,
+            3,
+            "12/9 - No particles",
+            "80 preage (SAMERFLT 33L)",
+            "12/9 - no particles",
+            "80 postage (SAMERFLT 33L)",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            4,
+            "8/31 - no particles - tinies/ chains",
+            "51 (SAMERFLT 4K)",
+            "9/13 - no particles",
+            "70 (SAMERFLT 23K)",
+            null,
+            4,
+            "10/5 - no particles",
+            "81 preage (SAMERFLT 34T)",
+            "10/6 - no particles",
+            "81 postage (SAMERFLT 34T)",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            5,
+            "9/12 no particles",
+            "52 (SAMERFLT 5P)",
+            "2/22 - few particles, mostly debris",
+            "71 (SAMERFLT 24P)",
+            null,
+            5,
+            "12/9 - No particles",
+            "82 preage (SAMERFLT 35L)",
+            "12/9 & 4/23 -  no particles",
+            "82 postage (SAMERFLT 35L)",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            6,
+            "2/22 - few particles, mostly debris",
+            "53 (SAMERFLT 6S)",
+            "2/22 -  few particles, mostly debris",
+            "72 (SAMERFLT 25S)",
+            null,
+            6,
+            "10/5 - no measurable particles",
+            "83 preage (SAMERFLT 36T)",
+            "10/6 - no particles",
+            "83 postage (SAMERFLT 36T)",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null,
+            "Thermal Precipitator 2",
+            null,
+            null,
+            null,
+            null,
+            null,
+            "Thermal Precipitator 3",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Sheet2",
+        "row_count": 0,
+        "column_count": 0,
+        "column_statistics": [],
+        "rows": [],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Sheet3",
+        "row_count": 0,
+        "column_count": 0,
+        "column_statistics": [],
+        "rows": [],
+        "all_rows_retained": false
+      }
+    ]
+  },
+  "warnings": [
+    "Values read from saved workbook; formulas not recalculated."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-117:46f8bcee08a730c949c7",
+  "study": "PSI-117",
+  "filename": "PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf",
+  "key": "psi-data/PSI-117/Reports/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf",
+  "category": "Reports",
+  "size_bytes": 8072629,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a28273bd9d7246402cb43ed&version=1&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/46f8bcee08a730c949c7/PSI-117_Reports_Dissertation_Combustion Behavior Of Sub-Millimeter Sized Oxygenated And N-Alka.pdf",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "9ca74dd4eb2e76b1f39c2754363c55eed827444e335ef9956922a6a8f2b4199d",
+  "status": "downloaded"
+}

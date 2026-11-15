@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:2752738ed7a66633cf09",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Karnani et al 2009 Exploring the effects of gravity on a coflow diffusion flame.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Karnani et al 2009 Exploring the effects of gravity on a coflow diffusion flame.pdf",
+  "category": "Presentations",
+  "size_bytes": 1820900,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75b0eb4c08676005570&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/2752738ed7a66633cf09/PSI-22_Presentations_Karnani et al 2009 Exploring the effects of gravity on a coflow diffusion flame.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "81cdf212fb4323be9795ee44d11a0c9fd274f19e5d5ae3fb99e230f5ee122dd6",
+  "status": "downloaded"
+}

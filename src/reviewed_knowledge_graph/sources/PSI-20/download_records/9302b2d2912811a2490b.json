@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:9302b2d2912811a2490b",
+  "study": "PSI-20",
+  "filename": "PSI-20_Science Documents_PS-03403_ACME_on_the_ISS.pdf",
+  "key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_PS-03403_ACME_on_the_ISS.pdf",
+  "category": "Science Documents",
+  "size_bytes": 9090639,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8191b4820d736cecc35&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/9302b2d2912811a2490b/PSI-20_Science Documents_PS-03403_ACME_on_the_ISS.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "8cebedd4be120fe2369ad4d971c85f08a148d3af056d88c7d7914bde4089a090",
+  "status": "downloaded"
+}

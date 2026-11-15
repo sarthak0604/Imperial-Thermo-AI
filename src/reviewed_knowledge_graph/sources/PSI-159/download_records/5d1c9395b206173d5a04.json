@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-159:5d1c9395b206173d5a04",
+  "study": "PSI-159",
+  "filename": "PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
+  "key": "psi-data/PSI-159/Reports/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
+  "category": "Reports",
+  "size_bytes": 3894907,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-159/download?file=691f7ea117f78b371b26f6f8&version=1&studyVersion=1&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-159/5d1c9395b206173d5a04/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f6cce7cc08ca69c155994d7a8898e21cd4aba122f4e46d5e00708e4889a1ebab",
+  "status": "downloaded"
+}

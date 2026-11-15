@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:00bfb06363c50a0afcea",
+  "study": "PSI-20",
+  "filename": "PSI-20_Science Documents_PS_00538__Unlocking_Mysteries.pdf",
+  "key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_PS_00538__Unlocking_Mysteries.pdf",
+  "category": "Science Documents",
+  "size_bytes": 2658200,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8191b4820d736cecc30&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/00bfb06363c50a0afcea/PSI-20_Science Documents_PS_00538__Unlocking_Mysteries.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "29a51cb4c913de26b2188402611aeb80c28ec503c88e6abbafcf04cc2f800366",
+  "status": "downloaded"
+}

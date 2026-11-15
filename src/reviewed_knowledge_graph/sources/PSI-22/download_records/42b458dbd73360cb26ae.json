@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:42b458dbd73360cb26ae",
+  "study": "PSI-22",
+  "filename": "PSI-22_Engineering Documents_ACME_engineering_20210328.pdf",
+  "key": "psi-data/PSI-22/Engineering Documents/PSI-22_Engineering Documents_ACME_engineering_20210328.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 6843254,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75d0eb4c0867600557a&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/42b458dbd73360cb26ae/PSI-22_Engineering Documents_ACME_engineering_20210328.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "c81d6eec2152c8d7294a3913168cd03b865b54c5ebac0695687cf464929927f9",
+  "status": "downloaded"
+}

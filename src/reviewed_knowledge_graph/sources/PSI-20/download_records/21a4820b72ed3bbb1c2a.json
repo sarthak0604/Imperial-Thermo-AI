@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:21a4820b72ed3bbb1c2a",
+  "study": "PSI-20",
+  "filename": "PSI-20_Reports_Final_20220201.pdf",
+  "key": "psi-data/PSI-20/Reports/PSI-20_Reports_Final_20220201.pdf",
+  "category": "Reports",
+  "size_bytes": 5957884,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d73c1b4820d736cec3a4&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/21a4820b72ed3bbb1c2a/PSI-20_Reports_Final_20220201.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "c2f22c914b38d9e6742709688a2d1d81d8306e3c901b47314faf3b6ab43cec60",
+  "status": "downloaded"
+}

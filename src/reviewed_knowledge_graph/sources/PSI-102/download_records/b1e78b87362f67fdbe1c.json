@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:b1e78b87362f67fdbe1c",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT263 run 14 kapton avg.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT263 run 14 kapton avg.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 1066496,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d50f91ab4427dbf441d&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/b1e78b87362f67fdbe1c/PSI-102_Analyzed Data_GMT263 run 14 kapton avg.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "0ec142e6d0f842ada4c0953c5d478e16bc33758327eb3d14a579b2cfb86d8d4e",
+  "status": "downloaded"
+}

@@ -1,0 +1,153 @@
+{
+  "id": "res:PSI-23:1cbefb1e705cde7b60d2",
+  "study": "PSI-23",
+  "filename": "PSI-23_Presentations_AIAA presentation - ACME on the ISS Jan2012.pdf",
+  "key": "psi-data/PSI-23/Presentations/PSI-23_Presentations_AIAA presentation - ACME on the ISS Jan2012.pdf",
+  "category": "Presentations",
+  "size_bytes": 4459532,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdc56daf91e274cec83b&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/1cbefb1e705cde7b60d2/PSI-23_Presentations_AIAA presentation - ACME on the ISS Jan2012.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "0e855df50394f18143e468a01ba99520eaf69ad7d2ec333400b20e2ccb9f975e",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "National Aeronautics and Space Administration\nAdvanced Combustion\nAdvanced Combustion \nvia Microgravity Experiments \nth\nI t\nti\nl S\nSt ti\non the International Space Station\n50th AIAA Aerospace Sciences Meeting\n26th S\ni\nG\nit\nR l t d\n26th Symposium on Gravity-Related \nPhenomena in Space Exploration (GPSE)\nDennis P. Stocker, ACME Project Scientist\nwww.nasa.gov\n1\n,\nj\nNASA Glenn Research Center, Cleveland, Ohio\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "National Aeronautics and Space Administration\nOutline\n• Background\n– Why combustion?\n– ISS research\n• ACME\n– Science\nScience\n– Hardware\n– Status\n• SLICE\nSLICE\n• Questions\nwww.nasa.gov\n2\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "National Aeronautics and Space Administration\nWhy Study Combustion?\ny\ny\n•\nEnergy\n– While we might  associate fire with the Stone Age, we still make \nextensive use of combustion in our daily lives\nextensive use of combustion in our daily lives.\n• Electricity – about 70% in the U.S. from combustion\n• Heating of buildings, water, food, and in manufacturing processes\n• Transportation\n– Our reliance on imported fuel contributes to our national trade \ndeficit and affects our national security.\n•\nEnvironment\nCombustion is a major source of greenhouse gases\n– Combustion is a major source of greenhouse gases.\n– Soot contributes to global warming and is a health problem.\n•\nFire Safety\nGiven its pervasive use with annual U.S. fuel costs on the order \nof a trillion dollars even small improvements in combustion \ntechnology can significantly reduce fuel needs and \nll\ni\nd\ni\n!\nwww.nasa.gov\npollution production!\n3\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "National Aeronautics and Space Administration\nISS Combustion Experiments\np\n• Flame Extinguishment (FLEX) \n– Combustion of a single liquid droplet\ng\nq\np\n• Idealized spherically symmetric combustion greatly \nfacilitates computational and theoretical analysis\n– Initial tests on efficacy of fire suppressants in \ny\npp\nmicrogravity, followed by fundamental science\n– Operating since early 2009 in the Combustion \nIntegrated Rack (CIR)\ng\n(\n)\n• Smoke Point In Coflow Experiment (SPICE)\n– Laminar gas-jet diffusion flame in coflow of air\nSt d i\nt\nti\nt\nid ti\nd h\nt\n– Studying soot generation, soot oxidation, and heat \ntransfer in microgravity flames\n– Conducted in spring 2009 in the Microgravity Science \nGl\nb\n(MSG)\nwww.nasa.gov\n4\nGlovebox (MSG)\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "National Aeronautics and Space Administration\nCombustion by Facility\ny\ny\n•\nCombustion Integrated Rack (CIR)\n–\nDroplets\nFLEX\nFlame Extinguishment\nG\nACME\nAd\nd C\nb\nti\ni\nMi\nit\nE\ni\nt\n–\nGases\nACME\nAdvanced Combustion via Microgravity Experiments\n–\nSolids\nFLAME\nFlammability Assessment of Materials for Exploration\n•\nMicrogravity Science Glovebox (MSG)\n–\nGases\nSPICE\nSmoke Point In Coflow Experiment\n–\nGases\nSPICE\nSmoke Point In Coflow Experiment\n–\nGases\nSLICE\nStructure & Liftoff In Combustion Experiment\n–\nSolids\nBASS\nBurning And Suppression of Solids\nwww.nasa.gov\n5\nCIR, Ron Garan w/MDCA in CIR, Nicole Stott w/MDCA, Michael Barratt w/SPICE in MSG\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "National Aeronautics and Space Administration\nCombustion Integrated Rack\ng\nFuel/Oxidizer Management \nAssembly (FOMA)\n• Gas Distribution\nInternational Standard\nEnvironmental Control (ECS)\n• Air Thermal Control\n• Fire Detection & Suppression\n• Exhaust Vent\nCombustion\nInternational Standard \nPayload Rack (ISPR)\npp\n• Water Thermal Control\n• Gas Interfaces (GN2, VES, VRS)\nImage \nCombustion\nChamber\nOptics\nProcessing \nand Storage \n(IPSU)\nOptics\nBench\nPassive Rack \nIsolation Subsystem \n(PaRIS)\nOptics\nBench Slides\nPI Avionics\nScience Diagnostics\n• Illumination Package\nL\nLi ht L\nl (2 U it )\nwww.nasa.gov\n6\n• Low Light Level (2 Units)\n• High Bit Depth Multi-Spectral\nExperiment-specific insert\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "National Aeronautics and Space Administration\n5 ACME Experiments\n8 Universities (+NASA Glenn) and 13 Investigators\n•\nBRE\n–\nBurning Rate Emulator\n–\nPIs: James G Quintiere Peter B Sunderland (both U Maryland)\nPIs: James G. Quintiere, Peter B. Sunderland (both U. Maryland) \n•\nCLD Flame\n–\nCoflow Laminar Diffusion Flame\n–\nPIs: Marshall Long, Mitchell Smooke (both Yale U.)\ng,\n(\n)\n•\nE-FIELD Flames\n–\nElectric-Field Effects on Laminar Diffusion Flames\n–\nPIs: Derek Dunn-Rankin (UC Irvine), Felix Weinberg (Imperial \nC ll\n)\nZ\nG\nY\n(NCSER\nt NASA Gl\n)\nCollege) , Zeng-Guang Yuan (NCSER at NASA Glenn)\n•\nFlame Design - a novel approach to clean, efficient diffusion flames\n–\nPIs: Richard L. Axelbaum (Washington U. in St. Louis), Beei-Huan \nChao (U. Hawaii), Peter B. Sunderland (U. Maryland), David L. \n(\n),\n(\ny\n),\nUrban (NASA Glenn)\n•\ns-Flame\n–\nStructure and Response of Spherical Diffusion Flames\nwww.nasa.gov\n–\nPIs: C.K. Law (Princeton U.), Stephen D. Tse (Rutgers U.), Kurt R. \nSacksteder (NASA Glenn)\n7\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "National Aeronautics and Space Administration\nBRE\n•\nBurning Rate Emulator\n– Jim Quintiere & Peter Sunderland (both U. Maryland)\n•\nConcept\n– Flat-plate burner with closed-loop regulation of \ngaseous fuel flow based on heat flux to the burner \ni\nl\ni\nh\nb\ni\nf\nd\nd f\nl\nsimulating the combustion of condensed fuels\n–\nFuels to be simulated include paper, plastic, alcohols\n•\nGoals \nQ\nif\nh\ni\ni i\nd\ni\ni\nb h\ni\nf\n– Quantify the ignition and extinction behavior of \ncondensed fuels in microgravity.\n– Qunatify the effects of burning at enhanced oxygen \nconditions in microgravity\nconditions in microgravity.\n•\nWhy?\n– Spacecraft fire prevention through improved \nassessment for materials selection\nwww.nasa.gov\n8\nassessment for materials selection\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "National Aeronautics and Space Administration\nCLD Flame\nC\na\ne\n•\nCoflow Laminar Diffusion Flame\n– Marshall Long & Mitchell Smooke (both Yale U.)\n•\nConcept\n– Lifted coflow (2D) flame, so little/no heat loss to burner\n• enabling improved modeling of the flame\n•\nGoals \n– Generation of modified kinetic mechanisms for \nhydrocarbon fuels that are able to model effectively \ndiff\ni\nfl\nd\nl\ndiffusion flame structure under a larger parameter \nrange than existing mechanisms.\n– Development of submodels for soot formation that are \ncapable of predicting both high and low soot loading\ncapable of predicting both high and low soot loading \nlevels in hydrocarbon flames of various fuels.\n•\nWhy?\n– Improved design capability through validation of\nwww.nasa.gov\n9\nImproved design capability through validation of  \ncombustion models over wider parameter range\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "National Aeronautics and Space Administration\nE-FIELD Flames\n•\nElectric-Field Effects on Laminar Diffusion Flames\n– Derek Dunn-Rankin (UC Irvine), Felix Weinberg \n(Imperial College London) Zeng Guang Yuan (NCSER\n(Imperial College, London), Zeng-Guang Yuan (NCSER \nat NASA Glenn)\n•\nConcept\nGas jet or coflow (2D) flame with high voltage mesh (up\n1g, 0 kV, gas-jet\n– Gas-jet or coflow (2D) flame with high-voltage mesh (up \nto ±10 kV) electrode downstream of (above) burner\n•\nGoal\n– Understand chemi-ionization behavior and the resulting\n– Understand chemi-ionization behavior and the resulting \nion driven winds sufficiently well so that electrical \nproperties of flames can be used to characterize (by \nmonitoring ion current) and control them (via direct \n0g, -0.6 kV, gas-jet\nchemical or local convective influences).\n•\nWhy?\n– Advanced control capability enabling improved \nwww.nasa.gov\n10\ncombustion performance\n0g, 0kv, 24 cm/s coflow\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "National Aeronautics and Space Administration\nFlame Design\na\ne\nes g\n•\nA novel approach to clean, efficient diffusion flames\n– Rich Axelbaum (Washington U., St. Louis), Beei-\nHuan Chao (U Hawaii) Peter Sunderland (U\n18% \nC2H4 \ninto\n27%\nO2\nHuan Chao (U. Hawaii), Peter Sunderland (U. \nMaryland), David L. Urban (NASA Glenn)\n•\nConcept\n– Spherical (1D) flame with nitrogen exchange\n18%\nC2H4 \nInto\np\n(\n)\ng\ng\n•\nGoals \n– Evaluate the effects of flame structure on soot \ninception and flame extinction\nObtain a correlation of sooting limits with\nInto\n28%\nO2\n– Obtain a correlation of sooting limits with \nstoichiometric mixture fraction, Zst, and adiabatic \ntemperature, Tad\n– Determine the importance of gas-phase oxidation on \nsoot inception for high Zst flames\n100% \nO2\ninto \n12%\nC2H4 \nsoot inception for high Zst flames\n– Demonstrate the existence of steady spherical flames\n– Identify pseudo-flammability limits for diffusion flames \nin terms of  Zst and Tad\n100%\nO2 \ninto\nwww.nasa.gov\n11\n•\nWhy?\n– To reduce soot and NOx through nitrogen exchange\ninto\n13% \nC2H4 \n"
+    },
+    {
+      "locator": "page 12",
+      "text": "National Aeronautics and Space Administration\ns-Flame\n•\nStructure and Response of Spherical Diffusion Flames\n– C.K. Law (Princeton U.), Stephen D. Tse (Rutgers U.), Kurt R. \nSacksteder (NASA Glenn)\nSacksteder (NASA Glenn)\n•\nConcept\n– Spherical (1D) flame stabilized on a porous burner\nG\n•\nGoals\n– Use spherical diffusion flames in long-duration ISS environment \nto:\nbt i\ni\nt l d t\ni\ni\nl\nll d fi\nd fl\nfi ld\n• obtain experimental data in simple, well-defined flow fields\n• understand various key elemental diffusion flame processes\n– Compare data with those obtained through independent \ncomputational simulation with detailed chemistry and transport\ncomputational simulation with detailed chemistry and transport \nto improve the accuracy and comprehensiveness of these \ndescriptions\n•\nWhy?\nflame \nl ti\nwww.nasa.gov\n12\n– Improvements in the design of practical, high-efficiency, low-\nemission combustion systems on Earth\nevolution \nwith time\n"
+    },
+    {
+      "locator": "page 13",
+      "text": "National Aeronautics and Space Administration\nACME Approach\npp\n• In general, ACME is not a technology \ndemonstration, but is seeking to improve \n,\ng\np\nlife on Earth via the path below.\nImproved understanding of\nImproved understanding of \ncombustion fundamentals\nImproved numerical models\nACME\nImproved numerical models \nof combustion processes\nImproved design tools\nImproved practical\nfrom\nACME\nwww.nasa.gov\n13\nImproved practical \ncombustion devices\nACME\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "National Aeronautics and Space Administration\nACME Commonality\n•\nAll experiments are microgravity studies of \nflames that are:\n– Gas-fueled\n– Laminar\n• flow is smooth and not turbulent (i.e., it does \nnot have swirling vortices)\n+1.75 kV\nnot have swirling vortices)\n– Non-premixed (aka diffusion)\n• where the fuel and oxidizer (e.g., air) are on \nopposite sides of the reaction sheet where \n+2.00 kV\npp\nthey come together, react, and emit products \nof combustion (including heat and light)\n•\nMost are 1D (spherical) or 2D (jet)\n+2.25 kV\nwww.nasa.gov\n14\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "National Aeronautics and Space Administration\nLaminar Gaseous Diffusion Flames\n•\n4 previous space experiments\n– LSP: Laminar Soot Processes\nPI: G M Faeth (U Michigan)\n• PI: G.M. Faeth (U. Michigan)\n• Combustion Module\n• STS-83 and STS-94 (1997), STS-107 (2003)\n– TGDF: Turbulent Gas-jet Diffusion Flames\nj\n• PI: M.Y. Bahadori (SAIC)\n• Get Away Special Canister (GAS can)\n• STS-87 (1997)\nELF: Enclosed Laminar Flames\n– ELF: Enclosed Laminar Flames\n• PI: L.-D. Chen (U. Iowa)\n• Middeck Glovebox (MGBX)\n• STS-87 (1997)\n– SPICE: Smoke Point In Coflow Experiment\n• PI: D.L. Urban (NASA Glenn) - initially G.M. Faeth\n• Microgravity Science Glovebox (MSG)\n• ISS Expeditions 18-19 (2009)\nwww.nasa.gov\nISS Expeditions 18 19 (2009)\n15\nRoger Crouch with CM-1 (top), Steve Lindsey and Takao Doi with ELF in MGBX (bottom)\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "National Aeronautics and Space Administration\nACME Concept\np\n•\nConduct 5 ACME experiments using a single modular insert for \nthe Combustion Integrated Rack (CIR) on the ISS\n–\nThe only existing insert (MDCA) is for the FLEX droplet combustion experiments\nwww.nasa.gov\n16\nKoichi Wakata with MDCA in CIR (left), ISS (right)\n"
+    },
+    {
+      "locator": "page 17",
+      "text": "National Aeronautics and Space Administration\nACME Hardware\nmodular \ninsert\ndigital \ncolor \ncamera\ngas bottles and filters\ngas bottles and filters\nwww.nasa.gov\n17\nburners\navionics package\n"
+    },
+    {
+      "locator": "page 18",
+      "text": "National Aeronautics and Space Administration\nACME Insert\n3 Photomultiplier Tubes (PMTs)\nThin-Filament Pyrometry (TFP) array\nThermocouples\n3 Mass Flow \nControllers \n(MFCs)\nCamera, color, analog\nRadiometer array (6 thermopiles)\nwww.nasa.gov\nIgniter, hot-wire, retracting\nElectrode, mesh\nBurner\n"
+    },
+    {
+      "locator": "page 19",
+      "text": "National Aeronautics and Space Administration\nGas Flow System\n• Delivers 3 gases from CIR to \nthe chamber or burner\n• fuel (2 slpm max in N2 basis)\n• oxygen/inert mix or diluent \n(e.g., He or CO2)\n• nitrogen (from ISS)\n• Mass flow controllers (crew \nswappable to vary flow ranges)\nwww.nasa.gov\n"
+    },
+    {
+      "locator": "page 20",
+      "text": "National Aeronautics and Space Administration\nBurners & Igniter\ng\n• Four types of burners are planned:\n• gas-jet burners  \n0.4, 0.8, 1.3, 1.6, 2.1, 2.7 and 3.2 mm ID\n• spherical burners  \n0.25, 0.375, 0.5 inch, porous\n• flat-plate burner\n4-cm diameter, porous\n• coflow burner\n2.1-mm ID inner tube, 25-mm ID outer tube \n• Thermocouple for surface temperature on most burners\n• Burners will be electrically isolated\n• Hot-wire igniter, retracting, similar to that already in use for MDCA\n• Igniter tips are replaceable, e.g., to match the burner type/size\nHoneycomb\nIgniter, hot-wire, retracting\nwww.nasa.gov\ngas-jet  burner\ncoflow burner\nspherical \nburner\n"
+    },
+    {
+      "locator": "page 21",
+      "text": "National Aeronautics and Space Administration\nElectric Field\n• ±10kV at copper mesh downstream \nof (i.e., above) isolated burner\nNozzle\nInsulator\n• Ion current through flame is \ndetermined from Ohm’s law (I=V/R) \nand a measurement of the voltage \ndifference across a shunt resistor \nH.V\n.\nChamber\nMesh \nelectrode\nShunt for current \nmeasurement, Rs\nLow voltage input e g\n0 24VDC\nGas supply \ntubes\n(in series with the flame)\n• copper mesh screen (removable)\n• 2 high-voltage sources (removable)\n• passive electronics (fixed)\nChamber\nLow voltage input, e.g., 0-24VDC\npassive electronics (fixed)\nElectrode mesh\nwww.nasa.gov\nCoflow flame\n"
+    },
+    {
+      "locator": "page 22",
+      "text": "National Aeronautics and Space Administration\nBasic Imaging\ng\ng\n•\nColor Imaging for Ops\n– Analog color camera \n(removable) with a 45-degree \nturning mirror\n– LEDs for optional illumination\n•\nColor Imaging for Data\n– Gig-E color camera, 1.4\nGig E color camera, 1.4 \nmegapixel, 12 bit, 30 fps with \nmotorized control of both \nzoom & iris\n– 3 optional filters including a \nblue-green BG-7 filter for \npyrometry (to avoid saturation \nin the red)\n•\nUltraviolet (UV) Imaging\n–\nExisting LLL-UV camera \nequipped with a 310-nm \nnarrow band filter for imaging \nOH*\nField of view (FOV) options:\nwww.nasa.gov\n22\n–\nField of view (FOV) options: \n50-mm and 80-mm diameter\n"
+    },
+    {
+      "locator": "page 23",
+      "text": "National Aeronautics and Space Administration\nAdvanced Imaging\ng\ng\n•\nPyrometry for Hot Soot-\nContaining & Soot-Free Regions\n–\nDetermine temperature distribution from \np\nbroadband thermal radiation using an \nexisting HiBMs camera with liquid-\ncrystal tunable filter\n–\nThin-Filament Pyrometry (TFP) to \nd\ni\nfil\nf\nh\ndetermine temperature profiles from the \nbroadband thermal radiation, where the \nspectrum is indicative of the fiber \ntemperature.  Array of 15-micron \noxidized SiC fibers stretched across the \nTFP           Soot vol. fraction    HiBMs camera\nSoot pyrometry\no d ed S C be s st etc ed ac oss t e\nflame with motor to allow for scanning or \nremoval of the fibers from the flame.\n–\nField of view (FOV) options: 30-mm and \n50-mm diameter\n•\nSoot Volume Fraction\n–\nExisting CIR illumination package \n(based on 653-nm laser diode) and a \nsecond HiBMs camera\nwww.nasa.gov\n23\n–\nField of view (FOV) options: 30-mm, 50-\nmm, and 90-mm diameter\n"
+    },
+    {
+      "locator": "page 24",
+      "text": "National Aeronautics and Space Administration\nEmission Measurements\n• 3 Photomultiplier Tubes (PMTs)\n• Broadband, OH*, CH*\n1\nPMT\nBroadband, OH , CH\n• Array of 6 thermopile detectors\n• Broadband thermal radiation\n• Wide and narrow angle\nColor\nCamera\n3\n7\nRadiometers\n60°\n60\n5\n0\n30\n-30\n-60\nwww.nasa.gov\n"
+    },
+    {
+      "locator": "page 25",
+      "text": "National Aeronautics and Space Administration\nOptical \np\nLayout\n1\nPMT\n3\n7\nColor\nCamera\nSingle\nIPSU\nRadiometers\nS\nLLL-UV\n5\nStacked\nAnalog\nStacked \n2 IPSUs\nIllumination\nHiBMs (1 & 2)\nwww.nasa.gov\n"
+    },
+    {
+      "locator": "page 26",
+      "text": "National Aeronautics and Space Administration\nNon-Optical Diagnostics\np\ng\n•\nTemperature\n–\nBurner\n–\nFar-Field\n•\nThermocouple rake (with 4 TCs) is \ncrew removable or swappable for \ndifferent TC positions.\n•\nIon Current\n–\nfor tests with the electric field\n•\nPost-Test Gas Composition\nThermocouple \nwww.nasa.gov\n26\nMDCA and CIR\np\nrake and 2 fixed \nthermocouples\n"
+    },
+    {
+      "locator": "page 27",
+      "text": "National Aeronautics and Space Administration\nMonitoring Measurements\ng\n•\nChamber Pressure\n•\nOxygen Concentration\n•\nGas Flow Rates\n•\nBurner Pressure Differential\n•\nElectrical Potential\nElectrical Potential\n–\nfor tests with the electric field\n•\nAcceleration\nThese measurements are required to \nwww.nasa.gov\n27\nq\nverify boundary & initial conditions and \nthus enable modeling and analysis.\nMichael Barratt with MDCA in CIR\n"
+    },
+    {
+      "locator": "page 28",
+      "text": "National Aeronautics and Space Administration\nNominal Operational Sequence\np\nq\n• Flow > Ignite > Measure > Extinguish \n– Initiate burner flows at ignition condition \ng\n– Ignite flame\n• Wait for flame to stabilize\n– If needed adjust flows to initial test condition\n– If needed, adjust flows to initial test condition \n• Wait for flame to stabilize\n– If desired:\nramp burner flow(s)\n• ramp burner flow(s)\n• activate and adjust electric field\n• translate TFP array\nSt\nb\nfl\n– Stop burner flows\n• per extinction detection, test duration, etc.\nwww.nasa.gov\n28\n•\nControl can be automated or “manual”\nNicole Stott with CIR\n"
+    },
+    {
+      "locator": "page 29",
+      "text": "National Aeronautics and Space Administration\nACME Status\nC\nStatus\n•\nCurrent activity is detailed design\n•\nSchedule Summary\n•\n2012\nISS ops for precursor, SLICE\n•\n2013\nCritical Design Review (CDR)\n•\n2016-2017\nISS ops for ACME\nwww.nasa.gov\n29\nMike Fossum with CIR (left), Satoshi Furukawa with CIR (right)\n"
+    },
+    {
+      "locator": "page 30",
+      "text": "National Aeronautics and Space Administration\nSLICE\nStructure & Liftoff In Combustion Experiment\nSLICE\n•\nPrecursor to ACME’s CLD Flame\n•\nPIs: Marshall B. Long and Mitchell D. Smooke \n(both of Yale U.), Fumiaki Takahashi (NCSER at \np\n(\n),\n(\nNASA Glenn), Dennis P. Stocker (NASA Glenn)\n•\nGoal: To investigate the structure of lifting \nand lifted flames. To improve understanding of the \nh\ni\nl\nd h\ni\nl\nlli\ndiff\ni\nphysical and chemical processes controlling diffusion \nflame structure and lifting phenomena and to provide \nfor rigorous testing of numerical models, including \nthermal radiation, soot formation, & detailed chemical \nki\nti\nkinetics.\n•\nLaminar gas-jet diffusion flames studied in \nfan-driven flow duct (SPICE) within the \nMicrogravity Science Glovebox (MSG).\nwww.nasa.gov\nMicrogravity Science Glovebox (MSG).\nFlame images above from preliminary tests in 2009 (w/SPICE ops)\n30\n"
+    },
+    {
+      "locator": "page 31",
+      "text": "National Aeronautics and Space Administration\nQuestions?\nwww.nasa.gov\n31\nMike Fossum with MDCA in CIR\n"
+    },
+    {
+      "locator": "page 32",
+      "text": "National Aeronautics and Space Administration\nAcknowledgements\ng\n•\nNASA Glenn (Cleveland, OH)\n•\nISS Research Program Manager\nFred Kohl\nISS Research Project Manager\nTom St Onge\n•\nISS Research Project Manager\nTom St. Onge\n•\nSpace Experiments: Combustion\nDavid Urban\n•\nACME Project Manager\nJ. Mark Hickman\n•\nSLICE Project Manager\nBob Hawersaat\nj\ng\n•\nNCSER (at NASA Glenn)\n•\nACME Deputy Project Scientists\nPaul Ferkul\nFumiaki Takahashi\n•\nImaging (ACME and SLICE)\nJay Owens\n•\nImaging (ACME and SLICE)\nJay Owens\n•\nZIN Technologies, Inc. (Cleveland, OH)\n•\nACME Project Manager\nBrian Borowski\n•\nDiagnostics\nSteve Lawn\ng\n•\nElectrical/Electronics\nTim Gobeli\n•\nMechanical\nAdrian Drake\n•\nSoftware\nMike Medved\n•\nSLICE Project Manager\nTibor Lorik\nwww.nasa.gov\n32\n•\nSLICE Project Manager\nTibor Lorik\n•\nOperations\nChuck Bunnell\n"
+    }
+  ],
+  "details": {
+    "page_count": 32,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

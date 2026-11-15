@@ -1,0 +1,615 @@
+{
+  "id": "res:PSI-22:e4fff2c7fc774a642617",
+  "study": "PSI-22",
+  "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+  "key": "psi-data/PSI-22/Experimental table/PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+  "category": "Experimental table",
+  "size_bytes": 2475,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=67a27d2e09ed061032c12373&version=2&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/e4fff2c7fc774a642617/PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+  "sha256": "69090c357b83ae38d161d29001d1d32b40fd77b13324ca6585ee990cdceef524",
+  "status": "downloaded",
+  "sections": [
+    {
+      "locator": "table, row 1",
+      "text": "1: Test Type | 2: Test Day | 3: Year | 4: Month | 5: Date | 6: Mesh Polarity | 7: Fuel Bottle | 8: Fuel Conc | 9: Flames Ignited | 10: Notes"
+    },
+    {
+      "locator": "table, row 2",
+      "text": "1: First round of tests with coflow burner | 2: 18073 | 3: 2018 | 4: 3 | 5: 14 | 6: negative | 7: 100% CH4 | 8: 100% | 9: 10 | 10: Test day is formatted YYDDD where YY identifies year and DDD identifies day of year (GMT). "
+    },
+    {
+      "locator": "table, row 3",
+      "text": "1: First round of tests with coflow burner | 2: 18078 | 3: 2018 | 4: 3 | 5: 19 | 6: negative | 7: 100% CH4 | 8: 70% | 9: 10 | 10: Mesh polarity refers to the polarity of the high-voltage power supply and the copper electrode relative to the burner. "
+    },
+    {
+      "locator": "table, row 4",
+      "text": "8: 100% | 10: Fuel Conc. (diluted with nitrogen on a volume basis) was varied between tests, but typically matched the bottle. The list only accounts for flames ignited. "
+    },
+    {
+      "locator": "table, row 5",
+      "text": "1: First round of tests with coflow burner | 2: 18080 | 3: 2018 | 4: 3 | 5: 21 | 6: negative | 7: 40% CH4 | 8: 40% | 9: 8 | 10: Flames Ignited is the number ignited on that day (neglecting the day change on ISS). "
+    },
+    {
+      "locator": "table, row 6",
+      "text": "1: First round of tests with coflow burner | 2: 18087 | 3: 2018 | 4: 3 | 5: 28 | 6: negative | 7: 100% C2H4 | 8: 80% | 9: 10"
+    },
+    {
+      "locator": "table, row 7",
+      "text": "8: 100%"
+    },
+    {
+      "locator": "table, row 8",
+      "text": "1: First round of tests with coflow burner | 2: 18092 | 3: 2018 | 4: 4 | 5: 2 | 6: negative | 7: 30% C2H4 | 8: 30% | 9: 11"
+    },
+    {
+      "locator": "table, row 9",
+      "text": "1: First round of tests with coflow burner | 2: 18095 | 3: 2018 | 4: 4 | 5: 5 | 6: positive | 7: 30% C2H4 | 8: 30% | 9: 10"
+    },
+    {
+      "locator": "table, row 10",
+      "text": "1: First round of tests with coflow burner | 2: 18102 | 3: 2018 | 4: 4 | 5: 12 | 6: positive | 7: 40% CH4 | 8: 40% | 9: 8"
+    },
+    {
+      "locator": "table, row 11",
+      "text": "1: First round of tests with coflow burner | 2: 18106 | 3: 2018 | 4: 4 | 5: 16 | 6: positive | 7: 40% CH4 | 8: 40% | 9: 13"
+    },
+    {
+      "locator": "table, row 12",
+      "text": "1: First round of tests with coflow burner | 2: 18113 | 3: 2018 | 4: 4 | 5: 23 | 6: positive | 7: 100% CH4 | 8: 100% | 9: 15"
+    },
+    {
+      "locator": "table, row 13",
+      "text": "1: First round of tests with coflow burner | 2: 18130 | 3: 2018 | 4: 5 | 5: 10 | 6: positive | 7: 100% CH4 | 8: 70% | 9: 13"
+    },
+    {
+      "locator": "table, row 14",
+      "text": "1: First round of tests with coflow burner | 2: 18137 | 3: 2018 | 4: 5 | 5: 17 | 6: positive | 7: 100% C2H4 | 8: 80% | 9: 12"
+    },
+    {
+      "locator": "table, row 15",
+      "text": "8: 100%"
+    },
+    {
+      "locator": "table, row 16",
+      "text": "1: Second round of tests with gas-jet burner | 2: 18269 | 3: 2018 | 4: 9 | 5: 26 | 6: negative | 7: 40% CH4 | 8: 40% | 9: 11"
+    },
+    {
+      "locator": "table, row 17",
+      "text": "1: Second round of tests with gas-jet burner | 2: 18274 | 3: 2018 | 4: 10 | 5: 1 | 6: negative | 7: 30% C2H4 | 8: 30% | 9: 11"
+    },
+    {
+      "locator": "table, row 18",
+      "text": "1: Second round of tests with gas-jet burner | 2: 18282 | 3: 2018 | 4: 10 | 5: 9 | 6: negative | 7: 100% CH4 | 8: 70% | 9: 13"
+    },
+    {
+      "locator": "table, row 19",
+      "text": "8: 100%"
+    },
+    {
+      "locator": "table, row 20",
+      "text": "1: Second round of tests with gas-jet burner | 2: 18285 | 3: 2018 | 4: 10 | 5: 12 | 6: negative | 7: 100% C2H4 | 8: 100% | 9: 10"
+    },
+    {
+      "locator": "table, row 21",
+      "text": "1: Second round of tests with gas-jet burner | 2: 18290 | 3: 2018 | 4: 10 | 5: 17 | 6: negative | 7: 100% C2H4 | 8: 80% | 9: 11"
+    },
+    {
+      "locator": "table, row 22",
+      "text": "1: Second round of tests with gas-jet burner | 2: 18298 | 3: 2018 | 4: 10 | 5: 25 | 6: positive | 7: 40% CH4 | 8: 40% | 9: 9"
+    },
+    {
+      "locator": "table, row 23",
+      "text": "1: Second round of tests with gas-jet burner | 2: 18302 | 3: 2018 | 4: 10 | 5: 29 | 6: positive | 7: 30% C2H4 | 8: 30% | 9: 10"
+    },
+    {
+      "locator": "table, row 24",
+      "text": "1: Second round of tests with gas-jet burner | 2: 18312 | 3: 2018 | 4: 11 | 5: 8 | 6: positive | 7: 100% CH4 | 8: 70% | 9: 13"
+    },
+    {
+      "locator": "table, row 25",
+      "text": "8: 100%"
+    },
+    {
+      "locator": "table, row 26",
+      "text": "1: Second round of tests with gas-jet burner | 2: 18319 | 3: 2018 | 4: 11 | 5: 15 | 6: positive | 7: 100% C2H4 | 8: 25% | 9: 11"
+    },
+    {
+      "locator": "table, row 27",
+      "text": "8: 50%"
+    },
+    {
+      "locator": "table, row 28",
+      "text": "8: 80%"
+    },
+    {
+      "locator": "table, row 29",
+      "text": "8: 100%"
+    },
+    {
+      "locator": "table, row 30",
+      "text": "1: Second round of tests with gas-jet burner | 2: 18319 | 3: 2018 | 4: 11 | 5: 15 | 6: positive | 7: 100% C2H4 | 8: 25% | 9: 11"
+    },
+    {
+      "locator": "table, row 31",
+      "text": "8: 50%"
+    },
+    {
+      "locator": "table, row 32",
+      "text": "8: 80%"
+    },
+    {
+      "locator": "table, row 33",
+      "text": "8: 100%"
+    }
+  ],
+  "details": {
+    "name": "table",
+    "row_count": 33,
+    "column_count": 10,
+    "column_statistics": [
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 11
+      },
+      {
+        "numeric_count": 21,
+        "min": 18073.0,
+        "max": 18319.0,
+        "blank_count": 11
+      },
+      {
+        "numeric_count": 21,
+        "min": 2018.0,
+        "max": 2018.0,
+        "blank_count": 11
+      },
+      {
+        "numeric_count": 21,
+        "min": 3.0,
+        "max": 11.0,
+        "blank_count": 11
+      },
+      {
+        "numeric_count": 21,
+        "min": 1.0,
+        "max": 29.0,
+        "blank_count": 11
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 11
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 11
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 0
+      },
+      {
+        "numeric_count": 21,
+        "min": 8.0,
+        "max": 15.0,
+        "blank_count": 11
+      },
+      {
+        "numeric_count": 0,
+        "min": null,
+        "max": null,
+        "blank_count": 28
+      }
+    ],
+    "rows": [
+      [
+        "Test Type",
+        "Test Day",
+        "Year",
+        "Month",
+        "Date",
+        "Mesh Polarity",
+        "Fuel Bottle",
+        "Fuel Conc",
+        "Flames Ignited",
+        "Notes"
+      ],
+      [
+        "First round of tests with coflow burner",
+        "18073",
+        "2018",
+        "3",
+        "14",
+        "negative",
+        "100% CH4",
+        "100%",
+        "10",
+        "Test day is formatted YYDDD where YY identifies year and DDD identifies day of year (GMT). "
+      ],
+      [
+        "First round of tests with coflow burner",
+        "18078",
+        "2018",
+        "3",
+        "19",
+        "negative",
+        "100% CH4",
+        "70%",
+        "10",
+        "Mesh polarity refers to the polarity of the high-voltage power supply and the copper electrode relative to the burner. "
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "100%",
+        "",
+        "Fuel Conc. (diluted with nitrogen on a volume basis) was varied between tests, but typically matched the bottle. The list only accounts for flames ignited. "
+      ],
+      [
+        "First round of tests with coflow burner",
+        "18080",
+        "2018",
+        "3",
+        "21",
+        "negative",
+        "40% CH4",
+        "40%",
+        "8",
+        "Flames Ignited is the number ignited on that day (neglecting the day change on ISS). "
+      ],
+      [
+        "First round of tests with coflow burner",
+        "18087",
+        "2018",
+        "3",
+        "28",
+        "negative",
+        "100% C2H4",
+        "80%",
+        "10",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "100%",
+        "",
+        ""
+      ],
+      [
+        "First round of tests with coflow burner",
+        "18092",
+        "2018",
+        "4",
+        "2",
+        "negative",
+        "30% C2H4",
+        "30%",
+        "11",
+        ""
+      ],
+      [
+        "First round of tests with coflow burner",
+        "18095",
+        "2018",
+        "4",
+        "5",
+        "positive",
+        "30% C2H4",
+        "30%",
+        "10",
+        ""
+      ],
+      [
+        "First round of tests with coflow burner",
+        "18102",
+        "2018",
+        "4",
+        "12",
+        "positive",
+        "40% CH4",
+        "40%",
+        "8",
+        ""
+      ],
+      [
+        "First round of tests with coflow burner",
+        "18106",
+        "2018",
+        "4",
+        "16",
+        "positive",
+        "40% CH4",
+        "40%",
+        "13",
+        ""
+      ],
+      [
+        "First round of tests with coflow burner",
+        "18113",
+        "2018",
+        "4",
+        "23",
+        "positive",
+        "100% CH4",
+        "100%",
+        "15",
+        ""
+      ],
+      [
+        "First round of tests with coflow burner",
+        "18130",
+        "2018",
+        "5",
+        "10",
+        "positive",
+        "100% CH4",
+        "70%",
+        "13",
+        ""
+      ],
+      [
+        "First round of tests with coflow burner",
+        "18137",
+        "2018",
+        "5",
+        "17",
+        "positive",
+        "100% C2H4",
+        "80%",
+        "12",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "100%",
+        "",
+        ""
+      ],
+      [
+        "Second round of tests with gas-jet burner",
+        "18269",
+        "2018",
+        "9",
+        "26",
+        "negative",
+        "40% CH4",
+        "40%",
+        "11",
+        ""
+      ],
+      [
+        "Second round of tests with gas-jet burner",
+        "18274",
+        "2018",
+        "10",
+        "1",
+        "negative",
+        "30% C2H4",
+        "30%",
+        "11",
+        ""
+      ],
+      [
+        "Second round of tests with gas-jet burner",
+        "18282",
+        "2018",
+        "10",
+        "9",
+        "negative",
+        "100% CH4",
+        "70%",
+        "13",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "100%",
+        "",
+        ""
+      ],
+      [
+        "Second round of tests with gas-jet burner",
+        "18285",
+        "2018",
+        "10",
+        "12",
+        "negative",
+        "100% C2H4",
+        "100%",
+        "10",
+        ""
+      ],
+      [
+        "Second round of tests with gas-jet burner",
+        "18290",
+        "2018",
+        "10",
+        "17",
+        "negative",
+        "100% C2H4",
+        "80%",
+        "11",
+        ""
+      ],
+      [
+        "Second round of tests with gas-jet burner",
+        "18298",
+        "2018",
+        "10",
+        "25",
+        "positive",
+        "40% CH4",
+        "40%",
+        "9",
+        ""
+      ],
+      [
+        "Second round of tests with gas-jet burner",
+        "18302",
+        "2018",
+        "10",
+        "29",
+        "positive",
+        "30% C2H4",
+        "30%",
+        "10",
+        ""
+      ],
+      [
+        "Second round of tests with gas-jet burner",
+        "18312",
+        "2018",
+        "11",
+        "8",
+        "positive",
+        "100% CH4",
+        "70%",
+        "13",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "100%",
+        "",
+        ""
+      ],
+      [
+        "Second round of tests with gas-jet burner",
+        "18319",
+        "2018",
+        "11",
+        "15",
+        "positive",
+        "100% C2H4",
+        "25%",
+        "11",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "50%",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "80%",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "100%",
+        "",
+        ""
+      ],
+      [
+        "Second round of tests with gas-jet burner",
+        "18319",
+        "2018",
+        "11",
+        "15",
+        "positive",
+        "100% C2H4",
+        "25%",
+        "11",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "50%",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "80%",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "100%",
+        "",
+        ""
+      ]
+    ],
+    "all_rows_retained": true
+  },
+  "warnings": [],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

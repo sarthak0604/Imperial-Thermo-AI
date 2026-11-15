@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:1ecb98cb56de4d342c3a",
+  "study": "PSI-102",
+  "filename": "PSI-102_Engineering Documents_SAME Verification Plan and Engineering Requirements Document (VPRED)_January 2007.pdf",
+  "key": "psi-data/PSI-102/Engineering Documents/PSI-102_Engineering Documents_SAME Verification Plan and Engineering Requirements Document (VPRED)_January 2007.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 514208,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d53f91ab4427dbf4441&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/1ecb98cb56de4d342c3a/PSI-102_Engineering Documents_SAME Verification Plan and Engineering Requirements Document (VPRED)_January 2007.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "126c16614431d5a298a49721c855d14e3e4418167e2955ebf051d88b15b6c014",
+  "status": "downloaded"
+}

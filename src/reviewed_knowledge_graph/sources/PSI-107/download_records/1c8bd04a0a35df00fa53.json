@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-107:1c8bd04a0a35df00fa53",
+  "study": "PSI-107",
+  "filename": "PSI-107_Reports_SPICE_FinalReport.pdf",
+  "key": "psi-data/PSI-107/Reports/PSI-107_Reports_SPICE_FinalReport.pdf",
+  "category": "Reports",
+  "size_bytes": 601754,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-107/download?file=683da125b8656d2315bf448a&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-107/1c8bd04a0a35df00fa53/PSI-107_Reports_SPICE_FinalReport.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "95e76859017d201dcd6a9fb12f1df568aed77e0edf7a1b609975db37f32fa680",
+  "status": "downloaded"
+}

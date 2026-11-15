@@ -1,0 +1,24 @@
+{
+  "id": "res:PSI-68:7637d3d7e56e53ae6111",
+  "study": "PSI-68",
+  "filename": "PSI-68_Science Documents_FLEX-2 DoD.docx",
+  "key": "psi-data/PSI-68/Science Documents/PSI-68_Science Documents_FLEX-2 DoD.docx",
+  "category": "Science Documents",
+  "size_bytes": 19354,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-68/download?file=685da422ee20136af5402524&version=1&studyVersion=6&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-68/7637d3d7e56e53ae6111/PSI-68_Science Documents_FLEX-2 DoD.docx",
+  "sha256": "e4a0ccea1a5a08aa60f6346055b43a382fd0ebbce4fb6fe9ae6983d08fbba56c",
+  "status": "downloaded",
+  "sections": [
+    {
+      "locator": "word/document.xml",
+      "text": "FLEX\n-2 (\nThe Flame Extinguishment \n-\n 2) experiment is the second experiment to fly on the \nISS which\n uses small droplets of fuel to study the special spherical characteristics of burning fuel droplets in space. \nThe investigation has 40 Experiment Data \nrecords which\n are based on the Test Matrix (\nBinary Array\n, \nCondensed Phase\n, \nLCTFCalibration\n, \nLCTFWavelengths\n, \nQuiescent\n, \nRadiometerCalibration\n, \nSurrotgateFuel\n), Fuel Composition, and/or Year\n. \nThese Experiment Data records are located on the “Data” tab within the FLEX\n-2\n investigation in PSI. \nWhen a\nn experiment data\n record is selected, the “Scientific Data\n a\nnd Information” tab is opened. \nThe\n Experiment Data record\n’s\n \n“Raw Data” and \n“Images” \nare organized\n by \ntest point\n. \nThe “Raw Data\n”\n link\ns\n disp\nlay records for the \nRaw & Analyzed Data \nwithin the specific \ntest point.\n  \nWhen a Raw & Analyzed D\nata record is selected, there will be the following tabs: “General”, \n“Raw Data and Information”, and “Comments”. \nThe\n “Raw Data and Information” will contain .txt files of the experiment’s raw data. \nThe\n “Images”\n link\ns\n displays records for each\n \nVideos & Images record\n \nwithin the specific\n test point\n.  \nAn “Image Data”\n tab within this \nrecord\n provides an Image Gallery with thumbnail \nimages\n,\n a .zip file provides the original images\n, and an image document with more information on the images\n.  \n "
+    }
+  ],
+  "details": {},
+  "warnings": [
+    "Document text extracted; embedded images not interpreted automatically."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

@@ -1,0 +1,117 @@
+{
+  "id": "res:PSI-22:353521a779be63ac736d",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf",
+  "category": "Presentations",
+  "size_bytes": 14546094,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75b0eb4c0867600556d&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/353521a779be63ac736d/PSI-22_Presentations_Chien et al 2018 Microgravity Experiments of Electric Field Effects.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "77756a24227fb3a1b527811b8817d4f9e4b1d5a5a5ff694e4593ace7f18af472",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Microgravity Experiments of Electric Field Effects \non Laminar Ethylene/Air Diffusion Flames\nAmerican Society for Gravitation and Space Research (ASGSR) Annual Meeting,\nCombustion 4: Gaseous Flames\nNovember 2nd 2018, 18306 \nYu-Chien (Alice) Chien1, Jesse Tinajero2, Dennis Stocker3, Uday Hegde4, Derek Dunn-Rankin1\n1 Department of Mechanical and Aerospace Engineering, University of California, Irvine, 4200 Engineering Gateway, Irvine, CA 92697, U.S.A.\n2 Department of Mechanical Engineering and Material Science, Yale University, 10 Hillhouse Avenue, New Haven, CT 06520, U.S.A.\n3 NASA Glenn Research Center, 21000 Brookpark Rd., Cleveland, OH 44135, U.S.A.\n4 Department of Mechanical and Aerospace Engineering, Case Western Reserve University, Cleveland, Ohio 44135, U.S.A.\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Advanced Combustion \nMicrogravity Experiment (ACME)\nE-FIELD Flames\nElectric-Field Effects on Laminar Diffusion Flames\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "Ions in hydrocarbon flames\nCHO+ + H2O à H3O+ + CO\nThe dominant ion in the flame zone is found \nexperimentally and numerically from:\nPederson et al. 1993\nH\nD\n1g,  Chien et al. 2018, Energies\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Electric Body Force – Ion wind\n+\n-\nn\nn\nn\nn\nn\nn\nn\nn\nn\nn\nn\nn +\ne-\n+\n+\n+\n+\n+\n+\ne-\ne-\ne-\ne-\ne-\ne-\ne-\n+\n+\n+\ne-\n+\n+\n+\n+\n+\n+\ne-\ne-\ne-\ne-\ne-\ne-\ne-\n+\n+\nn\nn\nn\nn\nn\nn\nn\nn\nn\nn\nn\nn\nn\nn\nn\nPositive ion \naccelerates \nbetween each \ncollision with \nneutral bath gas \nmolecules – ion \ndrift velocity ~ \n100 m/s\nEach collision \ntransfers newly \nacquired kinetic \nenergy to the \nneutral gas \nproducing an ion \ndriven wind –\ninduced drift \nvelocity ~1m/s\n!\nF± =\n!\nj / K±\nF: body force\nJ : ion current density\nK: ion mobility\nConceptual animation\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "Apparatus in the ACME chamber insert\nThe coflow\nburner photo \ntaken on 12 Oct. \n2017 after \nburner \ninstallation on \nthe chamber \ninsert.\nInner tube: \n2.1mm I.D.\nOuter tube: \n25mm I.D. \nThe copper \nelectrode \nmesh, used by \nthe E-FIELD \nFlames \nexperiment, \ncan be seen \nabove the \ncoflow burner.\n8.9 cm I.D. \n"
+    },
+    {
+      "locator": "page 6",
+      "text": "Polarity and electric field direction\nThe image is an ethylene single jet flame from recent μg experiment with negative electric field \n(10/29/18) \nØ Burner  orientation\nØ Ion wind flow\nØ Electrode location\nØ 1g or μg\nKarnani, S. 2013\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "E-FIELD Flames Operations and Accomplishments\n• Part 2 is currently on going from September 26th\n30% ethylene with air coflowing at 3.1 cm/s\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "30% C2H4 at 19cm/s\n1\n2\n3\n4\n5\n6\n1\n2\n3\n4\n5\n6\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "1\n2\n3\n4\n5\n1\n2\n3\n4\n5\n30% C2H4 at 15 cm/s\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "1\n2\n3\n4\n5\n6\n1\n2\n3\n4\n5\n6\n30% C2H4 at 19 cm/s\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "1\n2\n3\n4\n5\n1\n2\n3\n4\n5\n30% C2H4 at 15 cm/s\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "30% C2H4 at 27 cm/s\n1\n2\n3\n4\n5\n6\n1\n2\n3\n4\n5\n6\n"
+    },
+    {
+      "locator": "page 13",
+      "text": "V-I curve overlay\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "V-I curve overlay\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "Conditions: 30% C2H4; 27 cm/s velocity; low coflow – 3.1 cm/s\nDownward (positive power supply) \nelectric field\nNASA Operation Camera Video\nThe movie is 3-5x speed at different region\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Recent NASA Ops Camera Video\nConditions: 30% C2H4; 19 cm/s velocity; single jet (10/29/18)\nDownward (positive power supply) \nelectric field\nThe movie is 4x speed\n"
+    },
+    {
+      "locator": "page 17",
+      "text": "Acknowledgements\n• Thanks for the support from NASA ACME: EFIELD – Electric Field \nEffects on Laminar Diffusion Flames (NNX17AC51A)\n• Thanks to Marshall Long for the support of data handling\n• NASA Microgravity Combustion Program and ……\n"
+    },
+    {
+      "locator": "page 18",
+      "text": "European Space Agency (ESA) astronaut Paolo Nespoli installing the chamber insert for \nthe Advanced Combustion via Microgravity Experiments (ACME) in the Combustion \nIntegrated Rack (CIR).  This photograph [ISS053e098207] was taken on the International \nSpace Station (ISS) on 12 Oct. 2017\n"
+    },
+    {
+      "locator": "page 19",
+      "text": "NASA astronaut Joe Acaba reviewing procedures to align the hot-wire igniter on the \nACME chamber insert to his left taken on 5 Jan. 2018\n"
+    },
+    {
+      "locator": "page 20",
+      "text": "Angie Adams RO, PD, Planner, Crew Ops, ACME Ops Lead\nArt Atherton\nDMO\nAlex Beltram\nRO \nMike Carozzoni\nDMO\nDonna Davis\nDMO, Data Manager\nDeena Dombrosky\nPD \nSam Dunton\nDMO, Anomalies\nMark Flynn\nDMO, Data Manager\nAaron Godfrey\nPD\nMargaret Hericks\nRO, Planner\nSteve Lawn\nRO, DMO, Diagnostics\nKevin McPherson\nNASA/FCF Ops Lead, RO, DMO, Sustaining Engineering\nTracy Neff\nFCF Ops Lead, RO, DMO, Crew Training, Crew Ops\nJustin Niehaus\nRO\nDon Rahe\nDMO\nSharon Reinke\nPlanner, Crew Procedures, Crew Training, Crew Ops\nJesse Robbins\nPD, Sustaining Engineering\nChris Rogers\nPD DMO\n"
+    },
+    {
+      "locator": "page 21",
+      "text": "Jesse Robbins\nPD, Sustaining Engineering\nChris Rogers\nPD, DMO\nMelani Smajdek\nCIR Planning Lead\nJennifer Storck\nCrew Training, Crew Ops\nKaren Tuttle\nRO, DMO\nBrandon Wagner\nDMO\nLori Yost\nDMO\nJeff Eggers\nACME Software & ACME TADS\nJennifer Keller\nFCF Software Lead\nMatt Leach\nCIR TADS\nJohn Morrison\nCIR TADS\nJeff Schellentrager\nCIR software\nMarty O'Toole\nFCF Manager\nChris Mroczka\nACME Manager\nTerri Miller\nIncrement Trainer (for console operators), Anomalies\nStetmond Roberson\nAnomalies\n"
+    },
+    {
+      "locator": "page 22",
+      "text": "Thank you\n"
+    }
+  ],
+  "details": {
+    "page_count": 22,
+    "empty_pages": [
+      13,
+      14,
+      22
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

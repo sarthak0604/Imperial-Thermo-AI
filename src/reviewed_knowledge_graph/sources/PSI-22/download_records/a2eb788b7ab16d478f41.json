@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:a2eb788b7ab16d478f41",
+  "study": "PSI-22",
+  "filename": "PSI-22_Reports_PS_00538  Unlocking Mysteries.pdf",
+  "key": "psi-data/PSI-22/Reports/PSI-22_Reports_PS_00538  Unlocking Mysteries.pdf",
+  "category": "Reports",
+  "size_bytes": 2658200,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e63f0eb4c08676004b96&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/a2eb788b7ab16d478f41/PSI-22_Reports_PS_00538  Unlocking Mysteries.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "29a51cb4c913de26b2188402611aeb80c28ec503c88e6abbafcf04cc2f800366",
+  "status": "downloaded"
+}

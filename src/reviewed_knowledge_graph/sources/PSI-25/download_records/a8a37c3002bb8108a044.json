@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-25:a8a37c3002bb8108a044",
+  "study": "PSI-25",
+  "filename": "PSI-25_Experimental table_BASS-II.csv",
+  "key": "psi-data/PSI-25/Experimental table/PSI-25_Experimental table_BASS-II.csv",
+  "category": "Experimental table",
+  "size_bytes": 16590,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=67a3a17b09ed061032c19775&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-25/a8a37c3002bb8108a044/PSI-25_Experimental table_BASS-II.csv",
+  "sha256": "71e792bf6b5fb5ea620c5dd70fbbac05515992e12aefcf5dff47312caa48c042",
+  "status": "downloaded"
+}

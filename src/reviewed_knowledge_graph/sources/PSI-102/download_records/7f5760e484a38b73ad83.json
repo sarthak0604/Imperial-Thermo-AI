@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:7f5760e484a38b73ad83",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT276silicone35.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT276silicone35.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 3540992,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d52f91ab4427dbf442f&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/7f5760e484a38b73ad83/PSI-102_Analyzed Data_GMT276silicone35.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "74047bee25b1167f4ab8d1f823b3ac28b8716a8a43c774c9dd36cb7f3fab0865",
+  "status": "downloaded"
+}

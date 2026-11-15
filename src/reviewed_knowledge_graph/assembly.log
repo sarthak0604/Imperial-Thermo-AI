@@ -1,0 +1,64 @@
+{
+  "schema_validation": "passed",
+  "referential_integrity": "passed",
+  "edge_type_directions": "passed",
+  "all_requested_investigations": true,
+  "all_public_inventory_files_represented": true,
+  "node_counts": {
+    "Investigation": 19,
+    "Experiment": 2038,
+    "Concept": 44,
+    "Variable": 78,
+    "Resource": 61065
+  },
+  "edge_counts": {
+    "CONTAINS": 2038,
+    "STUDIES": 1735,
+    "MEASURES": 2558,
+    "HAS_RESOURCE": 63132
+  },
+  "total_nodes": 63244,
+  "total_edges": 69463,
+  "public_files": 60781,
+  "listed_bytes": 13471543190568,
+  "coverage_statuses": {
+    "text_extracted_unreviewed": 414,
+    "structured_table_reviewed": 20,
+    "listed_public_unread": 60227,
+    "reviewed_selected_sections": 31,
+    "downloaded_no_text": 72,
+    "downloaded_unsupported": 10,
+    "download_failed": 6,
+    "downloaded_failed": 1
+  },
+  "table_source_records_by_study": {
+    "PSI-25": 129,
+    "PSI-26": 122,
+    "PSI-117": 0,
+    "PSI-10": 327,
+    "PSI-159": 333,
+    "PSI-101": 109,
+    "PSI-98": 4,
+    "PSI-39": 87,
+    "PSI-102": 8,
+    "PSI-106": 12,
+    "PSI-99": 11,
+    "PSI-107": 469,
+    "PSI-100": 2,
+    "PSI-21": 32,
+    "PSI-20": 18,
+    "PSI-68": 8,
+    "PSI-22": 32,
+    "PSI-23": 18,
+    "PSI-69": 274
+  },
+  "document_reviews": 31,
+  "source_quality_records": 365,
+  "limitations": [
+    "Resource listing is not content review. Raw videos/images and unreviewed sources have explicit access_status values.",
+    "PDF text extraction is not full visual review. Only recorded locators were substantively reviewed.",
+    "Experiment nodes include campaign, test-day, condition and parameter-set records. They are not all independent physical runs.",
+    "Source errors and ambiguous units are retained and flagged; metadata hypotheses are not promoted to results.",
+    "No claim is made that all 13.47 TB of raw contents have been analyzed."
+  ]
+}

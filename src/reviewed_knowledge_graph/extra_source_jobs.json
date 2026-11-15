@@ -1,0 +1,222 @@
+[
+  [
+    "PSI-21",
+    {
+      "ChecksumAlgorithm": "",
+      "ETag": "",
+      "StorageClass": "",
+      "bytes_size": 666439.0,
+      "directory": false,
+      "files": [],
+      "id": "66eb9297c6ad4bdc12fa0981",
+      "key": "psi-data/PSI-21/Raw Data/CLD_Flame_data_interpretation_20230825.pdf",
+      "restricted": false,
+      "restrictedAccess": false,
+      "size": "650.82 KB",
+      "sortingCategory": "Raw Data",
+      "status": "active",
+      "subcategory": "Legacy/",
+      "updated": "Thu, 19 Sep 2024 10:55:19 GMT",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  [
+    "PSI-21",
+    {
+      "ChecksumAlgorithm": "",
+      "ETag": "",
+      "StorageClass": "",
+      "bytes_size": 5051421.0,
+      "directory": false,
+      "files": [],
+      "id": "66eb9295c6ad4bdc12fa0123",
+      "key": "psi-data/PSI-21/Raw Data/CLD_Flame_final_report_20220330.pdf",
+      "restricted": false,
+      "restrictedAccess": false,
+      "size": "4.82 MB",
+      "sortingCategory": "Raw Data",
+      "status": "active",
+      "subcategory": "Legacy/2022 - ACME CLD Flame Final Report (2022)",
+      "updated": "Thu, 19 Sep 2024 10:55:17 GMT",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  [
+    "PSI-69",
+    {
+      "ChecksumAlgorithm": "",
+      "ETag": "",
+      "StorageClass": "",
+      "bytes_size": 417.0,
+      "directory": false,
+      "files": [],
+      "id": "684345af9e44646b740279de",
+      "key": "psi-data/PSI-69/Raw Data/PSI-69_Raw Data_256R002_Readme.txt",
+      "restricted": false,
+      "restrictedAccess": false,
+      "size": "417.0 B",
+      "sortingCategory": "Raw Data",
+      "status": "active",
+      "subcategory": "Reduced Gravity/MeOH/FLEX 013_22_May_2009_MeOH_256R001",
+      "updated": "Sat, 07 Jun 2025 03:46:55 GMT",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  [
+    "PSI-69",
+    {
+      "ChecksumAlgorithm": "",
+      "ETag": "",
+      "StorageClass": "",
+      "bytes_size": 39.0,
+      "directory": false,
+      "files": [],
+      "id": "684344b99e44646b7402707a",
+      "key": "psi-data/PSI-69/Raw Data/PSI-69_Raw Data_Readme-Test_009.txt",
+      "restricted": false,
+      "restrictedAccess": false,
+      "size": "39.0 B",
+      "sortingCategory": "Raw Data",
+      "status": "active",
+      "subcategory": "Reduced Gravity/Heptane/Flex-009",
+      "updated": "Sat, 07 Jun 2025 03:42:49 GMT",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  [
+    "PSI-106",
+    {
+      "ChecksumAlgorithm": "",
+      "ETag": "",
+      "StorageClass": "",
+      "bytes_size": 4105509.0,
+      "directory": false,
+      "files": [],
+      "id": "66eb9841c6ad4bdc12fc8688",
+      "key": "psi-data/PSI-106/Raw Data/SLICE final report 20141229.pdf",
+      "restricted": false,
+      "restrictedAccess": false,
+      "size": "3.92 MB",
+      "sortingCategory": "Raw Data",
+      "status": "active",
+      "subcategory": "Legacy/2014 - SLICE Final Report",
+      "updated": "Thu, 19 Sep 2024 11:19:29 GMT",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  [
+    "PSI-106",
+    {
+      "ChecksumAlgorithm": "",
+      "ETag": "",
+      "StorageClass": "",
+      "bytes_size": 4178528.0,
+      "directory": false,
+      "files": [],
+      "id": "66eb9832c6ad4bdc12fc4141",
+      "key": "psi-data/PSI-106/Raw Data/SLICE final report 20151224.pdf",
+      "restricted": false,
+      "restrictedAccess": false,
+      "size": "3.98 MB",
+      "sortingCategory": "Raw Data",
+      "status": "active",
+      "subcategory": "Legacy/2015 - SLICE Final Report",
+      "updated": "Thu, 19 Sep 2024 11:19:14 GMT",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  [
+    "PSI-106",
+    {
+      "ChecksumAlgorithm": "",
+      "ETag": "",
+      "StorageClass": "",
+      "bytes_size": 4194778.0,
+      "directory": false,
+      "files": [],
+      "id": "66eb9841c6ad4bdc12fc8687",
+      "key": "psi-data/PSI-106/Raw Data/SLICE final report 20161221.pdf",
+      "restricted": false,
+      "restrictedAccess": false,
+      "size": "4.0 MB",
+      "sortingCategory": "Raw Data",
+      "status": "active",
+      "subcategory": "Legacy/2016 - SLICE Final Report",
+      "updated": "Thu, 19 Sep 2024 11:19:29 GMT",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  [
+    "PSI-106",
+    {
+      "ChecksumAlgorithm": "",
+      "ETag": "",
+      "StorageClass": "",
+      "bytes_size": 4202218.0,
+      "directory": false,
+      "files": [],
+      "id": "6734174981e6de7532ea1e84",
+      "key": "psi-data/PSI-106/Raw Data/SLICE final report 20171226.pdf",
+      "restricted": false,
+      "restrictedAccess": false,
+      "size": "4.01 MB",
+      "sortingCategory": "Raw Data",
+      "status": "active",
+      "subcategory": "Legacy/2017 - SLICE Final Report",
+      "updated": "",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  [
+    "PSI-106",
+    {
+      "ChecksumAlgorithm": "",
+      "ETag": "",
+      "StorageClass": "",
+      "bytes_size": 227175.0,
+      "directory": false,
+      "files": [],
+      "id": "66eb982ec6ad4bdc12fc2b26",
+      "key": "psi-data/PSI-106/Raw Data/SLICE IP-H completion summary.pdf",
+      "restricted": false,
+      "restrictedAccess": false,
+      "size": "221.85 KB",
+      "sortingCategory": "Raw Data",
+      "status": "active",
+      "subcategory": "Legacy/Internal NASA Presentation - SLICE: Research Review Board - Completed Milestone",
+      "updated": "Thu, 19 Sep 2024 11:19:10 GMT",
+      "version": 1,
+      "visible": true
+    }
+  ],
+  [
+    "PSI-106",
+    {
+      "ChecksumAlgorithm": "",
+      "ETag": "",
+      "StorageClass": "",
+      "bytes_size": 1723539.0,
+      "directory": false,
+      "files": [],
+      "id": "66eb9832c6ad4bdc12fc419c",
+      "key": "psi-data/PSI-106/Raw Data/SLICE-RPT-002_Post Flight Report-.pdf",
+      "restricted": false,
+      "restrictedAccess": false,
+      "size": "1.64 MB",
+      "sortingCategory": "Raw Data",
+      "status": "active",
+      "subcategory": "Legacy/2013 - SLICE-RPT-002 Post Flight Report",
+      "updated": "Thu, 19 Sep 2024 11:19:14 GMT",
+      "version": 1,
+      "visible": true
+    }
+  ]
+]

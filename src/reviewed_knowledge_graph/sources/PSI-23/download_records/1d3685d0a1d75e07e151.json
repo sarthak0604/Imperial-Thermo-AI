@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:1d3685d0a1d75e07e151",
+  "study": "PSI-23",
+  "filename": "PSI-23_Presentations_PS_00538  Unlocking Mysteries.pdf",
+  "key": "psi-data/PSI-23/Presentations/PSI-23_Presentations_PS_00538  Unlocking Mysteries.pdf",
+  "category": "Presentations",
+  "size_bytes": 2658200,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdc66daf91e274cec842&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/1d3685d0a1d75e07e151/PSI-23_Presentations_PS_00538  Unlocking Mysteries.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "29a51cb4c913de26b2188402611aeb80c28ec503c88e6abbafcf04cc2f800366",
+  "status": "downloaded"
+}

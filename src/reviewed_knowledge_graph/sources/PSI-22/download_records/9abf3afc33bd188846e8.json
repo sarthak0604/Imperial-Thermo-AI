@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:9abf3afc33bd188846e8",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf",
+  "category": "Presentations",
+  "size_bytes": 6406515,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75b0eb4c0867600556f&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/9abf3afc33bd188846e8/PSI-22_Presentations_Chien et al 2019 Microgravity Experiments Examining Electric Field Effects.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "cf8e18a8099652fa55058bdb8151aebd623ad3a82084b3cfc87922b0ef1ef72a",
+  "status": "downloaded"
+}

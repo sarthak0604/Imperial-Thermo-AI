@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:088bbb9eb5ca8c94a29b",
+  "study": "PSI-20",
+  "filename": "PSI-20_metadata_PSI-96_ACME BRE.zip",
+  "key": "psi-data/PSI-20/metadata/PSI-20_metadata_PSI-96_ACME BRE.zip",
+  "category": "metadata",
+  "size_bytes": 15061,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d73c1b4820d736cec3a3&version=4&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/088bbb9eb5ca8c94a29b/PSI-20_metadata_PSI-96_ACME BRE.zip",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f3e85d8acff7a83de65f0974fa60e8b6b9fb07591c56b9749503517280ce0ff9",
+  "status": "downloaded"
+}

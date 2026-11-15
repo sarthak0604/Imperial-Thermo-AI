@@ -1,0 +1,91 @@
+{
+  "id": "res:PSI-22:c505c457512e3581571d",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Lopez-Camara et al 2019 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Lopez-Camara et al 2019 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf",
+  "category": "Presentations",
+  "size_bytes": 2289887,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75c0eb4c08676005576&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/c505c457512e3581571d/PSI-22_Presentations_Lopez-Camara et al 2019 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "7a5b6ebdb3eb303a65e114272de1d8b1236d33539959ca756eec7c8601efd303",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "No E-Field\n1g \nNo E-Field\nµg \nE-Field applied \nµg \nF. B. Carleton & F. J. Weinberg. Nature. Volume 330, p. 635–636 (1987) \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Numerical Simulations of Laminar Non-premixed CH4-Air Jet \nFlames Influenced by Varying Electric Fields\nC-F. Lopez-Camara1\nM. Belhi 2\nH. G. Im 2\nD. Dunn-Rankin 1 \n1King Abdullah University of Science and Technology, Clean Combustion Research Center, Thuwal 23955, KSA\n2University of California at Irvine, Civil and Environmental Engineering Dept., Irvine 92697, California, USA\n11th U.S. National Combustion Meeting\nOrganized by the Western States Section of the Combustion Institute\nMarch 24 – 27, 2019\nPasadena, California\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n2\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "Where is this research placed?\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n3\nFigure 1. Schematic of electron temperature and number density for different discharges.\nYiguang Ju and Wenting Sun; Progress Energy and Comb. Sci. Vol. 48, Jun. 2015 P. 21-83\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "• The response of flames to the electric field has strong dependence \non the electrode geometry (1g and µg).\n• Experiments show that an applied e-field creates a body force \nsimilar to that of gravity.\n• High-fidelity numerical simulations are needed to provide a deeper \nunderstanding of these observations.\nMotivation\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n4\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "Describe laminar non-premixed CH4-air flame behavior when an axial \nelectric field is applied to the flame using numerical simulations of two \ndifferent jet burner configurations (extruded and jet).\nGoal\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n5\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "Burner geometries\n289.647 points (144.230 blocks)                                                289.647 points (144.230 blocks)\nEXTRUDED BURNER                                                             JET BURNER\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n6\nAll units in [mm] - Meshes and simulations made using OpenFOAM®\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "7\nBoundary conditions\nThe chemical kinetics model used was published by M. Belhi et al. [Combust. Theory Modelling, 2017].\nChemical kinetics model\n•\n76 reactions; 25 species\n•\nIncludes positive and negative ions (H3O+, O2\n-, O-, OH-, CHO3\n-, CO3\n-) and electrons.\n•\nSecondary ionization (electron impact) reactions are not considered in the model.\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n7\nNo super-saturation \npredictions\nDrawing not in scale\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "8\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n8\nResults \nExtruded burner                  Jet burner\nFigure 2. (Fig. 3 paper) \nDistribution of the H3O+\nnumber density, \npotential isolines \n(horizontal lines) and \nelectric force lines.\nBoth simulations at \nsaturation.\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "9\nResults \nExtruded burner                               Jet burner\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n9\nFigure 3a. (Fig. 4 paper) I-V curves. \nExperimental values are from Tinajero et al. (CST, 10, 1739–1750)\n0\n0,5\n1\n1,5\n2\n2,5\n0\n1\n2\n3\nIon Current [μA]\nField Strength [kV/cm]\nExperimental\nNumerical\n0\n0,5\n1\n1,5\n2\n2,5\n0\n1\n2\n3\nIon Current [μA]\nField Strength [kV/cm]\nExperimental\nNumerical\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "0\n0,5\n1\n1,5\n2\n2,5\n3\n3,5\n0\n1\n2\n3\nIon Current [μA]\nField Strength [kV/cm]\n0\n0,5\n1\n1,5\n2\n2,5\n3\n3,5\n0\n1\n2\n3\nIon Current [μA]\nField Strength [kV/cm]\n10\nResults \nExtruded burner                               Jet burner\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n10\nFigure 3b. I-V curves (simulation up to supersaturation region)\nExperimental values are from Tinajero et al. (CST, 10, 1739–1750)\nExperimental\nNumerical\nExperimental\nNumerical\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "11\nResults \nExtruded burner                                 Jet burner\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n11\n4000V\n5000V\n5000V\n4000V\n4500V\nFigure 4. Contour XH3O+ , potential isolines and electric field force vectors (at expected saturation plateau)\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "12\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n12\nFigure 5. Downstream current density (anode). Experimental measurements, unipolar flame model, \nand the Warburg distribution (theoretical).\nM. Papac and D. Dunn-Rankin; Combustion Theory and Modelling, July 2007\nResults\nLiterature - Jet geometry\n"
+    },
+    {
+      "locator": "page 13",
+      "text": "13\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n13\nFigure 6. Downstream current density (anode). Experimental measurements. Left figure units in [mm].\nJ. Tinajero and D. Dunn-Rankin, Combustion and Flame, Vol. 199  January  2019, P. 365-376\nResults\nLiterature - Flush geometry\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "14\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n14\nResults \nExtruded burner                                 Jet burner\nFigure 7. (Fig. 5 paper) Downstream current density (anode) at different field strengths. Computational results.\n1,14kV/cm\n0,14kV/cm\n0,57kV/cm\n1,01kV/cm\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "•\nThere are indications that the model will be able to reproduce accurately the I-V curves obtained\nexperimentally.\n•\nThe I-V curves obtained are showing an agreement with the experiments by less than a 30%\ndifference in the sub-saturation domain, but there remains some further analysis of the\nsimulation results and physical understanding on how to capture the transition to saturation\naccurately.\n•\nFurther simulations are needed to test if the model will predict the saturation region plateau of the\nI-V curve.\n•\nFuture ion characterization will help explain the behavior of ions and determine what produces the\nvalley in the current density downstream of the jet burner. This characterization will be valuable\nalso to observe in detail the charge flux.\nSummary\n11th US National Meeting CI. March 24-27, 2019. clopezca@uci.edu                                                                    \n15\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Thank you\n"
+    }
+  ],
+  "details": {
+    "page_count": 16,
+    "empty_pages": [
+      16
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

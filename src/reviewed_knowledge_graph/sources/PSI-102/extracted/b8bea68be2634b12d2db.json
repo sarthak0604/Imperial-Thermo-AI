@@ -1,0 +1,138 @@
+{
+  "id": "res:PSI-102:b8bea68be2634b12d2db",
+  "study": "PSI-102",
+  "filename": "PSI-102_Presentations_SAME2_FlightVSGroundTestResults.pptx",
+  "key": "psi-data/PSI-102/Presentations/PSI-102_Presentations_SAME2_FlightVSGroundTestResults.pptx",
+  "category": "Presentations",
+  "size_bytes": 5634955,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d53f91ab4427dbf443b&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/b8bea68be2634b12d2db/PSI-102_Presentations_SAME2_FlightVSGroundTestResults.pptx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "0e8480e701f437c2fd7f7434df7acb56df8f493f1ceb62b0994829f396771f34",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "ppt/slides/slide1.xml",
+      "text": "49th AIAA Aerospace Sciences Meeting, January 2011\n1\nSmoke \nAerosol Measurement \nExperiment-2: Comparison \nof Flight Experiment Results with Ground Test Results\nJuly 16, 2013"
+    },
+    {
+      "locator": "ppt/slides/slide2.xml",
+      "text": "2\nSmoke \nAerosol Measurement Experiment-2: Comparison of Flight Experiment Results with Ground Test Results\nNASA Glenn Research Center\n\t\t\t\nDavid Urban, Gary Ruff, \n\t\t\tMarit Meyer\n\t\t\t\t\nUniversity of Maryland \n\t\t\t\nGeorge Mulholland\n\t\t\t\t\nNational Center for Space Exploration Research\n\t\t\t\nZeng-guang Yuan, Victoria Bryg\nNational Institute of Standards and Technology\n\t\t\tThomas Cleary, Jiann Yang"
+    },
+    {
+      "locator": "ppt/slides/slide3.xml",
+      "text": "3\nSmoke Detection Background: \nDestiny Smoke Detection Simulation-25% Soot\n\neffect of gravity\nLow-gravity\nNormal-gravity"
+    },
+    {
+      "locator": "ppt/slides/slide4.xml",
+      "text": "4\nBackground: Spacecraft Fire Detection\nSTS Detector:  sensitive < 1 micron\nD\nual-chamber \nionization with inertial separator which rejects particles larger than 1-2 \nmicrons\nDeveloped \nin the late 70’s when Ionization detectors were \nprevalent\nISS detector: sensitive > 0.5 micron\n2-pass IR laser-diode forward-scattering detector (30 degrees) minimum reported sensitivity is 0.3 μm\nDeveloped in the 90’s and took advantage of the availability of stable diode light sources"
+    },
+    {
+      "locator": "ppt/slides/slide5.xml",
+      "text": "5\nObjective\nDetermine whether typical conditions on spacecraft will change the particle size distribution of target smokes\nSoot particle size increases seen in low-gravity \nIncreased residence time  in high concentration zone\nPotential for trapped smoke in avionics enclosures"
+    },
+    {
+      "locator": "ppt/slides/slide6.xml",
+      "text": "6\nApproach\nPreflaming\n pyrolysis smoke\nVary pyrolysis rate, air flow rate\nMeasure statistics of particle size distribution and capture samples for TEM analysis"
+    },
+    {
+      "locator": "ppt/slides/slide7.xml",
+      "text": "7\nLog-Normal Distribution\nLog-normal distribution \nσ\ng\n = 1.6, D\ng\n= 1\nNumber \nis dominated by the smaller particles\nMass is dominated by the larger particles (tail\n)"
+    },
+    {
+      "locator": "ppt/slides/slide8.xml",
+      "text": "8\nZeroth Moment: TSI \nPTrak\n™\nFirst Moment: First Alert™ Smoke Detector\nThird Moment: TSI Dust Trak™\nSAME Experimental Diagnostic \nMeasurements\nAll measure moments of the particle size distribution\nArithmetic \nMean Diameter  (M\n1\n / M\n0\n)\nDiameter \nof Average Mass  (M\n3\n / \nM\n0\n)\n1/3\nGeometric Mean can be calculated with the assumption of a log-normal distribution"
+    },
+    {
+      "locator": "ppt/slides/slide9.xml",
+      "text": "9\nSAME Sample Carousel\nSample Materials:\nSilicone\nTeflon\nKapton\nLampWick\nPyrell\nDBP"
+    },
+    {
+      "locator": "ppt/slides/slide10.xml",
+      "text": "10\nSAME Schematic"
+    },
+    {
+      "locator": "ppt/slides/slide11.xml",
+      "text": "11\nAging Chamber\nCommercial Diagnostics\nSample Diluter\nP-Trak Enclosure\nThermal Precipitator\nFluids Control Unit\nData Acquisition and Control Unit\nSample Carousel\nExperiment Support Plate\nHose Bundle\nSAME in MSG (mockup)"
+    },
+    {
+      "locator": "ppt/slides/slide12.xml",
+      "text": "12\nSAME Particle Capture"
+    },
+    {
+      "locator": "ppt/slides/slide13.xml",
+      "text": "13\nThermal Precipitator\nOverview image showing deposition boundary\n\t"
+    },
+    {
+      "locator": "ppt/slides/slide14.xml",
+      "text": "14\nTEM Results\nKapton (Run 62)  \n  Length scale 2 μm\nPyrell (Run 63)\nLampwick (Run 54)\nTeflon \n(Run 56)"
+    },
+    {
+      "locator": "ppt/slides/slide15.xml",
+      "text": "SAME Flight Size Results for fresh and aged smoke\n15"
+    },
+    {
+      "locator": "ppt/slides/slide16.xml",
+      "text": "10 Micron versus 1 micron Mass ratios\n16\n10 micron versus 1 micron mass ratios for different flow \nrates and sample \ntemperatures\nHigh velocity large particles are not able to follow streamlines\nand impact on the surface downstream of the nozzle."
+    },
+    {
+      "locator": "ppt/slides/slide17.xml",
+      "text": "10 Micron versus 1 micron Mass ratios\n17\n10 micron versus 1 micron mass ratios for different flow \nrates and sample \ntemperatures"
+    },
+    {
+      "locator": "ppt/slides/slide18.xml",
+      "text": "Effect of Air Flow on Diameter of Average Mass\n18\nC\nonstant \ntemperature for each material with no aging."
+    },
+    {
+      "locator": "ppt/slides/slide19.xml",
+      "text": "19\nGround Test  Schematic"
+    },
+    {
+      "locator": "ppt/slides/slide20.xml",
+      "text": "Effect of Aging\n20"
+    },
+    {
+      "locator": "ppt/slides/slide21.xml",
+      "text": "Effect of Aging on Diameter of Average Mass\n21\n8 \ncm/s airflow \nConstant temperature \nfor each sample. "
+    },
+    {
+      "locator": "ppt/slides/slide22.xml",
+      "text": "Effect of Gravity on Diameter of Average Mass\n22\n8 \ncm/s \nflow"
+    },
+    {
+      "locator": "ppt/slides/slide23.xml",
+      "text": "STS Detector Performance\n23"
+    },
+    {
+      "locator": "ppt/slides/slide24.xml",
+      "text": "ISS Detector Performance\n24"
+    },
+    {
+      "locator": "ppt/slides/slide25.xml",
+      "text": "Detector Design - Number count basis\n25\nAlarm level: 2 \nmg/m\n3\n \n \n  (500 \nnm \nCMD \nand \na \nσ\ng \nof 1.3)\n22 x 10\n6\n particles/cc\nNormalized Number \nConcentration to  alarm for each device type\nNormalized detector signal for fixed  \nNumber \nConcentration."
+    },
+    {
+      "locator": "ppt/slides/slide26.xml",
+      "text": "Detector Design- Mass Basis\n26\nNormalized \nMass Concentration \nat \nalarm for each device type\nNormalized detector signal  for fixed  Mass Concentration.\nAlarm level: 2 \nmg/m\n3\n \n \n  (500 \nnm \nCMD \nand \na \nσ\ng \nof 1.3)\n22 x 10\n6\n particles/cc"
+    },
+    {
+      "locator": "ppt/slides/slide27.xml",
+      "text": "Conclusions\n27\nParticle \nsizes ranged from 100 to 600 nm \nConsistent with a log-normal distribution\nParticle \nsizes increase substantially with \naging\nParticle \ndimensions increase substantially as air flow was \ndecreased \nTEM showed a significant \nrange \nof distinct particle \nmorphologies \nFor \nlampwick and silicone approximately 40% of the aerosol mass had aerodynamic diameters greater than 1 \nμm however Teflon and Kapton were mostly less than  \n1 \nμm"
+    },
+    {
+      "locator": "ppt/slides/slide28.xml",
+      "text": "Conclusions\n28\nGround based testing at 8 cm/s showed particle dimensions very close to the flight results\nISS Detector showed reduced detection performance for Kapton and Teflon due to the small size\nSTS Detector fared slightly better for Kapton and Teflon\nSpacecraft \nfire conditions include an even wider array of \nmaterials and conditions\nSpacecraft background aerosols can be quite large (false alarms)"
+    },
+    {
+      "locator": "ppt/slides/slide29.xml",
+      "text": "Conclusions\n29\nIt is improbable that a single-moment device can be sensitive across the size spectrum and resist false alarms \nDetectors that can normalize the concentration for the particle size may solve this problem"
+    }
+  ],
+  "details": {},
+  "warnings": [
+    "Document text extracted; embedded images not interpreted automatically."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

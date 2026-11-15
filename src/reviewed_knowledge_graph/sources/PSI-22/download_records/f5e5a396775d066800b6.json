@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:f5e5a396775d066800b6",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Tinajero et al 2016 characterizing i-v curves for non-premixed methane flames.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Tinajero et al 2016 characterizing i-v curves for non-premixed methane flames.pdf",
+  "category": "Presentations",
+  "size_bytes": 803570,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75c0eb4c08676005577&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/f5e5a396775d066800b6/PSI-22_Presentations_Tinajero et al 2016 characterizing i-v curves for non-premixed methane flames.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "71132d684969a4b6d15fbec694f2314e1c9edd86509a91bda1bb66c4c9167dcd",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-10:298462bb16ff5449b506",
+  "study": "PSI-10",
+  "filename": "PSI-10_metadata_PSI-10-ISA.zip",
+  "key": "psi-data/PSI-10/metadata/PSI-10_metadata_PSI-10-ISA.zip",
+  "category": "metadata",
+  "size_bytes": 17047,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-10/download?file=691f7eef17f78b371b2705df&version=1&studyVersion=1&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-10/298462bb16ff5449b506/PSI-10_metadata_PSI-10-ISA.zip",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "611b404c92125223ae099f086727ba1f5f031abf22d31eaa58d066a825f87b56",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:2b8ae96724414c18d09a",
+  "study": "PSI-23",
+  "filename": "PSI-23_Engineering Documents_ACME CDR_Presentation_Package.pdf",
+  "key": "psi-data/PSI-23/Engineering Documents/PSI-23_Engineering Documents_ACME CDR_Presentation_Package.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 13232481,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841ce426daf91e274cecd52&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/2b8ae96724414c18d09a/PSI-23_Engineering Documents_ACME CDR_Presentation_Package.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "60fb892329b10125450fafe6e97168b45eda61c809cf7acb562167b4531e4495",
+  "status": "downloaded"
+}

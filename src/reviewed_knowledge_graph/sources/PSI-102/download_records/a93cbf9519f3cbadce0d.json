@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:a93cbf9519f3cbadce0d",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT272kapton30.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT272kapton30.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 2646528,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d50f91ab4427dbf441f&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/a93cbf9519f3cbadce0d/PSI-102_Analyzed Data_GMT272kapton30.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f8988825bea69f11142b18db40fcd80c2a0ef0a0b86b1968122c4b22ca19f53f",
+  "status": "downloaded"
+}

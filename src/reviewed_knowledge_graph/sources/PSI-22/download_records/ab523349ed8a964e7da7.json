@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:ab523349ed8a964e7da7",
+  "study": "PSI-22",
+  "filename": "PSI-22_metadata_ACME E-FIELD Flames.zip",
+  "key": "psi-data/PSI-22/metadata/PSI-22_metadata_ACME E-FIELD Flames.zip",
+  "category": "metadata",
+  "size_bytes": 15166,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=69fe1e67919a47bc78971841&version=2&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/ab523349ed8a964e7da7/PSI-22_metadata_ACME E-FIELD Flames.zip",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "af6f1a4473fce0677cf6861ad265d4040f8c3c674da21b277f354cdea68fcdbb",
+  "status": "downloaded"
+}

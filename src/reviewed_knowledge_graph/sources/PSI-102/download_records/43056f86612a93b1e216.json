@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:43056f86612a93b1e216",
+  "study": "PSI-102",
+  "filename": "PSI-102_Science Documents_SAME_Operations Manual_007.pdf",
+  "key": "psi-data/PSI-102/Science Documents/PSI-102_Science Documents_SAME_Operations Manual_007.pdf",
+  "category": "Science Documents",
+  "size_bytes": 699811,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d56f91ab4427dbf445b&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/43056f86612a93b1e216/PSI-102_Science Documents_SAME_Operations Manual_007.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "ac00e24b0f9a0388c3ac5097cca67591112c9992c0c9d40a6810ca5ba7289f36",
+  "status": "downloaded"
+}

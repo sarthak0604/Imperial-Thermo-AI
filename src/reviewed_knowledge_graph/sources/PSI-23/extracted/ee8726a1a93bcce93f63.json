@@ -1,0 +1,33 @@
+{
+  "id": "res:PSI-23:ee8726a1a93bcce93f63",
+  "study": "PSI-23",
+  "filename": "PSI-23_Presentations_PS-03055 ACME info sheet.pdf",
+  "key": "psi-data/PSI-23/Presentations/PSI-23_Presentations_PS-03055 ACME info sheet.pdf",
+  "category": "Presentations",
+  "size_bytes": 3782346,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdc56daf91e274cec835&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/ee8726a1a93bcce93f63/PSI-23_Presentations_PS-03055 ACME info sheet.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "62ee98ace867a5ad92c57654f39ac2176885150b5f483b5b5dbc72c377a96844",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "PURPOSE:  ACME is focused on advanced combustion \ntechnology via fundamental microgravity research. The \nprimary goal is to improve efficiency and reduce pollutant \nemission in practical terrestrial combustion.  A secondary \nobjective is fire prevention, especially for spacecraft.\nRESEARCH: ACME includes six independent experiments \ninvestigating laminar and nonpremixed flames of gaseous \nfuels. The experiments are being conducted with a single \nset of modular hardware in the Combustion Integrated \nRack (CIR) on the International Space Station (ISS).  \nWhile the ISS astronauts set up the experimental hardware, \nthe ACME tests are remotely commanded from the \nNASA Glenn Research Center.\nSTATUS: ACME was set up by the ISS crew in Septem-\nber and October 2017 where thus far 21 astronauts from \nCanada, Germany, Italy, Japan, Russia, and the United \nStates have supported the project’s research. Over 800 \nflames have been ignited since November 2017 for five of \nthe six ACME experiments. On-orbit testing has yet to \nbegin for the CFIG experiment. In contrast, the planned \ntesting for the E–FIELD Flames investigation has been \ncompleted. Testing is currently underway for the s–Flame \nexperiment. ACME tests are expected to continue on the \nISS through most, if not all, of 2020.\nAdvanced Combustion via Microgravity Experiments (ACME)\nNational Aeronautics and\nSpace Administration\nNASA GLENN RESEARCH CENTER\nwww.nasa.gov\nU.S. astronaut Christina Koch preparing the ACME chamber \ninsert for the Flame Design experiment.\nExample images from ACME’s Flame Design experiment.\nCanadian astronaut David Saint-Jacques replacing the igniter \ntip on the ACME chamber insert.\nU.S. astronaut Joe Acaba and Russian cosmonaut Alexander \nMisurkin exchanging a CIR oxidizer bottle.\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "PS–03055–1119\nAdvanced Combustion via Microgravity Experiments\nU.S. astronaut Ricky Arnold conducting CIR maintenance tasks.\nFlame Design is led by Prof. Rich Axelbaum (Washington \nUniversity in St. Louis), where there are collaborators from \nthe University of Maryland and the N.N. Semenov Institute \nof Chemical Physics of the Russian Academy of Sciences.  \nExample flame images can be seen on the other side of this \ninformation sheet.\nStructure and Response of Spherical Diffusion Flames \n(s-Flame) is led by Profs. C.K. Law (Princeton University) \nand Stephen Tse (Rutgers University), where the Russian \ncollaborators are from the P.N. Lebedev Physical Institute of \nthe Russian Academy of Sciences.\nWEBSITE:  https://www1.grc.nasa.gov/go/acme\nUPDATES:  www.facebook.com/space.flames \nPHOTOGRAPHS:  www.flickr.com/photos/space-flames \nEDUCATION:  https://tinyurl.com/space-flames  \nCONTACT: Dennis Stocker, NASA Glenn Research Center, ACME Project Scientist, \n                   216–433–2166, dennis.p.stocker@nasa.gov\nEXPERIMENTS: \nBurning Rate Emulator (BRE) is led by Prof. Jim Quintiere (University of Maryland), where \ncollaborating researchers are from Russia’s Peter the Great St. Petersburg Polytechnic \nUniversity. A dramatic image of a flame shortly after ignition can be seen to the right, after \nwhich the nominally hemispherical flame became non-sooty.\nCool Flames Investigation with Gases (CFIG) is led by Prof. \nPeter Sunderland (University of Maryland), where the collaborators \nare from Washington University in St. Louis and the University of \nCalifornia San Diego.  \nCoﬂow Laminar Diffusion (CLD) Flame is led by Prof. Marshall \nLong (Yale University), where the Russian collaborators are from the Far Eastern Federal University. \nExample images of a flame detached and lifted from the coflow burner can be seen on the left.\nElectric-Field Effects on Laminar Diffusion (E-FIELD) Flames is led by Prof. Derek Dunn-Rankin \n(University of California Irvine), where the Russian collaborators are from the Far Eastern Federal \nUniversity. Example flame images from a test with ACME’s coflow burner can be seen below as  \na function of the electric field strength, where the copper electrode mesh above the burner is        \nnegatively and positively charged in the top and bottom rows, respectively.\n"
+    }
+  ],
+  "details": {
+    "page_count": 2,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

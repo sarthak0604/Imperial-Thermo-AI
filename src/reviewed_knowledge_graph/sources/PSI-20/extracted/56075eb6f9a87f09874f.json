@@ -1,0 +1,73 @@
+{
+  "id": "res:PSI-20:56075eb6f9a87f09874f",
+  "study": "PSI-20",
+  "filename": "PSI-20_Presentations_ACME CSSCI 20220509.pdf",
+  "key": "psi-data/PSI-20/Presentations/PSI-20_Presentations_ACME CSSCI 20220509.pdf",
+  "category": "Presentations",
+  "size_bytes": 2990043,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8171b4820d736cecc25&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/56075eb6f9a87f09874f/PSI-20_Presentations_ACME CSSCI 20220509.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "b8c87083b2e2f2758404e25b4fe842a08135cbf4a82bbe94a377855c99c88757",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Laminar Non-Premixed Flames of Gaseous Fuel \nAboard the International Space Station\nDennis P. Stocker, NASA Glenn Research Center, Cleveland, OH, USA\nNational Aeronautics and Space Administration\nCSS/CI Meeting, 15-17 May 2022\nCanadian astronaut David Saint-Jacques supporting the research [ISS059e060847]\n1\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "National Aeronautics and Space Administration\n2\nBetter burning on Earth through ISS research\n• WHAT? \n• Advanced Combustion via Microgravity Experiments (ACME)\n• 6 independent studies of laminar, non-premixed flames of gaseous fuels\n• WHY?\n• Energy & environment with improved efficiency & reduced pollutant emission in practical terrestrial combustion via \nbenchmark microgravity data and resulting improvements in computational modeling, design tools, etc.\nMicrogravity flame advantages?\n• No flicker\n• Spherical flames\n• Large length scales\n• Long residence times\n• Momentum-dominated at low velocities, etc.\n• Spacecraft fire safety\n• HOW?\n• Modular hardware and the Combustion Integrated Rack (CIR)\n• ISS crew configured hardware\n• Tests remotely commanded from NASA Glenn\n• WHEN?\n• ISS operations from Sept. 2017 to Feb. 2022\n• ISS testing complete \nNASA astronaut Jessica Meir with the Combustion Integrated Rack [ISS061e013314]\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "National Aeronautics and Space Administration\nCIR with chamber open; ACME chamber insert held by Kate Rubins [ISS064e029405]\n3\nModular experimental hardware\nCombustion \nIntegrated Rack (CIR) \n•\n~100-liter chamber \n•\ngas supply & venting \n•\nimaging, etc.\nACME chamber insert\n•\nexchangeable burner \n•\nhot-wire igniter\n•\ngas delivery\n•\nflame instrumentation \nsuch as radiometers, \nphotomultiplier tubes, \nfibers for Thin Filament \nPyrometry (TFP)\n•\nexperiment-specific \nhardware, etc.\n• Combustion Integrated Rack (CIR)\n• ACME chamber insert\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "National Aeronautics and Space Administration\nExample BRE flames, where the sooty top image is just after ignition.\n4\nBurning Rate Emulator (BRE)\n• Objective: Determine burning conditions in still atmospheres as a function of \nmaterial properties. \n• Selected Findings: \nHazard! Low-momentum microgravity flames can burn for minutes in the \nabsence of an air flow or flame spread.\nOxygen\nWhile the flames can burn for minutes in elevated oxygen \nconcentrations, like those being considered for future spacecraft, they \nwere found to self-extinguish in concentrations below ~25% (by volume).\nSize\nWhile smaller flames can burn for minutes at elevated oxygen \nconcentrations, larger flames were generally seen to self-extinguish \nwithin 1.5 minutes. \nFuel \nWhile ethylene flames at elevated oxygen concentrations can burn for \nminutes, methane flames were seen to self-extinguish within a minute. \n• Significance: Spacecraft fire prevention, including (1) microgravity flammability \nconditions and (2) assessment of flammability test methods for spacecraft materials.\n• Investigators: Jim Quintiere & Peter Sunderland (University of Maryland), John de Ris (FM Global, retired)\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "National Aeronautics and Space Administration\nFlame \nlifting\n5\nCoflow Laminar Diffusion Flame (CLD Flame)\n• Investigators: Marshall Long & Mitch Smooke (Yale University)\n• Objective: Improve computational flame models with benchmark quantitative data for sooty and extremely \ndiluted microgravity flames. \n• Selected Findings: \n❶Sooty microgravity flames are taller & wider and contain 5x to 8x more soot than equivalent 1G flames. \n❷Microgravity increases the limits of fuel dilution.  Near limits, microgravity flames are more stable, \nallowing for lifted flames at lower fuel concentrations.\n• Significance: Should lead to significant improvements in combustion simulation capabilities and contribute \nto new design tools. \nSoot volume fraction per C2H4 concentration\n0G  1G\n0G  1G\n0G  1G\n❶\n0G\n1G\n10 cm/s\n0G\n1G\n20 cm/s\n0G\n1G\n30 cm/s\n0G\n1G\n40 cm/s\nCH* profile as a function of matched fuel and coflow velocities\n❷\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "National Aeronautics and Space Administration\n6\nCool Flames Investigation with Gases (CFI-G)\n• Investigators: Peter Sunderland (U. Maryland), Rich Axelbaum (Wash. U. in St. Louis), Forman Williams (UC San Diego)\n• Objective: Observe non-premixed quasi-steady spherical cool flames on porous burners.\n• Selected Finding: Observed the first spherical, quasi-steady, burner-supported cool flames!\n• Significance: Improved and quantitative understanding of cool flame chemistry is critical to advanced engine design\nconcepts that can simultaneously increase efficiency and reduce pollutant emissions.\nComposite time sequence: \n❶quenching of a hot flame \ndue to radiative heat loss \n❷~1-s dark period \n❸appearance of a cool flame\nmuch smaller than hot flame.  \nIntensified camera imaging\nwith filter for formaldehyde \nemissions associated with cool \nflame chemistry.\n6.35-mm porous \nspherical burner\n❶\n❷\n❸\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "National Aeronautics and Space Administration\n7\nElectric-Field Effects on Laminar Diffusion Flames (E-FIELD Flames)\n• Investigators: Derek Dunn-Rankin & Yu-Chien (Alice) Chien (University of California, Irvine)\n~2.5\n~1.0\n~1.8\n0G\n1G\n• Objective: Understand chemi-ionization in flames and the interplay \nbetween ion generation and ion-driven flows.\n• Selected Findings: \n❶There are clear correlations between flame luminosity, \ncombustion intensity, and ion current.\n❷Highly-diluted flames can be stabilized with very weak electric \nfields.\n❸In microgravity, flames exhibit a distinct peak ion current that \ncorresponds to the most compact flame.\n•\nWhen soot is present in a flame, electric fields create a wide \nrange of behaviors.\n• Significance: Ion transport and induced ion wind can modify the \nflame shape, alter the soot or flammability limits, direct heat \ntransfer, and reduce pollutant emission.\n❶\n❸\n❷\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "National Aeronautics and Space Administration\nFlames with a variety of sooting characteristics\n8\nFlame Design\n• Investigators: Rich Axelbaum (Washington University in St. Louis), Peter Sunderland (University of Maryland)\n• Objective: Improve understanding of soot inception and control.\n• Selected Findings:\n❶Flame size increases with reactant flow rate and decreases with ambient oxygen concentration.\n❷Large flames increase in size over time until the flame extinguishes due to radiative heat loss.\n• Before total extinction, these flames experience an unstable, oscillatory mode, in which they partially\nextinguish and reform. The oscillations grow in magnitude until total extinction.\n❸Very small flames have low radiative loss and asymptotically approach steady-state behavior.\n• Significance: Optimization of O2-enriched combustion and the “design” of non-premixed flames that are both robust\nand soot free.\n❶\n❷\n❸\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "National Aeronautics and Space Administration TFP fibers are 14-micron silicon carbide (SiC)\n9\nStructure and Response of Spherical Diffusion Flames (s-Flame)\n• Investigators: C.K. (Ed) Law (Princeton University), Stephen Tse (Rutgers University)\n• Objective: Characterize and gain predictive capability of spherical diffusion flames; interrogate and possibly modify\nchemical kinetic mechanisms and transport sub-models.\n• Selected Findings:\n•\nBoth radiative and kinetic (i.e., convective) extinction of the spherical flames appear to have been observed.\n•\nRadiative extinction seems to occur at high flow rates and kinetic extinction at low flow rates. The latter may seem\ncounterintuitive but at low flow rates the flames are close to the burner where the velocities are highest.\n•\nWith helium, rather than nitrogen, dilution of both the fuel and oxygen, the extinction limits are shifted and kinetic\nextinction is generally difficult to discern.\n• Significance: Relevant to energy conversion, pollutant formation, green house gas emission, and fire safety.\nLEFT: Gray-scale images \nof 3 nitrogen-diluted CH4\nflames, where Thin \nFilament Pyrometry (TFP) \nmeasurements are being \nmade in 2 tests.\nFalse-colored He-\ndiluted H2 flame \nin an O2/He \natmosphere with \nTFP diagnostic.\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "National Aeronautics and Space Administration\n10\nQUESTIONS?\nLong        Law      Sunderland    Tse     Axelbaum          King             Smooke      Dunn-Rankin     Urban            Stocker \nYale      Princeton     Maryland    Rutgers    Wash. U.         NASA HQ               Yale                UC Irvine       NASA Glenn     NASA Glenn\nCLD Flame   s-Flame          BRE, CFI-G,      s-Flame         CFI-G,                                               CLD Flame    \nE-FIELD Flames\nFlame Design                     Flame Design   \nWith grateful acknowledgement to the investigators, graduate students, engineers, operations team, ISS crew, \nand all others who have contributed to the success of the research. \n•\nwww1.grc.nasa.gov/go/acme\n•\nwww.facebook.com/space.flames\n•\nwww.flickr.com/photos/space-flames\nLEARN \nMORE\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "ACME chamber insert\n• Crew-exchangeable & removeable hardware\n• Burner, igniter arm & tip\n• Mass Flow Controllers (MFCs)\n• High-voltage power supply & electrode mesh\n• Analog operations camera\n• Thermocouple rake\n• Photomultiplier Tube modules (PMTs)\n• Radiometer array\nNational Aeronautics and Space Administration\n11\nNASA astronaut Christina Koch reconfiguring the ACME \nchamber insert for a different experiment [ISS059e017074] \nKey elements of the chamber insert\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "National Aeronautics and Space Administration\nTop: BRE, CFI-G (hot & cool); Bottom: CLD Flame, E-FIELD Flames, Flame Design, s-Flame\n12\nExample \nACME \nflames\n"
+    }
+  ],
+  "details": {
+    "page_count": 12,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

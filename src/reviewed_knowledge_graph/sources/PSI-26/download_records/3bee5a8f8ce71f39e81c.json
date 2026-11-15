@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:3bee5a8f8ce71f39e81c",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_BASS_SysAcceptanceReview.1.pdf",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_BASS_SysAcceptanceReview.1.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 2892502,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafceac3501a37c2c60d18&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/3bee5a8f8ce71f39e81c/PSI-26_Engineering Documents_BASS_SysAcceptanceReview.1.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "c5736d5d8012670c970db137a3836ab959432caf2f9cab7ddfcfead079ab29fd",
+  "status": "downloaded"
+}

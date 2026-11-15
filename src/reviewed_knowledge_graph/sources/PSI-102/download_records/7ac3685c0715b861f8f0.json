@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:7ac3685c0715b861f8f0",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT273lampwick34.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT273lampwick34.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 3213312,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d51f91ab4427dbf4421&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/7ac3685c0715b861f8f0/PSI-102_Analyzed Data_GMT273lampwick34.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "c380f296dc95d00308fdabb778a9528ea5b7e2306123af87246aaaa400818c2c",
+  "status": "downloaded"
+}

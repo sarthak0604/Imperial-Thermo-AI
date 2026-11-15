@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-107:9a28266d38d7d9512d83",
+  "study": "PSI-107",
+  "filename": "PSI-107_Reference Data_SPICE_VIDEO OVERLAY RESET.pdf",
+  "key": "psi-data/PSI-107/Reference Data/PSI-107_Reference Data_SPICE_VIDEO OVERLAY RESET.pdf",
+  "category": "Reference Data",
+  "size_bytes": 1060135,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-107/download?file=683da135b8656d2315bf453f&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-107/9a28266d38d7d9512d83/PSI-107_Reference Data_SPICE_VIDEO OVERLAY RESET.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "c97875f8c1029d805f8206bd85b1b50990f4ea775f48f071065bacd860ef884a",
+  "status": "downloaded"
+}

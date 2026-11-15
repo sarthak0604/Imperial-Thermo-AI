@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-107:b2314c42f62d0bb9aa2c",
+  "study": "PSI-107",
+  "filename": "PSI-107_Presentations_IP-C Crew training 2010.pdf",
+  "key": "psi-data/PSI-107/Presentations/PSI-107_Presentations_IP-C Crew training 2010.pdf",
+  "category": "Presentations",
+  "size_bytes": 1348519,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-107/download?file=683da125b8656d2315bf448f&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-107/b2314c42f62d0bb9aa2c/PSI-107_Presentations_IP-C Crew training 2010.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "1ec77f2a2a2a9835e7e94b5ba1f10f7e855c1a4339e4ad1458a8d1fc8effe192",
+  "status": "downloaded"
+}

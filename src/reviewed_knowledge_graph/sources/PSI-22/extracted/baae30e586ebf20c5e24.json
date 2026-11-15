@@ -1,0 +1,267 @@
+{
+  "id": "res:PSI-22:baae30e586ebf20c5e24",
+  "study": "PSI-22",
+  "filename": "PSI-22_Science Documents_E-FIELD Flames SCR 200802.pdf",
+  "key": "psi-data/PSI-22/Science Documents/PSI-22_Science Documents_E-FIELD Flames SCR 200802.pdf",
+  "category": "Science Documents",
+  "size_bytes": 2965401,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e63f0eb4c08676004b9c&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/baae30e586ebf20c5e24/PSI-22_Science Documents_E-FIELD Flames SCR 200802.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "ffdb51438f8e427adc7c4d9076554852e1689c5160332c0a308bf74bf98200e7",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "E-FIELD Flames\nElectric Field Effects on Laminar Diffusion \nFlames\nDerek Dunn-Rankin\nMechanical and Aerospace Engineering\nUniversity of California, Irvine\nCo-Investigators: \nFelix Weinberg; Imperial College, London \nZeng-Guang Yuan, NCSER\nProject Scientist: Dennis Stocker, NASA GRC\nNASA Glenn - SCR; February 20-21, 2008\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Outline\n• Background\n– Ion Driven Wind in Flames\n– Examples of laboratory experiments\n• Scientific Opportunity\n• Experimental Objectives\n• Approach\n• Justification for Microgravity\n• Scientific Data End Products\n• Operational Sequence\n• Test Matrix\n• Success Criteria\n• Post-Flight Data Analysis\n• Summary\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "Ion Transport\nE\n\n=\n\n\nIon mobility\n\nq\n−\n=\n\n2\nq\nD\nV\nE\nK\nq\nj\n\n−\n+\n=\n)\n(\n\n\n\n0\n=\n\nj\n(a) Poisson equation governs \nelectric field (Gauss’ Law); q is the \ncharge density [e.g., \nCoulombs/m3]\n(c) Charge drifts through the \nambient gas by electric field \nforces, convection, and diffusion\n(b) Charge conservation\nCurrent surface density\nIon diffusivity\nelectric field\nelectric potential\nFor our conditions, ion diffusion \nand convection are negligible \nrelative to electrokinetic drift\nE\nKq\nj\n\n\n=\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Electric Body Force on Neutral Fluid\n)\n(\n\n=\nq\nE\nF\n\n\nE\nq\nK\nj\n\n\n\n\n=\n\n=\nK\nj\nF\n/\n\n\nElectric body force binds ion transport \nand neutral fluid transport; depends on \nmobility and current density\nF\nP\nV\nV\n\n\n\n+\n\n\n+\n−\n=\n\n\n\n\n)\n(\nNeutral fluid \nmomentum \nequation\nTotal body force = electric and \ngravitational\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "Electric Fields act on \nCombustion Generated Ions\n• Fundamental Interaction\n–Radical ions are generated at the flame \n–Majority of ions are short lived (flame zone)\n–H3O+ is predominant outside the flame zone\n–Momentum transfer via collision between \nions and neutrals\n–Electric body force applied to the fluid\n• Electric Field Influences\n–Ion driven wind \n–Chemical effect (removal of ions from the \nflame zone)\n• Observed Effects \n–Reshaping of the reaction zone\n–Enhanced flammability limits\n–Controlled heat transfer\n–Reduced and enhanced soot formation\n–Forced extinguishment\n–NOX and SO2 pollutant reduction\nApplied E-Field\n+ + + + + + + + + + + + + + +\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\nV\nAnode\nCathode\n+ ++ ++\n+ +\n+\n+ ++\n+ +\nNo Field\nreaction zone\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "Hydrocarbon Flame Ion Chemistry\nPederson and Brown\nStarik and Titova\nIncrease in O atom \nincreases ion \nproduction\nH3O+ is the \ndominant ion that \nsurvives the flame \nzone\nElectrons and \nneutrals they attach \nto are the negative \ncharge carriers\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "Ion Wind Force and Velocity Estimate\nAssume zero gravity and constant pressure so that only the \nelectric body force drives the flow\nK\nj\ndx\nV\nd\nx\n=\n)\n(\n2\n\n• K is mobility of the charge carrier ~ 1 \ncm2/s/V\n• g is gravitational acceleration; r is the \nneutral gas density\n• x is the distance over which the field acts\n• j is current density – flame: 1 mA/cm2; \ncorona: 100 mA/cm2\nFlame: order of 1 m/s \nover 1 cm distance\nFlame: order of 1-2\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Laboratory 1-g Experiments\n• Basic configuration\n• Typical voltage-current curve or \ncharacteristic (VI curve or VCC)\n• Ion flux from flames\n• Modeling ion driven wind\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "Varying Force on a Capillary Flame\nV\nNeutralization by \nelectrons at the cathode\nIons travel from \nthe flame \ntowards ground\nElectrons conduct \nthrough the \nflame to the \ncapillary \ne-\ne-\n+\n+\n+\n++ + +\n+\n+\n++++\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\nCombustible fuel\nIon production in \nthe reaction zone\nElectrically conductive capillary\nE\nq\nT\nT\ng\nF\no\no\nnet\n\n\n\n+\n\n\n\n\n\n−\n=\n1\n\nFb\nFe\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "Effect on \nSmall \nDiffusion \nFlame\nMethane fuel flowrate:  9 cc/min\nCapillary diameter:  1.7 mm\nElectrode Spacing:  7 cm\nConditions\n1.\nNaturally Buoyant – 0 Volts\n2.\nMicrobuoyant – 2880 Volts\n3.\nNegatively buoyant – 4300 \nVolts\n0\n1000 2000 2500 3000 4000 5000\nApplied Potential (Volts)\nCH Chemiluminescence\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "Key Aspects of the VCC\n• Subsaturation regime\n– Steeper increase in \ncurrent with voltage in \nhorizontal orientation\n• Saturation\n– Saturation current \nincreases linearly with \nflowrate\n– Higher saturation current \nin horizontal configuration\n• Increased ionization\n– Reaction rate increases \ncreating additional ions\n– Flame more unstable in \nhorizontal configuration\nIon wind \ncreates \ninstability\nQuadratic \nincrease in \nsubsaturation \nregion\nSaturation current\nFlame shape changes, \nincreasing ionization\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "Methane 14.1 mg/min\n0\n0.2\n0.4\n0.6\n0.8\n1\n-50\n-30\n-10\n10\n30\n50\nRadius [mm]\nNormalized Ion Current [j/jo\nH = 35 mm 2850V\nH =60 mm\nWarburg 35 mm\nWarburg 60 mm\nIon Current Profiles\n•\nPoint-to-plane \ndistribution, Warburg \nLaw = cos5Q\n•\nIntegrated current \nprovides ion density \nboundary conditon\n•\nCurrent distribution \nfor model validation\n"
+    },
+    {
+      "locator": "page 13",
+      "text": "Chemiluminescence & Schlieren \n"
+    },
+    {
+      "locator": "page 14",
+      "text": "Numerical Simulation\no\no\ne\nce\nV\n\n\n=\n=\n2\n(\n)\n(\n)\nE\nce\nu\nT\nT\ng\nP\nu\nu\nt\nu\no\no\n+\n\n\n\n+\n\n\n\n\n\n−\n+\n−\n=\n\n\n+\n\n\nm\n\n\n\n1\n(\n)\n0\n=\n\n\n+\n\n\nu\nt\n\n\n(\n)\n(\n)\n(\n)\nT\nk\nP\nu\nT\nc\nu\nt\nT\nc\np\np\n\n\n\n+\n\n\n=\n\n\n+\n\n\n\n\n(\n)\n(\n)\nV\nceK\nc\nD\nc\nu\nt\nc\n\n+\n\n\n\n=\n\n\n+\n\n\n+\nIon concentration\nEnergy\nMass\nMomentum\nGauss’s Law\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "Computational Model\n•\nFEMLAB simulation\n•\nFinite element method\n•\nGeneral equation solver\n•\nStaged solution\n1.  Electrokinetic (V, c)\n2.  Electrodynamic (V, c)\n3.  Hot flow (V, u, v, P, T, c) \n•\n2-D axisymmetric\n•\nAssumptions\n–\nBalance condition\n–\nIsotropic Fickian diffusion\n–\nSingle ion species (positive ions)\n–\nTemperature is constant within the flame (hot flow)\n–\nUniform ion concentration at the flame\n–\nIon properties are of H3O+\nGravity\ndirection\nSymmetry boundary\nAnode boundary\nCathode boundary\nInfinite condition\nRADIAL DIRECTION\nAXIAL DIRECTION\nhcap\nRflame (3.0 mm)\nRcap (0.5 mm)\n63.5 mm\nGravity\ndirection\nSymmetry boundary\nAnode boundary\nCathode boundary\nInfinite condition\nRADIAL DIRECTION\nAXIAL DIRECTION\nhcap\nRflame (3.0 mm)\nRcap (0.5 mm)\n63.5 mm\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Experimental Results\n"
+    },
+    {
+      "locator": "page 17",
+      "text": "475 K\n410 K\n315 K\n350 K\nPosition (m)\nCalculation Results\nInternal \ntemperature \ncontours at 100 K \nincrements to \n1300 K at ion \nsource boundary\nMaximum Velocity = 0.4 m/s\nVelocity Vectors and Temperature Contours\n"
+    },
+    {
+      "locator": "page 18",
+      "text": "Physical Description\nInduced electric field \n(causes horiz. migration)\nV\nRe-circulation driven by \nneutralized buoyant gas \nredirection\n• Source of unstable T and O2\n• Observed in shadowgraphs\nNeutralization by \nelectrons at the cathode\nIons travel from the \nflame towards ground\nElectrons conduct \nthrough the flame to the \ncapillary \nHigh ion concentration at \nthe center decreasing  \nradially outward\n+\n+\n+\n+\n+\n+\n+ +\n+\n+ +\n+ + + + +\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+ +\n+\n++\n+++++\n+\n+\n+ +\n+\n+\n+\n+\n+\n+\n+\n++\n+\n++\n+++++\n+\n+\n+ +\n+\ne-\ne-\n+\n+\n+\n++ + +\n+\n+\n++++\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n"
+    },
+    {
+      "locator": "page 19",
+      "text": "Scientific Opportunities in Microgravity\n• Ion current behavior for diffusion flames \nunaffected by buoyancy\n• Role of ion driven wind in secondary ion increase\n• Time scales of electrically manipulated diffusion \nflames (ion drift, ion chemistry, ion driven \nconvection, diffusion)\n• Electrical effects and the role of ions on soot \nproduction and transport in diffusion flames\n• Role of ions and their driven wind in manipulating \nlifted flames\n"
+    },
+    {
+      "locator": "page 20",
+      "text": "Time Response\n•\nFlame ion current time response ~15 \nms\n•\nConvective time response ~100 ms\n•\nSame response without flame \nindicates electronics time response\nLeakage current or small corona\nInitial flame \nion current\n50 ms\n"
+    },
+    {
+      "locator": "page 21",
+      "text": "Soot and Electric Fields\nSoot particle charge\nSoot particles may be originally charged, especially if they are formed \nthrough an ionic route \nSoot particles gain a net charge through ion-attachment \nMeasurements indicate that in the hottest zone, soot particles may be \ncharged to equilibrium, but this is not always the case and the initial \nparticle charge seems to depend upon the material burnt \nNet charge of soot particles in flames is generally positive even in the \nflame region where a large excess of electrons exist\nSoot particle primary size is found to be ~20 nm in non-electric flames; \nsize can be reduced in electric fields\nElectric field effects on soot in laminar diffusion flames\nIon wind can induce partial premixing (changes reaction zone)\nIon precursors can be removed or reduced in number\nSoot residence time can be changed (increased or decreased)\n"
+    },
+    {
+      "locator": "page 22",
+      "text": "Ethylene Flame in Electric Field\n•\nSoot can be a source of ions\n•\nSoot is charged and its \ntransport is affected by the \nelectric field\n•\nSoot production and growth \ncan be influenced by ion \nprecursors\nEthylene 50 mg/min \n"
+    },
+    {
+      "locator": "page 23",
+      "text": "VCC for a Co-Flow Burner\nPositive mesh\nNegative mesh\n"
+    },
+    {
+      "locator": "page 24",
+      "text": "Liftoff and Blowout\n• Co-flow burner with methane fuel in 1-g\n0 Volts\n~5000 Volts\n"
+    },
+    {
+      "locator": "page 25",
+      "text": "Microgravity Justification\n• High Quality Microgravity -- confounding effects of \nbuoyancy\n– Ion driven wind velocity approximately equal to buoyant wind \nvelocity so convection and mixing effects are difficult to separate\n– Complex flow patterns created in 1-g\n– Stability of weak flames (liftoff and blowout) – as in CLD Flame\n• Extended Duration -- time scales to reproducible state\n– Electrical response (RC time constant)\n– Ion transport time\n– Ion wind convection\n– Soot formation and transport\n– Flow field establishment\n– Thermal inertia effects\n"
+    },
+    {
+      "locator": "page 26",
+      "text": "Effects of Orientation\n"
+    },
+    {
+      "locator": "page 27",
+      "text": "Horizontal Configuration\ncapillary\nground \nplane\n"
+    },
+    {
+      "locator": "page 28",
+      "text": "Methane 14.1 mg/min\n0\n0.2\n0.4\n0.6\n0.8\n1\n1.2\n1.4\n1.6\n1.8\n2\n0\n1\n2\n3\n4\n5\n6\nApplied Voltage [kV]\nIon Current [microamps]\nVertical d=35mm\nHorizontal d=35mm\n14.1 mg/min fuel\n35 mm electrode spacing\nVCC -- Effects of Orientation\n"
+    },
+    {
+      "locator": "page 29",
+      "text": "Net Body Force\nNet vertical body \nforce scaled with \ngravity; less than \nzero is down \nforce.\nBuoyancy dominates\nIon driven wind\ndominates\n"
+    },
+    {
+      "locator": "page 30",
+      "text": "Burner Thermal Inertia in 1-g\n0\n5\n0\n1\n2\nTime (sec)\n0\n0.1\n0.2\n-2\n-1\n0\nTime (sec)\n0\n1\n2\n3\n4\n5\n0\n1\n2\nTime (sec)\nCH Chemiluminescence \n(a) \n(b) \n(c) \n2850 V\n0 V\nCH* response \nafter step voltage \nchange in 1-g\n~ 3 sec\n"
+    },
+    {
+      "locator": "page 31",
+      "text": "31\nRelevant Time Scales\nParameters –\nVion_wind ~ 1 m/s\nLflame ~ 1 cm\nD ~ 0.1 cm2/s\nVion ~ 100 m/s\nVbuoyancy ~ 1 m/s\nLsystem ~ 10 cm\nC ~ 300 m/s\n10-6\n10-5\n10-4\n10-3\n10-2\n10-1\n100\n101\n102\nacoustic \ntime\nRC\nconvection\nburner\nmicroseconds\nmilliseconds\nseconds\ntimescales (seconds)\nTime scales –\nIon drift time – 1-10 ms\nAcoustic time ~ 0.1 ms\nElectronic RC time – 50 ms\nConvective transport time (ion wind or \nbuoyancy) – L/V ~ 0.1-1 sec\nDiffusion transport time – Lflame\n2/D ~ 10 sec\nFlowfield time – Lsystem/Vconvection ~ 10 sec\nBurner thermal response time ~ 10 sec\nion drift\ndiffusion\nflowfield\n"
+    },
+    {
+      "locator": "page 32",
+      "text": "Extended Microgravity –\nExperience of other investigators\n•\nCLD Flame discussion showed the necessity for high quality microgravity for \nnear limit lifted co-flow flames (i.e., buoyant mixing has substantial effect)\n•\nCo-flow flame experiments showed problems with g-jitter on parabolic flights\n•\nZ.-G. Yuan et. al showed difficulties in achieving steady flames in a 2.2 sec. \ndrop tower.\nGraph reproduced from: 1100 AIAA-\n2003-0812, Z. Yuan and U. Hegde\nNote: if not carried out \nsequentially, a single EFIELD \nFlame measurement requires \nboth time to reach a stable \ninitial condition and time to \nreach the final condition \nfollowing the electric field \nimpulse.\n"
+    },
+    {
+      "locator": "page 33",
+      "text": "Experimental Objectives\nUnderstand flame ion production and use ions to control \ndiffusion flames by modifying local convection (via the ion \nwind) and local species transport (via direct ion drift)\nA) Determine the relationship between electric field voltage and \nchemi-ion current as functions of total fuel flow rate and the \namount of inert in the fuel.\nB) Obtain the time response of flame chemiluminescence, luminosity, \nand ion current to large step changes in voltage, as functions of \ntotal fuel flow rate and amount of inert added to the fuel stream.\nC) Evaluate and control sooting behavior (i.e., soot volume fraction \nand location of luminous soot) in relation to the electric field \nvoltage and chemi-ion current as functions of total fuel flow rate \nand amount of inert added to the fuel stream.\nD) Use the variation of the chemi-ion current as a function of applied \nvoltage to characterize and control the combustion behavior of \nnear-limit lifted flames in a coflow burner.\n"
+    },
+    {
+      "locator": "page 34",
+      "text": "Experimental Approach\n"
+    },
+    {
+      "locator": "page 35",
+      "text": "Ion Current Measurement\n"
+    },
+    {
+      "locator": "page 36",
+      "text": "• Controlled Variables\n– Voltage (small step, large step,)\n– Data sampling rate\n– Fuel/air flow rates\n– Ignition\n• Measurements\n– Current\n– Flame shape (reaction zone) – chemiluminescence\n– Luminosity – spatially integrated\n– Chemiluminescence – spatially integrated\n– Soot volume fraction\n– Burner temperature\n– Soot temperature\nExperiments\n"
+    },
+    {
+      "locator": "page 37",
+      "text": "Science Data End Products\nObjective A.) Steady state chemi-ionizaton in flames \nObjective B.) Time response of flames to electric forcing \nObjective C.) The influence of chemi-ions in soot production \nObjective D.) Control of near-limit flames using electric fields\nFour Primary Objectives:\n"
+    },
+    {
+      "locator": "page 38",
+      "text": "Steady state chemi-ionization in flames\nObjective A -- Characterize the dependence of electric field \nstrength on flame behavior at steady state as a function of fuel \nand dilution and burner type.\ncolor \nimage\nfiltered \nimage\nschlieren \nimage \n(desired)\n0\n500\n1000 1500 2000 2500 3000 3500 4000\n4500\n0.7\n0.8\n0.9\n1\nApplied Potential (Volts)\nRelative CH430 nm Emissio\nZone 1\nZone 2\nZone 3\nVCC\nspatially integrated luminosity\n"
+    },
+    {
+      "locator": "page 39",
+      "text": "A.1)  Plots of voltage versus ion current for gas-jet \nand co-flow flames, using CH4 and C2H4\nA.2)  Flame images (color and OH*) at transition \npoints in the VI curves\nA.7) Flame luminosity (CH* and broadband visible) \nas a function of voltage and current for both \nburners\nA.9) Thermal imaging of the plume as a function of \nelectric field (desired)\nMeasured Data End Products \nObjective A\n"
+    },
+    {
+      "locator": "page 40",
+      "text": "A.4)  Voltage and current at the onset of \nenhanced ion production (secondary \nsaturation) as a function of fuel and diluent for \nboth burners \nA.5)  Voltage and current at flame blowoff as a \nfunction of fuel and diluent for both burners\nExtracted Data End Products \nObjective A\n"
+    },
+    {
+      "locator": "page 41",
+      "text": "A.3)  Model saturation current as a function of inert \nconcentration for both fuels and burners \nA.6)  Saturation ion current per carbon influx as a \nfunction of fuels and diluent for both burners\nA.8)  Saturation current as a function of flame area\nDerived Data End Products \nObjective A\n"
+    },
+    {
+      "locator": "page 42",
+      "text": "Time response of flames\nObjective B -- Obtain the time response of flame \nchemiluminescence, luminosity, and ion current to large \nstep changes in voltage, as functions of total fuel flow rate \nand amount of inert added to the fuel stream.\n0\n5\n0\n1\n2\nTime (sec)\n0\n0.1\n0.2\n-2\n-1\n0\nTime (sec)\n0\n1\n2\n3\n4\n5\n0\n1\n2\nTime (sec)\nCH Chemiluminescence \n(a) \n(b) \n(c) \nTime resolved ion current\nTime resolved \nchemiluminescence\n"
+    },
+    {
+      "locator": "page 43",
+      "text": "B.1) Time resolved ion current after step \nchanges in voltage\nB.2) Time resolved luminosity after step \nchanges in voltage\nMeasured Data End Products \nObjective B\nMeasurement requires relatively high data \nrate (100 Hz, minimum; 1 kHz desired) \nfrom current measurement and PMTs\n"
+    },
+    {
+      "locator": "page 44",
+      "text": "B.3)  Electrical time constant of the flame as a \nfunction of fuel, flow rate, diluent, and burner type\nB.4)  Luminosity time constant (broadband and CH*) \nof the flame as a function of inert concentration in \nfuel, flow rate, and burner type\nDerived Data End Products \nObjective B\nT\nT\nk \nB.5)  Equivalent \nRC circuit for gas-\njet and coflowing \nflames for \npossible use in \ncontrol algorithms\nTime constant extracted \nfrom time response data\n"
+    },
+    {
+      "locator": "page 45",
+      "text": "Effects of Electric Fields on Soot\nObjective C -- Evaluate \nand control sooting \nbehavior in relation to the \nelectric field voltage and \nchemi-ion current as \nfunctions of fuel flow rate \nand amount of inert \nadded to the fuel.\nEthylene 50 mg/min \n"
+    },
+    {
+      "locator": "page 46",
+      "text": "C.1) Average soot volume fraction as a function \nof ion wind for various inert concentration \nC.2) Images showing location and temperature \nof soot for different ion wind conditions\nMeasured Data End Products \nObjective C\nSoot volume fraction measurement and color \nimaging measurements already described in \nother proposed ACME experiments (issues of \nyoung soot versus old soot).\n"
+    },
+    {
+      "locator": "page 47",
+      "text": "C.5) Voltage at which soot is suppressed \nfor different inert levels\nExtracted Data End Products \nObjective C\nProvides electric field strength to \nevaluating mobility of ions and soot\n"
+    },
+    {
+      "locator": "page 48",
+      "text": "C.3) Soot mean size based on soot volume \nfraction, temperature, and total ion current\nC.4) Spatially resolved soot volume fraction \nat transition conditions\nDerived Data End Products \nObjective A\nUsing classical Dushman equation can relate \ntemperature, and soot surface area to ion current; \nidentifies the role of soot size versus soot number in \nvolume fraction.\nkT\ne\ne\nBT\nj\n/\n2\n\n−\n=\n"
+    },
+    {
+      "locator": "page 49",
+      "text": "Open Loop Control of Coflow Flame\nObjective D -- Use the variation of the chemi-ion current as a \nfunction of applied voltage to characterize the combustion \nbehavior of near-limit lifted flames in a coflow burner and use the \nion-driven wind to stabilize or reattach these flames.\n"
+    },
+    {
+      "locator": "page 50",
+      "text": "D.1) Time resolved ion current and luminosity of near \nlimit flames\nD.2) Images from the flame at near limit conditions \nwith an active field\nMeasured Data End Products \nObjective D\nMeasurement D.1 uses the same sensors as those for the \nstep-response objective (B); measurement D.2 uses \nimaging sensors (e.g., color camera)\n"
+    },
+    {
+      "locator": "page 51",
+      "text": "D.3)  Mean and RMS ion current and luminosity of \nnear limit flames with varying electric field\nD.4)  Liftoff height as a function of voltage and \ninert concentration in the fuel and flow rate \n(coflowing flame)\nExtracted Data End Products \nObjective D\nThe data D.3 use the same sensors as in D.1 \nand will indicate whether the electrical \nproperties of the flame can act as a stability \nsensor; the data of D.4 show the steady state \ninfluence of the electric field on liftoff height.\n"
+    },
+    {
+      "locator": "page 52",
+      "text": "D.5) Ion driven wind velocity near the lifted \nflame base \nDerived Data End Products \nObjective D\nUsing the ion current it will be possible to assess the \nrelative importance of the steady ion wind versus a \nmixing process near the flame edge as the source of \nchanges to the liftoff height.\n"
+    },
+    {
+      "locator": "page 53",
+      "text": "Req’d Measurements and Operational Constraints\n \nSensor \nMeasurement \nObjectives \nServed \nShunt resistor \nIon current \nA, B, C, D \nColor camera \nFlame shape and size \nA, B, C, D \nPMT (unfiltered) \nSpatially integrated \nluminosity  \nA, B, C, D \nPMT (filtered) \nFiltered CH* \nintegrated light from \nflame \nA, B, C, D \nLLL-UV Camera + \nfilters \nFiltered CH* and \nOH* video of flame \nA, B, C, D \nSpatially resolved \nsoot volume fraction \nC only \nHiBMS imaging + \nlaser illumination \nDensity Imaging \n(desired) \nA, B, C, D \nThermocouple \nBurner temperature \nD only \nTFP array  \n(or substitute sensor) \nTemperature field \nabove flame \nA, B, C, D  \nOperational Constraints\nCannot be operated \nsimultaneously with laser-\nilluminated sensors\n(measurement interference)\nCannot be measured \nsimultaneously; both \nrequire same instrument\nFilter swaps limited by \nastronaut availability\nFound an issue with \nfibers in field space\n"
+    },
+    {
+      "locator": "page 54",
+      "text": "Additional Requirements\n• Gas phase temperature\n• Soot accumulation\n"
+    },
+    {
+      "locator": "page 55",
+      "text": "Operation Sequence\n* Time and total reflect correspond to fuel usage, actual runtime will be longer\nVoltage Sweep\nTime\n-Prepare Chamber\n0 sec.\n-Initiate experiment\n15 sec.\n-Measurements\n160 sec.\n-Check for system errors\n-Proceed to next test condition\nTotal*:\n175 sec.\nVoltage Step\n-Prepare Chamber\n0 sec.\n-Initiate experiment\n15 sec.\n-Measurements\n48 sec.\n-Check for system errors\n-Proceed to next test condition\nTotal*:\n63 sec.\nSoot and liftoff control\n-Prepare Chamber\n0 sec.\n-Initiate experiment\n15 sec.\n-Measurements\n38 sec.\n-Check for system errors\n-Proceed to next test condition\nTotal*:\n53 sec.\n"
+    },
+    {
+      "locator": "page 56",
+      "text": "Test Matrix\nTotal (CH4+C2H4): 96/194\nFuel\nBurner\nTest type\nTests (req/des)\nCH4\n50/108\nJet\nSweep\n12/28\nStep\n12/20\nControl\n2/2\nTotal\n26/68\nCo-flow\nSweep\n12/20\nStep\n8/20\nControl\n4/0\nTotal\n24/40\nC2H4\n46/86\nJet\nSweep\n12/28\nStep\n12/12\nControl\n2/2\nTotal\n26/42\nCo-flow\nSweep\n8/24\nStep\n8/20\nControl\n4/0\nTotal\n20/44\n"
+    },
+    {
+      "locator": "page 57",
+      "text": "Success Criteria\nOBJECTIVE\nMinimum Criteria\nComplete Criteria (additional to \nMinimum)\nSuperior Criteria\n(additional to Complete)\nA\nVI curve for \nundiluted CH4 on a \nsingle burner. \nCapture color \nimages\nObtain VI curve for both fuels with \nvarying dilution for one jet diffusion \nand the coflow flame. \nObtain thermal field \ninformation for the gas jet \nor coflow flame to visualize \nion driven wind\nB\nObtain step-response VI curve for \nundiluted CH4 on a single burner.  \nCapture transient color images\nObtain step-response VI \ncurves for both fuels with \nvarying dilution for one jet \ndiffusion and the coflow \nflame. \nC\nMeasure soot luminosity \n(radiometer measurement) as a \nfunction of applied voltage during \nVI sweeps and step changes \nObtain spatially resolved \nsoot volume fraction for \nrelevant conditions.\nD\nCapture flame images from co-flow \nburner during voltage sweep to \nallow measurement of liftoff height \nin relation to electric field strength\nDemonstrate control of \nflame near sooting and \nstability limits. Evaluate the \nextent to which stability \nlimits can be extended \nusing an electric field \n"
+    },
+    {
+      "locator": "page 58",
+      "text": "Post Flight Data Analysis\n• Evaluate conditions in real-time; select \nappropriate repeat tests\n• COMSOL model with idealized \nassumptions\n• Simple algebraic expressions\n475 K\n410 K\n315 K\n350 K\nPosition (m)\n"
+    },
+    {
+      "locator": "page 59",
+      "text": "Summary – Potential Interaction\n• Chemistry of chemi-ionization added to \nmechanisms\n• Burner overlap (jet and co-flow)\n• Soot control\n• Combustion control\n• Flame analysis (alternative fuels)\n"
+    }
+  ],
+  "details": {
+    "page_count": 59,
+    "empty_pages": [
+      13,
+      16,
+      26,
+      34,
+      35
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

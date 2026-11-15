@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-99:662d1811e39900610145",
+  "study": "PSI-99",
+  "filename": "PSI-99_metadata_PSI-167_SAFFIRE-II.zip",
+  "key": "psi-data/PSI-99/metadata/PSI-99_metadata_PSI-167_SAFFIRE-II.zip",
+  "category": "metadata",
+  "size_bytes": 10539,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-99/download?file=6840d3366daf91e274cebc7e&version=5&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-99/662d1811e39900610145/PSI-99_metadata_PSI-167_SAFFIRE-II.zip",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "eb9f705d758daa14658fdf8e289031e08badd62f8c4bedf7bb5bfe3ac7688cd2",
+  "status": "downloaded"
+}

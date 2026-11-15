@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:142064ebcc6e59e55ba2",
+  "study": "PSI-23",
+  "filename": "PSI-23_Engineering Documents_s-Flame_RDR_201005.pdf",
+  "key": "psi-data/PSI-23/Engineering Documents/PSI-23_Engineering Documents_s-Flame_RDR_201005.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 1045448,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdf16daf91e274ceca0a&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/142064ebcc6e59e55ba2/PSI-23_Engineering Documents_s-Flame_RDR_201005.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "1c752c0871ede997458a2afb259a1095d2f8b566c5514d9cba4d78fc45f2c97e",
+  "status": "downloaded"
+}

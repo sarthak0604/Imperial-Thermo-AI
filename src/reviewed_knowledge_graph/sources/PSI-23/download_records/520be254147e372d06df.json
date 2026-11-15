@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:520be254147e372d06df",
+  "study": "PSI-23",
+  "filename": "PSI-23_Engineering Documents_s-Flames_procedure_20210408.pdf",
+  "key": "psi-data/PSI-23/Engineering Documents/PSI-23_Engineering Documents_s-Flames_procedure_20210408.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 862140,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841ce426daf91e274cecd51&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/520be254147e372d06df/PSI-23_Engineering Documents_s-Flames_procedure_20210408.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "9548cecf65bec206dda010e0a9035db4241e7460bd345ff8c22528f779fe5cc9",
+  "status": "downloaded"
+}

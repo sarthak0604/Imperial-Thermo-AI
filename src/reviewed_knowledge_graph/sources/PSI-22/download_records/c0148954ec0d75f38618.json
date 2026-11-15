@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:c0148954ec0d75f38618",
+  "study": "PSI-22",
+  "filename": "PSI-22_Engineering Documents_E-FIELD_Flames_RDR_201005.pdf",
+  "key": "psi-data/PSI-22/Engineering Documents/PSI-22_Engineering Documents_E-FIELD_Flames_RDR_201005.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 6951302,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e63f0eb4c08676004b9d&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/c0148954ec0d75f38618/PSI-22_Engineering Documents_E-FIELD_Flames_RDR_201005.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "2345220d702b41c6e65a94f199e4b209cbd16ec5fecfffad12a7dff3f5e27044",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:c505c457512e3581571d",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Lopez-Camara et al 2019 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Lopez-Camara et al 2019 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf",
+  "category": "Presentations",
+  "size_bytes": 2289887,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75c0eb4c08676005576&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/c505c457512e3581571d/PSI-22_Presentations_Lopez-Camara et al 2019 Numerical Simulations of Laminar Non-premixed CH4-Air Jet Flames.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "7a5b6ebdb3eb303a65e114272de1d8b1236d33539959ca756eec7c8601efd303",
+  "status": "downloaded"
+}

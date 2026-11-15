@@ -1,0 +1,31 @@
+{
+  "id": "res:PSI-68:55c83a0608211c079eab",
+  "study": "PSI-68",
+  "filename": "PSI-68_Engineering Documents_67235MFAC17143-2 FLEX-2 Fiber Arm Assembly.pdf",
+  "key": "psi-data/PSI-68/Engineering Documents/PSI-68_Engineering Documents_67235MFAC17143-2 FLEX-2 Fiber Arm Assembly.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 146094,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-68/download?file=685da233ee20136af540136f&version=1&studyVersion=6&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-68/55c83a0608211c079eab/PSI-68_Engineering Documents_67235MFAC17143-2 FLEX-2 Fiber Arm Assembly.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "b93d698bbe7bdb439f4f954dc6118a3a529d782654de051df4586176d7c8271d",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": ""
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": [
+      1
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "no_text",
+  "review_status": "not_yet_reviewed"
+}

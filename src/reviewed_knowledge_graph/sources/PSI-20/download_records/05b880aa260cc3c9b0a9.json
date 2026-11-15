@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-20:05b880aa260cc3c9b0a9",
+  "study": "PSI-20",
+  "filename": "PSI-20_Engineering Documents_ACME_engineering_20210328.pdf",
+  "key": "psi-data/PSI-20/Engineering Documents/PSI-20_Engineering Documents_ACME_engineering_20210328.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 5794678,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d82a1b4820d736ceccd2&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/05b880aa260cc3c9b0a9/PSI-20_Engineering Documents_ACME_engineering_20210328.pdf",
+  "status": "failed",
+  "error": "ValueError: Downloaded byte count does not match NASA inventory"
+}

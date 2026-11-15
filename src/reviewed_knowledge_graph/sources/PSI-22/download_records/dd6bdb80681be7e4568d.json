@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:dd6bdb80681be7e4568d",
+  "study": "PSI-22",
+  "filename": "PSI-22_Engineering Documents_ACME Engineering Implementation Rpt..pdf",
+  "key": "psi-data/PSI-22/Engineering Documents/PSI-22_Engineering Documents_ACME Engineering Implementation Rpt..pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 7496324,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=69fe14fe919a47bc7897176e&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/dd6bdb80681be7e4568d/PSI-22_Engineering Documents_ACME Engineering Implementation Rpt..pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "393f3ebc6662b10f0fe55d87ceda3b6696d2cc9c91266b81132761de50078456",
+  "status": "downloaded"
+}

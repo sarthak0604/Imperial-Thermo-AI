@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-69:0d80d46909160e72cf2f",
+  "study": "PSI-69",
+  "filename": "PSI-69_Engineering Documents_FLEX_EIRD_v4.pdf",
+  "key": "psi-data/PSI-69/Engineering Documents/PSI-69_Engineering Documents_FLEX_EIRD_v4.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 3240704,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-69/download?file=684344b89e44646b74027069&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-69/0d80d46909160e72cf2f/PSI-69_Engineering Documents_FLEX_EIRD_v4.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "be236c283ffd597bb79a4715fd4b24d296b2b93de1144c676c119b52a3a3ebe9",
+  "status": "downloaded"
+}

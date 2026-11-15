@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-159:c0043968579e9cce7cab",
+  "study": "PSI-159",
+  "filename": "PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+  "key": "psi-data/PSI-159/Experimental table/PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+  "category": "Experimental table",
+  "size_bytes": 22166,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-159/download?file=691f7ea117f78b371b26f6fa&version=1&studyVersion=1&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-159/c0043968579e9cce7cab/PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+  "sha256": "d95a621c3fbd27d204dd32ed29fa17d68f2b779d6a523cde8479ed7ebaa5251a",
+  "status": "downloaded"
+}

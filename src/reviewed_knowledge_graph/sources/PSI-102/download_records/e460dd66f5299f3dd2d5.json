@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:e460dd66f5299f3dd2d5",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_Silicone GMT255hkp run 5s.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_Silicone GMT255hkp run 5s.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 11481088,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d51f91ab4427dbf4429&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/e460dd66f5299f3dd2d5/PSI-102_Analyzed Data_Silicone GMT255hkp run 5s.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "6428ec45ad3a0ea9b26edf9465168bbd5d467c188ac2e9982c8f933713524a14",
+  "status": "downloaded"
+}

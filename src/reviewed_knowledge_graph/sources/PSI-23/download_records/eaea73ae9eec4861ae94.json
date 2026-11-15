@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-23:eaea73ae9eec4861ae94",
+  "study": "PSI-23",
+  "filename": "PSI-23_Presentations_PS-01548 ACME info sheet.pdf",
+  "key": "psi-data/PSI-23/Presentations/PSI-23_Presentations_PS-01548 ACME info sheet.pdf",
+  "category": "Presentations",
+  "size_bytes": 874049,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-23/download?file=6841cdc56daf91e274cec831&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-23/eaea73ae9eec4861ae94/PSI-23_Presentations_PS-01548 ACME info sheet.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "7df6102b20372bde6515408c6f71268432d1d6e8737df8cca890d3427752513d",
+  "status": "downloaded"
+}

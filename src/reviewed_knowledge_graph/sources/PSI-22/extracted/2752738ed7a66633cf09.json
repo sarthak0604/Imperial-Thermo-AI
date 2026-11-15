@@ -1,0 +1,87 @@
+{
+  "id": "res:PSI-22:2752738ed7a66633cf09",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Karnani et al 2009 Exploring the effects of gravity on a coflow diffusion flame.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Karnani et al 2009 Exploring the effects of gravity on a coflow diffusion flame.pdf",
+  "category": "Presentations",
+  "size_bytes": 1820900,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75b0eb4c08676005570&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/2752738ed7a66633cf09/PSI-22_Presentations_Karnani et al 2009 Exploring the effects of gravity on a coflow diffusion flame.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "81cdf212fb4323be9795ee44d11a0c9fd274f19e5d5ae3fb99e230f5ee122dd6",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "S. Karnani1, M. Schoen2, P. Coﬃn2, D. Dunn-Rankin1, F. Takahashi3,\nZ-G. Yuan3 , D. Stocker2\n1 Department of Mechanical and Aerospace Engineering \nUniversity of California, Irvine, CA 92697-3975 \n2 NASA Glenn Research Center, Cleveland, Ohio 44135 \n3 National Center for Space Exploration Research on Fluids and Combustion, Cleveland, Ohio 44135 \nFall Technical Meeting \nof the Western States Section of the Combustion Institute \nHosted by the University of California, Irvine, CA \nOct 26-27, 2009 \nExploring the eﬀects of gravity on a coﬂow \ndiﬀusion ﬂame in an electric ﬁeld\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Electric Field Effects\nIon reactions make up a small subset of \ncombustion kinetics.\nMicroscopic electric field effects:\n• Charge separation\n•Acceleration prevented by                     collisions \nwith neutrals\n• ~100 m/s ion drift velocity\nMacroscopic field effects:\n• Ion-driven wind (~1 m/s)\n• Reshaping of the reaction zone\n• Change in flame luminosity\n• Altered stability\n• Forced extinction\nStarik and Titova, 2002\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "Flames and Body Forces\nInstead of the classic teardrop shape, low-g flames \ntend to exhibit a more spherical shape, owing to the \nlack of buoyancy.\nEffects of ion-driven convection are physically similar \nto buoyancy.\nUsing both, the NASA 2.2-s \nDrop Tower and the ISS \n(proposed), we will study the \ninfluence of chemi-ionization on \ncombustion without buoyancy.\nCarleton and Weinberg (Nature 330, 635-636, 1987)\nCombustion Integrated Rack: currently on ISS\n1g\n2g\n0g\n0g w/ electric field\n0g w/ electric field\n• Natural convection complicates \nthe understanding of flame \nbehavior!\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Nitrogen\nMethane\nAir\nAir\nHoneycomb\nFlow \nstraightener\nBeads\nAir flow\nchamber\nPremix\nChamber\nSpecifications:\n• 25 mm diameter co-flow\n• 2.4 mm OD, 2.1 mm ID gas jet\nUCI Coflow Burner\n•Burner dimensions follow proposed \nISS experiment\n•Flames are nearly axisymmetric\n•Burner plan similar to Yale burner\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "NASA Coflow Burner\nSpecifications:\n• A 10’’ ID cylindrical housing surrounds \nthe burner\n• 2.4 mm OD, 2.1 mm ID gas jet\n• Burner, converging nozzle, and housing \nare concentric\n•Converging nozzle contraction area  \nratio: 0.1 \n• Converging nozzle exit: 27.3 mm i.d\n• Drop rig and burner used at NASA \nGlenn.\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "Experimental Wiring Diagram\nSignal conditioning & DAQ equipment not shown\n• A potential difference is \ngenerated between the burner \nand electrically conductive mesh\n• Ions are drawn to the electrode \nof opposite polarity.\n• Ion current is measured as the \nvoltage drop across the shunt \nconnected between the burner \nand signal ground.\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "Normal-Gravity Results (UCI)\n-- -\n- -\n-\n-\n+++     +++\n-\n-- -\n-\n-\n---\n---\n++++++\n+++\nDespite field polarity, three distinct \nregions exist:\n1.) Subsaturation regime\n-- Parabolic increase in current with \nvoltage\n2.) Saturation\n-- No increase in current with \nvoltage\n3.) Enhanced ionization regime\n-- Change in flame character \nincreases ion production\n1\n2\n3\nRepresentative ion current behavior \nas a function of voltage.\nField direction affects the measured \nion species.\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Normal-Gravity Results (UCI)\nWe will look closer at the \nflame’s transient response in \nthese regions\n1\n2\n---\n---\n++++++\n+++\n•Saturation ion current is influenced by \nfuel flow rate and coflow velocity.\n•Transient data shows fluctuations at \nmultiple applied voltages.\n•Data at saturation and beyond\nshow the largest variations.\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "• Looking at the transient data, high frequency \noscillations are present near saturation. \n• The signal FFT hints to a beating phenomena with a \n41Hz peak frequency.\n• P-P oscillation is ~5% of the mean ion current.\n• Flame images do not show signs of flame movement. \nPMT signals can capture oscillations.\n• Ion current variations lead PMT response.\nNormal-Gravity Results (UCI)\nFlame response time (100ms) >> Oscillation period (~25ms) \n"
+    },
+    {
+      "locator": "page 10",
+      "text": "• Oscillation frequency abruptly \ntransitions from a 16.6Hz to \n31.25Hz.\n• Long exposure images show \nthe maximum and minimum of \nflame oscillations. \n• Transition accompanied by a \ndramatic change in flame \nshape.\nNormal-Gravity Results (UCI)\nSlideshow shows the following voltages:\n100V increments: 0, -2000, -2800: -100: -4100\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "Normal and Low Gravity Results (NASA)\n• Both normal and low-gravity testing \nhave similar behaviors\n• Gravity appears to have a minimal \neffect on the voltage-current \nrelationship for the flow conditions \nstudied\n• Computing the Richardson number as \nthe following:\nconsidering the kinetic energy of the ambient \nflow field show buoyancy effects are not \nsignificant.\nCoflow velocity will be reduced in future \ndrops.\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "•Flame has a 28Hz oscillation at -10kV\n•Video framing rate is insufficient for \nadequate tracking of the flame \noscillations.\nNormal and Low Gravity Results (NASA)\n"
+    },
+    {
+      "locator": "page 13",
+      "text": "Conclusions and Future Work\n• Flame oscillations are present for a variety of applied field strengths.\n• Field driven oscillations can be arranged into two regimes: \n• Those which cause visible flame movement (~10 - 20Hz)\n• Luminous oscillations (~30 - 40Hz region)\n• Lower coflow velocities are necessary to recognize the contribution of buoyancy to \nionization.\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "Acknowledgements\n• This work is supported by NASA ISS Research \nProject via agreement NNX07AB55A\n• Discussions with Lindel Kabalican were very useful.\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "Questions? \n"
+    }
+  ],
+  "details": {
+    "page_count": 15,
+    "empty_pages": [
+      15
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

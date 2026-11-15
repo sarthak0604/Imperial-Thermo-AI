@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:13231f9352d8c7f4ac87",
+  "study": "PSI-26",
+  "filename": "PSI-26_Presentations_BASS Overview.pptx",
+  "key": "psi-data/PSI-26/Presentations/PSI-26_Presentations_BASS Overview.pptx",
+  "category": "Presentations",
+  "size_bytes": 1623251,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcf8c3501a37c2c60dc9&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/13231f9352d8c7f4ac87/PSI-26_Presentations_BASS Overview.pptx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "fa2a579bb703d456716dc9d50402204d067502eca75836274bb4e9fea791d15b",
+  "status": "downloaded"
+}

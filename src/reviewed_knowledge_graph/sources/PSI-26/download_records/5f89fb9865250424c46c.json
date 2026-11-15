@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-26:5f89fb9865250424c46c",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_Drawing_SolidFuelFrame.pdf",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_Drawing_SolidFuelFrame.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 97640,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcfac3501a37c2c60dd9&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/5f89fb9865250424c46c/PSI-26_Engineering Documents_Drawing_SolidFuelFrame.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "a63461ee6896bb92b1651d046dff1fe39240d7b20afac7e5d3e393b6777b6878",
+  "status": "downloaded"
+}

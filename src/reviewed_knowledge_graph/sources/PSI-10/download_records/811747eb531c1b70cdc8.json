@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-10:811747eb531c1b70cdc8",
+  "study": "PSI-10",
+  "filename": "PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+  "key": "psi-data/PSI-10/Experimental table/PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+  "category": "Experimental table",
+  "size_bytes": 17314,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-10/download?file=691f7eef17f78b371b2705e6&version=1&studyVersion=1&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-10/811747eb531c1b70cdc8/PSI-10_Experimental table_Flame Design_Inverse Flame.csv",
+  "sha256": "97933ee9ae0b9ebc6b948a67485a0fe2f8218f753253a4f2be93c40d374c44e4",
+  "status": "downloaded"
+}

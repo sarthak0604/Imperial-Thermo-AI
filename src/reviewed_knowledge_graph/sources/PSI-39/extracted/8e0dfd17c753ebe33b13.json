@@ -1,0 +1,29 @@
+{
+  "id": "res:PSI-39:8e0dfd17c753ebe33b13",
+  "study": "PSI-39",
+  "filename": "PSI-39_Engineering Documents_CFI Operational Requirements and Protocols.pdf",
+  "key": "psi-data/PSI-39/Engineering Documents/PSI-39_Engineering Documents_CFI Operational Requirements and Protocols.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 115496,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-39/download?file=683f4b7bda33c6f4c4cec614&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-39/8e0dfd17c753ebe33b13/PSI-39_Engineering Documents_CFI Operational Requirements and Protocols.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "4e6dc66cb2a4bac018296ddc956281f71637242d72a764fc8d5e349bf1418a7b",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Cool Flames Investigation (CFI) Operational Requirements and Protocols \n \nOperational Requirements: \n \nDroplets must be deployed free floating without any residual momentum in the center of the field of view of the CIR \ndiagnostics. Diagnostics must be capable of recording the radiant emissions of both hot and cool flames. CIR must \nstore be able to store digital imagery data from a full day of test point (approx. 8 burns) for later downlink. \n \n \nOperational Protocols: \n \nFollowing setup and initialization of the CIR rack and MDCA, the chamber is filled with the appropriate atmosphere for \nthe day’s test points. Conditions vary in pressure (0.5 atm to 5.0 atm) and oxygen concentration (10 to 30%). A \nsettling time of approximately 2 minutes elapses prior to initiating the test in order to ensure that the temperature and \npressure of the chamber gases have stabilized. This settling time is followed by the dispensing of a predetermined \namount of fuel (based on the target droplet size) onto a support fiber. When sufficient fuel has been dispensed the \ndispensing needles are retracted and a dwell period of at least 10 seconds is allowed for the droplet internal fluid \nmotion induced by deployment to subside. This is then be followed by initiating power to an igniter pair for a \nselectable amount of time ranging from 1 second to 5 seconds after which the igniter will be retracted from the field of \nview. A near real-time download of the color camera video is required in order to verify successful droplet \ndeployment, ignition, and overall progress of the experiment. Pressure and temperature data of the chamber \nenvironment is also required in near real time. \n"
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

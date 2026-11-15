@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-117:0ae76d77b80d7677dc6c",
+  "study": "PSI-117",
+  "filename": "PSI-117_metadata_NEWID-13_Effect of External T.zip",
+  "key": "psi-data/PSI-117/metadata/PSI-117_metadata_NEWID-13_Effect of External T.zip",
+  "category": "metadata",
+  "size_bytes": 10382,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43de&version=2&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/0ae76d77b80d7677dc6c/PSI-117_metadata_NEWID-13_Effect of External T.zip",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "a9698dbe10629c226dc498610d62ab8c5c7f15e2668412e831164ab74df99222",
+  "status": "downloaded"
+}

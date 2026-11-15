@@ -1,0 +1,31 @@
+{
+  "id": "res:PSI-101:4ef1617ede4941eabc13",
+  "study": "PSI-101",
+  "filename": "PSI-101_Engineering Documents_Drawing_SAME Aging Chamber.PDF",
+  "key": "psi-data/PSI-101/Engineering Documents/PSI-101_Engineering Documents_Drawing_SAME Aging Chamber.PDF",
+  "category": "Engineering Documents",
+  "size_bytes": 212840,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc530b8656d2315bf5092&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/4ef1617ede4941eabc13/PSI-101_Engineering Documents_Drawing_SAME Aging Chamber.PDF",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "3968aeb41d3ac690ea7500b6db620ab3a44ce5e66048e6766db5635fd45cde7c",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": ""
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": [
+      1
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "no_text",
+  "review_status": "not_yet_reviewed"
+}

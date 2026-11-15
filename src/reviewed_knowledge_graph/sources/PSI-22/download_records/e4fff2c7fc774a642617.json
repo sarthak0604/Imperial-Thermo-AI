@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-22:e4fff2c7fc774a642617",
+  "study": "PSI-22",
+  "filename": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+  "key": "psi-data/PSI-22/Experimental table/PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+  "category": "Experimental table",
+  "size_bytes": 2475,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=67a27d2e09ed061032c12373&version=2&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/e4fff2c7fc774a642617/PSI-22_Experimental table_ACME E-FIELD Flames.csv",
+  "sha256": "69090c357b83ae38d161d29001d1d32b40fd77b13324ca6585ee990cdceef524",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:c189a2a0c8859eb31448",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_CIR Paper 59th IAC 2008 - Combustion Research on the International Space Station.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_CIR Paper 59th IAC 2008 - Combustion Research on the International Space Station.pdf",
+  "category": "Presentations",
+  "size_bytes": 2787935,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e6400eb4c08676004ba5&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/c189a2a0c8859eb31448/PSI-22_Presentations_CIR Paper 59th IAC 2008 - Combustion Research on the International Space Station.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "a0189949dc9328a476be4856c05b1547291fd961de7a5e434bd9e2141181106f",
+  "status": "downloaded"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "res:PSI-117:5c71c3e87407e09999b1",
+  "study": "PSI-117",
+  "filename": "PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+  "key": "psi-data/PSI-117/Presentations/PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+  "category": "Presentations",
+  "size_bytes": 8994674,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-117/download?file=6a282739d9d7246402cb43e1&version=1&studyVersion=2&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-117/5c71c3e87407e09999b1/PSI-117_Presentations_Oscillatory_Cool Flame_TFarouk.pdf",
+  "retrieval_method": "existing_local_copy_same_filename_and_byte_count; newly hashed",
+  "sha256": "8e4625bb2b2a8b17bd19854765815a3dd877e5192a9b94bd001aea2e8cccb4b2",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Fahd E. Alama, Frederick L. Dryera,b, Tanvir I. Farouka\na Department of Mechanical Engineering \nUniversity of South Carolina, Columbia, SC 29208, USA\nb Department of Mechanical & Aerospace Engineering\nPrinceton University, Princeton NJ 08544, USA\n34th Annual Meeting of the American Society for Gravitational and \nSpace Research (ASGSR),\nBethesda North Marriott Hotel & Conference Center,\n10/31/2018 – 11/03/2018, Bethesda, MD, USA\nOscillatory cool flame behavior of submillimeter \nsized n-heptane droplets\n1\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "2\nNayagam et al. (CNF 2012)\nMicrogravity droplet experiment\nSteady cool flame n-C7H16 droplet\nAtmospheric pressure\nMotivation\nCool flame has practical \nrelevance to-\nMultiphase\nGas phase\nEngine knock & multi-stage auto-ignition [1]\nLean flammability limit [2]\nSpacecraft fire safety [3]\nLow and NTC kinetics [4]\n[1] Dec (PROCI 2009)  [2] Reuter et al. (CNF 2016)  [3] Nayagam et al. (CNF 2012)  [4] Liang & Law (CNF 2017)\nExperiment\nTheory & \nAnalysis\nRecent research \ninterest triggers\nFarouk et al. (PROCI 2015)\nMicrogravity droplet experiment\nn-C7H16 pulsation behavior\nHigh pressure (3 atm)\nDeng et al. (CNF 2017)\nHysteretic Nature of DME Cool \nflame\nOpposed diffusion flame \nexperiments at 2 and 3 atm\nReuter et al. (CNF 2017)\nCounter flow burner experiments\nExtinction limit of cool flame for \nvarious n-Alkanes\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "3\nMotivation …\nCool flame behavior \nfor smaller droplets at \nnear-limit condition \nwithout significant \nheat loss?\nKatta et al. (PROCI 2017)\nCFD \nstudy \nto \nexplore \nself \nsupporting \ncool \nflame \nfor \nopposed diffusion arrangement\nAlam et al. (C&F 2018)\n1-D CFD study for smaller n-\nalkane droplet to  investigate \ndirect initiation of cool flame\nSohn et al. (PROCI 2017)\nCool flame study of n-Heptane at \nhigh \nstrain \nrates \n(limiting \ncondition) and flame instability\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Droplet Combustion Model\nλ ∂\n∂\nT\nr\nqR\ndr\ndt\ns\nλ ∂\n∂\nl\nT\nr\nD\nY\nr\nl i\nl i\n,\n,\n∂\n∂\nGas Phase: \n• Multi-component molecular diffusion\n• Detailed chemical kinetics \n \n• Statistical narrow band (SNB) radiation\n• Mass conservation\n• Species equation\n• Energy conservation\nDroplet Surface:\n• Surface regression\n• Evaporation of fuel\n• Condensation/Dissolution\n of products \n• Radiative heat exchange\nLiquid Phase:\n• Mass conservation\n• Species equation\n• Energy conservation\nfib\nq\nfib\nq\nFiber:\n• Energy conservation\nambient\nq\nambient\nq\nT. Farouk and F. L. Dryer Combust. and Flame (2012) 159, 200 – 209 \nT. Farouk and F. L. Dryer Combust Theory &  Modelling (2011), 15, 487 – 515\nFiber Model\nBiot number in the order of 10-2\nOne dimensional temperature distribution \nloss\nq\nloss\nq\n(\n)\n(\n)\n,\n,\n4\n4\n(\n)\n4\n4\n                    \nf\np f\nf\nf\nconv j\nf\nf\nfiber\nf\nf\nfiber\nc\nT\nT\nh\nk\nT\nT\nt\nx\nx\nd\nT\nT\nd\nρ\nσε\n∞\n∂\n∂\n\n\n∂\n=\n+\n−\n\n\n∂\n∂\n∂\n\n\n−\n−\nKinetic Schemes\nDetailed model O(100 species) & \nO(1000) elementary reactions)\nDo\nD\nD\nD\nD\nD\n(D/Do)2\nD\nDf\nFlame \nStand-off \nRatio =D/Df\n4\nmp\nmv\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "Do = \n0.5 \nmm\nXO2 = 21%\nXO3 = 5%\nXN2 = \nBalance\nP = 1 atm, \nT = 298 K\nModel\nSpecies\nRxn\nSun et al. (2010)\n128\n565\nMehl et al. (2011)\n652\n2827\nReuter et al. (2017)\n11\n26\nn-C7H16\nO3\nDirect Initiation of Cool Flame\nRapid inception \nof cool flame\n5\nIgnition \nenergy\nRadial direction \nrgas\nOzone assisted cool flame combustion of sub-millimeter sized n-alkane droplets \nat atmospheric and higher pressure. Alam et al. (Combust. Flame 2018)\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "Blue: Oscillatory cool flame\nRed: Stable cool flame\nDo = \n0.5 \nmm\nXO2 = 10%\nXO3 = 5%\nXN2 = \nBalance\nP = 1 atm, \nT = 298 K\nCool Flame Under Near Limit Conditions?\nAttempt to establish direct cool flame\nDrop in Tpeak, gas\nRise in Tpeak, gas\n6\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "\nFlame expands radially  gradual decrease in flame T  \nContracts (t < 0.1 s)\n\nStable cool flame for brief period of time (~0.12 s @ ~710 K)\nHow does the oscillation start?\nRole of LT chemistry?\nWhy does the oscillation grow?\nOscillatory Cool Flame: Primary Observations\n\nInitiation energy results in Tpeak, gas exceeding ~1150 K locally\n7\nTemperature\nKetohydroperoxides\n80 x Ddrop\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Inception of oscillation\nO3 kinetics (dissociation/recombination) elevates \nlocal O2 mole fraction\nInitial local XO2 : 0.10  0.16 (at flame location)\nGradient in O2 mole fraction compels O2 to diffuse \nradially \noutward \ndirection \n \ncausing \nlocal \ndepletion\nFlame temperature \nincreases due to \nhigher O2 \navailability\nFlame contracts \ndue to \nconsumption of O2\nOscillations \nrepeats\nFlame moves \nradially out\nPulsing starts at \nXO2 < ~0.135\nAs time \nprogresses, local \nO2 depletes\n8\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "Low-temperature oxidation and autoignition chemistry of large hydrocarbons.\nCombustion (5th Edition), Chapter 3, Page 104\nRole of Low Temperature Chemistry on the Oscillation\nConsumption of C7H14OOH depends on the extend of \nreactivity from chain propagation/termination reactions \nand degenerate chain branching reactions \nChain propagation / \ntermination reaction \nclass correlates with \ntemperature  \nChain branching \nreaction class \nundergoes three \ndistinct stages\n9\nRH\nṘ\nṘOO\nQOOH\nOOQOOH\nHOOQ-HOOH\nHOOQ-HO + ȮH\nȮQ-HO + 2ȮH\n+X\n-XH\nAlkyl radical\n+ O2\nfirst O2 addition\nAlkylperoxy radical\nInternal H abstraction\nHydroperoxy alkyl radical\n+ O2\nsecond O2 addition\ninternal H abstraction\nKetohydroperoxide\nDegenerate \nchain branching\nAlkene + HȮ2\nȮH+ cyclic ethers, \naldehydes\n or ketones\nROOH + O2\nRO + OH\nChain \nbranching\nAlkene + HȮ2\nȮH+ cyclic ethers, \naldehydes\n or ketones\nOOQOOH\nHOOQ-HOOH\nHOOQ-HO + ȮH\nȮQ-HO + 2ȮH\n+ O2\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "Favorable Tmax for O2C7H14OOH production @ 1 atm \nhovers ~700 K\n𝐝𝐝𝐝𝐝 \n𝐝𝐝𝐝𝐝\n𝐎𝐎𝟐𝟐𝐂𝐂𝟕𝟕𝐇𝐇𝐇𝐇𝐇𝐇𝐇𝐇𝐇𝐇𝐇𝐇\nTgas\nDrop in O2C7H14OOH mole fraction, and shutting \ndown HR contribution from \nO2C7H14OOH \n C7H14O3 + OH\nInitial high temperature decompose C7H14O3 via \nendothermic reaction (stage # 1)\nC7H14O3 \n R’CHO + R’(CO) R’’ +OH\nC7H14OOH \n C7H14O + OH\nO2C7H14OOH \n C7H14OOH + O2 \nExothermicity from other classes are not enough to \nmaintain same Tgas w/o additional contribution\nSteep fall in peak gas temperature (stage  # \n1)  drop in C7H14 mole fraction\nRole of LT Chemistry: Stage # 1\nStage # 1\n10\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "Drop in Tgas beyond a threshold ( point A, \n~712 K)  changes C7H14O3 profile slope  \nReactivates\nO2C7H14OOH \n C7H14O3 + OH (exothermic)\nRole of LT Chemistry: Stage # 2 & 3\nGas phase temperature starts to increase \n(change slope)  Reflection of C7H14 \nSimultaneous \nexothermic \ncontributions \nfrom degenerate branching and chain \npropagation  sharp increase in Tgas\nTgas > Tthreshold  degenerate branching \ncontribution starts to diminish  abrupt \nchange in C7H14O3\nBalance between two classes of reactions \ncontinue for brief period of time  \nTemperature increases to ~750 K\nInsufficient heat release from the chain \nbranching/termination route compels the \ngas temperature to fall @ t~0.638 s\nStage # 2\nStage # 3\n11\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "Dynamic Competition of LTC & Fuel Leakage\nRadial Growth of Oscillation:\nFuel Leakage\n12\n"
+    },
+    {
+      "locator": "page 13",
+      "text": " Dynamics of near-limit cool flame burning of isolated submillimeter (Do = \n0.5 mm) n-C7H16 droplet is numerically studied.\nReduced ambient O2 mole fraction (10%) is considered to facilitate near-\nlimit condition.\nUnder selective O3 seeding (5%), the droplet briefly attempts to initiate \nstable cool flame before entering continuous oscillatory cool flame burn.\nLocal depletion of O2 (<13.5%) near the droplet initiates the pulsing \nbehavior with initial small fluctuation in flame temperature.\nThe oscillation is found to increase in magnitude with time, and at each \nsuccessive cycle.\nDynamic interaction of degenerate chain branching and chain propagation \n/ termination reaction classes of QOOH (within NTC region) is responsible \nfor the observed oscillation.\nContinuous fuel leakage through the flame location assists the oscillation \nto grow in radial direction with time.\nSummary\n13\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "14\nThis work was supported by the National \nAeronautics and Space Administration \nthrough grant NNX17AF97A\nAcknowledgement\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "Initiation energy \ndissipation\nReaction with partially \npremixed gas phase fuel\nPremixed  Diffusive \nburn\nSteady ‘cool flame’\nBackup slide # 1: Direct Initiation of Cool Flame: Initial Dynamics\n15\nFlash point 269.3 K\n(NOAA)\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Backup slide # 2: Dynamic Competition of LTC & Fuel Leakage\nRadial Growth of Oscillation:\nFuel Leakage\n16\n"
+    },
+    {
+      "locator": "page 17",
+      "text": "L\nG\nන\n𝑟𝑟−\n𝑟𝑟+\n)\n𝜕𝜕(𝑦𝑦𝑖𝑖𝜌𝜌\n𝜕𝜕𝑡𝑡\n𝑟𝑟2𝑑𝑑𝑑𝑑+\n|\n𝑟𝑟2̇𝑟𝑟𝑟𝑟−\n𝑟𝑟+\nฬ\n1\n3 𝑟𝑟3\n𝑟𝑟−\n𝑟𝑟+ න\n𝑟𝑟−\n𝑟𝑟+\nቚ\n𝑦𝑦𝑖𝑖𝜌𝜌𝑟𝑟2𝑑𝑑𝑑𝑑+ 𝑦𝑦𝑖𝑖𝜌𝜌𝜌𝜌−𝜌𝜌̇𝑟𝑟𝑟𝑟2\n𝑟𝑟−\n𝑟𝑟+ = \nቚ\n−𝑦𝑦𝑖𝑖𝜌𝜌𝑉𝑉𝑖𝑖𝑟𝑟2\n𝑟𝑟−\n𝑟𝑟+ + න\n𝑟𝑟−\n𝑟𝑟+̇\n𝜔𝜔𝑖𝑖𝑟𝑟2𝑑𝑑𝑑𝑑\nන\n𝑟𝑟−\n𝑟𝑟+\n)\n𝜕𝜕(ℎ𝜌𝜌\n𝜕𝜕𝑡𝑡\n𝑟𝑟2𝑑𝑑𝑑𝑑+\n|\n𝑟𝑟2̇𝑟𝑟𝑟𝑟−\n𝑟𝑟+\nฬ\n1\n3 𝑟𝑟3\n𝑟𝑟−\n𝑟𝑟+ න\n𝑟𝑟−\n𝑟𝑟+\nቚ\nℎ𝜌𝜌𝑟𝑟2𝑑𝑑𝑑𝑑+ ℎ𝜌𝜌𝜌𝜌−𝜌𝜌̇𝑟𝑟𝑟𝑟2\n𝑟𝑟−\n𝑟𝑟+ \n= \nቚ\n−𝑞𝑞𝑟𝑟2\n𝑟𝑟−\n𝑟𝑟+ + 𝑆𝑆𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿 𝑜𝑜𝑜𝑜 𝑔𝑔𝑔𝑔𝑔𝑔𝑔𝑔−𝑡𝑡𝑡𝑡𝑡𝑡𝑡−𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓\n෍\n∀i\nyi = 1\n𝑞𝑞𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑=\n෍\n𝑖𝑖 𝜖𝜖 𝑆𝑆,𝑔𝑔𝑔𝑔𝑔𝑔\nℎ𝑖𝑖𝜌𝜌𝑦𝑦𝑖𝑖𝑉𝑉𝑖𝑖−𝜆𝜆𝛻𝛻𝑇𝑇𝑔𝑔−𝑝𝑝\n෍\n𝑖𝑖 𝜖𝜖 𝑆𝑆,𝑔𝑔𝑔𝑔𝑔𝑔\n𝜃𝜃𝑖𝑖𝒅𝒅𝑖𝑖\n𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻, 𝜃𝜃𝑖𝑖= 𝐷𝐷𝑖𝑖𝑖𝑖𝜒𝜒𝑗𝑗\n𝛻𝛻 .⃗𝑞𝑞𝑟𝑟𝑟𝑟𝑟𝑟= න\n0\n∞\n𝑎𝑎(𝜂𝜂,⃗𝑟𝑟) 4𝜋𝜋𝐼𝐼𝑏𝑏𝜂𝜂,⃗𝑟𝑟−ර\n4𝜋𝜋\n𝐼𝐼𝜂𝜂,⃗𝑟𝑟, 𝜔𝜔𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑\nGoverning Equations & Boundary Conditions\nቚ\n𝑦𝑦𝑖𝑖𝜌𝜌𝜌𝜌−𝑝𝑝̇𝑟𝑟\n−\n+\n=\nቚ\n−𝑦𝑦𝑖𝑖𝜌𝜌𝑉𝑉𝑖𝑖−\n+\n෍\n𝑖𝑖 𝜖𝜖 𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙\nℎ𝑣𝑣𝑣𝑣𝑣𝑣,𝑖𝑖𝑦𝑦𝑖𝑖𝜌𝜌𝜌𝜌−𝜌𝜌̇𝑟𝑟+ 𝑦𝑦𝑖𝑖𝜌𝜌𝑉𝑉𝑖𝑖+ =\nቚ\n−𝑞𝑞\n−\n+\n−𝑞𝑞𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓\n෍\n𝑖𝑖 𝜖𝜖 𝑔𝑔𝑔𝑔𝑔𝑔\n𝑦𝑦𝑖𝑖,+ = 1\n෍\n𝑖𝑖 𝜖𝜖 𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙\n𝑦𝑦𝑖𝑖,−= 1\n𝑇𝑇+ = 𝑇𝑇−\n൯\n𝑥𝑥𝑖𝑖,+ 𝑝𝑝= 𝑥𝑥𝑖𝑖,−𝛾𝛾𝑖𝑖𝑇𝑇, 𝑥𝑥𝑗𝑗,− 𝑝𝑝𝑣𝑣𝑣𝑣𝑣𝑣,𝑖𝑖(𝑇𝑇\nFlux Balance\nEnergy Balance\nLiquid & Gas \nPhase Mass \nFraction Balance\nTemp Balance\nPhase Balance\nAt ∞ (200 x Do)\nXO2  = 0.21\nXN2  = 0.79\nT     = 298 K\n𝑆𝑆𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿 𝑜𝑜𝑜𝑜 𝐺𝐺𝐺𝐺𝐺𝐺𝐺𝐺 𝑡𝑡𝑡𝑡𝑡𝑡𝑡 𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓=\nන\n𝑟𝑟−\n𝑟𝑟+ 4ℎ∞𝑛𝑛𝑓𝑓\n𝑑𝑑𝑓𝑓\n𝑇𝑇−𝑇𝑇𝑓𝑓𝑟𝑟2 𝐴𝐴𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝐼𝐼𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓\n𝑉𝑉𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙/𝑔𝑔𝑔𝑔𝑔𝑔\n𝑑𝑑𝑑𝑑\n𝐴𝐴𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓= 𝜋𝜋𝑟𝑟𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓\n2\n𝑉𝑉𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙/𝑔𝑔𝑔𝑔𝑔𝑔= 4\n3 𝜋𝜋𝑟𝑟𝑙𝑙/𝑔𝑔\n3\nSpecies Conservation Equation\nEnergy Conservation Equation\nConservation of Mass Fraction\nDiffusive Heat Flux Equation\nRadiative Heat Flux Equation\n𝜕𝜕𝜌𝜌𝑓𝑓𝐶𝐶𝑝𝑝,𝑓𝑓𝑇𝑇𝑓𝑓\n𝜕𝜕𝜕𝜕\n= 𝜕𝜕\n𝜕𝜕𝜕𝜕𝑘𝑘𝑓𝑓\n𝜕𝜕𝑇𝑇𝑓𝑓\n𝜕𝜕𝜕𝜕\n+ 4ℎ𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐,𝑗𝑗\n𝑑𝑑𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓\n𝑇𝑇−𝑇𝑇𝑓𝑓−4𝜎𝜎𝜀𝜀𝑓𝑓\n𝑑𝑑𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓\n𝑇𝑇𝑓𝑓\n4 −𝑇𝑇∞4\nFiber Model\n* T. Farouk and F. L. Dryer Combust. and Flame (2012) 159, 200 – 209 \n+ T. Farouk and F. L. Dryer Combust Theory &  Modelling (2011), 15, 487 – 515\n17\n"
+    },
+    {
+      "locator": "page 18",
+      "text": "න\n𝑟𝑟−\n𝑟𝑟+\n)\n𝜕𝜕(𝑦𝑦𝑖𝑖𝜌𝜌\n𝜕𝜕𝑡𝑡\n𝑟𝑟2𝑑𝑑𝑑𝑑+\n|\n𝑟𝑟2̇𝑟𝑟𝑟𝑟−\n𝑟𝑟+\nฬ\n1\n3 𝑟𝑟3\n𝑟𝑟−\n𝑟𝑟+ න\n𝑟𝑟−\n𝑟𝑟+\nቚ\n𝑦𝑦𝑖𝑖𝜌𝜌𝑟𝑟2𝑑𝑑𝑑𝑑+ 𝑦𝑦𝑖𝑖𝜌𝜌𝜌𝜌−𝜌𝜌̇𝑟𝑟𝑟𝑟2\n𝑟𝑟−\n𝑟𝑟+ = \nቚ\n−𝑦𝑦𝑖𝑖𝜌𝜌𝑉𝑉𝑖𝑖𝑟𝑟2\n𝑟𝑟−\n𝑟𝑟+ + න\n𝑟𝑟−\n𝑟𝑟+̇\n𝜔𝜔𝑖𝑖𝑟𝑟2𝑑𝑑𝑑𝑑\nන\n𝑟𝑟−\n𝑟𝑟+\n)\n𝜕𝜕(ℎ𝜌𝜌\n𝜕𝜕𝑡𝑡\n𝑟𝑟2𝑑𝑑𝑑𝑑+\n|\n𝑟𝑟2̇𝑟𝑟𝑟𝑟−\n𝑟𝑟+\nฬ\n1\n3 𝑟𝑟3\n𝑟𝑟−\n𝑟𝑟+ න\n𝑟𝑟−\n𝑟𝑟+\nቚ\nℎ𝜌𝜌𝑟𝑟2𝑑𝑑𝑑𝑑+ ℎ𝜌𝜌𝜌𝜌−𝜌𝜌̇𝑟𝑟𝑟𝑟2\n𝑟𝑟−\n𝑟𝑟+ \n= \nቚ\n−𝑞𝑞𝑟𝑟2\n𝑟𝑟−\n𝑟𝑟+ + 𝑆𝑆𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿 𝑜𝑜𝑜𝑜 𝑔𝑔𝑔𝑔𝑔𝑔𝑔𝑔−𝑡𝑡𝑡𝑡𝑡𝑡𝑡−𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓\n෍\n∀i\nyi = 1\n𝑞𝑞𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑=\n෍\n𝑖𝑖 𝜖𝜖 𝑆𝑆,𝑔𝑔𝑔𝑔𝑔𝑔\nℎ𝑖𝑖𝜌𝜌𝑦𝑦𝑖𝑖𝑉𝑉𝑖𝑖−𝜆𝜆𝛻𝛻𝑇𝑇𝑔𝑔−𝑝𝑝\n෍\n𝑖𝑖 𝜖𝜖 𝑆𝑆,𝑔𝑔𝑔𝑔𝑔𝑔\n𝜃𝜃𝑖𝑖𝒅𝒅𝑖𝑖\n𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻, 𝜃𝜃𝑖𝑖= 𝐷𝐷𝑖𝑖𝑖𝑖𝜒𝜒𝑗𝑗\n𝛻𝛻 .⃗𝑞𝑞𝑟𝑟𝑟𝑟𝑟𝑟= න\n0\n∞\n𝑎𝑎(𝜂𝜂,⃗𝑟𝑟) 4𝜋𝜋𝐼𝐼𝑏𝑏𝜂𝜂,⃗𝑟𝑟−ර\n4𝜋𝜋\n𝐼𝐼𝜂𝜂,⃗𝑟𝑟, 𝜔𝜔𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑\nSupplementary Slide # Governing Equations\n𝑆𝑆𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿 𝑜𝑜𝑜𝑜 𝐺𝐺𝐺𝐺𝐺𝐺𝐺𝐺 𝑡𝑡𝑡𝑡𝑡𝑡𝑡 𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓=\nන\n𝑟𝑟−\n𝑟𝑟+ 4ℎ∞𝑛𝑛𝑓𝑓\n𝑑𝑑𝑓𝑓\n𝑇𝑇−𝑇𝑇𝑓𝑓𝑟𝑟2 𝐴𝐴𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝐼𝐼𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓\n𝑉𝑉𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙/𝑔𝑔𝑔𝑔𝑔𝑔\n𝑑𝑑𝑑𝑑\n𝐴𝐴𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓= 𝜋𝜋𝑟𝑟𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓\n2\n𝑉𝑉𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙𝑙/𝑔𝑔𝑔𝑔𝑔𝑔= 4\n3 𝜋𝜋𝑟𝑟𝑙𝑙/𝑔𝑔\n3\nSpecies Conservation Equation\nEnergy Conservation Equation\nConservation of Mass Fraction\nDiffusive Heat Flux Equation\nRadiative Heat Flux Equation\n𝜕𝜕𝜌𝜌𝑓𝑓𝐶𝐶𝑝𝑝,𝑓𝑓𝑇𝑇𝑓𝑓\n𝜕𝜕𝜕𝜕\n= 𝜕𝜕\n𝜕𝜕𝜕𝜕𝑘𝑘𝑓𝑓\n𝜕𝜕𝑇𝑇𝑓𝑓\n𝜕𝜕𝜕𝜕\n+ 4ℎ𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐,𝑗𝑗\n𝑑𝑑𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓\n𝑇𝑇−𝑇𝑇𝑓𝑓−\n4𝜎𝜎𝜀𝜀𝑓𝑓\n𝑑𝑑𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓\n𝑇𝑇𝑓𝑓\n4 −𝑇𝑇∞4\nFiber Model\nyi = Mass fraction\nρ = Mass density\nṙ  = Radius\nU = Bulk fluid velocity\nVi = Diffusion velocity,\nωi = Rate of species production due to chemical reaction\nh = Enthalpy per unit mass\nq = Heat flux\nSloss/gain due to fiber = Loss and gain due to the presence of the \ntether fiber\nk = Thermal conductivity\nTg = Gas temperature, \nθi = Thermal diffusion coefficient\nθi = DijXj\ndi = Thermodynamic driving force\nhvap,i = Enthalpy of vaporization\np = System pressure,\nxi = Mole fraction,\nγi = Activity coefficient\npvap,i = Vapor pressure of the i-th component\n‘+’ and ‘-’ denote location in the gas and liquid phase\n18\n"
+    },
+    {
+      "locator": "page 19",
+      "text": "Supplementary Slide # Governing Equations\nThe complete set of coupled partial differential and algebraic equations are \ndiscretized first in space and then integrated in an automated fashion as a set \nof coupled ordinary differential-algebraic equations in time.\nSpatial discretization is performed according to a node-centered finite \nvolume scheme with a second order accuracy.\nThe innermost liquid node is centered at the origin, providing the required \nno-flux condition.\nThe discretized mass flux is represented on cell interfaces and not cell \ncenters, in the manner traditionally referred to as a staggered grid to avoid \noscillatory solutions.\nNumerical integration of the final set of discretized equations is performed \nusing a backward difference formula with a variable order of up to fifth order \nand a variable time step utilizing a fully implicit multipoint interpolation.\n19\n"
+    }
+  ],
+  "details": {
+    "page_count": 19,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

@@ -1,0 +1,128 @@
+{
+  "id": "res:PSI-107:b1007987f900f63ea973",
+  "study": "PSI-107",
+  "filename": "PSI-107_Presentations_Laminar Smoke Points in Coflow Measured Aboard ISS.pdf",
+  "key": "psi-data/PSI-107/Presentations/PSI-107_Presentations_Laminar Smoke Points in Coflow Measured Aboard ISS.pdf",
+  "category": "Presentations",
+  "size_bytes": 1306705,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-107/download?file=683da125b8656d2315bf448c&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-107/b1007987f900f63ea973/PSI-107_Presentations_Laminar Smoke Points in Coflow Measured Aboard ISS.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "bd980e9e1195e0225a31c070c279b06a131f7f66a387a35ab3e7e17a25cde256",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "48th AIAA  Aerospace Sciences Meeting\nOrlando, FL, January 6, 2010\nLaminar Smoke Points in Coflow\nLaminar Smoke Points in Coflow\nMeasured Aboard the International Space \nMeasured Aboard the International Space \nStation\nStation\nK. T. Dotson1, P.B. Sunderland1, \nZ -G Yuan2 D L Urban2\nZ. G. Yuan , D.L. Urban\n1University of Maryland, \nDepartment of Fire Protection Engineering\n2NASA Glenn Research Center\nAcknowledgments\nGerard M. Faeth\nS\nC\n1\nSPICE Engineering Team\nISS Crew: M. Barratt, E.M. Fincke, S.H. Magnus, K. Wakata\nSupported by NASA cooperative agreement NNX07AO91A\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Motivation\nMotivation\n•\nSoot\n– Pollutant, carcinogen, contributes to glacial melting\n•\nSmoke point (SP) measures sooting propensity.\n– Luminous flame length before smoke emission.\n– Correlates w/ soot volume fraction and radiative loss fraction.\n•\nPrediction: Non-buoyant flames don’t have smoke points.\n– Residence time would not scale with flow rate.\n•\nSmoke points found aboard parabolic aircraft and space shuttle.\np\np\np\n•\nIt is believed that residence time influences smoking behavior.\nUse coflow to control residence time\n2\nԟ Use coflow to control residence time.\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "Background\nBackground\n3\nTypical 1-g Smoke Point Behavior: \nEthylene  1 Atm, Nozzle I.D. 14 mm, co-flow ID 101 mm,  co-flow 6.4 cm/s (Air)\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Background\nBackground\n•\nNon-buoyant smoke points were first observed on low-gravity aircraft.\n•\nDrop tower test results were ambiguous for ethylene smoke points \nowing to short development times\ng\n•\nThe Laminar Soot Processes Experiment (1997) with quiescent \nambient offered the inadvertent opportunity to study smoke points in a\nambient offered the inadvertent opportunity to study smoke points in a \nquiescent ambient.\n•\nTwo type of soot emission were observed: termed closed tip and\n•\nTwo type of soot emission were observed: termed closed tip and \nopen tip.\n4\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "Background\nBackground\nOnset of open-tip laminar smoke-point condition \n100 kPa\n1.6 mm nozzle\nEthylene\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "Structure of open-tip flame\n100kPa ethylene flame soot \nconcentration and temperature\n50\nLuminous flame length 49  cm\n50 mm\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "Background\nBackground\nOnset of closed-tip laminar smoke-point condition \n50 kP\n50 kPa\n1.6 mm Nozzle\nEthylene\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Structure of closed-tip flame\n50 kPa Ethylene flame soot \nconcentration and temperature\nconcentration and temperature\nLuminous flame length 63  mm\n50 mm\n"
+    },
+    {
+      "locator": "page 9",
+      "text": ""
+    },
+    {
+      "locator": "page 10",
+      "text": ""
+    },
+    {
+      "locator": "page 11",
+      "text": "Background\nBackground\n•\nIn buoyant flames, coflow increases smoke point.\n– SP increases up to a point, then effect ceases (Schalla 1954). \nSP increases for low pressure flames\n– SP increases for low pressure flames .\n– Hypothesis:  Altered soot pathways, reduced soot formation time.\n•\nNon-buoyant smoke point flame lengths3,4.\n– Based on Mahalingam et. al (1990) and Spalding (1979).\nST\nd\nf\nf\nZ\nSc\nC\nd\nL\nL\n16\nRe\n)\n(\n0 \n\nCoflow Case\nNeglects v\nf\nm\nST\nZ\nd\n16\nd\nf\nf\nZ\nSc\nC\nd\nL\nL\n32\nRe\n3\n)\n(\n0 \n\nStill Air Case\nST\nf\nf\nZ\nm\nC\nL \n11\nST\nZ\nd\n32\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "Objectives\nObjectives\n•\nMeasure nonbuoyant smoke points of various fuels.\n•\nIdentify the effects of coflow velocity u\nand burner diameter d\nIdentify the effects of coflow velocity, ua, and burner diameter, d.\n– They control of the flame velocity field.\n•\nCorrelate the luminous flame lengths L\n•\nCorrelate the luminous flame lengths, LSP.\n12\nISS Crewmember Micheal Barratt\nMicrogravity Science Glovebox (MSG)\n"
+    },
+    {
+      "locator": "page 13",
+      "text": "Experimental\nExperimental\n•\nBrought to ISS 2008\nPerforated\nCopper Plate\n•\nOperated on ISS in 2009.\n•\nAdjust air and fuel velocities\nAdjust air and fuel velocities.\n•\nFind smoke point.\n•\nNikon D100 SLR color digital camera for stills.\n•\nColor video down linked in real time\n•\nColor video down-linked in real-time.\n•\nSmoke points from video.\nFlame tip at maximum rate of change in grayscale\nH\nb\nScreen\n13\n– Flame tip at maximum rate of change in grayscale \nintensity.\nHoneycomb\nFan\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "Test Matrix\nTest Matrix\n•\nFuels: C2H4, C3H8, C3H6, C3H6/N2\n– No smoke points for CH4 - flames too long\n•\n2 Mixtures: 75% and 50% C3H6 w/ balance N2\n•\nRound burners ID : 0.41, 0.76, 1.60 mm\n•\nDuct (76 x 76 mm)  x 170 mm long\n•\nCoflow velocity: 5 – 65 cm/s\nCoflow velocity: 5 \n65 cm/s\n•\nConditions limited by length of test volume and onset of flame \nlifting\n14\nlifting.\n•\nRed < 788 → laminar jets\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "Effects of Fuel and Coflow Velocity\nEffects of Fuel and Coflow Velocity\nFi\nd F\nl V l\nit\nFixed Fuel Velocity, uf\nDecreasing Coflow \nVelocity u\nVelocity, ua\nFixed Coflow Velocity, \nua\nIncreasing Fuel \nVelocity u\n15\nVelocity, uf\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Smoke Point Images\nSmoke Point Images\nPropylene C3H6\n50mm\n25mm\nd (mm)\n1.6\n0.76\n0.41\nuf (cm/s)\n12\n21\n29\nua (cm/s)\n9.1\n34\n51\n61\n96\n126\n7.2\n27\n41\n484\n595\n716\n5.4\n15\n27\n16\n"
+    },
+    {
+      "locator": "page 17",
+      "text": "Smoke Points in Coflow\nSmoke Points in Coflow\n•\nIncreasing ua\nincreases LSP.\n– Decreases soot\n– Decreases soot \nformation time.\n•\nDecreasing d\nDecreasing d\nincreases LSP.\n•\nFor d = 1 6 mm\n•\nFor d = 1.6 mm, \nfuel order is that of \nbuoyant SPs.\n•\nFor d = 0.76 mm, \nC2H4 LSP longer \nthan C H L\n17\nthan C3H8 LSP.\n"
+    },
+    {
+      "locator": "page 18",
+      "text": "Smoke Points in Coflow & Quiescent\nSmoke Points in Coflow & Quiescent\n•\nC3H8 and C2H4, \nSPICE and LSP.\n•\nExtrapolation to ua = 0\n– Matches for C2H4.\nMatches for C2H4.\n– 0.76 mm C3H8 hits \nlower end of LSP \nrange.\nUrban \n•\nLSP observed weak \ndiameter \net. al., \n(1995)\ndependence.\n18\n"
+    },
+    {
+      "locator": "page 19",
+      "text": "Smoke Point Luminous Lengths\nSmoke Point Luminous Lengths\n•\nReasonable \ncorrelation without \nvirtual origin\nvirtual origin \ncorrection.\n•\nLSP depends \nprimarily on mf and \nZst.\n•\nLarger slope for \nlower  ua/uf.\n•\nCoflow flame shape \ntheory neglects radial \nForced to (0,0)\n19\nvelocity.\n"
+    },
+    {
+      "locator": "page 20",
+      "text": "Smoke Point Luminous Lengths\nSmoke Point Luminous Lengths\nLSP points were \n•\nQuiescent 30 - 130\nQuiescent 30 130 \nkPa \n•\nd = 1.6 and 2.7 mm.\n•\nSimilar slopes despite \nh\ni\nfl\nchange in co-flow .\n20\n"
+    },
+    {
+      "locator": "page 21",
+      "text": "Simplified Treatment of Residence Time\n•\nCenterline velocity of\n150\nCenterline velocity of \nnon-reacting  jet \n(Spauling).\n•\nSimilarity of jet-coflow\n120\nSimilarity of jet coflow \ndefect velocity.\n•\nShift solution to match \nboundary conditions.\n90\nes  (ms)\nboundary conditions.\n•\nResidence time for \nsmoke points\n60\ntre\nd(mm) 0.41 0.76 1.6\nC H\nC2H4\nsmoke points \ndecrease with LSP\n– Effect of coflow.\n• Similar scatter was\n0\n30\n50% C3H6\nC3H8\n75% C3H6\n+\nC3H6\n• Similar scatter was \nseen with formation \ntime/oxidation time\n0\n0\n20\n40\n60\n80\n100\n120\nLSP (mm)\n"
+    },
+    {
+      "locator": "page 22",
+      "text": "Threshold Soot Indices\n0g TSI \n1g TSI \nC H\n1 3\n1 3\ny = 5.99x\nR² = 0.93\n100\n120\nC2H4\n1.3\n1.3\nC3H8\n1.39\n0.6\nC3H6\n4.51\n4.8\n80\n100\n75% C3H6\n3.38\n3.6\n50% C3H6\n2.26\n2.4\n60\nSP (mm)\n1-g TSI’s from Calcote and \nManos\n40\nLS\nd(mm) 0.41 0.76 1.6\nC3H8\nC2H4\n0\n20\n50% C3H6\n75% C3H6\n+\nC3H6\n22\n0\n0\n5\n10\n15\n20\nTSI-1 ( d / mm )-0.8 [ uair / ( mm / s ) ]0.5\n"
+    },
+    {
+      "locator": "page 23",
+      "text": "Conclusions\nConclusions\nOver the presently tested range of fuel, ua, and d:\n•\nSmoke point increases with increasing coflow velocity\nSmoke point increases with increasing coflow velocity.\n•\nSmoke point decreases with increasing burner diameter.\n•\nFuel sooting propensities agree with those of buoyant flames.\n– Propane < Ethylene < 50% Propylene < 75% Propylene < Propylene\n•\nEthylene less sooty than propane for 0.76 mm burner. (appears \nas a different TSI for propane)\n•\nLSP scales with fuel mass flow rate.\n– Consistent with simplified theory.\n23\n– Second order effect: Longer LSP for low ua / uf .\n– Coflow theory neglects radial velocity, v.\n"
+    },
+    {
+      "locator": "page 24",
+      "text": "Test Points\nTest Points\nParameter\nC2H4\nC3H8\nC3H6\n75% C3H6\n50% C3H6\nZst\n0.0637\n0.0603\n0.0637\n0.0768\n0.1018\nT d K\n2367\n2264\n2332\n2317\n2288\nTad, K\n2367\n2264\n2332\n2317\n2288\nd, mm\n0.76 – 1.6\n0.76 – 1.6\n0.41 – 1.6\n0.76 – 1.6\n0.76 – 1.6\nua, cm/s\n18 – 58\n16 – 45\n5.4 – 57\n13 – 65\n11 – 49\nL\n37\n105\n46\n105\n13\n59\n15\n44\n22\n50\nLSP, mm\n37 – 105\n46 – 105\n13 – 59\n15 – 44\n22 – 50\nuf, cm/s\n69.6 – 734\n48.9 – 460\n11.2 – 763\n19.9 – 272\n49.6 – 112\nmf, mg/s\n1.62 – 3.89\n1.80 – 3.84\n0.39 – 1.73\n0.64 – 1.98\n1.45 – 3.29\nRed\n127 – 636\n176 – 788\n36.4 – 630\n49.8 – 324\n89.4 – 207\n# SP\n6\n6\n23\n13\n7\nAll smoke point flames were attached to the burner i e\nnot lifted\nAll smoke point flames were attached to the burner, i.e., not lifted. \nFor mixtures the fuel mole fraction is shown and the inert is N2. \nParameters ua, uf, and Red assume conditions of 298 K, 101 kPa and 211% O2, and \nuniform velocity profiles\n24\nuniform velocity profiles. \nViscosities used to calculate Red involve burner gas properties at 298 K and 101 kPa.\n"
+    },
+    {
+      "locator": "page 25",
+      "text": "Air \nAir – Fuel Velocity Ratio\nFuel Velocity Ratio\nSlopes\n(Nonzero y\n(Nonzero y –\nintercept)\nC1 = 1 357\nC1\n 1.357\nC2 = 1.649\nC\n2 046\nua / uf\n1\nC3 = 2.046\nC3 = 1.51 C1\n2\n3\nLSP Propane data \nCLSP = 2.026\n25\nCLSP\n 2.026\n"
+    }
+  ],
+  "details": {
+    "page_count": 25,
+    "empty_pages": [
+      9,
+      10
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

@@ -1,0 +1,197 @@
+{
+  "id": "res:PSI-26:3e93719e7ab6130e3813",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_BASS_SysAcceptanceReview.2.pdf",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_BASS_SysAcceptanceReview.2.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 1804490,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafceac3501a37c2c60d19&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/3e93719e7ab6130e3813/PSI-26_Engineering Documents_BASS_SysAcceptanceReview.2.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "27fc3bba3dd172b9c640f34d01cb897e6b19b0fbca4a7c6e5fd57d6aa887b5d5",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "SLICE/BASS \nSYSTEM ACCEPTANCE REVIEW (SAR-2)  \nJune 18, 2010 \nPrepared For: \nNational Aeronautics and Space Administration \nJohn H. Glenn Research Center at Lewis Field \nMicrogravity Science Division \nCleveland, Ohio  44135 \nPrepared By: \nZIN Technologies, Incorporated \n6745 Engle Road \nMiddleburg Hts, Ohio  44130 \n \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "SLICE/BASS SAR-2 Agenda \n•\nIntroduction \n•\nSLICE Hardware/Science Overview, Requirements, PI Endorsement \n•\nSLICE Verification Testing & Status, and Operations Overview \n•\nSLICE Open Work \n•\nBASS Hardware/Science Overview, Requirements, PI Endorsement \n•\nBASS Verification Testing & Status and Operations Overview \n•\nBASS Open Work \n•\nSAR-1 Board Assessment (Jim Cockrell) \n•\nZIN Quality Assessment (Debra Lyden) \n•\nGRC S&MA Assessment (Bipin Patel) \n•\nSAR-2 Board Discussion (Pete McCallum) \n6/16/2010 \n2 \n"
+    },
+    {
+      "locator": "page 3",
+      "text": "SAR-2 Review Board \nBoard Member \nResponsibility \nPeter McCallum \nBoard Chair \nGlen Horvat \nEngineering \nBhim Singh \nResearch \nFrank Greco \nSafety/Quality Assurance \n6/16/2010 \n3 \n"
+    },
+    {
+      "locator": "page 4",
+      "text": "SLICE/BASS Project Team \nProject Manager \nResponsibility \nRobert Hawersaat \nGRC Project Manager \nPaul Ferkul \nBASS Principal Investigator \nSandra Olson \nBASS Co-Investigator \nJames Tien \nBASS Co-Investigator \nFumi Takahashi \nBASS/SLICE Co-Investigator \nMarshall Long \nSLICE Principal Investigator \nMitch Smooke \nSLICE Co-Investigator \nDennis Stocker \nSLICE Co-Investigator \nJay Owens \nImaging/Optics \nMike Johnston \nResearch Assistant \nTibor Lorik \nZIN Project Lead \nChuck Bunnell \nMechanical/Operations \nChris Bodzioney/Debra Lyden \nSafety \nChris Dixon \nMechanical Designer \nKevin Dendorfer \nTechnician \nJim Bruewer \nMechanical Engineer \n6/16/2010 \n4 \n"
+    },
+    {
+      "locator": "page 5",
+      "text": "System Acceptance Review Purpose \nObtain Executive Board Assessment on the \nacceptability of the SLICE and BASS hardware to \nproceed with shipment for STS-133/Flight ULF-5 \nMPLM scheduled for launch in September 2010. \n6/16/2010 \n5 \n"
+    },
+    {
+      "locator": "page 6",
+      "text": "SLICE HARDWARE OVERVIEW \n• SLICE will utilize the SPICE hardware currently on ISS. \n– Experiment Assembly, Cables, Control Box, Video Camera. \n• SLICE will refurbish the SPICE Gas Bottles for re-flight. \n• SLICE will design, fab, assemble, test new hardware. \n– 2.1 mm and 3.2 mm burner tubes \n– Upgraded Nikon Still Camera \n– Blue-Green Filter \n– Ceramic Pyrometry Fiber \n6/16/2010 \n6 \n"
+    },
+    {
+      "locator": "page 7",
+      "text": "Hardware Overview Configuration \n7 \n6/16/2010 \n"
+    },
+    {
+      "locator": "page 8",
+      "text": "SPICE ON-ORBIT IN MSG \n6/16/2010 \n8 \n"
+    },
+    {
+      "locator": "page 9",
+      "text": "SLICE HARDWARE OVERVIEW \n6/16/2010 \n9 \nGas Bottles in Case (1 of 2) \nExperiment Assembly \nControl Box \nGas Bottle (1 of 12) \nVideo Camera \nIgnitor/Burner Case \n"
+    },
+    {
+      "locator": "page 10",
+      "text": "SLICE HARDWARE OVERVIEW \n(NEW) \n6/16/2010 \n10 \nBurner Tube (2.1 mm & 3.2 \nmm) \nCeramic Pyrometry Fiber \nD300s Still Camera \nLEXAN Window \n"
+    },
+    {
+      "locator": "page 11",
+      "text": "SLICE HARDWARE OVERVIEW \n6/16/2010 \n11 \n"
+    },
+    {
+      "locator": "page 12",
+      "text": "SLICE SUCCESS CRITERIA \n•\nMinimum Success -– Still images are acquired for at least 15 \ndifferent lifted flames with different combinations of fuel flow and air \nvelocity with a single fuel, or at least 10 different lifted flames each \nof two fuels, or at least 5 different lifted flames each of 3 or more \nfuels.   \n•\nHigh Success -– Still images are acquired of at least 30 different \nlifted flames total from at least 3 different fuels.  The still images are \nacquired with a blackbody characterized camera for soot pyrometry \nor liftoff limits are determined for at least one fuel. \n•\nComplete Success -– Testing conducted with all 12 fuel bottles, with \nidentification of stability limits and smoke points (within the range of \nthe SPICE velocity limits).  Still images are taken of lifted flames with \na blackbody characterized camera. \n6/16/2010 \n12 \n"
+    },
+    {
+      "locator": "page 13",
+      "text": "SLICE PI Endorsement \n6/16/2010 \n13 \n"
+    },
+    {
+      "locator": "page 14",
+      "text": "SLICE PRODUCT VERIFICATION TESTING \n•\nD300s Still Camera \n–\nFunctional Test \n–\nSoft Stow Vibration per 60054-TST-007 - Complete \n–\nRadiated Emissions Test – RE02 – Complete \n•\nThe original plan was to use similarity of design from the original camera however the EME \npanel on 5/13/10 informed the project that it will be required to perform a radiated emissions \ntest. \n–\nThermal Operating Test per 60054-TST-009 – Complete \n•\n4 cycles from 10 to 45 ˚C \n–\nMaterials Bake-out for 72 hours at 120 ˚F – Complete \n•\nThe SPICE off-gas testing using the similar D100 camera as well as all other SPICE hardware \nhas a total T value of 0.001152.  Using this value for just the new BASS D300s camera will \nprovide sufficient margin as well as allow the payload to remain below the 0.5 limit. \n–\nBlack Body Calibration and Focus Setup using Replacement Top Window. – 6/17/10 \n•\nBurner Tubes \n–\nPerform dimensioning calibration - Complete \n•\nReplacement Top Window \n–\nSoft Stow Vibration per 60054-TST-007 - Complete \n–\nAnneal at 250˚F for 1 hour - Complete \n–\nMaterials Bake-out for 72 hours at 120 ˚F - Complete \n6/16/2010 \n14 \n"
+    },
+    {
+      "locator": "page 15",
+      "text": "SLICE PRODUCT VERIFICATION TESTING \n• Ceramic Pyrometry Fiber \n– Soft Stow Vibration per 60054-TST-007 – Complete \n• Engineering Vibe Test passed \n• Gas Bottles \n– Soft Stow Vibration per 60054-TST-007 – Complete \n– Pre and Post Vibe Helium Leak Test – Complete \n– Fill per Table above – Complete \n \n \n6/16/2010 \n15 \n"
+    },
+    {
+      "locator": "page 16",
+      "text": "SAFETY VERIFICATIONS \n• SLICE is designated as a SPICE re-flight. \n• Out of Board Approval is expected once \nverifications are closed. \n• 77 Safety Verifications \n– 59 Closed Verifications \n– 14 Crew Procedure Controls – Procedures are being \ndeveloped – 8/10 \n– 2 EMI TIA Approval for D300s Camera – 7/10 \n– 1 HFIT Inspection at turnover – 6/23/10 \n– 1 Stowage Configuration Verification – 7/10/10 \n \n \n6/16/2010 \n16 \n"
+    },
+    {
+      "locator": "page 17",
+      "text": "INTEGRATION VERIFICATIONS \n• Utilize SPICE ICD as a baseline for the integration \nrequirements with MSG. \n• New verifications not addressed in the safety \nverifications include the following: \n– Fit Check for D300s Still Camera in MSG EU – Complete \n– Still Camera Video Interface Test in MSG EU - Complete \n– Labeling – Complete @ KSC \n• Physical and Functional Interface testing in the MSG \nEU with the new camera were successful. \n• Modified SPICE crew procedures were dry run to \nevaluate their status. Other than minor tweaks the \nprocedures are adequate.  \n6/16/2010 \n17 \n"
+    },
+    {
+      "locator": "page 18",
+      "text": "SCHEDULE HIGHLIGHTS (Open Work) \n• All hardware assembly and test is complete! \n• Verification Closures are still in process as noted \n• Hardware Turnover @KSC – 6/24/10 \n• Bench Review – 7/8/10 \n \n \n6/16/2010 \n18 \n"
+    },
+    {
+      "locator": "page 19",
+      "text": "SLICE OPEN NCR Status \n• Radiated Emissions Exceedence of the D300s \nCamera. \n– NCR will close upon receiving an approved TIA. \n• Failure of the D300s camera during thermal \ntesting. \n– Closure will not occur until hardware is returned to the \nvendor for failure analysis and repair. \n \n6/16/2010 \n19 \n"
+    },
+    {
+      "locator": "page 20",
+      "text": "SAR-1 Concerns & Issues \n•\nAs-Built inspections of flight hardware was scheduled after the originally scheduled \nSAR-2 on 6/11/10. \n–\nThe as-built inspections have been completed.  DD250 is in the process of being generated \nwith the planned turnover to GRC at 3 PM today, 6/18/10. \n•\nStowage Configuration Drawings to close safety verification showing proper stow of \nthe hardware will be finalized at the Bench Review scheduled for 7/8/10. \n–\nThe PD will obtain the drawings once the updates have been made and include them in a \nmemo to close the verification. \n•\nThe D300s Camera completed EMI testing with the final results provided to MSG and \nthe EME panel.  Due to some small exceedances from the requirement the payload \ngenerated an NCR.  MSG is generating a TIA to submit to the EME panel for \napproval.  Approval is expected. \n•\nCrew Procedures are in draft form and are not planned to be completed until after \nSAR-2. \n–\nCrew procedures will be reviewed to include required safety controls.  Operations will not be \nconducted until these safety verifications have been closed. \n6/16/2010 \n20 \n"
+    },
+    {
+      "locator": "page 21",
+      "text": "BASS HARDWARE OVERVIEW \n• BASS will utilize the SPICE hardware currently on \nISS. \n– Experiment Assembly, Cables, Video Camera \n• BASS will utilize the SLICE Still Camera. \n• BASS will design, fab, assemble, test new \nhardware. \n– Modified 3.2 mm burner tube \n– GN2 Hose Assembly \n– Sample Frame Assembly Insert for Experiment Assembly \n– 4 different fuel holder designs for a total of 41 fuel samples \n– BASS Control Box \n– Fan Flow Block Assembly \n– Ignitor Wire Extension Assembly \n6/16/2010 \n21 \n"
+    },
+    {
+      "locator": "page 22",
+      "text": "BASS HARDWARE OVERVIEW \n6/16/2010 \n22 \nExperiment Assembly \nVideo Camera \nBASS Control Box \n"
+    },
+    {
+      "locator": "page 23",
+      "text": "BASS HARDWARE OVERVIEW \n(NEW) \n6/16/2010 \n23 \nBurner Tube (3.2 mm \nModified) \nSample Frame Assembly \nIgnitor Assembly \nGN2 Hose \nAssembly \n"
+    },
+    {
+      "locator": "page 24",
+      "text": "BASS HARDWARE OVERVIEW \n(NEW) \n6/16/2010 \n24 \nSPHERE & HEMISPHERE SAMPLE ASSEMBLY \n(1 CM & 2 CM DIAMETER PMMA) \nFLAT SAMPLE ASSEMBLY (1 CM \n& 2 CM WIDE) \n"
+    },
+    {
+      "locator": "page 25",
+      "text": "BASS HARDWARE OVERVIEW \n(NEW) \nTHICK FLAT SAMPLE \nASSEMBLY (PMMA & WAX) \nWAX-IMPREGNATED WICK SAMPLE ASSEMBLY \n(JAPAN WAX & PARAFFIN) \n6/16/2010 \n25 \n"
+    },
+    {
+      "locator": "page 26",
+      "text": "BASS LAYOUT IN MSG \n6/16/2010 \n26 \n"
+    },
+    {
+      "locator": "page 27",
+      "text": "BASS SUCCESS CRITERIA \n• Minimal Success: 20 total tests including: eight tests \nwith flat samples (four materials at two different flow \nspeeds); four tests with spherical PMMA samples \n(four different flow speeds with nitrogen \nextinguishment); four tests with candles (four \ndifferent flow speeds with nitrogen extinguishment); \nand four tests of PMMA wake flames (four different \nflow speeds with nitrogen extinguishment).  \n \n• Complete Success: 60 flames as indicated in test \nmatrix. \n \n6/16/2010 \n27 \n"
+    },
+    {
+      "locator": "page 28",
+      "text": "BASS PI Endorsement \n28 \n6/16/2010 \n"
+    },
+    {
+      "locator": "page 29",
+      "text": "BASS PRODUCT VERIFICATION TESTING \n•\nSample Frame Assembly \n–\nFit Check with Engineering Assembly - Complete \n–\nSoft Stow Vibration per 60054-TST-007 - Complete \n–\nMaterials Bake-out for 72 hours at 120 ˚F - Complete \n–\nEMI Test for Magnet Strength - Complete \n•\nFuel Samples Assembly (41 flight units) \n–\nFit Check with Engineering Assembly - Complete \n–\nSoft Stow Vibration per 60054-TST-007 - Complete \n•\nGN2 Hose Assembly \n–\nSoft Stow Vibration per 60054-TST-007 - Complete \n–\nPre and Post Vibe Helium Leak Test - Complete \n•\nBASS Control Box \n–\nFunctional Test with Engineering Assembly - Complete \n–\nSoft Stow Vibration per 60054-TST-007 - Complete \n–\nMaterials Bake-out for 72 hours at 120 ˚F - Complete \n•\nIgnitor Wire Extension Assembly \n–\nFunctional Test with Engineering Assembly – Complete \n \n \n \n \n6/16/2010 \n29 \n"
+    },
+    {
+      "locator": "page 30",
+      "text": "SAFETY VERIFICATIONS \n• BASS  safety package utilizes the SPICE \npackage but it is a stand-alone payload. \n• 61 Safety Verifications \n– 46 Closed Verifications \n– 11 Crew Procedure Controls – Procedures are being \ndeveloped – 8/10 \n– 2 EMI TIA Approval for D300s Camera \n– 1 HFIT Inspection at turnover – 6/23/10 \n– 1 Stowage Configuration Verification – 7/10/10 \n \n \n \n6/16/2010 \n30 \n"
+    },
+    {
+      "locator": "page 31",
+      "text": "INTEGRATION VERIFICATIONS \n•\nUtilize SPICE ICD as a baseline for the integration requirements with MSG. \n•\nNew verifications not addressed in the safety verifications include the \nfollowing: \n–\nFit Check for BASS Control Box & GN2 Hose in MSG EU – Complete \n–\nLabeling - Complete @ KSC \n–\nCombustion By-products compatibility assessment with MSG Filters – Complete \n•\nPhysical and Functional Interface testing in the MSG EU with the new \nControl Box were successful. \n•\nPreliminary BASS crew procedures were dry run to evaluate their status.  \nThe procedures generally are in good shape with a couple of issues. \n–\nThe number of images expected to be acquired may limit the number of runs that can be \nperformed in each session.  There are eight 4 GB flash disks that will need to be transferred \nto a laptop, down-linked, and verified all were received prior to flash disks being erased to be \nreused. \n–\nThe project is still evaluating the various modes available with the new camera of acquiring \nimages. \n6/16/2010 \n31 \n"
+    },
+    {
+      "locator": "page 32",
+      "text": "SCHEDULE HIGHLIGHTS (Open Work) \n• All hardware assembly and test is complete! \n• Verification Closures are still in process as \nnoted. \n• Hardware Turnover @KSC – 6/24/10 \n• Bench Review – 7/8/10 \n6/16/2010 \n32 \n"
+    },
+    {
+      "locator": "page 33",
+      "text": "BASS OPEN NCR Status \n• Radiated Emissions Exceedence of the D300s \nCamera. \n– NCR will close upon receiving an approved TIA. \n• Failure of the D300s camera during thermal \ntesting. \n– Closure will not occur until hardware is returned to the \nvendor for failure analysis and repair. \n \n6/16/2010 \n33 \n"
+    },
+    {
+      "locator": "page 34",
+      "text": "SAR-1 Concerns & Issues \n•\nThe completion of the ECLSS Assessment of combustion by-products was \nscheduled after the originally scheduled SAR-2 on 6/11/10. \n–\nECLSS has provided an assessment that shows the combustion by-products are \ncompatible with the ECLSS system. \n•\nStowage Configuration Drawings to close safety verification showing proper \nstow of the hardware will be finalized at the Bench Review scheduled for \n7/8/10. \n–\nThe PD will obtain the drawings once the updates have been made and include them \nin a memo to close the verification. \n•\nCrew Procedures are in draft form and are not planned to be completed \nuntil after SAR-2. \n–\nCrew procedures will be reviewed to include required safety controls.  Operations will \nnot be conducted until these safety verifications have been closed. \n•\nThe touch temperature report was not approved at the time of SAR-1. \n–\nThe report is approved and in CM. \n6/16/2010 \n34 \n"
+    },
+    {
+      "locator": "page 35",
+      "text": "PROJECT CONCLUSION \n The hardware developed to support the SLICE \nand BASS payloads has been designed, tested, \nand verified using approved processes resulting in \nwhat is expected to be highly successful \noperations. \n \n6/16/2010 \n35 \n"
+    },
+    {
+      "locator": "page 36",
+      "text": "SAR-1 Board Assessment \n• Jim Cockrell will discuss the SLICE BASS \nSystem Acceptance Review (SAR-1) Board’s \nfindings \n• The SLICE BASS SAR-1 Chair’s Synopsis letter \nis available on the eRoom \n• Each of the open items at SAR-1 for SLICE is \naddressed on chart 20 \n• Each of the open items at SAR-1 for BASS is \naddressed on chart 34 \n \n6/16/2010 \n36 \n"
+    },
+    {
+      "locator": "page 37",
+      "text": "ZIN Quality Assessment \n• Quality \n– SLICE/BASS followed the ZIN Technology Quality \nManagement System for engineering and building flight \nhardware.   \n– For this re-flight SLICE/BASS: \n• Used Manufacturing Work Orders (MWO) prepared for cleaning \nand assembly operations. \n• Use inspection and test documents prepared for in-process and \nfinal inspection/test activities – all completed plans are nominally \nreviewed/approved by a ZIN Tech Quality representative. \n• Will achieve configuration verification through as-built \ninspections performed by a ZIN Tech’s Quality representative as \npart of the MWO process. \n6/16/2010 \n37 \n"
+    },
+    {
+      "locator": "page 38",
+      "text": "GRC Safety and Mission Assurance  \nSMA Assessment for SLICE/BASS \nBipin Patel \n6-18-2010 \n6/16/2010 \n38 \n"
+    },
+    {
+      "locator": "page 39",
+      "text": "Safety \n• Flight Phase III Safety Data Package.  \n• Safety Verification on going. \n– Open: \n• Pre Launch  Stowage List \n• Revise Crew procedures \n• EMI Test Report/TIA \n6/16/2010 \n39 \n"
+    },
+    {
+      "locator": "page 40",
+      "text": "Mission Assurance \n• Project Quality Assessment \n• Product Assurance Plan  (SpaceDOC PAP) \n• Conducted Quality, Risks, M&P and Safety Audit. \n• Successfully completed the Safety and Mission Assurance \nOrganizational Review Board conducted. \n• MIUL/MUA – Material certification letter in \nsignature loop. \n• EEE parts risk assessment \n• PACE-2 uses industrial grade COTS parts. \n• GIDEP Alert searches:  One hit dispositioned. \n6/16/2010 \n40 \n"
+    },
+    {
+      "locator": "page 41",
+      "text": "Mission Assurance \n• Risk Management \n– Risk assessment team met periodically. \n6/16/2010 \n41 \n"
+    },
+    {
+      "locator": "page 42",
+      "text": "Assessment \nThe Project should continue to track the Mission \nAssurance risks through the completion of the \nopen items, off-line testing, installation, and \nmission operations. \n \n6/16/2010 \n42 \n"
+    },
+    {
+      "locator": "page 43",
+      "text": "SAR-2 Board Discussion \n• Pete McCallum \n \n• Glen Horvat \n \n• Bhim Singh \n \n• Frank Greco \n6/16/2010 \n43 \n"
+    }
+  ],
+  "details": {
+    "page_count": 43,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

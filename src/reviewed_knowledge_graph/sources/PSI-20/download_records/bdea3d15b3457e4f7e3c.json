@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:bdea3d15b3457e4f7e3c",
+  "study": "PSI-20",
+  "filename": "PSI-20_Science Documents_ACME_Integrated_Science_Requirements_RevB.pdf",
+  "key": "psi-data/PSI-20/Science Documents/PSI-20_Science Documents_ACME_Integrated_Science_Requirements_RevB.pdf",
+  "category": "Science Documents",
+  "size_bytes": 1878639,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8261b4820d736ceccae&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/bdea3d15b3457e4f7e3c/PSI-20_Science Documents_ACME_Integrated_Science_Requirements_RevB.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "ac5f006da7a822a670f23c6dab407fbd637cf07d20ece9489776c7112afae4d6",
+  "status": "downloaded"
+}

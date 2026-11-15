@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-69:a69a1873ffb2641cb30c",
+  "study": "PSI-69",
+  "filename": "PSI-69_metadata_PSI-133_FLEX.zip",
+  "key": "psi-data/PSI-69/metadata/PSI-69_metadata_PSI-133_FLEX.zip",
+  "category": "metadata",
+  "size_bytes": 24780,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-69/download?file=684344b79e44646b74027068&version=4&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-69/a69a1873ffb2641cb30c/PSI-69_metadata_PSI-133_FLEX.zip",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "3ff0e8a61bc58e79756b4a860cdf0616889f95f03fe48536b62e600ced2c0337",
+  "status": "downloaded"
+}

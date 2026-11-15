@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-69:c8a6639655922d90cd6c",
+  "study": "PSI-69",
+  "filename": "PSI-69_Engineering Documents_FLEX Overall Ext File-2.pdf",
+  "key": "psi-data/PSI-69/Engineering Documents/PSI-69_Engineering Documents_FLEX Overall Ext File-2.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 2267043,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-69/download?file=684347449e44646b740289fd&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-69/c8a6639655922d90cd6c/PSI-69_Engineering Documents_FLEX Overall Ext File-2.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "32b780edb446f5f9134a7138658faa6ea72c529a62ac6c3fd726f7ca049d0999",
+  "status": "downloaded"
+}

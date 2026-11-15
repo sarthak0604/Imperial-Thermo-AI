@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-101:31797b096f0fd53c22dc",
+  "study": "PSI-101",
+  "filename": "PSI-101_Analyzed Data_2010_250_12_silicone_run91.xls",
+  "key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_2010_250_12_silicone_run91.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 5535744,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc536b8656d2315bf50d3&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/31797b096f0fd53c22dc/PSI-101_Analyzed Data_2010_250_12_silicone_run91.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "9c96ad7c2785aed60fc580e623d43bc8e0e8069f18857f5420f3e8d629850c5c",
+  "status": "downloaded"
+}

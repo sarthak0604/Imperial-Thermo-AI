@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:149aa7b59cdce15e2d51",
+  "study": "PSI-20",
+  "filename": "PSI-20_Engineering Documents_s1101mfa1800_B.pdf",
+  "key": "psi-data/PSI-20/Engineering Documents/PSI-20_Engineering Documents_s1101mfa1800_B.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 171658,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8171b4820d736cecc22&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/149aa7b59cdce15e2d51/PSI-20_Engineering Documents_s1101mfa1800_B.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "046ed3f7a020bf738ca3a72bb632e91fb5add9636cc4217fac76e15b855240ad",
+  "status": "downloaded"
+}

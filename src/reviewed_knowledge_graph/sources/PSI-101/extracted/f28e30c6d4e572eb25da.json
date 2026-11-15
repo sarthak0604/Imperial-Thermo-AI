@@ -1,0 +1,511 @@
+{
+  "id": "res:PSI-101:f28e30c6d4e572eb25da",
+  "study": "PSI-101",
+  "filename": "PSI-101_Analyzed Data_TEMflowvsnoflow.xls",
+  "key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_TEMflowvsnoflow.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 39936,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc531b8656d2315bf5094&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/f28e30c6d4e572eb25da/PSI-101_Analyzed Data_TEMflowvsnoflow.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "1c7fff7b4ddb75e6b2682b53a528cc5777506bf98b96d955bcd43073d3d0a536",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "sheet Reduced data sheet, row 1",
+      "text": "5: Smoke  Generation"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 2",
+      "text": "1: Flight 1=same 2=sameR, g=ground | 2: Sample Type | 3: SAME # | 4: Description | 5: Inlet Velocity (cm/sec) | 6: Rt/R0 | 7: Net Aging  Duration | 8: M0 best Diameter | 9: M1  (mm/cm^3) | 10: DustTrak B calibratred and corrected for dilution (mg/m3) | 11: M1/M0 (micro-m)--AMD | 12: Diameter of Average mass (micro-m) | 13: MPASS 3/2 | 14: Hatch Choate Sigma g | 15: Hatch Choate Dg | 16: Ion B Mment (mm/cm^3) | 17: Maximum TEM diameter, mm | 18: Diameter of bgd particles, mm | 19: shape | 20: distribution"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 3",
+      "text": "1: 2.0 | 2: Kapton | 3: 94a | 4: with flow, aged, 1.450 | 5: 8.1 | 6: 1.45 | 7: 567.4285714285714 | 8: 1034039.1421911421 | 9: 156.01798358413714 | 10: 4.886983670161355 | 11: 0.1508820867781978 | 12: 0.18524179505853766 | 13: 2.6440191416268415 | 14: 1.5729448774800336 | 15: 0.1361717543047701 | 16: 156.01798358413714 | 17: 0.26 | 18: 0.04 | 19: mostly spherical | 20: broad"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 4",
+      "text": "1: 2.0 | 2: Pyrell | 3: 95.0 | 4: no flow/aging (1.22) | 5: 0.0 | 6: 1.22 | 7: 38.0 | 8: 64110.87296037295 | 9: 9.992682482591848 | 10: 10.116572029862416 | 11: 0.1558656437070876 | 12: 0.6704519965782496 | 13: 2.9685773194549356 | 14: 3.3463601256416378 | 15: 0.07515220923619689 | 16: 9.992682482591848"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 5",
+      "text": "1: 2.0 | 2: Pyrell | 3: 95a | 4: aged | 5: 0.0 | 6: 1.22 | 7: n/a | 8: 32219.449930069924 | 9: 12.910104784744156 | 10: 9.56275740425885 | 11: 0.4006928986300089 | 12: 0.8276031433145686 | 13: 2.6631434126922806 | 14: 2.343552731130787 | 15: 0.27880875215413636 | 16: 12.910104784744156 | 17: 1.3 | 18: 0.06 | 19: mostly spherical | 20: 50 % larger, few particles"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 6",
+      "text": "1: 2.0 | 2: Pyrell | 3: 74a | 4: aged | 5: 8.1 | 6: 1.22 | 7: 622.5714285714286 | 8: 1493310.5 | 9: 630.1982252001761 | 10: 98.99089409249272 | 11: 0.42201419276177066 | 12: 0.5021292283926514 | 13: 2.977548813751767 | 14: 1.5172743595120417 | 15: 0.3868858396744669 | 16: 630.1982252001761 | 17: 2.47 | 18: 0.12 | 19: cluster, small&large prim. | 20: primaries 0.12 to 0.4, 3 to 30 primaries"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 7",
+      "text": "1: 2.0 | 2: Lampwick | 3: 96.0 | 4: No flow run w/ aging (1.245) | 5: 0.0 | 6: 1.245 | 7: 33.57142857142857 | 8: 190634.1086363636 | 9: 39.214605288208624 | 10: 8.647241605041618 | 11: 0.20570613290935705 | 12: 0.4424791260338935 | 13: 3.891774850297444 | 14: 2.3993135003870845 | 15: 0.1402569743697342 | 16: 39.214605288208624 | 17: 1.3 | 18: 0.1 | 19: spherical & small clusters | 20: large variation with location on grid"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 8",
+      "text": "2: Lampwick | 3: 96a | 4: aged | 5: 0.0 | 6: 1.245 | 7: 581.7142857142857 | 8: 157405.79311188808 | 9: 41.531251266067784 | 10: 8.877156153463533 | 11: 0.26384830218126915 | 12: 0.4757931388715584 | 13: 3.892977111547129 | 14: 2.1551491175815456 | 15: 0.19648181819913418 | 16: 41.531251266067784 | 17: 0.82 | 18: 0.1 | 19: fused 2's or 3's | 20: only 3 part in 2 TEM, faint bgd part."
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 9",
+      "text": "1: 2.0 | 2: Lampwick | 3: 98.0 | 4: No flow run w/ aging | 5: 0.0 | 6: 1.28 | 7: 37.142857142857146 | 8: 394007.95454545453 | 9: 73.83254365175092 | 10: 15.775391247268056 | 11: 0.18738845954754263 | 12: 0.42444899438372785 | 13: 3.6746334661286353 | 14: 2.469996713872995 | 15: 0.12450921845729232 | 16: 73.83254365175092"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 10",
+      "text": "1: 2.0 | 2: Lampwick | 3: 98a | 4: No flow/aging (1.280) | 5: 0.0 | 6: 1.28 | 7: 585.2857142857143 | 8: 295539.1032167832 | 9: 61.12859109845673 | 10: 14.467402993159551 | 11: 0.20683757388821003 | 12: 0.45386392911419826 | 13: 3.6707612004027848 | 14: 2.4265960965392743 | 15: 0.13963082959457912 | 16: 61.12859109845673 | 17: 2.3 | 18: 0.1 | 19: mostly spherical | 20: broad"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 11",
+      "text": "1: 2.0 | 2: Lampwick | 3: 54.0 | 4: High RT/R0 (1.260) | 5: 8.1 | 6: 1.2602096324797665 | 7: 56.8 | 8: 2871803.991841492 | 9: 350.5568596884642 | 10: 28.560639322560416 | 11: 0.12206851884194089 | 12: 0.26681167905139697 | 13: 0.0 | 14: 2.4212534112538897 | 15: 0.08256635157211793 | 16: 350.5568596884642 | 17: 1.28 | 18: 0.1 | 19: mostly spherical | 20: broad, smallest may be particles"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 12",
+      "text": "1: 2.0 | 2: Teflon | 3: 100.0 | 4: no flow/aging(1.45) | 5: 0.0 | 6: 1.45 | 7: 28.714285714285715 | 8: 498061.4369527146 | 9: 107.76767704558564 | 10: 13.49921599314713 | 11: 0.2163742643978618 | 12: 0.28655067906254356 | 13: 3.610960825081208 | 14: 1.6989415997601132 | 15: 0.188021574711602 | 16: 107.76767704558564 | 17: 2.0 | 18: 0.1 | 19: cluster | 20: primaries 0,2-0.3 mm, range of contrast"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 13",
+      "text": "1: 2.0 | 2: Teflon | 3: 100a | 4: aged | 5: 0.0 | 6: 1.45 | 7: 560.4285714285714 | 8: 357452.0805604203 | 9: 90.36666153628362 | 10: 13.012299335880547 | 11: 0.2528077648746792 | 12: 0.31615857901905126 | 13: 3.688960379480762 | 14: 1.6046072037847048 | 15: 0.22606489541437247 | 16: 90.36666153628362"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 14",
+      "text": "1: 2.0 | 2: Teflon | 3: 50.0 | 4: Baseline High RT/R0 | 5: 8.1 | 6: 1.4524143054229013 | 7: 33.2 | 8: 3325584.8047285466 | 9: 541.2242678205723 | 10: 66.13062967302702 | 11: 0.1627455920086663 | 12: 0.2584467702287076 | 13: 3.6141061384150297 | 14: 1.9740251297986513 | 15: 0.12914520829574502 | 16: 541.2242678205723"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 15",
+      "text": "1: 2.0 | 2: Kapton | 3: 101.0 | 4: No flow with aging (1.480) | 5: 0.0 | 6: 1.48 | 7: 29.428571428571427 | 8: 249344.44318181818 | 9: 62.00566341405532 | 10: 8.8937852398249 | 11: 0.24867473532923987 | 12: 0.3633568281562541 | 13: 3.726805240268709 | 14: 1.8511819330209311 | 15: 0.20572204540325756 | 16: 62.00566341405532"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 16",
+      "text": "1: 2.0 | 2: Kapton | 3: 101a | 4: aged | 5: 0.0 | 6: 1.48 | 7: 560.5714285714286 | 8: 227309.5643939394 | 9: 59.14692490715633 | 10: 8.517726021377717 | 11: 0.26020429481203705 | 12: 0.36937967659926824 | 13: 3.6401441792200204 | 14: 1.807438133709317 | 15: 0.21839122907858594 | 16: 59.14692490715633 | 17: 1.1 | 18: 0.1 | 19: cluster and spheroids | 20: fairly broad"
+    },
+    {
+      "locator": "sheet Reduced data sheet, row 17",
+      "text": "1: 2.0 | 2: Kapton | 3: 62.0 | 4: High Temp aging (not aged) | 5: 8.1 | 6: 1.48 | 7: 38.8 | 8: 5254034.648018648 | 9: 867.8246463474927 | 10: 71.99239040283022 | 11: 0.1651729964656321 | 12: 0.26414084627281476 | 13: 2.7123475034119386 | 14: 1.9841542107675705 | 15: 0.1306143185313766 | 16: 867.8246463474927 | 17: 0.78 | 18: 0.09 | 19: spheres, fused doublets | 20: broad, all sizes appear to be particles"
+    }
+  ],
+  "details": {
+    "sheets": [
+      {
+        "name": "sheet Reduced data sheet",
+        "row_count": 17,
+        "column_count": 20,
+        "column_statistics": [
+          {
+            "numeric_count": 14,
+            "min": 2.0,
+            "max": 2.0,
+            "blank_count": 2
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 8,
+            "min": 50.0,
+            "max": 101.0,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 15,
+            "min": 0.0,
+            "max": 8.1,
+            "blank_count": 0
+          },
+          {
+            "numeric_count": 15,
+            "min": 1.22,
+            "max": 1.48,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 14,
+            "min": 28.714285714285715,
+            "max": 622.5714285714286,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 15,
+            "min": 32219.449930069924,
+            "max": 5254034.648018648,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 15,
+            "min": 9.992682482591848,
+            "max": 867.8246463474927,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 15,
+            "min": 4.886983670161355,
+            "max": 98.99089409249272,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 15,
+            "min": 0.12206851884194089,
+            "max": 0.42201419276177066,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 15,
+            "min": 0.18524179505853766,
+            "max": 0.8276031433145686,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 15,
+            "min": 0.0,
+            "max": 3.892977111547129,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 15,
+            "min": 1.5172743595120417,
+            "max": 3.3463601256416378,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 15,
+            "min": 0.07515220923619689,
+            "max": 0.3868858396744669,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 15,
+            "min": 9.992682482591848,
+            "max": 867.8246463474927,
+            "blank_count": 1
+          },
+          {
+            "numeric_count": 10,
+            "min": 0.26,
+            "max": 2.47,
+            "blank_count": 6
+          },
+          {
+            "numeric_count": 10,
+            "min": 0.04,
+            "max": 0.12,
+            "blank_count": 6
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 6
+          },
+          {
+            "numeric_count": 0,
+            "min": null,
+            "max": null,
+            "blank_count": 6
+          }
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            "",
+            "Smoke  Generation",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Flight 1=same 2=sameR, g=ground",
+            "Sample Type",
+            "SAME #",
+            "Description",
+            "Inlet Velocity (cm/sec)",
+            "Rt/R0",
+            "Net Aging  Duration",
+            "M0 best Diameter",
+            "M1  (mm/cm^3)",
+            "DustTrak B calibratred and corrected for dilution (mg/m3)",
+            "M1/M0 (micro-m)--AMD",
+            "Diameter of Average mass (micro-m)",
+            "MPASS 3/2",
+            "Hatch Choate Sigma g",
+            "Hatch Choate Dg",
+            "Ion B Mment (mm/cm^3)",
+            "Maximum TEM diameter, mm",
+            "Diameter of bgd particles, mm",
+            "shape",
+            "distribution"
+          ],
+          [
+            2.0,
+            "Kapton",
+            "94a",
+            "with flow, aged, 1.450",
+            8.1,
+            1.45,
+            567.4285714285714,
+            1034039.1421911421,
+            156.01798358413714,
+            4.886983670161355,
+            0.1508820867781978,
+            0.18524179505853766,
+            2.6440191416268415,
+            1.5729448774800336,
+            0.1361717543047701,
+            156.01798358413714,
+            0.26,
+            0.04,
+            "mostly spherical",
+            "broad"
+          ],
+          [
+            2.0,
+            "Pyrell",
+            95.0,
+            "no flow/aging (1.22)",
+            0.0,
+            1.22,
+            38.0,
+            64110.87296037295,
+            9.992682482591848,
+            10.116572029862416,
+            0.1558656437070876,
+            0.6704519965782496,
+            2.9685773194549356,
+            3.3463601256416378,
+            0.07515220923619689,
+            9.992682482591848,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            2.0,
+            "Pyrell",
+            "95a",
+            "aged",
+            0.0,
+            1.22,
+            "n/a",
+            32219.449930069924,
+            12.910104784744156,
+            9.56275740425885,
+            0.4006928986300089,
+            0.8276031433145686,
+            2.6631434126922806,
+            2.343552731130787,
+            0.27880875215413636,
+            12.910104784744156,
+            1.3,
+            0.06,
+            "mostly spherical",
+            "50 % larger, few particles"
+          ],
+          [
+            2.0,
+            "Pyrell",
+            "74a",
+            "aged",
+            8.1,
+            1.22,
+            622.5714285714286,
+            1493310.5,
+            630.1982252001761,
+            98.99089409249272,
+            0.42201419276177066,
+            0.5021292283926514,
+            2.977548813751767,
+            1.5172743595120417,
+            0.3868858396744669,
+            630.1982252001761,
+            2.47,
+            0.12,
+            "cluster, small&large prim.",
+            "primaries 0.12 to 0.4, 3 to 30 primaries"
+          ],
+          [
+            2.0,
+            "Lampwick",
+            96.0,
+            "No flow run w/ aging (1.245)",
+            0.0,
+            1.245,
+            33.57142857142857,
+            190634.1086363636,
+            39.214605288208624,
+            8.647241605041618,
+            0.20570613290935705,
+            0.4424791260338935,
+            3.891774850297444,
+            2.3993135003870845,
+            0.1402569743697342,
+            39.214605288208624,
+            1.3,
+            0.1,
+            "spherical & small clusters",
+            "large variation with location on grid"
+          ],
+          [
+            "",
+            "Lampwick",
+            "96a",
+            "aged",
+            0.0,
+            1.245,
+            581.7142857142857,
+            157405.79311188808,
+            41.531251266067784,
+            8.877156153463533,
+            0.26384830218126915,
+            0.4757931388715584,
+            3.892977111547129,
+            2.1551491175815456,
+            0.19648181819913418,
+            41.531251266067784,
+            0.82,
+            0.1,
+            "fused 2's or 3's",
+            "only 3 part in 2 TEM, faint bgd part."
+          ],
+          [
+            2.0,
+            "Lampwick",
+            98.0,
+            "No flow run w/ aging",
+            0.0,
+            1.28,
+            37.142857142857146,
+            394007.95454545453,
+            73.83254365175092,
+            15.775391247268056,
+            0.18738845954754263,
+            0.42444899438372785,
+            3.6746334661286353,
+            2.469996713872995,
+            0.12450921845729232,
+            73.83254365175092,
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            2.0,
+            "Lampwick",
+            "98a",
+            "No flow/aging (1.280)",
+            0.0,
+            1.28,
+            585.2857142857143,
+            295539.1032167832,
+            61.12859109845673,
+            14.467402993159551,
+            0.20683757388821003,
+            0.45386392911419826,
+            3.6707612004027848,
+            2.4265960965392743,
+            0.13963082959457912,
+            61.12859109845673,
+            2.3,
+            0.1,
+            "mostly spherical",
+            "broad"
+          ],
+          [
+            2.0,
+            "Lampwick",
+            54.0,
+            "High RT/R0 (1.260)",
+            8.1,
+            1.2602096324797665,
+            56.8,
+            2871803.991841492,
+            350.5568596884642,
+            28.560639322560416,
+            0.12206851884194089,
+            0.26681167905139697,
+            0.0,
+            2.4212534112538897,
+            0.08256635157211793,
+            350.5568596884642,
+            1.28,
+            0.1,
+            "mostly spherical",
+            "broad, smallest may be particles"
+          ],
+          [
+            2.0,
+            "Teflon",
+            100.0,
+            "no flow/aging(1.45)",
+            0.0,
+            1.45,
+            28.714285714285715,
+            498061.4369527146,
+            107.76767704558564,
+            13.49921599314713,
+            0.2163742643978618,
+            0.28655067906254356,
+            3.610960825081208,
+            1.6989415997601132,
+            0.188021574711602,
+            107.76767704558564,
+            2.0,
+            0.1,
+            "cluster",
+            "primaries 0,2-0.3 mm, range of contrast"
+          ]
+        ],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Sheet1",
+        "row_count": 0,
+        "column_count": 0,
+        "column_statistics": [],
+        "rows": [],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Sheet2",
+        "row_count": 0,
+        "column_count": 0,
+        "column_statistics": [],
+        "rows": [],
+        "all_rows_retained": false
+      },
+      {
+        "name": "sheet Sheet3",
+        "row_count": 0,
+        "column_count": 0,
+        "column_statistics": [],
+        "rows": [],
+        "all_rows_retained": false
+      }
+    ]
+  },
+  "warnings": [
+    "Saved cell values inspected; formulas not recalculated."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

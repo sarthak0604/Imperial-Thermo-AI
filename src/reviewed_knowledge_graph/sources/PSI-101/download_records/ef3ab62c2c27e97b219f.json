@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-101:ef3ab62c2c27e97b219f",
+  "study": "PSI-101",
+  "filename": "PSI-101_Analyzed Data_2010_252_14_lampwick_run106.xls",
+  "key": "psi-data/PSI-101/Analyzed Data/PSI-101_Analyzed Data_2010_252_14_lampwick_run106.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 8719872,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc537b8656d2315bf50e1&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/ef3ab62c2c27e97b219f/PSI-101_Analyzed Data_2010_252_14_lampwick_run106.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "6cb6c80d9a4f826a7a4d0359ec89cbbf3267fa03060efb3c52e06e393da49c68",
+  "status": "downloaded"
+}

@@ -1,0 +1,127 @@
+{
+  "id": "res:PSI-22:696a964b7eee17dc3552",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf",
+  "category": "Presentations",
+  "size_bytes": 3793532,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75b0eb4c0867600556e&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/696a964b7eee17dc3552/PSI-22_Presentations_Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "6a720d52378b81406f9f20c1f5b9e7f83331e9bfb44f74261637ef6bd7b598d7",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Ion Current and Flame Changes with Electric Fields \nin Microgravity \n11th U. S. National Combustion Meeting, March 26, 2019, Pasadena, CA \nLaminar Flames \n \nYu-Chien Chien1, Jesse Tinajero2, Dennis Stocker3, Uday Hegde4, Derek Dunn-Rankin1 \n1 Department of Mechanical and Aerospace Engineering, University of California, Irvine \n2 Department of Mechanical Engineering and Material Science, Yale University \n3 NASA Glenn Research Center \n4 Department of Mechanical and Aerospace Engineering, Case Western Reserve University \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Advanced Combustion via \nMicrogravity Experiment (ACME) \nE-FIELD Flames \nElectric-Field Effects on \nLaminar Diffusion Flames \n"
+    },
+    {
+      "locator": "page 3",
+      "text": "Electric field, ions and flames \nBackground and motivation \n•  Hydrocarbon flame’s inherent electrical \nproperty was reported more than two \ncenturies ago. \n•  Most of the theories with regard to the \nelectrical charge carriers and ionization \nprocess were not extensively elaborated \nuntil after the 1950s. \n•  The book, written by Lawton and Weinberg, \non the electrical aspects of combustion \nintegrated the knowledge at the time (1969) \nof a flame’s systematic ion generation as \nwell as electrical control of flames based on \nlaboratory tests and observations. \n•  Pederson and Brown (among others) \nidentified chemi-ionization mechanisms in \nhydrocarbon flames in 1993. \nWhy microgravity? \n"
+    },
+    {
+      "locator": "page 4",
+      "text": "⏚  \n⌇  \n|  \nFuel jet exit \n- \nn \nn \nn \nn \nn \nn \nn \nn \nn \nn \nn \nn + \ne- \n+ \n+ \n+ \n+ \n+ \n+ \ne- \ne- \ne- \ne- \ne- \ne- \ne- \n+ \n+ \n+ \ne- \n+ \n+ \n+ \n+ \n+ \n+ \ne- \ne- \ne- \ne- \ne- \ne- \ne- \n+ \n+ \nn \nn \nn \nn \nn \nn \nn \nn \nn \nn \nn \nn \nn \nn \nn \nConceptual animation \nIon-driven wind  \n(Chattock wind) \nE+  \nElectric field, ions and flames \nBackground and motivation \n•  The dominant ion, H3O+,  \nfrom the hydrocarbon \nflame zone is found \nexperimentally and \nnumerically. \n•  CHO+ + H2O à H3O+ + CO \n•  Chemi-ion driven wind is \nthe result of the ion drift.  \n•  The ion transport is \ndominated by the \nelectrokinetic drift while \nthe ion convection and \ndiffusion are relatively \nsmall. \n•  Ion drift velocity: the \npositive ion accelerates \nbetween each collision with \nneutral gas molecules. \n•  Induced drift velocity: each \ncollision transfers the newly \nacquired kinetic energy to \nthe neutral gas.   \n•  ​𝐹↓±  =​𝑗 ⁄​𝐾↓±   \nF: body force \nJ: current density \nK: mobility \n•  Electric body force is around \n1-10 times the  buoyant \nforce on earth.  \n"
+    },
+    {
+      "locator": "page 5",
+      "text": "Electric field, ions and flames \nExamples of electric field applied onto hydrocarbon flames \nPark et al., Combust. Flame, v184, p246-248, 2017 \nChien et al., Energies, v11, Issue5, 2018 \nChien, Dissertation, UCI, 2015 \nKarnani et al., Combust.Flame, v165, p2865, 2015 \n"
+    },
+    {
+      "locator": "page 6",
+      "text": "Prior electric field experiments in µg \nYuan, Z.-G. et al., Effects of Electric Fields on Non-buoyant Spherical Diffusion \nFlames, CNF, 2001 \nYuan, Z.-G. et al., Recent Avdances in Electric Field Effects on Diffusion Flames in a \nSpherically Symmetric System, 41st Aerospace Sciences Meeting and Exhibit, AIAA, 2003 \n2.2 second drop tower \nKarnani, S. et al., Simulating Gravity in Microgravity Combustion Using Electric \nFields, CST, 2012 \n-0.6           \n0 kV/cm \n0.6           \n1.0 \n-2 kV           \n0 kV \n2 kV           \n"
+    },
+    {
+      "locator": "page 7",
+      "text": "Experimental Apparatus \n• \nThe coflow burner has a fuel jet at the \ncenter while a concentric flow \nsurrounded. \n• \nInner tube:  2.1mm I.D. \n• \nOuter tube: 25mm I.D. , where annulus \noutlet is foil honeycomb with 0.8mm \ncells \n• \nThe copper electrode mesh is used as one \nelectrode.  \n• \nThe mesh is 8.9 cm I.D.  With 48% open area. \n• \nThe mesh is situated 3.7 cm above the fuel \noutlet \nPhoto [ISS053e096075] taken by ESA astronaut Paolo Nespoli on 12 Oct. 2017 \nPhoto [ISS055e001252] taken by NASA astronaut Scott Tingle on 8 March 2018  \n \n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Experimental Schematic \nChien et al., Ion Current and Carbon Monoxide Release from an Impinging \nMethane/Air Coflow Flame in Electric Field, Combustion and Flame, 2019 \nThe image is a methane jet coflowing with air from the μg experiment in 2018 \nElectric field direction \nIon current monitoring  \nThe electric field schematic design inside the ACME insert. The \nleak resistor is used to isolate the mesh electrode and the \nchamber. A 200 GΩ resistance is used. \nThe ACME chamber insert \nLeak current isolation \n"
+    },
+    {
+      "locator": "page 9",
+      "text": "Experiment configuration and conditions \n• \nDiffusion flame:  \nusing coflow burner with \nno coflowing gas \n• \nFuel concentration:  \n70%, 40% methane \n• \nFuel flow rate:  \n19 cm/s \n• \nElectric field test:  \nFull voltage sweep test \nPhoto [ISS056e130654] taken in the ISS on 10 Aug. 2018.   \nThe Combustion Integration Rack (CIR) \nThe ACME chamber insert \nExperiment conditions \nVinitial: 400~500 V \nVmax: 10,000 V \nStep size: 200 V \nStep duration: 1 – 2 s \nVoltage (kV) \nTime (s) \n"
+    },
+    {
+      "locator": "page 10",
+      "text": ""
+    },
+    {
+      "locator": "page 11",
+      "text": ""
+    },
+    {
+      "locator": "page 12",
+      "text": ""
+    },
+    {
+      "locator": "page 13",
+      "text": ""
+    },
+    {
+      "locator": "page 14",
+      "text": "Summary \n"
+    },
+    {
+      "locator": "page 15",
+      "text": ""
+    },
+    {
+      "locator": "page 16",
+      "text": ""
+    },
+    {
+      "locator": "page 17",
+      "text": ""
+    },
+    {
+      "locator": "page 18",
+      "text": "Acknowledgements \n•  This research is funded by NASA’s ISS Research program under cooperative \nagreement NNX17AC51A. The authors thank the program and project \nmanagement, the engineering team who developed the experimental hardware \nand software, the ISS crew members who set up the hardware, and the \noperations team (more than 30 people in total) at NASA Glenn who remotely \ncommand it during testing. The author also thanks professor Marshall Long \nfrom Yale University, and particularly his dedication and contribution of the \nOMA software. \n•  NASA Microgravity Combustion Program and …… \n"
+    },
+    {
+      "locator": "page 19",
+      "text": "European Space Agency (ESA) astronaut Paolo Nespoli installing the chamber insert for \nthe Advanced Combustion via Microgravity Experiments (ACME) in the Combustion \nIntegrated Rack (CIR).  This photograph [ISS053e098207] was taken on the International \nSpace Station (ISS) on 12 Oct. 2017 \n"
+    },
+    {
+      "locator": "page 20",
+      "text": "NASA astronaut Joe Acaba reviewing procedures to align the hot-wire igniter on the \nACME chamber insert to his left taken on 5 Jan. 2018 \n"
+    },
+    {
+      "locator": "page 21",
+      "text": "Angie Adams RO, PD, Planner, Crew Ops, ACME Ops Lead \nArt Atherton DMO \nAlex Beltram RO  \nMike Carozzoni DMO \nDonna Davis DMO, Data Manager \nDeena Dombrosky PD  \nSam Dunton DMO, Anomalies \nMark Flynn DMO, Data Manager \nAaron Godfrey PD \nMargaret Hericks RO, Planner \nSteve Lawn RO, DMO, Diagnostics \nKevin McPherson NASA/FCF Ops Lead, RO, DMO, Sustaining Engineering \nTracy Neff FCF Ops Lead, RO, DMO, Crew Training, Crew Ops \nJustin Niehaus RO \nDon Rahe DMO \nSharon Reinke Planner, Crew Procedures, Crew Training, Crew Ops \nJesse Robbins PD, Sustaining Engineering \nCh i R\nPD DMO\n"
+    },
+    {
+      "locator": "page 22",
+      "text": "Sharon Reinke Planner, Crew Procedures, Crew Training, Crew Ops \nJesse Robbins PD, Sustaining Engineering \nChris Rogers PD, DMO \nMelani Smajdek CIR Planning Lead \nJennifer Storck Crew Training, Crew Ops \nKaren Tuttle RO, DMO \nBrandon Wagner DMO \nLori Yost DMO \nJeff Eggers ACME Software & ACME TADS \nJennifer Keller FCF Software Lead \nMatt Leach CIR TADS \nJohn Morrison CIR TADS \nJeff Schellentrager CIR software \nMarty O'Toole FCF Manager \nChris Mroczka ACME Manager \nTerri Miller Increment Trainer (for console operators), Anomalies \nStetmond Roberson Anomalies \n"
+    },
+    {
+      "locator": "page 23",
+      "text": "Thank you \n"
+    }
+  ],
+  "details": {
+    "page_count": 23,
+    "empty_pages": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      23
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

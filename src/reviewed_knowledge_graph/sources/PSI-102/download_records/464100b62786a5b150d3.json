@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:464100b62786a5b150d3",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_DBP run 4 GMT255hkp with zgy average.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_DBP run 4 GMT255hkp with zgy average.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 5205504,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d4ef91ab4427dbf4403&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/464100b62786a5b150d3/PSI-102_Analyzed Data_DBP run 4 GMT255hkp with zgy average.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "dd5e5afbac146525d38bfd72e043ec4939b32d6158d3e56d0f547aed2d17e269",
+  "status": "downloaded"
+}

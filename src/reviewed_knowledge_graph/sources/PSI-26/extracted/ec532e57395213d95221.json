@@ -1,0 +1,31 @@
+{
+  "id": "res:PSI-26:ec532e57395213d95221",
+  "study": "PSI-26",
+  "filename": "PSI-26_Engineering Documents_Drawing_PMMA.Flat.Fuel.Sample2mm.pdf",
+  "key": "psi-data/PSI-26/Engineering Documents/PSI-26_Engineering Documents_Drawing_PMMA.Flat.Fuel.Sample2mm.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 52408,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcf9c3501a37c2c60dcc&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/ec532e57395213d95221/PSI-26_Engineering Documents_Drawing_PMMA.Flat.Fuel.Sample2mm.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "926d916a0a97b7680ef53477ecb3a14324259c539c6f92fa4c71b05c20eb5199",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": ""
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": [
+      1
+    ]
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "no_text",
+  "review_status": "not_yet_reviewed"
+}

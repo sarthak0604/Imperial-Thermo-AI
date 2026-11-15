@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:a4a0984648030695e9bb",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_GMT262 RUN 13 teflon.xls",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_GMT262 RUN 13 teflon.xls",
+  "category": "Analyzed Data",
+  "size_bytes": 897536,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d52f91ab4427dbf4432&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/a4a0984648030695e9bb/PSI-102_Analyzed Data_GMT262 RUN 13 teflon.xls",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "ad5b379effdebe2bcc59de140a854b366df6657ac1b8659deb1737fe2d1aae8d",
+  "status": "downloaded"
+}

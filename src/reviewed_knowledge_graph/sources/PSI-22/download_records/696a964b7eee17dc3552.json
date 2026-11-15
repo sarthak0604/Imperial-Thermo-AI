@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:696a964b7eee17dc3552",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf",
+  "category": "Presentations",
+  "size_bytes": 3793532,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75b0eb4c0867600556e&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/696a964b7eee17dc3552/PSI-22_Presentations_Chien et al 2019 Ion Current and Flame Changes with Electric Fields.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "6a720d52378b81406f9f20c1f5b9e7f83331e9bfb44f74261637ef6bd7b598d7",
+  "status": "downloaded"
+}

@@ -1,0 +1,105 @@
+{
+  "id": "res:PSI-22:16e7cd3804c103deacd6",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Tinajero et al 2014 Ground-Based Schlieren Experiments.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Tinajero et al 2014 Ground-Based Schlieren Experiments.pdf",
+  "category": "Presentations",
+  "size_bytes": 1827407,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75c0eb4c08676005578&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/16e7cd3804c103deacd6/PSI-22_Presentations_Tinajero et al 2014 Ground-Based Schlieren Experiments.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "eb5f3d6d0cbc5bc023dca013d3b76c743182b9a6e9e7aca1aa8575e495a45216",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "Ground-Based Schlieren Experiments of\nChemi-Ion Driven Flows in a Time Varying\nElectric Field\nJesse Tinajero1\nDerek Dunn-Rankin1\nJie Bia2\nMiguel Plascencia1\n1Mechanical and Aerospace Engineering,\nUniversity of California-Irvine\n2School of Marine Engineering,\nNorthwestern Polytechnical University\nASGSR - October 26th, 2014\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 2",
+      "text": "Motivation\nI Preparation for 2016-17 micro-gravity experiments on-board the ISS via\nNasa’s ACME (Advanced Combustion Via Microgravity Experiments)\nI Study the transient effect of chemi-ions in the bulk gas\nI Study the effects of important parameters (i.e. ﬁeld strength and electrode\ngap distance) that characterize electric ﬁeld combustion (i.e. time-scales\nand length-scales) in a transient state\nI Acquire full dynamic control of combustion using electric ﬁelds\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 3",
+      "text": "Introduction\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 4",
+      "text": "Experiment - schlieren\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 5",
+      "text": "Experiment - h.v. power supply circuit\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 6",
+      "text": "Experiment - uci Coflow Burner\nI Fuel: Methane\nI Fuel Flow Rate: 7cm/s\nI Burner Material: Stainless Steel\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 7",
+      "text": "Ion Current Vs Field Strength - Eave = −4 V/H\nACME H.V.P.S.\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n0\n0.5\n1\n1.5\n2\n2.5\nField Strength [kV/cm]\nIon Current [µA]\nUltraVolt − Field Strength vs Ion Current\nMethane Flame − 25mm gap\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n0\n0.5\n1\n1.5\n2\n2.5\nField Strength [kV/cm]\nIon Current [µA]\nUltraVolt − Field Strength vs Ion Current\nMethane Flame − 30mm gap\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n0\n0.5\n1\n1.5\n2\n2.5\nField Strength [kV/cm]\nIon Current [µA]\nUltraVolt − Field Strength vs Ion Current\nMethane Flame − 35mm gap\nUCI H.V.P.S.\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n0\n0.5\n1\n1.5\n2\n2.5\nField Strength [kV/cm]\nIon Current [µA]\nTrek − Field Strength vs Ion Current\nMethane Flame − 25mm gap\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n0\n0.5\n1\n1.5\n2\n2.5\nField Strength [kV/cm]\nIon Current [µA]\nTrek − Field Strength vs Ion Current\nMethane Flame − 30mm gap\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n0\n0.5\n1\n1.5\n2\n2.5\nField Strength [kV/cm]\nIon Current [µA]\nTrek − Field Strength vs Ion Current\nMethane Flame − 35mm gap\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 8",
+      "text": "Ion Current Vs Field Strength - Eave = −4 V/H\n0\n0.5\n1\n1.5\n2\n2.5\n3\n3.5\n0\n0.5\n1\n1.5\n2\n2.5\nField Strength [kV/cm]\nIon Current [µA]\nTrek − Field Strength vs Ion Current\nMethane Flame − 35mm gap\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 9",
+      "text": "Transient Results - uci h.v. power supply\n35mm gap\n0\n10\n20\n30\n40\n50\n60\n70\n80\n90\n100\n−9\n−8\n−7\n−6\n−5\n−4\n−3\n−2\n−1\n0\nElectrode Mesh Potential [kV]\nTime [ms]\nTrek − Transient High Voltage Steps\nMethane Flame − 35mm Gap\n0\n10\n20\n30\n40\n50\n60\n70\n80\n90\n100\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek − Transient Shunt Measurements\nMethane Flame − 35mm Gap\n \n \nNeg2000VStep\nNeg3000VStep\nNeg4000VStep\nNeg5000VStep\nNeg6000VStep\nNeg7000VStep\nNeg8000VStep\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 10",
+      "text": "Transient Results - acme h.v. power supply\n35mm gap\n0\n10\n20\n30\n40\n50\n60\n70\n80\n90\n100\n−9\n−8\n−7\n−6\n−5\n−4\n−3\n−2\n−1\n0\n1\nElectrode Mesh Potential [kV]\nTime [ms]\nUltraVolt − Transient High Voltage Steps\nMethane Flame − 35mm Gap\n0\n10\n20\n30\n40\n50\n60\n70\n80\n90\n100\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt − Transient Shunt Measurements\nMethane Flame − 35mm Gap\n \n \nNeg2000VStep\nNeg3000VStep\nNeg4000VStep\nNeg5000VStep\nNeg6000VStep\nNeg7000VStep\nNeg8000VStep\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 11",
+      "text": "Transient Ion Current Measurements\nuci h.v.p.s. 25mm gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg1000VStep 25mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg2000VStep 25mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg5000VStep 25mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg5750VStep 25mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg6000VStep 25mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg6250VStep 25mm Gap\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 12",
+      "text": "Transient Ion Current Measurements\nuci h.v.p.s. 30mm gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg2000VStep 30mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg2500VStep 30mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg3000VStep 30mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg6000VStep 30mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg7000VStep 30mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg7250VStep 30mm Gap\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 13",
+      "text": "Transient Ion Current Measurements\nuci h.v.p.s. 35mm gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg3000VStep 35mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg3500VStep 35mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg4000VStep 35mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg7000VStep 35mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg7500VStep 35mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nTrek Neg8000VStep 35mm Gap\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 14",
+      "text": "Transient Ion Current Measurements\nacme h.v.p.s. 25mm gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt Neg1000VStep 25mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt Neg2000VStep 25mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt Neg5000VStep 25mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt Neg5750VStep 25mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt Neg6000VStep 25mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt Neg6250VStep 25mm Gap\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 15",
+      "text": "Transient Ion Current Measurements\nacme h.v.p.s. 35mm gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt Neg3000VStep 35mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt Neg3500VStep 35mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt Neg4000VStep 35mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt Neg7000VStep 35mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt Neg7500VStep 35mm Gap\n0\n100\n200\n300\n400\n500\n600\n700\n800\n−2.5\n−2\n−1.5\n−1\n−0.5\n0\nIon Current [µA]\nTime [ms]\nUltraVolt Neg8000VStep 35mm Gap\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 16",
+      "text": "Schlieren Still Images\nInitial State\nPlume In Transition\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 17",
+      "text": "Average Plume Velocity Vs Field Strength\nUave = H/ 4 t\nUCI H.V.P.S.\n0\n0.5\n1\n1.5\n2\n2.5\n20\n40\n60\n80\n100\n120\n140\n160\nAverage Plume Velocity Vs Field Strength\n25mm Gap\nField Strength [kV/cm]\nUave [cm/s]\n \n \nData\nFit\nConfidence bounds\n0\n0.5\n1\n1.5\n2\n2.5\n0\n50\n100\n150\n200\n250\n300\nAverage Plume Velocity Vs Field Strength\n30mm Gap\nField Strength [kV/cm]\nUave [cm/s]\n \n \nData\nFit\nConfidence bounds\n0.4\n0.6\n0.8\n1\n1.2\n1.4\n1.6\n1.8\n2\n2.2\n2.4\n40\n60\n80\n100\n120\n140\n160\n180\n200\n220\n240\nAverage Plume Velocity Vs Field Strength\n35mm Gap\nField Strength [kV/cm]\nUave [cm/s]\n \n \nData\nFit\nConfidence bounds\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 18",
+      "text": "Conclusions\n1. Transient Effects due to Voltage Steps\nI A wave is created in thermal plume. The wave is more apparent near\nsatuartion ﬁelds and for longer electrode spacings.\nI Average plume wave velocity was linear with average ﬁeld strength\nI 75hz oscillation appears in the ion current measurements when ﬁeld strength\nsurpasses 2kV/cm. This oscillation can clearly be seen in the schlieren\nvideos\n2. Time-Scales\nI UCI H.V. power supply produces electrode potential on the order of a 1kV in\n2-3ms. The ACME H.V. power supply produces the same electrode potential\nat a rate 0.1kV/ms\nI Bulk of ion current arrives downstream at ⇡10-20ms\nI Plume reaction time for a voltage step from the UCI power supply was\n⇡2-3ms. The plume reaction time for the ACME power supply was seen to\nbe longer\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 19",
+      "text": "Acknowledgments\nThis work is supported by NASAs ISS Research Project via agreement\nNNX11AP42A, with Dennis Stocker as contract monitor.\nThe product names and models are provided only for clariﬁcation and are in no way an endorsement on the part of NASA or the federal\ngovernment.\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    },
+    {
+      "locator": "page 20",
+      "text": "Thanks for your attention\nASGSR 2014, Pasadena\nChemi-Ion Driven Flows in a Time Varying Electric Field\n"
+    }
+  ],
+  "details": {
+    "page_count": 20,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

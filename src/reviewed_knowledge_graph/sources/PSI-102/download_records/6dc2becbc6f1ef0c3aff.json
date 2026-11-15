@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:6dc2becbc6f1ef0c3aff",
+  "study": "PSI-102",
+  "filename": "PSI-102_Analyzed Data_Run 2 GMT254 testlog.xlsx",
+  "key": "psi-data/PSI-102/Analyzed Data/PSI-102_Analyzed Data_Run 2 GMT254 testlog.xlsx",
+  "category": "Analyzed Data",
+  "size_bytes": 20970,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d4ef91ab4427dbf4400&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/6dc2becbc6f1ef0c3aff/PSI-102_Analyzed Data_Run 2 GMT254 testlog.xlsx",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "f476a603bdce8e04608fb5d459fa4286e3d4cf8f2ada5b980ea5d3fc00789eee",
+  "status": "downloaded"
+}

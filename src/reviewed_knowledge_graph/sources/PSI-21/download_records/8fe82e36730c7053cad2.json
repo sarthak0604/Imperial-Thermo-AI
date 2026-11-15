@@ -1,0 +1,12 @@
+{
+  "id": "res:PSI-21:8fe82e36730c7053cad2",
+  "study": "PSI-21",
+  "filename": "PSI-21_Experimental table_CLD Flame.csv",
+  "key": "psi-data/PSI-21/Experimental table/PSI-21_Experimental table_CLD Flame.csv",
+  "category": "Experimental table",
+  "size_bytes": 2454,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-21/download?file=67903877b7b6ff8e6502a3e2&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-21/8fe82e36730c7053cad2/PSI-21_Experimental table_CLD Flame.csv",
+  "sha256": "9fafbc5b3dddaf715ce8025ed9154ce297803f7b69a935f077ec26c8249e44c0",
+  "status": "downloaded"
+}

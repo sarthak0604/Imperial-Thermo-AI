@@ -1,0 +1,33 @@
+{
+  "id": "res:PSI-22:f06bed72addd625e5ed0",
+  "study": "PSI-22",
+  "filename": "PSI-22_Reports_ACME fact sheet 20180820.pdf",
+  "key": "psi-data/PSI-22/Reports/PSI-22_Reports_ACME fact sheet 20180820.pdf",
+  "category": "Reports",
+  "size_bytes": 1132230,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e63e0eb4c08676004b92&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/f06bed72addd625e5ed0/PSI-22_Reports_ACME fact sheet 20180820.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "1001b38b3f87ce6e60d2ea11acab7065a11e4fe0796f615558d53826edb6fca4",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "20 August 2018 \n \n \nAdvanced Combustion via Microgravity Experiments (ACME) \n \nPURPOSE:  ACME is focused on advanced combustion \ntechnology via fundamental microgravity research.  The \nprimary goal is to improve efficiency and reduce pollutant \nemission in practical terrestrial combustion.  A secondary \nobjective is fire prevention, especially for spacecraft. \n \nRESEARCH:  ACME includes six independent experiments \ninvestigating laminar, non-premixed flames of gaseous fuels.  \nThe experiments are being conducted with a single set of \nmodular hardware in the Combustion Integrated Rack (CIR) \non the International Space Station (ISS).  While the ISS \nastronauts set up the experimental hardware, the ACME tests \nare remotely commanded from NASA’s Glenn ISS Payload \nOperations Center. \nSTATUS:  ACME setup and checkout were carried out by the \nISS crew in Sept.-Oct. 2017.  Thus far, a dozen astronauts \nfrom Germany, Italy, Japan, Russia and the United States \nhave supported the ACME research.  Since November 2017, \nover 300 flames have been ignited for the Coflow Laminar \nDiffusion Flame (CLD Flame) and Electric-Field Effects on \nLaminar Diffusion Flames (E-FIELD Flames) experiments led \nrespectively by Profs. Marshall B. Long (Yale University) and \nDerek Dunn-Rankin (University of California, Irvine).   \n \nA second round of CLD Flame tests is currently underway and \nshould end in September when the testing will transition \nback to the E-FIELD Flames experiment.  In late 2018, the \nhardware will be reconfigured for the Burning Rate Emulator \n(BRE) experiment led by Prof. Jim Quintiere (University of \nMaryland).  While the first two ACME experiments are \nfocused on improving practical combustion on Earth, BRE is \naimed at improving spacecraft fire safety. \nItalian astronaut Paolo Nespoli installing the ACME \nchamber insert into the CIR’s combustion chamber. \nU.S. astronaut Joe Acaba aligning the retracting hot-wire \nigniter to the burner on the ACME chamber insert. \nExample image of a lifted coflow flame from the CLD Flame \nexperiment led by Prof. Marshall B. Long (Yale University). \nGerman astronaut Alex Gerst exchanging a mass flow \ncontroller (for the nitrogen used to dilute the gaseous fuel) \non the ACME chamber insert. \n"
+    },
+    {
+      "locator": "page 2",
+      "text": "20 August 2018 \n \n \nAdvanced Combustion via Microgravity Experiments (ACME) \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nWEB SITE:  http://spaceflightsystems.grc.nasa.gov/acme/ \nUPDATES:  www.facebook.com/space.flames  \nPHOTOGRAPHS:  www.flickr.com/photos/space-flames \nEDUCATION:  https://tinyurl.com/space-flames  \nRussian cosmonauts Anton Shkaplerov (left) and Oleg \nArtemyev exchanging a CIR gas bottle. \nU.S. astronaut Ricky Arnold cleaning soot from the coflow \nburner used by both the CLD Flame and E-FIELD Flames \nexperiments.  The cleaning was carried out with a \ntoothbrush, piece of insulated wire, vacuum sweeper, \nflashlight (for burner inspection), dust mask, and gloves. \n \nCONTACT: \nDennis Stocker, ACME Project Scientist \nNASA Glenn Research Center, Cleveland, OH \n216-433-2166, dennis.p.stocker@nasa.gov \nLifted flames (detached from the burner) as a function of the \nmatched fuel and air velocity from the CLD Flame experiment.  \nThe false color indicates the CH* concentration as function of \nthe radius and height above the burner.  CH* is an excited \nspecies and emits blue light as it drops to a lower energy level in \na process known as chemiluminescence.  It is the primary source \nof the blue that is the natural color of hydrocarbon flames \n(neglecting the broadband thermal radiation from the soot). \nDiffusion flames with a weak air coflow as a function of the electric field strength, where an open copper mesh above the flame is \nnegatively and positively charged in the top and bottom rows, respectively.  Flames naturally include ions which can be affected \nby a powerful electric or magnetic field.  In ACME’s E-FIELD Flames experiment, the copper mesh is energized up to 10,000 volts.  \nThis technology could be used to stabilize fuel-lean flames under conditions which are less polluting. \n"
+    }
+  ],
+  "details": {
+    "page_count": 2,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-102:42f13082e15eba8a3862",
+  "study": "PSI-102",
+  "filename": "PSI-102_Engineering Documents_SAME_IgnitorWireCharacterizationReport.pdf",
+  "key": "psi-data/PSI-102/Engineering Documents/PSI-102_Engineering Documents_SAME_IgnitorWireCharacterizationReport.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 1852991,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-102/download?file=683d9d55f91ab4427dbf4457&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-102/42f13082e15eba8a3862/PSI-102_Engineering Documents_SAME_IgnitorWireCharacterizationReport.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "78784625aaffb7420474a29b873454beaf5b38377edc11f6378cb087ca942cfa",
+  "status": "downloaded"
+}

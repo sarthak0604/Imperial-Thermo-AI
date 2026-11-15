@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-25:36882d4667790f4d75e3",
+  "study": "PSI-25",
+  "filename": "PSI-25_metadata_PSI_metadata_PSI-101_BASS-II.zip",
+  "key": "psi-data/PSI-25/metadata/PSI-25_metadata_PSI_metadata_PSI-101_BASS-II.zip",
+  "category": "metadata",
+  "size_bytes": 13439,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-25/download?file=6924803a7f6aa6a8302103ca&version=4&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-25/36882d4667790f4d75e3/PSI-25_metadata_PSI_metadata_PSI-101_BASS-II.zip",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "629faf104a8ff0e8d335f2527c019e740380163ea7f74b8ad754ae71f7da2559",
+  "status": "downloaded"
+}

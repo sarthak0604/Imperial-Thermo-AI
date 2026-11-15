@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-101:8f2c965ccd3866061ea2",
+  "study": "PSI-101",
+  "filename": "PSI-101_Engineering Documents_60089MFHD509 P-Trak Condenser Tube Modification.pdf",
+  "key": "psi-data/PSI-101/Engineering Documents/PSI-101_Engineering Documents_60089MFHD509 P-Trak Condenser Tube Modification.pdf",
+  "category": "Engineering Documents",
+  "size_bytes": 162861,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-101/download?file=683dc545b8656d2315bf5179&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-101/8f2c965ccd3866061ea2/PSI-101_Engineering Documents_60089MFHD509 P-Trak Condenser Tube Modification.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "ff80b858803f12138a9196e100d9c48db5dfdd287385c300f6a06aaa43f59cf0",
+  "status": "downloaded"
+}

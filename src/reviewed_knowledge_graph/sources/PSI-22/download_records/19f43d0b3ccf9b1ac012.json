@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-22:19f43d0b3ccf9b1ac012",
+  "study": "PSI-22",
+  "filename": "PSI-22_Presentations_Lopez-Camara et al 2016 Numerical Simulation of Flames.pdf",
+  "key": "psi-data/PSI-22/Presentations/PSI-22_Presentations_Lopez-Camara et al 2016 Numerical Simulation of Flames.pdf",
+  "category": "Presentations",
+  "size_bytes": 1214646,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-22/download?file=6851e75c0eb4c08676005572&version=1&studyVersion=7&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-22/19f43d0b3ccf9b1ac012/PSI-22_Presentations_Lopez-Camara et al 2016 Numerical Simulation of Flames.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "27d1146d5e7f8d6c5ae4eda19f5f6bde3f65b55e78716cb511b0a054ab2adf42",
+  "status": "downloaded"
+}

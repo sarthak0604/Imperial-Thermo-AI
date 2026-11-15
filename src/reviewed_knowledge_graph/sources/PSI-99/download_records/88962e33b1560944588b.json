@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-99:88962e33b1560944588b",
+  "study": "PSI-99",
+  "filename": "PSI-99_Science Documents_SAFFIRE-II_Image_Directory_Nomenclature_v3.0.pdf",
+  "key": "psi-data/PSI-99/Science Documents/PSI-99_Science Documents_SAFFIRE-II_Image_Directory_Nomenclature_v3.0.pdf",
+  "category": "Science Documents",
+  "size_bytes": 755236,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-99/download?file=6840cdd64a0e24d624cebd81&version=1&studyVersion=5&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-99/88962e33b1560944588b/PSI-99_Science Documents_SAFFIRE-II_Image_Directory_Nomenclature_v3.0.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "edb5b6f4ebc7c32bd26f45f728902d766affa395677d818e9ef932c704321dbe",
+  "status": "downloaded"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "res:PSI-20:1e565107af3fa4ac66a2",
+  "study": "PSI-20",
+  "filename": "PSI-20_Presentations_ACME_ASGSR_20121127.pdf",
+  "key": "psi-data/PSI-20/Presentations/PSI-20_Presentations_ACME_ASGSR_20121127.pdf",
+  "category": "Presentations",
+  "size_bytes": 1997745,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-20/download?file=6841d8181b4820d736cecc27&version=1&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-20/1e565107af3fa4ac66a2/PSI-20_Presentations_ACME_ASGSR_20121127.pdf",
+  "retrieval_method": "NASA downloader endpoint and curl transport",
+  "sha256": "ac6529dc0644ab299e9ed50da4aa25309e3b4d69534e24e3e43a34714629fd9a",
+  "status": "downloaded"
+}

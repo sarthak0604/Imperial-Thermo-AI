@@ -1,0 +1,28 @@
+{
+  "id": "res:PSI-26:a161266d56f35fff5858",
+  "study": "PSI-26",
+  "filename": "PSI-26_Science Documents_DLD_BASS.pdf",
+  "key": "psi-data/PSI-26/Science Documents/PSI-26_Science Documents_DLD_BASS.pdf",
+  "category": "Science Documents",
+  "size_bytes": 69653,
+  "source_url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-26/download?file=67dafcfac3501a37c2c60ddf&version=2&studyVersion=4&redirect=true",
+  "local_path": "/private/tmp/nasa-psi-review-01a1dfae/PSI-26/a161266d56f35fff5858/PSI-26_Science Documents_DLD_BASS.pdf",
+  "sha256": "e38622cce587897c8fe5f8f5af404ee9bb682fea687f4038a67167c03b218505",
+  "status": "downloaded",
+  "parser_version": "review-2",
+  "sections": [
+    {
+      "locator": "page 1",
+      "text": "PSI Data Layout Document – BASS (Burning and Suppression of Solids) Investigation \n \n \nBASS (Burning and Suppression of Solids) examines the burning and extinction characteristics of a wide \nvariety of fuel samples in microgravity. The BASS experiment will guide strategies for extinguishing \naccidental fires in microgravity. BASS results contribute to the combustion computational models used \nin the design of fire detection and suppression systems in microgravity and on Earth. The BASS data \navailable in PSI is organized into 2 datasets by the year the tests were conducted: \n \n• \nBASS_2012 \n• \nBASS_2013 \n \nThese Experiment Data records are located on the “Data” tab within the BASS investigation in PSI. When \nan experiment data record is selected, the “Scientific Data and Information” tab is opened. For \nBASS_2012, on the “Scientific Data and Information” tab, “Images” are organized by date formatted \nyyyy_mm_dd. There are 21 image galleries for BASS_2012. For BASS_2013, on the “Scientific Data and \nInformation” tab, “Audio/Video Files” and “Images” are both organized by date formatted yyyy_mm_dd. \nThere are 12 audio/video collections and 15 image galleries for BASS_2013.  \n \nOther relevant data and information about the BASS investigation can be located throughout the other \ntabs in the BASS record. \n \n"
+    }
+  ],
+  "details": {
+    "page_count": 1,
+    "empty_pages": []
+  },
+  "warnings": [
+    "Text extracted; visual content is reviewed only where explicitly recorded."
+  ],
+  "extraction_status": "extracted",
+  "review_status": "not_yet_reviewed"
+}
