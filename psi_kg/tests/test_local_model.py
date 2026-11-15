@@ -25,7 +25,8 @@ def test_local_provider_needs_no_key_or_api(monkeypatch, tmp_path):
         local_model,
         "LocalModel",
         lambda model: SimpleNamespace(
-            generate=lambda *a: (calls.append(model) or Result(value="local"), {})
+            generate=lambda *a: (calls.append(model) or Result(value="local"), {}),
+            fits=lambda *a: True,
         ),
     )
     for name in (

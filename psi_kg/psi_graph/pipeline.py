@@ -38,6 +38,7 @@ def report(
     *,
     provider=None,
     model=None,
+    synthesis_caveats=(),
 ):
     counts = Counter(r["extraction_status"] for r in resources)
     accesses = Counter(r["access_status"] for r in resources)
@@ -80,6 +81,17 @@ def report(
             "Retrieval is lexical concept/synonym matching plus graph traversal, not global GraphRAG.",
         ],
     )
+    report["limitations"].extend(synthesis_caveats)
+    scope_path = output / "scientific_review_scope.json"
+    if scope_path.exists():
+        scope = read_json(scope_path)
+        report["scientific_review"]["scope"] = scope
+        if scope.get("excerpt_context_ids"):
+            report["limitations"].append(
+                "Some scientific review items used quote-centered source excerpts "
+                "to fit the input budget. Complete sections remain in documents.json; "
+                "contradictions outside those excerpts were not assessed."
+            )
     if provider is not None:
         report["model_execution"] = {"provider": provider, "model": model}
         report["extraction_mode"] = "local_model" if provider == "local" else "llm_api"
@@ -334,6 +346,7 @@ def main():
         client.usage,
         provider=client.provider,
         model=client.model,
+        synthesis_caveats=synthesis.caveats,
     )
     if not validation["passed"]:
         write_json(output / "failed_graph.json", graph)

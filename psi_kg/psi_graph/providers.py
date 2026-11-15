@@ -205,6 +205,20 @@ class LLM:
             usage = response.get("usage", {})
         return result, usage
 
+    @staticmethod
+    def prompt(stage, payload):
+        return (
+            f"STAGE: {stage}\nReturn the requested schema.\nINPUT DATA:\n"
+            + json.dumps(payload, ensure_ascii=False)
+        )
+
+    def fits(self, stage, payload, schema):
+        from .science import SYSTEM
+
+        return self.provider != "local" or self.client.fits(
+            SYSTEM, self.prompt(stage, payload), schema
+        )
+
     def call(self, stage, payload, schema):
         from .science import PROMPT_VERSION, SYSTEM
 
@@ -220,6 +234,7 @@ class LLM:
                         name: os.environ.get(name)
                         for name in (
                             "LLM_CONTEXT_TOKENS",
+                            "LLM_INPUT_TOKENS",
                             "LLM_MAX_NEW_TOKENS",
                             "LLM_DEVICE",
                         )
@@ -241,7 +256,14 @@ class LLM:
                 dict(stage=stage, cached=True, cache_key=key, **data.get("usage", {}))
             )
             return schema.model_validate(data["result"])
-        prompt = f"STAGE: {stage}\nReturn the requested schema.\nINPUT DATA:\n" + body
+        prompt = self.prompt(stage, payload)
+        if not self.fits(stage, payload, schema):
+            from .local_model import LocalModelError
+
+            raise LocalModelError(
+                f"Unsplit {stage} request exceeds LLM_INPUT_TOKENS; "
+                "inference was not started and source content was not truncated."
+            )
         for attempt in range(4):
             try:
                 if self.last_request_at is not None:

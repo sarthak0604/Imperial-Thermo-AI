@@ -49,7 +49,8 @@ Use these settings in your private `~/.config/imperial-thermo-ai/.env` (replace 
 LLM_PROVIDER=local
 LLM_MODEL=Qwen/Qwen3-4B-Instruct-2507
 LLM_DEVICE=auto
-LLM_CONTEXT_TOKENS=32768
+LLM_CONTEXT_TOKENS=262144
+LLM_INPUT_TOKENS=8192
 LLM_MAX_NEW_TOKENS=8192
 LLM_MIN_REQUEST_INTERVAL_SECONDS=0
 ```
@@ -68,7 +69,7 @@ uv run --extra local psi-graph-manage 'https://psi.nasa.gov/physci/repo/data/inv
 
 No API key or model server is required. Transformers downloads roughly 8 GB of model weights on first inference and reuses the Hugging Face cache (`~/.cache/huggingface` by default; override with `HF_HOME`). Local inference automatically uses CUDA, Apple MPS, or CPU. MPS uses fp16; CPU uses fp32 like the test branch and needs substantially more RAM. The cloud configuration uses CPU inference, not the branch's CUDA 4-bit path. CPU extraction can be slow. Original NASA downloads are still temporary unless `--keep-originals` is selected; cached model weights are kept separately.
 
-JSON output is validated against the existing extraction schema, with one bounded repair attempt. Source-evidence checks still apply. Context overflow, exhausted output budgets, or invalid JSON stop the run without publishing the graph; no input is silently truncated or sent to a paid provider. `LLM_CONTEXT_TOKENS` caps input plus reserved output tokens, and `LLM_MAX_NEW_TOKENS` caps output. Large investigation synthesis can exceed the default context: raising it requires enough memory. This backend change does not add automatic multi-pass synthesis for oversized investigations. Set `LLM_LOCAL_FILES_ONLY=1` to prohibit model downloads after the model is cached. Smaller-model scientific quality must be checked against sources; structural validation alone does not prove correctness.
+JSON output is validated against the existing extraction schema, with one bounded repair attempt. Source-evidence checks still apply. Context overflow, exhausted output budgets, or invalid JSON stop the run without publishing the graph; no input is silently truncated or sent to a paid provider. `LLM_CONTEXT_TOKENS` caps input plus reserved output tokens, and `LLM_MAX_NEW_TOKENS` caps output. The native context ceiling is separate from `LLM_INPUT_TOKENS` (default 8192): initial local requests, including the chat template and JSON schema, are token-counted before inference. One JSON repair may additionally use at most `LLM_MAX_NEW_TOKENS + 1024` input tokens for the previous response and validation feedback; that explicit ceiling and the native context ceiling are checked before GPU transfer. Extraction splits text and resource inventories without dropping their contents. Synthesis uses bounded batches and merges matching study keys/resource IDs while preserving evidence; differently named studies may remain duplicated across batches. Scientific review batches by token size and, where necessary, uses quote-centered source excerpts; those restrictions are recorded in `scientific_review_scope.json` and the validation report. An indivisible oversized record stops clearly rather than being truncated or sent to the GPU. If other GPU usage still causes OOM, reduce `LLM_INPUT_TOKENS` to 4096; this creates smaller batches. Increasing the disk cap does not increase GPU memory. Set `LLM_LOCAL_FILES_ONLY=1` to prohibit model downloads after the model is cached. Smaller-model scientific quality must be checked against sources; structural validation alone does not prove correctness.
 
 ### Optional Gemini setup and interactive graph selection
 

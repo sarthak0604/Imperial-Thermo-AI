@@ -476,7 +476,7 @@ def main(argv=None):
     if provider == "local":
         env["HF_HOME"] = "/data/.huggingface"
         env["LLM_DEVICE"] = "cuda" if use_gpu else "cpu"
-        for name in ("LLM_CONTEXT_TOKENS", "LLM_MAX_NEW_TOKENS"):
+        for name in ("LLM_CONTEXT_TOKENS", "LLM_MAX_NEW_TOKENS", "LLM_INPUT_TOKENS"):
             if os.environ.get(name):
                 env[name] = os.environ[name]
     if os.environ.get("LLM_MIN_REQUEST_INTERVAL_SECONDS"):

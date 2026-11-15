@@ -63,7 +63,8 @@ class LocalModel:
         self.torch = torch
         self.model_id = model_id
         self.model = self.tokenizer = None
-        self.context_tokens = positive_setting("LLM_CONTEXT_TOKENS", 32768)
+        self.context_tokens = positive_setting("LLM_CONTEXT_TOKENS", 262144)
+        self.input_tokens = positive_setting("LLM_INPUT_TOKENS", 8192)
         self.max_new_tokens = positive_setting("LLM_MAX_NEW_TOKENS", 8192)
         if self.max_new_tokens >= self.context_tokens:
             raise LocalModelError(
@@ -137,7 +138,7 @@ class LocalModel:
             enable_thinking=False,
             return_dict=True,
             return_tensors="pt",
-        ).to(self.model.device)
+        )
         count = inputs["input_ids"].shape[1]
         if count + self.max_new_tokens > self.context_tokens:
             raise LocalModelError(
@@ -146,6 +147,18 @@ class LocalModel:
                 "No source text was truncated. Increase the context setting only if memory allows; "
                 "parsed sources and completed extractions remain cached."
             )
+        # A single JSON repair may include the previous bounded response. Keep
+        # that allowance explicit rather than falling back to the native ceiling.
+        working_limit = getattr(self, "input_tokens", 8192)
+        if len(messages) > 2:
+            working_limit += self.max_new_tokens + 1024
+        if count > working_limit:
+            raise LocalModelError(
+                f"Local request has {count} input tokens, exceeding its working "
+                f"budget of {working_limit}. No inference or truncation occurred; "
+                "reduce source batch size or inspect the JSON repair response."
+            )
+        inputs = inputs.to(self.model.device)
         try:
             with self.torch.inference_mode():
                 tokens = self.model.generate(
@@ -156,7 +169,8 @@ class LocalModel:
                 )
         except RuntimeError as error:
             raise LocalModelError(
-                f"Local inference failed ({type(error).__name__}); check available memory. "
+                f"Local inference failed ({type(error).__name__}); reduce LLM_INPUT_TOKENS "
+                "(for example to 4096) to create smaller batches, and check GPU memory. "
                 "No API fallback was used."
             ) from None
         generated = tokens[0, count:]
@@ -173,8 +187,9 @@ class LocalModel:
             "device": self.device,
         }
 
-    def generate(self, system, prompt, schema):
-        messages = [
+    @staticmethod
+    def messages(system, prompt, schema):
+        return [
             {
                 "role": "system",
                 "content": system
@@ -183,6 +198,22 @@ class LocalModel:
             },
             {"role": "user", "content": prompt},
         ]
+
+    def fits(self, system, prompt, schema):
+        self.load()
+        tokens = self.tokenizer.apply_chat_template(
+            self.messages(system, prompt, schema),
+            return_dict=False,
+            tokenize=True,
+            add_generation_prompt=True,
+            enable_thinking=False,
+        )
+        return len(tokens) <= min(
+            self.input_tokens, self.context_tokens - self.max_new_tokens
+        )
+
+    def generate(self, system, prompt, schema):
+        messages = self.messages(system, prompt, schema)
         totals = {"input_tokens": 0, "output_tokens": 0, "device": self.device}
         for attempt in range(2):
             text, usage = self.complete(messages)

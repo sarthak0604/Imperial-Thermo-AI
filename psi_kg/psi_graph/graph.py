@@ -337,31 +337,54 @@ def scientific_review(client, graph, provenance, documents, output):
                 ],
             )
         )
+    from .synthesis_batches import bounded_batches, fit_review_items
+
+    def payload(batch):
+        return dict(
+            instruction="Independently assess every item against the provided verbatim evidence and source context. Return one verdict per exact ID. Check units, actual vs modeled measurements, conditions, unsupported findings, synonyms, methods and resource association. Exact text match alone does NOT prove entailment. For relationships assess the relationship, not unrelated properties of the endpoint nodes. HAS_RESOURCE requires the document/data to support that specific study, not just general topic overlap. CONTAINS means documented analysis within the investigation resources, not necessarily a new physical flight experiment. Citation titles can support bibliographic association, never numerical claims. A controlled/input parameter must not be called measured unless the source reports it as an observable. Mark unsupported claims false; give precise reasons. Do not require source to literally use our paraphrased labels or slug.",
+            items=batch,
+        )
+
+    scope = dict(complete=False, total_items=len(items), excerpt_context_ids=[])
     verdicts = []
-    for start in range(0, len(items), 16):
-        batch = items[start : start + 16]
-        print(
-            f"LLM scientific audit: {start + 1}-{start + len(batch)} of {len(items)}",
-            flush=True,
-        )
-        review = client.call(
-            "scientific_review",
-            dict(
-                instruction="Independently assess every item against the provided verbatim evidence and source context. Return one verdict per exact ID. Check units, actual vs modeled measurements, conditions, unsupported findings, synonyms, methods and resource association. Exact text match alone does NOT prove entailment. For relationships assess the relationship, not unrelated properties of the endpoint nodes. HAS_RESOURCE requires the document/data to support that specific study, not just general topic overlap. CONTAINS means documented analysis within the investigation resources, not necessarily a new physical flight experiment. Citation titles can support bibliographic association, never numerical claims. A controlled/input parameter must not be called measured unless the source reports it as an observable. Mark unsupported claims false; give precise reasons. Do not require source to literally use our paraphrased labels or slug.",
-                items=batch,
-            ),
-            Review,
-        )
-        expected = {item["id"] for item in batch}
-        seen = set()
-        for verdict in review.verdicts:
-            if verdict.id in expected and verdict.id not in seen:
-                verdicts.append(verdict.model_dump())
-                seen.add(verdict.id)
-        for missing in expected - seen:
-            verdicts.append(
-                dict(id=missing, supported=False, reason="No audit verdict returned")
+    scoped = fit_review_items(client, items, payload, Review, scope)
+    batches = bounded_batches(
+        client, "scientific_review", scoped, payload, Review, max_items=16
+    )
+    try:
+        for batch in batches:
+            print(
+                f"LLM scientific audit: {len(verdicts) + 1}-"
+                f"{len(verdicts) + len(batch)} of {len(items)}",
+                flush=True,
             )
+            review = client.call("scientific_review", payload(batch), Review)
+            expected = {item["id"] for item in batch}
+            seen = set()
+            for verdict in review.verdicts:
+                if verdict.id in expected and verdict.id not in seen:
+                    data = verdict.model_dump()
+                    if verdict.id in scope["excerpt_context_ids"]:
+                        data["reason"] += (
+                            " [Audit used quote-centered excerpts; full source context "
+                            "was not reviewed.]"
+                        )
+                    verdicts.append(data)
+                    seen.add(verdict.id)
+            for missing in expected - seen:
+                verdicts.append(
+                    dict(
+                        id=missing, supported=False, reason="No audit verdict returned"
+                    )
+                )
+            write_json(output / "scientific_review.json", verdicts)
+        scope["complete"] = True
+    finally:
+        scope["reviewed_items"] = len(verdicts)
+        scope["full_source_context_reviewed"] = (
+            scope["complete"] and not scope["excerpt_context_ids"]
+        )
+        write_json(output / "scientific_review_scope.json", scope)
     write_json(output / "scientific_review.json", verdicts)
     return verdicts
 

@@ -6,8 +6,9 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from .common import normalized, write_json
 from .parsing import chunks
+from .prompt_budget import extraction_requests
 
-PROMPT_VERSION = "1.0.0"
+PROMPT_VERSION = "1.1.0"
 
 
 class Strict(BaseModel):
@@ -157,16 +158,26 @@ def extract_all(client, documents, resources, output, *, results=None, failures=
         for r in resources
     ]
     for document in documents:
-        for number, sections in enumerate(chunks(document), 1):
+
+        def requests():
+            for sections in chunks(document):
+                payload = dict(
+                    instruction="Extract studies and resource science from this chunk. Use resource inventory only to resolve exact matching files and titles, not to invent content. Use evidence from this chunk. If no study evidence, leave studies empty.",
+                    document_id=document["id"],
+                    source_title=document["title"],
+                    resource_type=document["resource_type"],
+                    sections=sections,
+                    resource_inventory=inventory,
+                )
+                try:
+                    yield from extraction_requests(client, payload, Extraction)
+                except LocalModelError as exc:
+                    failures.append(dict(document_id=document["id"], issue=str(exc)))
+                    write_json(output / "extraction_failures.json", failures)
+                    raise
+
+        for number, payload in enumerate(requests(), 1):
             print(f"LLM extract: {document['title']} chunk {number}", flush=True)
-            payload = dict(
-                instruction="Extract studies and resource science from this chunk. Use resource inventory only to resolve exact matching files and titles, not to invent content. Use evidence from this chunk. If no study evidence, leave studies empty.",
-                document_id=document["id"],
-                source_title=document["title"],
-                resource_type=document["resource_type"],
-                sections=sections,
-                resource_inventory=inventory,
-            )
             try:
                 result = client.call("extract", payload, Extraction)
                 data = result.model_dump()
@@ -217,7 +228,7 @@ def extract_all(client, documents, resources, output, *, results=None, failures=
 
 
 def synthesize(client, extractions, resources, metadata, output):
-    payload = dict(
+    base = dict(
         instruction="Consolidate duplicate studies across chunks/resources, including equivalent concepts and variables. Keep scientifically distinct study designs separate but do not create one experiment per figure, chunk, paper citation or condition. Use stable keys based on publication DOI or normalized physical study identity. Preserve all useful findings. Exclude unsupported claims with no valid evidence. A resource may support multiple studies. Map all scientifically relevant available datasets to their documented studies. Never assert that all resources support all experiments. Include non-accessible papers only when their citation specifically identifies the same study. Copy existing evidence unchanged. Do not lose studies found in later dissertation chapters. Treat metadata methods as investigation-level context; do not impose its OpenFOAM method on unrelated 1-D models.",
         investigation={
             k: metadata.get(k) for k in ("accession", "title", "objective", "doi")
@@ -231,6 +242,40 @@ def synthesize(client, extractions, resources, metadata, output):
         ],
         extractions=extractions,
     )
-    result = client.call("synthesize", payload, Synthesis)
+    from .synthesis_batches import (
+        bounded_batches,
+        extraction_atoms,
+        merge_syntheses,
+        referenced_ids,
+    )
+
+    inventory = base.pop("resource_inventory")
+    base.pop("extractions")
+
+    def payload(records):
+        ids = set(referenced_ids(records))
+        return dict(
+            **base,
+            resource_inventory=[r for r in inventory if r["id"] in ids],
+            extractions=records,
+        )
+
+    fits = getattr(client, "fits", lambda *args: True)
+    if fits("synthesize", payload(extractions), Synthesis):
+        batches = [extractions]
+    else:
+        batches = bounded_batches(
+            client, "synthesize", extraction_atoms(extractions), payload, Synthesis
+        )
+    results = []
+    for number, batch in enumerate(batches, 1):
+        print(f"LLM synthesis batch {number}", flush=True)
+        results.append(client.call("synthesize", payload(batch), Synthesis))
+        write_json(output / "synthesis_batches.json", [r.model_dump() for r in results])
+    result = merge_syntheses(results)
+    result.caveats.append(
+        "Synthesis prompts include resources referenced by the extraction records; "
+        "the complete resource inventory remains in the manifest and graph."
+    )
     write_json(output / "synthesis.json", result.model_dump())
     return result
