@@ -8,6 +8,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from .budget import positive_gb
 from .common import now, read_json, write_json
 from .coverage import audit
 from .discovery import (
@@ -17,6 +18,7 @@ from .discovery import (
     download_all,
 )
 from .graph import SCHEMA, apply_review, build, scientific_review, validate
+from .incremental import prepare_incrementally
 from .nasa_access import investigation_id
 from .parsing import parse_resources
 from .providers import LLM
@@ -167,6 +169,18 @@ def main():
         action="store_true",
         help="Keep original downloaded files; default uses temporary files and preserves extracted text only",
     )
+    parser.add_argument(
+        "--max-temp-gb",
+        type=positive_gb,
+        default=50,
+        help="Maximum original-file scratch usage in decimal GB (default: 50)",
+    )
+    parser.add_argument(
+        "--min-free-gb",
+        type=positive_gb,
+        default=5,
+        help="Free-space reserve in decimal GB (default: 5)",
+    )
     args = parser.parse_args()
     load_dotenv(args.env_file, override=False)
     args.provider = args.provider or os.environ.get("LLM_PROVIDER", "local")
@@ -185,26 +199,54 @@ def main():
     client = None
     if args.stage in ("all", "generate") and not args.reviewed_bundle:
         client = LLM(output, args.provider, model, args.base_url, args.api_key_env)
+    incremental_extractions, incremental_failures = [], []
+    incremental = args.stage in ("all", "prepare") and not args.keep_originals
+
+    def extract_document(document):
+        extract_all(
+            client,
+            [document],
+            resources,
+            output,
+            results=incremental_extractions,
+            failures=incremental_failures,
+        )
+
     if args.stage in ("all", "prepare"):
         metadata, resources = discover(args.url, output, args.refresh)
         resources = discover_open_versions(resources, metadata, output)
-        with source_storage(
-            output, resources, args.url, args.keep_originals
-        ) as raw_output:
-            download_all(
-                resources, metadata, output, args.workers, storage_output=raw_output
+        if incremental:
+            documents = prepare_incrementally(
+                resources,
+                metadata,
+                args.url,
+                output,
+                max_temp_gb=args.max_temp_gb,
+                min_free_gb=args.min_free_gb,
+                on_document=extract_document if client is not None else None,
             )
-            documents = parse_resources(
-                resources, metadata, args.url, output, storage_output=raw_output
-            )
-            while added := discover_document_links(documents, resources, metadata):
-                resources.extend(added)
+        else:
+            with source_storage(
+                output, resources, args.url, args.keep_originals
+            ) as raw_output:
                 download_all(
                     resources, metadata, output, args.workers, storage_output=raw_output
                 )
                 documents = parse_resources(
                     resources, metadata, args.url, output, storage_output=raw_output
                 )
+                while added := discover_document_links(documents, resources, metadata):
+                    resources.extend(added)
+                    download_all(
+                        resources,
+                        metadata,
+                        output,
+                        args.workers,
+                        storage_output=raw_output,
+                    )
+                    documents = parse_resources(
+                        resources, metadata, args.url, output, storage_output=raw_output
+                    )
         write_json(
             output / "resources_manifest.json",
             dict(source_url=args.url, generated_at=now(), resources=resources),
@@ -219,6 +261,15 @@ def main():
             )
             return 0
     else:
+        state = output / "preparation_state.json"
+        if (
+            args.stage == "generate"
+            and state.exists()
+            and not read_json(state)["complete"]
+        ):
+            raise RuntimeError(
+                "Preparation is incomplete. Rerun --stage prepare with the same URL and --output before --stage generate; see resources_manifest.json for the blocking file."
+            )
         metadata = read_json(output / "metadata.json")
         resources = read_json(output / "resources_manifest.json")["resources"]
         documents = read_json(output / "documents.json")
@@ -258,7 +309,10 @@ def main():
         markdown.write_text(text)
         print(json.dumps(validation, indent=2))
         return 0
-    extractions, failures = extract_all(client, documents, resources, output)
+    if incremental:
+        extractions, failures = incremental_extractions, incremental_failures
+    else:
+        extractions, failures = extract_all(client, documents, resources, output)
     synthesis = synthesize(client, extractions, resources, metadata, output)
     graph, provenance, rejected = build(
         synthesis, resources, metadata, args.url, documents

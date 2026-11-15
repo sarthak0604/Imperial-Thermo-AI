@@ -11,6 +11,7 @@ from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker
 
+from .budget import positive_gb
 from .common import digest, file_hash, now, read_json, write_json
 from .graph import DIRECTIONS, SCHEMA
 from .nasa_access import investigation_id
@@ -144,6 +145,16 @@ def main():
     parser.add_argument("--workers", type=int)
     parser.add_argument("--refresh", action="store_true")
     parser.add_argument("--keep-originals", action="store_true")
+    parser.add_argument(
+        "--max-temp-gb",
+        type=positive_gb,
+        help="Original-file cap in GB (pipeline default: 50)",
+    )
+    parser.add_argument(
+        "--min-free-gb",
+        type=positive_gb,
+        help="Free-space reserve in GB (pipeline default: 5)",
+    )
     args = parser.parse_args()
     extra = []
     for option in (
@@ -153,6 +164,8 @@ def main():
         "base_url",
         "api_key_env",
         "workers",
+        "max_temp_gb",
+        "min_free_gb",
     ):
         value = getattr(args, option)
         if value is not None:

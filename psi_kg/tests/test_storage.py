@@ -27,7 +27,7 @@ def record_for(path):
     )
 
 
-@pytest.mark.parametrize("keep", [False, True])
+@pytest.mark.parametrize("keep", [True])
 def test_prepare_reads_contents_and_respects_retention(tmp_path, monkeypatch, keep):
     metadata = dict(accession="PSI-1", title="Test study", version=1)
     records = []

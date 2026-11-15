@@ -10,6 +10,7 @@ from urllib.parse import unquote, urlencode, urljoin, urlparse
 from bs4 import BeautifulSoup
 
 from . import nasa_access as nasa
+from .budget import StorageLimitError, active_budget, guarded_write
 from .common import digest, file_hash, now, read_json, write_json
 from .transfer import download_file
 
@@ -134,9 +135,13 @@ def fetch_external(record, output):
             )
             filename = "document." + fmt
             path = folder / filename
+            if budget := active_budget.get():
+                advertised = response.headers.get("Content-Length")
+                if advertised is not None:
+                    budget.check(int(advertised))
             with path.open("wb") as f:
                 for block in iter(lambda: response.read(1024 * 1024), b""):
-                    f.write(block)
+                    guarded_write(f, block)
         if fmt != "html":
             break
         soup = BeautifulSoup(path.read_text(errors="replace"), "html.parser")
@@ -210,7 +215,7 @@ def fetch_external(record, output):
 
 
 def download_one(record, metadata, output):
-    path = Path(record.get("local_path", ""))
+    path = Path(record.get("local_path") or "")
     if record.get("parent_resource_id"):
         # Archive members are retrieved through their parent ZIP, never their URL fragment.
         if path.is_file() and file_hash(path) == record.get("sha256"):
@@ -265,6 +270,8 @@ def download_one(record, metadata, output):
                 record.pop("error", None)
                 return []
             return fetch_external(record, output)
+        except StorageLimitError:
+            raise
         except Exception as exc:
             status = getattr(exc, "code", None)
             # Never log secret-bearing headers or temporary signed URLs.

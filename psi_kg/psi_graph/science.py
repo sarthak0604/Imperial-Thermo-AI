@@ -135,11 +135,12 @@ def check_evidence(items, documents_by_id):
     return valid
 
 
-def extract_all(client, documents, resources, output):
+def extract_all(client, documents, resources, output, *, results=None, failures=None):
     from .local_model import LocalModelError
     from .providers import QuotaExceededError
 
-    results, failures = [], []
+    results = [] if results is None else results
+    failures = [] if failures is None else failures
     index = evidence_index(documents)
     inventory = [
         {

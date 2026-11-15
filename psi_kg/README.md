@@ -10,15 +10,25 @@ The delivered graph is `output/PSI-117/knowledge_graph.json`. It follows the req
 
 The graph contains **12 documented study units**, including numerical studies, experimental comparisons, and supporting studies in the uploaded dissertation. NASA's metadata has an empty `experiments` array; these are **not 12 newly discovered NASA experiment records or invented flight runs**. Physical run names are used only where the source states them. Summaries distinguish simulations from measurements. `MEASURES` includes documented computed observables because the agreed schema has no separate simulation-output relation.
 
-## Original-file retention
+## Incremental processing and storage limits
 
-New runs process original scientific files temporarily and remove those temporary copies after parsing, including extracted archive members. The graph, extracted text, numerical profiles, source URLs, source hashes and evidence remain saved. This still transfers file contents over the network and requires temporary disk capacity; it is not a metadata-only mode. The current parser batches downloads before parsing, so peak temporary storage can still approach the full study plus expanded archives.
+By default, each source file is downloaded, parsed, and saved as extracted evidence. During a full run the model also checkpoints that document's scientific contribution in `extractions.json` before the original is deleted. The next download starts only after cleanup. A study-wide synthesis and evidence review still run at the end before publishing the final graph; per-file extractions are intermediate contributions, not a validated final graph.
 
-Use the normal `uv run --extra local psi-graph-manage` command locally or the same Cloud Run command. Add `--keep-originals` to `psi-graph` or `psi-graph-manage` (after the cloud launcher's `--` separator) to retain original downloads explicitly. The option applies to future downloads; existing retained files are not deleted automatically.
+ZIPs are downloaded individually. Their members are extracted, parsed, and removed **one at a time**, depth first for nested ZIPs; a compressed parent remains until its last member finishes. This avoids storing an entire study or expanding an entire archive simultaneously. NASA file contents still transfer over the network. Unsupported formats, including raw videos/images without a parser, remain explicitly marked unsupported rather than being described as scientific extraction.
 
-For discarded originals, Resource `storage_uri` is null and `source_url` remains the retrieval reference. Manifest records carry `original_retention: discarded` and verification status before removal. `--stage generate` can reuse retained extracted documents without original files. Re-running preparation can fetch originals again. A coverage report distinguishes files present now from files fetched and verified before intentional removal.
+The defaults are a **50 GB ceiling for temporary originals** and a **5 GB free-space reserve** (decimal GB). Both the compressed ZIP and active extracted members count toward the cap. Known oversized downloads/members fail before their contents are written; unknown-size responses are checked on every block. Parsed JSON writes also check free space. The error names the source/member and required space. No oversized content is silently skipped and no final graph is published after a storage-limit error. Model downloads, accumulated extracted evidence, older runs and other processes use disk outside the temporary-original cap; the cap is not a bound on total disk consumption.
 
-Cleanup runs on normal completion and Python exceptions. A force-killed process or machine shutdown can leave a `.originals-*` scratch directory; remove it only after confirming its run has stopped. On Cloud Run, scratch storage stays on the mounted `/data` volume, not container memory.
+```sh
+uv run --extra local psi-graph-manage --study PSI-10 \
+  --provider local --mode create --graph graphs/combined.json \
+  --max-temp-gb 50 --min-free-gb 5
+```
+
+These options are also accepted by `psi-graph`. Raise the cap only after checking available disk capacity. Incremental mode uses one download at a time; `--workers` applies to the legacy `--keep-originals` path. That explicit retention option keeps originals and uses the original whole-study preparation flow, without the incremental storage cap.
+
+Retained outputs include extracted text/profiles, per-document parse caches, scientific extractions, source URLs, checksums, `documents.json`, `resources_manifest.json`, and `storage_report.json`. Discarded originals have null `storage_uri` and a verification record in the manifest. Previously retained originals are never automatically deleted. Parsed ordinary files can be reused on rerunning preparation in the same output directory when source version/hash and parser version still match; ZIPs are downloaded again. Managed runs use separate directories, so rerunning the managed command starts a new run.
+
+`preparation_state.json` records whether preparation finished. `--stage generate` refuses an incomplete incremental preparation. Resume preparation with the same URL and `--output`, then generate from that completed output. Cleanup runs on exceptions and normal interruption, but force-killing a process or losing power can leave `.originals-*` directories; remove them only after confirming their run has stopped.
 
 ## Setup and run with uv
 

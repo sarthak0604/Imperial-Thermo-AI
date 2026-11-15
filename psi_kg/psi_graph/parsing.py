@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 from openpyxl import load_workbook
 from pypdf import PdfReader
 
+from .budget import StorageLimitError, active_budget, guarded_write
 from .common import digest, file_hash, read_json, write_json
 
 PARSER_VERSION = "1.0.4"
@@ -233,7 +234,10 @@ def parse_file(path):
 
 
 def extract_archive(record, output):
-    children = []
+    return list(iter_archive(record, output))
+
+
+def iter_archive(record, output):
     root = output / "archive_members" / digest(record["id"])
     with zipfile.ZipFile(record["local_path"]) as archive:
         for info in archive.infolist():
@@ -247,11 +251,18 @@ def extract_archive(record, output):
                 or (info.external_attr >> 16) & 0o170000 == 0o120000
             ):
                 raise ValueError("Unsafe archive member: " + info.filename)
+            if budget := active_budget.get():
+                try:
+                    budget.check(info.file_size)
+                except StorageLimitError as exc:
+                    raise StorageLimitError(
+                        f"Archive member {info.filename} ({info.file_size / 1e9:.3f} GB): {exc}"
+                    ) from None
             destination = root.joinpath(*name.parts)
             destination.parent.mkdir(parents=True, exist_ok=True)
             with archive.open(info) as src, destination.open("wb") as target:
                 for chunk in iter(lambda: src.read(1024 * 1024), b""):
-                    target.write(chunk)
+                    guarded_write(target, chunk)
             source = (
                 record["source_url"]
                 + "#member="
@@ -259,30 +270,29 @@ def extract_archive(record, output):
                     info.filename, safe=""
                 )
             )
-            children.append(
-                dict(
-                    id="res:" + record["id"].split(":")[1] + ":" + digest(source),
-                    title=info.filename,
-                    filename=name.name,
-                    source_url=source,
-                    storage_uri=destination.resolve().as_uri(),
-                    local_path=str(destination.resolve()),
-                    file_format=destination.suffix[1:].lower(),
-                    resource_type="metadata"
-                    if record["resource_type"] == "metadata"
-                    else "supporting_file",
-                    size_bytes=destination.stat().st_size,
-                    sha256=file_hash(destination),
-                    access_status="accessible",
-                    extraction_status="pending",
-                    parent_resource_id=record["id"],
-                    discovered_via=record["source_url"],
-                )
+            yield dict(
+                id="res:" + record["id"].split(":")[1] + ":" + digest(source),
+                title=info.filename,
+                filename=name.name,
+                source_url=source,
+                storage_uri=destination.resolve().as_uri(),
+                local_path=str(destination.resolve()),
+                file_format=destination.suffix[1:].lower(),
+                resource_type="metadata"
+                if record["resource_type"] == "metadata"
+                else "supporting_file",
+                size_bytes=destination.stat().st_size,
+                sha256=file_hash(destination),
+                access_status="accessible",
+                extraction_status="pending",
+                parent_resource_id=record["id"],
+                discovered_via=record["source_url"],
             )
-    return children
 
 
-def parse_resources(resources, metadata, source_url, output, storage_output=None):
+def parse_resources(
+    resources, metadata, source_url, output, storage_output=None, *, persist=True
+):
     documents = []
     # Metadata fields remain separately locatable; omit duplicate file revision lists.
     sections = [
@@ -378,16 +388,19 @@ def parse_resources(resources, metadata, source_url, output, storage_output=None
             if sections:
                 documents.append(result)
             print(f"parse {status}: {record['filename']}", flush=True)
+        except StorageLimitError:
+            raise
         except Exception as exc:
             record.update(
                 extraction_status="failed",
                 extraction_error=f"{type(exc).__name__}: {str(exc)[:300]}",
             )
-    write_json(output / "documents.json", documents)
-    write_json(
-        output / "resources_manifest.json",
-        dict(source_url=source_url, resources=resources),
-    )
+    if persist:
+        write_json(output / "documents.json", documents)
+        write_json(
+            output / "resources_manifest.json",
+            dict(source_url=source_url, resources=resources),
+        )
     return documents
 
 

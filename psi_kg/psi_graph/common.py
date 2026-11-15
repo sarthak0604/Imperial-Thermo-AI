@@ -28,9 +28,14 @@ def write_json(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(path.suffix + ".tmp")
-    temporary.write_text(
+    from .budget import active_budget
+
+    encoded = (
         json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + "\n"
-    )
+    ).encode("utf-8")
+    if budget := active_budget.get():
+        budget.free_check(len(encoded))
+    temporary.write_bytes(encoded)
     temporary.replace(path)
 
 
